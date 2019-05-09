@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewMore renders its content 1`] = `
+<ViewMore
+  showLessItemCount={1}
+  showLessText="View less"
+  showMoreText="View more"
+>
+  <Styled(ul)
+    blockHeight={0}
+    innerRef={
+      Object {
+        "current": <ul
+          class="css-12eg17e e1e87viu1"
+        >
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+          <div>
+            match
+          </div>
+        </ul>,
+      }
+    }
+    isExpanded={false}
+  >
+    <ul
+      className="css-12eg17e e1e87viu1"
+    >
+      <div
+        key="0"
+      >
+        match
+      </div>
+      <div
+        key="1"
+      >
+        match
+      </div>
+      <div
+        key="2"
+      >
+        match
+      </div>
+      <div
+        key="3"
+      >
+        match
+      </div>
+      <div
+        key="4"
+      >
+        match
+      </div>
+      <div
+        key="5"
+      >
+        match
+      </div>
+      <div
+        key="6"
+      >
+        match
+      </div>
+      <div
+        key="7"
+      >
+        match
+      </div>
+      <div
+        key="8"
+      >
+        match
+      </div>
+      <div
+        key="9"
+      >
+        match
+      </div>
+    </ul>
+  </Styled(ul)>
+  <Styled(span)
+    onClick={[Function]}
+  >
+    <span
+      className="css-1dbkody e1e87viu0"
+      onClick={[Function]}
+    >
+      View more
+    </span>
+  </Styled(span)>
+</ViewMore>
+`;

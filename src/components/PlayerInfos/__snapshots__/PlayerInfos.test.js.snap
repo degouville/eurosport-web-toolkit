@@ -4,23 +4,21 @@ exports[`PlayerInfos renders its content 1`] = `
 <Styled(div)>
   <Styled(div)>
     <Styled(div)>
-      <styledIdentity>
-        <Styled(div)>
-          Rafael
-           
-          Nadal
-        </Styled(div)>
-        <Styled(div)>
-          <Styled(img)
-            alt="Spain"
-            data-test="flag-picture"
-            src="https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png"
-          />
-          <Styled(span)>
-            Spain
-          </Styled(span)>
-        </Styled(div)>
-      </styledIdentity>
+      <Styled(div)>
+        Rafael
+         
+        Nadal
+      </Styled(div)>
+      <Styled(div)>
+        <Styled(img)
+          alt="Spain"
+          data-test="flag-picture"
+          src="https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png"
+        />
+        <Styled(span)>
+          Spain
+        </Styled(span)>
+      </Styled(div)>
       <Styled(ul)>
         <Styled(li)>
           <Styled(div)>

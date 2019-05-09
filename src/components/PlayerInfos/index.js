@@ -141,7 +141,7 @@ const PlayerInfos = ({ player }) => (
   <StyledPlayerInfos>
     <StyledFlex>
       <StyledCol>
-        <styledIdentity>
+        <>
           <StyledPlayerName>
             {player.firstName} {player.lastName}
           </StyledPlayerName>
@@ -149,7 +149,7 @@ const PlayerInfos = ({ player }) => (
             <StyledFlag data-test="flag-picture" src={player.flagUrl} alt={player.country} />
             <StyledCountry>{player.country}</StyledCountry>
           </StyledCountryContainer>
-        </styledIdentity>
+        </>
         <StyledList>
           <StyledListDescription>
             <StyledListTitle>height (m)</StyledListTitle>

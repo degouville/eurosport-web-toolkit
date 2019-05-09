@@ -42,6 +42,7 @@ import ContentListing from './modules/ContentListing';
 import Article from './modules/Article';
 import WatchBar from './modules/Watchbar';
 import BurgerMenu from './modules/BurgerMenu';
+import ViewMore from './modules/ViewMore';
 
 export {
   Button,
@@ -84,5 +85,6 @@ export {
   AdInit,
   AdManager,
   AdPlacement,
+  ViewMore,
   Betting,
 };
