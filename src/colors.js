@@ -88,3 +88,6 @@ export const gunPowder = '#3f455d';
 export const venetianRed = '#b6012d';
 export const royalBlue = '#3c46dc';
 export const dodgerBlue = '#35D0FE';
+export const alto = '#D8D8D8';
+export const manatee = '#8185A0';
+export const martinique = '#353851';

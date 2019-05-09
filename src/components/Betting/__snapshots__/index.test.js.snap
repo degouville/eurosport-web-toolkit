@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Betting renders Betting for double choices 1`] = `
+<Styled(Link)
+  href="mainLink"
+  linkComponent={[Function]}
+  target="_blank"
+>
+  <Styled(div)
+    background="#b4292c"
+    text="#ffffff"
+  >
+    Betline
+  </Styled(div)>
+  <Styled(div)>
+    Pariez !
+  </Styled(div)>
+  <Styled(div)>
+    <Styled(div)
+      key="1"
+    >
+      <Styled(div)>
+        1
+      </Styled(div)>
+      <Styled(div)>
+        2.80
+      </Styled(div)>
+      <Styled(div)>
+        Nadal
+      </Styled(div)>
+    </Styled(div)>
+    <Styled(div)
+      key="2"
+    >
+      <Styled(div)>
+        2
+      </Styled(div)>
+      <Styled(div)>
+        1.70
+      </Styled(div)>
+      <Styled(div)>
+        Federer
+      </Styled(div)>
+    </Styled(div)>
+  </Styled(div)>
+</Styled(Link)>
+`;
+
+exports[`Betting renders Betting for triple choices 1`] = `
+<Styled(Link)
+  href="mainLink"
+  linkComponent={[Function]}
+  target="_blank"
+>
+  <Styled(div)
+    background="#b4292c"
+    text="#ffffff"
+  >
+    Betline
+  </Styled(div)>
+  <Styled(div)>
+    Pariez !
+  </Styled(div)>
+  <Styled(div)>
+    <Styled(div)
+      key="1"
+    >
+      <Styled(div)>
+        1
+      </Styled(div)>
+      <Styled(div)>
+        2.80
+      </Styled(div)>
+      <Styled(div)>
+        Nadal
+      </Styled(div)>
+    </Styled(div)>
+    <Styled(div)
+      key="2"
+    >
+      <Styled(div)>
+        2
+      </Styled(div)>
+      <Styled(div)>
+        4.90
+      </Styled(div)>
+    </Styled(div)>
+    <Styled(div)
+      key="3"
+    >
+      <Styled(div)>
+        3
+      </Styled(div)>
+      <Styled(div)>
+        1.70
+      </Styled(div)>
+      <Styled(div)>
+        Federer
+      </Styled(div)>
+    </Styled(div)>
+  </Styled(div)>
+</Styled(Link)>
+`;

@@ -32,6 +32,7 @@ import ScriptInjector from './components/ScriptInjector';
 import AdInit from './components/Advertisement/AdInit';
 import AdManager from './components/Advertisement/AdManager';
 import AdPlacement from './components/Advertisement/AdPlacement';
+import Betting from './components/Betting';
 
 import Header from './modules/Header';
 import Footer from './modules/Footer';
@@ -83,4 +84,5 @@ export {
   AdInit,
   AdManager,
   AdPlacement,
+  Betting,
 };
