@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
 import get from 'lodash/get';
+import throttle from 'lodash/throttle';
 import { coreLightMinus1, coreLightBase, coreDarkPlus1 } from '../../colors';
 import { fontFamilies } from '../../typography';
 
@@ -22,24 +23,32 @@ export const StyledButton = styled.span`
 `;
 
 const StyledList = styled.ul`
-  ${props =>
-    props.blockHeight !== 0 &&
-    css`
-      max-height: ${props.blockHeight}px;
-    `}
   overflow: hidden;
-  transition: max-height 400ms ease;
+  ${props =>
+    css`
+      max-height: ${props.blockHeight !== 0 ? `${props.blockHeight}px;` : 'auto;'}
+      transition: ${props.animate ? 'max-height 400ms ease;' : 'none;'}
+    `}
 `;
 
 export default class ViewMore extends React.Component {
   listRef = React.createRef();
 
-  state = {};
+  state = {
+    animate: true,
+  };
+
+  handleWindowResize = throttle(() => this.setState({ animate: false }), 250);
 
   componentDidMount() {
     // It is better to set the default value of expanded after the initial mount.
     // Otherwise the first render will not be accurate as the listRef might not be set yet.
     this.setState({ expanded: false });
+    window.addEventListener('resize', this.handleWindowResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowResize);
   }
 
   computeBlockHeight() {
@@ -61,16 +70,22 @@ export default class ViewMore extends React.Component {
   handleClick() {
     this.setState(state => ({
       expanded: !state.expanded,
+      animate: true,
     }));
   }
 
   render() {
     const { children, showLessText, showMoreText } = this.props;
-    const { expanded } = this.state;
+    const { expanded, animate } = this.state;
     if (!children || !children.length) return null;
     return (
       <>
-        <StyledList isExpanded={expanded} innerRef={this.listRef} blockHeight={this.computeBlockHeight()}>
+        <StyledList
+          isExpanded={expanded}
+          innerRef={this.listRef}
+          blockHeight={this.computeBlockHeight()}
+          animate={animate}
+        >
           {children}
         </StyledList>
         {children.length > 1 && (
