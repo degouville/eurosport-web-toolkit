@@ -1,6 +1,6 @@
 {
   "name": "@eurosport/web-toolkit",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Eurosport Web Toolkit",
   "main": "dist/index.js",
   "scripts": {
