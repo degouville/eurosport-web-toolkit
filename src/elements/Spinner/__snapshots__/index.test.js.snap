@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner should render default spinner 1`] = `
+<Styled(div)
+  className="test"
+  width="50px"
+>
+  <svg
+    className="css-fgjwc2"
+    viewBox="0 0 66 66"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="33"
+      cy="33"
+      r="31"
+      stroke="url(#gradient)"
+      style={
+        Object {
+          "fill": "transparent",
+          "height": "100%",
+          "strokeDasharray": 170,
+          "strokeDashoffset": 20,
+          "strokeWidth": 2,
+          "width": "100%",
+        }
+      }
+    />
+    <linearGradient
+      id="gradient"
+    >
+      <stop
+        offset="50%"
+        stopColor="#ffffff"
+        stopOpacity="1"
+      />
+      <stop
+        offset="65%"
+        stopColor="#ffffff"
+        stopOpacity="1"
+      />
+      <stop
+        offset="100%"
+        stopColor="#ffffff"
+        stopOpacity="0"
+      />
+    </linearGradient>
+    <circle
+      cx="36.8"
+      cy="2.3"
+      fill="#ffffff"
+      r="0.5"
+      stroke="#ffffff"
+      style={
+        Object {
+          "strokeDasharray": 170,
+          "strokeDashoffset": 20,
+        }
+      }
+    />
+  </svg>
+</Styled(div)>
+`;

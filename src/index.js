@@ -16,6 +16,7 @@ import Grid from './elements/Grid';
 import SocialIcon from './elements/SocialIcon';
 import Logo from './elements/Logo';
 import Labels from './elements/Labels';
+import Spinner from './elements/Spinner';
 
 import ArticleContent from './components/ArticleContent';
 import Carousel from './components/Carousel';
@@ -27,6 +28,7 @@ import Quantcast from './components/Quantcast';
 import GoogleTagManager from './components/GoogleTagManager';
 import ScoreBlocks from './components/ScoreBlock';
 import PlayerInfos from './components/PlayerInfos';
+import QuickPoll from './components/Quickpoll';
 import JwPlayer from './components/JwPlayer';
 import ScriptInjector from './components/ScriptInjector';
 import AdInit from './components/Advertisement/AdInit';
@@ -81,6 +83,8 @@ export {
   ScoreBlocks,
   PlayerInfos,
   Labels,
+  Spinner,
+  QuickPoll,
   JwPlayer,
   ScriptInjector,
   AdInit,

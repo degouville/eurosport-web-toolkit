@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuickPoll renders a QuickPoll Component 1`] = `
+<Styled(div)>
+  <Styled(div) />
+  <Styled(div)>
+    Who will win the 2019 French Open?
+  </Styled(div)>
+  <Styled(div)>
+    <Styled(ArrowLink)
+      key="123451"
+      onClick={[Function]}
+      showResults={false}
+      type="secondary"
+    >
+      <Styled(div)>
+        Nadal
+      </Styled(div)>
+    </Styled(ArrowLink)>
+    <Styled(ArrowLink)
+      key="123452"
+      onClick={[Function]}
+      showResults={false}
+      type="secondary"
+    >
+      <Styled(div)>
+        Djokovic
+      </Styled(div)>
+    </Styled(ArrowLink)>
+    <Styled(ArrowLink)
+      key="123453"
+      onClick={[Function]}
+      showResults={false}
+      type="secondary"
+    >
+      <Styled(div)>
+        Zverev
+      </Styled(div)>
+    </Styled(ArrowLink)>
+    <Styled(ArrowLink)
+      key="123454"
+      onClick={[Function]}
+      showResults={false}
+      type="secondary"
+    >
+      <Styled(div)>
+        Federer
+      </Styled(div)>
+    </Styled(ArrowLink)>
+    <Styled(ArrowLink)
+      key="123455"
+      onClick={[Function]}
+      showResults={false}
+      type="secondary"
+    >
+      <Styled(div)>
+        Other
+      </Styled(div)>
+    </Styled(ArrowLink)>
+  </Styled(div)>
+</Styled(div)>
+`;
