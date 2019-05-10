@@ -9,7 +9,7 @@ import RightMenu from './RightMenu/RightMenu';
 import BottomMenu from './BottomMenu/BottomMenu';
 
 import { points, large } from '../../breakpoints';
-import { withMatchMedia } from '../../hocs';
+import withMatchMedia from '../../hocs/withMatchMedia';
 import { BOTTOM_MENU_LINKS_IDS, BOTTOM_MENU_SOCIAL_ID, ALL_SPORTS_MENU_ID, MORE_MENU_ID } from './constants';
 
 const StyledModal = styled.div`

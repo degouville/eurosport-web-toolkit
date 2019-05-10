@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AdManager from '../AdManager';
 
-const AdPlacement = ({ adType, isNoDesktop, isNoTablet, isNoMobile }) => {
+const AdPlacement = React.forwardRef(({ adType, isNoDesktop, isNoTablet, isNoMobile }, ref) => {
   const randomId = `adId${Date.now() + Math.floor(Math.random() * 1000)}`;
 
   return (
-    <div data-adplacement-id={randomId} data-class="ad">
+    <div data-adplacement-id={randomId} data-class="ad" ref={ref}>
       {AdManager.manageAds.injectAdSlot(adType, randomId, isNoMobile, isNoTablet, isNoDesktop)}
     </div>
   );
-};
+});
 
 AdPlacement.defaultProps = {
   isNoTablet: false,

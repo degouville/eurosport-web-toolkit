@@ -33,6 +33,7 @@ import AdInit from './components/Advertisement/AdInit';
 import AdManager from './components/Advertisement/AdManager';
 import AdPlacement from './components/Advertisement/AdPlacement';
 import Betting from './components/Betting';
+import withReload from './hocs/withReload';
 
 import Header from './modules/Header';
 import Footer from './modules/Footer';
@@ -87,4 +88,5 @@ export {
   AdPlacement,
   ViewMore,
   Betting,
+  withReload,
 };
