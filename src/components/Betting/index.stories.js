@@ -8,7 +8,7 @@ import { doubleChoiceData, tripleChoiceData, alternativeLogo } from './mock';
 const betting = storiesOf('Components|Betting', module);
 
 const Wrapper = styled.div`
-  max-width: 500px;
+  max-width: 633px;
 `;
 
 betting

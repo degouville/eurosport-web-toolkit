@@ -6,15 +6,18 @@ export const doubleChoiceData = {
     textColor: '#ffffff',
   },
   sentences: ['Pariez !', 'PARIEZ AVEC Betline'],
-  choices: [{ number: 1, odds: '2.80', label: 'Nadal' }, { number: 2, odds: '1.70', label: 'Federer' }],
+  choices: [
+    { number: 1, odds: '2.80', label: 'DAVIDOVICH FOKINA' },
+    { number: 2, odds: '1.70', label: 'MENENDEZ-MACEIRAS' },
+  ],
 };
 
 export const tripleChoiceData = {
   ...doubleChoiceData,
   choices: [
-    { number: 1, odds: '2.80', label: 'Nadal' },
+    { number: 1, odds: '2.80', label: 'DAVIDOVICH FOKINA' },
     { number: 2, odds: '4.90' },
-    { number: 3, odds: '1.70', label: 'Federer' },
+    { number: 3, odds: '1.70', label: 'MENENDEZ-MACEIRAS' },
   ],
 };
 

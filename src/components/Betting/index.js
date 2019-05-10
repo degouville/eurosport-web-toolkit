@@ -89,10 +89,16 @@ const StyledChoiceOdds = styled.div`
 const StyledTeamName = styled.div`
   text-transform: uppercase;
   font-weight: normal;
+  max-width: 120px;
+  line-height: 20px;
+  text-align: center;
   ${breakpoints.medium(css`
     line-height: 42px;
     position: absolute;
     top: 30px;
+    white-space: nowrap;
+    max-width: inherit;
+    text-align: inherit;
   `)};
   ${StyledChoiceWrapper}:first-child & {
     ${breakpoints.medium(css`
@@ -107,6 +113,11 @@ const StyledTeamName = styled.div`
       margin-left: 12px;
     `)}
   }
+  ${props =>
+    props.textLength > 15 &&
+    css`
+      font-size: 14px;
+    `}
 `;
 
 export const getRandomSentence = sentences => sentences[Math.floor(Math.random() * sentences.length)];
@@ -122,7 +133,7 @@ const Betting = ({ link, sponsor, sentences, choices }) => (
         <StyledChoiceWrapper key={choice.number}>
           <StyledChoiceNumber>{choice.number}</StyledChoiceNumber>
           <StyledChoiceOdds>{choice.odds}</StyledChoiceOdds>
-          {choice.label && <StyledTeamName>{choice.label}</StyledTeamName>}
+          {choice.label && <StyledTeamName textLength={choice.label.length}>{choice.label}</StyledTeamName>}
         </StyledChoiceWrapper>
       ))}
     </StyledBetting>
