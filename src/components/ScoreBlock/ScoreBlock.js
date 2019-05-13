@@ -125,7 +125,7 @@ const ScoreBlock = ({ matchUrl, data, isLive, isWatchable, displayLeftCircle }) 
   );
 };
 
-const teamDataType = PropTypes.shape({
+export const teamDataType = PropTypes.shape({
   hasWon: PropTypes.bool,
   isServing: PropTypes.bool,
   playerOneName: PropTypes.string,

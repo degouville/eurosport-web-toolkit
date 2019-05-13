@@ -1,4 +1,6 @@
 import SetsScore from './SetsScore';
-import ScoreBlock from './ScoreBlock';
+import ScoreBlock, { teamDataType } from './ScoreBlock';
+
+export { teamDataType };
 
 export default { SetsScore, ScoreBlock };

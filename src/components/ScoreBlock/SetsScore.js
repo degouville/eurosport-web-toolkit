@@ -18,6 +18,7 @@ export const StyledTeamName = styled.div`
   font-size: 1em;
   flex-basis: 60%;
   text-transform: uppercase;
+  text-align: left;
   span {
     font-family: ${fontFamilies.interUi};
     font-size: 1em;

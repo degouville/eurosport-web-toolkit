@@ -179,6 +179,19 @@ const PlayerInfos = ({ player }) => (
   </StyledPlayerInfos>
 );
 
+export const playerType = PropTypes.shape({
+  firstName: PropTypes.string,
+  lastName: PropTypes.string,
+  age: PropTypes.string,
+  height: PropTypes.string,
+  weight: PropTypes.string,
+  country: PropTypes.string,
+  flagUrl: PropTypes.string.isRequired,
+  ranking: PropTypes.string,
+  competition: PropTypes.string,
+  pictureUrl: PropTypes.string.isRequired,
+});
+
 PlayerInfos.defaultProps = {
   player: {
     firstName: '-',
@@ -193,18 +206,7 @@ PlayerInfos.defaultProps = {
 };
 
 PlayerInfos.propTypes = {
-  player: PropTypes.shape({
-    firstName: PropTypes.string,
-    lastName: PropTypes.string,
-    age: PropTypes.string,
-    height: PropTypes.string,
-    weight: PropTypes.string,
-    country: PropTypes.string,
-    flagUrl: PropTypes.string.isRequired,
-    ranking: PropTypes.string,
-    competition: PropTypes.string,
-    pictureUrl: PropTypes.string.isRequired,
-  }),
+  player: playerType,
 };
 
 export default PlayerInfos;

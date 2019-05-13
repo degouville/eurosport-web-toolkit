@@ -46,6 +46,7 @@ import Article from './modules/Article';
 import WatchBar from './modules/Watchbar';
 import BurgerMenu from './modules/BurgerMenu';
 import ViewMore from './modules/ViewMore';
+import PlayerCard from './modules/PlayerCard';
 
 export {
   Button,
@@ -76,6 +77,7 @@ export {
   DataLayer,
   WatchBar,
   BurgerMenu,
+  PlayerCard,
   BurgerIcon,
   SocialIcon,
   Quantcast,

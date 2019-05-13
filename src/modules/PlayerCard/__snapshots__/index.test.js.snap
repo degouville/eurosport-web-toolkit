@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerCard should render as expected 1`] = `
+<Styled(div)>
+  <Styled(div)
+    backgroundImageUrl="http://dnl.eurosport.com/web-toolkit/playercard/bg1.png"
+  />
+  <Styled(PlayerInfos)
+    player={
+      Object {
+        "age": "32",
+        "competition": "ATP",
+        "country": "Spain",
+        "firstName": "Rafael",
+        "flagUrl": "https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png",
+        "height": "1.85",
+        "lastName": "Nadal",
+        "pictureUrl": "https://i.eurosport.com/_iss_/person/pp_clubteam/large/435121.jpg",
+        "ranking": "2",
+        "weight": "85",
+      }
+    }
+  />
+  <Styled(div)>
+    PREVIOUS MATCHES
+  </Styled(div)>
+  <Styled(div)>
+    <ViewMore
+      showLessItemCount={1}
+      showLessText="View Less Matches"
+      showMoreText="View More Matches"
+    >
+      <Styled(div)
+        decorate={false}
+        key="123451"
+      >
+        <ScoreBlock
+          data={
+            Object {
+              "bottomTeam": Object {
+                "hasWon": false,
+                "isServing": false,
+                "playerOneName": "Federer",
+                "sets": Array [
+                  Object {
+                    "score": 3,
+                    "set": 1,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 7,
+                    "set": 3,
+                    "tie": 7,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 4,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 5,
+                    "tie": null,
+                    "won": true,
+                  },
+                ],
+              },
+              "topTeam": Object {
+                "hasWon": true,
+                "isServing": false,
+                "playerOneName": "Nadal",
+                "sets": Array [
+                  Object {
+                    "score": 6,
+                    "set": 1,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 3,
+                    "tie": 2,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 4,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 5,
+                    "tie": null,
+                    "won": false,
+                  },
+                ],
+              },
+            }
+          }
+          displayLeftCircle="won"
+          isLive={false}
+          isWatchable={false}
+          matchUrl="https://eurosport.com"
+        />
+      </Styled(div)>
+      <Styled(div)
+        decorate={true}
+        key="123452"
+      >
+        <ScoreBlock
+          data={
+            Object {
+              "bottomTeam": Object {
+                "hasWon": false,
+                "isServing": false,
+                "playerOneName": "Federer",
+                "sets": Array [
+                  Object {
+                    "score": 3,
+                    "set": 1,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 7,
+                    "set": 3,
+                    "tie": 7,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 4,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 5,
+                    "tie": null,
+                    "won": true,
+                  },
+                ],
+              },
+              "topTeam": Object {
+                "hasWon": true,
+                "isServing": false,
+                "playerOneName": "Nadal",
+                "sets": Array [
+                  Object {
+                    "score": 6,
+                    "set": 1,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 3,
+                    "tie": 2,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 4,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 5,
+                    "tie": null,
+                    "won": false,
+                  },
+                ],
+              },
+            }
+          }
+          displayLeftCircle="won"
+          isLive={false}
+          isWatchable={false}
+          matchUrl="https://eurosport.com"
+        />
+      </Styled(div)>
+      <Styled(div)
+        decorate={true}
+        key="123453"
+      >
+        <ScoreBlock
+          data={
+            Object {
+              "bottomTeam": Object {
+                "hasWon": true,
+                "isServing": false,
+                "playerOneName": "Federer",
+                "sets": Array [
+                  Object {
+                    "score": 7,
+                    "set": 1,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 3,
+                    "tie": null,
+                    "won": true,
+                  },
+                ],
+              },
+              "topTeam": Object {
+                "hasWon": false,
+                "isServing": false,
+                "playerOneName": "Nadal",
+                "sets": Array [
+                  Object {
+                    "score": 6,
+                    "set": 1,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 2,
+                    "set": 2,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 3,
+                    "tie": null,
+                    "won": false,
+                  },
+                ],
+              },
+            }
+          }
+          displayLeftCircle="lost"
+          isLive={false}
+          isWatchable={false}
+          matchUrl="https://eurosport.com"
+        />
+      </Styled(div)>
+      <Styled(div)
+        decorate={true}
+        key="123454"
+      >
+        <ScoreBlock
+          data={
+            Object {
+              "bottomTeam": Object {
+                "hasWon": false,
+                "isServing": false,
+                "playerOneName": "Federer",
+                "sets": Array [
+                  Object {
+                    "score": 3,
+                    "set": 1,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 7,
+                    "set": 3,
+                    "tie": 7,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 4,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 5,
+                    "tie": null,
+                    "won": true,
+                  },
+                ],
+              },
+              "topTeam": Object {
+                "hasWon": true,
+                "isServing": false,
+                "playerOneName": "Nadal",
+                "sets": Array [
+                  Object {
+                    "score": 6,
+                    "set": 1,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 3,
+                    "tie": 2,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 4,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 5,
+                    "tie": null,
+                    "won": false,
+                  },
+                ],
+              },
+            }
+          }
+          displayLeftCircle="won"
+          isLive={false}
+          isWatchable={false}
+          matchUrl="https://eurosport.com"
+        />
+      </Styled(div)>
+      <Styled(div)
+        decorate={true}
+        key="123455"
+      >
+        <ScoreBlock
+          data={
+            Object {
+              "bottomTeam": Object {
+                "hasWon": false,
+                "isServing": false,
+                "playerOneName": "Federer",
+                "sets": Array [
+                  Object {
+                    "score": 3,
+                    "set": 1,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 7,
+                    "set": 3,
+                    "tie": 7,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 4,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 5,
+                    "tie": null,
+                    "won": true,
+                  },
+                ],
+              },
+              "topTeam": Object {
+                "hasWon": true,
+                "isServing": false,
+                "playerOneName": "Nadal",
+                "sets": Array [
+                  Object {
+                    "score": 6,
+                    "set": 1,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 3,
+                    "tie": 2,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 4,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 5,
+                    "tie": null,
+                    "won": false,
+                  },
+                ],
+              },
+            }
+          }
+          displayLeftCircle="won"
+          isLive={false}
+          isWatchable={false}
+          matchUrl="https://eurosport.com"
+        />
+      </Styled(div)>
+    </ViewMore>
+  </Styled(div)>
+</Styled(div)>
+`;
