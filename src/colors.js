@@ -94,3 +94,4 @@ export const blackRussian = '#3E4159';
 export const alto = '#D8D8D8';
 export const manatee = '#8185A0';
 export const martinique = '#353851';
+export const mischka = '#D0D1DA';

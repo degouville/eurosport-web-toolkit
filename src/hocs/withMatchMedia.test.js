@@ -1,14 +1,24 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import withMatchMedia from './withMatchMedia';
+import { shallow, mount } from 'enzyme';
+import withMatchMedia, { HideOnMobile } from './withMatchMedia';
 
-describe('hocs/withMatchMenid', () => {
-  describe('props injection', () => {
-    global.matchMedia = () => ({
+describe('hocs/withMatchMedia', () => {
+  const listenerFn = jest.fn();
+  // eslint-disable-next-line
+  const matchMediaSpy = (global.matchMedia = jest.fn());
+
+  beforeEach(() => {
+    matchMediaSpy.mockImplementation(() => ({
       matches: true,
-      addListener: jest.fn(),
-    });
+      addListener: listenerFn,
+    }));
+  });
 
+  afterEach(() => {
+    listenerFn.mockClear();
+  });
+
+  describe('props injection', () => {
     it('injects the `breakpointMatched` prop by default', () => {
       const Component = withMatchMedia('')(React.Component);
 
@@ -25,13 +35,6 @@ describe('hocs/withMatchMenid', () => {
   });
 
   describe('media change events', () => {
-    const listenerFn = jest.fn();
-
-    global.matchMedia = () => ({
-      matches: true,
-      addListener: listenerFn,
-    });
-
     it('registers a onMediaChange listener for media change', () => {
       const Component = withMatchMedia('')(React.Component);
       const wrapper = shallow(<Component />);
@@ -54,6 +57,26 @@ describe('hocs/withMatchMenid', () => {
 
       wrapper.setState({ matches: false });
       expect(wrapper.props()).toEqual({ breakpointMatched: false });
+    });
+  });
+
+  describe('HideOnMobile helper component', () => {
+    it('should not render component(s) on mobile res', () => {
+      const Component = () => <div>text </div>;
+      const wrapper = (
+        <HideOnMobile>
+          <Component />
+          <Component />
+        </HideOnMobile>
+      );
+      expect(mount(wrapper).find('div').length).toEqual(2);
+
+      matchMediaSpy.mockImplementation(media => ({
+        matches: +media.replace(/\D/g, '') > 700,
+        addListener: listenerFn,
+      }));
+
+      expect(mount(wrapper).text()).toEqual(null);
     });
   });
 });

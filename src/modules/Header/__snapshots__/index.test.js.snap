@@ -2,6 +2,7 @@
 
 exports[`Header renders Header 1`] = `
 <Styled(header)
+  breadcrumbs={Array []}
   cta={null}
   data-test="header"
   homePageUrl=""
@@ -21,6 +22,7 @@ exports[`Header renders Header 1`] = `
 
 exports[`Header with cta renders Header with cta 1`] = `
 <Styled(header)
+  breadcrumbs={Array []}
   cta={
     Object {
       "label": "subscribe",
@@ -52,6 +54,18 @@ exports[`Header with cta renders Header with cta 1`] = `
 
 exports[`Header with submenu renders Header with BurgerMenu 1`] = `
 <Styled(header)
+  breadcrumbs={
+    Array [
+      Object {
+        "name": "Tennis",
+        "url": "http://eurosport.fr/tennis/",
+      },
+      Object {
+        "name": "French Open",
+        "url": "http://eurosport.fr/tennis/open-d-australie/",
+      },
+    ]
+  }
   cta={null}
   data-test="header"
   homePageUrl=""
@@ -2439,9 +2453,25 @@ exports[`Header with submenu renders Header with BurgerMenu 1`] = `
     href=""
     linkComponent={[Function]}
   >
-    <Logo
-      small={false}
-    />
+    <HideOnMobile>
+      <Logo
+        small={false}
+      />
+    </HideOnMobile>
   </Link>
+  <Breadcrumbs
+    items={
+      Array [
+        Object {
+          "name": "Tennis",
+          "url": "http://eurosport.fr/tennis/",
+        },
+        Object {
+          "name": "French Open",
+          "url": "http://eurosport.fr/tennis/open-d-australie/",
+        },
+      ]
+    }
+  />
 </Styled(header)>
 `;

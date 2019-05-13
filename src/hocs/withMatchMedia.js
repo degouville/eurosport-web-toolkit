@@ -1,4 +1,5 @@
 import React from 'react';
+import { points } from '../breakpoints';
 
 const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
 
@@ -32,5 +33,11 @@ const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') =>
       return <Component {...props} />;
     }
   };
+
+export const HideOnMobile = withMatchMedia(`(min-width: ${points.medium}px)`)(({ breakpointMatched, ...props }) =>
+  breakpointMatched ? props.children : null
+);
+
+HideOnMobile.displayName = 'HideOnMobile';
 
 export default withMatchMedia;

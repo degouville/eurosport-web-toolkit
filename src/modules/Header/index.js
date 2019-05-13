@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import styled, { css, injectGlobal } from 'react-emotion';
 import PropTypes from 'prop-types';
+import { HideOnMobile } from '../../hocs/withMatchMedia';
 
 import Link from '../../elements/Link';
 import Logo from '../../elements/Logo';
 import BurgerMenu from '../BurgerMenu';
 import BurgerIcon from '../../elements/BurgerIcon';
 import * as breakpoints from '../../breakpoints';
-import * as colors from '../../colors';
+import { brandBase, coreLightMinus1, mischka } from '../../colors';
 import Button from '../../elements/Button';
+import { fontFamilies } from '../../typography';
+import { ReactComponent as Chevron } from '../../assets/chevron.svg';
 
 const StyledButton = styled(Button)`
   margin-left: auto;
@@ -25,7 +28,7 @@ const StyledButton = styled(Button)`
 
 const StyledWrapper = styled.header`
   box-sizing: border-box;
-  background: ${colors.brandBase};
+  background: ${brandBase};
   height: 50px;
   ${props =>
     !props.menuItems &&
@@ -35,7 +38,7 @@ const StyledWrapper = styled.header`
       ${breakpoints.medium(css`
         padding-left: 32px;
       `)}
-    `}
+    `};
   display: flex;
   align-items: center;
 
@@ -44,13 +47,90 @@ const StyledWrapper = styled.header`
   `)};
 
   ${Logo.css} {
-    margin: 4px 15px 0 0px;
+    margin: 4px 15px 0 0;
 
     ${breakpoints.medium(css`
       margin: 0 25px 0 17px;
     `)}
   }
 `;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${mischka};
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:last-child {
+    color: ${coreLightMinus1};
+  }
+`;
+
+const StyledChevron = styled(Chevron)`
+  width: 10px;
+  height: 12px;
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: middle;
+  path {
+    fill: ${coreLightMinus1};
+  }
+`;
+
+export const Breadcrumbs = styled(({ className, items }) => (
+  <div className={className}>
+    {items.map((item, i) => {
+      const link = (
+        <StyledLink key={item.name} href={item.url}>
+          {item.name}
+        </StyledLink>
+      );
+
+      return i !== items.length - 1 ? (
+        <HideOnMobile key={item.url}>
+          {link}
+          <StyledChevron />
+        </HideOnMobile>
+      ) : (
+        link
+      );
+    })}
+  </div>
+))`
+  font-size: 18px;
+  line-height: 21px;
+  font-family: ${fontFamilies.helvetica};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: bold;
+  padding-left: 5px;
+
+  ${breakpoints.medium(css`
+    position: relative;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 23px;
+    top: 1px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      bottom: 2px;
+      width: 1px;
+      border-left: 1px solid ${coreLightMinus1};
+      opacity: 0.3;
+    }
+  `)};
+`;
+
+Breadcrumbs.displayName = 'Breadcrumbs';
 
 class Header extends Component {
   state = {
@@ -100,15 +180,23 @@ class Header extends Component {
   };
 
   render() {
-    const { homePageUrl, cta } = this.props;
+    const { homePageUrl, cta, breadcrumbs } = this.props;
+    const hasBreadcrumbs = breadcrumbs.length > 0;
 
     return (
       <StyledWrapper {...this.props} data-test="header">
         {this.getBurgerMenu()}
         {this.getBurgerIcon()}
         <Link href={homePageUrl} data-test="header-logo">
-          <Logo />
+          {hasBreadcrumbs ? (
+            <HideOnMobile>
+              <Logo />
+            </HideOnMobile>
+          ) : (
+            <Logo />
+          )}
         </Link>
+        {hasBreadcrumbs && <Breadcrumbs items={breadcrumbs} />}
         {cta && (
           <StyledButton href={cta.link} data-test="header-cta">
             {cta.label}
@@ -125,6 +213,7 @@ Header.defaultProps = {
   menuItems: null,
   homePageUrl: '',
   cta: null,
+  breadcrumbs: [],
 };
 
 Header.propTypes = {
@@ -150,6 +239,12 @@ Header.propTypes = {
     link: PropTypes.string,
     label: PropTypes.string,
   }),
+  breadcrumbs: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Header;
