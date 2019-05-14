@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SharedLink matches video card snapshot 1`] = `
+<Styled(Component)
+  description=""
+  image="picurl?w=640"
+  labelPlayButton="play this video"
+  link="url"
+  target="_blank"
+  title="title"
+  topic=""
+/>
+`;

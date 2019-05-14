@@ -96,3 +96,5 @@ export const manatee = '#8185A0';
 export const martinique = '#353851';
 export const mischka = '#D0D1DA';
 export const ebonyClay = '#252741';
+export const halfBaked = '#87C3D4';
+export const jungleMist = '#AECCD4';

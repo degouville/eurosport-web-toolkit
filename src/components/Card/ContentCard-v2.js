@@ -219,7 +219,7 @@ const desktopStyles = `
 `;
 
 const BaseCard = styled(props => (
-  <LinkCard className={props.className} href={props.link} data-test="contentCardv2">
+  <LinkCard {...props} href={props.link} data-test="contentCardv2">
     <DivImageContainer>
       {props.image && <Image src={props.image} alt={props.title} />}
       <SpanImageOverlay />

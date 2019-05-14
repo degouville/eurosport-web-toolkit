@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveComments module renders LiveComments 1`] = `
+Array [
+  <LiveComment
+    key="21019411"
+    labelPlayButton="playButtonText"
+    liveComment={
+      Object {
+        "id": 21019411,
+        "importance": 0,
+        "ishighlight": 0,
+        "marker": "",
+        "timestamp": 1497195276.073,
+        "tweet": Object {
+          "author": "Eurosport_UK",
+          "creationdate": "2017-06-11 17:32:32",
+          "text": "RT @RafaelNadal: #CHAMP10N",
+          "url": "http://twitter.com/Eurosport_UK/status/873925928350568449",
+        },
+      }
+    }
+  />,
+  <LiveComment
+    key="21019405"
+    labelPlayButton="playButtonText"
+    liveComment={
+      Object {
+        "html": "<a href='google.com'>this is a link example</a><p>Speaking on court after clinching La Decima, Nadal admits it is an impossible feeling to describe what it means to win at RG again. This victory means he is only the third man to lift a Grand Slam singles title as a teenager, in his 20s and in his 30s. Ken Rosewall and Pete Sampras are the other two.  </p>",
+        "id": 21019405,
+        "importance": 0,
+        "ishighlight": 0,
+        "marker": "",
+        "picture": Object {
+          "agency": Object {
+            "id": 194,
+            "name": "Getty Images",
+          },
+          "format": Object {
+            "focalpoint": Object {
+              "X": 1738,
+              "Y": 625,
+            },
+            "height": 1440,
+            "id": 44085990,
+            "url": "https://i.eurosport.com/2017/06/11/2104539-44085990-2560-1440.jpg",
+            "width": 2560,
+          },
+          "id": 2104539,
+          "name": "Rafael Nadal après sa victoire à Roland-Garros",
+        },
+        "text": "Speaking on court after clinching La Decima, Nadal admits it is an impossible feeling to describe what it means to win at RG again. This victory means he is only the third man to lift a Grand Slam singles title as a teenager, in his 20s and in his 30s. Ken Rosewall and Pete Sampras are the other two.",
+        "timestamp": 1497195200.783,
+      }
+    }
+  />,
+  <LiveComment
+    key="21019390"
+    labelPlayButton="playButtonText"
+    liveComment={
+      Object {
+        "html": "<p>Stick it in your diary.</p>",
+        "id": 21019390,
+        "importance": 0,
+        "ishighlight": 0,
+        "marker": "",
+        "text": "Stick it in your diary.",
+        "timestamp": 1497194934.447,
+        "tweet": Object {
+          "author": "Eurosport_UK",
+          "creationdate": "2017-06-11 17:28:16",
+          "text": ".@RafaelNadal emulates his beloved Real Madrid 🙌 
+
+Watch EXCLUSIVE documentary “La Décima” - Monday - 7:30pm - E1 &… https://t.co/6q7e40b1Gb",
+          "url": "http://twitter.com/Eurosport_UK/status/873924854285783040",
+        },
+      }
+    }
+  />,
+  <LiveComment
+    key="21019387"
+    labelPlayButton="playButtonText"
+    liveComment={
+      Object {
+        "id": 21019387,
+        "importance": 0,
+        "ishighlight": 0,
+        "marker": "",
+        "timestamp": 1497194877.02,
+        "tweet": Object {
+          "author": "Eurosport_UK",
+          "creationdate": "2017-06-11 17:24:31",
+          "text": "🏆🏆🏆🏆🏆🏆🏆🏆🏆🏆
+
+Simply incredible from Rafa Nadal
+🙌 https://t.co/IXR21umIKj",
+          "url": "http://twitter.com/Eurosport_UK/status/873923910953316352",
+        },
+      }
+    }
+  />,
+  <LiveComment
+    key="21019376"
+    labelPlayButton="playButtonText"
+    liveComment={
+      Object {
+        "html": "<p><b>GAME, SET AND MATCH! - NADAL 6-2 6-3 6-1 WAWRINKA</b>. Rafael Nadal has won La Decima! The 31-year-old Mallorcan becomes the first player in the Open era to win a single Grand Slam trophy on 10 occasions, dismantling Stan the Man Wawrinka in two hours and five minutes. It's his 15th major overall and moves him above Pete Sampras into second on the all-time list (behind Roger Federer who has 18). The King of Clay returns to his Roland Garros throne without dropping a set and will start next week as the World No.2. His record in Paris now stands at 79 match wins and just two defeats. He played seven matches here this year and didn't drop a set, losing just 35 games. </p>",
+        "icon": Object {
+          "svg": "http://i.eurosport.com/liveicons/web-app/svg/Win@1.5x.svg",
+          "url": "http://i.eurosport.com/liveicons/web-app/png/Win@2x.png",
+        },
+        "id": 21019376,
+        "importance": 1,
+        "ishighlight": 1,
+        "marker": "",
+        "picture": Object {
+          "agency": Object {
+            "id": 16,
+            "name": "Eurosport",
+          },
+          "format": Object {
+            "focalpoint": Object {
+              "X": 716,
+              "Y": 775,
+            },
+            "height": 1440,
+            "id": 44085410,
+            "url": "https://i.eurosport.com/2017/06/11/2104510-44085410-2560-1440.jpg",
+            "width": 2560,
+          },
+          "id": 2104510,
+          "name": "Nadal",
+        },
+        "text": "GAME, SET AND MATCH! - NADAL 6-2 6-3 6-1 WAWRINKA. Rafael Nadal has won La Decima! The 31-year-old Mallorcan becomes the first player in the Open era to win a single Grand Slam trophy on 10 occasions, dismantling Stan the Man Wawrinka in two hours and five minutes. It's his 15th major overall and moves him above Pete Sampras into second on the all-time list (behind Roger Federer who has 18). The King of Clay returns to his Roland Garros throne without dropping a set and will start next week as the World No.2. His record in Paris now stands at 79 match wins and just two defeats. He played seven matches here this year and didn't drop a set, losing just 35 games.",
+        "timestamp": 1497194715.593,
+      }
+    }
+  />,
+]
+`;

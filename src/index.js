@@ -47,6 +47,7 @@ import WatchBar from './modules/Watchbar';
 import BurgerMenu from './modules/BurgerMenu';
 import ViewMore from './modules/ViewMore';
 import PlayerCard from './modules/PlayerCard';
+import LiveComments from './modules/LiveComments';
 
 export {
   Button,
@@ -95,4 +96,5 @@ export {
   ViewMore,
   Betting,
   withReload,
+  LiveComments,
 };

@@ -115,4 +115,7 @@ cardStories
         <Cards.SpanTimeLabel>0:32:03</Cards.SpanTimeLabel>
       </Cards.CardSmall>
     </div>
+  ))
+  .add('Twitter - Tweet', () => (
+    <Cards.Twitter tweetUrl={text('tweetUrl', 'https://twitter.com/Eurosport_FR/status/1113852605682286592')} />
   ));

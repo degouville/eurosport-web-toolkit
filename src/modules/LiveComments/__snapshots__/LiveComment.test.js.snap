@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveComment matches snapshot with all valid props 1`] = `
+<Styled(div)>
+  <Styled(div)>
+    <Styled(div)>
+      comment marker text
+    </Styled(div)>
+  </Styled(div)>
+  <Styled(div)>
+    <Styled(div)
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<b>comment html text</b>",
+        }
+      }
+    />
+    <Styled(div)>
+      <img
+        src="picture.format.url?w=640"
+      />
+    </Styled(div)>
+    <Styled(Twitter)
+      tweetUrl="tweetUrl"
+    />
+    <Styled(div)>
+      <SharedLink
+        labelPlayButton="play button"
+        sharedlink={
+          Object {
+            "image": "shared.link.image",
+            "link": Object {
+              "type": 2,
+            },
+            "title": "shared link title",
+          }
+        }
+      />
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;

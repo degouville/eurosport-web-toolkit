@@ -2,6 +2,7 @@ import Content from './ContentCard';
 import Schedule from './ScheduleCard';
 import VodCompact from './VodCompact';
 import Watchbar from './WatchbarCard';
+import Twitter from './Twitter';
 import { CardBig, CardSmall, SpanTimeLabel } from './ContentCard-v2';
 
 export default {
@@ -12,4 +13,5 @@ export default {
   CardBig,
   CardSmall,
   SpanTimeLabel,
+  Twitter,
 };
