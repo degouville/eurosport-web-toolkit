@@ -24,6 +24,7 @@ const colorsMapping = {
 
 const StyledLabels = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const StyledLabel = styled.div`
@@ -34,6 +35,10 @@ const StyledLabel = styled.div`
   letter-spacing: 1px;
   padding: 7px 15px 7px 15px;
   text-transform: uppercase;
+  ${props =>
+    css`
+      z-index: ${props.layer};
+    `}
   ${props =>
     props.bold &&
     css`
@@ -46,19 +51,6 @@ const StyledLabel = styled.div`
       color: ${colorsMapping[props.color].text};
       background-color: ${colorsMapping[props.color].background};
       position: relative;
-      &:not(:first-child) {
-        &::before {
-          content: '';
-          position: absolute;
-          left: -2px;
-          top: 0;
-          display: block;
-          width: 4px;
-          height: 100%;
-          background-color: ${colorsMapping[props.color].background};
-          transform: skew(-5deg);
-        }
-      }
       &::after {
         content: '';
         position: absolute;
@@ -80,8 +72,8 @@ const StyledLabelIcon = styled.div`
 
 const Labels = ({ labels }) => (
   <StyledLabels>
-    {labels.map(label => (
-      <StyledLabel color={label.color} bold={label.bold} key={label.text + label.color}>
+    {labels.map((label, index) => (
+      <StyledLabel color={label.color} bold={label.bold} key={label.text + label.color} layer={labels.length - index}>
         {label.icon && <StyledLabelIcon>{label.icon}</StyledLabelIcon>}
         {label.text}
       </StyledLabel>

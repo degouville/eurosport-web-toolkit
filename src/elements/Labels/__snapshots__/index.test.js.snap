@@ -6,18 +6,21 @@ exports[`Labels renders labels after event 1`] = `
     bold={true}
     color="white"
     key="French Openwhite"
+    layer={3}
   >
     French Open
   </Styled(div)>
   <Styled(div)
     color="blue"
     key="Men's singles | Finalblue"
+    layer={2}
   >
     Men's singles | Final
   </Styled(div)>
   <Styled(div)
     color="cyan"
     key="Resultcyan"
+    layer={1}
   >
     Result
   </Styled(div)>
@@ -30,12 +33,14 @@ exports[`Labels renders labels before event 1`] = `
     bold={true}
     color="white"
     key="French Openwhite"
+    layer={2}
   >
     French Open
   </Styled(div)>
   <Styled(div)
     color="blue"
     key="Men's singles | Finalblue"
+    layer={1}
   >
     Men's singles | Final
   </Styled(div)>
@@ -48,18 +53,21 @@ exports[`Labels renders labels live event 1`] = `
     bold={true}
     color="white"
     key="French Openwhite"
+    layer={3}
   >
     French Open
   </Styled(div)>
   <Styled(div)
     color="blue"
     key="Men's singles | Finalblue"
+    layer={2}
   >
     Men's singles | Final
   </Styled(div)>
   <Styled(div)
     color="red"
     key="Livered"
+    layer={1}
   >
     <Styled(div)>
       •
