@@ -5,7 +5,7 @@ import * as events from './ad-events';
 import * as adTypes from './ad-types';
 import * as pageTypes from './page-types';
 
-customEventPolyfill();
+typeof window !== 'undefined' && customEventPolyfill();
 
 const getGooglePublisherTagInstance = () => {
   window.googletag = window.googletag || {};

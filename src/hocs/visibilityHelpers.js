@@ -15,7 +15,7 @@ const closestPolyfill = () => {
   }
 };
 
-closestPolyfill();
+typeof window !== 'undefined' && closestPolyfill();
 
 const isElement1ParentOfElement2 = (parent, child) => {
   // eslint-disable-next-line no-nested-ternary
