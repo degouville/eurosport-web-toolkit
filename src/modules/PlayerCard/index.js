@@ -41,12 +41,16 @@ const StyledPreviousMatches = styled.div`
 `;
 
 export const StyledScoreBlock = styled.div`
-  &::before {
-    content: '\00a0';
+  display: inherit;
+`;
+
+const StyledBefore = styled.div`
+  :before {
+    content: '';
     width: 41px;
     height: 20px;
     border-right: 2px solid ${colors.coreLightMinus1};
-    ${props => (props.decorate ? `display: block;` : `display: none;`)}
+    display: block;
   }
 `;
 
@@ -76,7 +80,8 @@ const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches }) => (
         <StyledMatches>
           <ViewMore showLessText="View Less Matches" showMoreText="View More Matches">
             {previousMatches.map((match, index) => (
-              <StyledScoreBlock decorate={index > 0} key={match.id}>
+              <StyledScoreBlock key={match.id}>
+                {index > 0 && <StyledBefore />}
                 <ScoreBlock.ScoreBlock
                   matchUrl={match.matchUrl}
                   data={match.data}

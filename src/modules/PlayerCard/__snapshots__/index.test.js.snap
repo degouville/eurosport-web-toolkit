@@ -31,7 +31,6 @@ exports[`PlayerCard should render as expected 1`] = `
       showMoreText="View More Matches"
     >
       <Styled(div)
-        decorate={false}
         key="123451"
       >
         <ScoreBlock
@@ -120,9 +119,9 @@ exports[`PlayerCard should render as expected 1`] = `
         />
       </Styled(div)>
       <Styled(div)
-        decorate={true}
         key="123452"
       >
+        <Styled(div) />
         <ScoreBlock
           data={
             Object {
@@ -209,9 +208,9 @@ exports[`PlayerCard should render as expected 1`] = `
         />
       </Styled(div)>
       <Styled(div)
-        decorate={true}
         key="123453"
       >
+        <Styled(div) />
         <ScoreBlock
           data={
             Object {
@@ -274,9 +273,9 @@ exports[`PlayerCard should render as expected 1`] = `
         />
       </Styled(div)>
       <Styled(div)
-        decorate={true}
         key="123454"
       >
+        <Styled(div) />
         <ScoreBlock
           data={
             Object {
@@ -363,9 +362,9 @@ exports[`PlayerCard should render as expected 1`] = `
         />
       </Styled(div)>
       <Styled(div)
-        decorate={true}
         key="123455"
       >
+        <Styled(div) />
         <ScoreBlock
           data={
             Object {
