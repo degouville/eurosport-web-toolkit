@@ -8,7 +8,7 @@ import * as breakpoints from '../../breakpoints';
 const StyledPlayerInfosBackground = styled.div`
   position: absolute;
   background: ${coreNeutral9};
-  clip-path: polygon(0 11%, 100% 0%, 100% 89%, 0% 100%);
+  clip-path: polygon(0 11%, 101% 0%, 101% 89%, 0% 100%);
   top: 0;
   bottom: 0;
   left: 0;
@@ -76,6 +76,7 @@ const StyledListTitle = styled.div`
   font-size: 12px;
   color: ${coreNeutral3};
   text-transform: uppercase;
+  margin-bottom: 10px;
 `;
 
 const StyledListDescription = styled.li`
