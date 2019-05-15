@@ -46,6 +46,7 @@ import Article from './modules/Article';
 import WatchBar from './modules/Watchbar';
 import BurgerMenu from './modules/BurgerMenu';
 import ViewMore from './modules/ViewMore';
+import Tabs from './modules/Tabs';
 import PlayerCard from './modules/PlayerCard';
 import LiveComments from './modules/LiveComments';
 
@@ -96,5 +97,6 @@ export {
   ViewMore,
   Betting,
   withReload,
+  Tabs,
   LiveComments,
 };

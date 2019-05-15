@@ -2,8 +2,10 @@
 
 exports[`Carousel test must render the carousel 1`] = `
 <Carousel
+  alignCenter={false}
   className=""
   slideMargin={8}
+  withArrow={true}
 >
   <Styled(div)
     className=""
@@ -18,10 +20,10 @@ exports[`Carousel test must render the carousel 1`] = `
         innerRef={
           Object {
             "current": <div
-              class="css-cvtcsk e595p111"
+              class="css-1r51bj7 e595p111"
             >
               <div
-                class="css-dllr4j e595p112"
+                class="css-1vmhwx1 e595p112"
                 data-test="carousel-slider"
               >
                 <div
@@ -79,14 +81,16 @@ exports[`Carousel test must render the carousel 1`] = `
         trackWidth={0}
       >
         <div
-          className="css-cvtcsk e595p111"
+          className="css-1r51bj7 e595p111"
         >
           <Styled(div)
+            alignCenter={false}
             data-test="carousel-slider"
+            disableNavigation={true}
             innerRef={
               Object {
                 "current": <div
-                  class="css-dllr4j e595p112"
+                  class="css-1vmhwx1 e595p112"
                   data-test="carousel-slider"
                 >
                   <div
@@ -145,7 +149,7 @@ exports[`Carousel test must render the carousel 1`] = `
             trackWidth={0}
           >
             <div
-              className="css-dllr4j e595p112"
+              className="css-1vmhwx1 e595p112"
               data-test="carousel-slider"
             >
               <Styled(div)

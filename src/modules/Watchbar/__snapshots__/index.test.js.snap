@@ -5,8 +5,10 @@ exports[`do not renders Watchbar without cards 1`] = `""`;
 exports[`renders a WatchBar 1`] = `
 <div>
   <Carousel
+    alignCenter={false}
     className=""
     slideMargin={8}
+    withArrow={true}
   >
     <Cards.Content
       card={
@@ -86,8 +88,10 @@ exports[`renders a WatchBar with a title 1`] = `
     </Styled(div)>
   </Styled(div)>
   <Carousel
+    alignCenter={false}
     className=""
     slideMargin={8}
+    withArrow={true}
   >
     <Styled(div)
       isCarouselCard={true}

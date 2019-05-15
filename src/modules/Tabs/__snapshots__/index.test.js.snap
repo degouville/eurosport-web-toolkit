@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs renders its content 1`] = `
+<Tabs
+  defaultTab="keytab1"
+  onItemSelected={[Function]}
+  tabs={
+    Array [
+      Object {
+        "icon": "match",
+        "key": "keytab1",
+        "label": "Match",
+      },
+      Object {
+        "icon": "allmatches",
+        "key": "keytab2",
+        "label": "All Matches",
+      },
+      Object {
+        "icon": "usercomments",
+        "key": "keytab3",
+        "label": "User Comments",
+      },
+      Object {
+        "icon": "livecomments",
+        "key": "keytab4",
+        "label": "Live Comments",
+      },
+    ]
+  }
+>
+  <Carousel
+    alignCenter={true}
+    className=""
+    slideMargin={8}
+    withArrow={false}
+  >
+    <Styled(div)
+      className=""
+      data-test="carousel"
+      slides={Array []}
+    >
+      <div
+        className="css-95cx95 e595p110"
+        data-test="carousel"
+      >
+        <Styled(div)
+          innerRef={
+            Object {
+              "current": <div
+                class="css-1r51bj7 e595p111"
+              >
+                <div
+                  class="css-7o42oc e595p112"
+                  data-test="carousel-slider"
+                >
+                  <div
+                    class="css-14gl6bk e595p113"
+                    data-test="carousel-item-0"
+                  >
+                    <div
+                      class="css-exrqlg e1sbjia20"
+                      data-test="keytab1"
+                    >
+                      <span
+                        class="css-wqt05i e1sbjia22"
+                      />
+                      <span
+                        class="css-hzxt8v e1sbjia23"
+                        data-test="label"
+                      >
+                        Match
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="css-14gl6bk e595p113"
+                    data-test="carousel-item-1"
+                  >
+                    <div
+                      class="css-7uxjvz e1sbjia20"
+                      data-test="keytab2"
+                    >
+                      <span
+                        class="css-8x61u2 e1sbjia22"
+                      />
+                      <span
+                        class="css-hzxt8v e1sbjia23"
+                        data-test="label"
+                      >
+                        All Matches
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="css-14gl6bk e595p113"
+                    data-test="carousel-item-2"
+                  >
+                    <div
+                      class="css-7uxjvz e1sbjia20"
+                      data-test="keytab3"
+                    >
+                      <span
+                        class="css-mgv39g e1sbjia22"
+                      />
+                      <span
+                        class="css-hzxt8v e1sbjia23"
+                        data-test="label"
+                      >
+                        User Comments
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="css-14gl6bk e595p113"
+                    data-test="carousel-item-3"
+                  >
+                    <div
+                      class="css-7uxjvz e1sbjia20"
+                      data-test="keytab4"
+                    >
+                      <span
+                        class="css-1h0idfg e1sbjia22"
+                      />
+                      <span
+                        class="css-hzxt8v e1sbjia23"
+                        data-test="label"
+                      >
+                        Live Comments
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+          trackWidth={0}
+        >
+          <div
+            className="css-1r51bj7 e595p111"
+          >
+            <Styled(div)
+              alignCenter={true}
+              data-test="carousel-slider"
+              disableNavigation={true}
+              innerRef={
+                Object {
+                  "current": <div
+                    class="css-7o42oc e595p112"
+                    data-test="carousel-slider"
+                  >
+                    <div
+                      class="css-14gl6bk e595p113"
+                      data-test="carousel-item-0"
+                    >
+                      <div
+                        class="css-exrqlg e1sbjia20"
+                        data-test="keytab1"
+                      >
+                        <span
+                          class="css-wqt05i e1sbjia22"
+                        />
+                        <span
+                          class="css-hzxt8v e1sbjia23"
+                          data-test="label"
+                        >
+                          Match
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="css-14gl6bk e595p113"
+                      data-test="carousel-item-1"
+                    >
+                      <div
+                        class="css-7uxjvz e1sbjia20"
+                        data-test="keytab2"
+                      >
+                        <span
+                          class="css-8x61u2 e1sbjia22"
+                        />
+                        <span
+                          class="css-hzxt8v e1sbjia23"
+                          data-test="label"
+                        >
+                          All Matches
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="css-14gl6bk e595p113"
+                      data-test="carousel-item-2"
+                    >
+                      <div
+                        class="css-7uxjvz e1sbjia20"
+                        data-test="keytab3"
+                      >
+                        <span
+                          class="css-mgv39g e1sbjia22"
+                        />
+                        <span
+                          class="css-hzxt8v e1sbjia23"
+                          data-test="label"
+                        >
+                          User Comments
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="css-14gl6bk e595p113"
+                      data-test="carousel-item-3"
+                    >
+                      <div
+                        class="css-7uxjvz e1sbjia20"
+                        data-test="keytab4"
+                      >
+                        <span
+                          class="css-1h0idfg e1sbjia22"
+                        />
+                        <span
+                          class="css-hzxt8v e1sbjia23"
+                          data-test="label"
+                        >
+                          Live Comments
+                        </span>
+                      </div>
+                    </div>
+                  </div>,
+                }
+              }
+              isDragging={false}
+              left={0}
+              trackWidth={0}
+            >
+              <div
+                className="css-7o42oc e595p112"
+                data-test="carousel-slider"
+              >
+                <Styled(div)
+                  data-test="carousel-item-0"
+                  key="0"
+                  margin={8}
+                >
+                  <div
+                    className="css-14gl6bk e595p113"
+                    data-test="carousel-item-0"
+                  >
+                    <Styled(div)
+                      data-test="keytab1"
+                      isActive={true}
+                      key="keytab1"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="css-exrqlg e1sbjia20"
+                        data-test="keytab1"
+                        onClick={[Function]}
+                      >
+                        <Styled(span)
+                          icon="match.svg"
+                        >
+                          <span
+                            className="css-wqt05i e1sbjia22"
+                          />
+                        </Styled(span)>
+                        <Styled(span)
+                          data-test="label"
+                        >
+                          <span
+                            className="css-hzxt8v e1sbjia23"
+                            data-test="label"
+                          >
+                            Match
+                          </span>
+                        </Styled(span)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+                <Styled(div)
+                  data-test="carousel-item-1"
+                  key="1"
+                  margin={8}
+                >
+                  <div
+                    className="css-14gl6bk e595p113"
+                    data-test="carousel-item-1"
+                  >
+                    <Styled(div)
+                      data-test="keytab2"
+                      isActive={false}
+                      key="keytab2"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="css-7uxjvz e1sbjia20"
+                        data-test="keytab2"
+                        onClick={[Function]}
+                      >
+                        <Styled(span)
+                          icon="all-matches.svg"
+                        >
+                          <span
+                            className="css-8x61u2 e1sbjia22"
+                          />
+                        </Styled(span)>
+                        <Styled(span)
+                          data-test="label"
+                        >
+                          <span
+                            className="css-hzxt8v e1sbjia23"
+                            data-test="label"
+                          >
+                            All Matches
+                          </span>
+                        </Styled(span)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+                <Styled(div)
+                  data-test="carousel-item-2"
+                  key="2"
+                  margin={8}
+                >
+                  <div
+                    className="css-14gl6bk e595p113"
+                    data-test="carousel-item-2"
+                  >
+                    <Styled(div)
+                      data-test="keytab3"
+                      isActive={false}
+                      key="keytab3"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="css-7uxjvz e1sbjia20"
+                        data-test="keytab3"
+                        onClick={[Function]}
+                      >
+                        <Styled(span)
+                          icon="user-comments.svg"
+                        >
+                          <span
+                            className="css-mgv39g e1sbjia22"
+                          />
+                        </Styled(span)>
+                        <Styled(span)
+                          data-test="label"
+                        >
+                          <span
+                            className="css-hzxt8v e1sbjia23"
+                            data-test="label"
+                          >
+                            User Comments
+                          </span>
+                        </Styled(span)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+                <Styled(div)
+                  data-test="carousel-item-3"
+                  key="3"
+                  margin={8}
+                >
+                  <div
+                    className="css-14gl6bk e595p113"
+                    data-test="carousel-item-3"
+                  >
+                    <Styled(div)
+                      data-test="keytab4"
+                      isActive={false}
+                      key="keytab4"
+                      onClick={[Function]}
+                    >
+                      <div
+                        className="css-7uxjvz e1sbjia20"
+                        data-test="keytab4"
+                        onClick={[Function]}
+                      >
+                        <Styled(span)
+                          icon="live-comments.svg"
+                        >
+                          <span
+                            className="css-1h0idfg e1sbjia22"
+                          />
+                        </Styled(span)>
+                        <Styled(span)
+                          data-test="label"
+                        >
+                          <span
+                            className="css-hzxt8v e1sbjia23"
+                            data-test="label"
+                          >
+                            Live Comments
+                          </span>
+                        </Styled(span)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </Styled(div)>
+          </div>
+        </Styled(div)>
+      </div>
+    </Styled(div)>
+  </Carousel>
+</Tabs>
+`;

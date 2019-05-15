@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object } from '@storybook/addon-knobs';
+import { object, boolean } from '@storybook/addon-knobs';
 import styled from 'react-emotion';
 import { rgba } from 'polished';
 import { Carousel } from '../..';
@@ -48,16 +48,11 @@ const StyledTitle = styled.div`
 `;
 
 indexStories.add('Carousel', () => (
-  <Carousel>
+  <Carousel alignCenter={boolean('alignCenter', false)} withArrow={boolean('withArrow', true)}>
     <StyledTitle>
       <StyledPlayIco />
       En direct sur Eurosport Player
     </StyledTitle>
-    <WatchbarCard card={object('card', watchbar)} />
-    <WatchbarCard card={object('card', watchbar)} />
-    <WatchbarCard card={object('card', watchbar)} />
-    <WatchbarCard card={object('card', watchbar)} />
-    <WatchbarCard card={object('card', watchbar)} />
     <WatchbarCard card={object('card', watchbar)} />
     <WatchbarCard card={object('card', watchbar)} />
     <WatchbarCard card={object('card', watchbar)} />

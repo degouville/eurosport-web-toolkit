@@ -19,11 +19,12 @@ const StyledWrapper = styled.div`
 
 const StyledContainer = styled.div`
   overflow: scroll;
+  width: 100%;
   ${props =>
     props.trackWidth &&
     css`
       overflow: hidden;
-    `}
+    `};
   margin: 0 0 0 8px;
 `;
 
@@ -37,6 +38,13 @@ const StyledSlidesTrack = styled.div`
   margin-right: auto;
   width: auto;
   transition: transform 200ms ease-out;
+  ${props =>
+    props.disableNavigation &&
+    props.alignCenter &&
+    css`
+      display: flex;
+      justify-content: center;
+    `}
   ${props =>
     props.isDragging &&
     css`
@@ -71,7 +79,7 @@ const StyledArrow = styled.div`
   width: 36px;
   margin: 0 1px;
   flex: 0 0 36px;
-  border-radius: 0px 2px 2px 0px;
+  border-radius: 0 2px 2px 0;
   height: 76px;
 
   @media (min-width: 900px) {
@@ -369,11 +377,11 @@ export default class Carousel extends React.Component {
   }
 
   render() {
-    const { children, slideMargin, className } = this.props;
+    const { children, slideMargin, className, withArrow, alignCenter } = this.props;
     const { left, trackWidth, disableNavigation, slides, isDragging } = this.state;
     return (
       <StyledWrapper className={className} slides={slides} data-test="carousel">
-        {!disableNavigation && (
+        {!disableNavigation && withArrow && (
           <StyledArrowLeft onClick={() => this.slide(true)} data-test="carousel-arrow-left">
             <StyledChevron />
           </StyledArrowLeft>
@@ -385,6 +393,8 @@ export default class Carousel extends React.Component {
             trackWidth={trackWidth}
             isDragging={isDragging}
             data-test="carousel-slider"
+            alignCenter={alignCenter}
+            disableNavigation={disableNavigation}
           >
             {children.map((child, index) => (
               /* eslint-disable-next-line react/no-array-index-key */
@@ -394,7 +404,7 @@ export default class Carousel extends React.Component {
             ))}
           </StyledSlidesTrack>
         </StyledContainer>
-        {!disableNavigation && (
+        {!disableNavigation && withArrow && (
           <StyledArrow onClick={() => this.slide()} data-test="carousel-arrow-right">
             <StyledChevron />
           </StyledArrow>
@@ -408,10 +418,14 @@ Carousel.propTypes = {
   children: PropTypes.node,
   slideMargin: PropTypes.number,
   className: PropTypes.string,
+  withArrow: PropTypes.bool,
+  alignCenter: PropTypes.bool,
 };
 
 Carousel.defaultProps = {
   children: null,
   slideMargin: 8,
   className: '',
+  withArrow: true,
+  alignCenter: false,
 };
