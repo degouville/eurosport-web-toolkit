@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerPromotionBox renders its content 1`] = `
+<Styled(div)
+  pictureUrl="https://www.eurosport.fr/watch-eurosport-react/static/media/features-summary-1024.fe17bcd2.jpg"
+>
+  <Styled(div)>
+    <Styled(h2)>
+      Watch Eurosport
+    </Styled(h2)>
+    <Styled(ul)>
+      <Styled(li)
+        key="0"
+      >
+        Watch your favourite sports live and on demand
+      </Styled(li)>
+      <Styled(li)
+        key="1"
+      >
+        Stream to your device at home and on the go
+      </Styled(li)>
+      <Styled(li)
+        key="2"
+      >
+        Grand Slam tennis, cycling, motorsports and much more
+      </Styled(li)>
+    </Styled(ul)>
+    <Styled(ArrowLink)
+      href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
+      type="primary"
+    >
+      Find out more
+    </Styled(ArrowLink)>
+  </Styled(div)>
+</Styled(div)>
+`;

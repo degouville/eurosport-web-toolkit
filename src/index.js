@@ -35,6 +35,7 @@ import AdInit from './components/Advertisement/AdInit';
 import AdManager from './components/Advertisement/AdManager';
 import AdPlacement from './components/Advertisement/AdPlacement';
 import Betting from './components/Betting';
+import PlayerPromotionBox from './components/PlayerPromotionBox';
 import withReload from './hocs/withReload';
 
 import Header from './modules/Header';
@@ -99,4 +100,5 @@ export {
   withReload,
   Tabs,
   LiveComments,
+  PlayerPromotionBox,
 };
