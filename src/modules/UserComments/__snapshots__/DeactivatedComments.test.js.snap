@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeactivatedComments renders a DeactivatedComments Component 1`] = `
+<Styled(div)>
+  <Styled(img)
+    alt="lock icon"
+    src="lock-icon.svg"
+  />
+  <div>
+    Comments are deactivated for this publication
+  </div>
+</Styled(div)>
+`;

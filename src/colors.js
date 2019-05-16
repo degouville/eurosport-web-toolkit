@@ -102,3 +102,6 @@ export const halfBaked = '#87C3D4';
 export const jungleMist = '#AECCD4';
 export const athensGray = '#E3E4EA';
 export const blueZodiac = '#0E143D';
+export const geyser = '#D3D9DE';
+export const paleSky = '#6D777F';
+export const blackPearl = '#050618';

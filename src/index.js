@@ -50,6 +50,7 @@ import ViewMore from './modules/ViewMore';
 import PlayerCard from './modules/PlayerCard';
 import Tabs from './modules/Tabs';
 import LiveComments from './modules/LiveComments';
+import UserComments from './modules/UserComments';
 
 export {
   Button,
@@ -101,4 +102,5 @@ export {
   Tabs,
   LiveComments,
   PlayerPromotionBox,
+  UserComments,
 };

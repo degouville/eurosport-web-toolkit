@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivatedComments renders an activated UserComments Component 1`] = `
+<Fragment>
+  <ScriptInjector
+    async={false}
+    injectPlace="head"
+    innerHTML=""
+    isServer={false}
+    onLoad={[Function]}
+    src="//cdn.livefyre.com/Livefyre.js"
+  />
+  <Styled(div)>
+     comments
+  </Styled(div)>
+  <Styled(div)>
+    <Styled(div)
+      id="livefyre"
+    >
+      <Styled(div)>
+        <Styled(Spinner)
+          className=""
+          color="#35D0FE"
+          width="80px"
+        />
+      </Styled(div)>
+    </Styled(div)>
+    <Styled(div) />
+  </Styled(div)>
+  <Styled(a)
+    href="http://livefyre.fr"
+  >
+    Powered by Livefyre
+  </Styled(a)>
+</Fragment>
+`;
