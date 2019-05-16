@@ -70,8 +70,8 @@ const StyledMatches = styled.div`
   }
 `;
 
-const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches }) => (
-  <StyledContainer>
+const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches, className }) => (
+  <StyledContainer className={className}>
     <StyledBackground backgroundImageUrl={backgroundImageUrl} />
     <StyledPlayerInfos player={playerInfo} />
 
@@ -113,6 +113,11 @@ PlayerCard.propTypes = {
   playerInfo: playerType.isRequired,
   backgroundImageUrl: PropTypes.string.isRequired,
   previousMatches: PropTypes.arrayOf(matchType).isRequired,
+  className: PropTypes.string,
+};
+
+PlayerCard.defaultProps = {
+  className: '',
 };
 
 export default PlayerCard;
