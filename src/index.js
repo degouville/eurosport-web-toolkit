@@ -49,9 +49,10 @@ import BurgerMenu from './modules/BurgerMenu';
 import ViewMore from './modules/ViewMore';
 import PlayerCard from './modules/PlayerCard';
 import Tabs from './modules/Tabs';
+import * as tabsIconType from './modules/Tabs/icon-type';
 import LiveComments from './modules/LiveComments';
 import UserComments from './modules/UserComments';
-import MatchHero from './modules/MatchHero';
+import MatchHero, { MatchHeroWithScore } from './modules/MatchHero';
 
 export {
   Button,
@@ -99,9 +100,11 @@ export {
   AdPlacement,
   ViewMore,
   MatchHero,
+  MatchHeroWithScore,
   Betting,
   withReload,
   Tabs,
+  tabsIconType,
   LiveComments,
   PlayerPromotionBox,
   UserComments,
