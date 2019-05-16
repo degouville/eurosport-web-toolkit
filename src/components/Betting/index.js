@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
 import { coreNeutral9, coreLightMinus1, martinique, manatee } from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadlineBold } from '../../typography';
 import Link from '../../elements/Link';
 import * as breakpoints from '../../breakpoints';
 
@@ -44,7 +44,7 @@ const StyledBettingName = styled.div`
 `;
 
 const StyledBettingSentence = styled.div`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadlineBold};
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
@@ -55,7 +55,7 @@ const StyledBettingSentence = styled.div`
 const StyledBetting = styled.div`
   display: flex;
   align-items: flex-start;
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadlineBold};
   line-height: 30px;
   margin-bottom: 35px;
   justify-content: left;

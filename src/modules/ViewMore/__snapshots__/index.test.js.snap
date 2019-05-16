@@ -108,7 +108,7 @@ exports[`ViewMore renders its content 1`] = `
     onClick={[Function]}
   >
     <span
-      className="css-1dbkody e1e87viu0"
+      className="css-1378kpz e1e87viu0"
       onClick={[Function]}
     >
       View more

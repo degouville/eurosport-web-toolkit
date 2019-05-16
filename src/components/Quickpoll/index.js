@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import * as colors from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadline, fontInterUi } from '../../typography';
 import Button from '../../elements/Button';
 import Spinner from '../../elements/Spinner';
 
@@ -29,7 +29,7 @@ const StyledBackground = styled.div`
 export const StyledTitle = styled.div`
   position: relative;
   font-size: 20px;
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   margin: 26px 19px;
   z-index: 2;
 `;
@@ -52,7 +52,7 @@ const StyledChoice = styled(Button)`
   margin-right: 19px;
   margin-left: 19px;
   color: ${colors.coreLightMinus1};
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 12px;
   svg {
     display: none;

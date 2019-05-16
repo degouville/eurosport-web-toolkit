@@ -10,7 +10,7 @@ import BurgerIcon from '../../elements/BurgerIcon';
 import * as breakpoints from '../../breakpoints';
 import { brandBase, coreLightMinus1, mischka } from '../../colors';
 import Button from '../../elements/Button';
-import { fontFamilies } from '../../typography';
+import { fontHelvetica } from '../../typography';
 import { ReactComponent as Chevron } from '../../assets/chevron.svg';
 
 const StyledButton = styled(Button)`
@@ -103,10 +103,7 @@ export const Breadcrumbs = styled(({ className, items }) => (
 ))`
   font-size: 18px;
   line-height: 21px;
-  font-family: ${fontFamilies.helvetica};
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: antialiased;
+  ${fontHelvetica};
   font-weight: bold;
   padding-left: 5px;
 

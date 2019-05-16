@@ -9,6 +9,34 @@ export const fontFamilies = {
   helvetica: 'Helvetica, Roboto, Arial, sans-serif',
 };
 
+export const fontInterUi = `
+  font-family: ${fontFamilies.interUi};
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+`;
+
+export const fontAlphaHeadline = `
+  font-family: ${fontFamilies.alphaHeadline};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+`;
+
+export const fontAlphaHeadlineBold = `
+  font-family: ${fontFamilies.alphaHeadline};
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+`;
+
+export const fontHelvetica = `
+  font-family: ${fontFamilies.helvetica};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+`;
+
 export const styles = `
 @font-face {
   font-family: 'Inter UI';
@@ -48,7 +76,7 @@ export const styles = `
 }
 
 body {
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 16px;
 }
 
@@ -63,7 +91,7 @@ p {
 `;
 
 export const H1 = styled.h1`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 32px;
   line-height: 40px;
   ${breakpoints.medium(`
@@ -77,7 +105,7 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 28px;
   line-height: 36px;
   ${breakpoints.large(`
@@ -87,7 +115,7 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 24px;
   line-height: 32px;
   ${breakpoints.large(`
@@ -97,7 +125,7 @@ export const H3 = styled.h3`
 `;
 
 export const H4 = styled.h4`
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 16px;
   line-height: 24px;
   ${breakpoints.large(`
@@ -107,14 +135,14 @@ export const H4 = styled.h4`
 `;
 
 export const H5 = styled.h5`
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;
 `;
 
 export const H6 = styled.h6`
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;

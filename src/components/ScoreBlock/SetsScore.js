@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import * as colors from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadline, fontInterUi } from '../../typography';
 import * as breakpoints from '../../breakpoints';
 
 const StyledTeamWrapper = styled.div`
@@ -14,20 +14,20 @@ const StyledTeamWrapper = styled.div`
 
 export const StyledTeamName = styled.div`
   color: ${props => (props.hasWon === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 1em;
   flex-basis: 60%;
   text-transform: uppercase;
   text-align: left;
   span {
-    font-family: ${fontFamilies.interUi};
+    ${fontInterUi};
     font-size: 1em;
   }
 `;
 
 export const StyledTeamSet = styled.span`
   color: ${props => (props.won ? colors.coreLightMinus1 : colors.coreNeutral4)};
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-weight: bold;
   font-size: 1em;
   margin: 0 0.4em;

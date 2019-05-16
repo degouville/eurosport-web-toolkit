@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadline, fontInterUi } from '../../typography';
 import { coreNeutral9, coreLightMinus1, coreNeutral3 } from '../../colors';
 import * as breakpoints from '../../breakpoints';
 
@@ -19,13 +19,13 @@ const StyledPlayerInfosBackground = styled.div`
 const StyledPlayerInfos = styled.div`
   position: relative;
   color: ${coreLightMinus1};
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   padding: 60px 20px 55px;
   margin-top: 17px;
 `;
 
 const StyledPlayerName = styled.div`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 38px;
   line-height: 42px;
   word-break: break-word;
@@ -80,7 +80,7 @@ const StyledListTitle = styled.div`
 `;
 
 const StyledListDescription = styled.li`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 32px;
   align-self: flex-end;
   text-align: center;
@@ -88,7 +88,7 @@ const StyledListDescription = styled.li`
 `;
 
 const StyledRank = styled.span`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-size: 72px;
   line-height: 60px;
 `;

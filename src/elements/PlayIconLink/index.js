@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { actionOneDarkBase, coreLightMinus1, coreLightBase } from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontInterUi } from '../../typography';
 import PlayIcon from '../PlayIcon';
 import Link from '../Link';
 
@@ -23,7 +23,7 @@ export const DivTextBg = styled.div`
   height: 100%;
   padding: 0 16px;
   text-align: center;
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 10px;
   letter-spacing: 1px;
   text-transform: uppercase;

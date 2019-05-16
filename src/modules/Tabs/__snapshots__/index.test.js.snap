@@ -66,7 +66,7 @@ exports[`Tabs renders its content 1`] = `
                         class="css-wqt05i e1sbjia22"
                       />
                       <span
-                        class="css-hzxt8v e1sbjia23"
+                        class="css-1eb0044 e1sbjia23"
                         data-test="label"
                       >
                         Match
@@ -85,7 +85,7 @@ exports[`Tabs renders its content 1`] = `
                         class="css-8x61u2 e1sbjia22"
                       />
                       <span
-                        class="css-hzxt8v e1sbjia23"
+                        class="css-1eb0044 e1sbjia23"
                         data-test="label"
                       >
                         All Matches
@@ -104,7 +104,7 @@ exports[`Tabs renders its content 1`] = `
                         class="css-mgv39g e1sbjia22"
                       />
                       <span
-                        class="css-hzxt8v e1sbjia23"
+                        class="css-1eb0044 e1sbjia23"
                         data-test="label"
                       >
                         User Comments
@@ -123,7 +123,7 @@ exports[`Tabs renders its content 1`] = `
                         class="css-1h0idfg e1sbjia22"
                       />
                       <span
-                        class="css-hzxt8v e1sbjia23"
+                        class="css-1eb0044 e1sbjia23"
                         data-test="label"
                       >
                         Live Comments
@@ -161,7 +161,7 @@ exports[`Tabs renders its content 1`] = `
                           class="css-wqt05i e1sbjia22"
                         />
                         <span
-                          class="css-hzxt8v e1sbjia23"
+                          class="css-1eb0044 e1sbjia23"
                           data-test="label"
                         >
                           Match
@@ -180,7 +180,7 @@ exports[`Tabs renders its content 1`] = `
                           class="css-8x61u2 e1sbjia22"
                         />
                         <span
-                          class="css-hzxt8v e1sbjia23"
+                          class="css-1eb0044 e1sbjia23"
                           data-test="label"
                         >
                           All Matches
@@ -199,7 +199,7 @@ exports[`Tabs renders its content 1`] = `
                           class="css-mgv39g e1sbjia22"
                         />
                         <span
-                          class="css-hzxt8v e1sbjia23"
+                          class="css-1eb0044 e1sbjia23"
                           data-test="label"
                         >
                           User Comments
@@ -218,7 +218,7 @@ exports[`Tabs renders its content 1`] = `
                           class="css-1h0idfg e1sbjia22"
                         />
                         <span
-                          class="css-hzxt8v e1sbjia23"
+                          class="css-1eb0044 e1sbjia23"
                           data-test="label"
                         >
                           Live Comments
@@ -267,7 +267,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-hzxt8v e1sbjia23"
+                            className="css-1eb0044 e1sbjia23"
                             data-test="label"
                           >
                             Match
@@ -308,7 +308,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-hzxt8v e1sbjia23"
+                            className="css-1eb0044 e1sbjia23"
                             data-test="label"
                           >
                             All Matches
@@ -349,7 +349,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-hzxt8v e1sbjia23"
+                            className="css-1eb0044 e1sbjia23"
                             data-test="label"
                           >
                             User Comments
@@ -390,7 +390,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-hzxt8v e1sbjia23"
+                            className="css-1eb0044 e1sbjia23"
                             data-test="label"
                           >
                             Live Comments

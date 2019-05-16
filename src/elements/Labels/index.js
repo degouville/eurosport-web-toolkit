@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { coreNeutral9, coreLightMinus1, royalBlue, utahCrimson, dodgerBlue, brandBase } from '../../colors';
+import { fontHelvetica } from '../../typography';
 
 const colorsMapping = {
   white: {
@@ -29,7 +30,7 @@ const StyledLabels = styled.div`
 
 const StyledLabel = styled.div`
   display: flex;
-  font-family: Helvetica;
+  ${fontHelvetica};
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;

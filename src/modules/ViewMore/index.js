@@ -5,11 +5,11 @@ import { rgba } from 'polished';
 import get from 'lodash/get';
 import throttle from 'lodash/throttle';
 import { coreLightMinus1, coreLightBase, coreDarkPlus1 } from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadlineBold } from '../../typography';
 
 export const StyledButton = styled.span`
   color: ${coreLightBase};
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadlineBold};
   border: 1px solid ${rgba(coreLightMinus1, 0.35)};
   background: ${rgba(coreDarkPlus1, 0.2)};
   border-radius: 3px;

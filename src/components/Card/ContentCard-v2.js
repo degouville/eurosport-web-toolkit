@@ -5,7 +5,7 @@ import LinesEllipsis from 'react-lines-ellipsis';
 import LinesEllipsisResponsive from 'react-lines-ellipsis/lib/responsiveHOC';
 import { coreLightMinus1, coreNeutral3, coreNeutral10, coreLightBase, coreNeutral4 } from '../../colors';
 import * as breakpoints from '../../breakpoints';
-import { fontFamilies, H2 } from '../../typography';
+import { fontAlphaHeadline, fontInterUi, H2 } from '../../typography';
 import Link from '../../elements/Link';
 import PlayIconLink from '../../elements/PlayIconLink';
 
@@ -84,7 +84,7 @@ const DivCardContent = styled.div`
 const DivTopic = styled.div`
   text-decoration: none;
   display: inline-block;
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
@@ -93,12 +93,12 @@ const DivTopic = styled.div`
 
 const Title = styled(H2)`
   color: ${coreLightMinus1};
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   font-weight: normal;
 `;
 
 const DivDescription = styled.div`
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 12px;
   letter-spacing: 1px;
   line-height: 18px;
@@ -111,7 +111,7 @@ const DivTextWrapper = styled.div`
 export const SpanTimeLabel = styled.span`
   position: absolute;
   color: ${coreNeutral4};
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 12px;
   letter-spacing: 1px;
 `;
@@ -131,7 +131,7 @@ const mobileStyles = `
   ${Title} {
     color: ${coreLightBase};
     margin: 11.5px 24px 0 24px;
-    font-family: ${fontFamilies.interUi};
+    ${fontInterUi};
     font-size: 16px;
     line-height: 24px;
   }

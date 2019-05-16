@@ -4,7 +4,7 @@ import styled, { css } from 'react-emotion';
 import get from 'lodash/get';
 import { medium, large, wide } from '../../breakpoints';
 import { jungleMist, halfBaked, turquoiseBlue, coreLightMinus1 } from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadline } from '../../typography';
 
 import Cards from '../../components/Card';
 import SharedLink, { SharedLinkShape } from './SharedLink';
@@ -41,7 +41,7 @@ export const StyledPlainHtml = styled.div`
   * {
     font-size: 14px;
     line-height: 20px;
-    font-family: ${fontFamilies.alphaHeadline};
+    ${fontAlphaHeadline};
 
     ${large(css`
       font-size: 16px;
@@ -62,7 +62,7 @@ export const StyledPlainHtml = styled.div`
   }
 `;
 export const StyledMarker = styled.div`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
   margin-bottom: 5px;
 `;
 const StyledPictogram = styled.img`

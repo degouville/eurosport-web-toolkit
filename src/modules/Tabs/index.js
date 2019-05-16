@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { azureRadiance, coreLightMinus1, stormGray } from '../../colors';
-import { fontFamilies } from '../../typography';
+import { fontAlphaHeadlineBold } from '../../typography';
 import Carousel from '../../components/Carousel';
 import * as icons from './icon-type';
 import * as breakpoints from '../../breakpoints';
@@ -75,7 +75,7 @@ const StyledIcon = styled(BaseIcon)`
 `;
 
 export const StyledLabel = styled.span`
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadlineBold};
   font-size: 12px;
   ${breakpoints.medium(css`
     font-size: 16px;

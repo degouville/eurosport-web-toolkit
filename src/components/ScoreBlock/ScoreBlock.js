@@ -4,7 +4,7 @@ import styled, { css } from 'react-emotion';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import SetsScore, { StyledSpacer } from './SetsScore';
-import { fontFamilies } from '../../typography';
+import { fontInterUi } from '../../typography';
 import circleWithCross from '../../assets/circle-with-cross.svg';
 import greenCircle from '../../assets/green-circle.svg';
 import Link from '../../elements/Link';
@@ -23,7 +23,7 @@ export const StyledButton = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${props => colors[props.color]};
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   text-align: center;
   text-transform: uppercase;
   color: ${colors.coreLightMinus1};
@@ -56,7 +56,7 @@ const StyledScoreWrapper = styled.div`
     !props.hasLeftCircle &&
     css`
       padding-left: 16px;
-    `}
+    `};
   padding-top: 16px;
   padding-bottom: 16px;
   flex-basis: 400px;
@@ -81,7 +81,7 @@ const StyledPlayButton = styled(StyledButton)`
 const StyledBigDot = styled.div`
   display: flex;
   align-items: center;
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   color: ${colors.featureThreeBase};
   margin: 0 11px;
   font-size: 72px;

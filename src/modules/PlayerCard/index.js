@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
-import { fontFamilies } from '../../typography';
+import { fontInterUi } from '../../typography';
 import PlayerInfos, { playerType } from '../../components/PlayerInfos';
 import ScoreBlock, { teamDataType } from '../../components/ScoreBlock';
 import ViewMore, { StyledButton } from '../ViewMore';
@@ -30,7 +30,7 @@ const StyledPlayerInfos = styled(PlayerInfos)`
 `;
 
 const StyledPreviousMatches = styled.div`
-  font-family: ${fontFamilies.interUi};
+  ${fontInterUi};
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1px;
