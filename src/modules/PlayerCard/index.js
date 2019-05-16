@@ -10,7 +10,8 @@ import ViewMore, { StyledButton } from '../ViewMore';
 
 const StyledContainer = styled.div`
   background-color: ${colors.ebonyClay};
-  padding-bottom: 45px;
+  padding-top: 1px;
+  position: relative;
 `;
 
 export const StyledBackground = styled.div`
@@ -18,7 +19,6 @@ export const StyledBackground = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -45px;
   max-height: 150px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,6 +56,7 @@ const StyledBefore = styled.div`
 
 const StyledMatches = styled.div`
   text-align: center;
+  padding-bottom: 45px;
   ${breakpoints.medium(css`
     text-align: left;
   `)};

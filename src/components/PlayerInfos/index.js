@@ -21,7 +21,7 @@ const StyledPlayerInfos = styled.div`
   color: ${coreLightMinus1};
   ${fontInterUi};
   padding: 60px 20px 55px;
-  margin-top: 17px;
+  margin-top: 55px;
 `;
 
 const StyledPlayerName = styled.div`
