@@ -51,6 +51,7 @@ import PlayerCard from './modules/PlayerCard';
 import Tabs from './modules/Tabs';
 import LiveComments from './modules/LiveComments';
 import UserComments from './modules/UserComments';
+import MatchHero from './modules/MatchHero';
 
 export {
   Button,
@@ -97,6 +98,7 @@ export {
   AdManager,
   AdPlacement,
   ViewMore,
+  MatchHero,
   Betting,
   withReload,
   Tabs,

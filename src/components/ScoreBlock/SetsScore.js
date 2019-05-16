@@ -139,11 +139,13 @@ SetsScore.defaultProps = {
   baseFontSize: null,
 };
 
+export const setsScoreType = PropTypes.shape({
+  bottomTeam: teamDataType,
+  topTeam: teamDataType,
+});
+
 SetsScore.propTypes = {
-  data: PropTypes.shape({
-    bottomTeam: teamDataType,
-    topTeam: teamDataType,
-  }).isRequired,
+  data: setsScoreType.isRequired,
   baseFontSize: PropTypes.string,
 };
 

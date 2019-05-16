@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MatchHero /> should render as expected 1`] = `
+<Styled(div)>
+  <Labels
+    labels={
+      Array [
+        Object {
+          "bold": true,
+          "color": "white",
+          "text": "French Open",
+        },
+        Object {
+          "color": "blue",
+          "text": "Men's singles | Final",
+        },
+      ]
+    }
+  />
+  <Styled(div)>
+    <Styled(div)>
+      <Styled(h1)>
+        R.NADAL vs R.FEDERER
+      </Styled(h1)>
+      <Styled(h4)>
+        9 June 2019
+         
+        <Styled(span) />
+        Starting from 20:30
+      </Styled(h4)>
+    </Styled(div)>
+    <Styled(div)>
+      <Button
+        href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml"
+        type="primary"
+      >
+        Subscribe to watch
+      </Button>
+      <Styled(h5)>
+        Watch Eurosport live
+      </Styled(h5)>
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;
+
+exports[`<MatchHeroWithScore />  should render as expected 1`] = `
+<Styled(div)>
+  <Labels
+    labels={
+      Array [
+        Object {
+          "bold": true,
+          "color": "white",
+          "text": "French Open",
+        },
+        Object {
+          "color": "blue",
+          "text": "Men's singles | Final",
+        },
+        Object {
+          "color": "red",
+          "icon": "•",
+          "text": "Live",
+        },
+      ]
+    }
+  />
+  <Styled(div)>
+    <SetsScore
+      baseFontSize={null}
+      data={
+        Object {
+          "bottomTeam": Object {
+            "hasWon": null,
+            "isServing": true,
+            "playerOneName": "A. MENENDEZ-MACEIRAS",
+            "playerTwoName": "A. DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": 7,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 5,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "hasWon": null,
+            "isServing": false,
+            "playerOneName": "A. MENENDEZ-MACEIRAS",
+            "playerTwoName": "A. Rahman MAKSSOUD",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": 2,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        }
+      }
+    />
+  </Styled(div)>
+  <Styled(Component)
+    bgColorIcon="#d50032"
+    bgColorText="#b6012d"
+    onClick={[Function]}
+  >
+    WATCH LIVE
+  </Styled(Component)>
+</Styled(div)>
+`;

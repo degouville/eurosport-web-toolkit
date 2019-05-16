@@ -5,7 +5,7 @@ import { rgba } from 'polished';
 import Button from '../../elements/Button';
 import * as breakpoints from '../../breakpoints';
 import * as colors from '../../colors';
-import { H2, fontFamilies } from '../../typography';
+import { H2, fontAlphaHeadline, fontHelvetica } from '../../typography';
 import Check from '../../assets/red-check.svg';
 
 const StyledWrapper = styled.div`
@@ -47,7 +47,7 @@ const StyledSubContainer = styled.div`
 const StyledTitle = styled(H2)`
   margin-bottom: 30px;
   color: ${colors.athensGray};
-  font-family: ${fontFamilies.alphaHeadline};
+  ${fontAlphaHeadline};
 `;
 
 const StyledList = styled.ul`
@@ -60,7 +60,7 @@ export const StyledItem = styled.li`
   background-size: 24px 19px;
   padding-left: 35px;
   margin-bottom: 23px;
-  font-family: ${fontFamilies.helvetica};
+  ${fontHelvetica};
   font-size: 14px;
 `;
 

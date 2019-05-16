@@ -82,15 +82,17 @@ const Labels = ({ labels }) => (
   </StyledLabels>
 );
 
+export const labelsType = PropTypes.arrayOf(
+  PropTypes.shape({
+    text: PropTypes.string.isRequired,
+    color: PropTypes.oneOf(Object.keys(colorsMapping)),
+    bold: PropTypes.bool,
+    icon: PropTypes.string,
+  })
+);
+
 Labels.propTypes = {
-  labels: PropTypes.arrayOf(
-    PropTypes.shape({
-      text: PropTypes.string.isRequired,
-      color: PropTypes.oneOf(Object.keys(colorsMapping)),
-      bold: PropTypes.bool,
-      icon: PropTypes.string,
-    })
-  ).isRequired,
+  labels: labelsType.isRequired,
 };
 
 export default Labels;
