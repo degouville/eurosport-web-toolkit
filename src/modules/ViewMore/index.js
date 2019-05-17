@@ -7,7 +7,9 @@ import throttle from 'lodash/throttle';
 import { coreLightMinus1, coreLightBase, coreDarkPlus1 } from '../../colors';
 import { fontAlphaHeadlineBold } from '../../typography';
 
-export const StyledButton = styled.span`
+export const StyledViewMoreButtonWrapper = styled.div``;
+
+export const StyledViewMoreButton = styled.span`
   color: ${coreLightBase};
   ${fontAlphaHeadlineBold};
   border: 1px solid ${rgba(coreLightMinus1, 0.35)};
@@ -75,7 +77,7 @@ export default class ViewMore extends React.Component {
   }
 
   render() {
-    const { children, showLessText, showMoreText } = this.props;
+    const { children, showLessText, showMoreText, showLessItemCount } = this.props;
     const { expanded, animate } = this.state;
     if (!children || !children.length) return null;
     return (
@@ -88,8 +90,12 @@ export default class ViewMore extends React.Component {
         >
           {children}
         </StyledList>
-        {children.length > 1 && (
-          <StyledButton onClick={() => this.handleClick()}>{expanded ? showLessText : showMoreText}</StyledButton>
+        {children.length > 1 && children.length > showLessItemCount && (
+          <StyledViewMoreButtonWrapper>
+            <StyledViewMoreButton onClick={() => this.handleClick()}>
+              {expanded ? showLessText : showMoreText}
+            </StyledViewMoreButton>
+          </StyledViewMoreButtonWrapper>
         )}
       </>
     );

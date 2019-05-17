@@ -53,6 +53,7 @@ import * as tabsIconType from './modules/Tabs/icon-type';
 import LiveComments from './modules/LiveComments';
 import UserComments from './modules/UserComments';
 import MatchHero, { MatchHeroWithScore } from './modules/MatchHero';
+import AllMatches from './modules/AllMatches';
 
 export {
   Button,
@@ -108,4 +109,5 @@ export {
   LiveComments,
   PlayerPromotionBox,
   UserComments,
+  AllMatches,
 };

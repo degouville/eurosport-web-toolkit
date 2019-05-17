@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'react-emotion';
-import { object, text } from '@storybook/addon-knobs';
+import { object, text, number } from '@storybook/addon-knobs';
 import { ViewMore } from '../..';
 import { coreLightMinus1 } from '../../colors';
 
@@ -27,7 +27,11 @@ for (let i = 0; i < 10; i += 1) {
 
 viewmore.add('viewmore', () => (
   <Wrapper>
-    <ViewMore showMoreText={text('showMoreText', labels.showMore)} showLessText={text('showLessText', labels.showLess)}>
+    <ViewMore
+      showMoreText={text('showMoreText', labels.showMore)}
+      showLessText={text('showLessText', labels.showLess)}
+      showLessItemCount={number('showLessItemCount', 1)}
+    >
       {object('children', children)}
     </ViewMore>
   </Wrapper>

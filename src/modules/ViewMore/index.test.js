@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import ViewMore, { StyledButton } from '.';
+import ViewMore, { StyledViewMoreButton } from '.';
 
 const labels = {
   showLess: 'View less',
@@ -30,9 +30,9 @@ describe('ViewMore', () => {
         </ViewMore>
       );
       wrapper.setState({ expanded: true });
-      expect(wrapper.find(StyledButton).text()).toContain(labels.showLess);
+      expect(wrapper.find(StyledViewMoreButton).text()).toContain(labels.showLess);
       wrapper.setState({ expanded: false });
-      expect(wrapper.find(StyledButton).text()).toContain(labels.showMore);
+      expect(wrapper.find(StyledViewMoreButton).text()).toContain(labels.showMore);
     });
 
     it('should update the state when the button is clicked', () => {
@@ -42,9 +42,9 @@ describe('ViewMore', () => {
         </ViewMore>
       );
       expect(wrapper.state().expanded).toEqual(false);
-      wrapper.find(StyledButton).simulate('click');
+      wrapper.find(StyledViewMoreButton).simulate('click');
       expect(wrapper.state().expanded).toEqual(true);
-      wrapper.find(StyledButton).simulate('click');
+      wrapper.find(StyledViewMoreButton).simulate('click');
       expect(wrapper.state().expanded).toEqual(false);
     });
   });

@@ -12,7 +12,7 @@ exports[`ViewMore renders its content 1`] = `
     innerRef={
       Object {
         "current": <ul
-          class="css-1ewy8bg e1e87viu1"
+          class="css-1ewy8bg e1e87viu2"
         >
           <div>
             match
@@ -50,7 +50,7 @@ exports[`ViewMore renders its content 1`] = `
     isExpanded={false}
   >
     <ul
-      className="css-1ewy8bg e1e87viu1"
+      className="css-1ewy8bg e1e87viu2"
     >
       <div
         key="0"
@@ -104,15 +104,21 @@ exports[`ViewMore renders its content 1`] = `
       </div>
     </ul>
   </Styled(ul)>
-  <Styled(span)
-    onClick={[Function]}
-  >
-    <span
-      className="css-1378kpz e1e87viu0"
-      onClick={[Function]}
+  <Styled(div)>
+    <div
+      className="css-0 e1e87viu0"
     >
-      View more
-    </span>
-  </Styled(span)>
+      <Styled(span)
+        onClick={[Function]}
+      >
+        <span
+          className="css-1378kpz e1e87viu1"
+          onClick={[Function]}
+        >
+          View more
+        </span>
+      </Styled(span)>
+    </div>
+  </Styled(div)>
 </ViewMore>
 `;

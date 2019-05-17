@@ -41,7 +41,10 @@ export const StyledTeamSet = styled.span`
     top: -0.4em;
     right: -0.2em;
   }
-  ${breakpoints.small(css`
+  ${breakpoints.medium(css`
+    margin: 0 0.6em;
+  `)};
+  ${breakpoints.large(css`
     margin: 0 0.8em;
   `)};
 `;

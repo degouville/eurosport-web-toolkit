@@ -39,7 +39,7 @@ export const StyledButton = styled.div`
       &:after {
         content: '\u2192';
       }
-      ${breakpoints.small(css`
+      ${breakpoints.large(css`
         &:after {
           content: ${props.contentText};
         }
@@ -70,7 +70,7 @@ const StyledScoreWrapper = styled.div`
 const StyledPlayButton = styled(StyledButton)`
   font-size: 24px;
   display: none;
-  ${breakpoints.small(css`
+  ${breakpoints.large(css`
     display: inherit;
   `)};
   &:after {

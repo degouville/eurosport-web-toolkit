@@ -6,7 +6,7 @@ import * as breakpoints from '../../breakpoints';
 import { fontInterUi } from '../../typography';
 import PlayerInfos, { playerType } from '../../components/PlayerInfos';
 import ScoreBlock, { teamDataType } from '../../components/ScoreBlock';
-import ViewMore, { StyledButton } from '../ViewMore';
+import ViewMore, { StyledViewMoreButton } from '../ViewMore';
 
 const StyledContainer = styled.div`
   background-color: ${colors.ebonyClay};
@@ -63,7 +63,7 @@ const StyledMatches = styled.div`
   ul {
     margin-bottom: 45px;
   }
-  ${StyledButton} {
+  ${StyledViewMoreButton} {
     ${breakpoints.medium(css`
       margin-left: 70px;
     `)};
@@ -99,7 +99,7 @@ const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches, className
   </StyledContainer>
 );
 
-const matchType = PropTypes.shape({
+export const matchType = PropTypes.shape({
   id: PropTypes.number.isRequired,
   matchUrl: PropTypes.string.isRequired,
   data: PropTypes.shape({
