@@ -5,7 +5,7 @@ import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import { fontInterUi } from '../../typography';
 import PlayerInfos, { playerType } from '../../components/PlayerInfos';
-import ScoreBlock, { teamDataType } from '../../components/ScoreBlock';
+import ScoreBlock, { scoreBlockType } from '../../components/ScoreBlock';
 import ViewMore, { StyledViewMoreButton } from '../ViewMore';
 
 const StyledContainer = styled.div`
@@ -100,20 +100,10 @@ const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches, className
   </StyledContainer>
 );
 
-export const matchType = PropTypes.shape({
-  id: PropTypes.number.isRequired,
-  matchUrl: PropTypes.string.isRequired,
-  data: PropTypes.shape({
-    bottomTeam: teamDataType,
-    topTeam: teamDataType,
-  }).isRequired,
-  hasWon: PropTypes.bool,
-});
-
 PlayerCard.propTypes = {
   playerInfo: playerType.isRequired,
   backgroundImageUrl: PropTypes.string.isRequired,
-  previousMatches: PropTypes.arrayOf(matchType).isRequired,
+  previousMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   className: PropTypes.string,
 };
 

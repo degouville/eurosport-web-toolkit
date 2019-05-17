@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
-import SetsScore, { StyledSpacer } from './SetsScore';
+import SetsScore, { StyledSpacer, setsScoreType } from './SetsScore';
 import { fontInterUi } from '../../typography';
 import circleWithCross from '../../assets/circle-with-cross.svg';
 import greenCircle from '../../assets/green-circle.svg';
@@ -125,34 +125,20 @@ const ScoreBlock = ({ matchUrl, data, isLive, isWatchable, displayLeftCircle }) 
   );
 };
 
-export const teamDataType = PropTypes.shape({
-  hasWon: PropTypes.bool,
-  isServing: PropTypes.bool,
-  playerOneName: PropTypes.string,
-  playerTwoName: PropTypes.string,
-  sets: PropTypes.arrayOf(
-    PropTypes.shape({
-      set: PropTypes.number,
-      score: PropTypes.number,
-      tie: PropTypes.number,
-      won: PropTypes.bool,
-    })
-  ),
-});
+export const scoreBlockType = {
+  matchUrl: PropTypes.string.isRequired,
+  data: setsScoreType.isRequired,
+  isLive: PropTypes.bool,
+  isWatchable: PropTypes.bool,
+  displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
+};
 
 ScoreBlock.defaultProps = {
   displayLeftCircle: false,
+  isLive: false,
+  isWatchable: false,
 };
 
-ScoreBlock.propTypes = {
-  matchUrl: PropTypes.string.isRequired,
-  data: PropTypes.shape({
-    bottomTeam: teamDataType,
-    topTeam: teamDataType,
-  }).isRequired,
-  isLive: PropTypes.bool.isRequired,
-  isWatchable: PropTypes.bool.isRequired,
-  displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
-};
+ScoreBlock.propTypes = scoreBlockType;
 
 export default ScoreBlock;

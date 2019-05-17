@@ -5,10 +5,9 @@ import { medium } from '../../breakpoints';
 import { coreLightMinus1, mischka, coreLightBase } from '../../colors';
 import { H3 } from '../../typography';
 import { ReactComponent as Chevron } from '../../assets/chevron.svg';
-import ScoreBlock from '../../components/ScoreBlock';
+import ScoreBlock, { scoreBlockType } from '../../components/ScoreBlock';
 import Grid, { Column } from '../../elements/Grid';
 import ViewMore, { StyledViewMoreButton, StyledViewMoreButtonWrapper } from '../ViewMore';
-import { matchType } from '../PlayerCard';
 
 const StyledBreadcrumbElement = styled(H3)`
   color: ${mischka};
@@ -162,7 +161,7 @@ MatchGrid.defaultProps = {
 
 MatchGrid.propTypes = {
   title: PropTypes.string.isRequired,
-  matches: PropTypes.arrayOf(matchType).isRequired,
+  matches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   showMoreText: PropTypes.string.isRequired,
   showLessText: PropTypes.string.isRequired,
   eventName: PropTypes.string,
@@ -205,9 +204,9 @@ AllMatches.defaultProps = {
 };
 
 AllMatches.propTypes = {
-  liveMatches: PropTypes.arrayOf(matchType).isRequired,
-  upcomingMatches: PropTypes.arrayOf(matchType).isRequired,
-  finishedMatches: PropTypes.arrayOf(matchType).isRequired,
+  liveMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
+  upcomingMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
+  finishedMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   showMoreText: PropTypes.string.isRequired,
   showLessText: PropTypes.string.isRequired,
   eventName: PropTypes.string,
