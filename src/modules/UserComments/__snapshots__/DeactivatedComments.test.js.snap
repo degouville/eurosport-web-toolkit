@@ -7,7 +7,7 @@ exports[`DeactivatedComments renders a DeactivatedComments Component 1`] = `
     src="lock-icon.svg"
   />
   <div>
-    Comments are deactivated for this publication
+    deactivated comments translation
   </div>
 </Styled(div)>
 `;

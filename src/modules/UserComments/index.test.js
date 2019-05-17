@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import UserComments from '.';
+import DeactivatedComments from './DeactivatedComments';
 import activatedCommentsConfig from './mockData/activatedComments.json';
 import deactivatedCommentsConfig from './mockData/deactivatedComments.json';
 
@@ -30,6 +31,6 @@ describe('UserComments', () => {
     wrapper.setProps({
       livefyreConfig: { deactivatedCommentsConfig },
     });
-    expect(wrapper.find('DeactivatedComments')).toHaveLength(1);
+    expect(wrapper.find(DeactivatedComments)).toHaveLength(1);
   });
 });

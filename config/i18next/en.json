@@ -1,0 +1,75 @@
+{
+  "match_page": {
+    "tabs": {
+      "match": "Match",
+      "allmatches": "All matches",
+      "usercomments": "User comments",
+      "livecomments": "Live commentary"
+    },
+    "hero": {
+      "share": "Share",
+      "live_label": "Live",
+      "set_reminder": "Set reminder",
+      "result_label": "Result",
+      "starting_from": "Starting from {{time}}",
+      "subscribe_button": "Subscribe to watch",
+      "watch_live_button": "Watch live",
+      "watch_replay_button": "Watch replay",
+      "subscribe_description": "Marketing message lorem ipsum toro dere"
+    },
+    "watch": {
+      "title": "Watch Eurosport",
+      "button": "Find out more",
+      "description3": "Grand slam tennis, cycling, motorsports and much more",
+      "description2": "Stream to your devices at home or on the go",
+      "description1": "Watch your favourite sports live and on demand"
+    },
+    "related": {
+      "title": "Related",
+      "subtitle": "Videos & articles",
+      "replay_button": "Replay",
+      "highlights_button": "Highlights"
+    },
+    "playercard": {
+      "age": "Age",
+      "height": "Height (m)",
+      "weight": "Weight (Kg)",
+      "ranking": "{{competition}} ranking",
+      "previous_matches": "Previous matches",
+      "view_less_matches": "View less matches",
+      "view_more_matches": "View more matches"
+    },
+    "score": {
+      "live_button": "Live",
+      "match_info_button": "Match info"
+    },
+    "ads": {
+      "advertisement": "Advertisement"
+    },
+    "allmatches": {
+      "upcoming": "Upcoming",
+      "finished": "Finished",
+      "live_now": "Live now",
+      "full_bracket": "Full bracket",
+      "match_schedule": "Match schedule",
+      "view_more_matches": "View more matches",
+      "view_less_matches": "View less matches"
+    },
+    "betting": {
+      "winamax": {
+        "title": "Winamax"
+      }
+    },
+    "livecomments": {
+      "watch_video_button": "Watch this video"
+    },
+    "usercomments": {
+      "deactivated_message": "Comments are deactivated for this publication"
+    }
+  },
+  "common": {
+    "footer": {
+      "copyright": "© Eurosport, a Discovery Company 2019 – All rights reserved"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
+import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 import { fontAlphaHeadline } from '../../typography';
 import { medium } from '../../breakpoints';
 import lockIcon from '../../assets/lock-icon.svg';
@@ -24,11 +26,15 @@ const StyledIcon = styled.img`
   height: 46px;
 `;
 
-const DeactivatedComments = () => (
+export const DeactivatedComments = ({ t }) => (
   <StyledWrapper>
     <StyledIcon src={lockIcon} alt="lock icon" />
-    <div>Comments are deactivated for this publication</div>
+    <div>{t('match_page.usercomments.deactivated_message')}</div>
   </StyledWrapper>
 );
 
-export default DeactivatedComments;
+DeactivatedComments.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation()(DeactivatedComments);
