@@ -124,7 +124,7 @@ const teamDataType = PropTypes.shape({
   sets: PropTypes.arrayOf(
     PropTypes.shape({
       set: PropTypes.number,
-      score: PropTypes.number,
+      score: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
       tie: PropTypes.number,
       won: PropTypes.bool,
     })
