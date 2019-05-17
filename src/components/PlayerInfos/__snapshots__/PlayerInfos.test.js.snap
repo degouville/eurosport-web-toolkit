@@ -4,6 +4,13 @@ exports[`PlayerInfos renders its content 1`] = `
 <Styled(div)>
   <Styled(div)>
     <Styled(div)>
+      <img
+        alt="Rafael Nadal"
+        data-test="player-picture"
+        src="https://i.eurosport.com/_iss_/person/pp_clubteam/large/435121.jpg"
+      />
+    </Styled(div)>
+    <Styled(div)>
       <Styled(div)>
         Rafael
          
@@ -41,13 +48,6 @@ exports[`PlayerInfos renders its content 1`] = `
       </Styled(ul)>
     </Styled(div)>
     <Styled(div)>
-      <Styled(div)>
-        <img
-          alt="Rafael Nadal"
-          data-test="player-picture"
-          src="https://i.eurosport.com/_iss_/person/pp_clubteam/large/435121.jpg"
-        />
-      </Styled(div)>
       <Styled(div)>
         <Styled(div)>
            ranking

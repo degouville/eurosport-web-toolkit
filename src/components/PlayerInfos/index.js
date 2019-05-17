@@ -30,7 +30,7 @@ const StyledPlayerName = styled.div`
   line-height: 42px;
   word-break: break-word;
   margin-bottom: 10px;
-  transition: cubic-bezier(0.75, -0.5, 0, 1.75) 0.35s font-size;
+  transition: ease-out 0.15s font-size;
   ${breakpoints.medium(css`
     font-size: 48px;
     line-height: 42px;
@@ -44,7 +44,10 @@ const StyledPicContainer = styled.div`
   flex: 0 0 130px;
   flex-basis: auto;
   overflow: hidden;
-  transition: cubic-bezier(0.75, -0.5, 0, 1.75) 0.35s all;
+  transition: ease-out 0.15s all;
+  position: absolute;
+  right: 0;
+  top: -100px;
   ${breakpoints.medium(css`
     height: 130px;
     width: 130px;
@@ -102,7 +105,7 @@ const StyledFlex = styled.div`
   z-index: 1;
 `;
 
-const StyledCol = styled.div`
+const StyledBlock = styled.div`
   flex-basis: calc(100% - 130px);
   display: flex;
   flex-direction: column;
@@ -112,7 +115,7 @@ const StyledCol = styled.div`
     flex-basis: 100px;
     position: relative;
     top: -104px;
-    transition: cubic-bezier(0.75, -0.5, 0, 1.75) 0.35s top;
+    transition: ease-out 0.15s top;
     ${breakpoints.medium(css`
       top: 0;
       margin-top: -80px;
@@ -127,7 +130,7 @@ const StyledList = styled.ul`
   width: initial;
   margin-top: 30px;
   width: calc(100% + 100px);
-  transition: cubic-bezier(0.75, -0.5, 0, 1.75) 0.35s all;
+  transition: ease-out 0.15s all;
   ${breakpoints.medium(css`
     margin-top: 45px;
     width: 90%;
@@ -135,13 +138,19 @@ const StyledList = styled.ul`
 `;
 
 const StyledRanking = styled.div`
-  margin-top: 15px;
+  padding-top: 120px;
+  ${breakpoints.medium(css`
+    width: 130px;
+  `)};
 `;
 
 const PlayerInfos = ({ player }) => (
   <StyledPlayerInfos>
     <StyledFlex>
-      <StyledCol>
+      <StyledPicContainer>
+        <img data-test="player-picture" src={player.pictureUrl} alt={`${player.firstName} ${player.lastName}`} />
+      </StyledPicContainer>
+      <StyledBlock>
         <>
           <StyledPlayerName>
             {player.firstName} {player.lastName}
@@ -165,16 +174,13 @@ const PlayerInfos = ({ player }) => (
             {player.age}
           </StyledListDescription>
         </StyledList>
-      </StyledCol>
-      <StyledCol>
-        <StyledPicContainer>
-          <img data-test="player-picture" src={player.pictureUrl} alt={`${player.firstName} ${player.lastName}`} />
-        </StyledPicContainer>
+      </StyledBlock>
+      <StyledBlock>
         <StyledRanking>
           <StyledListTitle>{player.competition} ranking</StyledListTitle>
           <StyledRank>{player.ranking}</StyledRank>
         </StyledRanking>
-      </StyledCol>
+      </StyledBlock>
     </StyledFlex>
     <StyledPlayerInfosBackground />
   </StyledPlayerInfos>
