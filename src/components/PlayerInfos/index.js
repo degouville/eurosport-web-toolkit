@@ -35,6 +35,13 @@ const StyledPlayerName = styled.div`
     font-size: 48px;
     line-height: 42px;
   `)};
+  ${props =>
+    props.textLength > 15 &&
+    css`
+      ${breakpoints.medium(css`
+        font-size: 30px;
+      `)};
+    `}
 `;
 
 const StyledPicContainer = styled.div`
@@ -152,8 +159,14 @@ const PlayerInfos = ({ player }) => (
       </StyledPicContainer>
       <StyledBlock>
         <>
-          <StyledPlayerName>
-            {player.firstName} {player.lastName}
+          <StyledPlayerName
+            textLength={
+              player.firstName.length > player.lastName.length ? player.firstName.length : player.lastName.length
+            }
+          >
+            {player.firstName}
+            <br />
+            {player.lastName}
           </StyledPlayerName>
           <StyledCountryContainer>
             <StyledFlag data-test="flag-picture" src={player.flagUrl} alt={player.country} />

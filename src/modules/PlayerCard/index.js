@@ -12,6 +12,7 @@ const StyledContainer = styled.div`
   background-color: ${colors.ebonyClay};
   padding-top: 1px;
   position: relative;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
 `;
 
 export const StyledBackground = styled.div`

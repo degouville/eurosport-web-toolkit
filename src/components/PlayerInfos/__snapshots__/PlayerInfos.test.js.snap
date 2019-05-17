@@ -11,9 +11,11 @@ exports[`PlayerInfos renders its content 1`] = `
       />
     </Styled(div)>
     <Styled(div)>
-      <Styled(div)>
+      <Styled(div)
+        textLength={6}
+      >
         Rafael
-         
+        <br />
         Nadal
       </Styled(div)>
       <Styled(div)>
