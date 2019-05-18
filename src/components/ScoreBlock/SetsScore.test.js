@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import SetsScore, { StyledTeamName, StyledTeamSet } from './SetsScore';
+import SetsScore, { StyledTeamName, StyledTeamSet, isTeam } from './SetsScore';
 import { pastMatchData, liveMatchDataSet } from './mockData/mockScoreBlockData';
 
 describe('<SetsScore />', () => {
@@ -37,5 +37,17 @@ describe('<SetsScore />', () => {
     const biggerWrapper = mount(<SetsScore data={liveMatchDataSet} />);
     const thirdSet = biggerWrapper.find(StyledTeamSet).at(2);
     expect(thirdSet.exists('sup')).toEqual(true);
+  });
+
+  describe('isTeam', () => {
+    it('returns true if two players are sent', () => {
+      expect(isTeam({ playerOneName: 'player1', playerTwoName: 'player2' })).toEqual(true);
+    });
+    it('returns false if less than two players', () => {
+      expect(isTeam({ playerOneName: '', playerTwoName: 'player2' })).toEqual(false);
+      expect(isTeam({ playerOneName: 'player1', playerTwoName: '' })).toEqual(false);
+      expect(isTeam({ playerOneName: null, playerTwoName: 'player2' })).toEqual(false);
+      expect(isTeam({ playerOneName: 'player1', playerTwoName: null })).toEqual(false);
+    });
   });
 });

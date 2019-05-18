@@ -82,3 +82,20 @@ export const liveMatchDataSet = {
     isServing: true,
   },
 };
+
+export const pastMatchOnePlayerNoScoresDataSet = {
+  topTeam: {
+    playerOneName: '',
+    playerTwoName: '',
+    sets: [],
+    hasWon: null,
+    isServing: false,
+  },
+  bottomTeam: {
+    playerOneName: 'A. MENENDEZ-MACEIRAS',
+    playerTwoName: 'A. DAVIDOVICH FOKINA',
+    sets: [],
+    hasWon: null,
+    isServing: false,
+  },
+};

@@ -6,6 +6,7 @@ exports[`<SetsScore /> Renders a SetsScore component 1`] = `
   data-test="sets-score-wrapper"
 >
   <Team
+    isTeamMatch={true}
     teamData={
       Object {
         "hasWon": null,
@@ -49,6 +50,7 @@ exports[`<SetsScore /> Renders a SetsScore component 1`] = `
   />
   <Styled(hr) />
   <Team
+    isTeamMatch={true}
     teamData={
       Object {
         "hasWon": null,

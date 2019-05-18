@@ -55,8 +55,14 @@ const StyledTeamSets = styled.div`
   justify-content: space-between;
 `;
 
-const Team = ({ teamData }) => {
-  const { playerOneName = '', playerTwoName, sets, isServing, hasWon } = teamData;
+const Team = ({ teamData, isTeamMatch }) => {
+  const { sets, isServing, hasWon } = teamData;
+  let { playerOneName = '', playerTwoName = '' } = teamData;
+
+  // Set non-breaking space when a team is missing to keep the display ratio
+  playerOneName = playerOneName === '' ? '\u00A0' : playerOneName;
+  playerTwoName = playerTwoName === '' && isTeamMatch ? '\u00A0' : playerTwoName;
+
   return (
     <StyledTeamWrapper>
       <StyledTeamName hasWon={hasWon}>
@@ -111,13 +117,19 @@ export const StyledSpacer = styled.hr`
   border-top-color: ${colors.coreLightMinus1};
 `;
 
-const SetsScore = ({ data, baseFontSize }) => (
-  <StyledWrapper baseFontSize={baseFontSize} data-test="sets-score-wrapper">
-    <Team teamData={data.topTeam} />
-    <StyledSpacer />
-    <Team teamData={data.bottomTeam} />
-  </StyledWrapper>
-);
+export const isTeam = team =>
+  team.playerOneName != null && team.playerOneName !== '' && team.playerTwoName != null && team.playerTwoName !== '';
+
+const SetsScore = ({ data, baseFontSize }) => {
+  const isTeamMatch = isTeam(data.topTeam) || isTeam(data.bottomTeam);
+  return (
+    <StyledWrapper baseFontSize={baseFontSize} data-test="sets-score-wrapper">
+      <Team teamData={data.topTeam} isTeamMatch={isTeamMatch} />
+      <StyledSpacer />
+      <Team teamData={data.bottomTeam} isTeamMatch={isTeamMatch} />
+    </StyledWrapper>
+  );
+};
 
 const teamDataType = PropTypes.shape({
   hasWon: PropTypes.bool,
@@ -136,6 +148,10 @@ const teamDataType = PropTypes.shape({
 
 Team.propTypes = {
   teamData: teamDataType.isRequired,
+  isTeamMatch: PropTypes.bool,
+};
+Team.defaultProps = {
+  isTeamMatch: false,
 };
 
 SetsScore.defaultProps = {
