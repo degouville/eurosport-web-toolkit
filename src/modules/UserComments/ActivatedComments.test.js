@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ActivatedComments, { StyledContentCss, StyledSpinnerWrapper } from './ActivatedComments';
+import { ActivatedComments, StyledContentCss, StyledSpinnerWrapper } from './ActivatedComments';
 import activatedCommentsConfig from './mockData/activatedComments.json';
 import ScriptInjector from '../../components/ScriptInjector';
 
@@ -28,6 +28,7 @@ describe('ActivatedComments', () => {
         loginCallback={() => null}
         logoutCallback={() => null}
         userToken=""
+        t={key => key}
       />
     );
   });

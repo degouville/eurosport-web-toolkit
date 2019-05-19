@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import UserComments from '.';
+import ActivatedComments from './ActivatedComments';
 import DeactivatedComments from './DeactivatedComments';
 import activatedCommentsConfig from './mockData/activatedComments.json';
 import deactivatedCommentsConfig from './mockData/deactivatedComments.json';
@@ -24,7 +25,7 @@ describe('UserComments', () => {
   });
 
   it('renders an activated UserComments Component', () => {
-    expect(wrapper.find('ActivatedComments')).toHaveLength(1);
+    expect(wrapper.find(ActivatedComments)).toHaveLength(1);
   });
 
   it('renders a deactivated UserComments Component', () => {

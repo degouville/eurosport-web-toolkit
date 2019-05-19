@@ -64,7 +64,9 @@
       "watch_video_button": "Watch this video"
     },
     "usercomments": {
-      "deactivated_message": "Comments are deactivated for this publication"
+      "deactivated_message": "Comments are deactivated for this publication",
+      "nb_comments": "{{count}} comment",
+      "nb_comments_plural": "{{count}} comments"
     }
   },
   "common": {

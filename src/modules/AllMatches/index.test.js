@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import AllMatches from '.';
+import { AllMatches } from '.';
 import { liveMatches, upcomingMatches, finishedMatches } from './mockData/mockMatches';
 
 describe('AllMatches', () => {
@@ -8,6 +8,7 @@ describe('AllMatches', () => {
     expect(
       shallow(
         <AllMatches
+          t={key => key}
           liveMatches={liveMatches}
           upcomingMatches={upcomingMatches}
           finishedMatches={finishedMatches}

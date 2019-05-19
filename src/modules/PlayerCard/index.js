@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import { withTranslation } from 'react-i18next';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import { fontInterUi } from '../../typography';
@@ -71,16 +72,19 @@ const StyledMatches = styled.div`
   }
 `;
 
-const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches, className }) => (
+export const PlayerCard = ({ t, playerInfo, backgroundImageUrl, previousMatches, className }) => (
   <StyledContainer className={className}>
     <StyledBackground backgroundImageUrl={backgroundImageUrl} />
     <StyledPlayerInfos player={playerInfo} />
 
     {previousMatches && previousMatches.length > 0 && (
       <>
-        <StyledPreviousMatches>PREVIOUS MATCHES</StyledPreviousMatches>
+        <StyledPreviousMatches>{t('match_page.playercard.previous_matches')}</StyledPreviousMatches>
         <StyledMatches>
-          <ViewMore showLessText="View Less Matches" showMoreText="View More Matches">
+          <ViewMore
+            showLessText={t('match_page.playercard.view_less_matches')}
+            showMoreText={t('match_page.playercard.view_more_matches')}
+          >
             {previousMatches.map((match, index) => (
               <StyledScoreBlock key={match.id}>
                 {index > 0 && <StyledBefore />}
@@ -101,6 +105,7 @@ const PlayerCard = ({ playerInfo, backgroundImageUrl, previousMatches, className
 );
 
 PlayerCard.propTypes = {
+  t: PropTypes.func.isRequired,
   playerInfo: playerType.isRequired,
   backgroundImageUrl: PropTypes.string.isRequired,
   previousMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
@@ -111,4 +116,4 @@ PlayerCard.defaultProps = {
   className: '',
 };
 
-export default PlayerCard;
+export default withTranslation()(PlayerCard);

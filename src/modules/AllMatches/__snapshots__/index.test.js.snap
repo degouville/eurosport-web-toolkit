@@ -650,7 +650,7 @@ exports[`AllMatches renders as expected 1`] = `
     }
     showLessText="View less matches"
     showMoreText="View more matches"
-    title="Live Now"
+    title="match_page.allmatches.live_now"
   />
   <MatchGrid
     eventName="Men's singles"
@@ -750,7 +750,7 @@ exports[`AllMatches renders as expected 1`] = `
     }
     showLessText="View less matches"
     showMoreText="View more matches"
-    title="Upcoming"
+    title="match_page.allmatches.upcoming"
   />
   <MatchGrid
     eventName="Men's singles"
@@ -1416,7 +1416,7 @@ exports[`AllMatches renders as expected 1`] = `
     }
     showLessText="View less matches"
     showMoreText="View more matches"
-    title="Finished"
+    title="match_page.allmatches.finished"
   />
 </Fragment>
 `;

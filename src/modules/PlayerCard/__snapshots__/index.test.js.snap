@@ -7,7 +7,7 @@ exports[`PlayerCard should render as expected 1`] = `
   <Styled(div)
     backgroundImageUrl="http://dnl.eurosport.com/web-toolkit/playercard/bg1.png"
   />
-  <Styled(PlayerInfos)
+  <Styled(withI18nextTranslation(PlayerInfos))
     player={
       Object {
         "age": "32",
@@ -24,18 +24,18 @@ exports[`PlayerCard should render as expected 1`] = `
     }
   />
   <Styled(div)>
-    PREVIOUS MATCHES
+    match_page.playercard.previous_matches
   </Styled(div)>
   <Styled(div)>
     <ViewMore
       showLessItemCount={1}
-      showLessText="View Less Matches"
-      showMoreText="View More Matches"
+      showLessText="match_page.playercard.view_less_matches"
+      showMoreText="match_page.playercard.view_more_matches"
     >
       <Styled(div)
         key="123451"
       >
-        <ScoreBlock
+        <withI18nextTranslation(ScoreBlock)
           data={
             Object {
               "bottomTeam": Object {
@@ -124,7 +124,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123452"
       >
         <Styled(div) />
-        <ScoreBlock
+        <withI18nextTranslation(ScoreBlock)
           data={
             Object {
               "bottomTeam": Object {
@@ -213,7 +213,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123453"
       >
         <Styled(div) />
-        <ScoreBlock
+        <withI18nextTranslation(ScoreBlock)
           data={
             Object {
               "bottomTeam": Object {
@@ -278,7 +278,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123454"
       >
         <Styled(div) />
-        <ScoreBlock
+        <withI18nextTranslation(ScoreBlock)
           data={
             Object {
               "bottomTeam": Object {
@@ -367,7 +367,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123455"
       >
         <Styled(div) />
-        <ScoreBlock
+        <withI18nextTranslation(ScoreBlock)
           data={
             Object {
               "bottomTeam": Object {

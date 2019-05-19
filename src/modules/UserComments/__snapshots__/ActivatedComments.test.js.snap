@@ -11,7 +11,7 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
     src="//cdn.livefyre.com/Livefyre.js"
   />
   <Styled(div)>
-     comments
+    match_page.usercomments.nb_comments
   </Styled(div)>
   <Styled(div)>
     <Styled(div)

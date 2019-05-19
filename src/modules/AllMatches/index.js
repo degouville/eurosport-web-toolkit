@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
+import { withTranslation } from 'react-i18next';
 import { medium } from '../../breakpoints';
 import { coreLightMinus1, mischka, coreLightBase } from '../../colors';
 import { H3 } from '../../typography';
@@ -167,11 +168,19 @@ MatchGrid.propTypes = {
   eventName: PropTypes.string,
 };
 
-const AllMatches = ({ liveMatches, upcomingMatches, finishedMatches, showMoreText, showLessText, eventName }) => (
+export const AllMatches = ({
+  t,
+  liveMatches,
+  upcomingMatches,
+  finishedMatches,
+  showMoreText,
+  showLessText,
+  eventName,
+}) => (
   <>
     {liveMatches.length > 0 && (
       <MatchGrid
-        title="Live Now"
+        title={t('match_page.allmatches.live_now')}
         matches={liveMatches}
         showMoreText={showMoreText}
         showLessText={showLessText}
@@ -180,7 +189,7 @@ const AllMatches = ({ liveMatches, upcomingMatches, finishedMatches, showMoreTex
     )}
     {upcomingMatches.length > 0 && (
       <MatchGrid
-        title="Upcoming"
+        title={t('match_page.allmatches.upcoming')}
         matches={upcomingMatches}
         showMoreText={showMoreText}
         showLessText={showLessText}
@@ -189,7 +198,7 @@ const AllMatches = ({ liveMatches, upcomingMatches, finishedMatches, showMoreTex
     )}
     {finishedMatches.length > 0 && (
       <MatchGrid
-        title="Finished"
+        title={t('match_page.allmatches.finished')}
         matches={finishedMatches}
         showMoreText={showMoreText}
         showLessText={showLessText}
@@ -204,6 +213,7 @@ AllMatches.defaultProps = {
 };
 
 AllMatches.propTypes = {
+  t: PropTypes.func.isRequired,
   liveMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   upcomingMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   finishedMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
@@ -212,4 +222,4 @@ AllMatches.propTypes = {
   eventName: PropTypes.string,
 };
 
-export default AllMatches;
+export default withTranslation()(AllMatches);

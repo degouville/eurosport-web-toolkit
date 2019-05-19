@@ -3,7 +3,7 @@
 exports[`UserComments renders a UserComments Component 1`] = `
 <Fragment>
   <Styled(div) />
-  <ActivatedComments
+  <withI18nextTranslation(ActivatedComments)
     livefyreConfig={
       Object {
         "areCommentsActivated": true,

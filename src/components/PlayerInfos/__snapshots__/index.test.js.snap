@@ -31,19 +31,19 @@ exports[`PlayerInfos renders its content 1`] = `
       <Styled(ul)>
         <Styled(li)>
           <Styled(div)>
-            height (m)
+            match_page.playercard.height
           </Styled(div)>
           1.85
         </Styled(li)>
         <Styled(li)>
           <Styled(div)>
-            weight (kg)
+            match_page.playercard.weight
           </Styled(div)>
           85
         </Styled(li)>
         <Styled(li)>
           <Styled(div)>
-            age
+            match_page.playercard.age
           </Styled(div)>
           32
         </Styled(li)>
@@ -52,7 +52,7 @@ exports[`PlayerInfos renders its content 1`] = `
     <Styled(div)>
       <Styled(div)>
         <Styled(div)>
-           ranking
+          match_page.playercard.ranking
         </Styled(div)>
         <Styled(span)>
           2

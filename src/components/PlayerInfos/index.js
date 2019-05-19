@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import { withTranslation } from 'react-i18next';
 import { fontAlphaHeadline, fontInterUi } from '../../typography';
 import { coreNeutral9, coreLightMinus1, coreNeutral3 } from '../../colors';
 import * as breakpoints from '../../breakpoints';
@@ -151,7 +152,7 @@ const StyledRanking = styled.div`
   `)};
 `;
 
-const PlayerInfos = ({ player }) => (
+export const PlayerInfos = ({ player, t }) => (
   <StyledPlayerInfos>
     <StyledFlex>
       <StyledPicContainer>
@@ -175,22 +176,22 @@ const PlayerInfos = ({ player }) => (
         </>
         <StyledList>
           <StyledListDescription>
-            <StyledListTitle>height (m)</StyledListTitle>
+            <StyledListTitle>{t('match_page.playercard.height')}</StyledListTitle>
             {player.height}
           </StyledListDescription>
           <StyledListDescription>
-            <StyledListTitle>weight (kg)</StyledListTitle>
+            <StyledListTitle>{t('match_page.playercard.weight')}</StyledListTitle>
             {player.weight}
           </StyledListDescription>
           <StyledListDescription>
-            <StyledListTitle>age</StyledListTitle>
+            <StyledListTitle>{t('match_page.playercard.age')}</StyledListTitle>
             {player.age}
           </StyledListDescription>
         </StyledList>
       </StyledBlock>
       <StyledBlock>
         <StyledRanking>
-          <StyledListTitle>{player.competition} ranking</StyledListTitle>
+          <StyledListTitle>{t('match_page.playercard.ranking', { competition: player.competition })}</StyledListTitle>
           <StyledRank>{player.ranking}</StyledRank>
         </StyledRanking>
       </StyledBlock>
@@ -226,7 +227,8 @@ PlayerInfos.defaultProps = {
 };
 
 PlayerInfos.propTypes = {
+  t: PropTypes.func.isRequired,
   player: playerType,
 };
 
-export default PlayerInfos;
+export default withTranslation()(PlayerInfos);

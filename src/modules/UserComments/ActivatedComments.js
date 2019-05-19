@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import { withTranslation } from 'react-i18next';
 import { fontAlphaHeadline, fontFamilies } from '../../typography';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
@@ -1288,7 +1289,7 @@ a.fyre-stream-sort-top-comments {
   />
 );
 
-class ActivatedComments extends React.Component {
+export class ActivatedComments extends React.Component {
   static getNetworkConfig(livefyreConfig) {
     const { config, labels } = livefyreConfig;
     return {
@@ -1362,7 +1363,7 @@ class ActivatedComments extends React.Component {
   };
 
   render() {
-    const { livefyreConfig, rightAdElement } = this.props;
+    const { livefyreConfig, rightAdElement, t } = this.props;
     const { count, isWidgetLoaded } = this.state;
 
     this.processAuth();
@@ -1378,7 +1379,7 @@ class ActivatedComments extends React.Component {
     return (
       <>
         <ScriptInjector isServer={false} src={livefyreConfig.config.scriptUrl} onLoad={this.initLivefyre} />
-        <StyledHeader>{count === 0 ? '' : count} comments</StyledHeader>
+        <StyledHeader>{t('match_page.usercomments.nb_comments', { count })}</StyledHeader>
         <StyledWrapper>
           <StyledComments id="livefyre">{comments}</StyledComments>
           <StyledAdvertisement>{rightAdElement}</StyledAdvertisement>
@@ -1410,6 +1411,7 @@ export const ActivatedCommentsPropTypeShape = PropTypes.shape({
 });
 
 ActivatedComments.propTypes = {
+  t: PropTypes.func.isRequired,
   livefyreConfig: ActivatedCommentsPropTypeShape.isRequired,
   loginCallback: PropTypes.func.isRequired,
   logoutCallback: PropTypes.func.isRequired,
@@ -1417,4 +1419,4 @@ ActivatedComments.propTypes = {
   userToken: PropTypes.string,
 };
 
-export default ActivatedComments;
+export default withTranslation()(ActivatedComments);

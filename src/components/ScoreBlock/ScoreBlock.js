@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import { withTranslation } from 'react-i18next';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import SetsScore, { StyledSpacer, setsScoreType } from './SetsScore';
@@ -93,7 +94,7 @@ const StyledBigDot = styled.div`
   `)};
 `;
 
-const ScoreBlock = ({ matchUrl, data, isLive, isWatchable, displayLeftCircle }) => {
+export const ScoreBlock = ({ matchUrl, data, isLive, isWatchable, displayLeftCircle, t }) => {
   const hasLeftCircle = ['won', 'lost'].includes(displayLeftCircle);
   return (
     <StyledClickableWrapper href={matchUrl} data-test="clickable-scoreblock-wrapper">
@@ -116,10 +117,14 @@ const ScoreBlock = ({ matchUrl, data, isLive, isWatchable, displayLeftCircle }) 
               &#9658;
             </StyledPlayButton>
           )}
-          <StyledButton color="venetianRed" contentText="'LIVE'" width="68px" />
+          <StyledButton color="venetianRed" contentText={`'${t('match_page.score.live_button')}'`} width="68px" />
         </>
       ) : (
-        <StyledButton color="actionOneDarkBase" contentText="'MATCH INFO'" width="144px" />
+        <StyledButton
+          color="actionOneDarkBase"
+          contentText={`'${t('match_page.score.match_info_button')}'`}
+          width="144px"
+        />
       )}
     </StyledClickableWrapper>
   );
@@ -134,11 +139,19 @@ export const scoreBlockType = {
 };
 
 ScoreBlock.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   displayLeftCircle: false,
+  // eslint-disable-next-line react/default-props-match-prop-types
   isLive: false,
+  // eslint-disable-next-line react/default-props-match-prop-types
   isWatchable: false,
 };
 
-ScoreBlock.propTypes = scoreBlockType;
+const scoreBlockProps = {
+  t: PropTypes.func.isRequired,
+  ...scoreBlockType,
+};
 
-export default ScoreBlock;
+ScoreBlock.propTypes = scoreBlockProps;
+
+export default withTranslation()(ScoreBlock);

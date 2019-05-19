@@ -99,7 +99,7 @@ exports[`<ScoreBlock /> Renders a ScoreBlock component with expected snapshot 1`
   </Styled(div)>
   <Styled(div)
     color="venetianRed"
-    contentText="'LIVE'"
+    contentText="'match_page.score.live_button'"
     width="68px"
   />
 </Styled(Link)>
