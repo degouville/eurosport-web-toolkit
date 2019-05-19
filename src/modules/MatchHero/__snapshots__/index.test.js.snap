@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MatchHero /> should render as expected 1`] = `
-<Styled(div)>
+<Styled(div)
+  className="test"
+>
   <Labels
     labels={
       Array [
@@ -45,7 +47,9 @@ exports[`<MatchHero /> should render as expected 1`] = `
 `;
 
 exports[`<MatchHeroWithScore />  should render as expected 1`] = `
-<Styled(div)>
+<Styled(div)
+  className="test"
+>
   <Labels
     labels={
       Array [

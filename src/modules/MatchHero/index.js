@@ -10,23 +10,9 @@ import Button from '../../elements/Button';
 import PlayIconLink from '../../elements/PlayIconLink';
 
 const StyledWrapper = styled.div`
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 22px;
-
-  ${breakpoints.small(css`
-    padding: 30px 24px;
-  `)};
-
-  ${breakpoints.medium(css`
-    padding: 30px 34px;
-  `)};
-
-  ${breakpoints.wide(css`
-    padding: 30px 150px;
-  `)};
 
   ${PlayIconLink} {
     position: relative;
@@ -106,8 +92,8 @@ export const StyledDivider = styled.span`
   `)};
 `;
 
-const MatchHero = ({ title, date, hour, labels, cTAText, cTALink, marketingMessage }) => (
-  <StyledWrapper>
+const MatchHero = ({ className, title, date, hour, labels, cTAText, cTALink, marketingMessage }) => (
+  <StyledWrapper className={className}>
     <Labels labels={labels} />
     <StyledContent>
       <StyledBasicInfo>
@@ -126,12 +112,14 @@ const MatchHero = ({ title, date, hour, labels, cTAText, cTALink, marketingMessa
 );
 
 MatchHero.defaultProps = {
+  className: '',
   date: '',
   hour: '',
   marketingMessage: '',
 };
 
 MatchHero.propTypes = {
+  className: PropTypes.string,
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
   hour: PropTypes.string,
@@ -141,8 +129,15 @@ MatchHero.propTypes = {
   marketingMessage: PropTypes.string,
 };
 
-export const MatchHeroWithScore = ({ scoreData, labels, displayWatchButton, watchButtonText, onWatchButtonClick }) => (
-  <StyledWrapper>
+export const MatchHeroWithScore = ({
+  className,
+  scoreData,
+  labels,
+  displayWatchButton,
+  watchButtonText,
+  onWatchButtonClick,
+}) => (
+  <StyledWrapper className={className}>
     <Labels labels={labels} />
     <StyledScoreWrapper>
       <SetsScore data={scoreData} />
@@ -156,10 +151,12 @@ export const MatchHeroWithScore = ({ scoreData, labels, displayWatchButton, watc
 );
 
 MatchHeroWithScore.defaultProps = {
+  className: '',
   watchButtonText: 'WATCH',
 };
 
 MatchHeroWithScore.propTypes = {
+  className: PropTypes.string,
   watchButtonText: PropTypes.string,
   labels: labelsType.isRequired,
   scoreData: setsScoreType.isRequired,

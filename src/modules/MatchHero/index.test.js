@@ -12,6 +12,7 @@ describe('<MatchHero />', () => {
   it('should render as expected', () => {
     const wrapper = shallow(
       <MatchHero
+        className="test"
         title={mockTitle}
         date={mockDate}
         hour={mockHour}
@@ -30,6 +31,7 @@ describe('<MatchHeroWithScore /> ', () => {
   it('should render as expected', () => {
     const wrapper = shallow(
       <MatchHeroWithScore
+        className="test"
         labels={duringLabels}
         scoreData={scoreDataDuring}
         displayWatchButton
@@ -44,6 +46,7 @@ describe('<MatchHeroWithScore /> ', () => {
     const handleClick = jest.fn();
     const wrapper = shallow(
       <MatchHeroWithScore
+        className="test"
         labels={duringLabels}
         scoreData={scoreDataDuring}
         displayWatchButton
