@@ -59,7 +59,7 @@ exports[`Tabs renders its content 1`] = `
                     data-test="carousel-item-0"
                   >
                     <div
-                      class="css-exrqlg e1sbjia20"
+                      class="css-6el4d e1sbjia20"
                       data-test="keytab1"
                     >
                       <span
@@ -78,7 +78,7 @@ exports[`Tabs renders its content 1`] = `
                     data-test="carousel-item-1"
                   >
                     <div
-                      class="css-7uxjvz e1sbjia20"
+                      class="css-18nzjid e1sbjia20"
                       data-test="keytab2"
                     >
                       <span
@@ -97,7 +97,7 @@ exports[`Tabs renders its content 1`] = `
                     data-test="carousel-item-2"
                   >
                     <div
-                      class="css-7uxjvz e1sbjia20"
+                      class="css-18nzjid e1sbjia20"
                       data-test="keytab3"
                     >
                       <span
@@ -116,7 +116,7 @@ exports[`Tabs renders its content 1`] = `
                     data-test="carousel-item-3"
                   >
                     <div
-                      class="css-7uxjvz e1sbjia20"
+                      class="css-18nzjid e1sbjia20"
                       data-test="keytab4"
                     >
                       <span
@@ -154,7 +154,7 @@ exports[`Tabs renders its content 1`] = `
                       data-test="carousel-item-0"
                     >
                       <div
-                        class="css-exrqlg e1sbjia20"
+                        class="css-6el4d e1sbjia20"
                         data-test="keytab1"
                       >
                         <span
@@ -173,7 +173,7 @@ exports[`Tabs renders its content 1`] = `
                       data-test="carousel-item-1"
                     >
                       <div
-                        class="css-7uxjvz e1sbjia20"
+                        class="css-18nzjid e1sbjia20"
                         data-test="keytab2"
                       >
                         <span
@@ -192,7 +192,7 @@ exports[`Tabs renders its content 1`] = `
                       data-test="carousel-item-2"
                     >
                       <div
-                        class="css-7uxjvz e1sbjia20"
+                        class="css-18nzjid e1sbjia20"
                         data-test="keytab3"
                       >
                         <span
@@ -211,7 +211,7 @@ exports[`Tabs renders its content 1`] = `
                       data-test="carousel-item-3"
                     >
                       <div
-                        class="css-7uxjvz e1sbjia20"
+                        class="css-18nzjid e1sbjia20"
                         data-test="keytab4"
                       >
                         <span
@@ -252,7 +252,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-exrqlg e1sbjia20"
+                        className="css-6el4d e1sbjia20"
                         data-test="keytab1"
                         onClick={[Function]}
                       >
@@ -293,7 +293,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-7uxjvz e1sbjia20"
+                        className="css-18nzjid e1sbjia20"
                         data-test="keytab2"
                         onClick={[Function]}
                       >
@@ -334,7 +334,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-7uxjvz e1sbjia20"
+                        className="css-18nzjid e1sbjia20"
                         data-test="keytab3"
                         onClick={[Function]}
                       >
@@ -375,7 +375,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-7uxjvz e1sbjia20"
+                        className="css-18nzjid e1sbjia20"
                         data-test="keytab4"
                         onClick={[Function]}
                       >

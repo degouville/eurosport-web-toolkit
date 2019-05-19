@@ -35,7 +35,7 @@ const activeItemStyle = `cursor: pointer;
 export const StyledItem = styled.div`
   color: ${stormGray};
   position: relative;
-  padding-bottom: 23px;
+  padding: 23px 0;
   margin-right: 15px;
   &:after {
     content: '';
