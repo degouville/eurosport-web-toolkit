@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import { withTranslation } from 'react-i18next';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import { fontInterUi } from '../../typography';
@@ -72,19 +71,36 @@ const StyledMatches = styled.div`
   }
 `;
 
-export const PlayerCard = ({ t, playerInfo, backgroundImageUrl, previousMatches, className }) => (
+export const PlayerCard = ({
+  playerInfo,
+  backgroundImageUrl,
+  previousMatches,
+  className,
+  previousMatchesText,
+  showLessMatchesText,
+  showMoreMatchesText,
+  heightText,
+  weightText,
+  ageText,
+  rankingText,
+  liveButtonText,
+  matchInfoButtonText,
+}) => (
   <StyledContainer className={className}>
     <StyledBackground backgroundImageUrl={backgroundImageUrl} />
-    <StyledPlayerInfos player={playerInfo} />
+    <StyledPlayerInfos
+      player={playerInfo}
+      heightText={heightText}
+      weightText={weightText}
+      ageText={ageText}
+      rankingText={rankingText}
+    />
 
     {previousMatches && previousMatches.length > 0 && (
       <>
-        <StyledPreviousMatches>{t('match_page.playercard.previous_matches')}</StyledPreviousMatches>
+        <StyledPreviousMatches>{previousMatchesText}</StyledPreviousMatches>
         <StyledMatches>
-          <ViewMore
-            showLessText={t('match_page.playercard.view_less_matches')}
-            showMoreText={t('match_page.playercard.view_more_matches')}
-          >
+          <ViewMore showLessText={showLessMatchesText} showMoreText={showMoreMatchesText}>
             {previousMatches.map((match, index) => (
               <StyledScoreBlock key={match.id}>
                 {index > 0 && <StyledBefore />}
@@ -94,6 +110,8 @@ export const PlayerCard = ({ t, playerInfo, backgroundImageUrl, previousMatches,
                   isLive={false}
                   isWatchable={false}
                   displayLeftCircle={match.hasWon ? 'won' : 'lost'}
+                  liveButtonText={liveButtonText}
+                  matchInfoButtonText={matchInfoButtonText}
                 />
               </StyledScoreBlock>
             ))}
@@ -105,7 +123,15 @@ export const PlayerCard = ({ t, playerInfo, backgroundImageUrl, previousMatches,
 );
 
 PlayerCard.propTypes = {
-  t: PropTypes.func.isRequired,
+  previousMatchesText: PropTypes.string,
+  showLessMatchesText: PropTypes.string,
+  showMoreMatchesText: PropTypes.string,
+  heightText: PropTypes.string,
+  weightText: PropTypes.string,
+  ageText: PropTypes.string,
+  rankingText: PropTypes.string,
+  liveButtonText: PropTypes.string,
+  matchInfoButtonText: PropTypes.string,
   playerInfo: playerType.isRequired,
   backgroundImageUrl: PropTypes.string.isRequired,
   previousMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
@@ -114,6 +140,15 @@ PlayerCard.propTypes = {
 
 PlayerCard.defaultProps = {
   className: '',
+  previousMatchesText: 'Previous matches',
+  showLessMatchesText: 'Show less matches',
+  showMoreMatchesText: 'Show more matches',
+  heightText: 'Height (m)',
+  weightText: 'Weight (Kg)',
+  ageText: 'Age',
+  rankingText: 'Ranking',
+  liveButtonText: 'Live',
+  matchInfoButtonText: 'Match Info',
 };
 
-export default withTranslation()(PlayerCard);
+export default PlayerCard;

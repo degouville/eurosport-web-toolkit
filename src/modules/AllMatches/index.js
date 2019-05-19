@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
 import { medium } from '../../breakpoints';
 import { coreLightMinus1, mischka, coreLightBase } from '../../colors';
 import { H3 } from '../../typography';
@@ -93,7 +92,7 @@ const StyledViewMoreWrapper = styled.div`
   text-align: center;
 `;
 
-const MatchGrid = ({ title, matches, showMoreText, showLessText, eventName }) => {
+const MatchGrid = ({ title, matches, showMoreText, showLessText, liveButtonText, matchInfoButtonText, eventName }) => {
   const firstMatches = matches.slice(0, 6);
   const restOfMatches = matches.slice(6);
   const breadcrumbs = [
@@ -126,7 +125,12 @@ const MatchGrid = ({ title, matches, showMoreText, showLessText, eventName }) =>
                     wideOffset={index % 2 === 0 ? '1' : '0'}
                     key={match.id}
                   >
-                    <ScoreBlock.ScoreBlock {...match} displayLeftCircle={false} />
+                    <ScoreBlock.ScoreBlock
+                      {...match}
+                      displayLeftCircle={false}
+                      liveButtonText={liveButtonText}
+                      matchInfoButtonText={matchInfoButtonText}
+                    />
                   </StyledColumn>
                 ))}
             </Grid.Row>
@@ -157,6 +161,8 @@ const MatchGrid = ({ title, matches, showMoreText, showLessText, eventName }) =>
 };
 
 MatchGrid.defaultProps = {
+  liveButtonText: 'Live',
+  matchInfoButtonText: 'Match Info',
   eventName: '',
 };
 
@@ -165,43 +171,55 @@ MatchGrid.propTypes = {
   matches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   showMoreText: PropTypes.string.isRequired,
   showLessText: PropTypes.string.isRequired,
+  liveButtonText: PropTypes.string,
+  matchInfoButtonText: PropTypes.string,
   eventName: PropTypes.string,
 };
 
 export const AllMatches = ({
-  t,
   liveMatches,
   upcomingMatches,
   finishedMatches,
+  liveMatchesText,
+  upcomingMatchesText,
+  finishedMatchesText,
   showMoreText,
   showLessText,
+  liveButtonText,
+  matchInfoButtonText,
   eventName,
 }) => (
   <>
     {liveMatches.length > 0 && (
       <MatchGrid
-        title={t('match_page.allmatches.live_now')}
+        title={liveMatchesText}
         matches={liveMatches}
         showMoreText={showMoreText}
         showLessText={showLessText}
+        liveButtonText={liveButtonText}
+        matchInfoButtonText={matchInfoButtonText}
         eventName={eventName}
       />
     )}
     {upcomingMatches.length > 0 && (
       <MatchGrid
-        title={t('match_page.allmatches.upcoming')}
+        title={upcomingMatchesText}
         matches={upcomingMatches}
         showMoreText={showMoreText}
         showLessText={showLessText}
+        liveButtonText={liveButtonText}
+        matchInfoButtonText={matchInfoButtonText}
         eventName={eventName}
       />
     )}
     {finishedMatches.length > 0 && (
       <MatchGrid
-        title={t('match_page.allmatches.finished')}
+        title={finishedMatchesText}
         matches={finishedMatches}
         showMoreText={showMoreText}
         showLessText={showLessText}
+        liveButtonText={liveButtonText}
+        matchInfoButtonText={matchInfoButtonText}
         eventName={eventName}
       />
     )}
@@ -209,17 +227,26 @@ export const AllMatches = ({
 );
 
 AllMatches.defaultProps = {
+  liveMatchesText: 'Live now',
+  upcomingMatchesText: 'Upcoming',
+  finishedMatchesText: 'Finished',
+  liveButtonText: 'Live',
+  matchInfoButtonText: 'Match Info',
   eventName: '',
 };
 
 AllMatches.propTypes = {
-  t: PropTypes.func.isRequired,
   liveMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   upcomingMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   finishedMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
+  liveMatchesText: PropTypes.string,
+  upcomingMatchesText: PropTypes.string,
+  finishedMatchesText: PropTypes.string,
   showMoreText: PropTypes.string.isRequired,
   showLessText: PropTypes.string.isRequired,
+  liveButtonText: PropTypes.string,
+  matchInfoButtonText: PropTypes.string,
   eventName: PropTypes.string,
 };
 
-export default withTranslation()(AllMatches);
+export default AllMatches;

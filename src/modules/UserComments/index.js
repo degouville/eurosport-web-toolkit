@@ -10,8 +10,12 @@ const StyledAdvertisement = styled.div`
 `;
 
 const UserComments = props => {
-  const { livefyreConfig, topAdElement } = props;
-  const comments = livefyreConfig.areCommentsActivated ? <ActivatedComments {...props} /> : <DeactivatedComments />;
+  const { livefyreConfig, topAdElement, deactivatedText } = props;
+  const comments = livefyreConfig.areCommentsActivated ? (
+    <ActivatedComments {...props} />
+  ) : (
+    <DeactivatedComments deactivatedText={deactivatedText} />
+  );
 
   return (
     <>
@@ -25,6 +29,9 @@ UserComments.defaultProps = {
   userToken: '',
   topAdElement: null,
   rightAdElement: null,
+  nbCommentsText: '{{count}} comment',
+  nbCommentsTextPlural: '{{count}} comments',
+  deactivatedText: 'Comments are deactivated for this publication',
 };
 
 UserComments.propTypes = {
@@ -34,6 +41,9 @@ UserComments.propTypes = {
   userToken: PropTypes.string,
   topAdElement: PropTypes.element,
   rightAdElement: PropTypes.element,
+  nbCommentsText: PropTypes.string,
+  nbCommentsTextPlural: PropTypes.string,
+  deactivatedText: PropTypes.string,
 };
 
 export default UserComments;

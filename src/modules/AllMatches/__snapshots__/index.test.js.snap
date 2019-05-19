@@ -4,6 +4,8 @@ exports[`AllMatches renders as expected 1`] = `
 <Fragment>
   <MatchGrid
     eventName="Men's singles"
+    liveButtonText="Live"
+    matchInfoButtonText="Match Info"
     matches={
       Array [
         Object {
@@ -650,10 +652,12 @@ exports[`AllMatches renders as expected 1`] = `
     }
     showLessText="View less matches"
     showMoreText="View more matches"
-    title="match_page.allmatches.live_now"
+    title="Live now"
   />
   <MatchGrid
     eventName="Men's singles"
+    liveButtonText="Live"
+    matchInfoButtonText="Match Info"
     matches={
       Array [
         Object {
@@ -750,10 +754,12 @@ exports[`AllMatches renders as expected 1`] = `
     }
     showLessText="View less matches"
     showMoreText="View more matches"
-    title="match_page.allmatches.upcoming"
+    title="Upcoming"
   />
   <MatchGrid
     eventName="Men's singles"
+    liveButtonText="Live"
+    matchInfoButtonText="Match Info"
     matches={
       Array [
         Object {
@@ -1416,7 +1422,7 @@ exports[`AllMatches renders as expected 1`] = `
     }
     showLessText="View less matches"
     showMoreText="View more matches"
-    title="match_page.allmatches.finished"
+    title="Finished"
   />
 </Fragment>
 `;

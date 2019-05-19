@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { storiesOf } from '@storybook/react';
-import { object, boolean, select } from '@storybook/addon-knobs';
+import { object, boolean, select, text } from '@storybook/addon-knobs';
 import { ScoreBlocks } from '../..';
 import {
   pastMatchData,
@@ -33,6 +33,8 @@ scoreBlockStories.add(`ScoreBlock - info`, () => (
       isLive={boolean('isLive', false)}
       isWatchable={boolean('isWatchable', false)}
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
     />
   </Wrapper>
 ));
@@ -44,6 +46,8 @@ scoreBlockStories.add(`ScoreBlock - live`, () => (
       isLive={boolean('isLive', true)}
       isWatchable={boolean('isWatchable', true)}
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
     />
   </Wrapper>
 ));
@@ -55,6 +59,8 @@ scoreBlockStories.add(`ScoreBlock - no scores`, () => (
       isLive={boolean('isLive', false)}
       isWatchable={boolean('isWatchable', false)}
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
     />
   </Wrapper>
 ));

@@ -22,6 +22,9 @@ userCommentsStories.add('ActivatedUserComments', () => (
       loginCallback={loginCallback}
       logoutCallback={logoutCallback}
       livefyreConfig={object('livefyreConfig', activatedCommentsConfig)}
+      nbCommentsText={text('nbCommentsText', '{{count}} comment')}
+      nbCommentsTextPlural={text('nbCommentsTextPlural', '{{count}} comments')}
+      deactivatedText={text('deactivatedText', 'Comments are deactivated for this publication')}
     />
   </>
 ));
@@ -33,6 +36,9 @@ userCommentsStories.add('DeactivatedUserComments', () => (
       loginCallback={loginCallback}
       logoutCallback={logoutCallback}
       livefyreConfig={object('livefyreConfig', deactivatedCommentsConfig)}
+      nbCommentsText={text('nbCommentsText', '{{count}} comment')}
+      nbCommentsTextPlural={text('nbCommentsTextPlural', '{{count}} comments')}
+      deactivatedText={text('deactivatedText', 'Comments are deactivated for this publication')}
     />
   </>
 ));
@@ -55,6 +61,9 @@ userCommentsStories.add('ActivatedUserCommentsWithAds', () => (
       livefyreConfig={object('livefyreConfig', activatedCommentsConfig)}
       topAdElement={<AdPlacement adType={AdManager.enums.adTypes.BANNER_SPONSORSHIP} />}
       rightAdElement={<AdPlacement adType={AdManager.enums.adTypes.MPU} isNoMobile isNoTablet />}
+      nbCommentsText={text('nbCommentsText', '{{count}} comment')}
+      nbCommentsTextPlural={text('nbCommentsTextPlural', '{{count}} comments')}
+      deactivatedText={text('deactivatedText', 'Comments are deactivated for this publication')}
     />
   </>
 ));

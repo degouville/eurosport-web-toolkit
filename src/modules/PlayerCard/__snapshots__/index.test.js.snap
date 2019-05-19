@@ -7,7 +7,9 @@ exports[`PlayerCard should render as expected 1`] = `
   <Styled(div)
     backgroundImageUrl="http://dnl.eurosport.com/web-toolkit/playercard/bg1.png"
   />
-  <Styled(withI18nextTranslation(PlayerInfos))
+  <Styled(PlayerInfos)
+    ageText="Age"
+    heightText="Height (m)"
     player={
       Object {
         "age": "32",
@@ -22,20 +24,22 @@ exports[`PlayerCard should render as expected 1`] = `
         "weight": "85",
       }
     }
+    rankingText="Ranking"
+    weightText="Weight (Kg)"
   />
   <Styled(div)>
-    match_page.playercard.previous_matches
+    Previous matches
   </Styled(div)>
   <Styled(div)>
     <ViewMore
       showLessItemCount={1}
-      showLessText="match_page.playercard.view_less_matches"
-      showMoreText="match_page.playercard.view_more_matches"
+      showLessText="Show less matches"
+      showMoreText="Show more matches"
     >
       <Styled(div)
         key="123451"
       >
-        <withI18nextTranslation(ScoreBlock)
+        <ScoreBlock
           data={
             Object {
               "bottomTeam": Object {
@@ -117,6 +121,8 @@ exports[`PlayerCard should render as expected 1`] = `
           displayLeftCircle="won"
           isLive={false}
           isWatchable={false}
+          liveButtonText="Live"
+          matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
         />
       </Styled(div)>
@@ -124,7 +130,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123452"
       >
         <Styled(div) />
-        <withI18nextTranslation(ScoreBlock)
+        <ScoreBlock
           data={
             Object {
               "bottomTeam": Object {
@@ -206,6 +212,8 @@ exports[`PlayerCard should render as expected 1`] = `
           displayLeftCircle="won"
           isLive={false}
           isWatchable={false}
+          liveButtonText="Live"
+          matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
         />
       </Styled(div)>
@@ -213,7 +221,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123453"
       >
         <Styled(div) />
-        <withI18nextTranslation(ScoreBlock)
+        <ScoreBlock
           data={
             Object {
               "bottomTeam": Object {
@@ -271,6 +279,8 @@ exports[`PlayerCard should render as expected 1`] = `
           displayLeftCircle="lost"
           isLive={false}
           isWatchable={false}
+          liveButtonText="Live"
+          matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
         />
       </Styled(div)>
@@ -278,7 +288,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123454"
       >
         <Styled(div) />
-        <withI18nextTranslation(ScoreBlock)
+        <ScoreBlock
           data={
             Object {
               "bottomTeam": Object {
@@ -360,6 +370,8 @@ exports[`PlayerCard should render as expected 1`] = `
           displayLeftCircle="won"
           isLive={false}
           isWatchable={false}
+          liveButtonText="Live"
+          matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
         />
       </Styled(div)>
@@ -367,7 +379,7 @@ exports[`PlayerCard should render as expected 1`] = `
         key="123455"
       >
         <Styled(div) />
-        <withI18nextTranslation(ScoreBlock)
+        <ScoreBlock
           data={
             Object {
               "bottomTeam": Object {
@@ -449,6 +461,8 @@ exports[`PlayerCard should render as expected 1`] = `
           displayLeftCircle="won"
           isLive={false}
           isWatchable={false}
+          liveButtonText="Live"
+          matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
         />
       </Styled(div)>

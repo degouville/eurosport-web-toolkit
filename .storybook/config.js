@@ -6,9 +6,7 @@ import { withBackgrounds } from '@storybook/addon-backgrounds';
 import { withOptions } from '@storybook/addon-options';
 import { ThemeProvider } from 'emotion-theming';
 import styled from 'react-emotion';
-import { I18nextProvider } from 'react-i18next';
 import { theme, colors, injectStyles } from '../src';
-import i18n from '../config/i18next';
 
 injectStyles();
 
@@ -63,7 +61,5 @@ addDecorator(
     { name: 'coreLightMinus1', value: colors.coreLightMinus1 },
   ])
 );
-
-addDecorator(story => <I18nextProvider i18n={i18n}>{story()}</I18nextProvider>);
 
 configure(loadStories, module);

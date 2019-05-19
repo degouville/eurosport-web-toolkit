@@ -3,7 +3,8 @@
 exports[`UserComments renders a UserComments Component 1`] = `
 <Fragment>
   <Styled(div) />
-  <withI18nextTranslation(ActivatedComments)
+  <ActivatedComments
+    deactivatedText="Comments are deactivated for this publication"
     livefyreConfig={
       Object {
         "areCommentsActivated": true,
@@ -196,6 +197,8 @@ exports[`UserComments renders a UserComments Component 1`] = `
     }
     loginCallback={[Function]}
     logoutCallback={[Function]}
+    nbCommentsText="{{count}} comment"
+    nbCommentsTextPlural="{{count}} comments"
     rightAdElement={null}
     topAdElement={null}
     userToken=""

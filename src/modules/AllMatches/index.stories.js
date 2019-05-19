@@ -11,8 +11,13 @@ iconsStories.add('default', () => (
     liveMatches={object('liveMatches', liveMatches)}
     upcomingMatches={object('upcomingMatches', upcomingMatches)}
     finishedMatches={object('finishedMatches', finishedMatches)}
+    liveMatchesText={object('liveMatchesText', 'Live now')}
+    upcomingMatchesText={object('upcomingMatchesText', 'Upcoming')}
+    finishedMatchesText={object('finishedMatchesText', 'Finished')}
     showMoreText={text('showMoreText', 'View more matches')}
     showLessText={text('showLessText', 'View less matches')}
+    liveButtonText={text('liveButtonText', 'Live')}
+    matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
     eventName={text('eventName', "Men's singles")}
   />
 ));

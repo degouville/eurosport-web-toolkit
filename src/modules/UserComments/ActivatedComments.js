@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import { withTranslation } from 'react-i18next';
 import { fontAlphaHeadline, fontFamilies } from '../../typography';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
@@ -1363,7 +1362,7 @@ export class ActivatedComments extends React.Component {
   };
 
   render() {
-    const { livefyreConfig, rightAdElement, t } = this.props;
+    const { livefyreConfig, rightAdElement, nbCommentsText, nbCommentsTextPlural } = this.props;
     const { count, isWidgetLoaded } = this.state;
 
     this.processAuth();
@@ -1376,10 +1375,12 @@ export class ActivatedComments extends React.Component {
       </StyledSpinnerWrapper>
     );
 
+    const nbComments = (count === 1 ? nbCommentsText : nbCommentsTextPlural).replace('{{count}}', count);
+
     return (
       <>
         <ScriptInjector isServer={false} src={livefyreConfig.config.scriptUrl} onLoad={this.initLivefyre} />
-        <StyledHeader>{t('match_page.usercomments.nb_comments', { count })}</StyledHeader>
+        <StyledHeader>{nbComments}</StyledHeader>
         <StyledWrapper>
           <StyledComments id="livefyre">{comments}</StyledComments>
           <StyledAdvertisement>{rightAdElement}</StyledAdvertisement>
@@ -1393,6 +1394,8 @@ export class ActivatedComments extends React.Component {
 ActivatedComments.defaultProps = {
   userToken: '',
   rightAdElement: null,
+  nbCommentsText: '{{count}} comment',
+  nbCommentsTextPlural: '{{count}} comments',
 };
 
 export const ActivatedCommentsPropTypeShape = PropTypes.shape({
@@ -1411,12 +1414,13 @@ export const ActivatedCommentsPropTypeShape = PropTypes.shape({
 });
 
 ActivatedComments.propTypes = {
-  t: PropTypes.func.isRequired,
   livefyreConfig: ActivatedCommentsPropTypeShape.isRequired,
   loginCallback: PropTypes.func.isRequired,
   logoutCallback: PropTypes.func.isRequired,
   rightAdElement: PropTypes.element,
   userToken: PropTypes.string,
+  nbCommentsText: PropTypes.string,
+  nbCommentsTextPlural: PropTypes.string,
 };
 
-export default withTranslation()(ActivatedComments);
+export default ActivatedComments;

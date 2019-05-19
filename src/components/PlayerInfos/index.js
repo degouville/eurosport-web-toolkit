@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import { withTranslation } from 'react-i18next';
 import { fontAlphaHeadline, fontInterUi } from '../../typography';
 import { coreNeutral9, coreLightMinus1, coreNeutral3 } from '../../colors';
 import * as breakpoints from '../../breakpoints';
@@ -152,7 +151,7 @@ const StyledRanking = styled.div`
   `)};
 `;
 
-export const PlayerInfos = ({ player, t }) => (
+export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingText }) => (
   <StyledPlayerInfos>
     <StyledFlex>
       <StyledPicContainer>
@@ -176,22 +175,22 @@ export const PlayerInfos = ({ player, t }) => (
         </>
         <StyledList>
           <StyledListDescription>
-            <StyledListTitle>{t('match_page.playercard.height')}</StyledListTitle>
+            <StyledListTitle>{heightText}</StyledListTitle>
             {player.height}
           </StyledListDescription>
           <StyledListDescription>
-            <StyledListTitle>{t('match_page.playercard.weight')}</StyledListTitle>
+            <StyledListTitle>{weightText}</StyledListTitle>
             {player.weight}
           </StyledListDescription>
           <StyledListDescription>
-            <StyledListTitle>{t('match_page.playercard.age')}</StyledListTitle>
+            <StyledListTitle>{ageText}</StyledListTitle>
             {player.age}
           </StyledListDescription>
         </StyledList>
       </StyledBlock>
       <StyledBlock>
         <StyledRanking>
-          <StyledListTitle>{t('match_page.playercard.ranking', { competition: player.competition })}</StyledListTitle>
+          <StyledListTitle>{rankingText}</StyledListTitle>
           <StyledRank>{player.ranking}</StyledRank>
         </StyledRanking>
       </StyledBlock>
@@ -209,7 +208,6 @@ export const playerType = PropTypes.shape({
   country: PropTypes.string,
   flagUrl: PropTypes.string.isRequired,
   ranking: PropTypes.string,
-  competition: PropTypes.string,
   pictureUrl: PropTypes.string.isRequired,
 });
 
@@ -224,11 +222,18 @@ PlayerInfos.defaultProps = {
     ranking: '-',
     competition: '-',
   },
+  heightText: 'Height (m)',
+  weightText: 'Weight (Kg)',
+  ageText: 'Age',
+  rankingText: 'Ranking',
 };
 
 PlayerInfos.propTypes = {
-  t: PropTypes.func.isRequired,
+  heightText: PropTypes.string,
+  weightText: PropTypes.string,
+  ageText: PropTypes.string,
+  rankingText: PropTypes.string,
   player: playerType,
 };
 
-export default withTranslation()(PlayerInfos);
+export default PlayerInfos;

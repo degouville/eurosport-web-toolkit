@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object } from '@storybook/addon-knobs';
+import { object, text } from '@storybook/addon-knobs';
 import styled from 'react-emotion';
 import { PlayerInfos } from '../..';
 
@@ -25,6 +25,12 @@ const player = {
 
 playerinfos.add('playerinfos', () => (
   <Wrapper>
-    <PlayerInfos player={object('player', player)} />
+    <PlayerInfos
+      player={object('player', player)}
+      heightText={text('heightText', 'Height (m)')}
+      weightText={text('weightText', 'Weight (Kg)')}
+      ageText={text('ageText', 'Age')}
+      rankingText={text('rankingText', 'Ranking')}
+    />
   </Wrapper>
 ));
