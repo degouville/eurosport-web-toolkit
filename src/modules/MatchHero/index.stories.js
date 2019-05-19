@@ -23,6 +23,7 @@ matchHeroStories.add('During Event', () => (
     scoreData={object('scoreData', scoreDataDuring)}
     displayWatchButton={boolean('displayWatchButton', true)}
     watchButtonText={text('watchButtonText', 'WATCH LIVE')}
+    watchButtonLinkProps={object('watchButtonLinkProps', {})}
     // eslint-disable-next-line no-console
     onWatchButtonClick={() => console.log('Watch button was clicked')}
   />
@@ -33,6 +34,10 @@ matchHeroStories.add('After Event', () => (
     scoreData={object('scoreData', scoreDataAfter)}
     displayWatchButton={boolean('displayWatchButton', true)}
     watchButtonText={text('watchButtonText', 'WATCH REPLAY')}
+    watchButtonLinkProps={object('watchButtonLinkProps', {
+      href: 'https://www.eurosportplayer.com/on-demand',
+      target: 'blank',
+    })}
     // eslint-disable-next-line no-console
     onWatchButtonClick={() => console.log('Watch button was clicked')}
   />

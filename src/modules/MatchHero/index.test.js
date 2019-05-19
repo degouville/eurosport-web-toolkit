@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import MatchHero, { MatchHeroWithScore } from '.';
 import { duringLabels, scoreDataDuring, beforeLabels } from './mockData/mockData';
 import * as colors from '../../colors';
+import PlayIconLink from '../../elements/PlayIconLink';
 
 describe('<MatchHero />', () => {
   const mockTitle = 'R.NADAL vs R.FEDERER';
@@ -40,6 +41,24 @@ describe('<MatchHeroWithScore /> ', () => {
       />
     );
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should send linkProps to the PlayIconLink if provided', () => {
+    const wrapper = shallow(
+      <MatchHeroWithScore
+        labels={duringLabels}
+        scoreData={scoreDataDuring}
+        displayWatchButton
+        onWatchButtonClick={() => null}
+        watchButtonText="WATCH LIVE"
+        watchButtonLinkProps={{ href: 'link', otherProp: 'otherValue' }}
+      />
+    );
+
+    const props = wrapper.find(PlayIconLink).props();
+
+    expect(props.href).toEqual('link');
+    expect(props.otherProp).toEqual('otherValue');
   });
 
   it('should trigger the callback passed as prop on watch button click', () => {
