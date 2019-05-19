@@ -42,7 +42,11 @@ export const Image = styled.div`
   width: 100%;
   z-index: 1;
   height: 100%;
-  background-image: url(${props => props.src});
+  background: linear-gradient(
+      rgba(0, 0, 0, ${props => props.darkness / 100}),
+      rgba(0, 0, 0, ${props => props.darkness / 100})
+    ),
+    url(${props => props.src});
   background-size: cover;
   background-position: center;
 `;
@@ -221,7 +225,7 @@ const desktopStyles = `
 const BaseCard = styled(props => (
   <LinkCard className={props.className} target={props.target} href={props.link} data-test="contentCardv2">
     <DivImageContainer>
-      {props.image && <Image src={props.image} alt={props.title} />}
+      {props.image && <Image src={props.image} alt={props.title} darkness={props.darkness} />}
       <SpanImageOverlay />
       <SpanBottomOverlay />
     </DivImageContainer>
@@ -249,6 +253,7 @@ BaseCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   labelPlayButton: PropTypes.string,
+  darkness: PropTypes.number,
 };
 
 BaseCard.defaultProps = {
@@ -256,6 +261,7 @@ BaseCard.defaultProps = {
   topic: '',
   title: '',
   description: '',
+  darkness: 0,
 };
 
 export const CardBig = styled(BaseCard)`

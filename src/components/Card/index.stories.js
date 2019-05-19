@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object, text } from '@storybook/addon-knobs';
+import { object, text, number } from '@storybook/addon-knobs';
 import styled from 'react-emotion';
 import { Cards } from '../..';
 
@@ -97,6 +97,7 @@ cardStories
         title={text('title', 'Re-Play of the Day: The craziest moments')}
         labelPlayButton={text('labelPlayButton', 'Replay')}
         description={text('description', 'Roland-garros')}
+        darkness={number('darkness', 50)}
       >
         <Cards.SpanTimeLabel>0:32:03</Cards.SpanTimeLabel>
       </Cards.CardBig>
@@ -111,6 +112,7 @@ cardStories
         title={text('title', 'Re-Play of the Day: The craziest moments of the French Open')}
         labelPlayButton={text('labelPlayButton', 'Replay')}
         description={text('description', 'Day 19 - Serie A')}
+        darkness={number('darkness', 0)}
       >
         <Cards.SpanTimeLabel>0:32:03</Cards.SpanTimeLabel>
       </Cards.CardSmall>

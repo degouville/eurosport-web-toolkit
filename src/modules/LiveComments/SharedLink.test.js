@@ -53,6 +53,7 @@ describe('SharedLink', () => {
       title: '',
       topic: '',
       target: '_blank',
+      darkness: 0,
     });
   });
 });

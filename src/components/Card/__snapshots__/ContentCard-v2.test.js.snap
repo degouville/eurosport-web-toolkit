@@ -3,6 +3,7 @@
 exports[`Content card v2 renders Card with Play Button 1`] = `
 <Component
   className="css-9dqutl e129r5mb12"
+  darkness={50}
   description="Roland-garros"
   image="https://i.eurosport.com/2019/04/21/2570541-53309530-2560-1440.jpg?w=800"
   labelPlayButton="Replay"
@@ -15,6 +16,7 @@ exports[`Content card v2 renders Card with Play Button 1`] = `
 exports[`Content card v2 renders Card with Play Button 2`] = `
 <Component
   className="css-1fcvp33 e129r5mb13"
+  darkness={50}
   description="Roland-garros"
   image="https://i.eurosport.com/2019/04/21/2570541-53309530-2560-1440.jpg?w=800"
   labelPlayButton="Replay"

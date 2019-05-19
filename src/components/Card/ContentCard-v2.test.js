@@ -11,6 +11,7 @@ const cardData = {
   title: 'Re-Play of the Day: The craziest moments',
   description: 'Roland-garros',
   labelPlayButton: 'Replay',
+  darkness: 50,
 };
 
 describe('Content card v2', () => {

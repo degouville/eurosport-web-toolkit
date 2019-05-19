@@ -2,6 +2,7 @@
 
 exports[`SharedLink matches video card snapshot 1`] = `
 <Styled(Component)
+  darkness={0}
   description=""
   image="picurl?w=640"
   labelPlayButton="play this video"
