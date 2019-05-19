@@ -9,6 +9,7 @@ import { H2, fontAlphaHeadline, fontHelvetica } from '../../typography';
 import Check from '../../assets/red-check.svg';
 
 const StyledWrapper = styled.div`
+  position: relative;
   ${props =>
     props.pictureUrl &&
     css`
