@@ -153,6 +153,7 @@ exports[`<MatchHeroWithScore />  should render as expected 1`] = `
           },
         }
       }
+      highlightLastSet={false}
     />
   </Styled(div)>
   <Styled(Component)

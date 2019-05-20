@@ -89,6 +89,7 @@ exports[`<ScoreBlock /> Renders a ScoreBlock component with expected snapshot 1`
           },
         }
       }
+      highlightLastSet={true}
     />
   </Styled(div)>
   <Styled(div)

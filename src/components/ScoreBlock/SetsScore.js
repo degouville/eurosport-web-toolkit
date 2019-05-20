@@ -9,7 +9,7 @@ const StyledTeamWrapper = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 `;
 
 export const StyledTeamName = styled.div`
@@ -19,21 +19,27 @@ export const StyledTeamName = styled.div`
   flex-basis: 60%;
   text-transform: uppercase;
   text-align: left;
+  margin: 11px 0;
   span {
     ${fontInterUi};
     font-size: 1em;
   }
 `;
 
-export const StyledTeamSet = styled.span`
-  color: ${props => (props.won ? colors.coreLightMinus1 : colors.coreNeutral4)};
+export const StyledSetScoreWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  &:last-child {
+    background-color: ${props => (props.highlightLastSet ? colors.actionOneDarkBase : 'transparent')};
+  }
+`;
+
+export const StyledTeamSet = styled.div`
+  color: ${props => (props.won === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
   ${fontAlphaHeadline};
   font-weight: bold;
   font-size: 1em;
   margin: 0 0.4em;
-  &:last-child {
-    margin-right: 0px;
-  }
   sup {
     font-size: 0.55em;
     vertical-align: super;
@@ -51,11 +57,11 @@ export const StyledTeamSet = styled.span`
 
 const StyledTeamSets = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: space-between;
 `;
 
-const Team = ({ teamData, isTeamMatch }) => {
+const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
   const { sets, isServing, hasWon } = teamData;
   let { playerOneName = '', playerTwoName = '' } = teamData;
 
@@ -76,10 +82,12 @@ const Team = ({ teamData, isTeamMatch }) => {
       <StyledTeamSets>
         {sets &&
           sets.map(({ set, score, tie, ...props }) => (
-            <StyledTeamSet key={`set-${set}`} {...props}>
-              {score}
-              {tie && <sup>{tie}</sup>}
-            </StyledTeamSet>
+            <StyledSetScoreWrapper key={`set-${set}`} highlightLastSet={highlightLastSet} {...props}>
+              <StyledTeamSet>
+                {score}
+                {tie && <sup>{tie}</sup>}
+              </StyledTeamSet>
+            </StyledSetScoreWrapper>
           ))}
       </StyledTeamSets>
     </StyledTeamWrapper>
@@ -110,23 +118,23 @@ const StyledWrapper = styled.div`
 
 export const StyledSpacer = styled.hr`
   display: block;
-  height: 1px;
   border: 0;
   border-top: 1px solid;
   padding: 0;
   border-top-color: ${colors.coreLightMinus1};
+  margin: 0;
 `;
 
 export const isTeam = team =>
   team.playerOneName != null && team.playerOneName !== '' && team.playerTwoName != null && team.playerTwoName !== '';
 
-const SetsScore = ({ data, baseFontSize }) => {
+const SetsScore = ({ data, baseFontSize, highlightLastSet }) => {
   const isTeamMatch = isTeam(data.topTeam) || isTeam(data.bottomTeam);
   return (
     <StyledWrapper baseFontSize={baseFontSize} data-test="sets-score-wrapper">
-      <Team teamData={data.topTeam} isTeamMatch={isTeamMatch} />
+      <Team teamData={data.topTeam} isTeamMatch={isTeamMatch} highlightLastSet={highlightLastSet} />
       <StyledSpacer />
-      <Team teamData={data.bottomTeam} isTeamMatch={isTeamMatch} />
+      <Team teamData={data.bottomTeam} isTeamMatch={isTeamMatch} highlightLastSet={highlightLastSet} />
     </StyledWrapper>
   );
 };
@@ -149,13 +157,16 @@ const teamDataType = PropTypes.shape({
 Team.propTypes = {
   teamData: teamDataType.isRequired,
   isTeamMatch: PropTypes.bool,
+  highlightLastSet: PropTypes.bool,
 };
 Team.defaultProps = {
   isTeamMatch: false,
+  highlightLastSet: false,
 };
 
 SetsScore.defaultProps = {
   baseFontSize: null,
+  highlightLastSet: false,
 };
 
 export const setsScoreType = PropTypes.shape({
@@ -166,6 +177,7 @@ export const setsScoreType = PropTypes.shape({
 SetsScore.propTypes = {
   data: setsScoreType.isRequired,
   baseFontSize: PropTypes.string,
+  highlightLastSet: PropTypes.bool,
 };
 
 export default SetsScore;

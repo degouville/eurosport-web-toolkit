@@ -115,7 +115,7 @@ export const ScoreBlock = ({
             )}
           </StyledBigDot>
         )}
-        <SetsScore data={data} baseFontSize="14px" />
+        <SetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
       </StyledScoreWrapper>
       {isLive ? (
         <>

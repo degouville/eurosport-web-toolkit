@@ -137,11 +137,12 @@ export const MatchHeroWithScore = ({
   watchButtonLinkProps,
   watchButtonText,
   onWatchButtonClick,
+  highlightLastSet,
 }) => (
   <StyledWrapper className={className}>
     <Labels labels={labels} />
     <StyledScoreWrapper>
-      <SetsScore data={scoreData} />
+      <SetsScore data={scoreData} highlightLastSet={highlightLastSet} />
     </StyledScoreWrapper>
     {displayWatchButton && (
       <PlayIconLink
@@ -160,6 +161,7 @@ MatchHeroWithScore.defaultProps = {
   className: '',
   watchButtonText: 'WATCH',
   watchButtonLinkProps: null,
+  highlightLastSet: false,
 };
 
 MatchHeroWithScore.propTypes = {
@@ -172,6 +174,7 @@ MatchHeroWithScore.propTypes = {
   scoreData: setsScoreType.isRequired,
   displayWatchButton: PropTypes.bool.isRequired,
   onWatchButtonClick: PropTypes.func.isRequired,
+  highlightLastSet: PropTypes.bool,
 };
 
 export default MatchHero;

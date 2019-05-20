@@ -26,6 +26,7 @@ matchHeroStories.add('During Event', () => (
     watchButtonLinkProps={object('watchButtonLinkProps', {})}
     // eslint-disable-next-line no-console
     onWatchButtonClick={() => console.log('Watch button was clicked')}
+    highlightLastSet={boolean('highlightLastSet', false)}
   />
 ));
 matchHeroStories.add('After Event', () => (

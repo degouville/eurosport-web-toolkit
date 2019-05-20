@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import SetsScore, { StyledTeamName, StyledTeamSet, isTeam } from './SetsScore';
+import SetsScore, { StyledTeamName, StyledTeamSet, isTeam, StyledSetScoreWrapper } from './SetsScore';
 import { pastMatchData, liveMatchDataSet } from './mockData/mockScoreBlockData';
+import { actionOneDarkBase } from '../../colors';
 
 describe('<SetsScore />', () => {
   it('Renders a SetsScore component', () => {
@@ -37,6 +38,12 @@ describe('<SetsScore />', () => {
     const biggerWrapper = mount(<SetsScore data={liveMatchDataSet} />);
     const thirdSet = biggerWrapper.find(StyledTeamSet).at(2);
     expect(thirdSet.exists('sup')).toEqual(true);
+  });
+
+  it('renders blue background on last set if requested as prop', () => {
+    const biggerWrapper = mount(<SetsScore data={liveMatchDataSet} highlightLastSet />);
+    const lastSetWrapper = biggerWrapper.find(StyledSetScoreWrapper).last();
+    expect(lastSetWrapper.childAt(0)).toHaveStyleRule('background-color', `${actionOneDarkBase}`);
   });
 
   describe('isTeam', () => {

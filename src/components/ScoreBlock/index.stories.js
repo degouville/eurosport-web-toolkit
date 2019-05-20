@@ -21,7 +21,10 @@ const scoreBlockStories = storiesOf('Components|Score Block', module);
 
 scoreBlockStories.add('SetsScore', () => (
   <Wrapper css={{ maxWidth: '1067px' }}>
-    <ScoreBlocks.SetsScore data={object('score data', liveMatchDataSet)} />
+    <ScoreBlocks.SetsScore
+      data={object('score data', liveMatchDataSet)}
+      highlightLastSet={boolean('highlightLastSet', false)}
+    />
   </Wrapper>
 ));
 
