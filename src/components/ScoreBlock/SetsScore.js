@@ -85,7 +85,7 @@ const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
             <StyledSetScoreWrapper key={`set-${set}`} highlightLastSet={highlightLastSet} {...props}>
               <StyledTeamSet>
                 {score}
-                {tie && <sup>{tie}</sup>}
+                {tie != null && <sup>{tie}</sup>}
               </StyledTeamSet>
             </StyledSetScoreWrapper>
           ))}
