@@ -15,6 +15,7 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
   </Styled(div)>
   <Styled(div)>
     <Styled(div)
+      data-test="activated-comments"
       id="livefyre"
     >
       <Styled(div)>

@@ -1400,7 +1400,9 @@ export class ActivatedComments extends React.Component {
         <ScriptInjector isServer={false} src={livefyreConfig.config.scriptUrl} onLoad={this.initLivefyre} />
         <StyledHeader>{nbCommentsText}</StyledHeader>
         <StyledWrapper>
-          <StyledComments id="livefyre">{comments}</StyledComments>
+          <StyledComments id="livefyre" data-test="activated-comments">
+            {comments}
+          </StyledComments>
           <StyledAdvertisement>{rightAdElement}</StyledAdvertisement>
         </StyledWrapper>
         <StyledFooter href="http://livefyre.fr">Powered by Livefyre</StyledFooter>

@@ -31,7 +31,7 @@ const StyledIcon = styled.img`
 `;
 
 export const DeactivatedComments = ({ deactivatedText }) => (
-  <StyledWrapper>
+  <StyledWrapper data-test="deactivated-comments">
     <StyledIcon src={lockIcon} alt="lock icon" />
     <div>{deactivatedText}</div>
   </StyledWrapper>
