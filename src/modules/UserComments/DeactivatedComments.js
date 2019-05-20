@@ -7,10 +7,14 @@ import lockIcon from '../../assets/lock-icon.svg';
 import { coreLightMinus1 } from '../../colors';
 
 const StyledWrapper = styled.div`
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   font-size: 12px;
   ${fontAlphaHeadline};
   color: ${coreLightMinus1};
@@ -23,6 +27,7 @@ const StyledWrapper = styled.div`
 const StyledIcon = styled.img`
   margin-bottom: 20px;
   height: 46px;
+  width: 46px;
 `;
 
 export const DeactivatedComments = ({ deactivatedText }) => (

@@ -938,13 +938,20 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre .fyre-content-loading { 
-		background: none !important;
 		padding-left: 0px !important;
     text-indent: -9999px; 
 	}
 
+	.fyre-editor-spinner {
+		left: 8px !important;
+    top: 70px !important;
+    display: inline-block;
+    right: auto !important;
+	}
+
 .fyre .fyre-stream-more .fyre-stream-more-container .fyre-spinner,
-.fyre .fyre-content-loading {
+.fyre .fyre-content-loading,
+.fyre-editor-spinner {
 	margin: 12px auto 0px auto !important;
 	text-align: center !important;
 	width: 15px !important;
@@ -954,6 +961,7 @@ a.fyre-stream-sort-top-comments {
 	border-right: 1px solid ${colors.dodgerBlue} !important;
 	border-bottom: 1px solid ${colors.dodgerBlue} !important;
 	animation: round 1s linear infinite !important;
+	background: none !important;
 }
 
 @keyframes round {
@@ -1074,6 +1082,11 @@ a.fyre-stream-sort-top-comments {
 	height: 70px !important;
 }
 
+.fyre-modal .fyre-modal-textarea.fyre-modal-flagas option{	
+	color:${colors.blackRussian};
+	background-color: ${colors.coreLightMinus1};
+}
+
 .fyre-modal-select-error {
 	display: none !important;
 }
@@ -1135,6 +1148,12 @@ a.fyre-stream-sort-top-comments {
 	height: 100px !important;
 	padding-top: 10px !important
 }
+.fyre-modal .fyre-modal-textfield.fyre-modal-notes{
+	font-family: ${fontFamilies.interUi} !important;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+}
 .fyre-modal .fyre-modal-buttons {
 	text-align: left !important;
 	height: auto !important;
@@ -1148,6 +1167,7 @@ a.fyre-stream-sort-top-comments {
 }
 .fyre-modal .fyre-modal-buttons>button {
 	height: 40px !important;
+	line-height: 40px !important;
 	border: 1px solid ${colors.coreNeutral4} !important;
 	background-color: transparent !important;
 	color: ${colors.coreNeutral4} !important;
@@ -1162,7 +1182,7 @@ a.fyre-stream-sort-top-comments {
 	border-radius: 2px !important;
 	cursor: pointer !important;
 	display: inline-block !important;
-	padding: 12px 0 !important;
+	padding: 0 !important;
 	text-decoration: none !important;
 	text-shadow: none !important;
 	width: 30% !important;
@@ -1199,7 +1219,7 @@ a.fyre-stream-sort-top-comments {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
 	.fyre-comment-wrapper .fyre-comment p,
 	.fyre-comment-wrapper .fyre-comment p a {
 		font-size: 16px !important;
@@ -1312,7 +1332,7 @@ export class ActivatedComments extends React.Component {
   constructor(props) {
     super(props);
     this.auth = null;
-    this.state = { count: 0, isWidgetLoaded: false };
+    this.state = { isWidgetLoaded: false };
   }
 
   componentDidUpdate(prevProps) {
@@ -1323,7 +1343,7 @@ export class ActivatedComments extends React.Component {
   }
 
   initLivefyre = () => {
-    const { livefyreConfig, loginCallback, logoutCallback } = this.props;
+    const { livefyreConfig, loginCallback, logoutCallback, commentsCountCallback } = this.props;
 
     const networkConfig = ActivatedComments.getNetworkConfig(livefyreConfig);
     const convConfig = ActivatedComments.getConvConfig(livefyreConfig);
@@ -1333,8 +1353,8 @@ export class ActivatedComments extends React.Component {
       /* eslint-disable no-new */
       new Conv(networkConfig, [convConfig], commentsWidget => {
         this.setState({ isWidgetLoaded: true });
-        commentsWidget.on('commentCountUpdated', data => {
-          this.setState({ count: data });
+        commentsWidget.on('commentCountUpdated', count => {
+          commentsCountCallback(count);
         });
       });
       this.auth.delegate({
@@ -1362,8 +1382,8 @@ export class ActivatedComments extends React.Component {
   };
 
   render() {
-    const { livefyreConfig, rightAdElement, nbCommentsText, nbCommentsTextPlural } = this.props;
-    const { count, isWidgetLoaded } = this.state;
+    const { livefyreConfig, rightAdElement, nbCommentsText } = this.props;
+    const { isWidgetLoaded } = this.state;
 
     this.processAuth();
 
@@ -1375,12 +1395,10 @@ export class ActivatedComments extends React.Component {
       </StyledSpinnerWrapper>
     );
 
-    const nbComments = (count === 1 ? nbCommentsText : nbCommentsTextPlural).replace('{{count}}', count);
-
     return (
       <>
         <ScriptInjector isServer={false} src={livefyreConfig.config.scriptUrl} onLoad={this.initLivefyre} />
-        <StyledHeader>{nbComments}</StyledHeader>
+        <StyledHeader>{nbCommentsText}</StyledHeader>
         <StyledWrapper>
           <StyledComments id="livefyre">{comments}</StyledComments>
           <StyledAdvertisement>{rightAdElement}</StyledAdvertisement>
@@ -1394,8 +1412,8 @@ export class ActivatedComments extends React.Component {
 ActivatedComments.defaultProps = {
   userToken: '',
   rightAdElement: null,
-  nbCommentsText: '{{count}} comment',
-  nbCommentsTextPlural: '{{count}} comments',
+  nbCommentsText: 'Comments',
+  commentsCountCallback: null,
 };
 
 export const ActivatedCommentsPropTypeShape = PropTypes.shape({
@@ -1417,10 +1435,10 @@ ActivatedComments.propTypes = {
   livefyreConfig: ActivatedCommentsPropTypeShape.isRequired,
   loginCallback: PropTypes.func.isRequired,
   logoutCallback: PropTypes.func.isRequired,
+  commentsCountCallback: PropTypes.func,
   rightAdElement: PropTypes.element,
   userToken: PropTypes.string,
   nbCommentsText: PropTypes.string,
-  nbCommentsTextPlural: PropTypes.string,
 };
 
 export default ActivatedComments;

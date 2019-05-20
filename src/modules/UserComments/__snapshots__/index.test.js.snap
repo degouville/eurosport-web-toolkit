@@ -4,6 +4,7 @@ exports[`UserComments renders a UserComments Component 1`] = `
 <Fragment>
   <Styled(div) />
   <ActivatedComments
+    commentsCountCallback={null}
     deactivatedText="Comments are deactivated for this publication"
     livefyreConfig={
       Object {
