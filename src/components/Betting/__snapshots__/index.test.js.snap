@@ -2,6 +2,7 @@
 
 exports[`Betting renders Betting for double choices 1`] = `
 <Styled(Link)
+  className=""
   href="mainLink"
   linkComponent={[Function]}
   target="_blank"
@@ -52,6 +53,7 @@ exports[`Betting renders Betting for double choices 1`] = `
 
 exports[`Betting renders Betting for triple choices 1`] = `
 <Styled(Link)
+  className=""
   href="mainLink"
   linkComponent={[Function]}
   target="_blank"

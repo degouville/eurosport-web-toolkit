@@ -122,8 +122,8 @@ const StyledTeamName = styled.div`
 
 export const getRandomSentence = sentences => sentences[Math.floor(Math.random() * sentences.length)];
 
-const Betting = ({ link, sponsor, sentences, choices }) => (
-  <StyledCard href={link} target="_blank">
+const Betting = ({ link, sponsor, sentences, choices, className }) => (
+  <StyledCard className={className} href={link} target="_blank">
     <StyledBettingName background={sponsor.backgroundColor} text={sponsor.textColor}>
       {sponsor.name}
     </StyledBettingName>
@@ -140,6 +140,10 @@ const Betting = ({ link, sponsor, sentences, choices }) => (
   </StyledCard>
 );
 
+Betting.defaultProps = {
+  className: '',
+};
+
 Betting.propTypes = {
   link: PropTypes.string.isRequired,
   sponsor: PropTypes.shape({
@@ -155,6 +159,7 @@ Betting.propTypes = {
       label: PropTypes.string,
     })
   ).isRequired,
+  className: PropTypes.string,
 };
 
 export default Betting;

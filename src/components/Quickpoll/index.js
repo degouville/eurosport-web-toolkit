@@ -14,6 +14,7 @@ const StyledContainer = styled.div`
   color: ${colors.coreLightMinus1};
   padding-bottom: 20px;
   padding-top: 10px;
+  overflow: hidden;
 `;
 
 const StyledBackground = styled.div`
@@ -134,10 +135,10 @@ class QuickPoll extends React.Component {
   };
 
   render() {
-    const { title, choices, showResults } = this.props;
+    const { title, choices, showResults, className } = this.props;
     const { isLoading } = this.state;
     return (
-      <StyledContainer>
+      <StyledContainer className={className}>
         <StyledBackground />
         <StyledTitle>{title}</StyledTitle>
         {choices.length && isLoading !== true ? (
@@ -171,6 +172,7 @@ class QuickPoll extends React.Component {
 
 QuickPoll.defaultProps = {
   showResults: false,
+  className: '',
 };
 
 const choiceType = PropTypes.shape({
@@ -183,6 +185,7 @@ QuickPoll.propTypes = {
   title: PropTypes.string.isRequired,
   choices: PropTypes.arrayOf(choiceType).isRequired,
   showResults: PropTypes.bool,
+  className: PropTypes.string,
   onChoiceClick: PropTypes.func.isRequired,
 };
 

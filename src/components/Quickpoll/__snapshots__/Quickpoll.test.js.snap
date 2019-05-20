@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`QuickPoll renders a QuickPoll Component 1`] = `
-<Styled(div)>
+<Styled(div)
+  className=""
+>
   <Styled(div) />
   <Styled(div)>
     Who will win the 2019 French Open?

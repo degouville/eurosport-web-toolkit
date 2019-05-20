@@ -71,8 +71,8 @@ const StyledButton = styled(Button)`
   width: 213px;
 `;
 
-const PlayerPromotionBox = ({ pictureUrl, title, texts, textButton, linkButton, ...props }) => (
-  <StyledWrapper {...props} pictureUrl={pictureUrl}>
+const PlayerPromotionBox = ({ className, pictureUrl, title, texts, textButton, linkButton }) => (
+  <StyledWrapper className={className} pictureUrl={pictureUrl}>
     <StyledSubContainer>
       <StyledTitle>{title}</StyledTitle>
       <StyledList>
@@ -96,12 +96,14 @@ PlayerPromotionBox.propTypes = {
   texts: PropTypes.arrayOf(PropTypes.string).isRequired,
   textButton: PropTypes.string,
   linkButton: PropTypes.string,
+  className: PropTypes.string,
 };
 
 PlayerPromotionBox.defaultProps = {
   pictureUrl: null,
   textButton: null,
   linkButton: null,
+  className: '',
 };
 
 export default PlayerPromotionBox;
