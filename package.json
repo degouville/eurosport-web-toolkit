@@ -100,6 +100,7 @@
     "react-emotion": "9"
   },
   "dependencies": {
+    "@discovery/sonic-player-eurosport": "0.0.61",
     "lodash": "^4.17.11",
     "react-lines-ellipsis": "^0.14.1"
   },
