@@ -7,14 +7,8 @@ import lockIcon from '../../assets/lock-icon.svg';
 import { coreLightMinus1 } from '../../colors';
 
 const StyledWrapper = styled.div`
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
+  display: block;
+  text-align: center;
   font-size: 12px;
   ${fontAlphaHeadline};
   color: ${coreLightMinus1};
