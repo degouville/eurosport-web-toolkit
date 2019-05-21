@@ -8,13 +8,14 @@ jest.mock('../AdManager');
 describe('AdPlacement', () => {
   let globDate;
   let globMath;
+  let globWindow;
 
   beforeAll(() => {
     globDate = global.Date;
     globMath = global.Math;
+    globWindow = global.window;
 
     delete global.Date;
-
     global.Date = {
       now: () => 'now',
     };
@@ -27,6 +28,7 @@ describe('AdPlacement', () => {
   afterAll(() => {
     global.Date = globDate;
     global.Math = globMath;
+    global.window = globWindow;
     jest().resetAllMocks();
   });
 
@@ -38,5 +40,11 @@ describe('AdPlacement', () => {
     AdManager.manageAds.injectAdSlot.mockResolvedValue(jest.fn());
     shallow(<AdPlacement adType="betting-box" isNoDesktop isNoMobile isNoTablet />);
     expect(AdManager.manageAds.injectAdSlot).toHaveBeenCalledWith('betting-box', 'adIdnow500', true, true, true);
+  });
+
+  it('renders nothing if window is undefined', () => {
+    delete global.window;
+    const wrapper = shallow(<AdPlacement adType="betting-box" isNoDesktop isNoMobile isNoTablet />);
+    expect(wrapper.html()).toEqual(null);
   });
 });

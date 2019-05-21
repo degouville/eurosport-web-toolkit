@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import AdManager from '../AdManager';
 
 const AdPlacement = React.forwardRef(({ adType, isNoDesktop, isNoTablet, isNoMobile }, ref) => {
+  if (typeof window === 'undefined') return null;
   const randomId = `adId${Date.now() + Math.floor(Math.random() * 1000)}`;
 
   return (
