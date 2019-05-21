@@ -148,7 +148,12 @@ const MatchGrid = ({ title, matches, showMoreText, showLessText, liveButtonText,
                     wideOffset={index % 2 === 0 ? '1' : '0'}
                     key={match.id}
                   >
-                    <ScoreBlock.ScoreBlock {...match} displayLeftCircle={false} />
+                    <ScoreBlock.ScoreBlock
+                      {...match}
+                      displayLeftCircle={false}
+                      liveButtonText={liveButtonText}
+                      matchInfoButtonText={matchInfoButtonText}
+                    />
                   </StyledColumn>
                 ))}
               </Grid.Row>
