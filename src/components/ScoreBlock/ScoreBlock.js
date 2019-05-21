@@ -51,14 +51,12 @@ const StyledScoreWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  padding-right: 16px;
+  padding-right: 10px;
   ${props =>
     !props.hasLeftCircle &&
     css`
-      padding-left: 16px;
+      padding-left: 20px;
     `};
-  padding-top: 16px;
-  padding-bottom: 16px;
   flex-basis: 400px;
   flex-grow: 1;
   background-color: rgba(79, 82, 106, 0.5);
