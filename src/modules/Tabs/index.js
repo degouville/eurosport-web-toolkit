@@ -94,7 +94,7 @@ export default class Tabs extends React.Component {
     if (!defaultTabExist && tabs && tabs.length) {
       itemToSelect = tabs[0].key;
     }
-    this.setState({ itemSelected: itemToSelect });
+    this.handleClick(itemToSelect);
   }
 
   handleClick(key) {

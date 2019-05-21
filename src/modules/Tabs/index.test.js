@@ -41,10 +41,25 @@ describe('Tabs', () => {
         .text()
     ).toEqual('Match');
   });
+
+  describe(`after it's mounted`, () => {
+    it('when default tab - should trigger the callback once tab is selected on mount', () => {
+      const handleClick = jest.fn();
+      shallow(<Tabs defaultTab="keytab1" onItemSelected={handleClick} tabs={tabsData} />);
+      expect(handleClick).toHaveBeenCalledWith('keytab1');
+    });
+
+    it('when default tab not provided -  should trigger the callback for 1st tab ever', () => {
+      const handleClick = jest.fn();
+      shallow(<Tabs onItemSelected={handleClick} tabs={tabsData.slice(1, 3)} />);
+      expect(handleClick).toHaveBeenCalledWith('keytab2');
+    });
+  });
+
   it('should trigger the callback passed as prop on click', () => {
     const handleClick = jest.fn();
     const wrapper = shallow(<Tabs defaultTab="keytab1" onItemSelected={handleClick} tabs={tabsData} />);
-    const firstTab = wrapper.find(StyledItem).first();
+    const firstTab = wrapper.find(StyledItem).at(2);
     firstTab.simulate('click');
     expect(handleClick).toHaveBeenCalledWith('keytab1');
   });
