@@ -9,7 +9,9 @@ exports[`PlayerPromotionBox renders its content 1`] = `
     <Styled(h2)>
       Watch Eurosport
     </Styled(h2)>
-    <Styled(ul)>
+    <Styled(ul)
+      data-test="promotion-list"
+    >
       <Styled(li)
         key="0"
       >
@@ -27,6 +29,7 @@ exports[`PlayerPromotionBox renders its content 1`] = `
       </Styled(li)>
     </Styled(ul)>
     <Styled(ArrowLink)
+      data-test="promotion-link"
       href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
       type="primary"
     >

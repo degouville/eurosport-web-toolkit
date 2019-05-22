@@ -12,6 +12,7 @@ exports[`PlayerInfos renders its content 1`] = `
     </Styled(div)>
     <Styled(div)>
       <Styled(div)
+        data-test="player-name"
         textLength={6}
       >
         Rafael
@@ -24,24 +25,32 @@ exports[`PlayerInfos renders its content 1`] = `
           data-test="flag-picture"
           src="https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png"
         />
-        <Styled(span)>
+        <Styled(span)
+          data-test="player-country"
+        >
           Spain
         </Styled(span)>
       </Styled(div)>
       <Styled(ul)>
-        <Styled(li)>
+        <Styled(li)
+          data-test="player-height"
+        >
           <Styled(div)>
             Height (m)
           </Styled(div)>
           1.85
         </Styled(li)>
-        <Styled(li)>
+        <Styled(li)
+          data-test="player-weight"
+        >
           <Styled(div)>
             Weight (Kg)
           </Styled(div)>
           85
         </Styled(li)>
-        <Styled(li)>
+        <Styled(li)
+          data-test="player-age"
+        >
           <Styled(div)>
             Age
           </Styled(div)>
@@ -54,7 +63,9 @@ exports[`PlayerInfos renders its content 1`] = `
         <Styled(div)>
           Ranking
         </Styled(div)>
-        <Styled(span)>
+        <Styled(span)
+          data-test="player-ranking"
+        >
           2
         </Styled(span)>
       </Styled(div)>

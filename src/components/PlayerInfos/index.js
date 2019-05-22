@@ -160,6 +160,7 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
       <StyledBlock>
         <>
           <StyledPlayerName
+            data-test="player-name"
             textLength={
               player.firstName.length > player.lastName.length ? player.firstName.length : player.lastName.length
             }
@@ -170,19 +171,19 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
           </StyledPlayerName>
           <StyledCountryContainer>
             <StyledFlag data-test="flag-picture" src={player.flagUrl} alt={player.country} />
-            <StyledCountry>{player.country}</StyledCountry>
+            <StyledCountry data-test="player-country">{player.country}</StyledCountry>
           </StyledCountryContainer>
         </>
         <StyledList>
-          <StyledListDescription>
+          <StyledListDescription data-test="player-height">
             <StyledListTitle>{heightText}</StyledListTitle>
             {player.height}
           </StyledListDescription>
-          <StyledListDescription>
+          <StyledListDescription data-test="player-weight">
             <StyledListTitle>{weightText}</StyledListTitle>
             {player.weight}
           </StyledListDescription>
-          <StyledListDescription>
+          <StyledListDescription data-test="player-age">
             <StyledListTitle>{ageText}</StyledListTitle>
             {player.age}
           </StyledListDescription>
@@ -191,7 +192,7 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
       <StyledBlock>
         <StyledRanking>
           <StyledListTitle>{rankingText}</StyledListTitle>
-          <StyledRank>{player.ranking}</StyledRank>
+          <StyledRank data-test="player-ranking">{player.ranking}</StyledRank>
         </StyledRanking>
       </StyledBlock>
     </StyledFlex>

@@ -75,14 +75,14 @@ const PlayerPromotionBox = ({ className, pictureUrl, title, texts, textButton, l
   <StyledWrapper className={className} pictureUrl={pictureUrl}>
     <StyledSubContainer>
       <StyledTitle>{title}</StyledTitle>
-      <StyledList>
+      <StyledList data-test="promotion-list">
         {texts.map((text, i) => (
           // eslint-disable-next-line react/no-array-index-key
           <StyledItem key={i}>{text}</StyledItem>
         ))}
       </StyledList>
       {linkButton && textButton && (
-        <StyledButton href={linkButton} type="primary">
+        <StyledButton data-test="promotion-link" href={linkButton} type="primary">
           {textButton}
         </StyledButton>
       )}
