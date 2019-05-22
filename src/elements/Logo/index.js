@@ -3,10 +3,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import * as breakpoints from '../../breakpoints';
-import eurosport from '../icons/eurosport';
-import eurosportSmall from '../icons/eurosport.small';
+import Eurosport from '../icons/eurosport';
+import EurosportSmall from '../icons/eurosport.small';
 
-const StyledLogo = styled.div`
+const StyledSmallLogo = styled(EurosportSmall)`
+  box-sizing: border-box;
+  width: 20px;
+  height: 23px;
+`;
+
+const StyledLogo = styled(Eurosport)`
   box-sizing: border-box;
   width: 147px;
   height: 17px;
@@ -15,25 +21,11 @@ const StyledLogo = styled.div`
     width: 213px;
     height: 26px;
   `)};
-
-  ${props =>
-    props.small &&
-    css`
-      width: 20px;
-      height: 23px;
-    `}
 `;
 
-const Logo = ({ small }) => {
-  const Element = small ? eurosportSmall : eurosport;
-  return (
-    <StyledLogo>
-      <Element />
-    </StyledLogo>
-  );
-};
-
-Logo.css = StyledLogo;
+// eslint-disable-next-line react/prop-types
+const Logo = ({ small, className }) =>
+  small ? <StyledSmallLogo className={className} /> : <StyledLogo className={className} />;
 
 Logo.defaultProps = {
   small: false,
