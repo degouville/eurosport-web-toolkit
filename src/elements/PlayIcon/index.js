@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css, keyframes } from 'react-emotion';
 import { rgba } from 'polished';
 import { coreLightMinus1, brandPlus2 } from '../../colors';
-import play from '../../assets/play.svg';
+import PlayImg from '../icons/play';
 
 const spin = keyframes`
   from 0% {
@@ -55,10 +55,10 @@ const PlayIcon = ({ alt, height, isLoading, isRounded, ...props }) =>
   isRounded ? (
     <StyledWrapper {...props} isLoading={isLoading} iconHeight={height}>
       <StyledBorder isLoading={isLoading} />
-      <img src={play} alt={alt} />
+      <PlayImg />
     </StyledWrapper>
   ) : (
-    <img src={play} alt={alt} {...props} />
+    <PlayImg />
   );
 
 PlayIcon.defaultProps = {

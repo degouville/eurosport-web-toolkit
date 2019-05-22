@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Carousel from '../../components/Carousel';
 import Cards from '../../components/Card';
 import { coreLightMinus1, coreNeutral1 } from '../../colors';
-import { ReactComponent as Play } from '../../assets/circleplay.svg';
+import Play from '../../elements/icons/circleplay';
 
 const StyledPlayIco = styled(Play)`
   width: 16px;

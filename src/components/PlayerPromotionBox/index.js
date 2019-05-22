@@ -6,7 +6,7 @@ import Button from '../../elements/Button';
 import * as breakpoints from '../../breakpoints';
 import * as colors from '../../colors';
 import { H2, fontAlphaHeadline, fontHelvetica } from '../../typography';
-import Check from '../../assets/red-check.svg';
+import Check from '../../elements/icons/red-check';
 
 const StyledWrapper = styled.div`
   position: relative;
@@ -56,7 +56,6 @@ const StyledList = styled.ul`
 `;
 
 export const StyledItem = styled.li`
-  background: url(${Check}) no-repeat;
   line-height: 19px;
   background-size: 24px 19px;
   padding-left: 35px;
@@ -78,7 +77,10 @@ const PlayerPromotionBox = ({ className, pictureUrl, title, texts, textButton, l
       <StyledList>
         {texts.map((text, i) => (
           // eslint-disable-next-line react/no-array-index-key
-          <StyledItem key={i}>{text}</StyledItem>
+          <StyledItem key={i}>
+            <Check />
+            {text}
+          </StyledItem>
         ))}
       </StyledList>
       {linkButton && textButton && (

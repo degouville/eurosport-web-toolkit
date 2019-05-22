@@ -3,7 +3,7 @@ import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { fontAlphaHeadline } from '../../typography';
 import { medium } from '../../breakpoints';
-import lockIcon from '../../assets/lock-icon.svg';
+import LockIcon from '../../elements/icons/lock-icon';
 import { coreLightMinus1 } from '../../colors';
 
 const StyledWrapper = styled.div`
@@ -18,7 +18,7 @@ const StyledWrapper = styled.div`
   `)};
 `;
 
-const StyledIcon = styled.img`
+const StyledIcon = styled(LockIcon)`
   margin-bottom: 20px;
   height: 46px;
   width: 46px;
@@ -26,7 +26,7 @@ const StyledIcon = styled.img`
 
 export const DeactivatedComments = ({ deactivatedText }) => (
   <StyledWrapper data-test="deactivated-comments">
-    <StyledIcon src={lockIcon} alt="lock icon" />
+    <StyledIcon />
     <div>{deactivatedText}</div>
   </StyledWrapper>
 );

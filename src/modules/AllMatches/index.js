@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { medium } from '../../breakpoints';
 import { coreLightMinus1, mischka, coreLightBase } from '../../colors';
 import { H3 } from '../../typography';
-import { ReactComponent as Chevron } from '../../assets/chevron.svg';
+import Chevron from '../../elements/icons/chevron';
 import ScoreBlock, { scoreBlockType } from '../../components/ScoreBlock';
 import Grid, { Column } from '../../elements/Grid';
 import ViewMore, { StyledViewMoreButton, StyledViewMoreButtonWrapper } from '../ViewMore';

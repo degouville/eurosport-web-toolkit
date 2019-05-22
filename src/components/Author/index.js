@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import E from '../../assets/channels/E.svg';
+import E from '../../elements/icons/channels/E';
 import * as breakpoints from '../../breakpoints';
 import * as colors from '../../colors';
 
@@ -11,6 +11,15 @@ const StyledAuthor = styled.div`
 `;
 
 const StyledImage = styled.img`
+  height: 32px;
+  width: 32px;
+  ${breakpoints.small(css`
+    height: 40px;
+    width: 40px;
+  `)};
+`;
+
+const StyledDefaultImage = styled(E)`
   height: 32px;
   width: 32px;
   ${breakpoints.small(css`
@@ -53,19 +62,16 @@ const StyledTime = styled.div`
   color: ${colors.coreLightMinus1};
 `;
 
-const Author = ({ name, img, time, ...props }) => {
-  const avatar = img || E;
-  return (
-    <StyledAuthor {...props}>
-      <StyledImage src={avatar} alt={name} />
-      <StyledSpacer />
-      <StyledContent>
-        <StyledName>{name}</StyledName>
-        <StyledTime>{time}</StyledTime>
-      </StyledContent>
-    </StyledAuthor>
-  );
-};
+const Author = ({ name, img, time, ...props }) => (
+  <StyledAuthor {...props}>
+    {img ? <StyledImage src={img} alt={name} /> : <StyledDefaultImage />}
+    <StyledSpacer />
+    <StyledContent>
+      <StyledName>{name}</StyledName>
+      <StyledTime>{time}</StyledTime>
+    </StyledContent>
+  </StyledAuthor>
+);
 
 Author.propTypes = {
   name: PropTypes.string.isRequired,
@@ -74,7 +80,7 @@ Author.propTypes = {
 };
 
 Author.defaultProps = {
-  img: E,
+  img: '',
 };
 
 export default Author;

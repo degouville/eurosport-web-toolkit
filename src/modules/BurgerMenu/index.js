@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import Cross from '../../assets/close-cross.svg';
+import Cross from '../../elements/icons/close-cross';
 import LeftMenu from './LeftMenu/LeftMenu';
 import RightMenu from './RightMenu/RightMenu';
 import BottomMenu from './BottomMenu/BottomMenu';
@@ -37,7 +37,6 @@ const StyledButtonClosed = styled.a`
   width: 20px;
   height: 20px;
   z-index: 10;
-  background: url(${Cross}) no-repeat center center;
   background-size: 20px 20px;
   &:hover {
     cursor: pointer;
@@ -92,7 +91,9 @@ export class BurgerMenu extends React.Component {
 
     return (
       <StyledModal data-test="modal-container" isOpen={isOpen}>
-        <StyledButtonClosed onClick={onClose} data-test="burger-menu-close" href="#" />
+        <StyledButtonClosed onClick={onClose} data-test="burger-menu-close" href="#">
+          <Cross />
+        </StyledButtonClosed>
         <StyledMenu>
           <StyledMenuTop>
             <LeftMenu

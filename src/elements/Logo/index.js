@@ -3,10 +3,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import * as breakpoints from '../../breakpoints';
-import eurosport from '../../assets/eurosport.svg';
-import eurosportSmall from '../../assets/eurosport.small.svg';
+import eurosport from '../icons/eurosport';
+import eurosportSmall from '../icons/eurosport.small';
 
-const StyledLogo = styled.img`
+const StyledLogo = styled.div`
   box-sizing: border-box;
   width: 147px;
   height: 17px;
@@ -24,7 +24,14 @@ const StyledLogo = styled.img`
     `}
 `;
 
-const Logo = ({ small }) => <StyledLogo src={small ? eurosportSmall : eurosport} alt="Eurosport" />;
+const Logo = ({ small }) => {
+  const Element = small ? eurosportSmall : eurosport;
+  return (
+    <StyledLogo>
+      <Element />
+    </StyledLogo>
+  );
+};
 
 Logo.css = StyledLogo;
 

@@ -8,23 +8,8 @@ export default [
     use: {
       loader: 'babel-loader',
       options: {
-        plugins: [
-          [
-            require.resolve('babel-plugin-named-asset-import'),
-            {
-              loaderMap: {
-                svg: {
-                  ReactComponent: '@svgr/webpack?-prettier,-svgo![path]',
-                },
-              },
-            },
-          ],
-        ],
+        plugins: [],
       },
     },
-  },
-  {
-    test: /\.svg$/,
-    use: 'url-loader',
   },
 ];

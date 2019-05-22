@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { ScoreBlock, StyledButton } from './ScoreBlock';
 import { liveMatchData, pastMatchData } from './mockData/mockScoreBlockData';
-import greenCircleSVG from '../../assets/green-circle.svg';
-import crossSVG from '../../assets/circle-with-cross.svg';
+import greenCircleSVG from '../../elements/icons/green-circle';
+import crossSVG from '../../elements/icons/circle-with-cross';
 
 describe('<ScoreBlock />', () => {
   it('Renders a ScoreBlock component with expected snapshot', () => {

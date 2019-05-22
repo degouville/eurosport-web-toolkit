@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import * as colors from '../../../colors';
 import { H2 } from '../../../typography';
 import Link from '../../../elements/Link';
-import { ReactComponent as Chevron } from '../../../assets/chevron.svg';
+import Chevron from '../../../elements/icons/chevron';
 import { Column, Row } from '../../../elements/Grid';
 
 const StyledColumn = styled(Column)`

@@ -6,16 +6,16 @@ import { fontAlphaHeadlineBold } from '../../typography';
 import Carousel from '../../components/Carousel';
 import * as icons from './icon-type';
 import * as breakpoints from '../../breakpoints';
-import AllMatchesIcon from '../../assets/tabs/all-matches.svg';
-import MatchIcon from '../../assets/tabs/match.svg';
-import UserCommentsIcon from '../../assets/tabs/user-comments.svg';
-import LiveCommentsIcon from '../../assets/tabs/live-comments.svg';
+import AllMatchesIcon from '../../elements/icons/tabs/all-matches';
+import MatchIcon from '../../elements/icons/tabs/match';
+import UserCommentsIcon from '../../elements/icons/tabs/user-comments';
+import LiveCommentsIcon from '../../elements/icons/tabs/live-comments';
 
 const iconsMap = {
-  [icons.ALL_MATCHES]: AllMatchesIcon,
-  [icons.MATCH]: MatchIcon,
-  [icons.USER_COMMENTS]: UserCommentsIcon,
-  [icons.LIVE_COMMENTS]: LiveCommentsIcon,
+  [icons.ALL_MATCHES]: <AllMatchesIcon />,
+  [icons.MATCH]: <MatchIcon />,
+  [icons.USER_COMMENTS]: <UserCommentsIcon />,
+  [icons.LIVE_COMMENTS]: <LiveCommentsIcon />,
 };
 
 const activeItemStyle = `cursor: pointer;
@@ -68,7 +68,6 @@ const BaseIcon = styled.span`
 
 const StyledIcon = styled(BaseIcon)`
   display: none;
-  background-image: url(${props => props.icon});
   ${breakpoints.medium(css`
     display: inline-block;
   `)};
@@ -111,7 +110,7 @@ export default class Tabs extends React.Component {
         <Carousel alignCenter withArrow={false}>
           {tabs.map(({ label, icon, key }) => (
             <StyledItem data-test={key} key={key} onClick={() => this.handleClick(key)} isActive={itemSelected === key}>
-              {icon && iconsMap[icon] && <StyledIcon icon={iconsMap[icon]} />}
+              {icon && iconsMap[icon] && <StyledIcon>{iconsMap[icon]}</StyledIcon>}
               <StyledLabel data-test="label">{label}</StyledLabel>
             </StyledItem>
           ))}

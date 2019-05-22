@@ -5,8 +5,8 @@ import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import SetsScore, { StyledSpacer, setsScoreType } from './SetsScore';
 import { fontInterUi } from '../../typography';
-import circleWithCross from '../../assets/circle-with-cross.svg';
-import greenCircle from '../../assets/green-circle.svg';
+import CircleWithCross from '../../elements/icons/circle-with-cross';
+import GreenCircle from '../../elements/icons/green-circle';
 import Link from '../../elements/Link';
 
 const StyledClickableWrapper = styled(Link)`
@@ -105,13 +105,7 @@ export const ScoreBlock = ({
     <StyledClickableWrapper href={matchUrl} data-test="clickable-scoreblock-wrapper">
       <StyledScoreWrapper hasLeftCircle={hasLeftCircle}>
         {hasLeftCircle && (
-          <StyledBigDot>
-            {displayLeftCircle === 'won' ? (
-              <img src={greenCircle} alt="won match icon" />
-            ) : (
-              <img src={circleWithCross} alt="lost match icon" />
-            )}
-          </StyledBigDot>
+          <StyledBigDot>{displayLeftCircle === 'won' ? <GreenCircle /> : <CircleWithCross />}</StyledBigDot>
         )}
         <SetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
       </StyledScoreWrapper>

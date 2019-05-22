@@ -11,7 +11,7 @@ import * as breakpoints from '../../breakpoints';
 import { brandBase, coreLightMinus1, mischka } from '../../colors';
 import Button from '../../elements/Button';
 import { fontHelvetica } from '../../typography';
-import { ReactComponent as Chevron } from '../../assets/chevron.svg';
+import Chevron from '../../elements/icons/chevron';
 
 const StyledButton = styled(Button)`
   margin-left: auto;

@@ -6,7 +6,7 @@ import { rgba } from 'polished';
 import { Carousel } from '../..';
 import WatchbarCard from '../Card/WatchbarCard';
 import { coreLightMinus1, coreNeutral1 } from '../../colors';
-import { ReactComponent as Play } from '../../assets/circleplay.svg';
+import Play from '../../elements/icons/circleplay';
 
 const indexStories = storiesOf('Components|Carousel', module);
 
