@@ -11,20 +11,17 @@ import TwitterIcon from '../icons/social-icons/twitter';
 
 export const StyledFacebook = styled(BaseImage)`
   background-color: #3d5a98;
-  background-size: 13px 13px;
 `;
 
 export const StyledSnapchat = styled(BaseImage)`
-  background-size: 13px 13px;
   background-color: #fffc00;
 `;
 
 export const StyledInstagram = styled(BaseImage)`
-  background-size: 19px 19px;
+  padding: 0;
 `;
 
 export const StyledTwitter = styled(BaseImage)`
-  background-size: 13px 13px;
   background-color: #0090fe;
 `;
 
