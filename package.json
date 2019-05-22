@@ -9,13 +9,14 @@
     "test:visual": "STORYBOOK_OVERRIDE_BG=true eyes-storybook",
     "cypress": "cypress run",
     "cypress:open": "cypress open",
-    "build": "webpack",
+    "build": "webpack && npm run babel-esm",
     "lint": "eslint .",
     "prettier": "prettier --write '**/{*.{js?(on),ts,y?(a)ml,graphql,md,scss},.*.y?(a)ml,.*.json,.prettierrc,.stylelintrc}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "start-static-storybook": "serve ./storybook-static",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "babel-esm": " babel --env-name esm ./src --out-dir=./dist/es6/ -D"
   },
   "husky": {
     "hooks": {

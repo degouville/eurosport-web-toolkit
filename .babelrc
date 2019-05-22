@@ -1,4 +1,33 @@
 {
   "presets": ["@babel/preset-react", "@babel/preset-env"],
-  "plugins": ["emotion", "@babel/plugin-proposal-class-properties", "@babel/plugin-proposal-export-default-from" ,"react-docgen"]
+  "plugins": [
+    "emotion",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from",
+    "react-docgen"
+  ],
+  "env": {
+    "esm": {
+      "presets": [
+        "@babel/preset-react",
+        [
+          "@babel/preset-env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ],
+      "plugins": [
+        "emotion",
+        "@babel/plugin-proposal-export-default-from",
+        [
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
+        ]
+      ],
+      "ignore": ["**/*.test.js", "**/*.stories.js"]
+    }
+  }
 }
