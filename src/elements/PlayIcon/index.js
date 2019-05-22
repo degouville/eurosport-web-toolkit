@@ -51,14 +51,21 @@ const StyledWrapper = styled.div`
   }
 `;
 
+const StyledPlayImage = styled(PlayImg)`
+  width: 38%;
+  height: 38%;
+  display: inline-block;
+  vertical-align: middle;
+`;
+
 const PlayIcon = ({ alt, height, isLoading, isRounded, ...props }) =>
   isRounded ? (
     <StyledWrapper {...props} isLoading={isLoading} iconHeight={height}>
       <StyledBorder isLoading={isLoading} />
-      <PlayImg />
+      <PlayImg {...props} />
     </StyledWrapper>
   ) : (
-    <PlayImg />
+    <StyledPlayImage {...props} />
   );
 
 PlayIcon.defaultProps = {
