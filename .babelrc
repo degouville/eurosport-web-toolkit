@@ -1,4 +1,4 @@
 {
   "presets": ["@babel/preset-react", "@babel/preset-env"],
-  "plugins": ["emotion", "@babel/plugin-proposal-class-properties" ,"react-docgen"]
+  "plugins": ["emotion", "@babel/plugin-proposal-class-properties", "@babel/plugin-proposal-export-default-from" ,"react-docgen"]
 }
