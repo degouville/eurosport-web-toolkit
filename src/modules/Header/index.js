@@ -13,6 +13,8 @@ import Button from '../../elements/Button';
 import { fontHelvetica } from '../../typography';
 import Chevron from '../../elements/icons/chevron';
 
+const StyledLogo = styled(Logo)``;
+
 const StyledButton = styled(Button)`
   margin-left: auto;
   margin-right: 11px;
@@ -46,7 +48,7 @@ const StyledWrapper = styled.header`
     height: 70px;
   `)};
 
-  ${Logo.css} {
+  ${StyledLogo} {
     margin: 4px 15px 0 0;
 
     ${breakpoints.medium(css`
@@ -187,10 +189,10 @@ class Header extends Component {
         <Link href={homePageUrl} data-test="header-logo">
           {hasBreadcrumbs ? (
             <HideOnMobile>
-              <Logo />
+              <StyledLogo />
             </HideOnMobile>
           ) : (
-            <Logo />
+            <StyledLogo />
           )}
         </Link>
         {hasBreadcrumbs && <Breadcrumbs items={breadcrumbs} />}
