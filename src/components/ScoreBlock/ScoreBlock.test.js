@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { ScoreBlock, StyledButton } from './ScoreBlock';
 import { liveMatchData, pastMatchData } from './mockData/mockScoreBlockData';
-import greenCircleSVG from '../../elements/icons/green-circle';
-import crossSVG from '../../elements/icons/circle-with-cross';
+import GreenCircleSVG from '../../elements/icons/green-circle';
+import CrossSVG from '../../elements/icons/circle-with-cross';
 
 describe('<ScoreBlock />', () => {
   it('Renders a ScoreBlock component with expected snapshot', () => {
@@ -32,8 +32,8 @@ describe('<ScoreBlock />', () => {
         t={key => key}
       />
     );
-    const greenCircle = wrapper.find('img');
-    expect(greenCircle.prop('src')).toEqual(greenCircleSVG);
+    const greenCircle = wrapper.find(GreenCircleSVG);
+    expect(greenCircle).toHaveLength(1);
   });
 
   it('should display a grey circle with cross if displayLeftCircle is set to lost', () => {
@@ -47,7 +47,7 @@ describe('<ScoreBlock />', () => {
         t={key => key}
       />
     );
-    const circle = wrapper.find('img');
-    expect(circle.prop('src')).toEqual(crossSVG);
+    const circle = wrapper.find(CrossSVG);
+    expect(circle).toHaveLength(1);
   });
 });

@@ -35,7 +35,7 @@ export const hoverStyles = css`
   }
 `;
 
-const StyledWrapper = styled.div`
+export const StyledWrapper = styled.div`
   position: relative;
   display: inline-block;
   height: ${({ iconHeight }) => `${iconHeight}px`};
@@ -51,7 +51,7 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const StyledPlayImageSmall = styled(PlayImg)`
+export const StyledPlayImageSmall = styled(PlayImg)`
   width: 38%;
   height: 38%;
   display: inline-block;
