@@ -81,9 +81,9 @@ const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
       </StyledTeamName>
       <StyledTeamSets>
         {sets &&
-          sets.map(({ set, score, tie, ...props }) => (
+          sets.map(({ set, score, tie, won, ...props }) => (
             <StyledSetScoreWrapper key={`set-${set}`} highlightLastSet={highlightLastSet} {...props}>
-              <StyledTeamSet>
+              <StyledTeamSet won={won}>
                 {score}
                 {tie != null && <sup>{tie}</sup>}
               </StyledTeamSet>
