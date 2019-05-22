@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default () => (
-  <svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+// eslint-disable-next-line react/prop-types
+export default ({ className }) => (
+  <svg width="33px" height="32px" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg" className={className}>
     <title>Path</title>
     <desc>Created with Sketch.</desc>
     <g id="Responsive-web" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">

@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 23">
+// eslint-disable-next-line react/prop-types
+export default ({ className }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 23" className={className}>
     <title>Eurosport</title>
     <path
       fill="#c6c7ce"

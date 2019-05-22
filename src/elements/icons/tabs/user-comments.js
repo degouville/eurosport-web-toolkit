@@ -1,7 +1,15 @@
 import React from 'react';
 
-export default () => (
-  <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+// eslint-disable-next-line react/prop-types
+export default ({ className }) => (
+  <svg
+    width="32px"
+    height="32px"
+    viewBox="0 0 32 32"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
     <defs>
       <polygon id="path-1" points="0 3.2e-05 31.999424 3.2e-05 31.999424 31.99968 0 31.99968" />
     </defs>

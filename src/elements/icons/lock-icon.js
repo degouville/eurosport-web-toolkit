@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default () => (
-  <svg version="1.1" viewBox="0 0 31 46" xmlns="http://www.w3.org/2000/svg">
+// eslint-disable-next-line react/prop-types
+export default ({ className }) => (
+  <svg version="1.1" viewBox="0 0 31 46" xmlns="http://www.w3.org/2000/svg" className={className}>
     <title>lock-icon 2</title>
     <desc>Created with Sketch.</desc>
     <g fill="none" fillRule="evenodd">
