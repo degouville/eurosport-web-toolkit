@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const UserCommentsTabIcon = ({ className }) => (
   <svg
     width="32px"
     height="32px"
@@ -31,3 +31,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+UserCommentsTabIcon.displayName = 'UserCommentsTabIcon';
+
+export default UserCommentsTabIcon;

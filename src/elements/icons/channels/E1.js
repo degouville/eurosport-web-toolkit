@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const E1channel = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 15" className={className}>
     <title>Eurosport 1</title>
     <g fill="none" fillRule="evenodd">
@@ -22,3 +22,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+E1channel.displayName = 'E1channel';
+
+export default E1channel;

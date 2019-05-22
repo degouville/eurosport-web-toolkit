@@ -13,7 +13,7 @@ exports[`Header renders Header 1`] = `
     href=""
     linkComponent={[Function]}
   >
-    <Logo
+    <Styled(Logo)
       small={false}
     />
   </Link>
@@ -38,7 +38,7 @@ exports[`Header with cta renders Header with cta 1`] = `
     href=""
     linkComponent={[Function]}
   >
-    <Logo
+    <Styled(Logo)
       small={false}
     />
   </Link>
@@ -2454,7 +2454,7 @@ exports[`Header with submenu renders Header with BurgerMenu 1`] = `
     linkComponent={[Function]}
   >
     <HideOnMobile>
-      <Logo
+      <Styled(Logo)
         small={false}
       />
     </HideOnMobile>

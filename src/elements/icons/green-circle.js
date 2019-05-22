@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const GreenCircle = ({ className }) => (
   <svg
     width="26px"
     height="26px"
@@ -21,3 +21,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+GreenCircle.displayName = 'GreenCircle';
+
+export default GreenCircle;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const EurosportSmall = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.6 188.4" className={className}>
     <path
       fill="#fff"
@@ -9,3 +9,7 @@ export default ({ className }) => (
     />
   </svg>
 );
+
+EurosportSmall.displayName = 'EurosportSmall';
+
+export default EurosportSmall;

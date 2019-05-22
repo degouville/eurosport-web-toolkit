@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const InstagramIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503.84 503.84" className={className}>
     <path
       fill="#fff"
@@ -16,3 +16,7 @@ export default ({ className }) => (
     <circle fill="#fff" cx="386.4" cy="117.44" r="30.23" />
   </svg>
 );
+
+InstagramIcon.displayName = 'InstagramIcon';
+
+export default InstagramIcon;

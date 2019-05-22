@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const CirclePlay = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" className={className}>
     <title>27B5DA1E-B6A0-4E4C-A0D3-B9709EC5CAB0</title>
     <g fill="none" fillRule="evenodd">
@@ -13,3 +13,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+CirclePlay.displayName = 'CirclePlay';
+
+export default CirclePlay;

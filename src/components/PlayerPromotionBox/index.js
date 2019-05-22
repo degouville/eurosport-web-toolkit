@@ -8,6 +8,19 @@ import * as colors from '../../colors';
 import { H2, fontAlphaHeadline, fontHelvetica } from '../../typography';
 import Check from '../../elements/icons/red-check';
 
+const StyledCheck = styled(Check)`
+  width: 100%;
+  height: 100%;
+`;
+
+const StyledCheckWrapper = styled.div`
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 20px;
+  margin-right: 10px;
+`;
+
 const StyledWrapper = styled.div`
   position: relative;
   ${props =>
@@ -58,7 +71,6 @@ const StyledList = styled.ul`
 export const StyledItem = styled.li`
   line-height: 19px;
   background-size: 24px 19px;
-  padding-left: 35px;
   margin-bottom: 23px;
   ${fontHelvetica};
   font-size: 14px;
@@ -78,7 +90,9 @@ const PlayerPromotionBox = ({ className, pictureUrl, title, texts, textButton, l
         {texts.map((text, i) => (
           // eslint-disable-next-line react/no-array-index-key
           <StyledItem key={i}>
-            <Check />
+            <StyledCheckWrapper>
+              <StyledCheck />
+            </StyledCheckWrapper>
             {text}
           </StyledItem>
         ))}

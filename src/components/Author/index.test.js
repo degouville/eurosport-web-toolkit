@@ -14,10 +14,10 @@ describe('Author', () => {
   });
   it('renders Author without avatar', () => {
     const wrapper = mount(<Author name="name" time="time" />);
-    expect(wrapper.find('img').prop('src')).toEqual(E);
+    expect(wrapper.find(E)).toHaveLength(1);
   });
   it('renders Author with empty avatar', () => {
     const wrapper = mount(<Author name="name" img="" time="time" />);
-    expect(wrapper.find('img').prop('src')).toEqual(E);
+    expect(wrapper.find(E)).toHaveLength(1);
   });
 });

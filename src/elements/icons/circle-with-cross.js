@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const CircleWithCross = ({ className }) => (
   <svg
     width="26px"
     height="26px"
@@ -38,3 +38,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+CircleWithCross.displayName = 'CircleWithCross';
+
+export default CircleWithCross;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const MatchTabIcon = ({ className }) => (
   <svg
     width="32px"
     height="32px"
@@ -26,3 +26,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+MatchTabIcon.displayName = 'MatchTabIcon';
+
+export default MatchTabIcon;

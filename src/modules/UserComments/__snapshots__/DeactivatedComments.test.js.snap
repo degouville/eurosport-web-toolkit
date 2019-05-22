@@ -4,10 +4,7 @@ exports[`DeactivatedComments renders a DeactivatedComments Component 1`] = `
 <Styled(div)
   data-test="deactivated-comments"
 >
-  <Styled(img)
-    alt="lock icon"
-    src="lock-icon.svg"
-  />
+  <Styled(LockIcon) />
   <div>
     Comments are deactivated for this publication
   </div>

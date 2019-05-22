@@ -13,16 +13,25 @@ exports[`PlayerPromotionBox renders its content 1`] = `
       <Styled(li)
         key="0"
       >
+        <Styled(div)>
+          <Styled(RedCheck) />
+        </Styled(div)>
         Watch your favourite sports live and on demand
       </Styled(li)>
       <Styled(li)
         key="1"
       >
+        <Styled(div)>
+          <Styled(RedCheck) />
+        </Styled(div)>
         Stream to your device at home and on the go
       </Styled(li)>
       <Styled(li)
         key="2"
       >
+        <Styled(div)>
+          <Styled(RedCheck) />
+        </Styled(div)>
         Grand Slam tennis, cycling, motorsports and much more
       </Styled(li)>
     </Styled(ul)>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const LoveCommentsTabIcon = ({ className }) => (
   <svg width="33px" height="32px" viewBox="0 0 33 32" xmlns="http://www.w3.org/2000/svg" className={className}>
     <title>Path</title>
     <desc>Created with Sketch.</desc>
@@ -19,3 +19,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+LoveCommentsTabIcon.displayName = 'LoveCommentsTabIcon';
+
+export default LoveCommentsTabIcon;

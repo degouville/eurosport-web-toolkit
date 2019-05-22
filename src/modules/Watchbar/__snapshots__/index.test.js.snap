@@ -81,7 +81,7 @@ exports[`renders a WatchBar with a title 1`] = `
     key="Live on Eurosport"
   >
     <Styled(div)>
-      <Styled(ReactComponent) />
+      <Styled(CirclePlay) />
       <Styled(div)>
         Live on Eurosport
       </Styled(div)>
@@ -98,7 +98,7 @@ exports[`renders a WatchBar with a title 1`] = `
       key="Live on Eurosport"
     >
       <Styled(div)>
-        <Styled(ReactComponent) />
+        <Styled(CirclePlay) />
         <Styled(div)>
           Live on Eurosport
         </Styled(div)>

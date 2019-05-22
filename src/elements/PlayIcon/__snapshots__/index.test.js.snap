@@ -9,9 +9,6 @@ exports[`PlayIcon should render default icon 1`] = `
   <Styled(div)
     isLoading={false}
   />
-  <img
-    alt="play"
-    src="play.svg"
-  />
+  <Styled(PlayIcon) />
 </Styled(div)>
 `;

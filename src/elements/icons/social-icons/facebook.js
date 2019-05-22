@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const FaceBookIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className={className}>
     <path
       fill="#fff"
@@ -9,3 +9,7 @@ export default ({ className }) => (
     />
   </svg>
 );
+
+FaceBookIcon.displayName = 'FaceBookIcon';
+
+export default FaceBookIcon;

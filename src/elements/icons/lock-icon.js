@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line react/prop-types
-export default ({ className }) => (
+const LockIcon = ({ className }) => (
   <svg version="1.1" viewBox="0 0 31 46" xmlns="http://www.w3.org/2000/svg" className={className}>
     <title>lock-icon 2</title>
     <desc>Created with Sketch.</desc>
@@ -16,3 +16,7 @@ export default ({ className }) => (
     </g>
   </svg>
 );
+
+LockIcon.displayName = 'LockIcon';
+
+export default LockIcon;

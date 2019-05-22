@@ -21,6 +21,6 @@ exports[`renders a ArrowLink 1`] = `
   }
 >
   Click me !
-  <Styled(ReactComponent) />
+  <Styled(ChevronIcon) />
 </Styled(a)>
 `;
