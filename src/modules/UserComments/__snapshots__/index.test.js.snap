@@ -6,6 +6,7 @@ exports[`UserComments renders a UserComments Component 1`] = `
   <ActivatedComments
     commentsCountCallback={null}
     deactivatedText="Comments are deactivated for this publication"
+    fullWidth={true}
     livefyreConfig={
       Object {
         "areCommentsActivated": true,

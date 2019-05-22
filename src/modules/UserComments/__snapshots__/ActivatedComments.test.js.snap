@@ -10,10 +10,14 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
     onLoad={[Function]}
     src="//cdn.livefyre.com/Livefyre.js"
   />
-  <Styled(div)>
+  <Styled(div)
+    fullWidth={true}
+  >
     Comments
   </Styled(div)>
-  <Styled(div)>
+  <Styled(div)
+    fullWidth={true}
+  >
     <Styled(div)
       data-test="activated-comments"
       id="livefyre"

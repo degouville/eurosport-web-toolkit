@@ -24,6 +24,7 @@ userCommentsStories.add('ActivatedUserComments', () => (
       livefyreConfig={object('livefyreConfig', activatedCommentsConfig)}
       nbCommentsText={text('nbCommentsText', 'Comments')}
       deactivatedText={text('deactivatedText', 'Comments are deactivated for this publication')}
+      fullWidth={boolean('fullWidth', false)}
     />
   </>
 ));
@@ -37,6 +38,7 @@ userCommentsStories.add('DeactivatedUserComments', () => (
       livefyreConfig={object('livefyreConfig', deactivatedCommentsConfig)}
       nbCommentsText={text('nbCommentsText', 'Comments')}
       deactivatedText={text('deactivatedText', 'Comments are deactivated for this publication')}
+      fullWidth={boolean('fullWidth', false)}
     />
   </>
 ));
@@ -61,6 +63,7 @@ userCommentsStories.add('ActivatedUserCommentsWithAds', () => (
       rightAdElement={<AdPlacement adType={AdManager.enums.adTypes.MPU} isNoMobile isNoTablet />}
       nbCommentsText={text('nbCommentsText', 'Comments')}
       deactivatedText={text('deactivatedText', 'Comments are deactivated for this publication')}
+      fullWidth={boolean('fullWidth', false)}
     />
   </>
 ));

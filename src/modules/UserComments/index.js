@@ -32,6 +32,7 @@ UserComments.defaultProps = {
   nbCommentsText: '{{count}} comment',
   nbCommentsTextPlural: '{{count}} comments',
   deactivatedText: 'Comments are deactivated for this publication',
+  fullWidth: true,
 };
 
 UserComments.propTypes = {
@@ -44,6 +45,7 @@ UserComments.propTypes = {
   nbCommentsText: PropTypes.string,
   nbCommentsTextPlural: PropTypes.string,
   deactivatedText: PropTypes.string,
+  fullWidth: PropTypes.bool,
 };
 
 export default UserComments;

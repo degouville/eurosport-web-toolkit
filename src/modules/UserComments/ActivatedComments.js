@@ -20,12 +20,24 @@ const StyledHeader = styled.div`
   ${breakpoints.medium(css`
     font-size: 16px;
   `)};
+
+  ${props =>
+    !props.fullWidth &&
+    breakpoints.wide(css`
+      padding-left: 10%;
+    `)};
 `;
 
 const StyledWrapper = styled.div`
   display: flex;
   flex-flow: nowrap row;
   align-content: flex-start;
+
+  ${props =>
+    !props.fullWidth &&
+    breakpoints.wide(css`
+      padding: 0 10%;
+    `)};
 `;
 
 const StyledComments = styled.div`
@@ -50,13 +62,19 @@ const StyledFooter = styled.a`
   font-size: 12px;
   ${fontAlphaHeadline};
   color: ${colors.coreLightMinus1};
-  text-align: right;
+  text-align: left;
   margin-top: 15px;
   text-decoration: none;
 
   ${breakpoints.medium(css`
     font-size: 14px;
   `)};
+
+  ${props =>
+    !props.fullWidth &&
+    breakpoints.wide(css`
+      padding-left: 10%;
+    `)};
 `;
 
 export const StyledSpinnerWrapper = styled.div`
@@ -1300,7 +1318,6 @@ a.fyre-stream-sort-top-comments {
 
 @media screen and (min-width: 1366px) {
 	.fyre-editor .fyre-editor-container .fyre-editor-editable {
-    width: 60% !important;
 	}
 }
 `,
@@ -1382,7 +1399,7 @@ export class ActivatedComments extends React.Component {
   };
 
   render() {
-    const { livefyreConfig, rightAdElement, nbCommentsText } = this.props;
+    const { livefyreConfig, rightAdElement, nbCommentsText, fullWidth } = this.props;
     const { isWidgetLoaded } = this.state;
 
     this.processAuth();
@@ -1398,8 +1415,8 @@ export class ActivatedComments extends React.Component {
     return (
       <>
         <ScriptInjector isServer={false} src={livefyreConfig.config.scriptUrl} onLoad={this.initLivefyre} />
-        <StyledHeader>{nbCommentsText}</StyledHeader>
-        <StyledWrapper>
+        <StyledHeader fullWidth={fullWidth}>{nbCommentsText}</StyledHeader>
+        <StyledWrapper fullWidth={fullWidth}>
           <StyledComments id="livefyre" data-test="activated-comments">
             {comments}
           </StyledComments>
@@ -1416,6 +1433,7 @@ ActivatedComments.defaultProps = {
   rightAdElement: null,
   nbCommentsText: 'Comments',
   commentsCountCallback: null,
+  fullWidth: true,
 };
 
 export const ActivatedCommentsPropTypeShape = PropTypes.shape({
@@ -1441,6 +1459,7 @@ ActivatedComments.propTypes = {
   rightAdElement: PropTypes.element,
   userToken: PropTypes.string,
   nbCommentsText: PropTypes.string,
+  fullWidth: PropTypes.bool,
 };
 
 export default ActivatedComments;
