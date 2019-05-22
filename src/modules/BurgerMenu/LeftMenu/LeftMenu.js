@@ -8,6 +8,8 @@ import Logo from '../../../elements/Logo';
 import { large } from '../../../breakpoints';
 import { cerulean, coreDarkPlus1, coreNeutral8 } from '../../../colors';
 
+const StyledLogo = styled(Logo)``;
+
 const StyledTabs = styled.ul`
   width: 21.25%;
   min-width: 100px;
@@ -45,7 +47,7 @@ const StyledTabLogo = styled.a`
     height: 157px;
   `)};
 
-  &&& ${Logo.css} {
+  &&& ${StyledLogo} {
     width: 20px;
     height: 23px;
     margin: 0;
@@ -53,7 +55,7 @@ const StyledTabLogo = styled.a`
 
   ${large(css`
     padding: 0;
-    &&& ${Logo.css} {
+    &&& ${StyledLogo} {
       width: 140px;
       margin: 0;
     }
@@ -63,7 +65,7 @@ const StyledTabLogo = styled.a`
 const LeftMenu = ({ items, selectedMenuId, onMenuSelected, isMobileMenu, homePageUrl }) => (
   <StyledTabs>
     <StyledTabLogo href={homePageUrl} data-test="burger-logo">
-      <Logo small={isMobileMenu} />
+      <StyledLogo small={isMobileMenu} />
     </StyledTabLogo>
     {items &&
       items.map(item => (
