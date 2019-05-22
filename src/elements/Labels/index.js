@@ -3,6 +3,7 @@ import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { coreNeutral9, coreLightMinus1, royalBlue, utahCrimson, dodgerBlue, brandBase } from '../../colors';
 import { fontHelvetica } from '../../typography';
+import * as breakpoints from '../../breakpoints';
 
 const colorsMapping = {
   white: {
@@ -31,10 +32,11 @@ const StyledLabels = styled.div`
 const StyledLabel = styled.div`
   display: flex;
   ${fontHelvetica};
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 1px;
-  padding: 7px 15px 7px 15px;
+  font-size: 9.6px;
+  line-height: 27px;
+  height: 25px;
+  letter-spacing: 0.8px;
+  padding: 0 12px;
   text-transform: uppercase;
   ${props =>
     css`
@@ -64,6 +66,14 @@ const StyledLabel = styled.div`
         transform: skew(-5deg);
       }
     `}
+ 
+   ${breakpoints.medium(css`
+     font-size: 12px;
+     line-height: 30px;
+     height: 28px;
+     letter-spacing: 1px;
+     padding: 0 15px;
+   `)};
 `;
 
 const StyledLabelIcon = styled.div`
