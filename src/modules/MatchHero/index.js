@@ -120,7 +120,7 @@ MatchHero.defaultProps = {
 
 MatchHero.propTypes = {
   className: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.node.isRequired,
   date: PropTypes.string,
   hour: PropTypes.string,
   labels: labelsType.isRequired,
