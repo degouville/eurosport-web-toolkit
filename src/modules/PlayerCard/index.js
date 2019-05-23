@@ -48,7 +48,10 @@ export const StyledScoreBlock = styled.div`
 const StyledBefore = styled.div`
   :before {
     content: '';
-    width: 41px;
+    width: 23px;
+    ${breakpoints.medium(css`
+      width: 41px;
+    `)};
     height: 20px;
     border-right: 2px solid ${colors.coreLightMinus1};
     display: block;
