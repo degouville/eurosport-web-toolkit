@@ -34,6 +34,7 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
   </Styled(div)>
   <Styled(a)
     href="http://livefyre.fr"
+    target="_blank"
   >
     Powered by Livefyre
   </Styled(a)>
