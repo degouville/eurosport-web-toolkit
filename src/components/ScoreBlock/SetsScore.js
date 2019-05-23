@@ -29,6 +29,7 @@ export const StyledTeamName = styled.div`
 export const StyledSetScoreWrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 2em;
   ${props => props.highlight && `background-color: ${colors.actionOneDarkBase}`}
 `;
 
@@ -37,7 +38,7 @@ export const StyledTeamSet = styled.div`
   ${fontAlphaHeadline};
   font-weight: bold;
   font-size: 1em;
-  margin: 0 0.4em;
+  margin: auto;
   sup {
     font-size: 0.55em;
     vertical-align: super;
@@ -45,12 +46,6 @@ export const StyledTeamSet = styled.div`
     top: -0.4em;
     right: -0.2em;
   }
-  ${breakpoints.medium(css`
-    margin: 0 0.6em;
-  `)};
-  ${breakpoints.large(css`
-    margin: 0 0.8em;
-  `)};
 `;
 
 const StyledTeamSets = styled.div`
