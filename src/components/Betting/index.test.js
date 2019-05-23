@@ -21,4 +21,10 @@ describe('Betting', () => {
     global.Math.random = () => 0.8;
     expect(getRandomSentence(['a', 'b'])).toEqual('b');
   });
+
+  it('should render custom attribute', () => {
+    expect(shallow(<Betting {...doubleChoiceData} customAttr={{ attrName: 'attrValue' }} />).prop('attrName')).toEqual(
+      'attrValue'
+    );
+  });
 });

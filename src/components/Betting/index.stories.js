@@ -14,16 +14,16 @@ const Wrapper = styled.div`
 betting
   .add('Double choice', () => (
     <Wrapper>
-      <Betting {...object('data', doubleChoiceData)} />
+      <Betting {...object('data', doubleChoiceData)} customAttr={object('custom link attribute', { name: 'value' })} />
     </Wrapper>
   ))
   .add('Triple choice', () => (
     <Wrapper>
-      <Betting {...object('data', tripleChoiceData)} />
+      <Betting {...object('data', tripleChoiceData)} customAttr={object('custom link attribute', { name: 'value' })} />
     </Wrapper>
   ))
   .add('Alternative brand', () => (
     <Wrapper>
-      <Betting {...object('data', alternativeLogo)} />
+      <Betting {...object('data', alternativeLogo)} customAttr={object('custom link attribute', { name: 'value' })} />
     </Wrapper>
   ));
