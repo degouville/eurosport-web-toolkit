@@ -29,13 +29,11 @@ export const StyledTeamName = styled.div`
 export const StyledSetScoreWrapper = styled.div`
   display: flex;
   align-items: center;
-  &:last-child {
-    background-color: ${props => (props.highlightLastSet ? colors.actionOneDarkBase : 'transparent')};
-  }
+  ${props => props.highlight && `background-color: ${colors.actionOneDarkBase}`}
 `;
 
 export const StyledTeamSet = styled.div`
-  color: ${props => (props.won === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
+  color: ${props => (props.highlight === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
   ${fontAlphaHeadline};
   font-weight: bold;
   font-size: 1em;
@@ -81,14 +79,19 @@ const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
       </StyledTeamName>
       <StyledTeamSets>
         {sets &&
-          sets.map(({ set, score, tie, won, ...props }) => (
-            <StyledSetScoreWrapper key={`set-${set}`} highlightLastSet={highlightLastSet} {...props}>
-              <StyledTeamSet won={won}>
-                {score}
-                {tie != null && <sup>{tie}</sup>}
-              </StyledTeamSet>
-            </StyledSetScoreWrapper>
-          ))}
+          sets.map(({ set, score, tie, won, ...props }, index) => {
+            const isLast = index === sets.length - 1;
+            const highlightBackground = isLast && highlightLastSet;
+            const highlightValue = won || highlightBackground;
+            return (
+              <StyledSetScoreWrapper key={`set-${set}`} highlight={highlightBackground} {...props}>
+                <StyledTeamSet highlight={highlightValue}>
+                  {score}
+                  {tie != null && <sup>{tie}</sup>}
+                </StyledTeamSet>
+              </StyledSetScoreWrapper>
+            );
+          })}
       </StyledTeamSets>
     </StyledTeamWrapper>
   );
