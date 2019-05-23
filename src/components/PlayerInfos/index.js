@@ -155,7 +155,9 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
   <StyledPlayerInfos>
     <StyledFlex>
       <StyledPicContainer>
-        <img data-test="player-picture" src={player.pictureUrl} alt={`${player.firstName} ${player.lastName}`} />
+        {player.pictureUrl && (
+          <img data-test="player-picture" src={player.pictureUrl} alt={`${player.firstName} ${player.lastName}`} />
+        )}
       </StyledPicContainer>
       <StyledBlock>
         <>
