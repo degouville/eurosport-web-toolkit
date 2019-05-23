@@ -10,6 +10,7 @@ exports[`QuickPoll renders a QuickPoll Component 1`] = `
   </Styled(div)>
   <Styled(div)>
     <Styled(ArrowLink)
+      data-test="quickpoll-choice"
       key="123451"
       onClick={[Function]}
       showResults={false}
@@ -20,6 +21,7 @@ exports[`QuickPoll renders a QuickPoll Component 1`] = `
       </Styled(div)>
     </Styled(ArrowLink)>
     <Styled(ArrowLink)
+      data-test="quickpoll-choice"
       key="123452"
       onClick={[Function]}
       showResults={false}
@@ -30,6 +32,7 @@ exports[`QuickPoll renders a QuickPoll Component 1`] = `
       </Styled(div)>
     </Styled(ArrowLink)>
     <Styled(ArrowLink)
+      data-test="quickpoll-choice"
       key="123453"
       onClick={[Function]}
       showResults={false}
@@ -40,6 +43,7 @@ exports[`QuickPoll renders a QuickPoll Component 1`] = `
       </Styled(div)>
     </Styled(ArrowLink)>
     <Styled(ArrowLink)
+      data-test="quickpoll-choice"
       key="123454"
       onClick={[Function]}
       showResults={false}
@@ -50,6 +54,7 @@ exports[`QuickPoll renders a QuickPoll Component 1`] = `
       </Styled(div)>
     </Styled(ArrowLink)>
     <Styled(ArrowLink)
+      data-test="quickpoll-choice"
       key="123455"
       onClick={[Function]}
       showResults={false}

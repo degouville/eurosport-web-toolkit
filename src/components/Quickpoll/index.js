@@ -149,6 +149,7 @@ class QuickPoll extends React.Component {
                 onClick={() => this.handleClick(choice.id)}
                 type="secondary"
                 showResults={showResults}
+                data-test="quickpoll-choice"
               >
                 {showResults && (
                   <>
