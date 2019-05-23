@@ -67,6 +67,7 @@ export const StyledMarker = styled.div`
 `;
 const StyledPictogram = styled.img`
   width: 17px;
+  max-height: 17px;
 `;
 
 export const StyledTwitterCard = styled(Cards.Twitter)`
