@@ -91,10 +91,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -225,10 +221,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -330,10 +322,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -426,7 +414,7 @@ exports[`AdInit matches snapshot 1`] = `
             },
           },
           "mpu": Object {
-            "count": 1,
+            "count": 5,
             "creative": Object {
               "name": "mpu",
               "sizes": Object {
@@ -434,10 +422,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -546,10 +530,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -650,10 +630,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -756,10 +732,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -860,10 +832,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -945,10 +913,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -1070,10 +1034,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -1166,10 +1126,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -1253,7 +1209,7 @@ exports[`AdInit matches snapshot 1`] = `
             },
           },
           "mpu": Object {
-            "count": 1,
+            "count": 5,
             "creative": Object {
               "name": "mpu",
               "sizes": Object {
@@ -1261,10 +1217,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -1372,10 +1324,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -1580,10 +1528,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -1688,10 +1632,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -1822,10 +1762,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -1927,10 +1863,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -2023,7 +1955,7 @@ exports[`AdInit matches snapshot 1`] = `
             },
           },
           "mpu": Object {
-            "count": 10,
+            "count": 5,
             "creative": Object {
               "name": "mpu",
               "sizes": Object {
@@ -2031,10 +1963,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -2143,10 +2071,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -2225,10 +2149,6 @@ exports[`AdInit matches snapshot 1`] = `
                     300,
                     250,
                   ],
-                  Array [
-                    300,
-                    600,
-                  ],
                   "fluid",
                 ],
                 "mobile-web": Array [
@@ -2306,10 +2226,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],
@@ -2411,10 +2327,6 @@ exports[`AdInit matches snapshot 1`] = `
                   Array [
                     300,
                     250,
-                  ],
-                  Array [
-                    300,
-                    600,
                   ],
                   "fluid",
                 ],

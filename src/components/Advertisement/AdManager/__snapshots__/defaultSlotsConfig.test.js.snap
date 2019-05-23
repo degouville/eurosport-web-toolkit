@@ -84,10 +84,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -218,10 +214,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -323,10 +315,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -419,7 +407,7 @@ Object {
         },
       },
       "mpu": Object {
-        "count": 1,
+        "count": 5,
         "creative": Object {
           "name": "mpu",
           "sizes": Object {
@@ -427,10 +415,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -539,10 +523,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -643,10 +623,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -749,10 +725,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -853,10 +825,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -938,10 +906,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -1063,10 +1027,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -1159,10 +1119,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -1246,7 +1202,7 @@ Object {
         },
       },
       "mpu": Object {
-        "count": 1,
+        "count": 5,
         "creative": Object {
           "name": "mpu",
           "sizes": Object {
@@ -1254,10 +1210,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -1365,10 +1317,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -1573,10 +1521,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -1681,10 +1625,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -1815,10 +1755,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -1920,10 +1856,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -2016,7 +1948,7 @@ Object {
         },
       },
       "mpu": Object {
-        "count": 10,
+        "count": 5,
         "creative": Object {
           "name": "mpu",
           "sizes": Object {
@@ -2024,10 +1956,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -2136,10 +2064,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -2218,10 +2142,6 @@ Object {
                 300,
                 250,
               ],
-              Array [
-                300,
-                600,
-              ],
               "fluid",
             ],
             "mobile-web": Array [
@@ -2299,10 +2219,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],
@@ -2404,10 +2320,6 @@ Object {
               Array [
                 300,
                 250,
-              ],
-              Array [
-                300,
-                600,
               ],
               "fluid",
             ],

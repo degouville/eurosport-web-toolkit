@@ -50,7 +50,7 @@ const creatives = {
 
   MPU: {
     name: adTypes.MPU,
-    sizes: getSizes([[300, 250], [300, 600], 'fluid'], [[300, 250], 'fluid'], [[300, 250], 'fluid']),
+    sizes: getSizes([[300, 250], 'fluid'], [[300, 250], 'fluid'], [[300, 250], 'fluid']),
   },
 
   BETTING_BOX: {
@@ -94,7 +94,7 @@ const config = {
     ),
     [LIVE]: buildBannerObj(
       creatives.BANNER_SPONSORSHIP,
-      creatives.MPU,
+      multiple(creatives.MPU, 5),
       creatives.BETTING_BOX,
       creatives.INTERSTITIAL,
       multiple(creatives.OUTSTREAM, 10)
@@ -131,7 +131,7 @@ const config = {
     ),
     [LIVE]: buildBannerObj(
       creatives.BANNER_SPONSORSHIP,
-      multiple(creatives.MPU, 10),
+      multiple(creatives.MPU, 5),
       creatives.BETTING_BOX,
       creatives.INTERSTITIAL,
       multiple(creatives.OUTSTREAM, 10)
@@ -158,7 +158,7 @@ const config = {
     [LIVE]: buildBannerObj(
       creatives.BANNER_SPONSORSHIP,
       multiple(creatives.BANNER, 10),
-      creatives.MPU,
+      multiple(creatives.MPU, 5),
       creatives.INTERSTITIAL,
       multiple(creatives.OUTSTREAM, 10)
     ),
