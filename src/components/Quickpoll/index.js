@@ -117,12 +117,10 @@ class QuickPoll extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { choices } = this.props;
-    if (choices !== prevProps.choices) {
-      if (choices.length) {
-        // eslint-disable-next-line react/no-did-update-set-state
-        this.setState({ isLoading: false });
-      }
+    const { choices, showResults } = this.props;
+    if ((choices !== prevProps.choices && choices.length) || (showResults && !prevProps.showResults)) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({ isLoading: false });
     }
   }
 
