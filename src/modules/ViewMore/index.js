@@ -28,7 +28,7 @@ const StyledList = styled.ul`
   overflow: hidden;
   ${props =>
     css`
-      max-height: ${props.blockHeight !== 0 ? `${props.blockHeight}px;` : 'auto;'}
+      max-height: ${props.blockHeight !== 0 ? `${props.blockHeight - 2}px;` : 'auto;'}
       transition: ${props.animate ? 'max-height 400ms ease;' : 'none;'}
     `}
 `;

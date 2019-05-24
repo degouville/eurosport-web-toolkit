@@ -27,10 +27,10 @@ const StyledWrapper = styled.div`
   &:after {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
     background: linear-gradient(270deg, ${rgba(colors.blueZodiac, 0)} 0%, ${colors.blueZodiac} 100%);
     z-index: 0;
   }
