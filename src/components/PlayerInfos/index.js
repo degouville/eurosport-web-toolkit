@@ -31,18 +31,13 @@ const StyledPlayerName = styled.div`
   word-break: break-word;
   margin-bottom: 10px;
   transition: ease-out 0.15s font-size;
+
+  ${props => props.textLength > 11 && `font-size: 25px;`};
+
   ${breakpoints.medium(css`
     font-size: 48px;
     line-height: 42px;
   `)};
-
-  ${props =>
-    props.textLength > 11 &&
-    breakpoints.small(
-      css`
-        font-size: 25px;
-      `
-    )};
 
   ${props =>
     props.textLength > 15 &&
