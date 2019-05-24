@@ -35,13 +35,22 @@ const StyledPlayerName = styled.div`
     font-size: 48px;
     line-height: 42px;
   `)};
+
+  ${props =>
+    props.textLength > 11 &&
+    breakpoints.small(
+      css`
+        font-size: 25px;
+      `
+    )};
+
   ${props =>
     props.textLength > 15 &&
-    css`
-      ${breakpoints.medium(css`
+    breakpoints.medium(
+      css`
         font-size: 30px;
-      `)};
-    `}
+      `
+    )};
 `;
 
 const StyledPicContainer = styled.div`
