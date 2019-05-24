@@ -104,7 +104,7 @@ Simply incredible from Rafa Nadal
     labelPlayButton="playButtonText"
     liveComment={
       Object {
-        "html": "<p><b>GAME, SET AND MATCH! - NADAL 6-2 6-3 6-1 WAWRINKA</b>. Rafael Nadal has won La Decima! The 31-year-old Mallorcan becomes the first player in the Open era to win a single Grand Slam trophy on 10 occasions, dismantling Stan the Man Wawrinka in two hours and five minutes. It's his 15th major overall and moves him above Pete Sampras into second on the all-time list (behind Roger Federer who has 18). The King of Clay returns to his Roland Garros throne without dropping a set and will start next week as the World No.2. His record in Paris now stands at 79 match wins and just two defeats. He played seven matches here this year and didn't drop a set, losing just 35 games. </p>",
+        "html": "<p><b>GAME, SET AND MATCH! - NADAL 6-2 6-3 6-1 WAWRINKA</b>. <u>Rafael Nadal</u> has won <i>La Decima</i>! The <b><u><i>31-year-old Mallorcan</i></u></b> becomes the first player in the Open era to win a single Grand Slam trophy on 10 occasions, dismantling Stan the Man Wawrinka in two hours and five minutes. It's his 15th major overall and moves him above Pete Sampras into second on the all-time list (behind Roger Federer who has 18). The King of Clay returns to his Roland Garros throne without dropping a set and will start next week as the World No.2. His record in Paris now stands at 79 match wins and just two defeats. He played seven matches here this year and didn't drop a set, losing just 35 games. </p>",
         "icon": Object {
           "svg": "http://i.eurosport.com/liveicons/web-app/svg/Win@1.5x.svg",
           "url": "http://i.eurosport.com/liveicons/web-app/png/Win@2x.png",

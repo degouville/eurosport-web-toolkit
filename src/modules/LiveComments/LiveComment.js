@@ -60,6 +60,15 @@ export const StyledPlainHtml = styled.div`
   p {
     margin: 0;
   }
+  b {
+    font-weight: bold;
+  }
+  i {
+    font-style: italic;
+  }
+  u {
+    text-decoration: underline;
+  }
 `;
 export const StyledMarker = styled.div`
   ${fontAlphaHeadline};
@@ -133,9 +142,12 @@ LiveComment.defaultProps = {
 
 export const LiveCommentPropTypeShape = PropTypes.shape({
   id: PropTypes.number,
+  icon: PropTypes.shape({
+    svg: PropTypes.string,
+  }),
   sharedlink: SharedLinkShape,
   marker: PropTypes.string,
-  timestamp: PropTypes.number,
+  html: PropTypes.string,
   picture: PropTypes.shape({
     format: PropTypes.shape({
       url: PropTypes.string,

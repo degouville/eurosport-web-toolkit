@@ -5,7 +5,7 @@ import LiveComment, { StyledMarker, StyledPlainHtml, StyledTwitterCard } from '.
 
 describe('LiveComment', () => {
   const liveComment = {
-    html: '<b>comment html text</b>',
+    html: '<b>comment <u>html</u> <i>text</i></b>',
     marker: 'comment marker text',
     tweet: {
       url: 'tweetUrl',

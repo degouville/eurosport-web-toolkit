@@ -11,7 +11,7 @@ exports[`LiveComment matches snapshot with all valid props 1`] = `
     <Styled(div)
       dangerouslySetInnerHTML={
         Object {
-          "__html": "<b>comment html text</b>",
+          "__html": "<b>comment <u>html</u> <i>text</i></b>",
         }
       }
     />
