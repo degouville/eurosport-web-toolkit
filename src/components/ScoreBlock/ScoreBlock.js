@@ -30,9 +30,14 @@ export const StyledButton = styled.div`
   letter-spacing: 1px;
   line-height: 16px;
   width: ${props => props.width};
-  min-width: 58px;
+  max-width: 40px;
+  min-width: 30px;
   ${breakpoints.small(css`
     padding: 0 4px;
+  `)};
+  ${breakpoints.medium(css`
+    min-width: 58px;
+    max-width: unset;
   `)};
   ${props =>
     css`
@@ -83,12 +88,19 @@ const StyledBigDot = styled.div`
   color: ${colors.featureThreeBase};
   margin: 0 11px;
   font-size: 72px;
+  width: 19px;
+
   ${breakpoints.medium(css`
     margin: 0 29px;
+    width: 26px;
   `)};
   ${breakpoints.large(css`
     font-size: 78px;
   `)};
+
+  img {
+    max-width: 100%;
+  }
 `;
 
 export const ScoreBlock = ({
