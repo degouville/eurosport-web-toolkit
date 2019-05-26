@@ -103,7 +103,15 @@ export const StyledContentCss = () => (
 .fyre .fyre-login-bar {
 	position: relative !important;
 	height: auto !important;
-	width: 50% !important
+	width: 100% !important
+}
+
+.fyre-width-small .fyre-box-wrapper {
+	max-width: 95% !important;
+}
+
+.fyre .fyre-box-wrapper a.fyre-user-profile-link {
+	text-overflow: inherit !important;
 }
 
 .fyre-width-medium .fyre-box-wrapper {
