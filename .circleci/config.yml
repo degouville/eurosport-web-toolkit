@@ -4,9 +4,6 @@ defaults: &defaults
   working_directory: ~/repo
   docker:
     - image: circleci/node:10-browsers
-  add_ssh_keys:
-    fingerprints:
-      - 'f2:3e:52:f2:7c:f9:3b:bb:b2:cd:c3:ee:5a:94:fc:b6'
 
 aliases:
   - &restore_cache
@@ -21,6 +18,11 @@ aliases:
     run:
       name: Authenticate with npm
       command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+  - &add_ssh_key
+    add_ssh_keys:
+      fingerprints:
+        - 'b7:35:a6:4e:9b:0d:6d:d4:78:1e:9a:97:2a:66:6b:be'
+
   - &authenticate_git
     run:
       name: Authenticate with git
@@ -86,6 +88,7 @@ jobs:
       - checkout
       - *restore_cache
       - *authenticate_npm
+      - *add_ssh_key
       - *authenticate_git
       - run: npm version patch -m "%s [skip ci]"
       - run: npm publish
@@ -97,6 +100,7 @@ jobs:
       - checkout
       - *restore_cache
       - *authenticate_npm
+      - *add_ssh_key
       - *authenticate_git
       - run: npm version minor -m "%s [skip ci]"
       - run: npm publish
@@ -108,6 +112,7 @@ jobs:
       - checkout
       - *restore_cache
       - *authenticate_npm
+      - *add_ssh_key
       - *authenticate_git
       - run: npm version major -m "%s [skip ci]"
       - run: npm publish
