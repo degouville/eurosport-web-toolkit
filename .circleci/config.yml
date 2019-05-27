@@ -21,7 +21,7 @@ aliases:
   - &add_ssh_key
     add_ssh_keys:
       fingerprints:
-        - 'b7:35:a6:4e:9b:0d:6d:d4:78:1e:9a:97:2a:66:6b:be'
+        - '03:18:ba:47:c7:56:bf:4e:2f:90:ea:5a:b0:42:99:5a'
 
   - &authenticate_git
     run:
