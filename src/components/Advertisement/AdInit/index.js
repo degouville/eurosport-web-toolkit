@@ -124,8 +124,10 @@ class AdInit extends React.Component {
         if (slotName.indexOf(INTERSTITIEL) !== -1) return;
 
         if (event.isEmpty) {
+          slot.style.display = 'none';
           slot.classList.add(emptyClassName);
         } else {
+          slot.style.display = '';
           slot.classList.remove(emptyClassName);
         }
       });
