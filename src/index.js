@@ -23,6 +23,7 @@ import Carousel from './components/Carousel';
 import Cards from './components/Card';
 import Author from './components/Author';
 import Adobe from './components/Adobe';
+import HeartbeatInit from './components/Adobe/HeartbeatInit';
 import DataLayer from './components/DataLayer';
 import Quantcast from './components/Quantcast';
 import GoogleTagManager from './components/GoogleTagManager';
@@ -66,6 +67,7 @@ export {
   Cards,
   Author,
   Adobe,
+  HeartbeatInit,
   PlayIcon,
   PlayIconLink,
   LiveLabel,

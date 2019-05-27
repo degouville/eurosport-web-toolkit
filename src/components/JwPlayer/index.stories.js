@@ -28,7 +28,9 @@ const getBaseProps = () => ({
   title: text('Title', 'Test title'),
   subscribeUrl: text('SubscribeUrl', 'https://www.eurosportplayer.com/subscribe'),
 });
-const getBasePropsWithAds = () => ({
+
+// eslint-disable-next-line import/prefer-default-export
+export const getBasePropsWithAds = () => ({
   ...getBaseProps(),
   freewheelAdParams: object('FreewheelAdParams', freewheelAdParams),
 });
