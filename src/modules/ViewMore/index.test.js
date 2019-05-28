@@ -13,14 +13,19 @@ for (let i = 0; i < 10; i += 1) {
 }
 
 describe('ViewMore', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('renders its content', () => {
-    expect(
-      mount(
-        <ViewMore showLessText={labels.showLess} showMoreText={labels.showMore}>
-          {children}
-        </ViewMore>
-      )
-    ).toMatchSnapshot();
+    const wrapper = mount(
+      <ViewMore showLessText={labels.showLess} showMoreText={labels.showMore}>
+        {children}
+      </ViewMore>
+    );
+    jest.spyOn(wrapper.instance(), 'shouldComponentUpdate').mockImplementation(() => true);
+    wrapper.setState({ expanded: false });
+    expect(wrapper).toMatchSnapshot();
   });
   describe('items behavior', () => {
     it('should display the button with the right label', () => {
@@ -29,6 +34,8 @@ describe('ViewMore', () => {
           {children}
         </ViewMore>
       );
+      jest.spyOn(wrapper.instance(), 'shouldComponentUpdate').mockImplementation(() => true);
+
       wrapper.setState({ expanded: true });
       expect(wrapper.find(StyledViewMoreButton).text()).toContain(labels.showLess);
       wrapper.setState({ expanded: false });

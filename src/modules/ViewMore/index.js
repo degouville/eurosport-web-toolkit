@@ -49,6 +49,11 @@ export default class ViewMore extends React.Component {
     window.addEventListener('resize', this.handleWindowResize);
   }
 
+  shouldComponentUpdate() {
+    const element = get(this, 'listRef.current');
+    return element && element.offsetTop > 0;
+  }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleWindowResize);
   }
