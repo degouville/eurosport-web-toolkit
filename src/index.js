@@ -55,8 +55,10 @@ import LiveComments from './modules/LiveComments';
 import UserComments from './modules/UserComments';
 import MatchHero, { MatchHeroWithScore } from './modules/MatchHero';
 import AllMatches from './modules/AllMatches';
+import AdobeHeartbeatAnalytics from './lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics';
 
 export {
+  AdobeHeartbeatAnalytics,
   Button,
   ArrowLink,
   Link,
