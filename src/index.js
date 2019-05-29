@@ -38,6 +38,7 @@ import AdPlacement from './components/Advertisement/AdPlacement';
 import Betting from './components/Betting';
 import PlayerPromotionBox from './components/PlayerPromotionBox';
 import withReload from './hocs/withReload';
+import withVideoAnalytics from './hocs/withVideoAnalytics';
 
 import Header from './modules/Header';
 import Footer from './modules/Footer';
@@ -108,6 +109,7 @@ export {
   MatchHeroWithScore,
   Betting,
   withReload,
+  withVideoAnalytics,
   Tabs,
   tabsIconType,
   LiveComments,
