@@ -22,7 +22,6 @@ const StyledPlayerInfos = styled.div`
   ${fontInterUi};
   padding: 60px 20px 55px;
   margin-top: 48px;
-  flex-grow: 1;
 `;
 
 const StyledPlayerName = styled.div`
@@ -75,7 +74,6 @@ const StyledPicContainer = styled.div`
 const StyledCountryContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  flex: 1;
 `;
 
 const StyledCountry = styled.span`
@@ -211,7 +209,9 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
               player.firstName.length > player.lastName.length ? player.firstName.length : player.lastName.length
             }
           >
-            {player.firstName} {player.lastName}
+            {player.firstName}
+            <br />
+            {player.lastName}
           </StyledPlayerName>
           <StyledCountryContainer>
             <StyledFlag data-test="flag-picture" src={player.flagUrl} alt={player.country} />
