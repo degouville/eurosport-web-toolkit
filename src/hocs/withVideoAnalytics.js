@@ -13,6 +13,7 @@ const withVideoAnalytics = VideoPlayerComponent =>
     static defaultProps = {
       analytics: undefined,
       onReady: undefined,
+      onLoginReady: undefined,
       onAdBreakStart: undefined,
       onAdBreakComplete: undefined,
       onAdStart: undefined,
@@ -25,6 +26,7 @@ const withVideoAnalytics = VideoPlayerComponent =>
     static propTypes = {
       analytics: PropTypes.shape({
         onReady: PropTypes.func.isRequired,
+        onLoginReady: PropTypes.func.isRequired,
         onAdBreakStart: PropTypes.func.isRequired,
         onAdBreakComplete: PropTypes.func.isRequired,
         onAdStart: PropTypes.func.isRequired,
@@ -34,6 +36,7 @@ const withVideoAnalytics = VideoPlayerComponent =>
         onPause: PropTypes.func.isRequired,
       }),
       onReady: PropTypes.func,
+      onLoginReady: PropTypes.func,
       onAdBreakStart: PropTypes.func,
       onAdBreakComplete: PropTypes.func,
       onAdStart: PropTypes.func,
@@ -45,6 +48,7 @@ const withVideoAnalytics = VideoPlayerComponent =>
 
     static eventList = [
       'onReady',
+      'onLoginReady',
       'onAdBreakStart',
       'onAdBreakComplete',
       'onAdStart',
