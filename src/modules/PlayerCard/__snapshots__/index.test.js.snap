@@ -32,6 +32,8 @@ exports[`PlayerCard should render as expected 1`] = `
   </Styled(div)>
   <Styled(div)>
     <ViewMore
+      forceToggle={false}
+      onClick={null}
       showLessItemCount={1}
       showLessText="Show less matches"
       showMoreText="Show more matches"

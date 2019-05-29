@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import { fontAlphaHeadline, fontInterUi } from '../../typography';
+import { fontAlphaHeadline, fontAlphaHeadlineBold, fontInterUi } from '../../typography';
 import { coreNeutral9, coreLightMinus1, coreNeutral3 } from '../../colors';
 import * as breakpoints from '../../breakpoints';
 
@@ -21,22 +21,25 @@ const StyledPlayerInfos = styled.div`
   color: ${coreLightMinus1};
   ${fontInterUi};
   padding: 60px 20px 55px;
-  margin-top: 55px;
+  margin-top: 48px;
+  flex-grow: 1;
 `;
 
 const StyledPlayerName = styled.div`
   ${fontAlphaHeadline};
   font-size: 38px;
-  line-height: 42px;
+  line-height: 46px;
   word-break: break-word;
   margin-bottom: 10px;
-  transition: ease-out 0.15s font-size;
+  transition: font-size ease-out 0.15s;
+  max-width: calc(100% - 130px);
 
   ${props => props.textLength > 11 && `font-size: 25px;`};
 
   ${breakpoints.medium(css`
     font-size: 48px;
     line-height: 42px;
+    max-width: 100%;
   `)};
 
   ${props =>
@@ -55,7 +58,7 @@ const StyledPicContainer = styled.div`
   flex: 0 0 130px;
   flex-basis: auto;
   overflow: hidden;
-  transition: ease-out 0.15s all;
+  transition: all ease-out 0.15s;
   position: absolute;
   right: 0;
   top: -100px;
@@ -71,7 +74,8 @@ const StyledPicContainer = styled.div`
 
 const StyledCountryContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex: 1;
 `;
 
 const StyledCountry = styled.span`
@@ -88,31 +92,48 @@ const StyledFlag = styled.img`
 
 const StyledListTitle = styled.div`
   font-size: 12px;
+  ${fontInterUi};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: 600;
   color: ${coreNeutral3};
   text-transform: uppercase;
   margin-bottom: 10px;
+  ${breakpoints.medium(css`
+    letter-spacing: 1px;
+  `)};
 `;
 
 const StyledListDescription = styled.li`
   ${fontAlphaHeadline};
   font-size: 32px;
   align-self: flex-end;
-  text-align: center;
   list-style: none;
+  ${breakpoints.wide(css`
+    font-size: 42px;
+  `)};
 `;
 
 const StyledRank = styled.span`
   ${fontAlphaHeadline};
   font-size: 72px;
   line-height: 60px;
+  ${props => props.textLength > 2 && `font-size: 60px; line-height: 50px;`};
+  ${breakpoints.medium(css`
+    ${fontAlphaHeadlineBold};
+  `)};
+  ${breakpoints.wide(css`
+    font-size: 92px;
+  `)};
 `;
 
 const StyledFlex = styled.div`
-  width: 500px;
   display: flex;
   justify-content: space-between;
   position: relative;
   width: 100%;
+  height: 100%;
   z-index: 1;
 `;
 
@@ -120,15 +141,19 @@ const StyledBlock = styled.div`
   flex-basis: calc(100% - 130px);
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  flex-grow: 1;
+  ${breakpoints.medium(css`
+    max-width: 357px;
+  `)};
   &:last-child {
+    position: absolute;
+    right: 0;
     text-align: center;
     flex-basis: 100px;
-    position: relative;
-    top: -104px;
-    transition: ease-out 0.15s top;
+    align-items: flex-end;
+
     ${breakpoints.medium(css`
-      top: 0;
+      position: relative;
       margin-top: -80px;
     `)};
   }
@@ -138,10 +163,9 @@ const StyledList = styled.ul`
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  width: initial;
   margin-top: 30px;
-  width: calc(100% + 100px);
-  transition: ease-out 0.15s all;
+  width: calc(100% - 27px);
+  transition: all ease-out 0.15s;
   ${breakpoints.medium(css`
     margin-top: 45px;
     width: 90%;
@@ -149,9 +173,25 @@ const StyledList = styled.ul`
 `;
 
 const StyledRanking = styled.div`
-  padding-top: 120px;
+  position: relative;
+  left: 3%;
+  bottom: 0;
+  min-width: 100px;
+  margin-top: 12px;
+
   ${breakpoints.medium(css`
-    width: 130px;
+    position: absolute;
+    left: auto;
+    min-width: 130px;
+    margin-top: 0;
+
+    ${StyledListTitle} {
+      margin-bottom: 18px;
+    }
+  `)};
+
+  ${breakpoints.wide(css`
+    bottom: 3px;
   `)};
 `;
 
@@ -171,9 +211,7 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
               player.firstName.length > player.lastName.length ? player.firstName.length : player.lastName.length
             }
           >
-            {player.firstName}
-            <br />
-            {player.lastName}
+            {player.firstName} {player.lastName}
           </StyledPlayerName>
           <StyledCountryContainer>
             <StyledFlag data-test="flag-picture" src={player.flagUrl} alt={player.country} />
@@ -198,7 +236,9 @@ export const PlayerInfos = ({ player, heightText, weightText, ageText, rankingTe
       <StyledBlock>
         <StyledRanking>
           <StyledListTitle>{rankingText}</StyledListTitle>
-          <StyledRank data-test="player-ranking">{player.ranking}</StyledRank>
+          <StyledRank textLength={player.ranking.length} data-test="player-ranking">
+            {player.ranking}
+          </StyledRank>
         </StyledRanking>
       </StyledBlock>
     </StyledFlex>

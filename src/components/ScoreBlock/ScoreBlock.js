@@ -24,6 +24,7 @@ export const StyledButton = styled.div`
   justify-content: center;
   background-color: ${props => colors[props.color]};
   ${fontInterUi};
+  font-size: 11px;
   text-align: center;
   text-transform: uppercase;
   color: ${colors.coreLightMinus1};
@@ -37,7 +38,7 @@ export const StyledButton = styled.div`
   `)};
   ${breakpoints.medium(css`
     min-width: 58px;
-    max-width: unset;
+    max-width: 86px;
   `)};
   ${props =>
     css`

@@ -1,9 +1,10 @@
 import React from 'react';
+import hoistNonReactStatic from 'hoist-non-react-statics';
 import { points } from '../breakpoints';
 
 const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
 
-const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') => Component =>
+const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') => Component => {
   class Decorated extends React.Component {
     state = {
       matches: false,
@@ -24,15 +25,25 @@ const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') =>
     onMediaChange = mql => this.setState({ matches: mql.matches });
 
     render() {
-      const { matches } = this.state;
-      const props = {
-        ...this.props,
+      const {
+        state: { matches },
+        props,
+        ...rest
+      } = this;
+
+      const newProps = {
+        ...props,
         [injectedProp]: matches,
       };
 
-      return <Component {...props} />;
+      return <Component {...newProps} {...rest} />;
     }
-  };
+  }
+
+  hoistNonReactStatic(Decorated, Component);
+
+  return Decorated;
+};
 
 export const HideOnMobile = withMatchMedia(`(min-width: ${points.medium}px)`)(({ breakpointMatched, ...props }) =>
   breakpointMatched ? props.children : null

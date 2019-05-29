@@ -54,5 +54,18 @@ describe('ViewMore', () => {
       wrapper.find(StyledViewMoreButton).simulate('click');
       expect(wrapper.state().expanded).toEqual(false);
     });
+
+    it('should update the state when forceToggle property provided and run callback fn', async () => {
+      const spyOnClickCb = jest.fn();
+      const wrapper = mount(
+        <ViewMore forceToggle onClick={spyOnClickCb}>
+          {children}
+        </ViewMore>
+      );
+
+      expect(wrapper.state().isForced).toEqual(true);
+      wrapper.find(StyledViewMoreButton).simulate('click');
+      expect(spyOnClickCb).toHaveBeenCalled();
+    });
   });
 });

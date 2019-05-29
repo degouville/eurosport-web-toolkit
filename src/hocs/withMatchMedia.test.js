@@ -23,14 +23,14 @@ describe('hocs/withMatchMedia', () => {
       const Component = withMatchMedia('')(React.Component);
 
       const wrapper = shallow(<Component />);
-      expect(wrapper.props()).toEqual({ breakpointMatched: true });
+      expect(wrapper.prop('breakpointMatched')).toEqual(true);
     });
 
     it('injects the `custom` prop if provided', () => {
       const Component = withMatchMedia('', 'customPropertyName')(React.Component);
 
       const wrapper = shallow(<Component />);
-      expect(wrapper.props()).toEqual({ customPropertyName: true });
+      expect(wrapper.prop('customPropertyName')).toEqual(true);
     });
   });
 
@@ -53,10 +53,10 @@ describe('hocs/withMatchMedia', () => {
     it('changes the prop if media match changes', () => {
       const Component = withMatchMedia('')(React.Component);
       const wrapper = shallow(<Component />);
-      expect(wrapper.props()).toEqual({ breakpointMatched: true });
+      expect(wrapper.prop('breakpointMatched')).toEqual(true);
 
       wrapper.setState({ matches: false });
-      expect(wrapper.props()).toEqual({ breakpointMatched: false });
+      expect(wrapper.prop('breakpointMatched')).toEqual(false);
     });
   });
 

@@ -39,6 +39,7 @@ import Betting from './components/Betting';
 import PlayerPromotionBox from './components/PlayerPromotionBox';
 import withReload from './hocs/withReload';
 import withVideoAnalytics from './hocs/withVideoAnalytics';
+import withMatchMedia from './hocs/withMatchMedia';
 
 import Header from './modules/Header';
 import Footer from './modules/Footer';
@@ -110,6 +111,7 @@ export {
   Betting,
   withReload,
   withVideoAnalytics,
+  withMatchMedia,
   Tabs,
   tabsIconType,
   LiveComments,

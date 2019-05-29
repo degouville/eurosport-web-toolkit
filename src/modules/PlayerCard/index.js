@@ -48,9 +48,9 @@ export const StyledScoreBlock = styled.div`
 const StyledBefore = styled.div`
   :before {
     content: '';
-    width: 23px;
+    width: 19px;
     ${breakpoints.medium(css`
-      width: 41px;
+      width: 40px;
     `)};
     height: 20px;
     border-right: 2px solid ${colors.coreLightMinus1};
@@ -88,6 +88,8 @@ export const PlayerCard = ({
   rankingText,
   liveButtonText,
   matchInfoButtonText,
+  onViewMoreClick,
+  isViewMoreOpen,
 }) => (
   <StyledContainer className={className}>
     <StyledBackground backgroundImageUrl={backgroundImageUrl} />
@@ -103,7 +105,12 @@ export const PlayerCard = ({
       <>
         <StyledPreviousMatches>{previousMatchesText}</StyledPreviousMatches>
         <StyledMatches>
-          <ViewMore showLessText={showLessMatchesText} showMoreText={showMoreMatchesText}>
+          <ViewMore
+            showLessText={showLessMatchesText}
+            showMoreText={showMoreMatchesText}
+            onClick={onViewMoreClick}
+            forceToggle={isViewMoreOpen}
+          >
             {previousMatches.map((match, index) => (
               <StyledScoreBlock key={match.id}>
                 {index > 0 && <StyledBefore />}
@@ -139,6 +146,8 @@ PlayerCard.propTypes = {
   backgroundImageUrl: PropTypes.string.isRequired,
   previousMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
   className: PropTypes.string,
+  onViewMoreClick: PropTypes.func,
+  isViewMoreOpen: PropTypes.bool,
 };
 
 PlayerCard.defaultProps = {
@@ -152,6 +161,8 @@ PlayerCard.defaultProps = {
   rankingText: 'Ranking',
   liveButtonText: 'Live',
   matchInfoButtonText: 'Match Info',
+  onViewMoreClick: null,
+  isViewMoreOpen: false,
 };
 
 export default PlayerCard;

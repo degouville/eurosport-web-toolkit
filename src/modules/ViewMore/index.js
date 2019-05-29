@@ -38,6 +38,8 @@ export default class ViewMore extends React.Component {
 
   state = {
     animate: true,
+    // eslint-disable-next-line react/no-unused-state
+    isForced: false,
   };
 
   handleWindowResize = throttle(() => this.setState({ animate: false }), 250);
@@ -58,6 +60,16 @@ export default class ViewMore extends React.Component {
     window.removeEventListener('resize', this.handleWindowResize);
   }
 
+  static getDerivedStateFromProps({ forceToggle }, { expanded, isForced }) {
+    return forceToggle !== isForced
+      ? {
+          expanded: !expanded,
+          animate: true,
+          isForced: !isForced,
+        }
+      : null;
+  }
+
   computeBlockHeight() {
     const { showLessItemCount } = this.props;
     const { expanded } = this.state;
@@ -75,10 +87,20 @@ export default class ViewMore extends React.Component {
   }
 
   handleClick() {
+    const { onClick } = this.props;
+
+    if (onClick) {
+      return onClick();
+    }
+
     this.setState(state => ({
       expanded: !state.expanded,
       animate: true,
+      // eslint-disable-next-line react/no-unused-state
+      isForced: false,
     }));
+
+    return null;
   }
 
   render() {
@@ -111,6 +133,8 @@ ViewMore.defaultProps = {
   showLessItemCount: 1,
   showLessText: 'show less',
   showMoreText: 'show more',
+  forceToggle: false,
+  onClick: null,
 };
 
 ViewMore.propTypes = {
@@ -118,4 +142,7 @@ ViewMore.propTypes = {
   showLessText: PropTypes.string,
   showMoreText: PropTypes.string,
   showLessItemCount: PropTypes.number,
+  // eslint-disable-next-line react/no-unused-prop-types
+  forceToggle: PropTypes.bool,
+  onClick: PropTypes.func,
 };

@@ -2,6 +2,8 @@
 
 exports[`ViewMore renders its content 1`] = `
 <ViewMore
+  forceToggle={false}
+  onClick={null}
   showLessItemCount={1}
   showLessText="View less"
   showMoreText="View more"
