@@ -65,7 +65,6 @@ exports[`PlayerInfos renders its content 1`] = `
         </Styled(div)>
         <Styled(span)
           data-test="player-ranking"
-          textLength={1}
         >
           2
         </Styled(span)>
