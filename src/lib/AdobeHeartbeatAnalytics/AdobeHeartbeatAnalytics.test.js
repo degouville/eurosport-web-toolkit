@@ -59,7 +59,7 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
   describe('onReady', () => {
     it('should call MHB trackSessionStart with correct params', () => {
       // Then
-      analytics.onReady();
+      analytics.onReady(videoMetadata.customMetadata);
 
       // Expect
       expect(trackSessionStartSpy).toHaveBeenCalledWith({ setValue: setValueSpy }, videoMetadata.customMetadata);

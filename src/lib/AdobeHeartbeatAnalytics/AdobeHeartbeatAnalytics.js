@@ -1,61 +1,53 @@
 import Stopwatch from 'timer-stopwatch';
 
 export default class AdobeHeartbeatAnalytics {
-  constructor(heartbeatConfig, videoMetadata, programStartDateTime) {
+  constructor(heartbeatConfig, requiredVideoMetadata, programStartDateTime) {
     const { ADB } = window;
     const { MediaHeartbeat, MediaHeartbeatConfig, MediaHeartbeatDelegate } = ADB.va;
 
-    const mediaConfig = this.generateMediaConfig(MediaHeartbeatConfig, heartbeatConfig, videoMetadata);
+    const mediaConfig = this.generateMediaConfig(MediaHeartbeatConfig, heartbeatConfig);
     const appMeasurement = window.s_c_il[1];
     this.mediaDelegate = new MediaHeartbeatDelegate();
     this.mediaHeartbeat = new MediaHeartbeat(this.mediaDelegate, mediaConfig, appMeasurement);
-    this.mediaObject = this.generateMediaObject(MediaHeartbeat, videoMetadata);
-    this.videoMetadata = videoMetadata;
+    this.mediaObject = this.generateMediaObject(MediaHeartbeat, requiredVideoMetadata);
     this.programStartDateTime = programStartDateTime;
     this.MediaHeartbeat = MediaHeartbeat;
     this.stopwatch = new Stopwatch();
   }
 
-  generateMediaConfig = (MediaHeartbeatConfig, heartbeatConfig, videoMetadata) => {
+  generateMediaConfig = (MediaHeartbeatConfig, heartbeatConfig) => {
     const mediaConfig = new MediaHeartbeatConfig();
-    mediaConfig.trackingServer = heartbeatConfig.network;
+    mediaConfig.trackingServer = heartbeatConfig.trackingServer;
     mediaConfig.playerName = heartbeatConfig.playerName;
-    mediaConfig.channel = videoMetadata.contentchannel;
+    mediaConfig.channel = heartbeatConfig.channel;
     mediaConfig.debugLogging = heartbeatConfig.debugLogging;
     mediaConfig.appVersion = heartbeatConfig.appVersion;
     mediaConfig.ssl = heartbeatConfig.ssl;
     return mediaConfig;
   };
 
-  generateMediaObject = (MediaHeartbeat, videoMetadata) => {
+  generateMediaObject = (MediaHeartbeat, requiredVideoMetadata) => {
     const standardVideoMetadata = {};
-    standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.NETWORK] = videoMetadata.contentchannel;
+    standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.NETWORK] = requiredVideoMetadata.contentChannel;
     const mediaObject = MediaHeartbeat.createMediaObject(
-      videoMetadata.title,
-      videoMetadata.id,
-      videoMetadata.duration,
-      videoMetadata.streamtype
+      requiredVideoMetadata.title,
+      requiredVideoMetadata.id,
+      requiredVideoMetadata.duration,
+      requiredVideoMetadata.streamType
     );
     mediaObject.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata, standardVideoMetadata);
     return mediaObject;
   };
 
-  onReady = () => {
-    const {
-      videoMetadata: { customMetadata },
-      mediaHeartbeat,
-      mediaObject,
-      mediaDelegate,
-      programStartDateTime,
-      stopwatch,
-    } = this;
+  onReady = customVideoMetadata => {
+    const { mediaHeartbeat, mediaObject, mediaDelegate, programStartDateTime, stopwatch } = this;
 
     const currentEpochTime = Math.round(Date.now() / 1000);
     const initialPlaybackTime = currentEpochTime - programStartDateTime;
     stopwatch.start();
     mediaDelegate.getCurrentPlaybackTime = this.calculateCurrentPlaybackTime(initialPlaybackTime, stopwatch);
 
-    mediaHeartbeat && mediaHeartbeat.trackSessionStart(mediaObject, customMetadata);
+    mediaHeartbeat && mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
   };
 
   calculateCurrentPlaybackTime = (initialPlaybackTime, stopwatch) => () => initialPlaybackTime + stopwatch.ms / 1000;
