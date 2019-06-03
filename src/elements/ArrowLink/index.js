@@ -26,6 +26,7 @@ const LinkComponent = styled.a`
   font-weight: bold;
   letter-spacing: 1.27px;
   line-height: 24px;
+  white-space: nowrap;
 `;
 
 const ArrowLink = ({ children, ...props }) => (
