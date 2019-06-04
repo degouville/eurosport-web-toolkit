@@ -7,7 +7,7 @@ const freewheelAdParams = {
   adManagerURL: 'https://mssl.fwmrm.net/p/eurosport_js/AdManager.js',
   serverURL: 'https://7cee0.v.fwmrm.net/ad/g/1',
   networkID: 511712,
-  fwassetId: 2,
+  fwassetId: '2',
   profileId: '511712:euro_sport_com_web',
   sectionId: 'www.eurosport.co.uk_desktop_video',
   video_targeting: 'live_stream',

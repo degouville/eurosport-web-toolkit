@@ -107,7 +107,7 @@ Player.propTypes = {
     adManagerURL: PropTypes.string,
     serverURL: PropTypes.string,
     networkID: PropTypes.number,
-    fwassetId: PropTypes.number,
+    fwassetId: PropTypes.string,
     profileId: PropTypes.string,
     sectionId: PropTypes.string,
     video_targeting: PropTypes.string,

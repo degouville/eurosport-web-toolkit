@@ -38,7 +38,7 @@ describe('components/<Player />', () => {
     prefLang: 'en',
     subscribeUrl: 'some url',
     freewheelAdParams: {
-      fwassetId: 13,
+      fwassetId: '13',
       sectionId: `europsort.com_web_tablet_video`,
     },
 
