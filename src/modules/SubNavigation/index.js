@@ -33,7 +33,7 @@ const StyledItem = styled.li`
 `;
 
 const StyledLink = styled.a`
-  color: ${colors.coreNeutral4};
+  color: ${colors.coreLightMinus1};
   text-decoration: none;
 
   :hover {
@@ -44,10 +44,10 @@ const StyledLink = styled.a`
 const SubNavigation = ({ items, ...props }) => (
   <StyledWrapper {...props}>
     <StyledItems>
-      {items.map(({ label, linkProps: { href, ...otherLinkProps } }) => (
-        <StyledItem key={label}>
+      {items.map(({ name, linkProps: { href, ...otherLinkProps } }) => (
+        <StyledItem key={name}>
           <StyledLink href={href} {...otherLinkProps}>
-            {label}
+            {name}
           </StyledLink>
         </StyledItem>
       ))}
@@ -58,7 +58,7 @@ const SubNavigation = ({ items, ...props }) => (
 SubNavigation.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
       linkProps: PropTypes.shape({
         href: PropTypes.string.isRequired,
       }).isRequired,

@@ -6,25 +6,25 @@ import { SubNavigation } from '../..';
 const subNavigationStories = storiesOf('Modules|SubNavigation', module);
 const items = [
   {
-    label: 'Home',
+    name: 'Home',
     linkProps: {
       href: '/',
     },
   },
   {
-    label: 'Watch',
+    name: 'Watch',
     linkProps: {
       href: '/watch',
     },
   },
   {
-    label: 'What is Eurosport?',
+    name: 'What is Eurosport?',
     linkProps: {
       href: '/what',
     },
   },
   {
-    label: 'Log in',
+    name: 'Log in',
     linkProps: {
       href: '/login',
     },
