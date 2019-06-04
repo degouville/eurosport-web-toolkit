@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import * as breakpoints from '../../breakpoints';
 import * as colors from '../../colors';
+import shopIcon from '../../assets/shop-icon.svg';
 
 const StyledWrapper = styled.nav`
   background: ${colors.brandBase};
@@ -16,13 +17,16 @@ const StyledWrapper = styled.nav`
 
 const StyledItems = styled.ul`
   display: flex;
+  align-items: center;
 `;
 
 const StyledItem = styled.li`
+  display: flex;
+  align-items: center;
   margin-right: 30px;
   list-style-type: none;
   font-size: 14px;
-
+  ${props => (props.type === 'shop' ? 'margin-left: auto;' : '')}
   ${breakpoints.medium(css`
     font-size: 16px;
   `)};
@@ -35,17 +39,18 @@ const StyledItem = styled.li`
 const StyledLink = styled.a`
   color: ${colors.coreLightMinus1};
   text-decoration: none;
+`;
 
-  :hover {
-    color: ${colors.coreLightMinus1};
-  }
+const StyledShopIcon = styled.img`
+  margin-right: 10px;
 `;
 
 const SubNavigation = ({ items, ...props }) => (
   <StyledWrapper {...props}>
     <StyledItems>
-      {items.map(({ name, linkProps: { href, ...otherLinkProps } }) => (
-        <StyledItem key={name}>
+      {items.map(({ name, type, linkProps: { href, ...otherLinkProps } }) => (
+        <StyledItem key={name} type={type}>
+          {type && type === 'shop' && <StyledShopIcon src={shopIcon} />}
           <StyledLink href={href} {...otherLinkProps}>
             {name}
           </StyledLink>

@@ -29,6 +29,13 @@ const items = [
       href: '/login',
     },
   },
+  {
+    name: 'Shop',
+    linkProps: {
+      href: '/shop',
+    },
+    type: 'shop',
+  },
 ];
 
 subNavigationStories.add('base', () => <SubNavigation items={object('items', items)} />);
