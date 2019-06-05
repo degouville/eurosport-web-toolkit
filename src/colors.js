@@ -106,3 +106,4 @@ export const geyser = '#D3D9DE';
 export const paleSky = '#6D777F';
 export const blackPearl = '#050618';
 export const scarpaGrey = '#4c4b4f';
+export const loftySilver = '#ffffff1a';
