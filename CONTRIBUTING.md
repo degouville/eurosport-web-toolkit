@@ -15,13 +15,13 @@ Each PR should have an approving review from one person from the other two teams
 
 ### SVG as Data URI
 
-You can `import` a SVG right in a JavaScript module. This tells Webpack to include that file in the bundle. Importing a file gives you a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead of a path.
+You can `import` a SVG right in a JavaScript module. This tells Babel to include that file in the bundle. Importing a file gives you a [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) instead of a path.
 
 Here is an example:
 
 ```js
 import React from 'react';
-import logo from '../../assets/eurosport.svg'; // Tell Webpack this JS file uses this image
+import logo from '../../assets/eurosport.svg'; // Tell Babel this JS file uses this image
 
 console.log(logo); // data:image/svg+xml;base64,PH...==
 
@@ -38,7 +38,7 @@ export default Header;
 You can also `import` a SVG directly as a React component like this:
 
 ```js
-import { ReactComponent as Logo } from '../../assets/eurosport.svg';
+import Logo from '../../assets/eurosport.component.svg';
 
 const App = () => (
   <div>
@@ -48,4 +48,4 @@ const App = () => (
 );
 ```
 
-This is handy if you don't want to load SVG as a separate file. Don't forget the curly braces in the import! The `ReactComponent` import name is special and means that you want a React component that renders an SVG, rather than its filename.
+What's important to note is that the SVG asset should have the extension `.component.svg` to let Babel know that it should inline it as a React Component. This is handy if you don't want to load SVG as a separate file.
