@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import SubNavigation, { StyledNavWrapper } from '.';
+import SubNavigation, { StyledNavWrapper, StyledShopIcon } from '.';
 import { items } from './index.stories';
 
 describe('SubNavigation', () => {
@@ -28,5 +28,19 @@ describe('SubNavigation', () => {
   it('should add extra props passed to the component SubNavigation', () => {
     const component = shallow(<SubNavigation items={items} answer="42" />);
     expect(component.find(StyledNavWrapper).props()).toHaveProperty('answer', '42');
+  });
+
+  it('does not display a shop icon when not passed among the items', () => {
+    const itemsWithoutShop = [
+      {
+        name: 'Home',
+        linkProps: {
+          href: '/home',
+        },
+        type: 'home',
+      },
+    ];
+    const component = shallow(<SubNavigation items={itemsWithoutShop} />);
+    expect(component.find(StyledShopIcon)).toHaveLength(0);
   });
 });

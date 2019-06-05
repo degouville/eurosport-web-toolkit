@@ -51,7 +51,7 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-const StyledShopIcon = styled.img`
+export const StyledShopIcon = styled.img`
   margin-left: auto;
   margin-right: 10px;
 `;
