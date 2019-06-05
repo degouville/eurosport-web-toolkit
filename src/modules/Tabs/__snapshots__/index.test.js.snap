@@ -48,7 +48,7 @@ exports[`Tabs renders its content 1`] = `
           innerRef={
             Object {
               "current": <div
-                class="css-1r51bj7 e595p111"
+                class="css-1ke0gap e595p111"
               >
                 <div
                   class="css-7o42oc e595p112"
@@ -137,7 +137,7 @@ exports[`Tabs renders its content 1`] = `
           trackWidth={0}
         >
           <div
-            className="css-1r51bj7 e595p111"
+            className="css-1ke0gap e595p111"
           >
             <Styled(div)
               alignCenter={true}
