@@ -51,7 +51,7 @@ export default class ViewMore extends React.Component {
 
   shouldComponentUpdate() {
     const element = get(this, 'listRef.current');
-    return element && element.offsetTop > 0;
+    return element && element.clientHeight > 0;
   }
 
   componentWillUnmount() {
