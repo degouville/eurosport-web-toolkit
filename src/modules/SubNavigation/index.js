@@ -14,7 +14,7 @@ const StyledArrowCSS = css`
   border-left: solid 1px ${loftySilver};
 `;
 
-const StyledWrapper = styled.nav`
+export const StyledNavWrapper = styled.nav`
   display: flex;
   background: ${brandBase};
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -65,7 +65,7 @@ const SubNavigation = ({ items, ...props }) => {
   const shopItem = getShop(items);
   return (
     <LegacyHideOnMobile>
-      <StyledWrapper {...props}>
+      <StyledNavWrapper {...props}>
         <Carousel slideMargin={0}>
           {itemsWithoutShop.map(({ name, linkProps: { href, ...otherLinkProps } }) => (
             <StyledItem key={name}>
@@ -83,7 +83,7 @@ const SubNavigation = ({ items, ...props }) => {
             </StyledItem>
           </>
         )}
-      </StyledWrapper>
+      </StyledNavWrapper>
     </LegacyHideOnMobile>
   );
 };

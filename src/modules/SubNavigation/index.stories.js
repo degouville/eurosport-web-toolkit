@@ -4,7 +4,8 @@ import { object } from '@storybook/addon-knobs';
 import { SubNavigation } from '../..';
 
 const subNavigationStories = storiesOf('Modules|SubNavigation', module);
-const items = [
+// eslint-disable-next-line import/prefer-default-export
+export const items = [
   {
     name: 'Home',
     linkProps: {
