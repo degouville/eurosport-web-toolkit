@@ -31,6 +31,9 @@ export const StyledNavWrapper = styled.nav`
   ${StyledContainer} {
     display: flex;
     align-items: center;
+    &:first-child {
+      margin-left: 20px;
+    }
   }
 `;
 
@@ -45,10 +48,6 @@ const StyledItem = styled.li`
   ${breakpoints.medium(css`
     font-size: 16px;
   `)};
-
-  &:first-of-type {
-    margin-left: 14px;
-  }
 `;
 
 const StyledLink = styled.a`
@@ -64,7 +63,6 @@ const StyledShopLink = styled.a`
 `;
 
 export const StyledShopIcon = styled.img`
-  margin-left: auto;
   margin-right: 10px;
 `;
 
@@ -90,14 +88,12 @@ const SubNavigation = ({ items, ...props }) => {
           ))}
         </Carousel>
         {shopItem && (
-          <>
-            <StyledItem key={shopItem.name}>
-              <StyledShopLink href={shopItemLink}>
-                <StyledShopIcon src={shopIcon} />
-                {shopItem.name}
-              </StyledShopLink>
-            </StyledItem>
-          </>
+          <StyledItem key={shopItem.name} css={{ marginLeft: 'auto' }}>
+            <StyledShopLink href={shopItemLink}>
+              <StyledShopIcon src={shopIcon} />
+              {shopItem.name}
+            </StyledShopLink>
+          </StyledItem>
         )}
       </StyledNavWrapper>
     </LegacyHideOnMobile>

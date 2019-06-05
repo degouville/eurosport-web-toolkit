@@ -119,13 +119,14 @@ exports[`SubNavigation renders when everything passed in 1`] = `
       </Styled(li)>
     </Carousel>
     <Styled(li)
+      className="css-zdpt2t"
       key="Shop"
     >
       <Styled(a)
         href="/shop"
       >
         <Styled(img)
-          src="shop-icon.svg"
+          src="/eurosport-web-toolkit/31f84d06a1ed03f8334a9f81b4775bfd.svg"
         />
         Shop
       </Styled(a)>
