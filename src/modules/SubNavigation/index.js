@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import get from 'lodash/get';
 import * as breakpoints from '../../breakpoints';
 import { brandBase, coreLightMinus1, loftySilver } from '../../colors';
 import shopIcon from '../../assets/shop-icon.svg';
-import Carousel, { StyledArrow, StyledArrowLeft } from '../../components/Carousel';
+import Carousel, { StyledArrow, StyledArrowLeft, StyledContainer } from '../../components/Carousel';
 import { LegacyHideOnMobile } from '../../hocs/withMatchMedia';
 
 const StyledArrowCSS = css`
@@ -26,6 +27,10 @@ export const StyledNavWrapper = styled.nav`
   }
   ${StyledArrowLeft} {
     ${StyledArrowCSS}
+  }
+  ${StyledContainer} {
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -51,6 +56,13 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
+const StyledShopLink = styled.a`
+  display: flex;
+  align-items: center;
+  color: ${coreLightMinus1};
+  text-decoration: none;
+`;
+
 export const StyledShopIcon = styled.img`
   margin-left: auto;
   margin-right: 10px;
@@ -63,6 +75,8 @@ const getItemsWithoutShop = items => items.filter(item => !item.type || (item.ty
 const SubNavigation = ({ items, ...props }) => {
   const itemsWithoutShop = getItemsWithoutShop(items);
   const shopItem = getShop(items);
+  const shopItemLink = get(shopItem, 'linkProps.href', null);
+
   return (
     <LegacyHideOnMobile>
       <StyledNavWrapper {...props}>
@@ -77,9 +91,11 @@ const SubNavigation = ({ items, ...props }) => {
         </Carousel>
         {shopItem && (
           <>
-            <StyledShopIcon src={shopIcon} />
             <StyledItem key={shopItem.name}>
-              <StyledLink href={shopItem.href}>{shopItem.name}</StyledLink>
+              <StyledShopLink href={shopItemLink}>
+                <StyledShopIcon src={shopIcon} />
+                {shopItem.name}
+              </StyledShopLink>
             </StyledItem>
           </>
         )}

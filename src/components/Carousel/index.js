@@ -17,9 +17,7 @@ const StyledWrapper = styled.div`
     `}
 `;
 
-const StyledContainer = styled.div`
-  display: flex;
-  align-items: center;
+export const StyledContainer = styled.div`
   overflow: scroll;
   width: 100%;
   ${props =>

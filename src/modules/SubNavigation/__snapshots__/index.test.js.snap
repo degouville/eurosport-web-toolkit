@@ -118,13 +118,15 @@ exports[`SubNavigation renders when everything passed in 1`] = `
         </Styled(a)>
       </Styled(li)>
     </Carousel>
-    <Styled(img)
-      src="shop-icon.svg"
-    />
     <Styled(li)
       key="Shop"
     >
-      <Styled(a)>
+      <Styled(a)
+        href="/shop"
+      >
+        <Styled(img)
+          src="shop-icon.svg"
+        />
         Shop
       </Styled(a)>
     </Styled(li)>
