@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css, keyframes } from 'react-emotion';
 import { rgba } from 'polished';
+import play from 'src/assets/play.svg';
 import { coreLightMinus1, brandPlus2 } from '../../colors';
-import play from '../../assets/play.svg';
 
 const spin = keyframes`
   from 0% {

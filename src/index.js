@@ -1,121 +1,65 @@
-import theme from './theme';
 import * as colors from './colors';
 import * as breakpoints from './breakpoints';
 import * as typography from './typography';
-import injectStyles from './injectStyles';
-
-import Button from './elements/Button';
-import ArrowLink from './elements/ArrowLink';
-import Link from './elements/Link';
-import ChannelIcon from './elements/ChannelIcon';
-import PlayIcon from './elements/PlayIcon';
-import PlayIconLink from './elements/PlayIconLink';
-import BurgerIcon from './elements/BurgerIcon';
-import LiveLabel from './elements/LiveLabel';
-import Grid from './elements/Grid';
-import SocialIcon from './elements/SocialIcon';
-import Logo from './elements/Logo';
-import Labels from './elements/Labels';
-import Spinner from './elements/Spinner';
-
-import ArticleContent from './components/ArticleContent';
-import Carousel from './components/Carousel';
-import Cards from './components/Card';
-import Author from './components/Author';
-import Adobe from './components/Adobe';
-import HeartbeatInit from './components/Adobe/HeartbeatInit';
-import DataLayer from './components/DataLayer';
-import Quantcast from './components/Quantcast';
-import GoogleTagManager from './components/GoogleTagManager';
-import ScoreBlocks from './components/ScoreBlock';
-import PlayerInfos from './components/PlayerInfos';
-import QuickPoll from './components/Quickpoll';
-import JwPlayer from './components/JwPlayer';
-import ScriptInjector from './components/ScriptInjector';
-import AdInit from './components/Advertisement/AdInit';
-import AdManager from './components/Advertisement/AdManager';
-import AdPlacement from './components/Advertisement/AdPlacement';
-import Betting from './components/Betting';
-import PlayerPromotionBox from './components/PlayerPromotionBox';
-import withReload from './hocs/withReload';
-import withVideoAnalytics from './hocs/withVideoAnalytics';
-import withMatchMedia from './hocs/withMatchMedia';
-
-import Header from './modules/Header';
-import Footer from './modules/Footer';
-import SubNavigation from './modules/SubNavigation';
-import Hero from './modules/Hero';
-import ContentListing from './modules/ContentListing';
-import Article from './modules/Article';
-import WatchBar from './modules/Watchbar';
-import BurgerMenu from './modules/BurgerMenu';
-import ViewMore from './modules/ViewMore';
-import PlayerCard from './modules/PlayerCard';
-import Tabs from './modules/Tabs';
 import * as tabsIconType from './modules/Tabs/icon-type';
-import LiveComments from './modules/LiveComments';
-import UserComments from './modules/UserComments';
-import MatchHero, { MatchHeroWithScore } from './modules/MatchHero';
-import AllMatches from './modules/AllMatches';
-import AdobeHeartbeatAnalytics from './lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics';
 
-export {
-  AdobeHeartbeatAnalytics,
-  Button,
-  ArrowLink,
-  Link,
-  Header,
-  Logo,
-  Footer,
-  ContentListing,
-  Cards,
-  Author,
-  Adobe,
-  HeartbeatInit,
-  PlayIcon,
-  PlayIconLink,
-  LiveLabel,
-  ChannelIcon,
-  injectStyles,
-  Grid,
-  Hero,
-  colors,
-  theme,
-  breakpoints,
-  typography,
-  SubNavigation,
-  ArticleContent,
-  Article,
-  Carousel,
-  DataLayer,
-  WatchBar,
-  BurgerMenu,
-  PlayerCard,
-  BurgerIcon,
-  SocialIcon,
-  Quantcast,
-  GoogleTagManager,
-  ScoreBlocks,
-  PlayerInfos,
-  Labels,
-  Spinner,
-  QuickPoll,
-  JwPlayer,
-  ScriptInjector,
-  AdInit,
-  AdManager,
-  AdPlacement,
-  ViewMore,
-  MatchHero,
-  MatchHeroWithScore,
-  Betting,
-  withReload,
-  withVideoAnalytics,
-  withMatchMedia,
-  Tabs,
-  tabsIconType,
-  LiveComments,
-  PlayerPromotionBox,
-  UserComments,
-  AllMatches,
-};
+export { colors, breakpoints, typography, tabsIconType };
+
+export { default as theme } from './theme';
+export { default as injectStyles } from './injectStyles';
+
+export { default as Button } from './elements/Button';
+export { default as ArrowLink } from './elements/ArrowLink';
+export { default as Link } from './elements/Link';
+export { default as ChannelIcon } from './elements/ChannelIcon';
+export { default as PlayIcon } from './elements/PlayIcon';
+export { default as PlayIconLink } from './elements/PlayIconLink';
+export { default as BurgerIcon } from './elements/BurgerIcon';
+export { default as LiveLabel } from './elements/LiveLabel';
+export { default as Grid } from './elements/Grid';
+export { default as SocialIcon } from './elements/SocialIcon';
+export { default as Logo } from './elements/Logo';
+export { default as Labels } from './elements/Labels';
+export { default as Spinner } from './elements/Spinner';
+
+export { default as ArticleContent } from './components/ArticleContent';
+export { default as Carousel } from './components/Carousel';
+export { default as Cards } from './components/Card';
+export { default as Author } from './components/Author';
+export { default as Adobe } from './components/Adobe';
+export { default as HeartbeatInit } from './components/Adobe/HeartbeatInit';
+export { default as DataLayer } from './components/DataLayer';
+export { default as Quantcast } from './components/Quantcast';
+export { default as GoogleTagManager } from './components/GoogleTagManager';
+export { default as ScoreBlocks } from './components/ScoreBlock';
+export { default as PlayerInfos } from './components/PlayerInfos';
+export { default as QuickPoll } from './components/Quickpoll';
+export { default as JwPlayer } from './components/JwPlayer';
+export { default as ScriptInjector } from './components/ScriptInjector';
+export { default as AdInit } from './components/Advertisement/AdInit';
+export { default as AdManager } from './components/Advertisement/AdManager';
+export { default as AdPlacement } from './components/Advertisement/AdPlacement';
+export { default as Betting } from './components/Betting';
+export { default as PlayerPromotionBox } from './components/PlayerPromotionBox';
+
+export { default as Header } from './modules/Header';
+export { default as Footer } from './modules/Footer';
+export { default as SubNavigation } from './modules/SubNavigation';
+export { default as Hero } from './modules/Hero';
+export { default as ContentListing } from './modules/ContentListing';
+export { default as Article } from './modules/Article';
+export { default as WatchBar } from './modules/Watchbar';
+export { default as BurgerMenu } from './modules/BurgerMenu';
+export { default as ViewMore } from './modules/ViewMore';
+export { default as PlayerCard } from './modules/PlayerCard';
+export { default as Tabs } from './modules/Tabs';
+export { default as LiveComments } from './modules/LiveComments';
+export { default as UserComments } from './modules/UserComments';
+export { default as MatchHero, MatchHeroWithScore } from './modules/MatchHero';
+export { default as AllMatches } from './modules/AllMatches';
+
+export { default as withMatchMedia } from './hocs/withMatchMedia';
+export { default as withReload } from './hocs/withReload';
+export { default as withVideoAnalytics } from './hocs/withVideoAnalytics';
+
+export { default as AdobeHeartbeatAnalytics } from './lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics';

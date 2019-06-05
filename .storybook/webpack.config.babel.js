@@ -5,14 +5,16 @@
 // IMPORTANT
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
-
-import rules from '../webpack-rules';
-
 export default {
   plugins: [
     // your custom plugins
   ],
   module: {
-    rules,
+    rules: [
+      {
+        test: /(?<!\.component)\.svg$/,
+        use: 'file-loader',
+      },
+    ],
   },
 };

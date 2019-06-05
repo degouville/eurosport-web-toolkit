@@ -1,9 +1,9 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
+import lockIcon from 'src/assets/lock-icon.svg';
 import { fontAlphaHeadline } from '../../typography';
 import { medium } from '../../breakpoints';
-import lockIcon from '../../assets/lock-icon.svg';
 import { coreLightMinus1 } from '../../colors';
 
 const StyledWrapper = styled.div`

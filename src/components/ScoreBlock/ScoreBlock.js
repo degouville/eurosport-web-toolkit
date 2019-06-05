@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import circleWithCross from 'src/assets/circle-with-cross.svg';
+import greenCircle from 'src/assets/green-circle.svg';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import SetsScore, { StyledSpacer, setsScoreType } from './SetsScore';
 import { fontInterUi } from '../../typography';
-import circleWithCross from '../../assets/circle-with-cross.svg';
-import greenCircle from '../../assets/green-circle.svg';
+
 import Link from '../../elements/Link';
 
 const StyledClickableWrapper = styled(Link)`

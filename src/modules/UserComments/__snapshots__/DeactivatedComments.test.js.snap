@@ -6,7 +6,7 @@ exports[`DeactivatedComments renders a DeactivatedComments Component 1`] = `
 >
   <Styled(img)
     alt="lock icon"
-    src="lock-icon.svg"
+    src="/eurosport-web-toolkit/32db69399e9eeaec62166e6e32dd4e6c.svg"
   />
   <div>
     Comments are deactivated for this publication

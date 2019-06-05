@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/preset-react", ["@babel/preset-env"]],
+  "plugins": [
+    "emotion",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ],
+    ["inline-react-svg", { "ignorePattern": "(?<!\\.component)\\.svg$" }]
+  ]
+}

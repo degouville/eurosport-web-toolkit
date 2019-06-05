@@ -3,13 +3,13 @@
 exports[`Logo renders small Logo 1`] = `
 <Styled(img)
   alt="Eurosport"
-  src="eurosport.small.svg"
+  src="/eurosport-web-toolkit/a66a34c7f915823dd5f4576c33e1aed1.svg"
 />
 `;
 
 exports[`Logo renders usual Logo by default 1`] = `
 <Styled(img)
   alt="Eurosport"
-  src="eurosport.svg"
+  src="/eurosport-web-toolkit/e6cae33e67433ad1dfcd8af34364b8fc.svg"
 />
 `;

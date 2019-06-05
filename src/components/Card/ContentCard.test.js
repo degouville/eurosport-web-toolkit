@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import ChannelIcon from 'src/elements/ChannelIcon';
 import ContentCard, { StyledPlayIcon, StyledLiveLabel } from './ContentCard';
 import CardDetails from './CardDetails';
-import ChannelIcon from '../../elements/ChannelIcon';
 
 const cardData = {
   img: 'https://i.eurosport.com/2018/10/29/2450727-50913270-2560-1440.jpg?w=200',

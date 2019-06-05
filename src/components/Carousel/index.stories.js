@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react';
 import { object, boolean } from '@storybook/addon-knobs';
 import styled from 'react-emotion';
 import { rgba } from 'polished';
+import Play from 'src/assets/circleplay.component.svg';
 import { Carousel } from '../..';
 import WatchbarCard from '../Card/WatchbarCard';
 import { coreLightMinus1, coreNeutral1 } from '../../colors';
-import { ReactComponent as Play } from '../../assets/circleplay.svg';
 
 const indexStories = storiesOf('Components|Carousel', module);
 

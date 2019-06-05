@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import { BaseImage, BaseText } from './baseIconStyles';
+import facebook from 'src/assets/social-icons/facebook.svg';
+import snapchat from 'src/assets/social-icons/snapchat.svg';
+import instagram from 'src/assets/social-icons/instagram.svg';
+import twitter from 'src/assets/social-icons/twitter.svg';
 
-import facebook from '../../assets/social-icons/facebook.svg';
-import snapchat from '../../assets/social-icons/snapchat.svg';
-import instagram from '../../assets/social-icons/instagram.svg';
-import twitter from '../../assets/social-icons/twitter.svg';
+import { BaseImage, BaseText } from './baseIconStyles';
 
 export const StyledFacebook = styled(BaseImage)`
   background-image: url(${facebook});

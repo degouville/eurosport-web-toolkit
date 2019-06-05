@@ -33,7 +33,7 @@ describe('Carousel test', () => {
     expect(mount(initialSlides)).toMatchSnapshot();
   });
 
-  it('slide with arrow', async () => {
+  it('slide with arrow', () => {
     const wrapper = mount(initialSlides);
     wrapper.setState(initialState);
     wrapper.setState({ disableNavigation: false });

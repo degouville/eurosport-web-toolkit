@@ -81,7 +81,10 @@ exports[`renders a WatchBar with a title 1`] = `
     key="Live on Eurosport"
   >
     <Styled(div)>
-      <Styled(ReactComponent) />
+      <Styled(Play)
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      />
       <Styled(div)>
         Live on Eurosport
       </Styled(div)>
@@ -98,7 +101,10 @@ exports[`renders a WatchBar with a title 1`] = `
       key="Live on Eurosport"
     >
       <Styled(div)>
-        <Styled(ReactComponent) />
+        <Styled(Play)
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        />
         <Styled(div)>
           Live on Eurosport
         </Styled(div)>

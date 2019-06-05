@@ -11,7 +11,7 @@ exports[`PlayIcon should render default icon 1`] = `
   />
   <img
     alt="play"
-    src="play.svg"
+    src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
   />
 </Styled(div)>
 `;

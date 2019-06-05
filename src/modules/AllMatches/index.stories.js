@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { object, text } from '@storybook/addon-knobs';
 import { liveMatches, upcomingMatches, finishedMatches } from './mockData/mockMatches';
-import AllMatches from '.';
+import AllMatches from './index';
 
 const iconsStories = storiesOf('Modules|AllMatches', module);
 

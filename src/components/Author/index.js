@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
-import E from '../../assets/channels/E.svg';
+import E from 'src/assets/channels/E.svg';
 import * as breakpoints from '../../breakpoints';
 import * as colors from '../../colors';
 

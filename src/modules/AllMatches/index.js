@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
+import Chevron from 'src/assets/chevron.component.svg';
 import { medium } from '../../breakpoints';
 import { coreLightMinus1, mischka, coreLightBase } from '../../colors';
 import { H3 } from '../../typography';
-import { ReactComponent as Chevron } from '../../assets/chevron.svg';
 import ScoreBlock, { scoreBlockType } from '../../components/ScoreBlock';
 import Grid, { Column } from '../../elements/Grid';
 import ViewMore, { StyledViewMoreButton, StyledViewMoreButtonWrapper } from '../ViewMore';

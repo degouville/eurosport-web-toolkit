@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled, { css, injectGlobal } from 'react-emotion';
 import PropTypes from 'prop-types';
+import Chevron from 'src/assets/chevron.component.svg';
 import { HideOnMobile } from '../../hocs/withMatchMedia';
-
 import Link from '../../elements/Link';
 import Logo from '../../elements/Logo';
 import BurgerMenu from '../BurgerMenu';
@@ -11,7 +11,6 @@ import * as breakpoints from '../../breakpoints';
 import { brandBase, coreLightMinus1, mischka } from '../../colors';
 import Button from '../../elements/Button';
 import { fontHelvetica } from '../../typography';
-import { ReactComponent as Chevron } from '../../assets/chevron.svg';
 
 const StyledButton = styled(Button)`
   margin-left: auto;

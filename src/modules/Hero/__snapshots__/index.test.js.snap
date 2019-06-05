@@ -22,7 +22,7 @@ exports[`Hero renders Hero 1`] = `
         Title
       </Styled(h1)>
       <Styled(Author)
-        img="E.svg"
+        img="/eurosport-web-toolkit/5ac1e61e7c13b738321e34d40fe8de63.svg"
         time=""
       />
     </Column>

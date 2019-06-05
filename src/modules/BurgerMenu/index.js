@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import Cross from '../../assets/close-cross.svg';
+import Cross from 'src/assets/close-cross.svg';
 import LeftMenu from './LeftMenu/LeftMenu';
 import RightMenu from './RightMenu/RightMenu';
 import BottomMenu from './BottomMenu/BottomMenu';

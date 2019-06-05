@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import ChannelIcon from 'src/elements/ChannelIcon';
 import PlayIcon, { hoverStyles as playIconHoverStyle } from '../../elements/PlayIcon';
-import ChannelIcon from '../../elements/ChannelIcon';
 import * as colors from '../../colors';
 import Link from '../../elements/Link';
 import LiveLabel from '../../elements/LiveLabel';

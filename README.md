@@ -1,7 +1,7 @@
 # Eurosport Web Toolkit
 
 <p>
-<a href="https://www.npmjs.com/package/@eurosport/web-toolkit">  
+<a href="https://www.npmjs.com/package/@eurosport/web-toolkit">
     <img src="https://img.shields.io/npm/v/@eurosport/web-toolkit.svg"
          alt="npm version">
  </a>
@@ -29,6 +29,24 @@ const MyApp = () => (
   </ThemeProvider>
 );
 ```
+
+Also many components rely on non embed assets that should be copied from `@eurosport/web-toolkit/dist/assets/**` to a folder named `eurosport-web-toolkit` inside your public assets folder. For example you can add the following `preinstall` and `postinstall` scripts to your package.json to achieve that.
+
+package.json
+
+```json
+{
+  ...
+  "scripts": {
+    ...
+    "preinstall": "rm -rf ./public/eurosport-web-toolkit/",
+    "postinstall": "cp -a ./node_modules/@eurosport/web-toolkit/dist/assets/. ./public/eurosport-web-toolkit/"
+  },
+  ...
+}
+```
+
+then a simple `yarn` or `npm install` will transparently handle this for you from now on.
 
 ## Documentation
 

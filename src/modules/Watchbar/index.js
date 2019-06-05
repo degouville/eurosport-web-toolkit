@@ -2,10 +2,10 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
 import PropTypes from 'prop-types';
+import Play from 'src/assets/circleplay.component.svg';
 import Carousel from '../../components/Carousel';
 import Cards from '../../components/Card';
 import { coreLightMinus1, coreNeutral1 } from '../../colors';
-import { ReactComponent as Play } from '../../assets/circleplay.svg';
 
 const StyledPlayIco = styled(Play)`
   width: 16px;

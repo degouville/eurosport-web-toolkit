@@ -76,7 +76,7 @@ describe('hocs/withMatchMedia', () => {
         addListener: listenerFn,
       }));
 
-      expect(mount(wrapper).text()).toEqual(null);
+      expect(mount(wrapper).text()).toEqual('');
     });
   });
 });

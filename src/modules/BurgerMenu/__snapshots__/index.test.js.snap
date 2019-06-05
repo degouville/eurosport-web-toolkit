@@ -6,7 +6,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
   data-test="modal-container"
 >
   <a
-    class="css-zi8les e1cerjsu1"
+    class="css-1s7b5vn e1cerjsu1"
     data-test="burger-menu-close"
     href="#"
   />
@@ -27,7 +27,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
           <img
             alt="Eurosport"
             class="css-nm00j4 eojfomz0"
-            src="eurosport.svg"
+            src="/eurosport-web-toolkit/e6cae33e67433ad1dfcd8af34364b8fc.svg"
           />
         </a>
         <li
@@ -484,7 +484,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
               target="_self"
             >
               <span
-                class="css-5fkscy e18f09mm0"
+                class="css-yo96p3 e18f09mm0"
               />
               <span
                 class="css-mbm9py e1862d8r0"
@@ -500,7 +500,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
               target="_self"
             >
               <span
-                class="css-1wskc65 e18f09mm3"
+                class="css-lq4xgz e18f09mm3"
               />
               <span
                 class="css-mbm9py e1862d8r0"
@@ -516,7 +516,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
               target="_self"
             >
               <span
-                class="css-mgiwac e18f09mm1"
+                class="css-l8siqh e18f09mm1"
               />
               <span
                 class="css-mbm9py e1862d8r0"
@@ -532,7 +532,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
               target="_self"
             >
               <span
-                class="css-1b4f1e e18f09mm2"
+                class="css-urwayz e18f09mm2"
               />
               <span
                 class="css-mbm9py e1862d8r0"
@@ -588,7 +588,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
   data-test="modal-container"
 >
   <a
-    class="css-zi8les e1cerjsu1"
+    class="css-1s7b5vn e1cerjsu1"
     data-test="burger-menu-close"
     href="#"
   />
@@ -609,7 +609,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
           <img
             alt="Eurosport"
             class="css-nm00j4 eojfomz0"
-            src="eurosport.small.svg"
+            src="/eurosport-web-toolkit/a66a34c7f915823dd5f4576c33e1aed1.svg"
           />
         </a>
         <li
@@ -1066,7 +1066,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
               target="_self"
             >
               <span
-                class="css-5fkscy e18f09mm0"
+                class="css-yo96p3 e18f09mm0"
               />
             </a>
           </li>
@@ -1077,7 +1077,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
               target="_self"
             >
               <span
-                class="css-1wskc65 e18f09mm3"
+                class="css-lq4xgz e18f09mm3"
               />
             </a>
           </li>
@@ -1088,7 +1088,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
               target="_self"
             >
               <span
-                class="css-mgiwac e18f09mm1"
+                class="css-l8siqh e18f09mm1"
               />
             </a>
           </li>
@@ -1099,7 +1099,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
               target="_self"
             >
               <span
-                class="css-1b4f1e e18f09mm2"
+                class="css-urwayz e18f09mm2"
               />
             </a>
           </li>

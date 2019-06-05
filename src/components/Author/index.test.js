@@ -1,6 +1,6 @@
 import { shallow, mount } from 'enzyme/build';
 import React from 'react';
-import E from '../../assets/channels/E.svg';
+import E from 'src/assets/channels/E.svg';
 
 import Author from '.';
 

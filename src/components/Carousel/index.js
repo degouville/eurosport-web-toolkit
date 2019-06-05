@@ -3,7 +3,7 @@ import React from 'react';
 import debounce from 'lodash/debounce';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import { ReactComponent as Chevron } from '../../assets/chevron.svg';
+import Chevron from 'src/assets/chevron.component.svg';
 
 const StyledWrapper = styled.div`
   display: flex;

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import Chevron from 'src/assets/chevron.component.svg';
 import * as colors from '../../../colors';
 import { H2 } from '../../../typography';
 import Link from '../../../elements/Link';
-import { ReactComponent as Chevron } from '../../../assets/chevron.svg';
 import { Column, Row } from '../../../elements/Grid';
 
 const StyledColumn = styled(Column)`

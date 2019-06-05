@@ -1,15 +1,15 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
+import AllMatchesIcon from 'src/assets/tabs/all-matches.svg';
+import MatchIcon from 'src/assets/tabs/match.svg';
+import UserCommentsIcon from 'src/assets/tabs/user-comments.svg';
+import LiveCommentsIcon from 'src/assets/tabs/live-comments.svg';
 import { azureRadiance, coreLightMinus1, stormGray } from '../../colors';
 import { fontAlphaHeadlineBold } from '../../typography';
 import Carousel from '../../components/Carousel';
 import * as icons from './icon-type';
 import * as breakpoints from '../../breakpoints';
-import AllMatchesIcon from '../../assets/tabs/all-matches.svg';
-import MatchIcon from '../../assets/tabs/match.svg';
-import UserCommentsIcon from '../../assets/tabs/user-comments.svg';
-import LiveCommentsIcon from '../../assets/tabs/live-comments.svg';
 
 const iconsMap = {
   [icons.ALL_MATCHES]: AllMatchesIcon,

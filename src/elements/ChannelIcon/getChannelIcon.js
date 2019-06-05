@@ -1,9 +1,9 @@
-import { ReactComponent as EComponent } from '../../assets/channels/E.svg';
-import { ReactComponent as E1Component } from '../../assets/channels/E1.svg';
-import { ReactComponent as E2Component } from '../../assets/channels/E2.svg';
-import { ReactComponent as E2GRComponent } from '../../assets/channels/E2GR.svg';
-import { ReactComponent as E2NOComponent } from '../../assets/channels/E2NO.svg';
-import { ReactComponent as E2RUGComponent } from '../../assets/channels/E2RUG.svg';
+import EComponent from 'src/assets/channels/E.component.svg';
+import E1Component from 'src/assets/channels/E1.component.svg';
+import E2Component from 'src/assets/channels/E2.component.svg';
+import E2GRComponent from 'src/assets/channels/E2GR.component.svg';
+import E2NOComponent from 'src/assets/channels/E2NO.component.svg';
+import E2RUGComponent from 'src/assets/channels/E2RUG.component.svg';
 
 export const icons = {
   E2GR: {

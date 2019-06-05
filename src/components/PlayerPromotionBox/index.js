@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
+import Check from 'src/assets/red-check.svg';
 import Button from '../../elements/Button';
 import * as breakpoints from '../../breakpoints';
 import * as colors from '../../colors';
 import { H2, fontAlphaHeadline, fontHelvetica } from '../../typography';
-import Check from '../../assets/red-check.svg';
 
 const StyledWrapper = styled.div`
   position: relative;
