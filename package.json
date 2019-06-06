@@ -2,8 +2,11 @@
   "name": "@eurosport/web-toolkit",
   "version": "0.30.0",
   "description": "Eurosport Web Toolkit",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "browser": "dist/esm/index.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "test": "npm run test:ci -- --watch",
     "test:ci": "jest -w 1",
@@ -16,13 +19,11 @@
     "build-storybook": "build-storybook",
     "start-static-storybook": "serve ./storybook-static",
     "clean": "rm -rf dist",
-    "build:babel": "babel src --out-dir dist --ignore 'src/**/*.stories.js' --ignore 'src/**/*.test.js'",
-    "build": "npm run clean && npm run build:babel",
+    "build:babel": "babel src --out-dir dist/cjs --ignore 'src/**/*.stories.js' --ignore 'src/**/*.test.js'",
+    "build:babel:esm": "MODULE=true babel src --out-dir dist/esm --ignore 'src/**/*.stories.js' --ignore 'src/**/*.test.js'",
+    "build": "npm run clean && npm run build:babel && npm run build:babel:esm",
     "prepublish": "npm run build"
   },
-  "files": [
-    "dist/*"
-  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && lint-staged"
