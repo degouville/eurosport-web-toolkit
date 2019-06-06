@@ -109,8 +109,7 @@
   "dependencies": {
     "hoist-non-react-statics": "^3.3.0",
     "lodash": "^4.17.11",
-    "react-lines-ellipsis": "^0.14.1",
-    "timer-stopwatch": "^0.2.0"
+    "react-lines-ellipsis": "^0.14.1"
   },
   "jest": {
     "setupFilesAfterEnv": [

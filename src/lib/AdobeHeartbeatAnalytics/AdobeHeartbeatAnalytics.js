@@ -1,4 +1,4 @@
-import Stopwatch from 'timer-stopwatch';
+import Stopwatch from '../Stopwatch/stopwatch';
 
 export default class AdobeHeartbeatAnalytics {
   constructor(heartbeatConfig, requiredVideoMetadata, programStartDateTime) {
