@@ -8,6 +8,7 @@ import Labels, { labelsType } from '../../elements/Labels';
 import SetsScore, { setsScoreType } from '../../components/ScoreBlock/SetsScore';
 import Button from '../../elements/Button';
 import PlayIconLink from '../../elements/PlayIconLink';
+import ArrowLink from '../../elements/ArrowLink';
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -60,16 +61,27 @@ export const StyledTime = styled(H4)`
   `)};
 `;
 
+const StyledMessageWrapper = styled.div`
+  text-align: center;
+`;
+
 export const StyledMarketingMessage = styled(H5)`
-  margin-top: 20px;
+  margin: 20px 5px 0;
   font-size: 11px;
   letter-spacing: 0.5px;
   line-height: 14px;
   text-transform: uppercase;
   text-align: left;
+  display: inline-block;
   ${breakpoints.medium(css`
     text-align: center;
   `)};
+`;
+
+export const StyledArrowLink = styled(ArrowLink)`
+  margin: 0 5px;
+  display: inline-block;
+  font-size: 11px;
 `;
 
 export const StyledCTA = styled.div`
@@ -92,7 +104,18 @@ export const StyledDivider = styled.span`
   `)};
 `;
 
-const MatchHero = ({ className, title, date, hour, labels, cTAText, cTALink, marketingMessage }) => (
+const MatchHero = ({
+  className,
+  title,
+  date,
+  hour,
+  labels,
+  cTAText,
+  cTALink,
+  marketingMessage,
+  marketingLink,
+  marketingLinkText,
+}) => (
   <StyledWrapper className={className}>
     <Labels labels={labels} />
     <StyledContent>
@@ -105,7 +128,12 @@ const MatchHero = ({ className, title, date, hour, labels, cTAText, cTALink, mar
       </StyledBasicInfo>
       <StyledCTA>
         <Button href={cTALink}>{cTAText}</Button>
-        {marketingMessage && <StyledMarketingMessage>{marketingMessage}</StyledMarketingMessage>}
+        {(marketingMessage || marketingLink) && (
+          <StyledMessageWrapper>
+            {marketingMessage && <StyledMarketingMessage>{marketingMessage}</StyledMarketingMessage>}
+            {marketingLink && <StyledArrowLink href={marketingLink}>{marketingLinkText}</StyledArrowLink>}
+          </StyledMessageWrapper>
+        )}
       </StyledCTA>
     </StyledContent>
   </StyledWrapper>
@@ -116,6 +144,8 @@ MatchHero.defaultProps = {
   date: '',
   hour: '',
   marketingMessage: '',
+  marketingLink: '',
+  marketingLinkText: '',
 };
 
 MatchHero.propTypes = {
@@ -127,6 +157,8 @@ MatchHero.propTypes = {
   cTAText: PropTypes.string.isRequired,
   cTALink: PropTypes.string.isRequired,
   marketingMessage: PropTypes.string,
+  marketingLink: PropTypes.string,
+  marketingLinkText: PropTypes.string,
 };
 
 export const MatchHeroWithScore = ({

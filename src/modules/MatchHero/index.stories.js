@@ -14,7 +14,9 @@ matchHeroStories.add('Before Event', () => (
     labels={object('labels', beforeLabels)}
     cTAText={text('cTAText', 'Subscribe to watch')}
     cTALink={text('CTALink', 'https://www.eurosport.fr/regardez-eurosport-en-direct.shtml')}
-    marketingMessage={text('marketingMessage', 'Watch Eurosport live')}
+    marketingMessage={text('marketingMessage', 'Already a subscriber ?')}
+    marketingLink={text('marketingLink', 'http://www.eurosportplayer.fr')}
+    marketingLinkText={text('marketingLinkText', 'Log In')}
   />
 ));
 matchHeroStories.add('During Event', () => (
@@ -22,7 +24,7 @@ matchHeroStories.add('During Event', () => (
     labels={object('labels', duringLabels)}
     scoreData={object('scoreData', scoreDataDuring)}
     displayWatchButton={boolean('displayWatchButton', true)}
-    watchButtonText={text('watchButtonText', 'WATCH LIVE')}
+    watchButtonText={text('watchButtonText', 'Already a subscriber?')}
     watchButtonLinkProps={object('watchButtonLinkProps', {})}
     // eslint-disable-next-line no-console
     onWatchButtonClick={() => console.log('Watch button was clicked')}

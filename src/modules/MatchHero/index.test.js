@@ -21,6 +21,8 @@ describe('<MatchHero />', () => {
         cTAText="Subscribe to watch"
         cTALink="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml"
         marketingMessage="Watch Eurosport live"
+        marketingLink="http://www.eurosportplayer.fr"
+        marketingLinkText="Log In"
       />
     );
 

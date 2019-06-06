@@ -38,9 +38,16 @@ exports[`<MatchHero /> should render as expected 1`] = `
       >
         Subscribe to watch
       </Button>
-      <Styled(h5)>
-        Watch Eurosport live
-      </Styled(h5)>
+      <Styled(div)>
+        <Styled(h5)>
+          Watch Eurosport live
+        </Styled(h5)>
+        <Styled(ArrowLink)
+          href="http://www.eurosportplayer.fr"
+        >
+          Log In
+        </Styled(ArrowLink)>
+      </Styled(div)>
     </Styled(div)>
   </Styled(div)>
 </Styled(div)>
