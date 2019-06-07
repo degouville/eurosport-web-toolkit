@@ -2,8 +2,9 @@ import {
   dataLayer,
   mediaHeartbeatMockCreator,
   heartbeatConfig,
-  videoMetadata,
+  requiredMetadata,
   programStartDateTime,
+  customMetadata,
 } from './AdobeHeartbeatAnalytics.mock';
 import AdobeHeartbeatAnalytics from './AdobeHeartbeatAnalytics';
 
@@ -38,7 +39,7 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
     };
 
     // Given
-    analytics = new AdobeHeartbeatAnalytics(heartbeatConfig, videoMetadata, programStartDateTime);
+    analytics = new AdobeHeartbeatAnalytics(heartbeatConfig, requiredMetadata, programStartDateTime);
   });
 
   describe('calculateCurrentPlaybackTime', () => {
@@ -59,10 +60,10 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
   describe('onReady', () => {
     it('should call MHB trackSessionStart with correct params', () => {
       // Then
-      analytics.onReady(videoMetadata.customMetadata);
+      analytics.onReady(customMetadata);
 
       // Expect
-      expect(trackSessionStartSpy).toHaveBeenCalledWith({ setValue: setValueSpy }, videoMetadata.customMetadata);
+      expect(trackSessionStartSpy).toHaveBeenCalledWith({ setValue: setValueSpy }, customMetadata);
     });
   });
 

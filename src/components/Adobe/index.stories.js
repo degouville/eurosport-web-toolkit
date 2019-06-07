@@ -7,9 +7,10 @@ import withVideoAnalytics from '../../hocs/withVideoAnalytics';
 import AdobeHeartbeatAnalytics from '../../lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics';
 import { getBasePropsWithAds } from '../JwPlayer/index.stories';
 import {
+  customMetadata,
   heartbeatConfig,
   programStartDateTime,
-  videoMetadata,
+  requiredMetadata,
 } from '../../lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics.mock';
 
 const indexStories = storiesOf('Components|Adobe', module);
@@ -28,8 +29,21 @@ const HeartbeatWithJWPlayer = () => {
 };
 
 const JWPlayerWithAnalytics = () => {
-  const analytics = new AdobeHeartbeatAnalytics(heartbeatConfig, videoMetadata, programStartDateTime);
-  return <JWPlayerWithHeartbeatAnalytics {...getBasePropsWithAds()} analytics={analytics} />;
+  const analytics = new AdobeHeartbeatAnalytics(heartbeatConfig, requiredMetadata, programStartDateTime);
+
+  const props = {
+    ...getBasePropsWithAds(),
+    onReady: () => analytics.onReady(customMetadata),
+    onAdBreakStart: analytics.onAdBreakStart,
+    onAdBreakComplete: analytics.onAdBreakComplete,
+    onAdStart: analytics.onAdStart,
+    onAdTime: analytics.onAdTime,
+    onAdComplete: analytics.onAdComplete,
+    onPlay: analytics.onPlay,
+    onPause: analytics.onPause,
+  };
+
+  return <JWPlayerWithHeartbeatAnalytics {...props} analytics={analytics} />;
 };
 
 const innerHTML = `

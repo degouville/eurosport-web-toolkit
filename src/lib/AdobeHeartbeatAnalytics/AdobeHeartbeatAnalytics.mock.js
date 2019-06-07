@@ -1,4 +1,4 @@
-export const analyticsData = {
+export const customMetadata = {
   id: 'id',
   partner_code: 'partnerCode',
   profile: 'profile',
@@ -33,20 +33,20 @@ export const analyticsData = {
 };
 
 export const heartbeatConfig = {
-  network: 'discoverydp.hb.omtrdc.net',
+  trackingServer: 'discoverydp.hb.omtrdc.net',
   playerName: 'JWPlayer',
+  channel: 'british-eurosport',
   appVersion: '',
   debugLogging: true,
   ssl: true,
 };
 
-export const videoMetadata = {
+export const requiredMetadata = {
   id: '1',
   title: 'test',
   duration: 3600,
-  streamType: '',
-  contentchannel: 'british-eurosport',
-  customMetadata: analyticsData,
+  streamType: 'linear',
+  contentChannel: 'british-eurosport',
 };
 
 export const programStartDateTime = 0;
