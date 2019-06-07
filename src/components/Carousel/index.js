@@ -17,7 +17,7 @@ const StyledWrapper = styled.div`
     `}
 `;
 
-const StyledContainer = styled.div`
+export const StyledContainer = styled.div`
   overflow: scroll;
   width: 100%;
   ${props =>
@@ -71,7 +71,7 @@ const StyledChevron = styled(Chevron)`
   }
 `;
 
-const StyledArrow = styled.div`
+export const StyledArrow = styled.div`
   display: none;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ const StyledArrow = styled.div`
   }
 `;
 
-const StyledArrowLeft = styled(StyledArrow)`
+export const StyledArrowLeft = styled(StyledArrow)`
   transform: scaleX(-1);
 `;
 

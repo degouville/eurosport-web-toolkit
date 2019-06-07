@@ -1,44 +1,136 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SubNavigation renders when everything passed in 1`] = `
-<Styled(nav)>
-  <Styled(ul)>
+<withMatchMedia(Component)>
+  <Styled(nav)>
+    <Carousel
+      alignCenter={false}
+      className=""
+      slideMargin={0}
+      withArrow={true}
+    >
+      <Styled(li)
+        key="Home"
+      >
+        <Styled(a)
+          href="/"
+        >
+          Home
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Watch"
+      >
+        <Styled(a)
+          href="/watch"
+        >
+          Watch
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="What is Eurosport?"
+      >
+        <Styled(a)
+          href="/what"
+        >
+          What is Eurosport?
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Football"
+      >
+        <Styled(a)
+          href="/football"
+        >
+          Football
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Olympics"
+      >
+        <Styled(a)
+          href="/olympics"
+        >
+          Olympics
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Winter Sports"
+      >
+        <Styled(a)
+          href="/what"
+        >
+          Winter Sports
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Tennis"
+      >
+        <Styled(a)
+          href="/tennis"
+        >
+          Tennis
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Snooker"
+      >
+        <Styled(a)
+          href="/snooker"
+        >
+          Snooker
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Motorsports"
+      >
+        <Styled(a)
+          href="/motorsports"
+        >
+          Motorsports
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Cycling"
+      >
+        <Styled(a)
+          href="/cycling"
+        >
+          Cycling
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="BasketBall"
+      >
+        <Styled(a)
+          href="/basketball"
+        >
+          BasketBall
+        </Styled(a)>
+      </Styled(li)>
+      <Styled(li)
+        key="Log in"
+      >
+        <Styled(a)
+          href="/login"
+        >
+          Log in
+        </Styled(a)>
+      </Styled(li)>
+    </Carousel>
     <Styled(li)
-      key="Home"
+      className="css-zdpt2t"
+      key="Shop"
     >
       <Styled(a)
-        href="/"
+        href="/shop"
       >
-        Home
+        <Styled(img)
+          src="/eurosport-web-toolkit/31f84d06a1ed03f8334a9f81b4775bfd.svg"
+        />
+        Shop
       </Styled(a)>
     </Styled(li)>
-    <Styled(li)
-      key="Watch"
-    >
-      <Styled(a)
-        href="/watch"
-      >
-        Watch
-      </Styled(a)>
-    </Styled(li)>
-    <Styled(li)
-      key="What is Eurosport?"
-    >
-      <Styled(a)
-        href="/what"
-      >
-        What is Eurosport?
-      </Styled(a)>
-    </Styled(li)>
-    <Styled(li)
-      key="Log in"
-    >
-      <Styled(a)
-        href="/login"
-      >
-        Log in
-      </Styled(a)>
-    </Styled(li)>
-  </Styled(ul)>
-</Styled(nav)>
+  </Styled(nav)>
+</withMatchMedia(Component)>
 `;

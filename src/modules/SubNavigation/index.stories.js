@@ -4,30 +4,86 @@ import { object } from '@storybook/addon-knobs';
 import { SubNavigation } from '../..';
 
 const subNavigationStories = storiesOf('Modules|SubNavigation', module);
-const items = [
+// eslint-disable-next-line import/prefer-default-export
+export const items = [
   {
-    label: 'Home',
+    name: 'Home',
     linkProps: {
       href: '/',
     },
   },
   {
-    label: 'Watch',
+    name: 'Watch',
     linkProps: {
       href: '/watch',
     },
   },
   {
-    label: 'What is Eurosport?',
+    name: 'What is Eurosport?',
     linkProps: {
       href: '/what',
     },
   },
   {
-    label: 'Log in',
+    name: 'Football',
+    linkProps: {
+      href: '/football',
+    },
+  },
+  {
+    name: 'Olympics',
+    linkProps: {
+      href: '/olympics',
+    },
+  },
+  {
+    name: 'Winter Sports',
+    linkProps: {
+      href: '/what',
+    },
+  },
+  {
+    name: 'Tennis',
+    linkProps: {
+      href: '/tennis',
+    },
+  },
+  {
+    name: 'Snooker',
+    linkProps: {
+      href: '/snooker',
+    },
+  },
+  {
+    name: 'Motorsports',
+    linkProps: {
+      href: '/motorsports',
+    },
+  },
+  {
+    name: 'Cycling',
+    linkProps: {
+      href: '/cycling',
+    },
+  },
+  {
+    name: 'BasketBall',
+    linkProps: {
+      href: '/basketball',
+    },
+  },
+  {
+    name: 'Log in',
     linkProps: {
       href: '/login',
     },
+  },
+  {
+    name: 'Shop',
+    linkProps: {
+      href: '/shop',
+    },
+    type: 'shop',
   },
 ];
 
