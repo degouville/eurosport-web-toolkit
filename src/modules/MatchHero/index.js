@@ -67,10 +67,9 @@ const StyledMessageWrapper = styled.div`
 
 export const StyledMarketingMessage = styled(H5)`
   margin: 20px 5px 0;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.5px;
   line-height: 14px;
-  text-transform: uppercase;
   text-align: left;
   display: inline-block;
   ${breakpoints.medium(css`
@@ -81,7 +80,7 @@ export const StyledMarketingMessage = styled(H5)`
 export const StyledArrowLink = styled(ArrowLink)`
   margin: 0 5px;
   display: inline-block;
-  font-size: 11px;
+  font-size: 14px;
 `;
 
 export const StyledCTA = styled.div`
