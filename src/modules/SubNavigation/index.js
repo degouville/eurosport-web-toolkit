@@ -64,6 +64,7 @@ const StyledShopLink = styled.a`
 
 export const StyledShopIcon = styled.img`
   margin-right: 10px;
+  padding-bottom: 4px;
 `;
 
 const getShop = items => items.find(item => item.type && item.type === 'shop');
