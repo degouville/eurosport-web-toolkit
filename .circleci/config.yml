@@ -14,6 +14,7 @@ aliases:
     branches:
       only:
         - master
+        - EWL-748-poc-applitools
   - &authenticate_npm
     run:
       name: Authenticate with npm
@@ -62,7 +63,13 @@ jobs:
       - checkout
       - *restore_cache
       - run: 'export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`'
-      - run: npm run test:visual
+      - run:
+          command: |
+            if [[ -n $ENABLE_VISUAL_TEST ]]; then
+              npm run test:visual
+            else
+              echo "Not running visual test"
+            fi
   test_cypress:
     <<: *defaults
     steps:
