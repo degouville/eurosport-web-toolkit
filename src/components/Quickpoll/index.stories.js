@@ -11,8 +11,8 @@ quickPoll.add('QuickPoll', () => (
     title={text('title', 'Who will win the 2019 French Open?')}
     choices={object('choices', choicesWithResults)}
     showResults={boolean('showResults', false)}
-    // eslint-disable-next-line no-alert
-    onChoiceClick={id => alert(`You clicked on ${id}`)}
+    // eslint-disable-next-line no-console
+    onChoiceClick={id => console.log(`You clicked on ${id}`)}
   />
 ));
 
