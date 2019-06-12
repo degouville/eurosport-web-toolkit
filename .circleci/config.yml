@@ -62,13 +62,7 @@ jobs:
       - checkout
       - *restore_cache
       - run: 'export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`'
-      - run:
-          command: |
-            if [[ -n $ENABLE_VISUAL_TEST ]]; then
-              npm run test:visual
-            else
-              echo "Not running visual test"
-            fi
+      - run: npm run test:visual
   test_cypress:
     <<: *defaults
     steps:
