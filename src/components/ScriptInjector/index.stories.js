@@ -6,7 +6,7 @@ import { ScriptInjector } from '../..';
 const stories = storiesOf('Components|ScriptInjector', module);
 
 const innerHTML = `
-  (() => alert('hello world'))();
+  (() => console.log('hello world'))();
 `;
 
 stories.add(
@@ -44,14 +44,14 @@ stories
   )
   .add(
     'ClientSide - with inner script - in body',
-    () => <ScriptInjector isServer={false} innerHTML={`alert('script injected in body')`} injectPlace="body" />,
+    () => <ScriptInjector isServer={false} innerHTML={`console.log('script injected in body')`} injectPlace="body" />,
     {
       info: injectPlaceMessage,
     }
   )
   .add(
     'ClientSide - with inner script - in head',
-    () => <ScriptInjector isServer={false} innerHTML={`alert('script injected in head')`} />,
+    () => <ScriptInjector isServer={false} innerHTML={`console.log('script injected in head')`} />,
     {
       info: injectPlaceMessage,
     }

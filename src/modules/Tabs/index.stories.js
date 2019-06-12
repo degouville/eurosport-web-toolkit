@@ -39,8 +39,8 @@ tabs.add('tabs', () => (
   <Wrapper>
     <Tabs
       defaultTab={text('defaultTab', 'keytab1')}
-      /* eslint-disable-next-line no-alert */
-      onItemSelected={key => alert(`You clicked the tab : ${key}`)}
+      /* eslint-disable-next-line no-console */
+      onItemSelected={key => console.log(`You clicked the tab : ${key}`)}
       tabs={object('tabs', tabsData)}
     />
   </Wrapper>
