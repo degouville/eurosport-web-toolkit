@@ -53,7 +53,7 @@ const StyledItem = styled.li`
 const StyledLink = styled.a`
   color: ${coreLightMinus1};
   text-decoration: none;
-  :hover {
+  &:hover {
     opacity: 0.5;
   }
 `;
