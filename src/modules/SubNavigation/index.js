@@ -53,6 +53,9 @@ const StyledItem = styled.li`
 const StyledLink = styled.a`
   color: ${coreLightMinus1};
   text-decoration: none;
+  :hover {
+    opacity: 0.5;
+  }
 `;
 
 const StyledShopLink = styled.a`
