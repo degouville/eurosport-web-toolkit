@@ -114,6 +114,7 @@ const MatchHero = ({
   marketingMessage,
   marketingLink,
   marketingLinkText,
+  displayCTA,
 }) => (
   <StyledWrapper className={className}>
     <Labels labels={labels} />
@@ -125,15 +126,17 @@ const MatchHero = ({
           {hour}
         </StyledTime>
       </StyledBasicInfo>
-      <StyledCTA>
-        <Button href={cTALink}>{cTAText}</Button>
-        {(marketingMessage || marketingLink) && (
-          <StyledMessageWrapper>
-            {marketingMessage && <StyledMarketingMessage>{marketingMessage}</StyledMarketingMessage>}
-            {marketingLink && <StyledArrowLink href={marketingLink}>{marketingLinkText}</StyledArrowLink>}
-          </StyledMessageWrapper>
-        )}
-      </StyledCTA>
+      {displayCTA && (
+        <StyledCTA>
+          <Button href={cTALink}>{cTAText}</Button>
+          {(marketingMessage || marketingLink) && (
+            <StyledMessageWrapper>
+              {marketingMessage && <StyledMarketingMessage>{marketingMessage}</StyledMarketingMessage>}
+              {marketingLink && <StyledArrowLink href={marketingLink}>{marketingLinkText}</StyledArrowLink>}
+            </StyledMessageWrapper>
+          )}
+        </StyledCTA>
+      )}
     </StyledContent>
   </StyledWrapper>
 );
@@ -145,6 +148,7 @@ MatchHero.defaultProps = {
   marketingMessage: '',
   marketingLink: '',
   marketingLinkText: '',
+  displayCTA: false,
 };
 
 MatchHero.propTypes = {
@@ -158,6 +162,7 @@ MatchHero.propTypes = {
   marketingMessage: PropTypes.string,
   marketingLink: PropTypes.string,
   marketingLinkText: PropTypes.string,
+  displayCTA: PropTypes.bool,
 };
 
 export const MatchHeroWithScore = ({

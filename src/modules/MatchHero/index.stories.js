@@ -17,6 +17,7 @@ matchHeroStories.add('Before Event', () => (
     marketingMessage={text('marketingMessage', 'Already a subscriber ?')}
     marketingLink={text('marketingLink', 'http://www.eurosportplayer.fr')}
     marketingLinkText={text('marketingLinkText', 'Log In')}
+    displayCTA={boolean('displayCTA', false)}
   />
 ));
 matchHeroStories.add('During Event', () => (

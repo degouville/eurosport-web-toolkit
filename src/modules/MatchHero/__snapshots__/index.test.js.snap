@@ -31,24 +31,6 @@ exports[`<MatchHero /> should render as expected 1`] = `
         Starting from 20:30
       </Styled(h4)>
     </Styled(div)>
-    <Styled(div)>
-      <Button
-        href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml"
-        type="primary"
-      >
-        Subscribe to watch
-      </Button>
-      <Styled(div)>
-        <Styled(h5)>
-          Watch Eurosport live
-        </Styled(h5)>
-        <Styled(ArrowLink)
-          href="http://www.eurosportplayer.fr"
-        >
-          Log In
-        </Styled(ArrowLink)>
-      </Styled(div)>
-    </Styled(div)>
   </Styled(div)>
 </Styled(div)>
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MatchHero, { MatchHeroWithScore } from '.';
+import MatchHero, { MatchHeroWithScore, StyledCTA } from '.';
 import { duringLabels, scoreDataDuring, beforeLabels } from './mockData/mockData';
 import * as colors from '../../colors';
 import PlayIconLink from '../../elements/PlayIconLink';
@@ -27,6 +27,25 @@ describe('<MatchHero />', () => {
     );
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should not display CTA if displayCTA is set to false', () => {
+    const wrapper = shallow(
+      <MatchHero
+        className="test"
+        title={mockTitle}
+        date={mockDate}
+        hour={mockHour}
+        labels={beforeLabels}
+        cTAText="Subscribe to watch"
+        cTALink="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml"
+        marketingMessage="Watch Eurosport live"
+        marketingLink="http://www.eurosportplayer.fr"
+        marketingLinkText="Log In"
+        displayCTA={false}
+      />
+    );
+    expect(wrapper.dive().find(StyledCTA)).toHaveLength(0);
   });
 });
 
