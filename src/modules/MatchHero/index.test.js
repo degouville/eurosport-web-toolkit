@@ -1,32 +1,43 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MatchHero, { MatchHeroWithScore } from '.';
+import MatchHero, { MatchHeroWithScore, StyledCTA } from '.';
 import { duringLabels, scoreDataDuring, beforeLabels } from './mockData/mockData';
 import * as colors from '../../colors';
 import PlayIconLink from '../../elements/PlayIconLink';
 
 describe('<MatchHero />', () => {
-  const mockTitle = 'R.NADAL vs R.FEDERER';
-  const mockDate = '9 June 2019';
-  const mockHour = 'Starting from 20:30';
+  let wrapper;
+  const createProps = newProps => ({
+    className: 'test',
+    title: 'R.NADAL vs R.FEDERER',
+    date: '9 June 2019',
+    hour: 'Starting from 20:30',
+    labels: beforeLabels,
+    cTAText: 'Subscribe to watch',
+    cTALink: 'https://www.eurosport.fr/regardez-eurosport-en-direct.shtml',
+    marketingMessage: 'Watch Eurosport live',
+    marketingLink: 'http://www.eurosportplayer.fr',
+    marketingLinkText: 'Log In',
+    ...newProps,
+  });
 
   it('should render as expected', () => {
-    const wrapper = shallow(
-      <MatchHero
-        className="test"
-        title={mockTitle}
-        date={mockDate}
-        hour={mockHour}
-        labels={beforeLabels}
-        cTAText="Subscribe to watch"
-        cTALink="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml"
-        marketingMessage="Watch Eurosport live"
-        marketingLink="http://www.eurosportplayer.fr"
-        marketingLinkText="Log In"
-      />
-    );
+    const props = createProps();
+    wrapper = shallow(<MatchHero {...props} />);
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should not display CTA if displayCTA is set to false', () => {
+    const props = createProps({ displayCTA: false });
+    wrapper = shallow(<MatchHero {...props} />);
+    expect(wrapper.dive().find(StyledCTA)).toHaveLength(0);
+  });
+
+  it('should display CTA if displayCTA is set to true', () => {
+    const props = createProps({ displayCTA: true });
+    wrapper = shallow(<MatchHero {...props} />);
+    expect(wrapper.dive().find(StyledCTA)).toHaveLength(1);
   });
 });
 
