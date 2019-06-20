@@ -93,7 +93,7 @@ const SubNavigation = ({ items, ...props }) => {
         </Carousel>
         {shopItem && (
           <StyledItem key={shopItem.name} css={{ marginLeft: 'auto' }}>
-            <StyledShopLink href={shopItemLink}>
+            <StyledShopLink href={shopItemLink} target="_blank">
               <StyledShopIcon src={shopIcon} />
               {shopItem.name}
             </StyledShopLink>

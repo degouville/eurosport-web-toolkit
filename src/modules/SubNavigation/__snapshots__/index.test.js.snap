@@ -124,6 +124,7 @@ exports[`SubNavigation renders when everything passed in 1`] = `
     >
       <Styled(a)
         href="/shop"
+        target="_blank"
       >
         <Styled(img)
           src="/eurosport-web-toolkit/31f84d06a1ed03f8334a9f81b4775bfd.svg"
