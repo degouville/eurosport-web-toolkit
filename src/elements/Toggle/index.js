@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line no-unused-vars
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { coreLightMinus1, azureRadiance } from '../../colors';
@@ -7,7 +6,7 @@ import { fontInterUi } from '../../typography';
 
 const StyledToggleWrapper = styled.div`
   text-align: center;
-  border-bottom: 1px solid rgba($white, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   max-width: 964px;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -18,7 +17,6 @@ const StyledToggleWrapper = styled.div`
 `;
 
 const StyledLabel = styled.span`
-  color: ${coreLightMinus1};
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 1px;
