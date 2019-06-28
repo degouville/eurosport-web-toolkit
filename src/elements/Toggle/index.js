@@ -7,7 +7,6 @@ import { fontInterUi } from '../../typography';
 const StyledToggleWrapper = styled.div`
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  max-width: 964px;
   margin: 0 auto;
   padding-bottom: 20px;
   & > * {
