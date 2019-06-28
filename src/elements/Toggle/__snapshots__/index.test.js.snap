@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle renders Toggle as expected 1`] = `
+<Styled(div)>
+  <Styled(span)
+    isActive={true}
+    style={
+      Object {
+        "textAlign": "right",
+      }
+    }
+  >
+    left label
+  </Styled(span)>
+  <Styled(label)>
+    <input
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <Styled(span)
+      isSetToLeft={true}
+    />
+  </Styled(label)>
+  <Styled(span)
+    isActive={false}
+  >
+    right label
+  </Styled(span)>
+</Styled(div)>
+`;
