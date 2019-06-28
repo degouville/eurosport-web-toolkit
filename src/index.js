@@ -21,6 +21,7 @@ export { default as SocialIcon } from './elements/SocialIcon';
 export { default as Logo } from './elements/Logo';
 export { default as Labels } from './elements/Labels';
 export { default as Spinner } from './elements/Spinner';
+export { default as Toggle } from './elements/Toggle';
 
 export { default as ArticleContent } from './components/ArticleContent';
 export { default as Carousel } from './components/Carousel';
