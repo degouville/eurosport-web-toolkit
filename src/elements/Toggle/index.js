@@ -5,7 +5,11 @@ import { coreLightMinus1, azureRadiance } from '../../colors';
 import { fontInterUi } from '../../typography';
 
 const StyledToggleWrapper = styled.div`
-  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 49px 50%;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   padding-bottom: 20px;
@@ -61,7 +65,9 @@ const StyledSlider = styled.span`
 
 const Toggle = ({ toggleCallback, isSetToLeft, leftLabel, rightLabel }) => (
   <StyledToggleWrapper>
-    <StyledLabel isActive={isSetToLeft}>{leftLabel}</StyledLabel>
+    <StyledLabel isActive={isSetToLeft} style={{ textAlign: 'right' }}>
+      {leftLabel}
+    </StyledLabel>
     <StyledSwitch>
       <input type="checkbox" onChange={toggleCallback} />
       <StyledSlider isSetToLeft={isSetToLeft} />

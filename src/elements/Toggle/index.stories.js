@@ -10,7 +10,7 @@ toggleStories.add('Toggle', () => (
     // eslint-disable-next-line no-console
     toggleCallback={() => console.log('You clicked on the toggle')}
     isSetToLeft={boolean('isSetToLeft', true)}
-    leftLabel={text('leftLabel', 'Left Label')}
-    rightLabel={text('rightLabel', 'Right Label')}
+    leftLabel={text('leftLabel', 'Latest')}
+    rightLabel={text('rightLabel', 'Highlights')}
   />
 ));
