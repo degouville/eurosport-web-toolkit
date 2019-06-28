@@ -12,7 +12,8 @@ const StyledToggleWrapper = styled.div`
   justify-content: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   & > * {
     vertical-align: middle;
     display: inline-block;
