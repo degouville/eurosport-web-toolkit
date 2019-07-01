@@ -47,7 +47,6 @@ const StyledSlider = styled.span`
   left: 0;
   right: 0;
   bottom: 0;
-  transition: 0.2s;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.2);
   &::before {
@@ -58,7 +57,6 @@ const StyledSlider = styled.span`
     left: 4px;
     bottom: 4px;
     background-color: ${azureRadiance};
-    transition: 0.4s;
     border-radius: 50%;
     ${props => (props.isSetToLeft ? '' : 'transform: translateX(18px);')}
   }
