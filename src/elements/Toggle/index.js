@@ -8,16 +8,13 @@ const StyledToggleWrapper = styled.div`
   display: grid;
   grid-template-columns: 50% 49px 50%;
   grid-template-rows: auto;
+  grid-column-gap: 10px;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  & > * {
-    vertical-align: middle;
-    display: inline-block;
-  }
 `;
 
 const StyledLabel = styled.span`
@@ -26,7 +23,6 @@ const StyledLabel = styled.span`
   letter-spacing: 1px;
   font-family: ${fontInterUi};
   font-weight: bold;
-  margin: 0 10px;
   ${props => (props.isActive ? `color: ${azureRadiance};` : `color: ${coreLightMinus1};`)}
 `;
 
