@@ -2,18 +2,13 @@
 
 exports[`PlayIcon should render as expected 1`] = `
 <Styled(div)>
-  <Styled(div)
-    iconPadding={15}
-  >
+  <Styled(div)>
     <ChannelIcon
-      height={23}
+      height={50}
       type="E2NO"
     />
   </Styled(div)>
-  <Styled(div)
-    fontSize={14}
-    textPadding={15}
-  >
+  <Styled(div)>
     Text details
   </Styled(div)>
 </Styled(div)>
