@@ -46,8 +46,8 @@ export const StyledText = styled.div`
   `)};
 `;
 
-const ProgramDetails = ({ callsign, textDetail }) => (
-  <StyledDetails>
+const ProgramDetails = ({ callsign, textDetail, className }) => (
+  <StyledDetails className={className}>
     {callsign && (
       <StyledIconWrapper>
         <ChannelIcon type={callsign} />
@@ -59,9 +59,11 @@ const ProgramDetails = ({ callsign, textDetail }) => (
 
 ProgramDetails.defaultProps = {
   callsign: 'E',
+  className: '',
 };
 
 ProgramDetails.propTypes = {
+  className: PropTypes.string,
   callsign: PropTypes.string,
   textDetail: PropTypes.string.isRequired,
 };
