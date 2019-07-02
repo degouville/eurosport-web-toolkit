@@ -5,7 +5,7 @@ import ChannelIcon from '../ChannelIcon';
 
 describe.only('PlayIcon', () => {
   it('should render as expected', () => {
-    const wrapper = shallow(<ProgramDetails textDetail="Text details" />);
+    const wrapper = shallow(<ProgramDetails textDetail="Text details" callsign="E2NO" />);
     expect(wrapper).toMatchSnapshot();
   });
 
