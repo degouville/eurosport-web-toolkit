@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayIcon should render as expected 1`] = `
+<Styled(div)>
+  <Styled(div)
+    iconPadding={15}
+  >
+    <ChannelIcon
+      height={23}
+      type="E"
+    />
+  </Styled(div)>
+  <Styled(div)
+    fontSize={14}
+    textPadding={15}
+  >
+    Text details
+  </Styled(div)>
+</Styled(div)>
+`;

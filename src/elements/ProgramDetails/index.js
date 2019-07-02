@@ -45,7 +45,7 @@ const ProgramDetails = ({ callsign, textDetail, iconHeight, padding, fontSize })
 );
 
 ProgramDetails.defaultProps = {
-  callsign: '',
+  callsign: 'E',
   iconHeight: 23,
   padding: 15,
   fontSize: 14,
