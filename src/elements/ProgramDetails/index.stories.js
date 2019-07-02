@@ -5,12 +5,12 @@ import ProgramDetails from '.';
 
 const ProgramDetailsStories = storiesOf('Elements|ProgramDetails', module);
 
-ProgramDetailsStories.add('default', () => (
+ProgramDetailsStories.add('configurable', () => (
   <ProgramDetails
     callsign={text('callsign', 'E1')}
     textDetail={text('textDetail', '09:00 - 10:00')}
     iconHeight={number('iconHeight', 23)}
-    iconPadding={number('icoiconPaddingnHeight', 15)}
+    padding={number('padding', 15)}
     fontSize={number('fontSize', 16)}
   />
 ));

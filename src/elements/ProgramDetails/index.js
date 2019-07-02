@@ -25,29 +25,37 @@ const StyledIconWrapper = styled.div`
 `;
 
 const StyledText = styled.div`
-  font-size: ${props => `${props.fontSize}px`};
+  ${props =>
+    `font-size: ${props.fontSize}px;
+    padding: ${props.textPadding}px 0;
+  `};
 `;
 
-const ProgramDetails = ({ callsign, textDetail, iconHeight, iconPadding, fontSize }) => (
+const ProgramDetails = ({ callsign, textDetail, iconHeight, padding, fontSize }) => (
   <StyledDetails>
-    <StyledIconWrapper iconPadding={iconPadding}>
-      <ChannelIcon type={callsign} height={iconHeight} />
-    </StyledIconWrapper>
-    <StyledText fontSize={fontSize}>{textDetail}</StyledText>
+    {callsign && (
+      <StyledIconWrapper iconPadding={padding}>
+        <ChannelIcon type={callsign} height={iconHeight} />
+      </StyledIconWrapper>
+    )}
+    <StyledText fontSize={fontSize} textPadding={padding}>
+      {textDetail}
+    </StyledText>
   </StyledDetails>
 );
 
 ProgramDetails.defaultProps = {
+  callsign: '',
   iconHeight: 23,
-  iconPadding: 15,
+  padding: 15,
   fontSize: 14,
 };
 
 ProgramDetails.propTypes = {
-  callsign: PropTypes.string.isRequired,
+  callsign: PropTypes.string,
   textDetail: PropTypes.string.isRequired,
   iconHeight: PropTypes.number,
-  iconPadding: PropTypes.number,
+  padding: PropTypes.number,
   fontSize: PropTypes.number,
 };
 
