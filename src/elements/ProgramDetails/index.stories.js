@@ -10,5 +10,7 @@ ProgramDetailsStories.add('default', () => (
     callsign={text('callsign', 'E1')}
     textDetail={text('textDetail', '09:00 - 10:00')}
     iconHeight={number('iconHeight', 23)}
+    iconPadding={number('icoiconPaddingnHeight', 15)}
+    fontSize={number('fontSize', 16)}
   />
 ));
