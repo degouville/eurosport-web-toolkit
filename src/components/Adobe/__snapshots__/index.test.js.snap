@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Adobe /> client side renders <Adobe /> 1`] = `
+exports[`<Adobe /> head script client side renders <Adobe /> 1`] = `
 <Fragment>
   <ScriptInjector
     async={false}
@@ -9,18 +9,6 @@ exports[`<Adobe /> client side renders <Adobe /> 1`] = `
     innerHTML=""
     isServer={false}
     src="srcUrl"
-  />
-  <ScriptInjector
-    async={false}
-    id="satellite-script"
-    injectPlace="body"
-    innerHTML="
-    if(typeof(_satellite) != 'undefined'){
-      _satellite.pageBottom();
-    }
-  "
-    isServer={false}
-    src=""
   />
 </Fragment>
 `;

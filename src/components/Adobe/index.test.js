@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Adobe } from '../..';
 
-describe('<Adobe /> client side', () => {
+describe('<Adobe /> head script client side', () => {
   it('renders <Adobe />', () => {
     const component = shallow(<Adobe src="srcUrl" isServerSide={false} />);
     expect(component).toMatchSnapshot();
@@ -22,6 +22,14 @@ describe('<Adobe /> client side', () => {
     expect(adobeScript.getAttribute('src')).toEqual('urlToTest');
     component.unmount();
   });
+});
+
+describe('<Adobe /> head script server side', () => {
+  it('adds script tag with isServerSide', () => {
+    const wrapper = mount(<Adobe src="srcURL" isServerSide />);
+    expect(wrapper.exists('#adobe-script')).toEqual(true);
+    wrapper.unmount();
+  });
 
   it('calls pageBottom method on _satellite object', () => {
     const satelliteInjector = `_satellite = {}; _satellite.pageBottom = function() {window.document.mockCounter = 2};`;
@@ -29,15 +37,8 @@ describe('<Adobe /> client side', () => {
     script.innerHTML = satelliteInjector;
     document.body.appendChild(script);
     // eslint-disable-next-line no-unused-vars
-    const component = mount(<Adobe src="urlToTest" isServerSide={false} />);
+    const component = mount(<Adobe src="srcURL" isServerSide />);
     expect(global.document.mockCounter).toEqual(2);
     component.unmount();
-  });
-});
-
-describe('<Adobe /> server side', () => {
-  it('adds script tag with isServerSide', () => {
-    const wrapper = mount(<Adobe src="srcURL" isServerSide />);
-    expect(wrapper.exists('#adobe-script')).toEqual(true);
   });
 });

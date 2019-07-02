@@ -12,7 +12,9 @@ const Adobe = ({ src, isServerSide }) => {
   return (
     <>
       <ScriptInjector isServer={isServerSide} id="adobe-script" src={src} />
-      <ScriptInjector isServer={false} id="satellite-script" innerHTML={innerHTML} injectPlace="body" />
+      {isServerSide && (
+        <ScriptInjector isServer={false} id="satellite-script" innerHTML={innerHTML} injectPlace="body" />
+      )}
     </>
   );
 };
