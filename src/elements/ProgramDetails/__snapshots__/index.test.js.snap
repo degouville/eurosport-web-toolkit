@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Program details should render as expected 1`] = `
+<Styled(div)
+  className=""
+>
+  <Styled(div)>
+    <ChannelIcon
+      height={50}
+      type="E2NO"
+    />
+  </Styled(div)>
+  <Styled(div) />
+  <Styled(div)>
+    Text details
+  </Styled(div)>
+</Styled(div)>
+`;
