@@ -48,6 +48,7 @@ export const StyledSeparator = styled.div`
   background: rgba(255, 255, 255, 0.15);
   margin: 0 10px;
   align-self: stretch;
+  flex-shrink: 0;
 `;
 
 const ProgramDetails = ({ callsign, textDetail, className }) => (
