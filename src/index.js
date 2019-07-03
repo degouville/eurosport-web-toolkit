@@ -20,6 +20,7 @@ export { default as Grid } from './elements/Grid';
 export { default as SocialIcon } from './elements/SocialIcon';
 export { default as Logo } from './elements/Logo';
 export { default as Labels } from './elements/Labels';
+export { default as ProgramDetails } from './elements/ProgramDetails';
 export { default as Spinner } from './elements/Spinner';
 
 export { default as ArticleContent } from './components/ArticleContent';
