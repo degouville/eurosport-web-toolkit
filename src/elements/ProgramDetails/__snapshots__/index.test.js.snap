@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PlayIcon should render as expected 1`] = `
+exports[`Program details should render as expected 1`] = `
 <Styled(div)
   className=""
 >
@@ -10,7 +10,10 @@ exports[`PlayIcon should render as expected 1`] = `
       type="E2NO"
     />
   </Styled(div)>
-  <Styled(div)>
+  <Styled(div) />
+  <Styled(div)
+    borderLeft={true}
+  >
     Text details
   </Styled(div)>
 </Styled(div)>

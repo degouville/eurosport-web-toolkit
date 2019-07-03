@@ -26,32 +26,39 @@ export const StyledDetails = styled.div`
 `;
 
 export const StyledIconWrapper = styled.div`
-  padding: 10px;
-  padding-left: 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
   height: 15px;
+  padding: 10px 0;
 
   ${medium(css`
-    padding: 15px;
-    padding-left: 0;
+    padding: 15px 0;
     height: 23px;
   `)};
 `;
 
 export const StyledText = styled.div`
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 
   ${medium(css`
-    padding: 15px;
+    padding: 15px 15px 15px 0;
   `)};
+`;
+
+export const StyledSeparator = styled.div`
+  width: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 10px;
+  align-self: stretch;
 `;
 
 const ProgramDetails = ({ callsign, textDetail, className }) => (
   <StyledDetails className={className}>
     {callsign && (
-      <StyledIconWrapper>
-        <ChannelIcon type={callsign} />
-      </StyledIconWrapper>
+      <>
+        <StyledIconWrapper>
+          <ChannelIcon type={callsign} />
+        </StyledIconWrapper>
+        <StyledSeparator />
+      </>
     )}
     <StyledText>{textDetail}</StyledText>
   </StyledDetails>
