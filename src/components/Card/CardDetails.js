@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'react-emotion';
-import { rgba } from 'polished';
+import styled, { css } from 'react-emotion';
 import * as colors from '../../colors';
+import ProgramDetails, { StyledIconWrapper, StyledSeparator, StyledText } from '../../elements/ProgramDetails';
+import { medium } from '../../breakpoints';
 
 const StyledContent = styled.div`
   padding: 16px 16px 8px;
@@ -22,26 +23,16 @@ const StyledCategory = styled.div`
   margin: 0 0 10px;
 `;
 
-const footerBorder = rgba(colors.coreLightMinus1, 0.15);
+const StyledFooterContentWrapper = styled.div`
+  display: block;
+  width: 100%;
+`;
+
 const StyledFooter = styled.div`
   flex: 1 auto;
   display: flex;
   align-items: flex-end;
   font-size: 14px;
-`;
-
-const StyledDetails = styled.div`
-  display: flex;
-  align-items: center;
-  width: 100%;
-  border-top: 1px solid ${footerBorder};
-
-  * :nth-child(2) {
-    margin-left: 10px;
-    padding-left: 10px;
-    border-left: 1px solid ${footerBorder};
-    padding: 8px;
-  }
 `;
 
 const StyledTitle = styled.div`
@@ -58,25 +49,41 @@ const StyledDescription = styled.div`
   margin: 0 0 10px;
 `;
 
-const StyledTimeStamp = styled.div`
-  padding: 8px 0;
-  margin: 0;
-  color: ${colors.coreNeutral4};
+const StyledProgramDetails = styled(ProgramDetails)`
+  flex-grow: 0;
   font-size: 12px;
+  line-height: 1.3;
+
+  ${StyledIconWrapper} {
+    height: 15px;
+    padding: 8px 0;
+  }
+
+  ${StyledText} {
+    padding: 8px 8px 8px 0;
+  }
+
+  ${StyledSeparator} {
+    margin: 0 8px 0 10px;
+  }
+
+  ${medium(css`
+    font-size: 12px;
+    line-height: 1.3;
+  `)};
 `;
 
 const CardDetails = ({ card, icon, ...props }) => {
-  const { category, title, description, timestamp } = card;
+  const { category, title, description, timestamp, channel = null } = card;
   return (
     <StyledContent {...props}>
       <StyledCategory>{category}</StyledCategory>
       <StyledTitle>{title}</StyledTitle>
       {description && <StyledDescription>{description}</StyledDescription>}
       <StyledFooter>
-        <StyledDetails>
-          {icon}
-          <StyledTimeStamp>{timestamp}</StyledTimeStamp>
-        </StyledDetails>
+        <StyledFooterContentWrapper>
+          <StyledProgramDetails textDetail={timestamp} callsign={channel} customIcon={icon} />
+        </StyledFooterContentWrapper>
       </StyledFooter>
     </StyledContent>
   );
@@ -88,6 +95,7 @@ CardDetails.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
     timestamp: PropTypes.string,
+    channel: PropTypes.string,
   }).isRequired,
   icon: PropTypes.node,
 };

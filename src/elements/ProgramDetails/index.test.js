@@ -5,7 +5,9 @@ import ChannelIcon from '../ChannelIcon';
 
 describe.only('Program details', () => {
   it('should render as expected', () => {
-    const wrapper = shallow(<ProgramDetails textDetail="Text details" callsign="E2NO" />);
+    const wrapper = shallow(
+      <ProgramDetails textDetail="Text details" callsign="E2NO" customIcon={<span id="icon" />} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -13,6 +15,12 @@ describe.only('Program details', () => {
     it('should render the default channel icon', () => {
       const wrapper = shallow(<ProgramDetails textDetail="Text details" />);
       expect(wrapper.find(ChannelIcon).prop('type')).toBe('E');
+    });
+
+    it('does not render customIcon', () => {
+      const Icon = <span id="custom-icon" />;
+      const wrapper = shallow(<ProgramDetails textDetail="Text details" customIcon={Icon} />);
+      expect(wrapper.find({ id: 'custom-icon' })).toHaveLength(0);
     });
   });
 
@@ -25,6 +33,13 @@ describe.only('Program details', () => {
     it('should not render Separator', () => {
       const wrapper = shallow(<ProgramDetails textDetail="Text details" callsign={null} />);
       expect(wrapper.find(StyledSeparator)).toHaveLength(0);
+    });
+
+    it('renders customIcon if provided', () => {
+      const Icon = <span id="custom-icon" />;
+      const wrapper = shallow(<ProgramDetails textDetail="Text details" callsign="" customIcon={Icon} />);
+      expect(wrapper.find({ id: 'custom-icon' })).toHaveLength(1);
+      expect(wrapper.find(StyledSeparator)).toHaveLength(1);
     });
   });
 });

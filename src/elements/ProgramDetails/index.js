@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import ChannelIcon from '../ChannelIcon';
-import { suitGray } from '../../colors';
+import { coreNeutral4 } from '../../colors';
 import { medium } from '../../breakpoints';
 
 export const StyledDetails = styled.div`
@@ -11,7 +11,7 @@ export const StyledDetails = styled.div`
   width: 100%;
   height: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  color: ${suitGray};
+  color: ${coreNeutral4};
   font-size: 11px;
 
   svg {
@@ -51,13 +51,19 @@ export const StyledSeparator = styled.div`
   flex-shrink: 0;
 `;
 
-const ProgramDetails = ({ callsign, textDetail, className }) => (
+const ProgramDetails = ({ customIcon, callsign, textDetail, className }) => (
   <StyledDetails className={className}>
     {callsign && (
       <>
         <StyledIconWrapper>
           <ChannelIcon type={callsign} />
         </StyledIconWrapper>
+        <StyledSeparator />
+      </>
+    )}
+    {!callsign && customIcon && (
+      <>
+        {customIcon}
         <StyledSeparator />
       </>
     )}
@@ -68,11 +74,13 @@ const ProgramDetails = ({ callsign, textDetail, className }) => (
 ProgramDetails.defaultProps = {
   callsign: 'E',
   className: '',
+  customIcon: null,
 };
 
 ProgramDetails.propTypes = {
   className: PropTypes.string,
   callsign: PropTypes.string,
+  customIcon: PropTypes.node,
   textDetail: PropTypes.string.isRequired,
 };
 
