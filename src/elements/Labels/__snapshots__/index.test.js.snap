@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Labels renders labels after event 1`] = `
-<Styled(div)>
+exports[`Labels when default mode renders labels after event 1`] = `
+<Styled(div)
+  isSimpleMode={false}
+>
   <Styled(div)
     bold={true}
     color="white"
@@ -27,8 +29,10 @@ exports[`Labels renders labels after event 1`] = `
 </Styled(div)>
 `;
 
-exports[`Labels renders labels before event 1`] = `
-<Styled(div)>
+exports[`Labels when default mode renders labels before event 1`] = `
+<Styled(div)
+  isSimpleMode={false}
+>
   <Styled(div)
     bold={true}
     color="white"
@@ -47,8 +51,10 @@ exports[`Labels renders labels before event 1`] = `
 </Styled(div)>
 `;
 
-exports[`Labels renders labels live event 1`] = `
-<Styled(div)>
+exports[`Labels when default mode renders labels live event 1`] = `
+<Styled(div)
+  isSimpleMode={false}
+>
   <Styled(div)
     bold={true}
     color="white"
@@ -73,6 +79,31 @@ exports[`Labels renders labels live event 1`] = `
       •
     </Styled(div)>
     Live
+  </Styled(div)>
+</Styled(div)>
+`;
+
+exports[`Labels when isSimpleMode renders labels in simple mode 1`] = `
+<Styled(div)
+  isSimpleMode={true}
+>
+  <Styled(div)
+    key="WORLD  CUPundefined"
+    layer={3}
+  >
+    WORLD  CUP
+  </Styled(div)>
+  <Styled(div)
+    key="LIGUE 1undefined"
+    layer={2}
+  >
+    LIGUE 1
+  </Styled(div)>
+  <Styled(div)
+    key="PARIS SAINT GERMANundefined"
+    layer={1}
+  >
+    PARIS SAINT GERMAN
   </Styled(div)>
 </Styled(div)>
 `;
