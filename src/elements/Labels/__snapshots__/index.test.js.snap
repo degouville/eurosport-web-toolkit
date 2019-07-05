@@ -100,10 +100,10 @@ exports[`Labels when isSimpleMode renders labels in simple mode 1`] = `
     LIGUE 1
   </Styled(div)>
   <Styled(div)
-    key="PARIS SAINT GERMANundefined"
+    key="PARIS SAINT GERMAINundefined"
     layer={1}
   >
-    PARIS SAINT GERMAN
+    PARIS SAINT GERMAIN
   </Styled(div)>
 </Styled(div)>
 `;
