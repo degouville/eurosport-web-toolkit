@@ -66,7 +66,7 @@ const StyledLabel = styled.div`
         transform: skew(-5deg);
       }
     `}
- 
+
    ${breakpoints.medium(css`
      font-size: 12px;
      line-height: 30px;
