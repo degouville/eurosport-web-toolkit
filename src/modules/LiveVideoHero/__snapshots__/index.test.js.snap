@@ -41,6 +41,7 @@ exports[`Live Video Hero should render as expected 1`] = `
     <ProgramDetails
       callsign="E2NO"
       className=""
+      customIcon={null}
       textDetail="14:00 - 16:00"
     />
   </Styled(div)>
