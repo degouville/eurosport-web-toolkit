@@ -58,6 +58,7 @@ const StyledLabels = styled.div`
 `;
 
 export const StyledLabelSimple = styled.div`
+  text-transform: uppercase;
   font-weight: 300;
 
   &::after {
