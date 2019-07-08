@@ -37,6 +37,7 @@ export { default as ScoreBlocks } from './components/ScoreBlock';
 export { default as PlayerInfos } from './components/PlayerInfos';
 export { default as QuickPoll } from './components/Quickpoll';
 export { default as JwPlayer } from './components/JwPlayer';
+export { default as JWPlayerETP } from './components/JWPlayerETP';
 export { default as ScriptInjector } from './components/ScriptInjector';
 export { default as AdInit } from './components/Advertisement/AdInit';
 export { default as AdManager } from './components/Advertisement/AdManager';
