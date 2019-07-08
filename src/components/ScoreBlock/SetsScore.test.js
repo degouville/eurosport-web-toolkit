@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import SetsScore, { StyledTeamName, StyledTeamSet, isTeam, StyledSetScoreWrapper } from './SetsScore';
+import SetsScore, { StyledTeamName, StyledTeamSet, isTeam, StyledSetScoreWrapper, StyledPlayer } from './SetsScore';
 import { pastMatchData, liveMatchDataSet, liveMatchDataSetWithImages } from './mockData/mockScoreBlockData';
 import { actionOneDarkBase } from '../../colors';
 
@@ -28,6 +28,12 @@ describe('<SetsScore />', () => {
     const secondTeam = setsScore.find(StyledTeamName).at(1);
     expect(secondTeam.text().startsWith('A. MENENDEZ-MACEIRAS')).toBe(true);
     expect(secondTeam.text()).toContain('•');
+    setsScore.unmount();
+  });
+
+  it("should not display playerTwoName if it's not defined", () => {
+    const setsScore = mount(<SetsScore data={pastMatchData} />);
+    expect(setsScore.find(StyledPlayer)).toHaveLength(2);
     setsScore.unmount();
   });
 
