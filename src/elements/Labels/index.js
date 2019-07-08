@@ -1,7 +1,15 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import { coreNeutral9, coreLightMinus1, royalBlue, utahCrimson, dodgerBlue, brandBase } from '../../colors';
+import {
+  coreNeutral9,
+  coreLightMinus1,
+  coreNeutral4,
+  royalBlue,
+  utahCrimson,
+  dodgerBlue,
+  brandBase,
+} from '../../colors';
 import { fontHelvetica } from '../../typography';
 import * as breakpoints from '../../breakpoints';
 
@@ -27,9 +35,47 @@ const colorsMapping = {
 const StyledLabels = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  ${props =>
+    props.isSimpleMode &&
+    css`
+      color: ${coreLightMinus1};
+      font-size: 8px;
+      line-height: 11px;
+      letter-spacing: 0.41px;
+    `}}
+
+  ${props =>
+    props.isSimpleMode &&
+    breakpoints.small(
+      css`
+        color: ${coreLightMinus1};
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.5px;
+      `
+    )}
 `;
 
-const StyledLabel = styled.div`
+export const StyledLabelSimple = styled.div`
+  text-transform: uppercase;
+  font-weight: 300;
+
+  &::after {
+    display: inline-block;
+    content: '/';
+    margin: 0 0.5em;
+    color: ${coreNeutral4};
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+`;
+
+export const StyledLabel = styled.div`
   display: flex;
   ${fontHelvetica};
   font-size: 9.6px;
@@ -81,16 +127,25 @@ const StyledLabelIcon = styled.div`
   margin-right: 2px;
 `;
 
-const Labels = ({ labels }) => (
-  <StyledLabels>
-    {labels.map((label, index) => (
-      <StyledLabel color={label.color} bold={label.bold} key={label.text + label.color} layer={labels.length - index}>
-        {label.icon && <StyledLabelIcon>{label.icon}</StyledLabelIcon>}
-        {label.text}
-      </StyledLabel>
-    ))}
-  </StyledLabels>
-);
+const Labels = ({ labels, isSimpleMode }) => {
+  const LabelComponent = isSimpleMode ? StyledLabelSimple : StyledLabel;
+
+  return (
+    <StyledLabels isSimpleMode={isSimpleMode}>
+      {labels.map((label, index) => (
+        <LabelComponent
+          color={label.color}
+          bold={label.bold}
+          key={label.text + label.color}
+          layer={labels.length - index}
+        >
+          {label.icon && <StyledLabelIcon>{label.icon}</StyledLabelIcon>}
+          {label.text}
+        </LabelComponent>
+      ))}
+    </StyledLabels>
+  );
+};
 
 export const labelsType = PropTypes.arrayOf(
   PropTypes.shape({
@@ -101,8 +156,13 @@ export const labelsType = PropTypes.arrayOf(
   })
 );
 
+Labels.defaultProps = {
+  isSimpleMode: false,
+};
+
 Labels.propTypes = {
   labels: labelsType.isRequired,
+  isSimpleMode: PropTypes.bool,
 };
 
 export default Labels;

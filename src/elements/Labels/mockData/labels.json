@@ -42,5 +42,17 @@
       "text": "Result",
       "color": "cyan"
     }
+  ],
+
+  "simpleLabels": [
+    {
+      "text": "WORLD  CUP"
+    },
+    {
+      "text": "LIGUE 1"
+    },
+    {
+      "text": "PARIS SAINT GERMAIN"
+    }
   ]
 }

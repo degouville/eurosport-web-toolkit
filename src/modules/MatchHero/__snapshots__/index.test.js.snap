@@ -5,6 +5,7 @@ exports[`<MatchHero /> should render as expected 1`] = `
   className="test"
 >
   <Labels
+    isSimpleMode={false}
     labels={
       Array [
         Object {
@@ -40,6 +41,7 @@ exports[`<MatchHeroWithScore />  should render as expected 1`] = `
   className="test"
 >
   <Labels
+    isSimpleMode={false}
     labels={
       Array [
         Object {
