@@ -28,9 +28,7 @@ export const pastMatchData = {
 export const liveMatchData = {
   topTeam: {
     playerOneName: 'MENENDEZ-MACEIRAS',
-    playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png',
     playerTwoName: 'Rahman MAKSSOUD',
-    playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png',
     sets: [
       { set: 1, score: 6, won: true, tie: null },
       { set: 2, score: 6, won: true, tie: null },
@@ -43,9 +41,7 @@ export const liveMatchData = {
   },
   bottomTeam: {
     playerOneName: 'MENENDEZ-MACEIRAS',
-    playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2203.png',
     playerTwoName: 'DAVIDOVICH FOKINA',
-    playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png',
     sets: [
       { set: 1, score: 3, won: false, tie: null },
       { set: 2, score: 3, won: true, tie: null },
@@ -84,6 +80,19 @@ export const liveMatchDataSet = {
     ],
     hasWon: null,
     isServing: true,
+  },
+};
+
+export const liveMatchDataSetWithImages = {
+  topTeam: {
+    ...liveMatchData.topTeam,
+    playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png',
+    playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png',
+  },
+  bottomTeam: {
+    ...liveMatchData.bottomTeam,
+    playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2203.png',
+    playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png',
   },
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SetsScore, { StyledTeamName, StyledTeamSet, isTeam, StyledSetScoreWrapper } from './SetsScore';
-import { pastMatchData, liveMatchDataSet, liveMatchData } from './mockData/mockScoreBlockData';
+import { pastMatchData, liveMatchDataSet, liveMatchDataSetWithImages } from './mockData/mockScoreBlockData';
 import { actionOneDarkBase } from '../../colors';
 
 describe('<SetsScore />', () => {
@@ -52,8 +52,9 @@ describe('<SetsScore />', () => {
   });
 
   it('displays a flag associated with a player', () => {
-    const wrapper = mount(<SetsScore data={liveMatchData} />);
-    expect(wrapper.find(`[src="${liveMatchData.topTeam.playerTwoImage}"]`)).toHaveLength(2);
+    const wrapper = mount(<SetsScore data={liveMatchDataSetWithImages} />);
+    // Emotion creates a styled wrapper with the same src attribute
+    expect(wrapper.find(`[src="${liveMatchDataSetWithImages.topTeam.playerOneImage}"]`)).toHaveLength(2);
   });
 
   describe('isTeam', () => {

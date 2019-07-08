@@ -8,6 +8,7 @@ import {
   liveMatchData,
   liveMatchDataSet,
   pastMatchOnePlayerNoScoresDataSet,
+  liveMatchDataSetWithImages,
 } from './mockData/mockScoreBlockData';
 
 const MATCH_URL =
@@ -39,6 +40,21 @@ scoreBlockStories.add(`ScoreBlock - info`, () => (
       liveButtonText={text('liveButtonText', 'Live')}
       matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
       hasButton={boolean('hasButton', true)}
+    />
+  </Wrapper>
+));
+
+scoreBlockStories.add(`ScoreBlock - with flags`, () => (
+  <Wrapper>
+    <ScoreBlocks.ScoreBlock
+      matchUrl={MATCH_URL}
+      data={object('score data', liveMatchDataSetWithImages)}
+      isLive={boolean('isLive', false)}
+      isWatchable={boolean('isWatchable', false)}
+      displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', false)}
     />
   </Wrapper>
 ));
