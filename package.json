@@ -109,6 +109,7 @@
   },
   "dependencies": {
     "@eurosport/toolkit-player": "0.2.8",
+    "core-js": "^3.1.4",
     "hoist-non-react-statics": "^3.3.0",
     "lodash": "^4.17.11",
     "react-lines-ellipsis": "^0.14.1"

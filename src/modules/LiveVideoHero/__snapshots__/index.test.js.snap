@@ -21,6 +21,7 @@ exports[`Live Video Hero should render as expected 1`] = `
       onClick={[Function]}
     />
     <Labels
+      isSimpleMode={false}
       labels={
         Array [
           Object {
