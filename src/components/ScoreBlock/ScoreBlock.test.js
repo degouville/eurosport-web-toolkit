@@ -53,4 +53,18 @@ describe('<ScoreBlock />', () => {
     expect(circle.exists()).toBe(true);
     expect(circle.prop('src')).toEqual(crossSVG);
   });
+
+  it('should not diplay the call to actions if hasButton is false', () => {
+    const wrapper = mount(
+      <ScoreBlock
+        hasButton={false}
+        isLive
+        data={liveMatchData}
+        matchUrl="www.google.fr"
+        isWatchable={false}
+        t={key => key}
+      />
+    );
+    expect(wrapper.find(StyledButton)).toHaveLength(0);
+  });
 });
