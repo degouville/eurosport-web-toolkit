@@ -38,6 +38,7 @@ scoreBlockStories.add(`ScoreBlock - info`, () => (
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
       liveButtonText={text('liveButtonText', 'Live')}
       matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', true)}
     />
   </Wrapper>
 ));
@@ -51,6 +52,7 @@ scoreBlockStories.add(`ScoreBlock - live`, () => (
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
       liveButtonText={text('liveButtonText', 'Live')}
       matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', true)}
     />
   </Wrapper>
 ));
@@ -64,6 +66,7 @@ scoreBlockStories.add(`ScoreBlock - no scores`, () => (
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
       liveButtonText={text('liveButtonText', 'Live')}
       matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', true)}
     />
   </Wrapper>
 ));
