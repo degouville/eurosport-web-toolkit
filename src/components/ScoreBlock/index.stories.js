@@ -42,6 +42,7 @@ scoreBlockStories.add(`ScoreBlock - info`, () => (
     />
   </Wrapper>
 ));
+
 scoreBlockStories.add(`ScoreBlock - live`, () => (
   <Wrapper>
     <ScoreBlocks.ScoreBlock
@@ -56,6 +57,7 @@ scoreBlockStories.add(`ScoreBlock - live`, () => (
     />
   </Wrapper>
 ));
+
 scoreBlockStories.add(`ScoreBlock - no scores`, () => (
   <Wrapper>
     <ScoreBlocks.ScoreBlock

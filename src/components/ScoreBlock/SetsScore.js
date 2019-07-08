@@ -12,6 +12,18 @@ const StyledTeamWrapper = styled.div`
   align-items: stretch;
 `;
 
+export const StyledTeamImage = styled.img`
+  margin-right: 12px;
+`;
+
+export const StyledPlayer = styled.div`
+  display: flex;
+  align-items: center;
+  :not(:first-of-type) {
+    margin-top: 6px;
+  }
+`;
+
 export const StyledTeamName = styled.div`
   color: ${props => (props.hasWon === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
   ${fontAlphaHeadline};
@@ -55,7 +67,7 @@ const StyledTeamSets = styled.div`
 `;
 
 const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
-  const { sets, isServing, hasWon } = teamData;
+  const { playerOneImage, playerTwoImage, sets, isServing, hasWon } = teamData;
   let { playerOneName = '', playerTwoName = '' } = teamData;
 
   // Set non-breaking space when a team is missing to keep the display ratio
@@ -65,12 +77,18 @@ const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
   return (
     <StyledTeamWrapper>
       <StyledTeamName hasWon={hasWon}>
-        <div>
+        <StyledPlayer>
+          {playerOneImage && <StyledTeamImage src={playerOneImage} />}
           {playerOneName}
           {hasWon && <span> ✓</span>}
           {isServing && <span> •</span>}
-        </div>
-        <div>{playerTwoName}</div>
+        </StyledPlayer>
+        {playerTwoName && (
+          <StyledPlayer>
+            {playerTwoImage && <StyledTeamImage src={playerTwoImage} />}
+            <div>{playerTwoName}</div>
+          </StyledPlayer>
+        )}
       </StyledTeamName>
       <StyledTeamSets>
         {sets &&
@@ -142,6 +160,8 @@ const teamDataType = PropTypes.shape({
   isServing: PropTypes.bool,
   playerOneName: PropTypes.string,
   playerTwoName: PropTypes.string,
+  playerOneImage: PropTypes.string,
+  playerTwoImage: PropTypes.string,
   sets: PropTypes.arrayOf(
     PropTypes.shape({
       set: PropTypes.number,

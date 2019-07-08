@@ -121,6 +121,7 @@ exports[`PlayerCard should render as expected 1`] = `
             }
           }
           displayLeftCircle="won"
+          hasButton={true}
           isLive={false}
           isWatchable={false}
           liveButtonText="Live"
@@ -212,6 +213,7 @@ exports[`PlayerCard should render as expected 1`] = `
             }
           }
           displayLeftCircle="won"
+          hasButton={true}
           isLive={false}
           isWatchable={false}
           liveButtonText="Live"
@@ -279,6 +281,7 @@ exports[`PlayerCard should render as expected 1`] = `
             }
           }
           displayLeftCircle="lost"
+          hasButton={true}
           isLive={false}
           isWatchable={false}
           liveButtonText="Live"
@@ -370,6 +373,7 @@ exports[`PlayerCard should render as expected 1`] = `
             }
           }
           displayLeftCircle="won"
+          hasButton={true}
           isLive={false}
           isWatchable={false}
           liveButtonText="Live"
@@ -461,6 +465,7 @@ exports[`PlayerCard should render as expected 1`] = `
             }
           }
           displayLeftCircle="won"
+          hasButton={true}
           isLive={false}
           isWatchable={false}
           liveButtonText="Live"
