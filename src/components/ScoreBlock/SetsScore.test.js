@@ -19,7 +19,7 @@ describe('<SetsScore />', () => {
     const setsScore = mount(<SetsScore data={pastMatchData} />);
     const firstTeam = setsScore.find(StyledTeamName).first();
     expect(firstTeam.text().startsWith('Federer')).toBe(true);
-    expect(firstTeam.text()).toContain(' ✓');
+    expect(firstTeam.text()).toContain('✓');
     setsScore.unmount();
   });
 
@@ -27,7 +27,7 @@ describe('<SetsScore />', () => {
     const setsScore = mount(<SetsScore data={liveMatchDataSet} />);
     const secondTeam = setsScore.find(StyledTeamName).at(1);
     expect(secondTeam.text().startsWith('A. MENENDEZ-MACEIRAS')).toBe(true);
-    expect(secondTeam.text()).toContain(' •');
+    expect(secondTeam.text()).toContain('•');
     setsScore.unmount();
   });
 

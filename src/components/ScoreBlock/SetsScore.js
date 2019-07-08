@@ -24,6 +24,10 @@ export const StyledPlayer = styled.div`
   }
 `;
 
+const StyledMark = styled.span`
+  margin-left: 10px;
+`;
+
 export const StyledTeamName = styled.div`
   color: ${props => (props.hasWon === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
   ${fontAlphaHeadline};
@@ -80,8 +84,8 @@ const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
         <StyledPlayer>
           {playerOneImage && <StyledTeamImage src={playerOneImage} />}
           {playerOneName}
-          {hasWon && <span> ✓</span>}
-          {isServing && <span> •</span>}
+          {hasWon && <StyledMark>✓</StyledMark>}
+          {isServing && <StyledMark>•</StyledMark>}
         </StyledPlayer>
         {playerTwoName && (
           <StyledPlayer>
