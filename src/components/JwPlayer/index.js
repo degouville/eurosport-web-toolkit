@@ -111,7 +111,6 @@ const StyledWrapper = styled.div`
   ${props =>
     props.minHeight &&
     css`
-      background-color: olivedrab;
       min-height: ${props.minHeight}px;
     `}
 `;
@@ -185,6 +184,8 @@ export default class Player extends Component {
     this.setState({
       isPlaying: true,
     });
+
+    this.handleStickyOnScroll();
   };
 
   handlePause = () => {
