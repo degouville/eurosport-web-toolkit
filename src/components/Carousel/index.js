@@ -53,7 +53,7 @@ const StyledSlidesTrack = styled.div`
   user-select: none;
 `;
 
-const StyledSlide = styled.div`
+export const StyledSlide = styled.div`
   display: inline-block;
   vertical-align: top;
   width: auto;
