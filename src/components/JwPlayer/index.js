@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled, { css } from 'react-emotion';
+import debounce from 'lodash/debounce';
+import Cross from 'src/assets/close-cross.svg';
 import ScriptInjector from '../ScriptInjector';
+import { medium, large, wide } from '../../breakpoints';
+import { brandPlus2, coreLightMinus1 } from '../../colors';
 
 const playerId = 'eurosport-web-player';
 
@@ -184,8 +189,6 @@ export default class Player extends Component {
     this.setState({
       isPlaying: true,
     });
-
-    this.handleStickyOnScroll();
   };
 
   handlePause = () => {
@@ -256,13 +259,25 @@ export default class Player extends Component {
   };
 
   render() {
-    const { scriptUrl } = this.props;
+    const { scriptUrl, stickyContent, stickTo } = this.props;
+    const { isPlaying, isPlayerSticky, minWrapperHeight } = this.state;
+
+    const shouldStickPlayer = isPlayerSticky && isPlaying;
 
     return (
       <StyledWrapper innerRef={this.styledWrapperRef} minHeight={minWrapperHeight}>
         <ScriptInjector isServer={false} src={scriptUrl} onLoad={this.initPlayer} />
-        <div id={playerId} />
-      </>
+        <StyledPlayerWrapper isSticky={shouldStickPlayer} stickTo={stickTo}>
+          <StyledPlayer isSticky={shouldStickPlayer}>
+            {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+            <div id={playerId} onClick={this.handleStickyPlayerClick} />
+            <StyledStickyCotent isVisible={shouldStickPlayer}>
+              {stickyContent}
+              <StyledCloseButton onClick={this.closeStickyPanel} />
+            </StyledStickyCotent>
+          </StyledPlayer>
+        </StyledPlayerWrapper>
+      </StyledWrapper>
     );
   }
 }
@@ -271,7 +286,10 @@ Player.defaultProps = {
   prefLang: undefined,
   subscribeUrl: undefined,
   freewheelAdParams: undefined,
+  stickyContent: null,
+  stickTo: 'bottom',
 
+  onStickyPlayerClick: () => {},
   onReady: () => {},
   onLoginReady: () => {},
   onPlay: () => {},
@@ -291,6 +309,9 @@ Player.propTypes = {
   entityId: PropTypes.string.isRequired,
   streamType: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  stickyContent: PropTypes.node,
+  stickTo: PropTypes.oneOf(['bottom', 'top']),
+  onStickyPlayerClick: PropTypes.func,
 
   prefLang: PropTypes.string,
   subscribeUrl: PropTypes.string,
