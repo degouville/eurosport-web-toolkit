@@ -12,7 +12,7 @@ const StyledLiveVideoHeroWrapper = styled.div`
   position: relative;
 
   & ::before,
-  ::after {
+  & ::after {
     content: '';
     display: block;
     position: absolute;
