@@ -1,7 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Player from '.';
+import debounce from 'lodash/debounce';
+import Player, { StyledCloseButton, StyledPlayerWrapper, StyledStickyCotent } from '.';
 import ScriptInjector from '../ScriptInjector';
+
+jest.mock('lodash/debounce');
+debounce.mockImplementation(fn => fn);
 
 let setupSpy;
 
@@ -184,6 +188,248 @@ describe('components/<Player />', () => {
     it(`should call onError on error event`, () => {
       global.console = { log: jest.fn(), error: jest.fn() };
       testEvent('error', 'onError');
+    });
+  });
+
+  describe('Player sticky mode', () => {
+    beforeEach(() => {
+      jest.resetAllMocks();
+    });
+
+    it('sets up listeners on mount if stickyContnent provided', () => {
+      const wrapper = shallow(<Player {...initialProps} stickyContent="sticky content" />);
+      const fn = jest.spyOn(window, 'addEventListener');
+      wrapper.instance().componentDidMount();
+      expect(fn).toHaveBeenCalledTimes(2);
+      expect(fn).toHaveBeenCalledWith('scroll', wrapper.instance().handleStickyOnScroll);
+      expect(fn).toHaveBeenCalledWith('resize', wrapper.instance().handleStickyOnScroll);
+      jest.resetAllMocks();
+    });
+
+    it('does not set up listeners on mount if stickyContnent is not provided', () => {
+      const fn = jest.spyOn(window, 'addEventListener');
+
+      const wrapper = shallow(<Player {...initialProps} />);
+      wrapper.instance().componentDidMount();
+      expect(fn).toHaveBeenCalledTimes(0);
+    });
+
+    describe('instance / handleStickyOnScroll', () => {
+      let wrapper;
+      let mockBoundClientRect;
+      let clock;
+      let globalDoc;
+
+      const mockIsOnscreenAndVisibleTop = () => {
+        mockBoundClientRect = () => ({
+          bottom: 410,
+          top: 10,
+          height: 400,
+        });
+      };
+
+      const mockIsOnscreenAndVisibleBottom = () => {
+        mockBoundClientRect = () => ({
+          bottom: 390,
+          top: -10,
+          height: 400,
+        });
+
+        document.clientHeight = 400;
+      };
+
+      const mockIsOnScreenFull = () => {
+        mockBoundClientRect = () => ({
+          bottom: 100,
+          top: 10,
+          height: 90,
+        });
+      };
+
+      const mockIsOutOfScreenAtTheTop = () => {
+        mockBoundClientRect = () => ({
+          bottom: -110,
+          top: -210,
+          height: 100,
+        });
+      };
+
+      const mockIsOutOfScreenAtTheBottom = () => {
+        mockBoundClientRect = () => ({
+          bottom: 491,
+          top: 401,
+          height: 90,
+        });
+      };
+
+      beforeEach(() => {
+        clock = jest.useFakeTimers();
+        wrapper = shallow(<Player {...initialProps} stickyContent="sticky content" />);
+        wrapper.instance().styledWrapperRef.current = {
+          getBoundingClientRect: () => mockBoundClientRect(),
+        };
+
+        delete global.document;
+
+        global.document = {
+          documentElement: {
+            clientHeight: 400,
+          },
+        };
+      });
+
+      afterEach(() => {
+        global.document = globalDoc;
+      });
+
+      describe('sticky logic: isPlayerSticky, minWrapperHeight setup', () => {
+        it('it is false when wrapper is visible', () => {
+          const invalidateState = () => {
+            wrapper.setState({
+              isPlayerSticky: true,
+              isStickyPanelClosed: true,
+              minWrapperHeight: '123',
+            });
+          };
+
+          invalidateState();
+          mockIsOnscreenAndVisibleTop();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(false);
+          expect(wrapper.state('isStickyPanelClosed')).toBe(false);
+          expect(wrapper.state('minWrapperHeight')).toBe(null);
+
+          invalidateState();
+          mockIsOnscreenAndVisibleBottom();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(false);
+          expect(wrapper.state('isStickyPanelClosed')).toBe(false);
+          expect(wrapper.state('minWrapperHeight')).toBe(null);
+
+          invalidateState();
+          mockIsOnScreenFull();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(false);
+          expect(wrapper.state('isStickyPanelClosed')).toBe(false);
+          expect(wrapper.state('minWrapperHeight')).toBe(null);
+        });
+
+        it('it is true when wrapper is not visible', () => {
+          const invalidateState = () => {
+            wrapper.setState({
+              isPlayerSticky: false,
+              minWrapperHeight: '123',
+            });
+          };
+
+          invalidateState();
+          mockIsOutOfScreenAtTheBottom();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(true);
+          expect(wrapper.state('minWrapperHeight')).toBe(90);
+
+          invalidateState();
+          mockIsOutOfScreenAtTheTop();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(true);
+          expect(wrapper.state('minWrapperHeight')).toBe(100);
+        });
+
+        it('sets isPlayerSticky only when player out of screen and isStickyPanelClosed is false', () => {
+          wrapper.setState({
+            isStickyPanelClosed: false,
+          });
+          mockIsOutOfScreenAtTheTop();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(true);
+
+          wrapper.setState({
+            isStickyPanelClosed: true,
+            isPlayerSticky: false,
+          });
+
+          mockIsOutOfScreenAtTheTop();
+
+          wrapper.instance().handleStickyOnScroll();
+          expect(wrapper.state('isPlayerSticky')).toBe(false);
+        });
+      });
+
+      describe('sticky panel', () => {
+        const stickyPanel = w => w.find(StyledPlayerWrapper);
+
+        it('sticks only when player is playing', () => {
+          wrapper.setState({
+            isPlayerSticky: true,
+            isPlaying: true,
+          });
+
+          expect(stickyPanel(wrapper).prop('isSticky')).toBe(true);
+
+          wrapper.setState({
+            isPlayerSticky: true,
+            isPlaying: false,
+          });
+
+          expect(stickyPanel(wrapper).prop('isSticky')).toBe(false);
+        });
+
+        it('can be unsticked by clicking the close button on a sticky panel', () => {
+          wrapper.setState({
+            isPlayerSticky: true,
+            isPlaying: true,
+          });
+          expect(stickyPanel(wrapper).prop('isSticky')).toBe(true);
+          wrapper.find(StyledCloseButton).simulate('click');
+
+          expect(stickyPanel(wrapper).prop('isSticky')).toBe(false);
+        });
+
+        describe('StickyContent', () => {
+          it('contains sticky content from the wrapper', () => {
+            expect(wrapper.find(StyledStickyCotent).html()).toContain('sticky content');
+          });
+
+          it('displays the StickyContent if sticky', () => {
+            wrapper.setState({
+              isPlayerSticky: true,
+              isPlaying: true,
+            });
+
+            expect(wrapper.find(StyledStickyCotent).prop('isVisible')).toBe(true);
+          });
+
+          it('does not display StickyContent if not sticky', () => {
+            wrapper.setState({
+              isPlayerSticky: false,
+              isPlaying: false,
+            });
+
+            expect(wrapper.find(StyledStickyCotent).prop('isVisible')).toBe(false);
+
+            wrapper.setState({
+              isPlayerSticky: true,
+              isPlaying: false,
+            });
+
+            expect(wrapper.find(StyledStickyCotent).prop('isVisible')).toBe(false);
+          });
+        });
+      });
+    });
+
+    describe('when isPlaying and player is sticky', () => {
+      it('displays the StickyContent', () => {});
+
+      it('sets the player wrapper to a fixed mode', () => {});
+
+      it('adds onClick handler for player element', () => {});
     });
   });
 });

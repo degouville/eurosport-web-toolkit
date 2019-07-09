@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, object } from '@storybook/addon-knobs';
+import { text, object, select } from '@storybook/addon-knobs';
 import { JwPlayer } from '../..';
 
 const freewheelAdParams = {
