@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Live Video Hero should render as expected 1`] = `
-<Styled(div)>
+<Styled(div)
+  videoPlayerMode={false}
+>
   <Styled(div)
     backgroundImageUrl="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20190612-103247.jpeg?w=1030"
     hideBackground={false}

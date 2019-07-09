@@ -11,8 +11,9 @@ import ProgramDetails from '../../elements/ProgramDetails';
 const StyledLiveVideoHeroWrapper = styled.div`
   position: relative;
 
-  & ::before, ::after {
-    content: "";
+  & ::before,
+  & ::after {
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -22,30 +23,33 @@ const StyledLiveVideoHeroWrapper = styled.div`
   }
 
   &::before {
-    opacity: .5;
-    background: radial-gradient(circle,transparent 0,${blueZodiac} 100%);
+    opacity: 0.5;
+    background: radial-gradient(circle, transparent 0, ${blueZodiac} 100%);
     z-index: 1;
   }
 
   &::after {
-    opacity: .8;
-    background: linear-gradient(180deg,rgba(20,27,77,.03),${brandPlus2});
+    opacity: 0.8;
+    background: linear-gradient(180deg, rgba(20, 27, 77, 0.03), ${brandPlus2});
     z-index: 2;
   }
 
-  min-height: 350px;
-  ${breakpoints.small(css`
-    min-height: 385px;
-  `)}
-  ${breakpoints.medium(css`
-    min-height: 408px;
-  `)}
-  ${breakpoints.large(css`
-    min-height: 450px;
-  `)}
-  ${breakpoints.wide(css`
-    min-height: 580px;
-  `)}
+  ${props =>
+    !props.videoPlayerMode &&
+    css`min-height: 350px;
+    ${breakpoints.small(css`
+      min-height: 385px;
+    `)}
+    ${breakpoints.medium(css`
+      min-height: 408px;
+    `)}
+    ${breakpoints.large(css`
+      min-height: 450px;
+    `)}
+    ${breakpoints.wide(css`
+      min-height: 580px;
+    `)}
+  `}
 `;
 
 export const StyledBackground = styled.div`
@@ -124,7 +128,7 @@ const LiveVideoHero = ({
   isPlayerLoading,
   videoPlayerMode,
 }) => (
-  <StyledLiveVideoHeroWrapper>
+  <StyledLiveVideoHeroWrapper videoPlayerMode={videoPlayerMode}>
     <StyledBackground backgroundImageUrl={backgroundImageUrl} hideBackground={videoPlayerMode} />
     <div id="video-player-container" />
     <StyledDetails videoPlayerMode={videoPlayerMode}>
