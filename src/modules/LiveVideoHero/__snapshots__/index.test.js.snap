@@ -41,7 +41,7 @@ exports[`Live Video Hero should render as expected 1`] = `
     <Styled(h1)>
       Athletics: Marathon des Sables
     </Styled(h1)>
-    <ProgramDetails
+    <Styled(ProgramDetails)
       callsign="E2NO"
       className=""
       customIcon={null}

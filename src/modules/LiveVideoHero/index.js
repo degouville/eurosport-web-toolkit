@@ -52,6 +52,16 @@ const StyledLiveVideoHeroWrapper = styled.div`
   `}
 `;
 
+const StyledProgramDetails = styled(ProgramDetails)`
+  padding-bottom: 20px;
+  ${breakpoints.medium(css`
+    padding-bottom: 30px;
+  `)}
+  ${breakpoints.large(css`
+    padding-bottom: 45px;
+  `)}
+`;
+
 export const StyledBackground = styled.div`
   display: block;
   width: 100%;
@@ -135,7 +145,7 @@ const LiveVideoHero = ({
       {!videoPlayerMode && <StyledPlayIcon height={84} onClick={onPlayIconClick} isLoading={isPlayerLoading} />}
       <Labels labels={labels} />
       <StyledH1>{title}</StyledH1>
-      <ProgramDetails callsign={programCallSign} textDetail={programDetails} />
+      <StyledProgramDetails callsign={programCallSign} textDetail={programDetails} />
     </StyledDetails>
   </StyledLiveVideoHeroWrapper>
 );
