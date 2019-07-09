@@ -17,7 +17,7 @@
     "lint": "eslint .",
     "prettier": "prettier --write '**/{*.{js?(on),ts,y?(a)ml,graphql,md,scss},.*.y?(a)ml,.*.json,.prettierrc,.stylelintrc}'",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook --quiet",
     "start-static-storybook": "serve ./storybook-static",
     "clean": "rm -rf dist",
     "build:babel": "babel src --out-dir dist/cjs --ignore 'src/**/*.stories.js' --ignore 'src/**/*.test.js'",
