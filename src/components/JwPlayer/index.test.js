@@ -1,11 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import debounce from 'lodash/debounce';
 import Player, { StyledCloseButton, StyledPlayerWrapper, StyledStickyCotent } from '.';
 import ScriptInjector from '../ScriptInjector';
 
-jest.mock('lodash/debounce');
-debounce.mockImplementation(fn => fn);
+jest.mock('lodash/debounce', () => fn => fn);
 
 let setupSpy;
 
@@ -217,7 +215,6 @@ describe('components/<Player />', () => {
     describe('instance / handleStickyOnScroll', () => {
       let wrapper;
       let mockBoundClientRect;
-      let clock;
       let globalDoc;
 
       const mockIsOnscreenAndVisibleTop = () => {
@@ -263,7 +260,6 @@ describe('components/<Player />', () => {
       };
 
       beforeEach(() => {
-        clock = jest.useFakeTimers();
         wrapper = shallow(<Player {...initialProps} stickyContent="sticky content" />);
         wrapper.instance().styledWrapperRef.current = {
           getBoundingClientRect: () => mockBoundClientRect(),
