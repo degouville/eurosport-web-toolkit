@@ -1,9 +1,8 @@
 import React from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
-import { withKnobsOptions } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
-import { withBackgrounds } from '@storybook/addon-backgrounds';
-import { withOptions } from '@storybook/addon-options';
+import { create } from '@storybook/theming';
 import { ThemeProvider } from 'emotion-theming';
 import styled from 'react-emotion';
 import { theme, colors, injectStyles } from '../src';
@@ -30,36 +29,32 @@ const ThemeDecorator = storyFn => (
 
 addDecorator(withInfo);
 
-// Option defaults:
-addDecorator(
-  withOptions({
-    name: 'Web-Toolkit',
-    url: 'https://github.com/EurosportDigital/web-toolkit',
-    goFullScreen: false,
-    showStoriesPanel: true,
-    showAddonPanel: true,
-    showSearchBox: false,
-    addonPanelInRight: false,
-    sortStoriesByKind: true,
+addParameters({
+  options: {
+    theme: create({
+      base: 'light',
+      brandTitle: 'Web-Toolkit',
+      brandUrl: 'https://github.com/EurosportDigital/web-toolkit',
+    }),
+    showNav: true,
+    showPanel: true,
+    isFullscreen: false,
     hierarchySeparator: /\/|\./,
     hierarchyRootSeparator: /\|/,
+    panelPosition: 'bottom',
     sidebarAnimations: true,
-    selectedAddonPanel: undefined, // The order of addons in the "Addon panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
-    enableShortcuts: true, // true by default
-  })
-);
+    isToolshown: true,
+  },
+});
 
 addDecorator(ThemeDecorator);
-addDecorator(
-  withKnobsOptions({
-    escapeHTML: false,
-  })
-);
-addDecorator(
-  withBackgrounds([
+addDecorator(withKnobs);
+
+addParameters({
+  backgrounds: [
     { name: 'default', value: colors.brandPlus2, default: true },
     { name: 'coreLightMinus1', value: colors.coreLightMinus1 },
-  ])
-);
+  ],
+});
 
 configure(loadStories, module);

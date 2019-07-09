@@ -11,8 +11,9 @@ import ProgramDetails from '../../elements/ProgramDetails';
 const StyledLiveVideoHeroWrapper = styled.div`
   position: relative;
 
-  & ::before, ::after {
-    content: "";
+  & ::before,
+  & ::after {
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -22,29 +23,42 @@ const StyledLiveVideoHeroWrapper = styled.div`
   }
 
   &::before {
-    opacity: .5;
-    background: radial-gradient(circle,transparent 0,${blueZodiac} 100%);
+    opacity: 0.5;
+    background: radial-gradient(circle, transparent 0, ${blueZodiac} 100%);
     z-index: 1;
   }
 
   &::after {
-    opacity: .8;
-    background: linear-gradient(180deg,rgba(20,27,77,.03),${brandPlus2});
+    opacity: 0.8;
+    background: linear-gradient(180deg, rgba(20, 27, 77, 0.03), ${brandPlus2});
     z-index: 2;
   }
 
-  min-height: 350px;
-  ${breakpoints.small(css`
-    min-height: 385px;
-  `)}
+  ${props =>
+    !props.videoPlayerMode &&
+    css`min-height: 350px;
+    ${breakpoints.small(css`
+      min-height: 385px;
+    `)}
+    ${breakpoints.medium(css`
+      min-height: 408px;
+    `)}
+    ${breakpoints.large(css`
+      min-height: 450px;
+    `)}
+    ${breakpoints.wide(css`
+      min-height: 580px;
+    `)}
+  `}
+`;
+
+const StyledProgramDetails = styled(ProgramDetails)`
+  padding-bottom: 20px;
   ${breakpoints.medium(css`
-    min-height: 408px;
+    padding-bottom: 30px;
   `)}
   ${breakpoints.large(css`
-    min-height: 450px;
-  `)}
-  ${breakpoints.wide(css`
-    min-height: 580px;
+    padding-bottom: 45px;
   `)}
 `;
 
@@ -124,14 +138,14 @@ const LiveVideoHero = ({
   isPlayerLoading,
   videoPlayerMode,
 }) => (
-  <StyledLiveVideoHeroWrapper>
+  <StyledLiveVideoHeroWrapper videoPlayerMode={videoPlayerMode}>
     <StyledBackground backgroundImageUrl={backgroundImageUrl} hideBackground={videoPlayerMode} />
     <div id="video-player-container" />
     <StyledDetails videoPlayerMode={videoPlayerMode}>
       {!videoPlayerMode && <StyledPlayIcon height={84} onClick={onPlayIconClick} isLoading={isPlayerLoading} />}
       <Labels labels={labels} />
       <StyledH1>{title}</StyledH1>
-      <ProgramDetails callsign={programCallSign} textDetail={programDetails} />
+      <StyledProgramDetails callsign={programCallSign} textDetail={programDetails} />
     </StyledDetails>
   </StyledLiveVideoHeroWrapper>
 );
