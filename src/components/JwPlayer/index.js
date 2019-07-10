@@ -7,7 +7,7 @@ import ScriptInjector from '../ScriptInjector';
 import { medium, large, wide } from '../../breakpoints';
 import { brandPlus2, coreLightMinus1 } from '../../colors';
 
-const playerId = 'eurosport-web-player';
+export const playerId = 'eurosport-web-player';
 
 export const ONE_FRAME = 16.7;
 

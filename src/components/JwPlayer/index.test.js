@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Player, { StyledCloseButton, StyledPlayerWrapper, StyledStickyCotent } from '.';
+import Player, { playerId, StyledCloseButton, StyledPlayerWrapper, StyledStickyCotent } from '.';
 import ScriptInjector from '../ScriptInjector';
 
 jest.mock('lodash/debounce', () => fn => fn);
@@ -138,11 +138,37 @@ describe('components/<Player />', () => {
     it(`should call onPlay on play event`, () => {
       testEvent('play', 'onPlay');
     });
+
+    it('should call handlePlay and set isPlaying to be true', () => {
+      const wrapper = shallow(<Player {...initialProps} />);
+      const spyHandlePlay = jest.spyOn(wrapper.instance(), 'handlePlay');
+      expect(wrapper.state('isPlaying')).toBe(false);
+
+      wrapper.find(ScriptInjector).simulate('load');
+      wrapper.instance().player.trigger('play');
+
+      expect(spyHandlePlay).toHaveBeenCalled();
+      expect(wrapper.state('isPlaying')).toBe(true);
+    });
   });
 
   describe('pause event handler', () => {
     it(`should call onPause on pause event`, () => {
       testEvent('pause', 'onPause');
+    });
+
+    it('should call handlePause and set isPlaying to be false', () => {
+      const wrapper = shallow(<Player {...initialProps} />);
+      const spyHandlePause = jest.spyOn(wrapper.instance(), 'handlePause');
+      wrapper.setState({
+        isPlaying: true,
+      });
+
+      wrapper.find(ScriptInjector).simulate('load');
+      wrapper.instance().player.trigger('pause');
+
+      expect(spyHandlePause).toHaveBeenCalled();
+      expect(wrapper.state('isPlaying')).toBe(false);
     });
   });
 
@@ -192,6 +218,13 @@ describe('components/<Player />', () => {
   describe('Player sticky mode', () => {
     beforeEach(() => {
       jest.resetAllMocks();
+    });
+
+    it('matches snapshot', () => {
+      const wrapper = shallow(
+        <Player {...initialProps} stickyContent="sticky content" onStickyPlayerClick={() => '123'} />
+      );
+      expect(wrapper).toMatchSnapshot();
     });
 
     it('sets up listeners on mount if stickyContnent provided', () => {
@@ -387,6 +420,14 @@ describe('components/<Player />', () => {
           expect(stickyPanel(wrapper).prop('isSticky')).toBe(false);
         });
 
+        it('has stickTo prop', () => {
+          expect(stickyPanel(wrapper).prop('stickTo')).toBe('bottom');
+          wrapper.setProps({
+            stickTo: 'top',
+          });
+          expect(stickyPanel(wrapper).prop('stickTo')).toBe('top');
+        });
+
         describe('StickyContent', () => {
           it('contains sticky content from the wrapper', () => {
             expect(wrapper.find(StyledStickyCotent).html()).toContain('sticky content');
@@ -417,15 +458,47 @@ describe('components/<Player />', () => {
             expect(wrapper.find(StyledStickyCotent).prop('isVisible')).toBe(false);
           });
         });
+
+        describe('mini player panel', () => {
+          it('executes onStickyPlayerClick click handler if panel sticked', () => {
+            const clickHandler = jest.fn();
+
+            wrapper.setProps({
+              onStickyPlayerClick: clickHandler,
+            });
+            wrapper.setState({
+              isPlaying: true,
+              isPlayerSticky: true,
+            });
+
+            wrapper.find({ id: playerId }).simulate('click');
+            expect(clickHandler).toHaveBeenCalledTimes(1);
+          });
+
+          it('does not execute onStickyPlayerClick click handler if not sticky', () => {
+            const clickHandler = jest.fn();
+
+            wrapper.setProps({
+              onStickyPlayerClick: clickHandler,
+            });
+            wrapper.setState({
+              isPlaying: false,
+              isPlayerSticky: true,
+            });
+
+            wrapper.find({ id: playerId }).simulate('click');
+            expect(clickHandler).toHaveBeenCalledTimes(0);
+
+            wrapper.setState({
+              isPlaying: true,
+              isPlayerSticky: false,
+            });
+
+            wrapper.find({ id: playerId }).simulate('click');
+            expect(clickHandler).toHaveBeenCalledTimes(0);
+          });
+        });
       });
-    });
-
-    describe('when isPlaying and player is sticky', () => {
-      it('displays the StickyContent', () => {});
-
-      it('sets the player wrapper to a fixed mode', () => {});
-
-      it('adds onClick handler for player element', () => {});
     });
   });
 });

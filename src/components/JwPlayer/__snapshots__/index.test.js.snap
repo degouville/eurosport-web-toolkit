@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/<Player /> Player sticky mode matches snapshot 1`] = `
+<Styled(div)
+  innerRef={
+    Object {
+      "current": null,
+    }
+  }
+  minHeight={null}
+>
+  <ScriptInjector
+    async={false}
+    injectPlace="head"
+    innerHTML=""
+    isServer={false}
+    onLoad={[Function]}
+    src="player-script"
+  />
+  <Styled(div)
+    isSticky={false}
+    stickTo="bottom"
+  >
+    <Styled(div)
+      isSticky={false}
+    >
+      <div
+        id="eurosport-web-player"
+        onClick={[Function]}
+      />
+      <Styled(div)
+        isVisible={false}
+      >
+        sticky content
+        <Styled(div)
+          onClick={[Function]}
+        />
+      </Styled(div)>
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;
