@@ -44,7 +44,7 @@ const StyledPlayer = styled.div`
       box-sizing: border-box;
       margin: 0 auto;
       display: flex;
-      animation: slide-up 250ms ease-out forwards;
+      animation: slide-from-${props.stickTo} 250ms ease-out forwards;
       flex-flow: nowrap row;
       align-items: center;
       width: 100%;
@@ -89,9 +89,19 @@ const StyledPlayer = styled.div`
       `)}
     `}
 
-  @keyframes slide-up {
+  @keyframes slide-from-bottom {
     from {
       transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-from-top {
+    from {
+      transform: translateY(-100%);
     }
 
     to {
@@ -268,7 +278,7 @@ export default class Player extends Component {
       <StyledWrapper innerRef={this.styledWrapperRef} minHeight={minWrapperHeight}>
         <ScriptInjector isServer={false} src={scriptUrl} onLoad={this.initPlayer} />
         <StyledPlayerWrapper isSticky={shouldStickPlayer} stickTo={stickTo}>
-          <StyledPlayer isSticky={shouldStickPlayer}>
+          <StyledPlayer isSticky={shouldStickPlayer} stickTo={stickTo}>
             {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
             <div id={playerId} onClick={this.handleStickyPlayerClick} />
             <StyledStickyCotent isVisible={shouldStickPlayer}>
