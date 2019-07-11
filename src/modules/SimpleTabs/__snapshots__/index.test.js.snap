@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleTabs module matches snapshot 1`] = `
+<Styled(Carousel)
+  alignCenter={false}
+  className={null}
+  slideMargin={8}
+  withArrow={false}
+>
+  <Styled(span)
+    key="1st Round#1"
+  >
+    1st Round
+  </Styled(span)>
+  <Styled(Link)
+    href="#2"
+    key="2nd Round#2"
+    linkComponent={[Function]}
+    onClick={[Function]}
+  >
+    2nd Round
+  </Styled(Link)>
+  <Styled(Link)
+    href="#3"
+    key="3rd Round#3"
+    linkComponent={[Function]}
+    onClick={[Function]}
+  >
+    3rd Round
+  </Styled(Link)>
+  <Styled(span)
+    key="Semi-final#6"
+  >
+    Semi-final
+  </Styled(span)>
+</Styled(Carousel)>
+`;
