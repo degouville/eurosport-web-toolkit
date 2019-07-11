@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, object } from '@storybook/addon-knobs';
+import { text, object, select } from '@storybook/addon-knobs';
 import { JwPlayer } from '../..';
 
 const freewheelAdParams = {
@@ -29,6 +29,9 @@ const getBaseProps = () => ({
   subscribeUrl: text('SubscribeUrl', 'https://www.eurosportplayer.com/subscribe'),
 });
 
+// eslint-disable-next-line react/prop-types
+const Wrapper = ({ children }) => <div style={{ minHeight: '4000px' }}>{children}</div>;
+
 // eslint-disable-next-line import/prefer-default-export
 export const getBasePropsWithAds = () => ({
   ...getBaseProps(),
@@ -39,4 +42,15 @@ const stories = storiesOf('Components|JwPlayer', module);
 
 stories
   .add('default', () => <JwPlayer {...getBaseProps()} />)
-  .add('with ads', () => <JwPlayer {...getBasePropsWithAds()} />);
+  .add('with ads', () => <JwPlayer {...getBasePropsWithAds()} />)
+  .add('sticky mode', () => (
+    <Wrapper>
+      <JwPlayer
+        {...getBaseProps()}
+        stickyContent={text('stickyContent', 'this is some title')}
+        stickTo={select('stickTo', ['top', 'bottom'], 'bottom')}
+        /* eslint-disable-next-line no-alert */
+        onStickyPlayerClick={() => alert('you clicked on stickyPanel')}
+      />
+    </Wrapper>
+  ));
