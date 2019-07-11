@@ -83,6 +83,19 @@ export const liveMatchDataSet = {
   },
 };
 
+export const liveMatchDataSetWithImages = {
+  topTeam: {
+    ...liveMatchData.topTeam,
+    playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png',
+    playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png',
+  },
+  bottomTeam: {
+    ...liveMatchData.bottomTeam,
+    playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2203.png',
+    playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png',
+  },
+};
+
 export const pastMatchOnePlayerNoScoresDataSet = {
   topTeam: {
     playerOneName: '',

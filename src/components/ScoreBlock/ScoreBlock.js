@@ -106,6 +106,33 @@ const StyledBigDot = styled.div`
   }
 `;
 
+export const ScoreButton = ({ properties }) => {
+  const { hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText } = properties;
+  if (!hasButton) return null;
+  return isLive ? (
+    <>
+      {isWatchable && (
+        <StyledPlayButton color="actionTwoLightPlus1" width="68px">
+          &#9658;
+        </StyledPlayButton>
+      )}
+      <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} width="68px" />
+    </>
+  ) : (
+    <StyledButton color="actionOneDarkBase" contentText={`'${matchInfoButtonText}'`} width="144px" />
+  );
+};
+
+ScoreButton.propTypes = {
+  properties: PropTypes.shape({
+    hasButton: PropTypes.bool.isRequired,
+    isLive: PropTypes.bool.isRequired,
+    isWatchable: PropTypes.bool.isRequired,
+    liveButtonText: PropTypes.string.isRequired,
+    matchInfoButtonText: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 export const ScoreBlock = ({
   matchUrl,
   data,
@@ -114,6 +141,7 @@ export const ScoreBlock = ({
   displayLeftCircle,
   liveButtonText,
   matchInfoButtonText,
+  hasButton,
 }) => {
   const hasLeftCircle = ['won', 'lost'].includes(displayLeftCircle);
   return (
@@ -130,18 +158,7 @@ export const ScoreBlock = ({
         )}
         <SetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
       </StyledScoreWrapper>
-      {isLive ? (
-        <>
-          {isWatchable && (
-            <StyledPlayButton color="actionTwoLightPlus1" width="68px">
-              &#9658;
-            </StyledPlayButton>
-          )}
-          <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} width="68px" />
-        </>
-      ) : (
-        <StyledButton color="actionOneDarkBase" contentText={`'${matchInfoButtonText}'`} width="144px" />
-      )}
+      <ScoreButton properties={{ hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText }} />
     </StyledClickableWrapper>
   );
 };
@@ -152,6 +169,7 @@ export const scoreBlockType = {
   isLive: PropTypes.bool,
   isWatchable: PropTypes.bool,
   displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
+  hasButton: PropTypes.bool,
 };
 
 ScoreBlock.defaultProps = {
@@ -163,6 +181,8 @@ ScoreBlock.defaultProps = {
   isWatchable: false,
   liveButtonText: 'Live',
   matchInfoButtonText: 'Match Info',
+  // eslint-disable-next-line react/default-props-match-prop-types
+  hasButton: true,
 };
 
 ScoreBlock.propTypes = {
