@@ -3,22 +3,16 @@ import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
-import { fontAlphaHeadline, fontInterUi, H1, H4, H5 } from '../../typography';
+import { fontHelvetica, fontAlphaHeadline, fontInterUi, H1, H4, H5 } from '../../typography';
 import Labels, { labelsType } from '../../elements/Labels';
 import SetsScore, { setsScoreType } from '../../components/ScoreBlock/SetsScore';
 import Button from '../../elements/Button';
-import PlayIconLink from '../../elements/PlayIconLink';
 import ArrowLink from '../../elements/ArrowLink';
 
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  ${PlayIconLink} {
-    position: relative;
-    cursor: pointer;
-  }
 `;
 
 const StyledScoreWrapper = styled.div`
@@ -103,6 +97,16 @@ export const StyledDivider = styled.span`
   `)};
 `;
 
+export const StyledWatchButton = styled(Button)`
+  ${fontHelvetica};
+  font-size: 12px;
+  max-width: 320px;
+  ${breakpoints.medium(css`
+    font-size: 16px;
+    letter-spacing: 2.18px;
+  `)};
+`;
+
 const MatchHero = ({
   className,
   title,
@@ -181,14 +185,9 @@ export const MatchHeroWithScore = ({
       <SetsScore data={scoreData} highlightLastSet={highlightLastSet} />
     </StyledScoreWrapper>
     {displayWatchButton && (
-      <PlayIconLink
-        bgColorIcon={colors.utahCrimson}
-        bgColorText={colors.venetianRed}
-        onClick={onWatchButtonClick}
-        {...watchButtonLinkProps || null}
-      >
+      <StyledWatchButton onClick={onWatchButtonClick} {...watchButtonLinkProps || null}>
         {watchButtonText}
-      </PlayIconLink>
+      </StyledWatchButton>
     )}
   </StyledWrapper>
 );

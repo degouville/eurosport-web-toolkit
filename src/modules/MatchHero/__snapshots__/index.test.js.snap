@@ -147,12 +147,11 @@ exports[`<MatchHeroWithScore />  should render as expected 1`] = `
       highlightLastSet={false}
     />
   </Styled(div)>
-  <Styled(Component)
-    bgColorIcon="#d50032"
-    bgColorText="#b6012d"
+  <Styled(ArrowLink)
     onClick={[Function]}
+    type="primary"
   >
     WATCH LIVE
-  </Styled(Component)>
+  </Styled(ArrowLink)>
 </Styled(div)>
 `;

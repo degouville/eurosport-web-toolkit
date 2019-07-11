@@ -1,9 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MatchHero, { MatchHeroWithScore, StyledCTA } from '.';
+import MatchHero, { MatchHeroWithScore, StyledCTA, StyledWatchButton } from '.';
 import { duringLabels, scoreDataDuring, beforeLabels } from './mockData/mockData';
-import * as colors from '../../colors';
-import PlayIconLink from '../../elements/PlayIconLink';
 
 describe('<MatchHero />', () => {
   let wrapper;
@@ -68,7 +66,7 @@ describe('<MatchHeroWithScore /> ', () => {
       />
     );
 
-    const props = wrapper.find(PlayIconLink).props();
+    const props = wrapper.find(StyledWatchButton).props();
 
     expect(props.href).toEqual('link');
     expect(props.otherProp).toEqual('otherValue');
@@ -85,8 +83,7 @@ describe('<MatchHeroWithScore /> ', () => {
         onWatchButtonClick={handleClick}
       />
     );
-    const playButton = wrapper.find({ bgColorText: colors.venetianRed });
-    playButton.simulate('click');
+    wrapper.find(StyledWatchButton).simulate('click');
     expect(handleClick).toHaveBeenCalled();
   });
 });
