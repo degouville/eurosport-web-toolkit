@@ -25,12 +25,17 @@ exports[`<MatchHero /> should render as expected 1`] = `
       <Styled(h1)>
         R.NADAL vs R.FEDERER
       </Styled(h1)>
-      <Styled(h4)>
+      <Styled(h4)
+        hasCourtInfo="Main Arena Court One"
+      >
         9 June 2019
          
         <Styled(span) />
         Starting from 20:30
       </Styled(h4)>
+      <Styled(div)>
+        Main Arena Court One
+      </Styled(div)>
     </Styled(div)>
   </Styled(div)>
 </Styled(div)>
@@ -146,6 +151,11 @@ exports[`<MatchHeroWithScore />  should render as expected 1`] = `
       }
       highlightLastSet={false}
     />
+  </Styled(div)>
+  <Styled(div)>
+    27 July 2019
+    <Styled(span) />
+    Main Arena Court One
   </Styled(div)>
   <Styled(ArrowLink)
     onClick={[Function]}
