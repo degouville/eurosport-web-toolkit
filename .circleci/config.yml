@@ -56,19 +56,6 @@ jobs:
       - checkout
       - *restore_cache
       - run: npm run lint
-  test_visual:
-    <<: *defaults
-    steps:
-      - checkout
-      - *restore_cache
-      - run: 'export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`'
-      - run:
-          command: |
-            if [[ -n $ENABLE_VISUAL_TEST ]]; then
-              npm run test:visual
-            else
-              echo "Not running visual test"
-            fi
   test_cypress:
     <<: *defaults
     steps:
@@ -139,18 +126,6 @@ workflows:
             - test_unit
             - test_cypress
             - lint
-      - run_visual_test:
-          type: approval
-          requires:
-            - dependencies
-          filters: *filter-only-master
-      - test_visual:
-          requires:
-            - test_unit
-            - lint
-            - test_cypress
-            - run_visual_test
-          filters: *filter-only-master
       - run_npm_patch:
           type: approval
           requires:

@@ -11,7 +11,6 @@
   "scripts": {
     "test": "npm run test:ci -- --watch",
     "test:ci": "jest -w 1",
-    "test:visual": "STORYBOOK_OVERRIDE_BG=true eyes-storybook",
     "cypress": "cypress run",
     "cypress:open": "cypress open",
     "lint": "eslint .",
@@ -47,7 +46,6 @@
   },
   "homepage": "https://github.com/EurosportDigital/web-toolkit#readme",
   "devDependencies": {
-    "@applitools/eyes-storybook": "^2.7.13",
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -71,7 +69,7 @@
     "babel-plugin-file-loader": "^1.1.1",
     "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-module-resolver": "^3.2.0",
-    "cypress": "^3.3.1",
+    "cypress": "^3.4.0",
     "emotion": "^9.2.12",
     "emotion-theming": "^9.2.9",
     "enzyme": "^3.10.0",
@@ -108,10 +106,10 @@
     "react-emotion": "9"
   },
   "dependencies": {
-    "@eurosport/toolkit-player": "0.2.9",
+    "@eurosport/toolkit-player": "^0.2.10",
     "core-js": "^3.1.4",
     "hoist-non-react-statics": "^3.3.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.14",
     "react-lines-ellipsis": "^0.14.1"
   },
   "jest": {
