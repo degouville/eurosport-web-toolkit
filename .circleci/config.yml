@@ -9,7 +9,7 @@ aliases:
   - &restore_cache
     restore_cache:
       keys:
-        - v2-dependencies-{{ checksum "package-lock.json" }}
+        - v2.1-dependencies-{{ checksum "package-lock.json" }}
   - &filter-only-master
     branches:
       only:
@@ -43,13 +43,19 @@ jobs:
           paths:
             - node_modules
             - ~/.cache/Cypress
-          key: v2-dependencies-{{ checksum "package-lock.json" }}
+          key: v2.1-dependencies-{{ checksum "package-lock.json" }}
   test_unit:
     <<: *defaults
     steps:
       - checkout
       - *restore_cache
       - run: npm run test:ci
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_cache
+      - run: npm run build
   lint:
     <<: *defaults
     steps:
@@ -117,6 +123,9 @@ workflows:
       - test_unit:
           requires:
             - dependencies
+      - build:
+          requires:
+            - dependencies
       - lint:
           requires:
             - dependencies
@@ -126,6 +135,7 @@ workflows:
             - test_unit
             - test_cypress
             - lint
+            - build
       - run_npm_patch:
           type: approval
           requires:
