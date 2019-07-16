@@ -28,6 +28,7 @@ export { default as ArticleContent } from './components/ArticleContent';
 export { default as Carousel } from './components/Carousel';
 export { default as Cards } from './components/Card';
 export { default as Author } from './components/Author';
+export { default as SeoText } from './components/SeoText';
 export { default as Adobe } from './components/Adobe';
 export { default as HeartbeatInit } from './components/Adobe/HeartbeatInit';
 export { default as DataLayer } from './components/DataLayer';
