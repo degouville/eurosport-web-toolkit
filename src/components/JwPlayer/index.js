@@ -72,6 +72,8 @@ const StyledPlayer = styled.div`
       ${StyledStickyContent} {
         flex-grow: 1;
         flex-shrink: 1;
+        font-weight: 700;
+        line-height: 20px;
       }
 
       ${medium(css`
