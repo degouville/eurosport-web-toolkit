@@ -1,12 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
 import theme from '../../theme';
 import Button from '.';
 
 describe('Button', () => {
   it('renders a primary Button by default', () => {
     // Given
-    const wrapper = shallow(<Button theme={theme}>Click me !</Button>);
+    const wrapper = shallow(
+      <ThemeProvider theme={theme}>
+        <Button>Click me !</Button>
+      </ThemeProvider>
+    );
 
     // When
     const type = wrapper.prop('type');
@@ -19,9 +24,9 @@ describe('Button', () => {
   it('renders a secondary Button', () => {
     // Given
     const wrapper = shallow(
-      <Button theme={theme} type="secondary">
-        Click me !
-      </Button>
+      <ThemeProvider theme={theme}>
+        <Button type="secondary">Click me !</Button>
+      </ThemeProvider>
     );
 
     // Expect
@@ -31,9 +36,9 @@ describe('Button', () => {
   it('renders a form Button', () => {
     // Given
     const wrapper = shallow(
-      <Button theme={theme} type="form">
-        Click me !
-      </Button>
+      <ThemeProvider theme={theme}>
+        <Button type="form">Click me !</Button>
+      </ThemeProvider>
     );
 
     // Expect
