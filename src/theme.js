@@ -1,4 +1,4 @@
-import { coreLightMinus1, featureOneMinus2, actionTwoDarkBase } from './colors';
+import { coreLightMinus1, featureOneMinus2, actionTwoDarkBase, dodgerBlue2 } from './colors';
 
 export default {
   link: {
@@ -11,6 +11,10 @@ export default {
     },
     secondary: {
       color: featureOneMinus2,
+    },
+    form: {
+      color: coreLightMinus1,
+      backgroundColor: dodgerBlue2,
     },
   },
 };

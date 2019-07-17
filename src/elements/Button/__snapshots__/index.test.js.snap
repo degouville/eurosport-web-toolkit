@@ -1,9 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a Button 1`] = `
+exports[`Button renders a form Button 1`] = `
 <ArrowLink
-  className="css-gbpd69 ecyc6sh0"
+  className="css-znekfw ecyc6sh0"
+  type="form"
+>
+  Click me !
+</ArrowLink>
+`;
+
+exports[`Button renders a primary Button by default 1`] = `
+<ArrowLink
+  className="css-dtrg6n ecyc6sh0"
   type="primary"
+>
+  Click me !
+</ArrowLink>
+`;
+
+exports[`Button renders a secondary Button 1`] = `
+<ArrowLink
+  className="css-1qwkb9p ecyc6sh0"
+  type="secondary"
 >
   Click me !
 </ArrowLink>

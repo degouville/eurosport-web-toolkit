@@ -6,6 +6,10 @@ exports[`renders a ArrowLink 1`] = `
   theme={
     Object {
       "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#ffffff",
+        },
         "primary": Object {
           "backgroundColor": "#d50032",
           "color": "#ffffff",
