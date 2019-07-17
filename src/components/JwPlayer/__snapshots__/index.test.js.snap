@@ -33,8 +33,11 @@ exports[`components/<Player /> Player sticky mode matches snapshot 1`] = `
         isVisible={false}
       >
         sticky content
-        <Styled(div)
+        <Styled(Cross)
           onClick={[Function]}
+          preserveAspectRatio="xMidYMid"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
         />
       </Styled(div)>
     </Styled(div)>

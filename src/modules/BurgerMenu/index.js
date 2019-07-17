@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import Cross from 'src/assets/close-cross.svg';
+import Cross from 'src/assets/close-cross.component.svg';
 import LeftMenu from './LeftMenu/LeftMenu';
 import RightMenu from './RightMenu/RightMenu';
 import BottomMenu from './BottomMenu/BottomMenu';
@@ -29,7 +29,7 @@ const StyledModal = styled.div`
     `};
 `;
 
-const StyledButtonClosed = styled.a`
+const StyledButtonClosed = styled(Cross)`
   box-sizing: border-box;
   position: absolute;
   right: 25px;
@@ -37,7 +37,6 @@ const StyledButtonClosed = styled.a`
   width: 20px;
   height: 20px;
   z-index: 10;
-  background: url(${Cross}) no-repeat center center;
   background-size: 20px 20px;
   &:hover {
     cursor: pointer;

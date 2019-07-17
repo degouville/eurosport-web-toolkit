@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import debounce from 'lodash/debounce';
-import Cross from 'src/assets/close-cross.svg';
+import Cross from 'src/assets/close-cross.component.svg';
 import ScriptInjector from '../ScriptInjector';
 import { medium, large, wide } from '../../breakpoints';
 import { brandPlus2, coreLightMinus1 } from '../../colors';
@@ -11,15 +11,17 @@ export const playerId = 'eurosport-web-player';
 
 export const ONE_FRAME = 16.7;
 
-export const StyledCloseButton = styled.div`
+export const StyledCloseButton = styled(Cross)`
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
   width: 17px;
   height: 17px;
-  background: url(${Cross}) no-repeat center center;
   cursor: pointer;
+  path {
+    fill: black;
+  }
 `;
 
 export const StyledStickyContent = styled.div`
@@ -28,7 +30,7 @@ export const StyledStickyContent = styled.div`
   ${props =>
     props.isVisible &&
     css`
-      padding: 0 20px;
+      padding: 0 40px 0 20px;
       flex: 5;
       display: block;
       overflow: hidden;

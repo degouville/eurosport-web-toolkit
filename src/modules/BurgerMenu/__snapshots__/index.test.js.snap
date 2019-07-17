@@ -5,11 +5,20 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
   class="css-tt17dr e1cerjsu0"
   data-test="modal-container"
 >
-  <a
-    class="css-1s7b5vn e1cerjsu1"
+  <svg
+    class="css-8rm5yy e1cerjsu1"
     data-test="burger-menu-close"
     href="#"
-  />
+    preserveAspectRatio="xMidYMid"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15.988 14.522l-1.466 1.466L8 9.466l-6.522 6.522-1.466-1.466L6.534 8 .012 1.478 1.478.012 8 6.534 14.522.012l1.466 1.466L9.466 8l6.522 6.522z"
+      fill="#a9a9a9"
+      fill-rule="evenodd"
+    />
+  </svg>
   <div
     class="css-1rvvun1 e1cerjsu2"
   >
@@ -587,11 +596,20 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
   class="css-tt17dr e1cerjsu0"
   data-test="modal-container"
 >
-  <a
-    class="css-1s7b5vn e1cerjsu1"
+  <svg
+    class="css-8rm5yy e1cerjsu1"
     data-test="burger-menu-close"
     href="#"
-  />
+    preserveAspectRatio="xMidYMid"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15.988 14.522l-1.466 1.466L8 9.466l-6.522 6.522-1.466-1.466L6.534 8 .012 1.478 1.478.012 8 6.534 14.522.012l1.466 1.466L9.466 8l6.522 6.522z"
+      fill="#a9a9a9"
+      fill-rule="evenodd"
+    />
+  </svg>
   <div
     class="css-1rvvun1 e1cerjsu2"
   >
