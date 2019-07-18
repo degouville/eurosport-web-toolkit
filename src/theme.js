@@ -2,10 +2,13 @@ import {
   coreLightMinus1,
   featureOneMinus2,
   actionTwoDarkBase,
+  coreDarkPlus1,
+  coreNeutral4,
+  coreNeutral8,
+  coreLightBase,
   dodgerBlue2,
   actionTwoLightBase,
   melanzane,
-  coreLightBase,
 } from './colors';
 import { fontInterUi } from './typography';
 
@@ -24,6 +27,19 @@ export default {
     form: {
       color: coreLightMinus1,
       backgroundColor: dodgerBlue2,
+    },
+  },
+  input: {
+    backgroundColor: coreDarkPlus1,
+    borderFocused: coreNeutral4,
+    border: coreNeutral8,
+    placeholder: {
+      color: coreNeutral4,
+      fontFamily: fontInterUi,
+    },
+    text: {
+      color: coreLightBase,
+      fontFamily: fontInterUi,
     },
   },
   banner: {

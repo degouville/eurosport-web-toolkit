@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Should match snapshot for password input 1`] = `
+<Styled(div)
+  focused={true}
+>
+  <Styled(div)
+    focused={true}
+  >
+    <Styled(label)
+      focused={true}
+    >
+      Password
+    </Styled(label)>
+    <Styled(input)
+      focused={true}
+      onBlur={[Function]}
+      onChange={[MockFunction]}
+      onFocus={[Function]}
+      type="password"
+      value="mypassword"
+    />
+  </Styled(div)>
+  <Styled(div)
+    active={true}
+    onClick={[Function]}
+  >
+    <Styled(p)>
+      SHOW
+    </Styled(p)>
+    <Styled(Eye)
+      viewBox="0 0 24 14"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+  </Styled(div)>
+</Styled(div)>
+`;
+
+exports[`Input Should match snapshot for text input 1`] = `
+<Styled(div)
+  focused={true}
+>
+  <Styled(div)
+    focused={true}
+  >
+    <Styled(label)
+      focused={true}
+    >
+      Mail
+    </Styled(label)>
+    <Styled(input)
+      focused={true}
+      onBlur={[Function]}
+      onChange={[MockFunction]}
+      onFocus={[Function]}
+      type="text"
+      value="test@es.com"
+    />
+  </Styled(div)>
+</Styled(div)>
+`;
