@@ -1,4 +1,13 @@
-import { coreLightMinus1, featureOneMinus2, actionTwoDarkBase, dodgerBlue2 } from './colors';
+import {
+  coreLightMinus1,
+  featureOneMinus2,
+  actionTwoDarkBase,
+  dodgerBlue2,
+  actionTwoLightBase,
+  melanzane,
+  coreLightBase,
+} from './colors';
+import { fontInterUi } from './typography';
 
 export default {
   link: {
@@ -15,6 +24,14 @@ export default {
     form: {
       color: coreLightMinus1,
       backgroundColor: dodgerBlue2,
+    },
+  },
+  banner: {
+    error: {
+      borderColor: actionTwoLightBase,
+      backgroundColor: melanzane,
+      textColor: coreLightBase,
+      fontFamily: fontInterUi,
     },
   },
 };

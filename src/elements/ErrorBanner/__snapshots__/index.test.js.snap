@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBanner Should match snapshot 1`] = `
+<Styled(div)>
+  <Styled(div) />
+  <Styled(img)
+    alt="errorIcon"
+    src="/eurosport-web-toolkit/9b0a0cd75d013aa08f39924c4dd86a63.svg"
+  />
+  <Styled(p)>
+    Error
+  </Styled(p)>
+</Styled(div)>
+`;

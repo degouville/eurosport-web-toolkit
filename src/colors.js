@@ -109,3 +109,4 @@ export const blackPearl = '#050618';
 export const scarpaGrey = '#4c4b4f';
 export const loftySilver = '#ffffff1a';
 export const suitGray = '#b9bbca';
+export const melanzane = '#290416';
