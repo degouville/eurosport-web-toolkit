@@ -11,7 +11,7 @@ const StyledContent = styled.div`
   flex: 1 auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
 `;
 
 const StyledCategory = styled.div`
