@@ -73,6 +73,7 @@ const Text = styled.p`
   letter-spacing: 1px;
   line-height: 14px;
   text-align: right;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 250ms ease;
 `;
@@ -137,6 +138,7 @@ const Placeholder = styled.label`
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 14px;
+  text-transform: uppercase;
 `;
 
 export const InputText = styled.input`

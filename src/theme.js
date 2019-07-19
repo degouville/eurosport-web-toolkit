@@ -9,10 +9,16 @@ import {
   dodgerBlue2,
   actionTwoLightBase,
   melanzane,
+  coreNeutral2,
 } from './colors';
-import { fontInterUi } from './typography';
+import { fontAlphaHeadline, fontInterUi } from './typography';
 
 export default {
+  underlineLink: {
+    fontFamily: fontInterUi,
+    color: coreNeutral4,
+    hoverColor: coreNeutral2,
+  },
   link: {
     color: featureOneMinus2,
   },
@@ -40,6 +46,20 @@ export default {
     text: {
       color: coreLightBase,
       fontFamily: fontInterUi,
+    },
+  },
+  login: {
+    separator: {
+      primary: coreLightBase,
+      secondary: coreNeutral8,
+    },
+    text: {
+      color: coreLightBase,
+      fontFamily: fontInterUi,
+    },
+    title: {
+      color: coreLightMinus1,
+      fontFamily: fontAlphaHeadline,
     },
   },
   banner: {
