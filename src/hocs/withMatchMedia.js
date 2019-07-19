@@ -49,7 +49,7 @@ export const HideOnMobile = withMatchMedia(`(min-width: ${points.medium}px)`)(({
   breakpointMatched ? props.children : null
 );
 
-export const LegacyHideOnMobile = withMatchMedia(`(min-width: 900px)`)(({ breakpointMatched, ...props }) =>
+export const LegacyHideOnMobile = withMatchMedia(`(min-width: 700px)`)(({ breakpointMatched, ...props }) =>
   breakpointMatched ? props.children : null
 );
 
