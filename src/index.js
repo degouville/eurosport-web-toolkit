@@ -62,6 +62,7 @@ export { default as UserComments } from './modules/UserComments';
 export { default as MatchHero, MatchHeroWithScore } from './modules/MatchHero';
 export { default as AllMatches } from './modules/AllMatches';
 export { default as LiveVideoHero } from './modules/LiveVideoHero';
+export { default as Login } from './modules/Login';
 
 export { default as withMatchMedia } from './hocs/withMatchMedia';
 export { default as withReload } from './hocs/withReload';
