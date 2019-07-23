@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoPlayerModal should match snapshot 1`] = `
+<VideoPlayerModal>
+  <Styled(div)>
+    <div
+      className="css-1h8o0en effxb9z0"
+    >
+      <Styled(div)>
+        <div
+          className="css-wehbrf effxb9z1"
+        >
+          <div />
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</VideoPlayerModal>
+`;
