@@ -70,4 +70,9 @@ export default {
       fontFamily: fontInterUi,
     },
   },
+  typo: {
+    primary: {
+      color: coreLightMinus1,
+    },
+  },
 };

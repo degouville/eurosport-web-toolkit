@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Live Event Hero should render as expected 1`] = `
+<Styled(div)>
+  <Styled(h1)>
+    ROLAND GARROS
+  </Styled(h1)>
+  <Styled(h3)>
+    3RD ROUND
+  </Styled(h3)>
+</Styled(div)>
+`;

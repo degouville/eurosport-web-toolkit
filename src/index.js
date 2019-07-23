@@ -49,6 +49,7 @@ export { default as PlayerPromotionBox } from './components/PlayerPromotionBox';
 export { default as Header } from './modules/Header';
 export { default as Footer } from './modules/Footer';
 export { default as SubNavigation } from './modules/SubNavigation';
+export { default as LiveEventHero } from './modules/LiveEventHero';
 export { default as Hero } from './modules/Hero';
 export { default as ContentListing } from './modules/ContentListing';
 export { default as Article } from './modules/Article';
