@@ -2,12 +2,12 @@
 
 exports[`SeoText renders SeoText 1`] = `
 <Fragment>
-  <Styled(h1)>
+  <Styled(h3)>
     title
-  </Styled(h1)>
-  <Styled(h2)>
+  </Styled(h3)>
+  <Styled(h3)>
     subtitle
-  </Styled(h2)>
+  </Styled(h3)>
   <Styled(p)>
     content
   </Styled(p)>

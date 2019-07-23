@@ -1,27 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'react-emotion';
-import { large } from '../../breakpoints';
+import styled from 'react-emotion';
+import { coreLightMinus1 } from 'src/colors';
+import { H3 } from 'src/typography';
 
-const StyledTitle = styled('h1')`
-  font-size: 16px;
-  color: white;
-
-  ${large(css`
-    font-size: 18px;
-  `)};
+const StyledTitle = styled(H3)`
+  color: ${coreLightMinus1};
 `;
-const StyledSubtitle = StyledTitle.withComponent('h2');
 const StyledContent = styled.p`
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
-  color: white;
+  color: ${coreLightMinus1};
 `;
 
 const SeoText = ({ title, subtitle, content }) => (
   <>
     <StyledTitle>{title}</StyledTitle>
-    <StyledSubtitle>{subtitle}</StyledSubtitle>
+    <StyledTitle>{subtitle}</StyledTitle>
     <StyledContent>{content}</StyledContent>
   </>
 );
