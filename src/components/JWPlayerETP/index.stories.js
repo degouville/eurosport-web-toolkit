@@ -32,6 +32,11 @@ const getBaseProps = () => {
         realm: text('sonicRealm', 'eurosport'),
       },
     },
+    loginEndpoints: {
+      forgotPasswordUrl: 'https://eurosport.fr',
+      subscribeUrl: 'https://eurosport.fr',
+      needHelpUrl: 'https://eurosport.fr',
+    },
     ...events,
   };
 };
