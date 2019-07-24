@@ -133,7 +133,6 @@ workflows:
           type: approval
           requires:
             - test_unit
-            - test_cypress
             - lint
             - build
       - run_npm_patch:
