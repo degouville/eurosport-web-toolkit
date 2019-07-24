@@ -1,6 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ETPlayerComponent from '@eurosport/toolkit-player';
+import VideoPlayerModal from 'src/modules/VideoPlayerModal';
+import Login from 'src/modules/Login';
+
+const LoginModal = props => (
+  <VideoPlayerModal>
+    <Login {...props} />
+  </VideoPlayerModal>
+);
 
 const ETPlayer = ({
   prefLang,
@@ -17,6 +25,7 @@ const ETPlayer = ({
   onError,
   onLoginModalReady,
   onLoginModalDone,
+  loginEndpoints,
 }) => (
   <ETPlayerComponent
     locale={prefLang}
@@ -33,6 +42,8 @@ const ETPlayer = ({
     onError={onError}
     onLoginModalReady={onLoginModalReady}
     onLoginModalDone={onLoginModalDone}
+    LoginComponent={LoginModal}
+    loginEndpoints={loginEndpoints}
   />
 );
 
@@ -103,6 +114,13 @@ ETPlayer.propTypes = {
   onError: PropTypes.func,
   onLoginModalReady: PropTypes.func,
   onLoginModalDone: PropTypes.func,
+
+  // Login
+  loginEndpoints: PropTypes.shape({
+    forgotPasswordUrl: PropTypes.string.isRequired,
+    subscribeUrl: PropTypes.string.isRequired,
+    needHelpUrl: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ETPlayer;
