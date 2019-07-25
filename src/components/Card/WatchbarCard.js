@@ -173,6 +173,8 @@ WatchbarCard.propTypes = {
     endTime: PropTypes.string,
     channel: PropTypes.string,
     liveLabel: PropTypes.string,
+    playerChannelNameAnalytics: PropTypes.string.isRequired,
+    titleAnalytics: PropTypes.string.isRequired,
   }).isRequired,
   linkComponent: PropTypes.func,
   trackingPosition: PropTypes.number.isRequired,

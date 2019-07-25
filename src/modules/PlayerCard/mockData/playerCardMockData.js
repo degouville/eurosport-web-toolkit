@@ -18,6 +18,7 @@ export const previousMatches = [
     id: 123451,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
+    labels: [{ text: 'ROLAND-GARROS' }, { text: 'SINGLES' }, { text: 'FINAL' }],
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -49,6 +50,7 @@ export const previousMatches = [
     id: 123452,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
+    labels: [{ text: 'ROLAND-GARROS' }, { text: 'DOUBLES' }, { text: '2ND ROUND' }],
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -80,6 +82,7 @@ export const previousMatches = [
     id: 123453,
     matchUrl: 'https://eurosport.com',
     hasWon: false,
+    labels: [{ text: 'ROLAND-GARROS' }, { text: 'SINGLES' }, { text: '1ST ROUND' }],
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -107,6 +110,7 @@ export const previousMatches = [
     id: 123454,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
+    labels: [{ text: 'ROLAND-GARROS' }, { text: 'SINGLES' }, { text: '2ND ROUND' }],
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -138,6 +142,7 @@ export const previousMatches = [
     id: 123455,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
+    labels: [{ text: 'ROLAND-GARROS' }, { text: 'SINGLES' }, { text: 'FINAL' }],
     data: {
       topTeam: {
         playerOneName: 'Nadal',

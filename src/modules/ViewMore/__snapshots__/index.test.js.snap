@@ -12,7 +12,7 @@ exports[`ViewMore renders its content 1`] = `
     innerRef={
       Object {
         "current": <ul
-          class="css-1ewy8bg e1e87viu2"
+          class="css-1qc6n3z e1e87viu2"
         >
           <div>
             match
@@ -50,7 +50,7 @@ exports[`ViewMore renders its content 1`] = `
     isExpanded={false}
   >
     <ul
-      className="css-1ewy8bg e1e87viu2"
+      className="css-1qc6n3z e1e87viu2"
     >
       <div
         key="0"

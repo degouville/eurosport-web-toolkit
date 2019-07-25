@@ -163,6 +163,7 @@ BottomMenu.propTypes = {
   ),
   socials: PropTypes.shape({
     id: PropTypes.number,
+    name: PropTypes.string,
     sections: PropTypes.arrayOf(
       PropTypes.shape({
         items: PropTypes.arrayOf(

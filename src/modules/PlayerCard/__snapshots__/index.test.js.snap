@@ -41,6 +41,24 @@ exports[`PlayerCard should render as expected 1`] = `
       <Styled(div)
         key="123451"
       >
+        <Styled(div)>
+          <Labels
+            isSimpleMode={true}
+            labels={
+              Array [
+                Object {
+                  "text": "ROLAND-GARROS",
+                },
+                Object {
+                  "text": "SINGLES",
+                },
+                Object {
+                  "text": "FINAL",
+                },
+              ]
+            }
+          />
+        </Styled(div)>
         <ScoreBlock
           data={
             Object {
@@ -132,7 +150,24 @@ exports[`PlayerCard should render as expected 1`] = `
       <Styled(div)
         key="123452"
       >
-        <Styled(div) />
+        <Styled(div)>
+          <Labels
+            isSimpleMode={true}
+            labels={
+              Array [
+                Object {
+                  "text": "ROLAND-GARROS",
+                },
+                Object {
+                  "text": "DOUBLES",
+                },
+                Object {
+                  "text": "2ND ROUND",
+                },
+              ]
+            }
+          />
+        </Styled(div)>
         <ScoreBlock
           data={
             Object {
@@ -224,7 +259,24 @@ exports[`PlayerCard should render as expected 1`] = `
       <Styled(div)
         key="123453"
       >
-        <Styled(div) />
+        <Styled(div)>
+          <Labels
+            isSimpleMode={true}
+            labels={
+              Array [
+                Object {
+                  "text": "ROLAND-GARROS",
+                },
+                Object {
+                  "text": "SINGLES",
+                },
+                Object {
+                  "text": "1ST ROUND",
+                },
+              ]
+            }
+          />
+        </Styled(div)>
         <ScoreBlock
           data={
             Object {
@@ -292,7 +344,24 @@ exports[`PlayerCard should render as expected 1`] = `
       <Styled(div)
         key="123454"
       >
-        <Styled(div) />
+        <Styled(div)>
+          <Labels
+            isSimpleMode={true}
+            labels={
+              Array [
+                Object {
+                  "text": "ROLAND-GARROS",
+                },
+                Object {
+                  "text": "SINGLES",
+                },
+                Object {
+                  "text": "2ND ROUND",
+                },
+              ]
+            }
+          />
+        </Styled(div)>
         <ScoreBlock
           data={
             Object {
@@ -384,7 +453,24 @@ exports[`PlayerCard should render as expected 1`] = `
       <Styled(div)
         key="123455"
       >
-        <Styled(div) />
+        <Styled(div)>
+          <Labels
+            isSimpleMode={true}
+            labels={
+              Array [
+                Object {
+                  "text": "ROLAND-GARROS",
+                },
+                Object {
+                  "text": "SINGLES",
+                },
+                Object {
+                  "text": "FINAL",
+                },
+              ]
+            }
+          />
+        </Styled(div)>
         <ScoreBlock
           data={
             Object {

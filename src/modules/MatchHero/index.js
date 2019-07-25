@@ -224,7 +224,7 @@ export const MatchHeroWithScore = ({
       </StyledMatchInfo>
     )}
     {displayWatchButton && (
-      <StyledWatchButton onClick={onWatchButtonClick} {...watchButtonLinkProps || null}>
+      <StyledWatchButton onClick={onWatchButtonClick} {...watchButtonLinkProps}>
         {watchButtonText}
       </StyledWatchButton>
     )}
