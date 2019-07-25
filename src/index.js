@@ -8,6 +8,7 @@ export { colors, breakpoints, typography, tabsIconType };
 export { default as theme } from './theme';
 export { default as injectStyles } from './injectStyles';
 
+/* ELEMENTS */
 export { default as Button } from './elements/Button';
 export { default as ArrowLink } from './elements/ArrowLink';
 export { default as Link } from './elements/Link';
@@ -24,6 +25,7 @@ export { default as ProgramDetails } from './elements/ProgramDetails';
 export { default as Spinner } from './elements/Spinner';
 export { default as Toggle } from './elements/Toggle';
 
+/* COMPONENTS */
 export { default as ArticleContent } from './components/ArticleContent';
 export { default as Carousel } from './components/Carousel';
 export { default as Cards } from './components/Card';
@@ -46,6 +48,7 @@ export { default as AdPlacement } from './components/Advertisement/AdPlacement';
 export { default as Betting } from './components/Betting';
 export { default as PlayerPromotionBox } from './components/PlayerPromotionBox';
 
+/* MODULES */
 export { default as Header } from './modules/Header';
 export { default as Footer } from './modules/Footer';
 export { default as SubNavigation } from './modules/SubNavigation';
@@ -63,9 +66,9 @@ export { default as UserComments } from './modules/UserComments';
 export { default as MatchHero, MatchHeroWithScore } from './modules/MatchHero';
 export { default as AllMatches } from './modules/AllMatches';
 export { default as LiveVideoHero } from './modules/LiveVideoHero';
-export { default as Login } from './modules/Login';
-export { default as VideoPlayerModal } from './modules/VideoPlayerModal';
+export { default as RoundTable } from './modules/RoundTable';
 
+/* HOCS */
 export { default as withMatchMedia } from './hocs/withMatchMedia';
 export { default as withReload } from './hocs/withReload';
 export { default as withVideoAnalytics } from './hocs/withVideoAnalytics';

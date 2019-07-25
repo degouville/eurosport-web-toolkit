@@ -66,7 +66,7 @@ const StyledScoreWrapper = styled.div`
     `};
   flex-basis: 400px;
   flex-grow: 1;
-  background-color: rgba(79, 82, 106, 0.5);
+  background-color: ${colors.coreNeutral11};
   ${StyledSpacer} {
     border-top-color: ${colors.midnightExpress2};
   }
