@@ -61,7 +61,7 @@ const StyledMatches = styled.div`
   }
   ${StyledViewMoreButton} {
     ${breakpoints.medium(css`
-      margin-left: 70px;
+      margin-left: 80px;
     `)};
   }
 `;
