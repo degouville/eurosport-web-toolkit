@@ -10,7 +10,7 @@ describe('<DataLayer />', () => {
 
   it('renders with expected dataLayer props', () => {
     // eslint-disable-next-line no-unused-vars
-    const wrapper = mount(<DataLayer dataLayer={dataLayerMock.dataLayer} />);
+    mount(<DataLayer dataLayer={dataLayerMock.dataLayer} />);
     expect(window.dataLayer[0]).toMatchObject(dataLayerMock.dataLayer);
   });
 

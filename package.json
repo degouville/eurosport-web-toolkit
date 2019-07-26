@@ -115,6 +115,7 @@
     "react-lines-ellipsis": "^0.14.1"
   },
   "jest": {
+    "collectCoverage": true,
     "setupFilesAfterEnv": [
       "<rootDir>/testSetup.js"
     ],
