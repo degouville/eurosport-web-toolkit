@@ -25,6 +25,7 @@ const ETPlayer = ({
   onError,
   onLoginModalReady,
   onLoginModalDone,
+  loginModalMountingPoint,
   loginEndpoints,
 }) => (
   <ETPlayerComponent
@@ -42,6 +43,7 @@ const ETPlayer = ({
     onError={onError}
     onLoginModalReady={onLoginModalReady}
     onLoginModalDone={onLoginModalDone}
+    loginModalMountingPoint={loginModalMountingPoint}
     LoginComponent={LoginModal}
     loginEndpoints={loginEndpoints}
   />
@@ -58,6 +60,7 @@ ETPlayer.defaultProps = {
   onError: null,
   onLoginModalReady: null,
   onLoginModalDone: null,
+  loginModalMountingPoint: null,
 };
 
 ETPlayer.propTypes = {
@@ -116,6 +119,7 @@ ETPlayer.propTypes = {
   onLoginModalDone: PropTypes.func,
 
   // Login
+  loginModalMountingPoint: typeof Element === 'undefined' ? PropTypes.element : PropTypes.instanceOf(Element),
   loginEndpoints: PropTypes.shape({
     forgotPasswordUrl: PropTypes.string.isRequired,
     subscribeUrl: PropTypes.string.isRequired,
