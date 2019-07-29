@@ -60,7 +60,7 @@ ETPlayer.defaultProps = {
   onError: null,
   onLoginModalReady: null,
   onLoginModalDone: null,
-  loginModalMountingPoint: null,
+  loginModalMountingPoint: undefined,
 };
 
 ETPlayer.propTypes = {
@@ -69,7 +69,7 @@ ETPlayer.propTypes = {
 
   jwplayerData: PropTypes.shape({
     id: PropTypes.string.isRequired,
-    key: PropTypes.string.isRequired,
+    key: PropTypes.string,
   }).isRequired,
 
   videoData: PropTypes.shape({
