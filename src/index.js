@@ -67,6 +67,8 @@ export { default as MatchHero, MatchHeroWithScore } from './modules/MatchHero';
 export { default as AllMatches } from './modules/AllMatches';
 export { default as LiveVideoHero } from './modules/LiveVideoHero';
 export { default as RoundTable } from './modules/RoundTable';
+export { default as Login } from './modules/Login';
+export { default as VideoPlayerModal } from './modules/VideoPlayerModal';
 
 /* HOCS */
 export { default as withMatchMedia } from './hocs/withMatchMedia';

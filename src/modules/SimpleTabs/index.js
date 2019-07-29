@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css, keyframes } from 'react-emotion';
-import { coreLightMinus1, coreNeutral4, gunPowder } from '../../colors';
 import { fontAlphaHeadline } from '../../typography';
 import * as breakpoints from '../../breakpoints';
 import Carousel, { StyledSlide } from '../../components/Carousel';
@@ -11,6 +10,7 @@ const StyledCarousel = styled(Carousel)`
   justify-content: flex-start;
   font-size: 12px;
   line-height: 22px;
+  margin: 0 0 16px 0;
   ${fontAlphaHeadline};
 
   ${breakpoints.medium(css`
@@ -18,15 +18,14 @@ const StyledCarousel = styled(Carousel)`
   `)}
 `;
 
-export const TabCommonStyle = css`
+export const TabCommonStyle = ({ tab }) => css`
   display: block;
   margin-right: 12px;
   position: relative;
-  color: ${coreLightMinus1};
-  padding-bottom: 2px;
-
+  opacity: 0.5;
+  color: ${tab.active.color};
   ${breakpoints.medium(css`
-    padding-bottom: 11px;
+    padding-bottom: 5px;
     margin-right: 32px;
   `)}
 
@@ -34,7 +33,7 @@ export const TabCommonStyle = css`
     content: '|';
     position: absolute;
     right: -13px;
-    color: ${gunPowder};
+    color: ${tab.separator};
 
     ${breakpoints.medium(css`
       right: -23px;
@@ -54,18 +53,20 @@ const activeAnimation = keyframes`
   }
 `;
 export const TabActive = styled(Link)`
-  ${TabCommonStyle};
+  ${({ theme }) => TabCommonStyle(theme)};
   cursor: pointer;
   text-decoration: none;
+  opacity: ${props => (props['data-highligthed'] ? '1' : '.5')};
 `;
 export const TabInactive = styled.span`
-  ${TabCommonStyle};
-  color: ${coreNeutral4};
+  ${({ theme }) => TabCommonStyle(theme)};
+  cursor: not-allowed;
 `;
 export const TabSelected = styled.span`
-  ${TabCommonStyle};
+  ${({ theme }) => TabCommonStyle(theme)};
   cursor: pointer;
-
+  opacity: 1;
+  color: ${props => (props['data-highligthed'] ? props.theme.tab.active.color : props.theme.tab.borderColor)};
   &:before {
     content: '';
     position: absolute;
@@ -73,7 +74,7 @@ export const TabSelected = styled.span`
     bottom: 0;
     left: 0;
     height: 1px;
-    background-color: ${coreLightMinus1};
+    background-color: ${({ theme }) => theme.tab.active.borderColor};
     animation: ${activeAnimation} 0.3s;
 
     ${breakpoints.medium(css`
@@ -99,6 +100,7 @@ export default class SimpleTabs extends React.Component {
       PropTypes.shape({
         label: PropTypes.string.isRequired,
         disabled: PropTypes.boolean,
+        highligthed: PropTypes.boolean,
         href: PropTypes.string,
       })
     ).isRequired,
@@ -126,11 +128,21 @@ export default class SimpleTabs extends React.Component {
 
     return (
       <StyledCarousel withArrow={false} className={className}>
-        {tabs.map(({ label, disabled, href }, i) => {
-          if (currentTab === i) return <TabSelected key={`${label}${href}`}>{label}</TabSelected>;
+        {tabs.map(({ label, disabled, highligthed, href }, i) => {
+          if (currentTab === i)
+            return (
+              <TabSelected key={`${label}${href}`} data-highligthed={highligthed}>
+                {label}
+              </TabSelected>
+            );
           if (disabled) return <TabInactive key={`${label}${href}`}>{label}</TabInactive>;
           return (
-            <TabActive key={`${label}${href}`} onClick={e => this.handleClick(e, href, i)} href={href}>
+            <TabActive
+              key={`${label}${href}`}
+              data-highligthed={highligthed}
+              onClick={e => this.handleClick(e, href, i)}
+              href={href}
+            >
               {label}
             </TabActive>
           );

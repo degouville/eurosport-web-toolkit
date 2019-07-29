@@ -102,6 +102,13 @@ exports[`Dropdown Renders Dropdown 1`] = `
         "background": "#434450",
         "color": "#4a7eff",
       },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66cef9",
+          "color": "#ffffff",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
       "typo": Object {
         "primary": Object {
           "color": "#ffffff",

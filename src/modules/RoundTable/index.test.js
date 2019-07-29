@@ -1,8 +1,28 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import theme from '../../theme';
+import RoundTable from './RoundTable';
+import RoundTableMobile from './RoundTableMobile';
+import { matches, rounds, doubleMatches } from './mock/data';
 
-import { RoundTable } from './RoundTable';
-import { rounds, matches, doubleMatches } from './mockData/fakeData';
+const convertToTab = ({ number, disabled, highligthed, name: label }) => {
+  const href = `${number}`;
+  return { label, href, disabled, highligthed };
+};
+const tabs = rounds.map(convertToTab);
+
+describe('RoundTableMobile module', () => {
+  it('matches snapshot', () => {
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <RoundTableMobile matches={matches} tabs={tabs} />
+      </ThemeProvider>
+    );
+    expect(wrapper).toMatchSnapshot();
+    wrapper.unmount();
+  });
+});
 
 describe('RoundTable', () => {
   const singleMatch = {

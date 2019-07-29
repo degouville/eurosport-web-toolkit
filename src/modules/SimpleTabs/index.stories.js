@@ -10,10 +10,12 @@ const tabs = storiesOf('Modules|SimpleTabs', module);
 const mockData = [
   {
     label: '1st Round',
+    highligthed: true,
     href: '#1',
   },
   {
     label: '2nd Round',
+    highligthed: true,
     href: '#2',
   },
   {
@@ -42,7 +44,7 @@ const mockData = [
 
 class TabExample extends React.Component {
   state = {
-    currentTab: 0,
+    currentTab: 2,
   };
 
   componentWillReceiveProps(nextProps) {
@@ -87,4 +89,4 @@ class TabExample extends React.Component {
   }
 }
 
-tabs.add('default', () => <TabExample initialTab={select('initialTabIndex', mockData.map((el, i) => i), 0)} />);
+tabs.add('default', () => <TabExample initialTab={select('initialTabIndex', mockData.map((el, i) => i), 2)} />);

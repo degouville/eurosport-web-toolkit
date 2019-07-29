@@ -76,6 +76,13 @@ export default {
       fontFamily: fontInterUi,
     },
   },
+  tab: {
+    active: {
+      color: coreLightMinus1,
+      borderColor: featureOneMinus2,
+    },
+    borderColor: transparentize(0.5, coreLightMinus1),
+  },
   typo: {
     primary: {
       color: coreLightMinus1,

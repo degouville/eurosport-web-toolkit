@@ -75,7 +75,7 @@ export const RoundColumn = ({ matches, round }) => (
   </FlexedColum>
 );
 
-export const RoundTable = ({ matches, rounds }) => {
+const RoundTable = ({ matches, rounds }) => {
   const groupedMatches = groupBy(matches, 'round');
   return (
     <FlexedContainer>
@@ -99,3 +99,5 @@ RoundTable.propTypes = {
   matches: PropTypes.arrayOf(PropTypes.object).isRequired,
   rounds: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
+
+export default RoundTable;
