@@ -61,6 +61,7 @@
     "@storybook/addon-viewport": "^5.1.9",
     "@storybook/addons": "^5.1.9",
     "@storybook/react": "^5.1.9",
+    "@testing-library/react-hooks": "^1.1.0",
     "axios": "^0.19.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.2",
@@ -108,7 +109,7 @@
     "react-emotion": "9"
   },
   "dependencies": {
-    "@eurosport/toolkit-player": "^0.4.2",
+    "@eurosport/toolkit-player": "^0.4.3",
     "core-js": "^3.1.4",
     "hoist-non-react-statics": "^3.3.0",
     "lodash": "^4.17.14",

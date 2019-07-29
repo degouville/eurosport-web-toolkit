@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|PlayerWrapper should match snapshot 1`] = `
+<Styled(div)
+  onFocus={[Function]}
+  onKeyUp={[Function]}
+  onMouseMove={[Function]}
+  onMouseOver={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+/>
+`;

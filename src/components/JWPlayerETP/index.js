@@ -27,6 +27,7 @@ const ETPlayer = ({
   onLoginModalDone,
   loginModalMountingPoint,
   loginEndpoints,
+  PlayerControls,
 }) => (
   <ETPlayerComponent
     locale={prefLang}
@@ -46,6 +47,7 @@ const ETPlayer = ({
     loginModalMountingPoint={loginModalMountingPoint}
     LoginComponent={LoginModal}
     loginEndpoints={loginEndpoints}
+    PlayerControls={PlayerControls}
   />
 );
 
@@ -117,6 +119,9 @@ ETPlayer.propTypes = {
   onError: PropTypes.func,
   onLoginModalReady: PropTypes.func,
   onLoginModalDone: PropTypes.func,
+
+  // Player skin
+  PlayerControls: PropTypes.elementType.isRequired,
 
   // Login
   loginModalMountingPoint: typeof Element === 'undefined' ? PropTypes.element : PropTypes.instanceOf(Element),
