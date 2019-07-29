@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Renders Dropdown 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#ff0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#f8f8f9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#ffffff",
+        },
+        "primary": Object {
+          "backgroundColor": "#d50032",
+          "color": "#ffffff",
+        },
+        "secondary": Object {
+          "color": "#66cef9",
+        },
+      },
+      "dropdown": Object {
+        "background": "#131625",
+        "border": "rgba(107,108,128,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "label": Object {
+          "color": "#ffffff",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#c6c7ce",
+          },
+          "selected": Object {
+            "color": "#ffffff",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050f",
+        "border": "#41435b",
+        "borderFocused": "#9798a6",
+        "placeholder": Object {
+          "color": "#9798a6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#f8f8f9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66cef9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#f8f8f9",
+          "secondary": "#41435b",
+        },
+        "text": Object {
+          "color": "#f8f8f9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#ffffff",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "scrollbar": Object {
+        "background": "#434450",
+        "color": "#4a7eff",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#ffffff",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798a6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#c6c7ce",
+      },
+    }
+  }
+>
+  <Dropdown
+    onItemSelected={null}
+    options={
+      Array [
+        Object {
+          "id": 1231,
+          "text": "Men singles",
+        },
+        Object {
+          "id": 1232,
+          "text": "Women singles",
+        },
+        Object {
+          "id": 1233,
+          "text": "Men doubles",
+        },
+        Object {
+          "id": 1234,
+          "text": "Women doubles",
+        },
+        Object {
+          "id": 1235,
+          "text": "Men triples",
+        },
+        Object {
+          "id": 1236,
+          "text": "Women triples",
+        },
+      ]
+    }
+  >
+    <Styled(div)>
+      <div
+        className="css-19p5muk e1lxod271"
+      >
+        <Styled(div)
+          isDropdownOpen={false}
+        >
+          <div
+            className="css-kn2lev e1lxod274"
+          >
+            <Styled(ul)>
+              <ul
+                className="css-ymkri3 e1lxod275"
+              >
+                <Styled(li)
+                  isSelected={true}
+                  key="1231"
+                  onClick={[Function]}
+                >
+                  <li
+                    className="css-11q50ny e1lxod276"
+                    onClick={[Function]}
+                  >
+                    <Styled(p)>
+                      <p
+                        className="css-ctq629 e1lxod278"
+                      >
+                        Men singles
+                      </p>
+                    </Styled(p)>
+                    <Styled(span)>
+                      <span
+                        className="css-ch35kl e1lxod277"
+                      >
+                         ✓
+                      </span>
+                    </Styled(span)>
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  isSelected={false}
+                  key="1232"
+                  onClick={[Function]}
+                >
+                  <li
+                    className="css-6ug470 e1lxod276"
+                    onClick={[Function]}
+                  >
+                    <Styled(p)>
+                      <p
+                        className="css-ctq629 e1lxod278"
+                      >
+                        Women singles
+                      </p>
+                    </Styled(p)>
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  isSelected={false}
+                  key="1233"
+                  onClick={[Function]}
+                >
+                  <li
+                    className="css-6ug470 e1lxod276"
+                    onClick={[Function]}
+                  >
+                    <Styled(p)>
+                      <p
+                        className="css-ctq629 e1lxod278"
+                      >
+                        Men doubles
+                      </p>
+                    </Styled(p)>
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  isSelected={false}
+                  key="1234"
+                  onClick={[Function]}
+                >
+                  <li
+                    className="css-6ug470 e1lxod276"
+                    onClick={[Function]}
+                  >
+                    <Styled(p)>
+                      <p
+                        className="css-ctq629 e1lxod278"
+                      >
+                        Women doubles
+                      </p>
+                    </Styled(p)>
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  isSelected={false}
+                  key="1235"
+                  onClick={[Function]}
+                >
+                  <li
+                    className="css-6ug470 e1lxod276"
+                    onClick={[Function]}
+                  >
+                    <Styled(p)>
+                      <p
+                        className="css-ctq629 e1lxod278"
+                      >
+                        Men triples
+                      </p>
+                    </Styled(p)>
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  isSelected={false}
+                  key="1236"
+                  onClick={[Function]}
+                >
+                  <li
+                    className="css-6ug470 e1lxod276"
+                    onClick={[Function]}
+                  >
+                    <Styled(p)>
+                      <p
+                        className="css-ctq629 e1lxod278"
+                      >
+                        Women triples
+                      </p>
+                    </Styled(p)>
+                  </li>
+                </Styled(li)>
+              </ul>
+            </Styled(ul)>
+          </div>
+        </Styled(div)>
+        <Styled(div)
+          onClick={[Function]}
+        >
+          <div
+            className="css-759u60 e1lxod270"
+            onClick={[Function]}
+          >
+            <Styled(h3)>
+              <h3
+                className="css-14nqty5 e1lxod272"
+              >
+                Men singles
+                <Styled(Chevron)
+                  height="9"
+                  viewBox="0 0 6 9"
+                  width="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <Chevron
+                    className="css-14f8hjt e1lxod273"
+                    height="9"
+                    viewBox="0 0 6 9"
+                    width="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <svg
+                      className="css-14f8hjt e1lxod273"
+                      height="9"
+                      viewBox="0 0 6 9"
+                      width="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.15 0L0 1.06 3.71 4.5 0 7.94 1.15 9 6 4.5z"
+                      />
+                    </svg>
+                  </Chevron>
+                </Styled(Chevron)>
+              </h3>
+            </Styled(h3)>
+          </div>
+        </Styled(div)>
+      </div>
+    </Styled(div)>
+  </Dropdown>
+</ThemeProvider>
+`;

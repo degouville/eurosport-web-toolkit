@@ -1,15 +1,21 @@
+import { transparentize } from 'polished';
 import {
+  plausibleViolet,
+  crashingAmber,
   coreLightMinus1,
+  significantAzure,
   featureOneMinus2,
   actionTwoDarkBase,
   coreDarkPlus1,
+  coreNeutral2,
   coreNeutral4,
   coreNeutral8,
   coreLightBase,
   dodgerBlue2,
   actionTwoLightBase,
   melanzane,
-  coreNeutral2,
+  hydroelectricTar,
+  coreNeutral6,
 } from './colors';
 import { fontAlphaHeadline, fontInterUi } from './typography';
 
@@ -74,5 +80,27 @@ export default {
     primary: {
       color: coreLightMinus1,
     },
+  },
+  dropdown: {
+    label: {
+      color: coreLightMinus1,
+    },
+    list: {
+      default: {
+        color: coreNeutral2,
+      },
+      selected: {
+        color: coreLightMinus1,
+      },
+    },
+    checkMark: {
+      color: significantAzure,
+    },
+    background: hydroelectricTar,
+    border: transparentize(0.2, coreNeutral6),
+  },
+  scrollbar: {
+    color: plausibleViolet,
+    background: crashingAmber,
   },
 };

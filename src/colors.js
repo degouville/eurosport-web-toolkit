@@ -111,3 +111,7 @@ export const scarpaGrey = '#4c4b4f';
 export const loftySilver = '#ffffff1a';
 export const suitGray = '#b9bbca';
 export const melanzane = '#290416';
+export const significantAzure = '#4A7EFF';
+export const crashingAmber = '#434450';
+export const plausibleViolet = '#4a7eff';
+export const hydroelectricTar = '#131625';
