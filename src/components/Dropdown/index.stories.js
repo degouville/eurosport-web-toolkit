@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { object } from '@storybook/addon-knobs';
-import Dropdown from '.';
+import { Dropdown } from 'src';
 import { dropdownOptions } from './mock';
 
 const dropdownStories = storiesOf('Components|Dropdown', module);

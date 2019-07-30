@@ -47,6 +47,7 @@ export { default as AdManager } from './components/Advertisement/AdManager';
 export { default as AdPlacement } from './components/Advertisement/AdPlacement';
 export { default as Betting } from './components/Betting';
 export { default as PlayerPromotionBox } from './components/PlayerPromotionBox';
+export { default as Dropdown } from './components/Dropdown';
 
 /* MODULES */
 export { default as Header } from './modules/Header';
