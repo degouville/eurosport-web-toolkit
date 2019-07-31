@@ -33,7 +33,7 @@ export const coreNeutral7 = '#55586d';
 export const coreNeutral8 = '#41435b';
 export const coreNeutral9 = '#2d304a';
 export const coreNeutral10 = '#2d2f4a';
-export const coreNeutral11 = '#4f526a80';
+export const coreNeutral11 = '#4f526a';
 
 export const featureOneMinus2 = '#66cef9';
 export const featureOneMinus1 = '#3fc1f8';
@@ -108,7 +108,7 @@ export const geyser = '#D3D9DE';
 export const paleSky = '#6D777F';
 export const blackPearl = '#050618';
 export const scarpaGrey = '#4c4b4f';
-export const loftySilver = '#ffffff1a';
+export const loftySilver = '#ffffff';
 export const suitGray = '#b9bbca';
 export const melanzane = '#290416';
 export const significantAzure = '#4A7EFF';

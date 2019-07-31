@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import get from 'lodash/get';
+import { rgba } from 'polished';
 import * as breakpoints from '../../breakpoints';
 import { brandBase, coreLightMinus1, loftySilver } from '../../colors';
 import shopIcon from '../../assets/shop-icon.svg';
@@ -12,7 +13,7 @@ const StyledArrowCSS = css`
   height: 100%;
   background: transparent;
   padding: 0 6px;
-  border-left: solid 1px ${loftySilver};
+  border-left: solid 1px ${rgba(loftySilver, 0.1)};
 `;
 
 export const StyledNavWrapper = styled.nav`

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import { rgba } from 'polished';
 import circleWithCross from 'src/assets/circle-with-cross.svg';
 import greenCircle from 'src/assets/green-circle.svg';
 import * as colors from '../../colors';
@@ -66,7 +67,7 @@ const StyledScoreWrapper = styled.div`
     `};
   flex-basis: 400px;
   flex-grow: 1;
-  background-color: ${colors.coreNeutral11};
+  background-color: ${rgba(colors.coreNeutral11, 0.5)};
   ${StyledSpacer} {
     border-top-color: ${colors.midnightExpress2};
   }
