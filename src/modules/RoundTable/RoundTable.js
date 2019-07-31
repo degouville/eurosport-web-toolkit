@@ -75,10 +75,10 @@ export const RoundColumn = ({ matches, round }) => (
   </FlexedColum>
 );
 
-const RoundTable = ({ matches, rounds }) => {
+const RoundTable = ({ matches, rounds, className }) => {
   const groupedMatches = groupBy(matches, 'round');
   return (
-    <FlexedContainer>
+    <FlexedContainer className={className}>
       {Object.entries(groupedMatches).map(([round, matchList]) => (
         <RoundColumn key={round} round={rounds[round - 1] && rounds[round - 1].name} matches={matchList} />
       ))}
@@ -95,9 +95,14 @@ RoundColumn.propTypes = {
   round: PropTypes.string,
 };
 
+RoundTable.defaultProps = {
+  className: undefined,
+};
+
 RoundTable.propTypes = {
   matches: PropTypes.arrayOf(PropTypes.object).isRequired,
   rounds: PropTypes.arrayOf(PropTypes.object).isRequired,
+  className: PropTypes.string,
 };
 
 export default RoundTable;

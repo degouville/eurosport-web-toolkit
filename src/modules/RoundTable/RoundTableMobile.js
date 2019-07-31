@@ -36,10 +36,12 @@ export default class RoundTableMobile extends Component {
       })
     ).isRequired,
     initialTab: PropTypes.number,
+    className: PropTypes.string,
   };
 
   static defaultProps = {
     initialTab: 0,
+    className: undefined,
   };
 
   componentDidMount() {
@@ -47,13 +49,13 @@ export default class RoundTableMobile extends Component {
     this.setState({ currentTab: initialTab });
   }
 
-  changeTab = (href, tabIndex) => {
+  changeTab = (_href, tabIndex) => {
     this.setState({ currentTab: tabIndex });
   };
 
   render() {
     const { currentTab } = this.state;
-    const { matches: rawMatches, tabs } = this.props;
+    const { matches: rawMatches, tabs, className } = this.props;
     const currentRound = [...tabs][currentTab].href || 1;
     const isCurrentRound = number => ({ round }) => +number === round;
     const matches = rawMatches.filter(isCurrentRound(currentRound));
@@ -61,7 +63,7 @@ export default class RoundTableMobile extends Component {
     const hasTabs = tabs && !!tabs.length;
 
     return (
-      <>
+      <div className={className}>
         {hasTabs && (
           <StyledSimpleTabs>
             <SimpleTabs initialTabIndex={currentTab} onItemSelected={this.changeTab} tabs={tabs} />
@@ -77,7 +79,7 @@ export default class RoundTableMobile extends Component {
             ))}
           </StyledMatches>
         )}
-      </>
+      </div>
     );
   }
 }
