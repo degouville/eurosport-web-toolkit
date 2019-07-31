@@ -14,12 +14,18 @@ const tabs = rounds.map(convertToTab);
 
 describe('RoundTableMobile module', () => {
   it('matches snapshot', () => {
+    // Given
     const wrapper = mount(
       <ThemeProvider theme={theme}>
         <RoundTableMobile matches={matches} tabs={tabs} />
       </ThemeProvider>
     );
-    expect(wrapper).toMatchSnapshot();
+
+    // When
+    const roundTable = wrapper.find(RoundTableMobile);
+
+    // Expect
+    expect(roundTable).toMatchSnapshot();
     wrapper.unmount();
   });
 });
