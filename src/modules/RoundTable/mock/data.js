@@ -46,7 +46,7 @@ export const doubleMatches = [
     id: 123447,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'GABRIELA DABROWSKI',
@@ -84,7 +84,7 @@ export const doubleMatches = [
     id: 122336,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'G.DABROWSKI',
@@ -120,7 +120,7 @@ export const doubleMatches = [
   },
   {
     id: 122222,
-    round: 1,
+    round: { number: 1 },
     matchUrl: 'https://eurosport.com',
     hasWon: false,
     data: {
@@ -160,7 +160,7 @@ export const doubleMatches = [
     id: 111234,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -198,7 +198,7 @@ export const doubleMatches = [
     id: 123444,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -236,7 +236,7 @@ export const doubleMatches = [
     id: 123452,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -272,7 +272,7 @@ export const doubleMatches = [
   },
   {
     id: 122223,
-    round: 1,
+    round: { number: 1 },
     matchUrl: 'https://eurosport.com',
     hasWon: false,
     data: {
@@ -312,7 +312,7 @@ export const doubleMatches = [
     id: 111234,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -350,7 +350,7 @@ export const doubleMatches = [
     id: 123333,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -388,7 +388,7 @@ export const doubleMatches = [
     id: 123334,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -426,7 +426,7 @@ export const doubleMatches = [
     id: 123335,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -464,7 +464,7 @@ export const doubleMatches = [
     id: 123336,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -503,7 +503,7 @@ export const doubleMatches = [
     id: 123337,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 3,
+    round: { number: 3 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -541,7 +541,7 @@ export const doubleMatches = [
     id: 123338,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 3,
+    round: { number: 3 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -579,7 +579,7 @@ export const doubleMatches = [
     id: 123339,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 4,
+    round: { number: 4 },
     data: {
       topTeam: {
         playerOneName: 'MENENDEZ-MACEIRAS',
@@ -620,7 +620,7 @@ export const matches = [
     id: 123445,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -656,7 +656,7 @@ export const matches = [
     id: 122334,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -690,7 +690,7 @@ export const matches = [
   },
   {
     id: 122224,
-    round: 1,
+    round: { number: 1 },
     matchUrl: 'https://eurosport.com',
     hasWon: false,
     data: {
@@ -724,7 +724,7 @@ export const matches = [
     id: 111235,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -760,7 +760,7 @@ export const matches = [
     id: 123446,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -796,7 +796,7 @@ export const matches = [
     id: 122335,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -830,7 +830,7 @@ export const matches = [
   },
   {
     id: 122225,
-    round: 1,
+    round: { number: 1 },
     matchUrl: 'https://eurosport.com',
     hasWon: false,
     data: {
@@ -864,7 +864,7 @@ export const matches = [
     id: 123454,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -900,7 +900,7 @@ export const matches = [
     id: 123344,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -936,7 +936,7 @@ export const matches = [
     id: 123345,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -972,7 +972,7 @@ export const matches = [
     id: 123346,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -1008,7 +1008,7 @@ export const matches = [
     id: 123347,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 2,
+    round: { number: 2 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -1045,7 +1045,7 @@ export const matches = [
     id: 123348,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 3,
+    round: { number: 3 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -1081,7 +1081,7 @@ export const matches = [
     id: 123349,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 3,
+    round: { number: 3 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -1117,7 +1117,7 @@ export const matches = [
     id: 123455,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 4,
+    round: { number: 4 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',

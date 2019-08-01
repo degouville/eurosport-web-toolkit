@@ -7,9 +7,14 @@ import { H5, fontAlphaHeadline } from 'src/typography';
 import ScoreBlock from 'src/components/ScoreBlock';
 import { coreNeutral4, coreNeutral11 } from 'src/colors';
 
-const StyledScoreBlock = styled.div`
-  min-width: 100%;
+const StyledScoreBlockWrapper = styled.div`
+  width: 350px;
   margin: 10px 0;
+  & * {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 `;
 
 const Flexed = styled.div`
@@ -53,7 +58,6 @@ const NeutralH5 = styled(H5)`
   ${fontAlphaHeadline};
   padding: 24px 0;
   margin-bottom: 60px;
-  border-bottom: 1px solid ${coreNeutral11};
 `;
 
 export const RoundColumn = ({ matches, round }) => (
@@ -62,9 +66,9 @@ export const RoundColumn = ({ matches, round }) => (
     <FlexedContainer>
       <Column>
         {matches.map(match => (
-          <StyledScoreBlock key={match.id}>
+          <StyledScoreBlockWrapper key={match.id}>
             <ScoreBlock.ScoreBlock matchUrl={match.matchUrl} data={match.data} hasButton={false} />
-          </StyledScoreBlock>
+          </StyledScoreBlockWrapper>
         ))}
       </Column>
       <Column>
@@ -76,7 +80,7 @@ export const RoundColumn = ({ matches, round }) => (
 );
 
 const RoundTable = ({ matches, rounds, className }) => {
-  const groupedMatches = groupBy(matches, 'round');
+  const groupedMatches = groupBy(matches, 'round.number');
   return (
     <FlexedContainer className={className}>
       {Object.entries(groupedMatches).map(([round, matchList]) => (

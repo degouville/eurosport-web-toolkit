@@ -90,7 +90,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123445,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -176,7 +178,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 122334,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -238,7 +242,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": false,
           "id": 122224,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -324,7 +330,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 111235,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -410,7 +418,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123446,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -496,7 +506,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 122335,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -558,7 +570,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": false,
           "id": 122225,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -644,7 +658,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123454,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
       ]
     }
@@ -738,7 +754,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123344,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -824,7 +842,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123345,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -910,7 +930,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123346,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -996,7 +1018,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123347,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
       ]
     }
@@ -1090,7 +1114,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123348,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
         Object {
           "data": Object {
@@ -1176,7 +1202,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123349,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
       ]
     }
@@ -1270,7 +1298,9 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
           "hasWon": true,
           "id": 123455,
           "matchUrl": "https://eurosport.com",
-          "round": 4,
+          "round": Object {
+            "number": 4,
+          },
         },
       ]
     }
@@ -1371,7 +1401,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123447,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1459,7 +1491,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 122336,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1547,7 +1581,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": false,
           "id": 122222,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1635,7 +1671,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 111234,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1723,7 +1761,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123444,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1811,7 +1851,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123452,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1899,7 +1941,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": false,
           "id": 122223,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -1987,7 +2031,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 111234,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
       ]
     }
@@ -2083,7 +2129,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123333,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -2171,7 +2219,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123334,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -2259,7 +2309,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123335,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -2347,7 +2399,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123336,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
       ]
     }
@@ -2443,7 +2497,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123337,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
         Object {
           "data": Object {
@@ -2531,7 +2587,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123338,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
       ]
     }
@@ -2627,7 +2685,9 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
           "hasWon": true,
           "id": 123339,
           "matchUrl": "https://eurosport.com",
-          "round": 4,
+          "round": Object {
+            "number": 4,
+          },
         },
       ]
     }
@@ -2726,7 +2786,9 @@ exports[`RoundTable should handle single matches data without crashing 1`] = `
           "hasWon": true,
           "id": 123451,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
       ]
     }
@@ -2827,7 +2889,9 @@ exports[`RoundTable should handle single matches data without crashing 2`] = `
           "hasWon": true,
           "id": 123451,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
       ]
     }
@@ -2926,7 +2990,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123445,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3012,7 +3078,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 122334,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3074,7 +3142,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": false,
           "id": 122224,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3160,7 +3230,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 111235,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3246,7 +3318,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123446,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3332,7 +3406,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 122335,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3394,7 +3470,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": false,
           "id": 122225,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -3480,7 +3558,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123454,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
       ]
     }
@@ -3574,7 +3654,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123344,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -3660,7 +3742,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123345,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -3746,7 +3830,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123346,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -3832,7 +3918,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123347,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
       ]
     }
@@ -3926,7 +4014,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123348,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
         Object {
           "data": Object {
@@ -4012,7 +4102,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123349,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
       ]
     }
@@ -4106,7 +4198,9 @@ exports[`RoundTable should render as expected 1`] = `
           "hasWon": true,
           "id": 123455,
           "matchUrl": "https://eurosport.com",
-          "round": 4,
+          "round": Object {
+            "number": 4,
+          },
         },
       ]
     }
@@ -4207,7 +4301,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123447,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4295,7 +4391,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 122336,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4383,7 +4481,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": false,
           "id": 122222,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4471,7 +4571,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 111234,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4559,7 +4661,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123444,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4647,7 +4751,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123452,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4735,7 +4841,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": false,
           "id": 122223,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
         Object {
           "data": Object {
@@ -4823,7 +4931,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 111234,
           "matchUrl": "https://eurosport.com",
-          "round": 1,
+          "round": Object {
+            "number": 1,
+          },
         },
       ]
     }
@@ -4919,7 +5029,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123333,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -5007,7 +5119,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123334,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -5095,7 +5209,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123335,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
         Object {
           "data": Object {
@@ -5183,7 +5299,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123336,
           "matchUrl": "https://eurosport.com",
-          "round": 2,
+          "round": Object {
+            "number": 2,
+          },
         },
       ]
     }
@@ -5279,7 +5397,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123337,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
         Object {
           "data": Object {
@@ -5367,7 +5487,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123338,
           "matchUrl": "https://eurosport.com",
-          "round": 3,
+          "round": Object {
+            "number": 3,
+          },
         },
       ]
     }
@@ -5463,7 +5585,9 @@ exports[`RoundTable should render as expected 2`] = `
           "hasWon": true,
           "id": 123339,
           "matchUrl": "https://eurosport.com",
-          "round": 4,
+          "round": Object {
+            "number": 4,
+          },
         },
       ]
     }
@@ -5561,7 +5685,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123445,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -5647,7 +5773,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 122334,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -5709,7 +5837,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": false,
         "id": 122224,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -5795,7 +5925,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 111235,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -5881,7 +6013,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123446,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -5967,7 +6101,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 122335,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -6029,7 +6165,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": false,
         "id": 122225,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -6115,7 +6253,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123454,
         "matchUrl": "https://eurosport.com",
-        "round": 1,
+        "round": Object {
+          "number": 1,
+        },
       },
       Object {
         "data": Object {
@@ -6201,7 +6341,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123344,
         "matchUrl": "https://eurosport.com",
-        "round": 2,
+        "round": Object {
+          "number": 2,
+        },
       },
       Object {
         "data": Object {
@@ -6287,7 +6429,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123345,
         "matchUrl": "https://eurosport.com",
-        "round": 2,
+        "round": Object {
+          "number": 2,
+        },
       },
       Object {
         "data": Object {
@@ -6373,7 +6517,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123346,
         "matchUrl": "https://eurosport.com",
-        "round": 2,
+        "round": Object {
+          "number": 2,
+        },
       },
       Object {
         "data": Object {
@@ -6459,7 +6605,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123347,
         "matchUrl": "https://eurosport.com",
-        "round": 2,
+        "round": Object {
+          "number": 2,
+        },
       },
       Object {
         "data": Object {
@@ -6545,7 +6693,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123348,
         "matchUrl": "https://eurosport.com",
-        "round": 3,
+        "round": Object {
+          "number": 3,
+        },
       },
       Object {
         "data": Object {
@@ -6631,7 +6781,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123349,
         "matchUrl": "https://eurosport.com",
-        "round": 3,
+        "round": Object {
+          "number": 3,
+        },
       },
       Object {
         "data": Object {
@@ -6717,7 +6869,9 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "hasWon": true,
         "id": 123455,
         "matchUrl": "https://eurosport.com",
-        "round": 4,
+        "round": Object {
+          "number": 4,
+        },
       },
     ]
   }

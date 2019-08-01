@@ -24,7 +24,7 @@ export default class RoundTableMobile extends Component {
       PropTypes.shape({
         ...scoreBlockType,
         hasWon: PropTypes.bool,
-        round: PropTypes.number,
+        round: PropTypes.object,
       })
     ).isRequired,
     tabs: PropTypes.arrayOf(
@@ -57,7 +57,7 @@ export default class RoundTableMobile extends Component {
     const { currentTab } = this.state;
     const { matches: rawMatches, tabs, className } = this.props;
     const currentRound = [...tabs][currentTab].href || 1;
-    const isCurrentRound = number => ({ round }) => +number === round;
+    const isCurrentRound = number => ({ round }) => +number === round.number;
     const matches = rawMatches.filter(isCurrentRound(currentRound));
     const hasMatches = matches && !!matches.length;
     const hasTabs = tabs && !!tabs.length;

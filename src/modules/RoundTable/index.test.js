@@ -35,7 +35,7 @@ describe('RoundTable', () => {
     id: 123451,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'Nadal',
@@ -72,7 +72,7 @@ describe('RoundTable', () => {
     id: 123451,
     matchUrl: 'https://eurosport.com',
     hasWon: true,
-    round: 1,
+    round: { number: 1 },
     data: {
       topTeam: {
         playerOneName: 'GABRIELA DABROWSKI',
