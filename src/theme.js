@@ -14,6 +14,7 @@ import {
   dodgerBlue2,
   actionTwoLightBase,
   melanzane,
+  coreDarkBase,
   hydroelectricTar,
   coreNeutral6,
 } from './colors';
@@ -86,6 +87,21 @@ export default {
   typo: {
     primary: {
       color: coreLightMinus1,
+    },
+  },
+  playerControls: {
+    bar: {
+      backgroundColor: transparentize(0.4, coreDarkBase),
+    },
+    separator: transparentize(0.5, coreNeutral4),
+    liveIcon: {
+      fontFamily: fontAlphaHeadline,
+      backgroundColor: actionTwoDarkBase,
+      color: coreLightBase,
+    },
+    text: {
+      fontFamily: fontAlphaHeadline,
+      color: coreLightBase,
     },
   },
   dropdown: {

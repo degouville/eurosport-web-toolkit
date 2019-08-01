@@ -7,12 +7,18 @@ import { dropdownOptions } from './mock';
 
 describe('Dropdown', () => {
   it('Renders Dropdown', () => {
+    // Given
     const wrapper = mount(
       <ThemeProvider theme={theme}>
         <Dropdown options={dropdownOptions} />
       </ThemeProvider>
     );
-    expect(wrapper).toMatchSnapshot();
+
+    // When
+    const dropdown = wrapper.find(Dropdown);
+
+    // Expect
+    expect(dropdown).toMatchSnapshot();
     wrapper.unmount();
   });
 

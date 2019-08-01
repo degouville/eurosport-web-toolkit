@@ -8,5 +8,24 @@ exports[`Components|PlayerWrapper should match snapshot 1`] = `
   onMouseOver={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-/>
+>
+  <Styled(div)
+    id="1234"
+  />
+  <Styled(div)
+    active={false}
+  >
+    <Controls
+      isFullscreen={false}
+      isLive={true}
+      isPlaying={true}
+      onForward={[MockFunction]}
+      onFullscreenChange={[MockFunction]}
+      onPause={[Function]}
+      onPlay={[Function]}
+      onRewind={[MockFunction]}
+      rewindCounts={null}
+    />
+  </Styled(div)>
+</Styled(div)>
 `;

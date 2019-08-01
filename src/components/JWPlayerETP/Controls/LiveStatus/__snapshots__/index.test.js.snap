@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offline 1`] = `
+<LiveStatus
+  isLive={false}
+>
+  <Styled(div)>
+    <div
+      className="css-1b6n4o1 e1dvnz1v0"
+    >
+      <Styled(div)
+        isLive={false}
+      >
+        <div
+          className="css-3k17so e1dvnz1v2"
+        >
+          <Styled(div)>
+            <div
+              className="css-1fug72t e1dvnz1v3"
+            >
+              LIVE
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</LiveStatus>
+`;
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 1`] = `
+<Styled(div)>
+  <Styled(div)
+    isLive={true}
+  >
+    <Styled(div)>
+      LIVE
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 2`] = `
+<LiveStatus
+  isLive={true}
+>
+  <Styled(div)>
+    <div
+      className="css-1b6n4o1 e1dvnz1v0"
+    >
+      <Styled(div)
+        isLive={true}
+      >
+        <div
+          className="css-1yo9b17 e1dvnz1v2"
+        >
+          <Styled(div)>
+            <div
+              className="css-1fug72t e1dvnz1v3"
+            >
+              LIVE
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</LiveStatus>
+`;
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rewindCounts 1`] = `
+<Styled(div)>
+  <Styled(p)>
+    -1.23.23
+  </Styled(p)>
+</Styled(div)>
+`;

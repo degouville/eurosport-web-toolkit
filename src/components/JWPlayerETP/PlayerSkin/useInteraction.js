@@ -13,7 +13,7 @@ const useInteraction = ({ isPlaying }) => {
       const timer = setTimeout(() => setActive(false), CONTROL_ACTIVE);
       return () => clearTimeout(timer);
     }
-    return () => null;
+    return undefined;
   }, [active, click]);
 
   // Called when the user interact with the player

@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { actions } from '@storybook/addon-actions';
 import ETPlayer from './index';
+import PlayerSkin from './PlayerSkin';
 
 const events = actions(
   'onPlayerInstantiation',
@@ -18,7 +19,7 @@ const events = actions(
   'onLoginModalDone'
 );
 
-const getBaseProps = () => {
+const getBaseProps = newProps => {
   const jwplayerId = text('ScriptId (jwplayerId)', 'DWNosgcz');
   return {
     prefLang: text('PrefLang', 'fr'),
@@ -38,9 +39,11 @@ const getBaseProps = () => {
       needHelpUrl: 'https://eurosport.fr',
     },
     ...events,
+    ...newProps,
   };
 };
 
 const stories = storiesOf('Components|JWPlayerETP', module);
 
-stories.add('default', () => <ETPlayer {...getBaseProps()} />);
+stories.add('JWPlayerETP default', () => <ETPlayer {...getBaseProps()} />);
+stories.add('JWPlayerETP with Player skin', () => <ETPlayer {...getBaseProps({ PlayerControls: PlayerSkin })} />);

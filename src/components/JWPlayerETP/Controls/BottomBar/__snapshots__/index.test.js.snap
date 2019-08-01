@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Controls|BottomBar Should match snapshot 1`] = `
+<Styled(div)>
+  <Styled(div) />
+  <Styled(div)>
+    <Styled(div) />
+    <Styled(div)>
+      <Styled(div) />
+      <Styled(div)>
+        <LiveStatus
+          isLive={true}
+        />
+      </Styled(div)>
+      <Styled(div) />
+      <Styled(div)>
+        <Styled(img)
+          alt="Volume"
+          src="/eurosport-web-toolkit/ef955024912ed19372a38f4bbdec99e4.svg"
+        />
+      </Styled(div)>
+      <Component />
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;

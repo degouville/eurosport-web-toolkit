@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot when isPlaying is false 1`] = `
+<Styled(div)>
+  <Styled(img)
+    alt="Rewind"
+    onClick={[MockFunction]}
+    src="/eurosport-web-toolkit/b5baa2dbfb4a6d100cf6bb9d3f00ac09.svg"
+  />
+  <Styled(p)>
+    15
+  </Styled(p)>
+  <Styled(img)
+    alt="Play"
+    onClick={[MockFunction]}
+    src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
+  />
+  <Styled(p)>
+    15
+  </Styled(p)>
+  <Styled(img)
+    alt="Forward"
+    onClick={[MockFunction]}
+    src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+  />
+</Styled(div)>
+`;
+
+exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot when isPlaying is true 1`] = `
+<Styled(div)>
+  <Styled(img)
+    alt="Rewind"
+    onClick={[MockFunction]}
+    src="/eurosport-web-toolkit/b5baa2dbfb4a6d100cf6bb9d3f00ac09.svg"
+  />
+  <Styled(p)>
+    15
+  </Styled(p)>
+  <Styled(img)
+    alt="Pause"
+    onClick={[MockFunction]}
+    src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+  />
+  <Styled(p)>
+    15
+  </Styled(p)>
+  <Styled(img)
+    alt="Forward"
+    onClick={[MockFunction]}
+    src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+  />
+</Styled(div)>
+`;
