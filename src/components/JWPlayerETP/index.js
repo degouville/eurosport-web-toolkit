@@ -62,7 +62,7 @@ ETPlayer.defaultProps = {
   onError: null,
   onLoginModalReady: null,
   onLoginModalDone: null,
-  loginModalMountingPoint: null,
+  loginModalMountingPoint: undefined,
 };
 
 ETPlayer.propTypes = {
