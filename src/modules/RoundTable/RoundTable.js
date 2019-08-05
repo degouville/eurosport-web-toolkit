@@ -72,9 +72,16 @@ export const RoundColumn = ({ matches, round }) => (
         ))}
       </Column>
       <Column>
-        {matches.length > 1 && Array.from(Array(matches.length / 2)).map(() => <HalvedPlaceholder matches={matches} />)}
+        {matches.length > 1 &&
+          Array.from(Array(matches.length / 2)).map((_, index) => (
+            // key is linked to the 2 corresponding matches for React optimization
+            <HalvedPlaceholder key={`${matches[index * 2].id}-${matches[index * 2 + 1].id}`} matches={matches} />
+          ))}
       </Column>
-      <Column>{matches.length > 1 && matches.map((any, index) => <SingleDashPlaceholder bottom={index % 2} />)}</Column>
+      <Column>
+        {matches.length > 1 &&
+          matches.map((match, index) => <SingleDashPlaceholder key={match.id} bottom={index % 2} />)}
+      </Column>
     </FlexedContainer>
   </FlexedColum>
 );
