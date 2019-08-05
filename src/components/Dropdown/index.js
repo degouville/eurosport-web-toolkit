@@ -11,6 +11,22 @@ export const StyledContainer = styled.div`
   cursor: pointer;
 `;
 
+export const StyledOverlay = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none;
+  ${({ isDropdownOpen }) =>
+    isDropdownOpen &&
+    css`
+      display: block;
+    `}
+`;
+
 export const StyledWrapper = styled.div`
   ${medium(css`
     width: fit-content;
@@ -50,6 +66,7 @@ export const StyledDropdown = styled.div`
     max-width: 183px;
   `)};
   display: none;
+  z-index: 2;
   opacity: 0.95;
   align-self: flex-end;
   border: solid 1px ${({ theme }) => theme.dropdown.border};
@@ -165,6 +182,7 @@ class Dropdown extends React.Component {
     const { isDropdownOpen, selectedOption } = this.state;
     return (
       <StyledWrapper>
+        <StyledOverlay isDropdownOpen={isDropdownOpen} onClick={this.toggleOpen} />
         <StyledDropdown isDropdownOpen={isDropdownOpen}>
           <StyledUl>
             {options &&
