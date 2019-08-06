@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { actions } from '@storybook/addon-actions';
+import { text } from '@storybook/addon-knobs';
 import ETPlayer from '../index';
 import PlayerSkin from './index';
 
@@ -33,7 +34,7 @@ stories.add('PlayerSkin', () => (
     videoData={{
       controls: false,
       provider: 'url',
-      id: 'https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8',
+      id: text('video', 'https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8'),
     }}
     {...events}
     PlayerControls={PlayerSkin}

@@ -8,10 +8,10 @@ import Icon from '../UI/icon';
 
 const ActionList = ({ isFullscreen, onFullscreenChange }) => (
   <>
-    <BarControlWrapper>
+    <BarControlWrapper medium>
       <Icon src={Language} alt="Language" />
     </BarControlWrapper>
-    <BarControlWrapper onClick={onFullscreenChange}>
+    <BarControlWrapper onClick={onFullscreenChange} medium>
       {isFullscreen ? <Icon src={minimise} alt="minimise" /> : <Icon src={maximise} alt="maximise" />}
     </BarControlWrapper>
   </>

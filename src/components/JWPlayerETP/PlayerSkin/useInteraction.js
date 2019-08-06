@@ -3,7 +3,7 @@ import { useState, useCallback, useEffect } from 'react';
 const ENABLED_KEYS = [37, 39, 13, 9];
 const CONTROL_ACTIVE = 5000;
 
-const useInteraction = ({ isPlaying }) => {
+const useInteraction = () => {
   const [click, setClick] = useState(0);
   const [active, setActive] = useState(false);
 
@@ -18,11 +18,9 @@ const useInteraction = ({ isPlaying }) => {
 
   // Called when the user interact with the player
   const handlePlayerInteraction = useCallback(() => {
-    if (isPlaying) {
-      setActive(true);
-      setClick(click + 1);
-    }
-  }, [isPlaying, setActive, click, setClick]);
+    setActive(true);
+    setClick(click + 1);
+  }, [setActive, click, setClick]);
 
   // Handle Allowed keys to show the player
   const onKeyUp = useCallback(

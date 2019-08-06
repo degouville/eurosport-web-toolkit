@@ -24,6 +24,8 @@ LiveStatus.propTypes = {
 };
 
 const LiveContainer = styled.div`
+  margin-left: 16px;
+  margin-right: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

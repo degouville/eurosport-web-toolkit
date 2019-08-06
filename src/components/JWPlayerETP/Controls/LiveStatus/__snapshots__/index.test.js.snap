@@ -6,7 +6,7 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offlin
 >
   <Styled(div)>
     <div
-      className="css-1b6n4o1 e1dvnz1v0"
+      className="css-1jzlc0z e1dvnz1v0"
     >
       <Styled(div)
         isLive={false}
@@ -46,7 +46,7 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
 >
   <Styled(div)>
     <div
-      className="css-1b6n4o1 e1dvnz1v0"
+      className="css-1jzlc0z e1dvnz1v0"
     >
       <Styled(div)
         isLive={true}

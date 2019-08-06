@@ -20,7 +20,7 @@ const BottomBar = ({ isLive, rewindCounts, children }) => (
           <LiveStatus isLive={isLive} rewindCounts={rewindCounts} />
         </BarControlWrapper>
         <VerticalSeparator />
-        <BarControlWrapper>
+        <BarControlWrapper medium>
           <Icon src={Volume} alt="Volume" />
         </BarControlWrapper>
         {children}
