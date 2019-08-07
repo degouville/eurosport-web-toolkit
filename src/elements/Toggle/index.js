@@ -8,7 +8,6 @@ const StyledToggleWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
