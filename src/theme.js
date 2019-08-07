@@ -1,4 +1,4 @@
-import { transparentize } from 'polished';
+import { transparentize, rgba } from 'polished';
 import {
   plausibleViolet,
   crashingAmber,
@@ -17,6 +17,10 @@ import {
   coreDarkBase,
   hydroelectricTar,
   coreNeutral6,
+  actionOneDarkMinus1,
+  actionOneDarkBase,
+  ebonyClay,
+  martinique,
 } from './colors';
 import { fontAlphaHeadline, fontInterUi } from './typography';
 
@@ -125,5 +129,17 @@ export default {
   scrollbar: {
     color: plausibleViolet,
     background: crashingAmber,
+  },
+  statistics: {
+    comparison: {
+      colorOne: actionOneDarkMinus1,
+      colorTwo: actionOneDarkBase,
+      background: rgba(coreLightMinus1, 0.1),
+    },
+    background: {
+      one: ebonyClay,
+      two: martinique,
+    },
+    fringe: rgba(coreLightMinus1, 0.05),
   },
 };

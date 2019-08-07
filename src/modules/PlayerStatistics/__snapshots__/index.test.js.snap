@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerStatistics Component renders as expected 1`] = `
+<PlayerStatistics
+  comparisonPoints={
+    Array [
+      Object {
+        "currentValues": Object {
+          "one": 3,
+          "two": 8,
+        },
+        "id": 223341,
+        "maximumValue": 10,
+        "title": "ages",
+      },
+      Object {
+        "currentValues": Object {
+          "one": 2,
+          "two": 1,
+        },
+        "id": 223342,
+        "maximumValue": 5,
+        "title": "double faults",
+      },
+      Object {
+        "currentValues": Object {
+          "one": 84,
+          "two": 58,
+        },
+        "id": 223343,
+        "isPercent": true,
+        "maximumValue": 100,
+        "title": "point won second ball",
+      },
+      Object {
+        "currentValues": Object {
+          "one": 61,
+          "two": 55,
+        },
+        "id": 223344,
+        "isPercent": true,
+        "maximumValue": 100,
+        "title": "first serve",
+      },
+      Object {
+        "currentValues": Object {
+          "one": 70,
+          "two": 41,
+        },
+        "id": 223345,
+        "isPercent": true,
+        "maximumValue": 100,
+        "title": "ages",
+      },
+      Object {
+        "currentValues": Object {
+          "one": 3,
+          "two": 8,
+        },
+        "id": 223346,
+        "maximumValue": 10,
+        "title": "point won second ball",
+      },
+      Object {
+        "currentValues": Object {
+          "one": 3,
+          "two": 1,
+        },
+        "id": 223347,
+        "maximumValue": 5,
+        "title": "double faults",
+      },
+    ]
+  }
+  names={
+    Object {
+      "playerOne": "A. Mendez-Maceiras",
+      "playerTwo": "R. Federer",
+    }
+  }
+/>
+`;
