@@ -2,6 +2,11 @@
 
 exports[`Components|PlayerWrapper should match snapshot 1`] = `
 <Styled(div)
+  innerRef={
+    Object {
+      "current": undefined,
+    }
+  }
   onFocus={[Function]}
   onKeyUp={[Function]}
   onMouseMove={[Function]}

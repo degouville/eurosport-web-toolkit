@@ -3,6 +3,7 @@ module.exports = {
   plugins: [
     'emotion',
     '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-optional-chaining',
     'react-docgen',
     [
       'module-resolver',

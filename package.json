@@ -49,6 +49,7 @@
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
@@ -113,7 +114,8 @@
     "core-js": "^3.1.4",
     "hoist-non-react-statics": "^3.3.0",
     "lodash": "^4.17.14",
-    "react-lines-ellipsis": "^0.14.1"
+    "react-lines-ellipsis": "^0.14.1",
+    "screenfull": "^4.2.1"
   },
   "jest": {
     "collectCoverage": true,

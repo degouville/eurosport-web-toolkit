@@ -1,11 +1,13 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import useInteraction from './useInteraction';
+import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
 
 const PlayerSkin = ({ isPlaying, id, onPlay, onPause, ...props }) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({ isPlaying });
+  const MainContainerRef = useRef();
 
   const onPlayKeepInteraction = useCallback(() => {
     handlePlayerInteraction();
@@ -17,8 +19,11 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, ...props }) => {
     onPause();
   }, [handlePlayerInteraction, onPause]);
 
+  const [isFullscreen, onFullscreenChange] = useFullscreen(MainContainerRef.current);
+
   return (
     <MainContainer
+      innerRef={MainContainerRef}
       onKeyUp={onKeyUp}
       onMouseOver={handlePlayerInteraction}
       onFocus={handlePlayerInteraction}
@@ -28,7 +33,14 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, ...props }) => {
     >
       <JWPlayerContainer id={id} />
       <Overlay active={isPlaying === false ? true : active}>
-        <Controls isPlaying={isPlaying} onPlay={onPlayKeepInteraction} onPause={onPauseKeepInteraction} {...props} />
+        <Controls
+          isPlaying={isPlaying}
+          onPlay={onPlayKeepInteraction}
+          onPause={onPauseKeepInteraction}
+          isFullscreen={isFullscreen}
+          onFullscreenChange={onFullscreenChange}
+          {...props}
+        />
       </Overlay>
     </MainContainer>
   );
