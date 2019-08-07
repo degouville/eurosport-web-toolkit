@@ -2,8 +2,8 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../theme';
-import Dropdown, { StyledArrow, StyledDropdown, StyledCheckMark } from '.';
-import { dropdownOptions } from './mock';
+import Dropdown, { StyledArrow, StyledDropdown, StyledCheckMark, StyledLi } from '.';
+import { dropdownOptions, initialOptionID } from './mock';
 
 describe('Dropdown', () => {
   it('Renders Dropdown', () => {
@@ -44,6 +44,38 @@ describe('Dropdown', () => {
     const { color: labelColor } = theme.dropdown.label;
 
     expect(selectedOption).toHaveStyleRule('color', labelColor);
+    wrapper.unmount();
+  });
+
+  it('should display selected option from initial prop', () => {
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <Dropdown options={dropdownOptions} initialOptionID={initialOptionID} />
+      </ThemeProvider>
+    );
+    const isSelected = li => !!li.prop('isSelected');
+    const selectedOption = wrapper.findWhere(isSelected);
+    const selectedOptionText = selectedOption.text();
+    expect(selectedOptionText).toBe('Women doubles ✓');
+    wrapper.unmount();
+  });
+
+  it('should display selected option after new selection', () => {
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <Dropdown options={dropdownOptions} initialOptionID={initialOptionID} />
+      </ThemeProvider>
+    );
+
+    wrapper
+      .find(StyledLi)
+      .at(2)
+      .simulate('click');
+
+    const isSelected = li => !!li.prop('isSelected');
+    const selectedOption = wrapper.findWhere(isSelected);
+    const selectedOptionText = selectedOption.text();
+    expect(selectedOptionText).toBe('Men doubles ✓');
     wrapper.unmount();
   });
 

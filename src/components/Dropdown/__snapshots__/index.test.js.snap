@@ -2,6 +2,7 @@
 
 exports[`Dropdown Renders Dropdown 1`] = `
 <Dropdown
+  initialOptionID={null}
   onItemSelected={null}
   options={
     Array [

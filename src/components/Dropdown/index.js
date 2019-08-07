@@ -113,7 +113,7 @@ const StyledUl = styled.ul`
   }
 `;
 
-const StyledLi = styled.li`
+export const StyledLi = styled.li`
   color: ${({ isSelected, theme }) =>
     isSelected ? theme.dropdown.list.selected.color : theme.dropdown.list.default.color};
   font-size: 14px;
@@ -152,12 +152,15 @@ class Dropdown extends React.Component {
   };
 
   componentWillMount() {
-    this.setSelectedOption();
+    this.initSelectedOption();
   }
 
-  setSelectedOption = () => {
-    const { options } = this.props;
-    this.setState({ selectedOption: options[0] });
+  initSelectedOption = () => {
+    const { options, initialOptionID } = this.props;
+    const matchInitialID = initialID => ({ id }) => id === initialID;
+    const initialOption = options.find(matchInitialID(initialOptionID));
+    const selectedOption = initialOption || options[0];
+    this.setState({ selectedOption });
   };
 
   onOptionClick = id => {
@@ -211,6 +214,7 @@ class Dropdown extends React.Component {
 
 Dropdown.defaultProps = {
   onItemSelected: null,
+  initialOptionID: null,
 };
 
 Dropdown.propTypes = {
@@ -220,6 +224,7 @@ Dropdown.propTypes = {
       text: PropTypes.string,
     })
   ).isRequired,
+  initialOptionID: PropTypes.number,
   onItemSelected: PropTypes.func,
 };
 

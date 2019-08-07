@@ -7,6 +7,9 @@ export const dropdownOptions = [
   { text: 'Women triples', id: 1236 },
 ];
 
+export const initialOptionID = dropdownOptions[3].id;
+
 export default {
   ...dropdownOptions,
+  ...initialOptionID,
 };
