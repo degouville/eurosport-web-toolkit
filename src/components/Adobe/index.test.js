@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { Adobe } from '../..';
+import { Adobe, ScriptInjector } from '../..';
 
 describe('<Adobe /> head script client side', () => {
   it('renders <Adobe />', () => {
@@ -31,13 +31,19 @@ describe('<Adobe /> head script server side', () => {
     wrapper.unmount();
   });
 
-  it('calls pageBottom method on _satellite object', () => {
+  it('does not inject satellite script if datalayer is not ready', () => {
+    const wrapper = mount(<Adobe src="srcURL" isServerSide />);
+    expect(wrapper.find(ScriptInjector)).toHaveLength(1);
+    wrapper.unmount();
+  });
+
+  it('calls pageBottom method on _satellite object if datalayer is ready', () => {
     const satelliteInjector = `_satellite = {}; _satellite.pageBottom = function() {window.document.mockCounter = 2};`;
     const script = document.createElement('script');
     script.innerHTML = satelliteInjector;
     document.body.appendChild(script);
     // eslint-disable-next-line no-unused-vars
-    const component = mount(<Adobe src="srcURL" isServerSide />);
+    const component = mount(<Adobe src="srcURL" isServerSide isDataLayerReady />);
     expect(global.document.mockCounter).toEqual(2);
     component.unmount();
   });
