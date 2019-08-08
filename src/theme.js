@@ -17,6 +17,7 @@ import {
   coreDarkBase,
   hydroelectricTar,
   coreNeutral6,
+  coreNeutral1,
   actionOneDarkMinus1,
   actionOneDarkBase,
   ebonyClay,
@@ -94,6 +95,22 @@ export default {
     },
   },
   playerControls: {
+    seek: {
+      trackColor: dodgerBlue2,
+      handleSize: 20,
+      handleColor: coreLightBase,
+      railColor: rgba(coreNeutral1, 0.3),
+      railThickness: 5,
+      vertical: false,
+    },
+    volume: {
+      trackColor: dodgerBlue2,
+      handleSize: 14,
+      handleColor: coreLightBase,
+      railColor: rgba(coreNeutral1, 0.3),
+      railThickness: 5,
+      vertical: true,
+    },
     bar: {
       backgroundColor: transparentize(0.4, coreDarkBase),
     },

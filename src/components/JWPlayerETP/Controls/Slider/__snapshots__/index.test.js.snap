@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Slider should match snapshot on horizontal 1`] = `
+<ComponentEnhancer(undefined)
+  activeDotStyle={Object {}}
+  className=""
+  defaultValue={0}
+  disabled={false}
+  dotStyle={Object {}}
+  dots={false}
+  handle={[Function]}
+  handleStyle={
+    Object {
+      "backgroundColor": "red",
+      "borderColor": "transparent",
+      "height": 20,
+      "margin": -5,
+      "width": 20,
+    }
+  }
+  included={true}
+  marks={Object {}}
+  max={50}
+  min={0}
+  onAfterChange={[Function]}
+  onBeforeChange={[Function]}
+  onChange={[MockFunction]}
+  prefixCls="rc-slider"
+  railStyle={
+    Object {
+      "backgroundColor": "blue",
+      "height": 10,
+    }
+  }
+  step={1}
+  trackStyle={
+    Object {
+      "backgroundColor": "green",
+      "height": 10,
+    }
+  }
+  value={50}
+  vertical={false}
+/>
+`;
+
+exports[`Components|JWPlayerETP|Slider should match snapshot on vertical 1`] = `
+<ComponentEnhancer(undefined)
+  activeDotStyle={Object {}}
+  className=""
+  defaultValue={0}
+  disabled={false}
+  dotStyle={Object {}}
+  dots={false}
+  handle={[Function]}
+  handleStyle={
+    Object {
+      "backgroundColor": "red",
+      "borderColor": "transparent",
+      "height": 20,
+      "margin": -5,
+      "width": 20,
+    }
+  }
+  included={true}
+  marks={Object {}}
+  max={50}
+  min={0}
+  onAfterChange={[Function]}
+  onBeforeChange={[Function]}
+  onChange={[MockFunction]}
+  prefixCls="rc-slider"
+  railStyle={
+    Object {
+      "backgroundColor": "blue",
+      "width": 10,
+    }
+  }
+  step={1}
+  trackStyle={
+    Object {
+      "backgroundColor": "green",
+      "width": 10,
+    }
+  }
+  value={50}
+  vertical={true}
+/>
+`;
