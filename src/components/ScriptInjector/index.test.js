@@ -1,6 +1,20 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import { mount } from 'enzyme';
 import { ScriptInjector } from '../..';
+
+const checkHelmetScript = expected => {
+  const helmet = Helmet.peek();
+  expect(helmet.scriptTags).toHaveLength(1);
+
+  const script = helmet.scriptTags[0];
+  expect(script).toEqual(expected);
+};
+const checkTagScript = (wrapper, expected) => {
+  expect(wrapper.children()).toHaveLength(1);
+  const script = wrapper.children().get(0);
+  expect(script).toEqual(expected);
+};
 
 describe('ScriptInjector', () => {
   describe('server side', () => {
@@ -22,6 +36,10 @@ describe('ScriptInjector', () => {
         );
       });
 
+      afterEach(() => {
+        wrapper.unmount();
+      });
+
       it('async', () => {
         expect(wrapper.prop('async')).toBe(true);
       });
@@ -32,6 +50,60 @@ describe('ScriptInjector', () => {
 
       it('innerHTML', () => {
         expect(wrapper.prop('innerHTML')).toBe('inner html text <b />');
+      });
+    });
+
+    describe('injectionPlace', () => {
+      let wrapper;
+
+      afterEach(() => {
+        wrapper.unmount();
+      });
+
+      it('HEAD', () => {
+        wrapper = mount(<ScriptInjector isServer id="scriptinjector" async src="https://test/script.src" />);
+        checkHelmetScript({ id: 'scriptinjector', async: true, src: 'https://test/script.src' });
+      });
+
+      it('HEAD with inline script', () => {
+        wrapper = mount(
+          <ScriptInjector isServer id="scriptinjector" async src="https://test/script.src" innerHTML="inlineScript" />
+        );
+        checkHelmetScript({
+          id: 'scriptinjector',
+          async: true,
+          src: 'https://test/script.src',
+          innerHTML: 'inlineScript',
+        });
+      });
+
+      it('BODY', () => {
+        wrapper = mount(
+          <ScriptInjector isServer id="scriptinjector" async src="https://test/script.src" injectPlace="body" />
+        );
+        checkTagScript(wrapper, <script async id="scriptinjector" src="https://test/script.src" />);
+      });
+      it('BODY with inline script', () => {
+        wrapper = mount(
+          <ScriptInjector
+            isServer
+            id="scriptinjector"
+            async
+            src="https://test/script.src"
+            injectPlace="body"
+            innerHTML="inlineScript"
+          />
+        );
+        checkTagScript(
+          wrapper,
+          <script
+            async
+            id="scriptinjector"
+            src="https://test/script.src"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: 'inlineScript' }}
+          />
+        );
       });
     });
   });
