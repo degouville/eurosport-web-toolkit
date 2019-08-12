@@ -62,6 +62,7 @@ export { default as BurgerMenu } from './modules/BurgerMenu';
 export { default as ViewMore } from './modules/ViewMore';
 export { default as PlayerCard } from './modules/PlayerCard';
 export { default as Tabs } from './modules/Tabs';
+export { default as SimpleTabs } from './modules/SimpleTabs';
 export { default as LiveComments } from './modules/LiveComments';
 export { default as UserComments } from './modules/UserComments';
 export { default as MatchHero, MatchHeroWithScore } from './modules/MatchHero';
