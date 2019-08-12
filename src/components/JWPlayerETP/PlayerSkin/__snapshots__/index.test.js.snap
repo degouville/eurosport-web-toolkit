@@ -24,12 +24,16 @@ exports[`Components|PlayerWrapper should match snapshot 1`] = `
       isFullscreen={false}
       isLive={true}
       isPlaying={true}
-      onForward={[MockFunction]}
-      onFullscreenChange={[MockFunction]}
+      onForward={[Function]}
+      onFullscreenChange={[Function]}
       onPause={[Function]}
       onPlay={[Function]}
-      onRewind={[MockFunction]}
+      onRewind={[Function]}
+      onSeek={[Function]}
       rewindCounts={null}
+      seekMax={100}
+      seekMin={0}
+      seekPosition={50}
     />
   </Styled(div)>
 </Styled(div)>

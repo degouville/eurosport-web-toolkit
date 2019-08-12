@@ -17,6 +17,10 @@ describe('Components|JWPlayerETP|Controls', () => {
     onRewind: jest.fn(),
     onPlay: jest.fn(),
     onPause: jest.fn(),
+    onSeek: jest.fn(),
+    seekMin: 0,
+    seekMax: 100,
+    seekPosition: 50,
     ...newProps,
   });
 

@@ -1,23 +1,41 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import PlayerSkin, { Overlay } from './index';
+import useInteraction from './useInteraction';
+import useFullscreen from './useFullscreen';
+import Controls from '../Controls';
+
+jest.mock('./useInteraction');
+jest.mock('./useFullscreen');
 
 describe('Components|PlayerWrapper', () => {
   const createDefaultProps = newProps => ({
     id: '1234',
-    onForward: jest.fn(),
-    onRewind: jest.fn(),
     onPlay: jest.fn(),
     onPause: jest.fn(),
+    onForward: jest.fn(),
+    onRewind: jest.fn(),
+    onSeek: jest.fn(),
     isPlaying: false,
     isFullscreen: false,
-    onFullscreenChange: jest.fn(),
     isLive: true,
     rewindCounts: undefined,
+    seekMin: 0,
+    seekMax: 100,
+    seekPosition: 50,
     ...newProps,
   });
 
   const getActiveState = wrp => wrp.find(Overlay).prop('active');
+
+  beforeEach(() => {
+    useInteraction.mockImplementation(jest.requireActual('./useInteraction').default);
+    useFullscreen.mockImplementation(jest.requireActual('./useFullscreen').default);
+  });
+
+  afterEach(() => {
+    jest.resetAllMocks();
+  });
 
   it('should match snapshot', () => {
     // Given
@@ -126,6 +144,40 @@ describe('Components|PlayerWrapper', () => {
 
       // Expect
       expect(isActive).toBeTruthy();
+    });
+  });
+
+  describe('Keep interaction on events', () => {
+    let wrapper;
+    let handlePlayerInteraction;
+    let onFullscreenChange;
+
+    const callControlActions = actions => actions.forEach(action => wrapper.find(Controls).prop(action)());
+
+    beforeEach(() => {
+      handlePlayerInteraction = jest.fn();
+      onFullscreenChange = jest.fn();
+      useFullscreen.mockReturnValue([false, onFullscreenChange]);
+      useInteraction.mockImplementation(() => ({ handlePlayerInteraction }));
+    });
+
+    it('Should keep interaction on action events', () => {
+      // Given
+
+      const props = createDefaultProps({ isPlaying: true });
+      wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      callControlActions(['onPlay', 'onPause', 'onFullscreenChange', 'onForward', 'onRewind', 'onSeek']);
+
+      // Expect
+      expect(props.onPlay).toHaveBeenCalled();
+      expect(props.onPause).toHaveBeenCalled();
+      expect(props.onForward).toHaveBeenCalled();
+      expect(props.onRewind).toHaveBeenCalled();
+      expect(props.onSeek).toHaveBeenCalled();
+      expect(onFullscreenChange).toHaveBeenCalled();
+      expect(handlePlayerInteraction).toHaveBeenCalledTimes(6);
     });
   });
 });

@@ -17,7 +17,11 @@ exports[`Components|JWPlayerETP|Controls Should match snapshot 1`] = `
     isLive={true}
     isMobile={false}
     onFullscreenChange={[MockFunction]}
+    onSeek={[MockFunction]}
     rewindCounts={null}
+    seekMax={100}
+    seekMin={0}
+    seekPosition={50}
   >
     <Styled(div) />
     <ActionList

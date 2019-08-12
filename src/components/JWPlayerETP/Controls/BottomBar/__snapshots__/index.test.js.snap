@@ -9,9 +9,13 @@ exports[`Components|JWPlayerETP|Controls|BottomBar Should match snapshot 1`] = `
         defaultValue={0}
         handleColor="red"
         handleSize={20}
+        max={100}
+        min={0}
+        onChange={[MockFunction]}
         railColor="green"
         railThickness={5}
         trackColor="blue"
+        value={50}
         vertical={false}
       />
     </Styled(div)>

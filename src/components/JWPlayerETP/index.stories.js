@@ -29,7 +29,7 @@ const getBaseProps = newProps => {
       provider: 'sonic',
       id: text('videoId', 'eurosport-e14558529c9717131ch3'),
       sonic: {
-        baseUrl: text('sonicBaseUrl', 'https://eu1-test.disco-api.com'),
+        baseUrl: text('sonicBaseUrl', 'https://eu3-prod.disco-api.com'),
         realm: text('sonicRealm', 'eurosport'),
       },
     },

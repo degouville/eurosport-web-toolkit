@@ -5,21 +5,24 @@ import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
 
-const PlayerSkin = ({ isPlaying, id, onPlay, onPause, ...props }) => {
+const useKeepInteraction = (action, handleInteraction) =>
+  useCallback(() => {
+    handleInteraction();
+    action();
+  }, [action, handleInteraction]);
+
+const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSeek, ...props }) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({ isPlaying });
   const MainContainerRef = useRef();
 
-  const onPlayKeepInteraction = useCallback(() => {
-    handlePlayerInteraction();
-    onPlay();
-  }, [handlePlayerInteraction, onPlay]);
-
-  const onPauseKeepInteraction = useCallback(() => {
-    handlePlayerInteraction();
-    onPause();
-  }, [handlePlayerInteraction, onPause]);
-
   const [isFullscreen, onFullscreenChange] = useFullscreen(MainContainerRef.current);
+
+  const onPlayKeepInteraction = useKeepInteraction(onPlay, handlePlayerInteraction);
+  const onPauseKeepInteraction = useKeepInteraction(onPause, handlePlayerInteraction);
+  const onFullscreenChangeKeepInteraction = useKeepInteraction(onFullscreenChange, handlePlayerInteraction);
+  const onForwardKeepInteraction = useKeepInteraction(onForward, handlePlayerInteraction);
+  const onRewindKeepInteraction = useKeepInteraction(onRewind, handlePlayerInteraction);
+  const onSeekKeepInteraction = useKeepInteraction(onSeek, handlePlayerInteraction);
 
   return (
     <MainContainer
@@ -38,7 +41,10 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, ...props }) => {
           onPlay={onPlayKeepInteraction}
           onPause={onPauseKeepInteraction}
           isFullscreen={isFullscreen}
-          onFullscreenChange={onFullscreenChange}
+          onFullscreenChange={onFullscreenChangeKeepInteraction}
+          onForward={onForwardKeepInteraction}
+          onRewind={onRewindKeepInteraction}
+          onSeek={onSeekKeepInteraction}
           {...props}
         />
       </Overlay>

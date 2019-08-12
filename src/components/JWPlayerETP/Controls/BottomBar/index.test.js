@@ -9,6 +9,10 @@ describe('Components|JWPlayerETP|Controls|BottomBar', () => {
     isLive: true,
     children: <Component />,
     rewindCounts: undefined,
+    onSeek: jest.fn(),
+    seekMin: 0,
+    seekMax: 100,
+    seekPosition: 50,
     theme: {
       playerControls: {
         seek: {
