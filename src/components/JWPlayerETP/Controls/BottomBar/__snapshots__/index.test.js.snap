@@ -4,7 +4,17 @@ exports[`Components|JWPlayerETP|Controls|BottomBar Should match snapshot 1`] = `
 <Styled(div)>
   <Styled(div) />
   <Styled(div)>
-    <Styled(div) />
+    <Styled(div)>
+      <Slider
+        defaultValue={0}
+        handleColor="red"
+        handleSize={20}
+        railColor="green"
+        railThickness={5}
+        trackColor="blue"
+        vertical={false}
+      />
+    </Styled(div)>
     <Styled(div)>
       <Styled(div) />
       <Styled(div)>

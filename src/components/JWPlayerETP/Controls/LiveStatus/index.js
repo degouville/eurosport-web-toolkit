@@ -9,7 +9,7 @@ const LiveStatus = ({ rewindCounts, isLive }) => (
         <Text>LIVE</Text>
       </Icon>
     )}
-    {rewindCounts && <RewindText>{rewindCounts}</RewindText>}
+    {rewindCounts && <RewindText length={rewindCounts?.length}>{rewindCounts}</RewindText>}
   </LiveContainer>
 );
 
@@ -36,6 +36,7 @@ const RewindText = styled.p`
   font-family: ${({ theme }) => theme.playerControls.liveIcon.fontFamily};
   font-size: 13px;
   letter-spacing: 1px;
+  ${({ length }) => `width: ${length}ch;`}
   line-height: 16px;
   text-align: center;
 `;

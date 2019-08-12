@@ -1,19 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import { withTheme } from 'emotion-theming';
 import Volume from 'src/assets/icon-volume.svg';
 import { HorizontalSeparator, VerticalSeparator } from '../UI/separators';
 import BarControlWrapper from '../UI/barControlWrapper';
 import LiveStatus from '../LiveStatus';
 import Icon from '../UI/icon';
 import BarContainer from '../UI/bar';
+import Slider from '../Slider';
 
-const BottomBar = ({ isLive, rewindCounts, children }) => (
+export const BottomBar = ({ isLive, rewindCounts, children, theme, onSeek, seekMin, seekMax, seekPosition }) => (
   <BottomBarContainer>
     <HorizontalSeparator />
     <BarElementsContainer>
-      {/* replace VideoTimeContainer by the future implementation */}
-      <VideoTimeContainer />
+      <VideoTimeContainer>
+        <Slider
+          max={seekMax}
+          onChange={onSeek}
+          min={seekMin}
+          value={seekPosition}
+          defaultValue={0}
+          {...theme.playerControls.seek}
+        />
+      </VideoTimeContainer>
       <BarActionsContainer>
         <VerticalSeparator />
         <BarControlWrapper>
@@ -35,9 +45,15 @@ BottomBar.defaultProps = {
 };
 
 BottomBar.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  theme: PropTypes.object.isRequired,
   children: PropTypes.element.isRequired,
   isLive: PropTypes.bool,
   rewindCounts: PropTypes.string,
+  onSeek: PropTypes.func.isRequired,
+  seekMin: PropTypes.number.isRequired,
+  seekMax: PropTypes.number.isRequired,
+  seekPosition: PropTypes.number.isRequired,
 };
 
 const BottomBarContainer = styled.div`
@@ -68,6 +84,8 @@ const BarActionsContainer = styled.div`
 const VideoTimeContainer = styled.div`
   display: flex;
   flex: 1;
+  margin-left: 24px;
+  margin-right: 24px;
 `;
 
-export default BottomBar;
+export default withTheme(BottomBar);

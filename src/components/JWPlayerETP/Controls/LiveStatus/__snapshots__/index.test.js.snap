@@ -70,7 +70,9 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rewindCounts 1`] = `
 <Styled(div)>
-  <Styled(p)>
+  <Styled(p)
+    length={8}
+  >
     -1.23.23
   </Styled(p)>
 </Styled(div)>

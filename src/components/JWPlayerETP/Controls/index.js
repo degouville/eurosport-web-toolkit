@@ -18,6 +18,10 @@ const Controls = ({
   onRewind,
   onPlay,
   onPause,
+  onSeek,
+  seekMin,
+  seekMax,
+  seekPosition,
 }) => {
   const { isMobile } = useScreenInformation();
 
@@ -41,6 +45,10 @@ const Controls = ({
         rewindCounts={rewindCounts}
         isFullscreen={isFullscreen}
         onFullscreenChange={onFullscreenChange}
+        onSeek={onSeek}
+        seekMin={seekMin}
+        seekMax={seekMax}
+        seekPosition={seekPosition}
       >
         {!isMobile && (
           <>
@@ -68,6 +76,10 @@ Controls.propTypes = {
   onFullscreenChange: PropTypes.func.isRequired,
   isLive: PropTypes.bool,
   rewindCounts: PropTypes.string,
+  onSeek: PropTypes.func.isRequired,
+  seekMin: PropTypes.number.isRequired,
+  seekMax: PropTypes.number.isRequired,
+  seekPosition: PropTypes.number.isRequired,
 };
 
 const MainContainer = styled.div`

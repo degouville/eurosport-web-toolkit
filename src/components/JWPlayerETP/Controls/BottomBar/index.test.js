@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import BottomBar from './index';
+import { BottomBar } from './index';
 
 describe('Components|JWPlayerETP|Controls|BottomBar', () => {
   const Component = () => <div id="children-to-display" />;
@@ -9,6 +9,18 @@ describe('Components|JWPlayerETP|Controls|BottomBar', () => {
     isLive: true,
     children: <Component />,
     rewindCounts: undefined,
+    theme: {
+      playerControls: {
+        seek: {
+          trackColor: 'blue',
+          handleSize: 20,
+          handleColor: 'red',
+          railColor: 'green',
+          railThickness: 5,
+          vertical: false,
+        },
+      },
+    },
     ...newProps,
   });
 
