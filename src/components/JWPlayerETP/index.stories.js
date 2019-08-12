@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
 import { actions } from '@storybook/addon-actions';
 import ETPlayer from './index';
-import PlayerSkin from './PlayerSkin';
 
 const events = actions(
   'onPlayerInstantiation',
@@ -46,4 +45,3 @@ const getBaseProps = newProps => {
 const stories = storiesOf('Components|JWPlayerETP', module);
 
 stories.add('JWPlayerETP default', () => <ETPlayer {...getBaseProps()} />);
-stories.add('JWPlayerETP with Player skin', () => <ETPlayer {...getBaseProps({ PlayerControls: PlayerSkin })} />);

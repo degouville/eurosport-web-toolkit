@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ETPlayerComponent from '@eurosport/toolkit-player';
 import VideoPlayerModal from 'src/modules/VideoPlayerModal';
 import Login from 'src/modules/Login';
+import PlayerSkin from './PlayerSkin';
 
 const LoginModal = props => (
   <VideoPlayerModal>
@@ -63,6 +64,7 @@ ETPlayer.defaultProps = {
   onLoginModalReady: null,
   onLoginModalDone: null,
   loginModalMountingPoint: undefined,
+  PlayerControls: PlayerSkin,
 };
 
 ETPlayer.propTypes = {
@@ -121,7 +123,7 @@ ETPlayer.propTypes = {
   onLoginModalDone: PropTypes.func,
 
   // Player skin
-  PlayerControls: PropTypes.elementType.isRequired,
+  PlayerControls: PropTypes.elementType,
 
   // Login
   loginModalMountingPoint: typeof Element === 'undefined' ? PropTypes.element : PropTypes.instanceOf(Element),
