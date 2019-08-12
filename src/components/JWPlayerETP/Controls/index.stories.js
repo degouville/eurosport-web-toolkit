@@ -15,6 +15,8 @@ stories.add('Controls default', () => {
       isLive={boolean('isLive', true)}
       rewindCounts={rewindCounts === '' ? null : rewindCounts}
       isFullscreen={boolean('isFullscreen', false)}
+      isBuffering={boolean('isBuffering', false)}
+      isPlaying={boolean('isPlaying', false)}
       seekMax={number('seekMax', 100)}
       seekMin={number('seekMin', 0)}
       seekPosition={number('seekPosition', 50)}

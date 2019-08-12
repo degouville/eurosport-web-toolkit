@@ -4,24 +4,29 @@ import PropTypes from 'prop-types';
 import * as breakpoints from 'src/breakpoints';
 import pause from 'src/assets/icon-pause.svg';
 import play from 'src/assets/icon-play.svg';
+import Spinner from 'src/elements/Spinner';
 import forward from 'src/assets/icon-jump-fwd.svg';
 import rewind from 'src/assets/icon-jump-rwd.svg';
 
-const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause }) => (
+const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause, isBuffering }) => (
   <MainContainer>
     <SecondIcon src={rewind} alt="Rewind" onClick={onRewind} />
     <Label>15</Label>
-    {isPlaying ? (
-      <MainIcon src={pause} alt="Pause" onClick={onPause} />
-    ) : (
-      <MainIcon src={play} alt="Play" onClick={onPlay} />
-    )}
+    <CentralContainer isBuffering={isBuffering}>
+      {isBuffering && <SpinnerStyled width="90px" />}
+      {isPlaying ? (
+        <MainIcon src={pause} alt="Pause" onClick={onPause} />
+      ) : (
+        <MainIcon src={play} alt="Play" onClick={onPlay} />
+      )}
+    </CentralContainer>
     <Label>15</Label>
     <SecondIcon src={forward} alt="Forward" onClick={onForward} />
   </MainContainer>
 );
 
 PlayerButtons.propTypes = {
+  isBuffering: PropTypes.bool.isRequired,
   isPlaying: PropTypes.bool.isRequired,
   onForward: PropTypes.func.isRequired,
   onRewind: PropTypes.func.isRequired,
@@ -48,8 +53,20 @@ const SecondIcon = styled.img`
   height: 44px;
 `;
 
-const MainIcon = styled.img`
-  height: 64px;
+export const SpinnerStyled = styled(Spinner)`
+  position: absolute;
+  margin: 0;
+`;
+
+const CentralContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
 
   margin-left: 20px;
   margin-right: 20px;
@@ -57,6 +74,10 @@ const MainIcon = styled.img`
     margin-left: 88px;
     margin-right: 88px;
   `)};
+`;
+
+const MainIcon = styled.img`
+  height: 64px;
 `;
 
 export default PlayerButtons;

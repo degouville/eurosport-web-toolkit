@@ -10,6 +10,7 @@ import ActionList from './ActionList';
 
 const Controls = ({
   isPlaying,
+  isBuffering,
   isLive,
   rewindCounts,
   isFullscreen,
@@ -32,6 +33,7 @@ const Controls = ({
       </TopBarContainer>
       <PlayerButtonContainer>
         <PlayerButtons
+          isBuffering={isBuffering}
           isPlaying={isPlaying}
           onForward={onForward}
           onRewind={onRewind}
@@ -67,11 +69,7 @@ Controls.defaultProps = {
 };
 
 Controls.propTypes = {
-  onForward: PropTypes.func.isRequired,
-  onRewind: PropTypes.func.isRequired,
-  onPlay: PropTypes.func.isRequired,
-  onPause: PropTypes.func.isRequired,
-  isPlaying: PropTypes.bool.isRequired,
+  ...PlayerButtons.propTypes,
   isFullscreen: PropTypes.bool.isRequired,
   onFullscreenChange: PropTypes.func.isRequired,
   isLive: PropTypes.bool,

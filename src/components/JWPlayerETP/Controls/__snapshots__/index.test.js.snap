@@ -5,6 +5,7 @@ exports[`Components|JWPlayerETP|Controls Should match snapshot 1`] = `
   <Styled(div) />
   <Styled(div)>
     <PlayerButtons
+      isBuffering={false}
       isPlaying={true}
       onForward={[MockFunction]}
       onPause={[MockFunction]}

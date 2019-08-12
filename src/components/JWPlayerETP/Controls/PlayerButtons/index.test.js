@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PlayerButtons from './index';
+import PlayerButtons, { SpinnerStyled } from './index';
 
 describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
   const createDefaultProps = newProps => ({
@@ -9,6 +9,7 @@ describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
     onRewind: jest.fn(),
     onPlay: jest.fn(),
     onPause: jest.fn(),
+    isBuffering: false,
     ...newProps,
   });
 
@@ -78,5 +79,17 @@ describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
       // Expect
       expect(props.onPlay).toHaveBeenCalled();
     });
+  });
+
+  it('Should contains the spinner when isBuffering is true', () => {
+    // Given
+    const props = createDefaultProps({ isBuffering: true });
+    const wrapper = shallow(<PlayerButtons {...props} />);
+
+    // When
+    const result = wrapper.find(SpinnerStyled).exists();
+
+    // Expect
+    expect(result).toBe(true);
   });
 });

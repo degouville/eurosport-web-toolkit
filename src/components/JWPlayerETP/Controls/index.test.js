@@ -21,6 +21,7 @@ describe('Components|JWPlayerETP|Controls', () => {
     seekMin: 0,
     seekMax: 100,
     seekPosition: 50,
+    isBuffering: false,
     ...newProps,
   });
 
