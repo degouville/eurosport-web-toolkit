@@ -4,6 +4,11 @@
     "emotion",
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-optional-chaining",
+    ["babel-plugin-inline-import", {
+      "extensions": [
+        ".css"
+      ]
+    }],
     [
       "module-resolver",
       {

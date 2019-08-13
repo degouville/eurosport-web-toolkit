@@ -1,7 +1,6 @@
 import React from 'react';
 import RCSlider from 'rc-slider';
 import PropTypes from 'prop-types';
-import 'rc-slider/assets/index.css';
 
 const getHandleStyle = ({ handleSize, railThickness, handleColor }) => ({
   borderColor: 'transparent',

@@ -6,6 +6,12 @@ module.exports = {
     '@babel/plugin-proposal-optional-chaining',
     'react-docgen',
     [
+      'babel-plugin-inline-import',
+      {
+        extensions: ['.css'],
+      },
+    ],
+    [
       'module-resolver',
       {
         alias: {
