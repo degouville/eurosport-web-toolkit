@@ -242,4 +242,4 @@ Column.propTypes = {
   wideOffset: PropTypes.oneOf(TWELVE_OFFSETS),
 };
 
-export default { Container, Row, Column, SIX_COLUMNS, TWELVE_COLUMNS, SIX_OFFSETS, TWELVE_OFFSETS };
+export default { Container, Row, Column, SIX_COLUMNS, TWELVE_COLUMNS, SIX_OFFSETS, TWELVE_OFFSETS, getOffset };
