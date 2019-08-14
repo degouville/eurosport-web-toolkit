@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
+<SetsSchedule
+  data={
+    Object {
+      "bottomTeam": Object {
+        "playerOneName": "A. MENENDEZ-MACEIRAS",
+      },
+      "topTeam": Object {
+        "playerOneName": "A. MENENDEZ-MACEIRAS",
+      },
+    }
+  }
+  schedule={
+    Object {
+      "date": "le 28 Octobre",
+      "time": "à 18h00",
+    }
+  }
+>
+  <Styled(p)>
+    <p
+      className="css-1jajg3i e1y839xa0"
+    >
+      <Styled(span)>
+        <span
+          className="css-sllbpf e1y839xa1"
+        >
+          le 28 Octobre
+        </span>
+      </Styled(span)>
+      <br />
+      <Styled(b)>
+        <b
+          className="css-1inhe6l e1y839xa2"
+        >
+          à 18h00
+        </b>
+      </Styled(b)>
+    </p>
+  </Styled(p)>
+</SetsSchedule>
+`;

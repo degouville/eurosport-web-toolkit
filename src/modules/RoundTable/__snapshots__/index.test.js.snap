@@ -7522,6 +7522,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -8139,6 +8140,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -8732,6 +8734,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -9223,6 +9226,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -9840,6 +9844,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -10457,6 +10462,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -11050,6 +11056,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"
@@ -11541,6 +11548,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              schedule={null}
             >
               <Styled(Link)
                 data-test="clickable-scoreblock-wrapper"

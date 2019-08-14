@@ -145,6 +145,7 @@ exports[`PlayerCard should render as expected 1`] = `
           liveButtonText="Live"
           matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
+          schedule={null}
         />
       </Styled(div)>
       <Styled(div)
@@ -254,6 +255,7 @@ exports[`PlayerCard should render as expected 1`] = `
           liveButtonText="Live"
           matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
+          schedule={null}
         />
       </Styled(div)>
       <Styled(div)
@@ -339,6 +341,7 @@ exports[`PlayerCard should render as expected 1`] = `
           liveButtonText="Live"
           matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
+          schedule={null}
         />
       </Styled(div)>
       <Styled(div)
@@ -448,6 +451,7 @@ exports[`PlayerCard should render as expected 1`] = `
           liveButtonText="Live"
           matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
+          schedule={null}
         />
       </Styled(div)>
       <Styled(div)
@@ -557,6 +561,7 @@ exports[`PlayerCard should render as expected 1`] = `
           liveButtonText="Live"
           matchInfoButtonText="Match Info"
           matchUrl="https://eurosport.com"
+          schedule={null}
         />
       </Styled(div)>
     </ViewMore>

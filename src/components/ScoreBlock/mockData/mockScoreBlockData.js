@@ -83,6 +83,21 @@ export const liveMatchDataSet = {
   },
 };
 
+export const scheduledMatchDataSet = {
+  players: {
+    topTeam: {
+      playerOneName: 'A. MENENDEZ-MACEIRAS',
+    },
+    bottomTeam: {
+      playerOneName: 'A. MENENDEZ-MACEIRAS',
+    },
+  },
+  schedule: {
+    date: 'le 28 Octobre',
+    time: 'à 18h00',
+  },
+};
+
 export const liveMatchDataSetWithImages = {
   topTeam: {
     ...liveMatchData.topTeam,

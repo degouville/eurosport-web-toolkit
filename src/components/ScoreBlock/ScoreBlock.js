@@ -8,7 +8,7 @@ import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import SetsScore, { StyledSpacer, setsScoreType } from './SetsScore';
 import { fontInterUi } from '../../typography';
-
+import SetsSchedule, { setsScheduleType } from './SetsSchedule';
 import Link from '../../elements/Link';
 
 const StyledClickableWrapper = styled(Link)`
@@ -137,6 +137,7 @@ ScoreButton.propTypes = {
 export const ScoreBlock = ({
   matchUrl,
   data,
+  schedule,
   isLive,
   isWatchable,
   displayLeftCircle,
@@ -145,6 +146,7 @@ export const ScoreBlock = ({
   hasButton,
 }) => {
   const hasLeftCircle = ['won', 'lost'].includes(displayLeftCircle);
+  const hasSchedule = !!schedule && !data?.topTeam?.sets?.length && !data?.bottomTeam?.sets?.length;
   return (
     <StyledClickableWrapper href={matchUrl} data-test="clickable-scoreblock-wrapper">
       <StyledScoreWrapper hasLeftCircle={hasLeftCircle}>
@@ -158,6 +160,7 @@ export const ScoreBlock = ({
           </StyledBigDot>
         )}
         <SetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
+        {hasSchedule && <SetsSchedule schedule={schedule} />}
       </StyledScoreWrapper>
       <ScoreButton properties={{ hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText }} />
     </StyledClickableWrapper>
@@ -167,6 +170,7 @@ export const ScoreBlock = ({
 export const scoreBlockType = {
   matchUrl: PropTypes.string.isRequired,
   data: setsScoreType.isRequired,
+  schedule: setsScheduleType,
   isLive: PropTypes.bool,
   isWatchable: PropTypes.bool,
   displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
@@ -181,6 +185,8 @@ ScoreBlock.defaultProps = {
   // eslint-disable-next-line react/default-props-match-prop-types
   isWatchable: false,
   liveButtonText: 'Live',
+  // eslint-disable-next-line react/default-props-match-prop-types
+  schedule: null,
   matchInfoButtonText: 'Match Info',
   // eslint-disable-next-line react/default-props-match-prop-types
   hasButton: true,

@@ -9,6 +9,7 @@ import {
   liveMatchDataSet,
   pastMatchOnePlayerNoScoresDataSet,
   liveMatchDataSetWithImages,
+  scheduledMatchDataSet,
 } from './mockData/mockScoreBlockData';
 
 const MATCH_URL =
@@ -59,11 +60,29 @@ scoreBlockStories.add(`ScoreBlock - with flags`, () => (
   </Wrapper>
 ));
 
+const { players: data, schedule } = scheduledMatchDataSet;
+scoreBlockStories.add(`ScoreBlock - scheduled`, () => (
+  <Wrapper>
+    <ScoreBlocks.ScoreBlock
+      matchUrl={MATCH_URL}
+      data={object('players data', data)}
+      schedule={object('schedule', schedule)}
+      isLive={boolean('isLive', false)}
+      isWatchable={boolean('isWatchable', false)}
+      displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', false)}
+    />
+  </Wrapper>
+));
+
 scoreBlockStories.add(`ScoreBlock - live`, () => (
   <Wrapper>
     <ScoreBlocks.ScoreBlock
       matchUrl={MATCH_URL}
       data={object('score data', liveMatchData)}
+      schedule={object('schedule', schedule)}
       isLive={boolean('isLive', true)}
       isWatchable={boolean('isWatchable', true)}
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
@@ -79,6 +98,7 @@ scoreBlockStories.add(`ScoreBlock - no scores`, () => (
     <ScoreBlocks.ScoreBlock
       matchUrl={MATCH_URL}
       data={object('score data', pastMatchOnePlayerNoScoresDataSet)}
+      schedule={object('schedule', schedule)}
       isLive={boolean('isLive', false)}
       isWatchable={boolean('isWatchable', false)}
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
