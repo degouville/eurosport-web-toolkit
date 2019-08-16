@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Components|PlayerWrapper should match snapshot 1`] = `
+exports[`Components|PlayerSkin should match snapshot 1`] = `
 <Styled(div)
   innerRef={
     Object {
@@ -21,6 +21,7 @@ exports[`Components|PlayerWrapper should match snapshot 1`] = `
     active={false}
   >
     <Controls
+      isBuffering={true}
       isFullscreen={false}
       isLive={true}
       isPlaying={true}

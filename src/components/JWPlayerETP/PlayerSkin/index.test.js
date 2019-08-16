@@ -8,7 +8,7 @@ import Controls from '../Controls';
 jest.mock('./useInteraction');
 jest.mock('./useFullscreen');
 
-describe('Components|PlayerWrapper', () => {
+describe('Components|PlayerSkin', () => {
   const createDefaultProps = newProps => ({
     id: '1234',
     onPlay: jest.fn(),
@@ -23,6 +23,8 @@ describe('Components|PlayerWrapper', () => {
     seekMin: 0,
     seekMax: 100,
     seekPosition: 50,
+    controls: false,
+    isBuffering: true,
     ...newProps,
   });
 
@@ -47,6 +49,30 @@ describe('Components|PlayerWrapper', () => {
   });
 
   describe('Controls display', () => {
+    it('Should show controls when JWPlayer controls are not displayed', () => {
+      // Given
+      const props = createDefaultProps({ controls: false });
+      const wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      const result = wrapper.find(Overlay).exists();
+
+      // Expect
+      expect(result).toBe(true);
+    });
+
+    it('Should hide controls when JWPlayer controls are displayed', () => {
+      // Given
+      const props = createDefaultProps({ controls: true });
+      const wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      const result = wrapper.find(Overlay).exists();
+
+      // Expect
+      expect(result).toBe(false);
+    });
+
     it('Should hide skin when the player is playing', () => {
       // Given
       const props = createDefaultProps({ isPlaying: true });
@@ -163,7 +189,6 @@ describe('Components|PlayerWrapper', () => {
 
     it('Should keep interaction on action events', () => {
       // Given
-
       const props = createDefaultProps({ isPlaying: true });
       wrapper = shallow(<PlayerSkin {...props} />);
 
@@ -178,6 +203,19 @@ describe('Components|PlayerWrapper', () => {
       expect(props.onSeek).toHaveBeenCalled();
       expect(onFullscreenChange).toHaveBeenCalled();
       expect(handlePlayerInteraction).toHaveBeenCalledTimes(6);
+    });
+
+    it('Should forward props to wrapped function', () => {
+      // Given
+      const props = createDefaultProps({ isPlaying: true });
+      wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      wrapper.find(Controls).prop('onSeek')(42);
+
+      // Expect
+      expect(props.onSeek).toHaveBeenCalledWith(42);
+      expect(handlePlayerInteraction).toHaveBeenCalled();
     });
   });
 });

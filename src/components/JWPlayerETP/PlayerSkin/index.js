@@ -6,12 +6,15 @@ import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
 
 const useKeepInteraction = (action, handleInteraction) =>
-  useCallback(() => {
-    handleInteraction();
-    action();
-  }, [action, handleInteraction]);
+  useCallback(
+    props => {
+      handleInteraction();
+      action(props);
+    },
+    [action, handleInteraction]
+  );
 
-const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSeek, ...props }) => {
+const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSeek, controls, ...props }) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({ isPlaying });
   const MainContainerRef = useRef();
 
@@ -35,19 +38,21 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSee
       onTouchStart={handlePlayerInteraction}
     >
       <JWPlayerContainer id={id} />
-      <Overlay active={isPlaying === false ? true : active}>
-        <Controls
-          isPlaying={isPlaying}
-          onPlay={onPlayKeepInteraction}
-          onPause={onPauseKeepInteraction}
-          isFullscreen={isFullscreen}
-          onFullscreenChange={onFullscreenChangeKeepInteraction}
-          onForward={onForwardKeepInteraction}
-          onRewind={onRewindKeepInteraction}
-          onSeek={onSeekKeepInteraction}
-          {...props}
-        />
-      </Overlay>
+      {controls === false && (
+        <Overlay active={isPlaying === false ? true : active}>
+          <Controls
+            isPlaying={isPlaying}
+            onPlay={onPlayKeepInteraction}
+            onPause={onPauseKeepInteraction}
+            isFullscreen={isFullscreen}
+            onFullscreenChange={onFullscreenChangeKeepInteraction}
+            onForward={onForwardKeepInteraction}
+            onRewind={onRewindKeepInteraction}
+            onSeek={onSeekKeepInteraction}
+            {...props}
+          />
+        </Overlay>
+      )}
     </MainContainer>
   );
 };
@@ -56,6 +61,7 @@ PlayerSkin.propTypes = {
   ...Controls.propTypes,
   id: PropTypes.string.isRequired,
   isPlaying: PropTypes.bool.isRequired,
+  controls: PropTypes.bool.isRequired,
 };
 
 const Visible = styled.css`
