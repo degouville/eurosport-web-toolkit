@@ -2,13 +2,12 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { H3 } from 'src/typography';
-import { Grid } from 'src';
+import { Container } from 'src/elements/Grid';
+
 import * as breakpoints from 'src/breakpoints';
-import ibmLogo from '../../assets/ibm-logo.svg';
+import ibmLogo from 'src/assets/ibm-logo.svg';
 
 import Comparison from './Comparison';
-
-const { Container } = Grid;
 
 const PlayerStatistics = ({ names, comparisonPoints, isSponsored }) => {
   const { playerOne, playerTwo } = names;

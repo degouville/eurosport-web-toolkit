@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { H6 } from 'src/typography';
-import { theme } from 'src';
+import theme from 'src/theme';
 import * as breakpoints from 'src/breakpoints';
 import { setGradient, addPercentMark } from './utils';
 

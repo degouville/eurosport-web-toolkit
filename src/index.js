@@ -71,6 +71,7 @@ export { default as LiveVideoHero } from './modules/LiveVideoHero';
 export { default as RoundTable } from './modules/RoundTable';
 export { default as Login } from './modules/Login';
 export { default as VideoPlayerModal } from './modules/VideoPlayerModal';
+export { default as PlayerStatistics } from './modules/PlayerStatistics';
 
 /* HOCS */
 export { default as withMatchMedia } from './hocs/withMatchMedia';
