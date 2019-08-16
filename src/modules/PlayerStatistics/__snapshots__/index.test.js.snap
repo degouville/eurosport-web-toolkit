@@ -72,6 +72,7 @@ exports[`PlayerStatistics Component renders as expected 1`] = `
       },
     ]
   }
+  isSponsored={false}
   names={
     Object {
       "playerOne": "A. Mendez-Maceiras",

@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import { H3 } from 'src/typography';
 import { Grid } from 'src';
 import * as breakpoints from 'src/breakpoints';
+import ibmLogo from '../../assets/ibm-logo.svg';
 
 import Comparison from './Comparison';
 
 const { Container } = Grid;
 
-const PlayerStatistics = ({ names, comparisonPoints }) => {
+const PlayerStatistics = ({ names, comparisonPoints, isSponsored }) => {
   const { playerOne, playerTwo } = names;
 
   return (
@@ -20,8 +21,13 @@ const PlayerStatistics = ({ names, comparisonPoints }) => {
       </StyledHeader>
 
       <StyledStats>{!!comparisonPoints.length && comparisonPoints.map(Comparison)}</StyledStats>
+      {isSponsored && <StyledSponsored src={ibmLogo} />}
     </StyledContainer>
   );
+};
+
+PlayerStatistics.defaultProps = {
+  isSponsored: false,
 };
 
 PlayerStatistics.propTypes = {
@@ -41,6 +47,7 @@ PlayerStatistics.propTypes = {
       isPercent: PropTypes.bool,
     })
   ).isRequired,
+  isSponsored: PropTypes.bool,
 };
 
 const StyledContainer = styled(Container)`
@@ -98,7 +105,20 @@ const StyledTitle = styled(H3)`
 const StyledStats = styled.ul`
   padding: 0 15px 15px 15px;
   ${breakpoints.medium(css`
-    padding: 0 45px 45px 45px;
+    padding: 0 45px 20px 45px;
+  `)}
+`;
+
+const StyledSponsored = styled.img`
+  height: 26px;
+  width: 60px;
+  display: block;
+  float: right;
+  margin: 0 15px 15px 0;
+  ${breakpoints.medium(css`
+    height: 35px;
+    width: 84px;
+    margin: 0 45px 20px 0;
   `)}
 `;
 
