@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { H3 } from 'src/typography';
-import { Container } from 'src/elements/Grid';
 
 import * as breakpoints from 'src/breakpoints';
 import ibmLogo from 'src/assets/ibm-logo.svg';
@@ -49,7 +48,7 @@ PlayerStatistics.propTypes = {
   isSponsored: PropTypes.bool,
 };
 
-const StyledContainer = styled(Container)`
+const StyledContainer = styled.div`
   margin: 16px;
   color: ${({ theme }) => theme.typo.primary.color};
   background: ${({ theme }) => theme.statistics.background.one};
