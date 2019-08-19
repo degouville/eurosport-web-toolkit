@@ -79,14 +79,8 @@ const StyledPictogram = styled.img`
   max-height: 17px;
 `;
 
-export const StyledTwitterCard = styled(Cards.Twitter)`
-  margin-top: 25px;
-`;
-
-const StyledCardWrapper = styled.div`
-  margin-top: 25px;
+const cardsMaxWidth = css`
   max-width: 308px;
-  text-decoration: none;
 
   ${medium(css`
     max-width: 388px;
@@ -95,11 +89,23 @@ const StyledCardWrapper = styled.div`
   ${large(css`
     max-width: 342px;
   `)}
-  
+
   ${wide(css`
     max-width: 308px;
   `)}
-  
+`;
+
+export const StyledTwitterCard = styled(Cards.Twitter)`
+  ${cardsMaxWidth};
+  margin-top: 25px;
+`;
+
+const StyledCardWrapper = styled.div`
+  ${cardsMaxWidth};
+
+  margin-top: 25px;
+  text-decoration: none;
+
   img {
     max-width: 100%;
     border-radius: 4px;
