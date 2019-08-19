@@ -37,7 +37,7 @@ export const StyledTeamName = styled.div`
   color: ${props => (props.hasWon === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
   ${fontAlphaHeadline};
   font-size: 1em;
-  flex-basis: 60%;
+  flex-basis: ${({ hasScore }) => (hasScore ? '60' : '100')}%;
   text-transform: uppercase;
   text-align: left;
   margin: 11px 0;
@@ -83,9 +83,11 @@ const Team = ({ teamData, isTeamMatch, highlightLastSet }) => {
   playerOneName = playerOneName === '' ? '\u00A0' : playerOneName;
   playerTwoName = playerTwoName === '' && isTeamMatch ? '\u00A0' : playerTwoName;
 
+  const hasScore = !!sets?.length;
+
   return (
     <StyledTeamWrapper>
-      <StyledTeamName hasWon={hasWon}>
+      <StyledTeamName hasWon={hasWon} hasScore={hasScore}>
         <StyledPlayer>
           <div>{playerOneImage && <StyledTeamImage src={playerOneImage} />}</div>
           <StyledPlayerName>

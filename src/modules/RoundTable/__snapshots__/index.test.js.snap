@@ -7695,6 +7695,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -7889,6 +7890,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -8313,6 +8315,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -8507,6 +8510,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -8871,6 +8875,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -9007,6 +9012,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -9399,6 +9405,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -9593,6 +9600,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -10017,6 +10025,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -10211,6 +10220,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -10635,6 +10645,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -10829,6 +10840,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -11193,6 +11205,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
@@ -11329,6 +11342,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -11721,6 +11735,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={true}
                                       >
                                         <div
@@ -11915,6 +11930,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                       className="css-tmpuly e1uethu90"
                                     >
                                       <Styled(div)
+                                        hasScore={true}
                                         hasWon={false}
                                       >
                                         <div
