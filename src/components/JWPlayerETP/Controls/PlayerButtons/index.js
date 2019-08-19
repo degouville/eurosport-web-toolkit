@@ -14,11 +14,8 @@ const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause, isBuff
     <Label>15</Label>
     <CentralContainer isBuffering={isBuffering}>
       {isBuffering && <SpinnerStyled width="90px" />}
-      {isPlaying ? (
-        <MainIcon src={pause} alt="Pause" onClick={onPause} />
-      ) : (
-        <MainIcon src={play} alt="Play" onClick={onPlay} />
-      )}
+      <MainIcon hidden={!isPlaying} src={pause} alt="Pause" onClick={onPause} />
+      <MainIcon hidden={isPlaying} src={play} alt="Play" onClick={onPlay} />
     </CentralContainer>
     <Label>15</Label>
     <SecondIcon src={forward} alt="Forward" onClick={onForward} />

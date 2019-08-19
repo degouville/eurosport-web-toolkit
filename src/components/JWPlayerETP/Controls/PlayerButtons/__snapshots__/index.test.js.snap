@@ -14,7 +14,14 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
     isBuffering={false}
   >
     <Styled(img)
+      alt="Pause"
+      hidden={true}
+      onClick={[MockFunction]}
+      src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+    />
+    <Styled(img)
       alt="Play"
+      hidden={false}
       onClick={[MockFunction]}
       src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
     />
@@ -45,8 +52,15 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
   >
     <Styled(img)
       alt="Pause"
+      hidden={false}
       onClick={[MockFunction]}
       src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+    />
+    <Styled(img)
+      alt="Play"
+      hidden={true}
+      onClick={[MockFunction]}
+      src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
     />
   </Styled(div)>
   <Styled(p)>
