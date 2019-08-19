@@ -16,6 +16,7 @@ describe('Components|PlayerSkin', () => {
     onForward: jest.fn(),
     onRewind: jest.fn(),
     onSeek: jest.fn(),
+    onVolume: jest.fn(),
     isPlaying: false,
     isFullscreen: false,
     isLive: true,
@@ -23,6 +24,8 @@ describe('Components|PlayerSkin', () => {
     seekMin: 0,
     seekMax: 100,
     seekPosition: 50,
+    volume: 50,
+    mute: false,
     controls: false,
     isBuffering: true,
     ...newProps,
@@ -193,7 +196,7 @@ describe('Components|PlayerSkin', () => {
       wrapper = shallow(<PlayerSkin {...props} />);
 
       // When
-      callControlActions(['onPlay', 'onPause', 'onFullscreenChange', 'onForward', 'onRewind', 'onSeek']);
+      callControlActions(['onPlay', 'onPause', 'onFullscreenChange', 'onForward', 'onRewind', 'onSeek', 'onVolume']);
 
       // Expect
       expect(props.onPlay).toHaveBeenCalled();
@@ -201,11 +204,25 @@ describe('Components|PlayerSkin', () => {
       expect(props.onForward).toHaveBeenCalled();
       expect(props.onRewind).toHaveBeenCalled();
       expect(props.onSeek).toHaveBeenCalled();
+      expect(props.onVolume).toHaveBeenCalled();
       expect(onFullscreenChange).toHaveBeenCalled();
-      expect(handlePlayerInteraction).toHaveBeenCalledTimes(6);
+      expect(handlePlayerInteraction).toHaveBeenCalledTimes(7);
     });
 
-    it('Should forward props to wrapped function', () => {
+    it('Should forward volume props', () => {
+      // Given
+      const props = createDefaultProps({ isPlaying: true });
+      wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      wrapper.find(Controls).prop('onVolume')(42);
+
+      // Expect
+      expect(props.onVolume).toHaveBeenCalledWith(42);
+      expect(handlePlayerInteraction).toHaveBeenCalled();
+    });
+
+    it('Should forward seek props', () => {
       // Given
       const props = createDefaultProps({ isPlaying: true });
       wrapper = shallow(<PlayerSkin {...props} />);

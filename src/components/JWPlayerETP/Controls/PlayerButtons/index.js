@@ -47,10 +47,12 @@ const Label = styled.p`
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  user-select: none;
 `;
 
 const SecondIcon = styled.img`
   height: 44px;
+  user-select: none;
 `;
 
 export const SpinnerStyled = styled(Spinner)`
@@ -78,6 +80,7 @@ const CentralContainer = styled.div`
 
 const MainIcon = styled.img`
   height: 64px;
+  user-select: none;
 `;
 
 export default PlayerButtons;

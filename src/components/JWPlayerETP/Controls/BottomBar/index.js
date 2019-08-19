@@ -2,15 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { withTheme } from 'emotion-theming';
-import Volume from 'src/assets/icon-volume.svg';
 import { HorizontalSeparator, VerticalSeparator } from '../UI/separators';
 import BarControlWrapper from '../UI/barControlWrapper';
 import LiveStatus from '../LiveStatus';
-import Icon from '../UI/icon';
 import BarContainer from '../UI/bar';
 import Slider from '../Slider';
+import Volume from '../Volume';
 
-export const BottomBar = ({ isLive, rewindCounts, children, theme, onSeek, seekMin, seekMax, seekPosition }) => (
+export const BottomBar = ({
+  isLive,
+  rewindCounts,
+  children,
+  theme,
+  onSeek,
+  seekMin,
+  seekMax,
+  seekPosition,
+  volume,
+  onVolume,
+  mute,
+}) => (
   <BottomBarContainer>
     <HorizontalSeparator />
     <BarElementsContainer>
@@ -30,9 +41,7 @@ export const BottomBar = ({ isLive, rewindCounts, children, theme, onSeek, seekM
           <LiveStatus isLive={isLive} rewindCounts={rewindCounts} />
         </BarControlWrapper>
         <VerticalSeparator />
-        <BarControlWrapper medium>
-          <Icon src={Volume} alt="Volume" />
-        </BarControlWrapper>
+        <Volume volume={volume} mute={mute} onVolume={onVolume} />
         {children}
       </BarActionsContainer>
     </BarElementsContainer>
@@ -54,6 +63,7 @@ BottomBar.propTypes = {
   seekMin: PropTypes.number.isRequired,
   seekMax: PropTypes.number.isRequired,
   seekPosition: PropTypes.number.isRequired,
+  ...Volume.propTypes,
 };
 
 const BottomBarContainer = styled.div`

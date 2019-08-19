@@ -25,6 +25,9 @@ describe('Components|JWPlayerETP|Controls|BottomBar', () => {
         },
       },
     },
+    volume: 50,
+    mute: false,
+    onVolume: jest.fn(),
     ...newProps,
   });
 

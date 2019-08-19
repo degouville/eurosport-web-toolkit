@@ -39,6 +39,7 @@ const RewindText = styled.p`
   ${({ length }) => `width: ${length}ch;`}
   line-height: 16px;
   text-align: center;
+  user-select: none;
 `;
 
 const Icon = styled.div`

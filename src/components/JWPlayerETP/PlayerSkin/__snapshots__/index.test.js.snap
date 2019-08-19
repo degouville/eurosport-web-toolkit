@@ -25,16 +25,19 @@ exports[`Components|PlayerSkin should match snapshot 1`] = `
       isFullscreen={false}
       isLive={true}
       isPlaying={true}
+      mute={false}
       onForward={[Function]}
       onFullscreenChange={[Function]}
       onPause={[Function]}
       onPlay={[Function]}
       onRewind={[Function]}
       onSeek={[Function]}
+      onVolume={[Function]}
       rewindCounts={null}
       seekMax={100}
       seekMin={0}
       seekPosition={50}
+      volume={50}
     />
   </Styled(div)>
 </Styled(div)>

@@ -23,6 +23,9 @@ const Controls = ({
   seekMin,
   seekMax,
   seekPosition,
+  volume,
+  onVolume,
+  mute,
 }) => {
   const { isMobile } = useScreenInformation();
 
@@ -51,6 +54,9 @@ const Controls = ({
         seekMin={seekMin}
         seekMax={seekMax}
         seekPosition={seekPosition}
+        onVolume={onVolume}
+        volume={volume}
+        mute={mute}
       >
         {!isMobile && (
           <>
@@ -78,6 +84,9 @@ Controls.propTypes = {
   seekMin: PropTypes.number.isRequired,
   seekMax: PropTypes.number.isRequired,
   seekPosition: PropTypes.number.isRequired,
+  onVolume: PropTypes.func.isRequired,
+  volume: PropTypes.number.isRequired,
+  mute: PropTypes.bool.isRequired,
 };
 
 const MainContainer = styled.div`

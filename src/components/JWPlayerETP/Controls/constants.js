@@ -1,0 +1,2 @@
+export const BOTTOM_BAR_HEIGHT_MOBILE = 45;
+export const BOTTOM_BAR_HEIGHT_DESKTOP = 72;

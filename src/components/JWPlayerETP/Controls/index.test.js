@@ -22,6 +22,9 @@ describe('Components|JWPlayerETP|Controls', () => {
     seekMax: 100,
     seekPosition: 50,
     isBuffering: false,
+    volume: 50,
+    mute: false,
+    onVolume: jest.fn(),
     ...newProps,
   });
 

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Component Should match snapshot with bottomDisplay false 1`] = `
+<Dropdown
+  bottomDisplay={false}
+>
+  <Styled(div)>
+    <div
+      className="css-tr4osj en481wg0"
+    >
+      <Styled(div)
+        bottomDisplay={false}
+      >
+        <div
+          className="css-wmspgv en481wg1"
+        >
+          <Styled(div)
+            bottomDisplay={false}
+          >
+            <div
+              className="css-tldtjn en481wg2"
+            />
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="css-1sl2n5v en481wg3"
+            >
+              <Child>
+                <div />
+              </Child>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</Dropdown>
+`;
+
+exports[`Dropdown Component Should match snapshot with bottomDisplay true 1`] = `
+<Dropdown
+  bottomDisplay={true}
+>
+  <Styled(div)>
+    <div
+      className="css-tr4osj en481wg0"
+    >
+      <Styled(div)
+        bottomDisplay={true}
+      >
+        <div
+          className="css-1p2na94 en481wg1"
+        >
+          <Styled(div)
+            bottomDisplay={true}
+          >
+            <div
+              className="css-12sprt9 en481wg2"
+            />
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="css-1sl2n5v en481wg3"
+            >
+              <Child>
+                <div />
+              </Child>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</Dropdown>
+`;

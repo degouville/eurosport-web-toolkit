@@ -95,6 +95,10 @@ export default {
     },
   },
   playerControls: {
+    dropdown: {
+      background: transparentize(0.1, coreDarkBase),
+      border: transparentize(0.2, coreNeutral6),
+    },
     seek: {
       trackColor: dodgerBlue2,
       handleSize: 20,
@@ -105,7 +109,7 @@ export default {
     },
     volume: {
       trackColor: dodgerBlue2,
-      handleSize: 14,
+      handleSize: 20,
       handleColor: coreLightBase,
       railColor: rgba(coreNeutral1, 0.3),
       railThickness: 5,

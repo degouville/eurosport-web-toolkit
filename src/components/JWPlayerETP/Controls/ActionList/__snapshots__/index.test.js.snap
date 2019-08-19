@@ -4,14 +4,6 @@ exports[`Components|JWPlayerETP|Controls|BottomBar Should match snapshot 1`] = `
 <Fragment>
   <Styled(div)
     medium={true}
-  >
-    <Styled(img)
-      alt="Language"
-      src="/eurosport-web-toolkit/203b0a9c38be6e5e8480dfe9c61b5a34.svg"
-    />
-  </Styled(div)>
-  <Styled(div)
-    medium={true}
     onClick={[MockFunction]}
   >
     <Styled(img)

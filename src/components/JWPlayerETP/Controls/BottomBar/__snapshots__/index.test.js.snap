@@ -27,14 +27,11 @@ exports[`Components|JWPlayerETP|Controls|BottomBar Should match snapshot 1`] = `
         />
       </Styled(div)>
       <Styled(div) />
-      <Styled(div)
-        medium={true}
-      >
-        <Styled(img)
-          alt="Volume"
-          src="/eurosport-web-toolkit/ef955024912ed19372a38f4bbdec99e4.svg"
-        />
-      </Styled(div)>
+      <WithTheme(Volume)
+        mute={false}
+        onVolume={[MockFunction]}
+        volume={50}
+      />
       <Component />
     </Styled(div)>
   </Styled(div)>

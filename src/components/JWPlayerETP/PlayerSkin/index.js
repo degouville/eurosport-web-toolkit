@@ -14,7 +14,7 @@ const useKeepInteraction = (action, handleInteraction) =>
     [action, handleInteraction]
   );
 
-const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSeek, controls, ...props }) => {
+const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSeek, onVolume, controls, ...props }) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({ isPlaying });
   const MainContainerRef = useRef();
 
@@ -26,6 +26,7 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSee
   const onForwardKeepInteraction = useKeepInteraction(onForward, handlePlayerInteraction);
   const onRewindKeepInteraction = useKeepInteraction(onRewind, handlePlayerInteraction);
   const onSeekKeepInteraction = useKeepInteraction(onSeek, handlePlayerInteraction);
+  const onVolumeKeepInteraction = useKeepInteraction(onVolume, handlePlayerInteraction);
 
   return (
     <MainContainer
@@ -49,6 +50,7 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSee
             onForward={onForwardKeepInteraction}
             onRewind={onRewindKeepInteraction}
             onSeek={onSeekKeepInteraction}
+            onVolume={onVolumeKeepInteraction}
             {...props}
           />
         </Overlay>
@@ -57,8 +59,10 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSee
   );
 };
 
+// eslint-disable-next-line react/forbid-foreign-prop-types
+const { onFullscreenChange: _, ...ControlsPropTypes } = Controls.propTypes;
 PlayerSkin.propTypes = {
-  ...Controls.propTypes,
+  ...ControlsPropTypes,
   id: PropTypes.string.isRequired,
   isPlaying: PropTypes.bool.isRequired,
   controls: PropTypes.bool.isRequired,
