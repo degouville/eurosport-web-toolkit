@@ -1,6 +1,7 @@
 import React, { useCallback, useRef } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
+import Spinner from 'src/elements/Spinner';
 import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
@@ -14,7 +15,19 @@ const useKeepInteraction = (action, handleInteraction) =>
     [action, handleInteraction]
   );
 
-const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSeek, onVolume, controls, ...props }) => {
+const PlayerSkin = ({
+  isBuffering,
+  isPlaying,
+  id,
+  onPlay,
+  onPause,
+  onForward,
+  onRewind,
+  onSeek,
+  onVolume,
+  controls,
+  ...props
+}) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({ isPlaying });
   const MainContainerRef = useRef();
 
@@ -28,6 +41,9 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSee
   const onSeekKeepInteraction = useKeepInteraction(onSeek, handlePlayerInteraction);
   const onVolumeKeepInteraction = useKeepInteraction(onVolume, handlePlayerInteraction);
 
+  const showSpinner = !active && isBuffering;
+  const showControls = showSpinner === false && (!isPlaying || active);
+
   return (
     <MainContainer
       innerRef={MainContainerRef}
@@ -40,20 +56,30 @@ const PlayerSkin = ({ isPlaying, id, onPlay, onPause, onForward, onRewind, onSee
     >
       <JWPlayerContainer id={id} />
       {controls === false && (
-        <Overlay active={isPlaying === false ? true : active}>
-          <Controls
-            isPlaying={isPlaying}
-            onPlay={onPlayKeepInteraction}
-            onPause={onPauseKeepInteraction}
-            isFullscreen={isFullscreen}
-            onFullscreenChange={onFullscreenChangeKeepInteraction}
-            onForward={onForwardKeepInteraction}
-            onRewind={onRewindKeepInteraction}
-            onSeek={onSeekKeepInteraction}
-            onVolume={onVolumeKeepInteraction}
-            {...props}
-          />
-        </Overlay>
+        <>
+          <ControlsOverlay active={showControls}>
+            <Controls
+              isPlaying={isPlaying}
+              isBuffering={isBuffering}
+              onPlay={onPlayKeepInteraction}
+              onPause={onPauseKeepInteraction}
+              isFullscreen={isFullscreen}
+              onFullscreenChange={onFullscreenChangeKeepInteraction}
+              onForward={onForwardKeepInteraction}
+              onRewind={onRewindKeepInteraction}
+              onSeek={onSeekKeepInteraction}
+              onVolume={onVolumeKeepInteraction}
+              {...props}
+            />
+          </ControlsOverlay>
+          {showSpinner && (
+            <SpinnerOverlay>
+              <SpinnerContainer>
+                <Spinner width="90px" />
+              </SpinnerContainer>
+            </SpinnerOverlay>
+          )}
+        </>
       )}
     </MainContainer>
   );
@@ -68,13 +94,7 @@ PlayerSkin.propTypes = {
   controls: PropTypes.bool.isRequired,
 };
 
-const Visible = styled.css`
-  visibility: visible;
-  transform: translateY(0%);
-  transition: transform 300ms ease-in-out;
-`;
-
-export const Overlay = styled.div`
+const CommonOverlay = css`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -84,11 +104,34 @@ export const Overlay = styled.div`
   opacity: 1;
   flex-direction: column;
   justify-content: center;
+`;
 
+const Visible = styled.css`
+  visibility: visible;
+  transform: translateY(0%);
+  transition: transform 300ms ease-in-out;
+`;
+
+export const ControlsOverlay = styled.div`
+  ${CommonOverlay}
   ${({ active }) => active && Visible}
-
   transform: translateY(100%);
   transition: transform 300ms ease-in-out, visibility 300ms;
+`;
+
+export const SpinnerOverlay = styled.div`
+  ${CommonOverlay}
+`;
+
+const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const MainContainer = styled.div`

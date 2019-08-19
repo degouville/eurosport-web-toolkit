@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PlayerSkin, { Overlay } from './index';
+import PlayerSkin, { ControlsOverlay, SpinnerOverlay } from './index';
 import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
@@ -27,11 +27,12 @@ describe('Components|PlayerSkin', () => {
     volume: 50,
     mute: false,
     controls: false,
-    isBuffering: true,
+    isBuffering: false,
     ...newProps,
   });
 
-  const getActiveState = wrp => wrp.find(Overlay).prop('active');
+  const getControlsActiveState = wrp => wrp.find(ControlsOverlay).prop('active');
+  const getSpinnerActiveState = wrp => wrp.find(SpinnerOverlay).exists();
 
   beforeEach(() => {
     useInteraction.mockImplementation(jest.requireActual('./useInteraction').default);
@@ -58,7 +59,7 @@ describe('Components|PlayerSkin', () => {
       const wrapper = shallow(<PlayerSkin {...props} />);
 
       // When
-      const result = wrapper.find(Overlay).exists();
+      const result = wrapper.find(ControlsOverlay).exists();
 
       // Expect
       expect(result).toBe(true);
@@ -70,7 +71,7 @@ describe('Components|PlayerSkin', () => {
       const wrapper = shallow(<PlayerSkin {...props} />);
 
       // When
-      const result = wrapper.find(Overlay).exists();
+      const result = wrapper.find(ControlsOverlay).exists();
 
       // Expect
       expect(result).toBe(false);
@@ -82,7 +83,7 @@ describe('Components|PlayerSkin', () => {
       const wrapper = shallow(<PlayerSkin {...props} />);
 
       // When
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeFalsy();
@@ -92,8 +93,9 @@ describe('Components|PlayerSkin', () => {
       // Given
       const props = createDefaultProps({ isPlaying: false });
       const wrapper = shallow(<PlayerSkin {...props} />);
+
       // When
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();
@@ -106,10 +108,36 @@ describe('Components|PlayerSkin', () => {
 
       // When
       wrapper.prop('onMouseOver')();
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();
+    });
+
+    it('Should not show skin when buffering', () => {
+      // Given
+      const props = createDefaultProps({ isPlaying: true, isBuffering: true });
+      const wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      const isActive = getControlsActiveState(wrapper);
+
+      // Expect
+      expect(isActive).toBe(false);
+    });
+  });
+
+  describe('Spinner display', () => {
+    it('Should show spinner on buffering', () => {
+      // Given
+      const props = createDefaultProps({ isPlaying: true, isBuffering: true });
+      const wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      const isActive = getSpinnerActiveState(wrapper);
+
+      // Expect
+      expect(isActive).toBe(true);
     });
   });
 
@@ -133,7 +161,7 @@ describe('Components|PlayerSkin', () => {
     it('Should handle onMouseOver events', () => {
       // When
       wrapper.prop('onMouseOver')();
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();
@@ -142,7 +170,7 @@ describe('Components|PlayerSkin', () => {
     it('Should handle onFocus events', () => {
       // When
       wrapper.prop('onFocus')();
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();
@@ -151,7 +179,7 @@ describe('Components|PlayerSkin', () => {
     it('Should handle onMouseMove events', () => {
       // When
       wrapper.prop('onMouseMove')();
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();
@@ -160,7 +188,7 @@ describe('Components|PlayerSkin', () => {
     it('Should handle onTouchMove events', () => {
       // When
       wrapper.prop('onTouchMove')();
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();
@@ -169,7 +197,7 @@ describe('Components|PlayerSkin', () => {
     it('Should handle onTouchStart events', () => {
       // When
       wrapper.prop('onTouchStart')();
-      const isActive = getActiveState(wrapper);
+      const isActive = getControlsActiveState(wrapper);
 
       // Expect
       expect(isActive).toBeTruthy();

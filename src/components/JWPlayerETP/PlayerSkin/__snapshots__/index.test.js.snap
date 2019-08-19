@@ -21,7 +21,7 @@ exports[`Components|PlayerSkin should match snapshot 1`] = `
     active={false}
   >
     <Controls
-      isBuffering={true}
+      isBuffering={false}
       isFullscreen={false}
       isLive={true}
       isPlaying={true}
