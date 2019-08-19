@@ -49,7 +49,6 @@ PlayerStatistics.propTypes = {
 };
 
 const StyledContainer = styled.div`
-  margin: 16px;
   color: ${({ theme }) => theme.typo.primary.color};
   background: ${({ theme }) => theme.statistics.background.one};
   background-image: linear-gradient(
