@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import LinesEllipsis from 'react-lines-ellipsis';
 import LinesEllipsisResponsive from 'react-lines-ellipsis/lib/responsiveHOC';
+import CardPlaceholder from 'src/assets/card-placeholder.jpg';
 import { coreLightMinus1, coreNeutral3, coreNeutral10, coreLightBase, coreNeutral4 } from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import { fontAlphaHeadline, fontInterUi, H2 } from '../../typography';
@@ -167,7 +168,7 @@ const mobileStyles = `
 
 const tabletStyles = `
   height: 352px;
-  
+
   ${DivTextWrapper} {
     top: 185px;
   }
@@ -225,7 +226,7 @@ const desktopStyles = `
 const BaseCard = styled(props => (
   <LinkCard className={props.className} target={props.target} href={props.link} data-test="contentCardv2">
     <DivImageContainer>
-      {props.image && <Image src={props.image} alt={props.title} darkness={props.darkness} />}
+      <Image src={props.image || CardPlaceholder} alt={props.title} darkness={props.darkness} />
       <SpanImageOverlay />
       <SpanBottomOverlay />
     </DivImageContainer>

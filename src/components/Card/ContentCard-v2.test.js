@@ -38,8 +38,16 @@ describe('Content card v2', () => {
     expect(wrapper.dive().find(Image).length).toEqual(1);
   });
 
-  it('should not render image tag when no image provided', () => {
-    const wrapper = shallow(<CardBig {...cardData} image="" />);
-    expect(wrapper.dive().find(Image).length).toBe(0);
+  it('should render placeholder if no image provided', () => {
+    // GIVEN
+    const wrapper = shallow(<CardBig {...cardData} image={null} />);
+
+    // WHEN
+    const images = wrapper.dive().find(Image);
+    const { src: imageSrc } = images.first().props();
+
+    // EXPECT
+    expect(images.length).toEqual(1);
+    expect(imageSrc).toContain('/eurosport-web-toolkit/');
   });
 });

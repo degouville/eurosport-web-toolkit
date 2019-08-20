@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import ChannelIcon from 'src/elements/ChannelIcon';
+import CardPlaceholder from 'src/assets/card-placeholder.jpg';
 import PlayIcon, { hoverStyles as playIconHoverStyle } from '../../elements/PlayIcon';
 import * as colors from '../../colors';
 import Link from '../../elements/Link';
 import LiveLabel from '../../elements/LiveLabel';
 import CardDetails from './CardDetails';
 
-const StyledImage = styled.div`
+export const StyledImage = styled.div`
   height: 180px;
   background-image: ${({ src }) => `url(${src})`};
   background-size: cover;
@@ -61,7 +62,7 @@ export const StyledLiveLabel = styled(LiveLabel)`
 `;
 
 const ContentCard = ({ card, type, ...props }) => {
-  const { img, url, liveLabel, ...cardDetails } = card;
+  const { url, liveLabel, ...cardDetails } = card;
   const isLive = type === 'live';
   const isPlayable = isLive || type === 'vod';
   const icon = isLive ? <ChannelIcon height={15} type={card.channel} /> : null;
@@ -69,7 +70,7 @@ const ContentCard = ({ card, type, ...props }) => {
   return (
     <StyledCard {...props} href={url} data-test="content-card">
       <StyledHeader>
-        <StyledImage src={img} />
+        <StyledImage src={card?.img || CardPlaceholder} />
         {isPlayable && <StyledPlayIcon height={50} />}
         {isLive && <StyledLiveLabel>● {liveLabel}</StyledLiveLabel>}
       </StyledHeader>

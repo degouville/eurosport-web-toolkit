@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a WatchbarCard 1`] = `
+exports[`Watchbar card renders a WatchbarCard 1`] = `
 <Styled(Link)
   data-aa-livetowatch="what-to-watch-bar:block-1:eurosport-france:masters-1000-indian-wells"
   href="/article/id"

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import CompactCard from './CompactCard';
+import CompactCard, { StyledImage } from './CompactCard';
 
 const mockCardData = {
   img: 'https://i.eurosport.com/2018/10/29/2450727-50913270-2560-1440.jpg?w=200',
@@ -39,5 +39,23 @@ describe('Compact card', () => {
 
     expect(wrapper.render().attr('href')).toEqual('http://test.com');
     expect(wrapper.render().is('a')).toEqual(true);
+  });
+
+  it('should render image', () => {
+    const wrapper = shallow(<CompactCard {...mockCardData} />);
+    expect(wrapper.dive().find(StyledImage).length).toEqual(1);
+  });
+
+  it('should render placeholder if no image provided', () => {
+    // GIVEN
+    const wrapper = shallow(<CompactCard {...mockCardData} image={null} />);
+
+    // WHEN
+    const images = wrapper.dive().find(StyledImage);
+    const { img: imageSrc } = images.first().props();
+
+    // EXPECT
+    expect(images.length).toEqual(1);
+    expect(imageSrc).toContain('/eurosport-web-toolkit/');
   });
 });

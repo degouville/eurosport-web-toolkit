@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import LinesEllipsis from 'react-lines-ellipsis';
 import LinesEllipsisResponsive from 'react-lines-ellipsis/lib/responsiveHOC';
+import CardPlaceholder from 'src/assets/card-placeholder.jpg';
 import * as colors from '../../colors';
 import PlayIcon, { hoverStyles as playIconHoverStyle } from '../../elements/PlayIcon';
 import ChannelIcon from '../../elements/ChannelIcon';
@@ -12,7 +13,7 @@ import { fontHelvetica } from '../../typography';
 
 const ResponsiveEllipsis = LinesEllipsisResponsive()(LinesEllipsis);
 
-const StyledImage = styled.div`
+export const StyledImage = styled.div`
   background-image: ${({ src }) => `url(${src})`};
   background-size: cover;
   background-position: 50% 0;
@@ -142,7 +143,7 @@ const WatchbarCard = ({ card, trackingPosition, ...props }) => {
   return (
     <StyledCard {...props} href={url} data-aa-livetowatch={dataTracking}>
       <StyledHeader>
-        <StyledImage src={img} />
+        <StyledImage src={img || CardPlaceholder} />
         <StyledChannelIcon height={15} type={card.channel} />
         <StyledPlayIcon height={32} />
         {isLive && <StyledLiveLabel>{liveLabel}</StyledLiveLabel>}
