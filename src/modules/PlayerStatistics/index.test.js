@@ -5,7 +5,7 @@ import theme from 'src/theme';
 import PlayerStatistics from '.';
 import { names, comparisonPoints } from './mock/data';
 
-import { setGradient, addPercentMark } from './utils';
+import { setStatsBar, addPercentMark } from './utils';
 
 describe('PlayerStatistics', () => {
   describe('Component', () => {
@@ -30,30 +30,40 @@ describe('PlayerStatistics', () => {
       const options = {
         firstValue: 6,
         secondValue: 8,
-        maximumValue: 10,
+        maximumValue: 16,
         colorOne: 'blue',
         colorTwo: 'red',
       };
 
       // When
-      const gradient = setGradient({ ...options });
+      const statsBar = setStatsBar({ ...options });
 
       // Expect
-      const wantedGradient = `
-    linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 20%,
-      blue 20%,
-      blue 50%,
-      red 50%,
-      red 90%,
-      transparent 90%,
-      transparent
-    )
+      const wantedBar = `&:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 50%;
+        top: 0;
+        bottom: 0;
+        width: 18%;
+        background: blue;
+        transition: width 0.3s ease-out;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 25%;
+        background: red;
+        transition: width 0.3s ease-out;
+      }
   `;
 
-      expect(gradient).toBe(wantedGradient);
+      expect(statsBar).toBe(wantedBar);
     });
 
     it('add percentage mark', () => {

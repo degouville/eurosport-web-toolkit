@@ -10,7 +10,7 @@ exports[`PlayerStatistics Component renders as expected 1`] = `
           "two": 8,
         },
         "id": 223341,
-        "maximumValue": 10,
+        "maximumValue": 11,
         "title": "ages",
       },
       Object {
@@ -19,7 +19,7 @@ exports[`PlayerStatistics Component renders as expected 1`] = `
           "two": 1,
         },
         "id": 223342,
-        "maximumValue": 5,
+        "maximumValue": 3,
         "title": "double faults",
       },
       Object {
@@ -58,7 +58,7 @@ exports[`PlayerStatistics Component renders as expected 1`] = `
           "two": 8,
         },
         "id": 223346,
-        "maximumValue": 10,
+        "maximumValue": 11,
         "title": "point won second ball",
       },
       Object {
@@ -67,7 +67,7 @@ exports[`PlayerStatistics Component renders as expected 1`] = `
           "two": 1,
         },
         "id": 223347,
-        "maximumValue": 5,
+        "maximumValue": 4,
         "title": "double faults",
       },
     ]

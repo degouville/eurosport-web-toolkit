@@ -1,25 +1,30 @@
-export const setGradient = ({ firstValue, secondValue, maximumValue, colorOne, colorTwo }) => {
+export const setStatsBar = ({ firstValue, secondValue, maximumValue, colorOne, colorTwo }) => {
   // NOTE: share values on a range of 100%
-  const b = Math.floor(((firstValue / maximumValue) * 100) / 2);
-  const c = Math.floor(((secondValue / maximumValue) * 100) / 2);
-  const a = 100 / 2 - b;
+  const playerOne = Math.floor(((firstValue / maximumValue) * 100) / 2);
+  const playerTwo = Math.floor(((secondValue / maximumValue) * 100) / 2);
 
-  const offset = a;
-  const playerOne = offset + b;
-  const playerTwo = playerOne + c;
-
-  return `
-    linear-gradient(
-      to right,
-      transparent 0%,
-      transparent ${offset}%,
-      ${colorOne} ${offset}%,
-      ${colorOne} ${playerOne}%,
-      ${colorTwo} ${playerOne}%,
-      ${colorTwo} ${playerTwo}%,
-      transparent ${playerTwo}%,
-      transparent
-    )
+  return `&:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 50%;
+        top: 0;
+        bottom: 0;
+        width: ${playerOne}%;
+        background: ${colorOne};
+        transition: width 0.3s ease-out;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: ${playerTwo}%;
+        background: ${colorTwo};
+        transition: width 0.3s ease-out;
+      }
   `;
 };
 

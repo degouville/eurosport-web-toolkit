@@ -11,7 +11,7 @@ export const comparisonPoints = [
       one: 3,
       two: 8,
     },
-    maximumValue: 10,
+    maximumValue: 11,
   },
   {
     id: 223342,
@@ -20,7 +20,7 @@ export const comparisonPoints = [
       one: 2,
       two: 1,
     },
-    maximumValue: 5,
+    maximumValue: 3,
   },
   {
     id: 223343,
@@ -59,7 +59,7 @@ export const comparisonPoints = [
       one: 3,
       two: 8,
     },
-    maximumValue: 10,
+    maximumValue: 11,
   },
   {
     id: 223347,
@@ -68,6 +68,6 @@ export const comparisonPoints = [
       one: 3,
       two: 1,
     },
-    maximumValue: 5,
+    maximumValue: 4,
   },
 ];

@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import { H6 } from 'src/typography';
 import theme from 'src/theme';
 import * as breakpoints from 'src/breakpoints';
-import { setGradient, addPercentMark } from './utils';
+import { setStatsBar, addPercentMark } from './utils';
 
 const Comparison = ({ title, currentValues, maximumValue, isPercent, id }) => {
   const { one, two } = currentValues;
   const { colorOne, colorTwo } = theme.statistics.comparison;
   const config = { firstValue: one, secondValue: two, maximumValue, colorOne, colorTwo };
   return (
-    <StyledComparison gradient={setGradient(config)} key={id}>
+    <StyledComparison statsBar={setStatsBar(config)} key={id}>
       <StyledValue>{addPercentMark(isPercent, one)}</StyledValue>
       <StyledLabel>{title}</StyledLabel>
       <StyledValue>{addPercentMark(isPercent, two)}</StyledValue>
@@ -35,11 +35,12 @@ const StyledComparison = styled.li`
   display: flex;
   justify-content: space-around;
   background: ${props => props.theme.statistics.comparison.background};
-  background-image: ${({ gradient }) => gradient};
   margin: 0 0 20px 0;
+  position: relative;
   &:last-of-type {
     margin: 0;
   }
+  ${({ statsBar }) => statsBar};
 `;
 
 const ValueCommonStyle = css`
@@ -55,14 +56,16 @@ const ValueCommonStyle = css`
 
 const StyledValue = styled.p`
   ${ValueCommonStyle}
+  z-index: 1;
   font-size: 12px;
   ${breakpoints.medium(css`
     font-size: 14px;
-  `)}
+  `)};
 `;
 
 const StyledLabel = styled(H6)`
   ${ValueCommonStyle}
+  z-index: 1;
   flex: 4;
   font-size: 10px;
   ${breakpoints.small(css`
