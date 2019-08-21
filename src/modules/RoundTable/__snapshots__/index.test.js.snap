@@ -7517,11 +7517,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={true}
+              id={123445}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -8137,11 +8144,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={true}
+              id={122334}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -8733,11 +8747,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={false}
+              id={122224}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -9227,11 +9248,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={true}
+              id={111235}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -9847,11 +9875,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={true}
+              id={123446}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -10467,11 +10502,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={true}
+              id={122335}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -11063,11 +11105,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={false}
+              id={122225}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)
@@ -11557,11 +11606,18 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
               }
               displayLeftCircle={false}
               hasButton={false}
+              hasWon={true}
+              id={123454}
               isLive={false}
               isWatchable={false}
               liveButtonText="Live"
               matchInfoButtonText="Match Info"
               matchUrl="https://eurosport.com"
+              round={
+                Object {
+                  "number": 1,
+                }
+              }
               schedule={null}
             >
               <Styled(Link)

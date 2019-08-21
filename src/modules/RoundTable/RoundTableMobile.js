@@ -72,9 +72,9 @@ export default class RoundTableMobile extends Component {
 
         {hasMatches && (
           <StyledMatches>
-            {matches.map(({ id, matchUrl, data }) => (
-              <StyledScoreBlock key={id}>
-                <ScoreBlock.ScoreBlock matchUrl={matchUrl} data={data} hasButton={false} />
+            {matches.map(match => (
+              <StyledScoreBlock key={match.id}>
+                <ScoreBlock.ScoreBlock {...match} hasButton={false} />
               </StyledScoreBlock>
             ))}
           </StyledMatches>

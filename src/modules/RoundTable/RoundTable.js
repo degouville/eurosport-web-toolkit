@@ -67,7 +67,7 @@ export const RoundColumn = ({ matches, round }) => (
       <Column>
         {matches.map(match => (
           <StyledScoreBlockWrapper key={match.id}>
-            <ScoreBlock.ScoreBlock matchUrl={match.matchUrl} data={match.data} hasButton={false} />
+            <ScoreBlock.ScoreBlock {...match} hasButton={false} />
           </StyledScoreBlockWrapper>
         ))}
       </Column>
