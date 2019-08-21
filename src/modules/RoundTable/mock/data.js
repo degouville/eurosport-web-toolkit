@@ -12,13 +12,13 @@ export const rounds = [
   {
     id: 5038,
     name: '3e tour',
-    highligthed: true,
+    highlighted: true,
     number: 3,
   },
   {
     id: 5034,
     name: '4e tour',
-    highligthed: true,
+    highlighted: true,
     number: 4,
   },
   {
@@ -36,7 +36,7 @@ export const rounds = [
     id: 5088,
     name: 'Finale',
     disabled: true,
-    highligthed: true,
+    highlighted: true,
     number: 7,
   },
 ];

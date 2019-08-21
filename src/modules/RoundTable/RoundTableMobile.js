@@ -32,7 +32,7 @@ export default class RoundTableMobile extends Component {
         label: PropTypes.string.isRequired,
         href: PropTypes.string.isRequired,
         disabled: PropTypes.boolean,
-        highligthed: PropTypes.boolean,
+        highlighted: PropTypes.boolean,
       })
     ).isRequired,
     initialTab: PropTypes.number,

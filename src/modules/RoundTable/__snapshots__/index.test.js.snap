@@ -6879,43 +6879,43 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
     Array [
       Object {
         "disabled": undefined,
-        "highligthed": undefined,
+        "highlighted": undefined,
         "href": "1",
         "label": "1er tour",
       },
       Object {
         "disabled": undefined,
-        "highligthed": undefined,
+        "highlighted": undefined,
         "href": "2",
         "label": "2e tour",
       },
       Object {
         "disabled": undefined,
-        "highligthed": true,
+        "highlighted": true,
         "href": "3",
         "label": "3e tour",
       },
       Object {
         "disabled": undefined,
-        "highligthed": true,
+        "highlighted": true,
         "href": "4",
         "label": "4e tour",
       },
       Object {
         "disabled": undefined,
-        "highligthed": undefined,
+        "highlighted": undefined,
         "href": "5",
         "label": "Quart de finale",
       },
       Object {
         "disabled": true,
-        "highligthed": undefined,
+        "highlighted": undefined,
         "href": "6",
         "label": "Demi-finale",
       },
       Object {
         "disabled": true,
-        "highligthed": true,
+        "highlighted": true,
         "href": "7",
         "label": "Finale",
       },
@@ -6935,43 +6935,43 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
             Array [
               Object {
                 "disabled": undefined,
-                "highligthed": undefined,
+                "highlighted": undefined,
                 "href": "1",
                 "label": "1er tour",
               },
               Object {
                 "disabled": undefined,
-                "highligthed": undefined,
+                "highlighted": undefined,
                 "href": "2",
                 "label": "2e tour",
               },
               Object {
                 "disabled": undefined,
-                "highligthed": true,
+                "highlighted": true,
                 "href": "3",
                 "label": "3e tour",
               },
               Object {
                 "disabled": undefined,
-                "highligthed": true,
+                "highlighted": true,
                 "href": "4",
                 "label": "4e tour",
               },
               Object {
                 "disabled": undefined,
-                "highligthed": undefined,
+                "highlighted": undefined,
                 "href": "5",
                 "label": "Quart de finale",
               },
               Object {
                 "disabled": true,
-                "highligthed": undefined,
+                "highlighted": undefined,
                 "href": "6",
                 "label": "Demi-finale",
               },
               Object {
                 "disabled": true,
-                "highligthed": true,
+                "highlighted": true,
                 "href": "7",
                 "label": "Finale",
               },
@@ -7036,7 +7036,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                             >
                               <a
                                 class="css-902mcp e2kk1al1"
-                                data-highligthed="true"
+                                data-highlighted="true"
                                 href="3"
                               >
                                 3e tour
@@ -7048,7 +7048,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                             >
                               <a
                                 class="css-902mcp e2kk1al1"
-                                data-highligthed="true"
+                                data-highlighted="true"
                                 href="4"
                               >
                                 4e tour
@@ -7131,7 +7131,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                               >
                                 <a
                                   class="css-902mcp e2kk1al1"
-                                  data-highligthed="true"
+                                  data-highlighted="true"
                                   href="3"
                                 >
                                   3e tour
@@ -7143,7 +7143,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                               >
                                 <a
                                   class="css-902mcp e2kk1al1"
-                                  data-highligthed="true"
+                                  data-highlighted="true"
                                   href="4"
                                 >
                                   4e tour
@@ -7259,7 +7259,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                               data-test="carousel-item-2"
                             >
                               <Styled(Link)
-                                data-highligthed={true}
+                                data-highlighted={true}
                                 href="3"
                                 key="3e tour3"
                                 linkComponent={[Function]}
@@ -7267,20 +7267,20 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                               >
                                 <Link
                                   className="css-902mcp e2kk1al1"
-                                  data-highligthed={true}
+                                  data-highlighted={true}
                                   href="3"
                                   linkComponent={[Function]}
                                   onClick={[Function]}
                                 >
                                   <DefaultLinkComponent
                                     className="css-902mcp e2kk1al1"
-                                    data-highligthed={true}
+                                    data-highlighted={true}
                                     href="3"
                                     onClick={[Function]}
                                   >
                                     <a
                                       className="css-902mcp e2kk1al1"
-                                      data-highligthed={true}
+                                      data-highlighted={true}
                                       href="3"
                                       onClick={[Function]}
                                     >
@@ -7301,7 +7301,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                               data-test="carousel-item-3"
                             >
                               <Styled(Link)
-                                data-highligthed={true}
+                                data-highlighted={true}
                                 href="4"
                                 key="4e tour4"
                                 linkComponent={[Function]}
@@ -7309,20 +7309,20 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                               >
                                 <Link
                                   className="css-902mcp e2kk1al1"
-                                  data-highligthed={true}
+                                  data-highlighted={true}
                                   href="4"
                                   linkComponent={[Function]}
                                   onClick={[Function]}
                                 >
                                   <DefaultLinkComponent
                                     className="css-902mcp e2kk1al1"
-                                    data-highligthed={true}
+                                    data-highlighted={true}
                                     href="4"
                                     onClick={[Function]}
                                   >
                                     <a
                                       className="css-902mcp e2kk1al1"
-                                      data-highligthed={true}
+                                      data-highlighted={true}
                                       href="4"
                                       onClick={[Function]}
                                     >

@@ -10,12 +10,12 @@ const tabs = storiesOf('Modules|SimpleTabs', module);
 const mockData = [
   {
     label: '1st Round',
-    highligthed: true,
+    highlighted: true,
     href: '#1',
   },
   {
     label: '2nd Round',
-    highligthed: true,
+    highlighted: true,
     href: '#2',
   },
   {

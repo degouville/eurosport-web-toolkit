@@ -56,7 +56,7 @@ export const TabActive = styled(Link)`
   ${({ theme }) => TabCommonStyle(theme)};
   cursor: pointer;
   text-decoration: none;
-  opacity: ${props => (props['data-highligthed'] ? '1' : '.5')};
+  opacity: ${props => (props['data-highlighted'] ? '1' : '.5')};
 `;
 export const TabInactive = styled.span`
   ${({ theme }) => TabCommonStyle(theme)};
@@ -66,7 +66,7 @@ export const TabSelected = styled.span`
   ${({ theme }) => TabCommonStyle(theme)};
   cursor: pointer;
   opacity: 1;
-  color: ${props => (props['data-highligthed'] ? props.theme.tab.active.color : props.theme.tab.borderColor)};
+  color: ${props => (props['data-highlighted'] ? props.theme.tab.active.color : props.theme.tab.borderColor)};
   &:before {
     content: '';
     position: absolute;
@@ -100,7 +100,7 @@ export default class SimpleTabs extends React.Component {
       PropTypes.shape({
         label: PropTypes.string.isRequired,
         disabled: PropTypes.boolean,
-        highligthed: PropTypes.boolean,
+        highlighted: PropTypes.boolean,
         href: PropTypes.string,
       })
     ).isRequired,
@@ -128,10 +128,10 @@ export default class SimpleTabs extends React.Component {
 
     return (
       <StyledCarousel withArrow={false} className={className}>
-        {tabs.map(({ label, disabled, highligthed, href }, i) => {
+        {tabs.map(({ label, disabled, highlighted, href }, i) => {
           if (currentTab === i)
             return (
-              <TabSelected key={`${label}${href}`} data-highligthed={highligthed}>
+              <TabSelected key={`${label}${href}`} data-highlighted={highlighted}>
                 {label}
               </TabSelected>
             );
@@ -139,7 +139,7 @@ export default class SimpleTabs extends React.Component {
           return (
             <TabActive
               key={`${label}${href}`}
-              data-highligthed={highligthed}
+              data-highlighted={highlighted}
               onClick={e => this.handleClick(e, href, i)}
               href={href}
             >
