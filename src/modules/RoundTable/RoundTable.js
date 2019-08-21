@@ -90,7 +90,15 @@ const RoundTable = ({ matches, rounds, className, offsetLeft }) => {
   const groupedMatches = groupBy(matches, 'round.number');
   return (
     <FlexedContainer className={className}>
-      <Carousel flex slideMargin={0} magneticMin={0.2} magneticMax={0.8} absoluteNavigation offsetLeft={offsetLeft}>
+      <Carousel
+        flex
+        slideMargin={0}
+        magneticMin={0.2}
+        magneticMax={0.8}
+        absoluteNavigation
+        offsetLeft={offsetLeft}
+        minWidthArrowDisplaying={700}
+      >
         {Object.entries(groupedMatches).map(([round, matchList]) => (
           <RoundColumn key={round} round={rounds[round - 1] && rounds[round - 1].name} matches={matchList} />
         ))}

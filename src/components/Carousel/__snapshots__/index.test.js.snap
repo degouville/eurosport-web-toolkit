@@ -8,6 +8,7 @@ exports[`Carousel test must render the carousel 1`] = `
   flex={false}
   magneticMax={0.8}
   magneticMin={0.2}
+  minWidthArrowDisplaying={900}
   offsetLeft="0"
   slideMargin={8}
   withArrow={true}
