@@ -2,8 +2,13 @@
 
 exports[`Carousel test must render the carousel 1`] = `
 <Carousel
+  absoluteNavigation={false}
   alignCenter={false}
   className=""
+  flex={false}
+  magneticMax={0.8}
+  magneticMin={0.2}
+  offsetLeft="0"
   slideMargin={8}
   withArrow={true}
 >
@@ -13,7 +18,7 @@ exports[`Carousel test must render the carousel 1`] = `
     slides={Array []}
   >
     <div
-      className="css-95cx95 e595p110"
+      className="css-7w3mwd e595p110"
       data-test="carousel"
     >
       <Styled(div)
@@ -27,7 +32,7 @@ exports[`Carousel test must render the carousel 1`] = `
                 data-test="carousel-slider"
               >
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="css-gnj429 e595p113"
                   data-test="carousel-item-0"
                 >
                   <div>
@@ -35,7 +40,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="css-gnj429 e595p113"
                   data-test="carousel-item-1"
                 >
                   <div>
@@ -43,7 +48,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="css-gnj429 e595p113"
                   data-test="carousel-item-2"
                 >
                   <div>
@@ -51,7 +56,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="css-gnj429 e595p113"
                   data-test="carousel-item-3"
                 >
                   <div>
@@ -59,7 +64,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="css-gnj429 e595p113"
                   data-test="carousel-item-4"
                 >
                   <div>
@@ -67,7 +72,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="css-gnj429 e595p113"
                   data-test="carousel-item-5"
                 >
                   <div>
@@ -87,6 +92,7 @@ exports[`Carousel test must render the carousel 1`] = `
             alignCenter={false}
             data-test="carousel-slider"
             disableNavigation={true}
+            flex={false}
             innerRef={
               Object {
                 "current": <div
@@ -94,7 +100,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   data-test="carousel-slider"
                 >
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="css-gnj429 e595p113"
                     data-test="carousel-item-0"
                   >
                     <div>
@@ -102,7 +108,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="css-gnj429 e595p113"
                     data-test="carousel-item-1"
                   >
                     <div>
@@ -110,7 +116,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="css-gnj429 e595p113"
                     data-test="carousel-item-2"
                   >
                     <div>
@@ -118,7 +124,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="css-gnj429 e595p113"
                     data-test="carousel-item-3"
                   >
                     <div>
@@ -126,7 +132,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="css-gnj429 e595p113"
                     data-test="carousel-item-4"
                   >
                     <div>
@@ -134,7 +140,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="css-gnj429 e595p113"
                     data-test="carousel-item-5"
                   >
                     <div>
@@ -154,11 +160,13 @@ exports[`Carousel test must render the carousel 1`] = `
             >
               <Styled(div)
                 data-test="carousel-item-0"
+                flex={false}
                 key="0"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="css-gnj429 e595p113"
                   data-test="carousel-item-0"
                 >
                   <div>
@@ -168,11 +176,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-1"
+                flex={false}
                 key="1"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="css-gnj429 e595p113"
                   data-test="carousel-item-1"
                 >
                   <div>
@@ -182,11 +192,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-2"
+                flex={false}
                 key="2"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="css-gnj429 e595p113"
                   data-test="carousel-item-2"
                 >
                   <div>
@@ -196,11 +208,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-3"
+                flex={false}
                 key="3"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="css-gnj429 e595p113"
                   data-test="carousel-item-3"
                 >
                   <div>
@@ -210,11 +224,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-4"
+                flex={false}
                 key="4"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="css-gnj429 e595p113"
                   data-test="carousel-item-4"
                 >
                   <div>
@@ -224,11 +240,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-5"
+                flex={false}
                 key="5"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="css-gnj429 e595p113"
                   data-test="carousel-item-5"
                 >
                   <div>

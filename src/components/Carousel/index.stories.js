@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object, boolean } from '@storybook/addon-knobs';
+import { object, boolean, number } from '@storybook/addon-knobs';
 import styled from 'react-emotion';
 import { rgba } from 'polished';
 import Play from 'src/assets/circleplay.component.svg';
@@ -48,7 +48,14 @@ const StyledTitle = styled.div`
 `;
 
 indexStories.add('Carousel', () => (
-  <Carousel alignCenter={boolean('alignCenter', false)} withArrow={boolean('withArrow', true)}>
+  <Carousel
+    magneticMax={number('magnetic', 0.2)}
+    magneticMin={number('magnetic', 0.8)}
+    absoluteNavigation={boolean('absoluteNavigation', false)}
+    alignCenter={boolean('alignCenter', false)}
+    withArrow={boolean('withArrow', true)}
+    offsetLeft={number('offsetLeft', 0)}
+  >
     <StyledTitle>
       <StyledPlayIco />
       En direct sur Eurosport Player

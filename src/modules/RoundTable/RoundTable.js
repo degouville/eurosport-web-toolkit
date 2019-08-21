@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { groupBy } from 'lodash';
-
 import { H5, fontAlphaHeadline } from 'src/typography';
 import ScoreBlock from 'src/components/ScoreBlock';
 import { coreNeutral4, coreNeutral11 } from 'src/colors';
+import Carousel from 'src/components/Carousel';
 
 const StyledScoreBlockWrapper = styled.div`
   width: 350px;
@@ -86,13 +86,15 @@ export const RoundColumn = ({ matches, round }) => (
   </FlexedColum>
 );
 
-const RoundTable = ({ matches, rounds, className }) => {
+const RoundTable = ({ matches, rounds, className, offsetLeft }) => {
   const groupedMatches = groupBy(matches, 'round.number');
   return (
     <FlexedContainer className={className}>
-      {Object.entries(groupedMatches).map(([round, matchList]) => (
-        <RoundColumn key={round} round={rounds[round - 1] && rounds[round - 1].name} matches={matchList} />
-      ))}
+      <Carousel flex slideMargin={0} magneticMin={0.2} magneticMax={0.8} absoluteNavigation offsetLeft={offsetLeft}>
+        {Object.entries(groupedMatches).map(([round, matchList]) => (
+          <RoundColumn key={round} round={rounds[round - 1] && rounds[round - 1].name} matches={matchList} />
+        ))}
+      </Carousel>
     </FlexedContainer>
   );
 };
@@ -108,12 +110,14 @@ RoundColumn.propTypes = {
 
 RoundTable.defaultProps = {
   className: undefined,
+  offsetLeft: '0px',
 };
 
 RoundTable.propTypes = {
   matches: PropTypes.arrayOf(PropTypes.object).isRequired,
   rounds: PropTypes.arrayOf(PropTypes.object).isRequired,
   className: PropTypes.string,
+  offsetLeft: PropTypes.string,
 };
 
 export default RoundTable;

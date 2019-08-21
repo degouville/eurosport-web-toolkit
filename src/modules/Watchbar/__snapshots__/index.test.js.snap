@@ -5,8 +5,13 @@ exports[`do not renders Watchbar without cards 1`] = `""`;
 exports[`renders a WatchBar 1`] = `
 <div>
   <Carousel
+    absoluteNavigation={false}
     alignCenter={false}
     className=""
+    flex={false}
+    magneticMax={0.8}
+    magneticMin={0.2}
+    offsetLeft="0"
     slideMargin={8}
     withArrow={true}
   >
@@ -91,8 +96,13 @@ exports[`renders a WatchBar with a title 1`] = `
     </Styled(div)>
   </Styled(div)>
   <Carousel
+    absoluteNavigation={false}
     alignCenter={false}
     className=""
+    flex={false}
+    magneticMax={0.8}
+    magneticMin={0.2}
+    offsetLeft="0"
     slideMargin={8}
     withArrow={true}
   >

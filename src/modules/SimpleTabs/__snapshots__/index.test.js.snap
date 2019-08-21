@@ -2,8 +2,13 @@
 
 exports[`SimpleTabs module matches snapshot 1`] = `
 <Styled(Carousel)
+  absoluteNavigation={false}
   alignCenter={false}
   className={null}
+  flex={false}
+  magneticMax={0.8}
+  magneticMin={0.2}
+  offsetLeft="0"
   slideMargin={8}
   withArrow={false}
 >

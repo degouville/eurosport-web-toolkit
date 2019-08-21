@@ -4,8 +4,13 @@ exports[`SubNavigation renders when everything passed in 1`] = `
 <withMatchMedia(Component)>
   <Styled(nav)>
     <Carousel
+      absoluteNavigation={false}
       alignCenter={false}
       className=""
+      flex={false}
+      magneticMax={0.8}
+      magneticMin={0.2}
+      offsetLeft="0"
       slideMargin={0}
       withArrow={true}
     >
