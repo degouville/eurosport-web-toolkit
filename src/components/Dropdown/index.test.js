@@ -56,7 +56,7 @@ describe('Dropdown', () => {
     const isSelected = li => !!li.prop('isSelected');
     const selectedOption = wrapper.findWhere(isSelected);
     const selectedOptionText = selectedOption.text();
-    expect(selectedOptionText).toBe('Women doubles ✓');
+    expect(selectedOptionText).toBe('Roland Garros women doubles longer ✓');
     wrapper.unmount();
   });
 

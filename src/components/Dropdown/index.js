@@ -37,6 +37,10 @@ export const StyledWrapper = styled.div`
 export const StyledText = styled(H3)`
   color: ${({ theme }) => theme.dropdown.label.color};
   text-transform: uppercase;
+  ${medium(css`
+    display: flex;
+    align-items: center;
+  `)}
 `;
 
 export const StyledArrow = styled(Chevron)`
@@ -44,6 +48,7 @@ export const StyledArrow = styled(Chevron)`
   width: 12px;
   transform: rotate(90deg);
   margin-left: 5px;
+  margin-top: 2px;
   path {
     fill: ${({ theme }) => theme.dropdown.label.color};
   }
@@ -52,18 +57,19 @@ export const StyledArrow = styled(Chevron)`
 export const StyledDropdown = styled.div`
   position: absolute;
   width: calc(100% - 25px);
-  top: 45px;
+  bottom: -165px;
   ${medium(css`
-    right: -94px;
+    right: -183px;
+    top: 42px;
     @-moz-document url-prefix() {
-      right: -91px;
+      right: -183px;
     }
     @supports (-ms-ime-align: auto) {
       right: unset;
+      width: auto;
     }
     bottom: auto;
     width: fit-content;
-    max-width: 183px;
   `)};
   display: none;
   z-index: 2;
@@ -98,6 +104,12 @@ export const StyledDropdown = styled.div`
 const StyledUl = styled.ul`
   height: 130px;
   overflow-y: scroll;
+  overflow-x: hidden;
+
+  ${medium(css`
+    width: 350px;
+  `)};
+
   ::-webkit-scrollbar {
     width: 6px;
   }
@@ -122,6 +134,7 @@ export const StyledLi = styled.li`
   margin-right: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   &:first-of-type {
     padding-top: 0;
   }
@@ -140,9 +153,6 @@ export const StyledCheckMark = styled.span`
 
 const StyledP = styled.p`
   width: 100%;
-  ${medium(css`
-    width: 130px;
-  `)};
 `;
 
 class Dropdown extends React.Component {
