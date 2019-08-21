@@ -2,11 +2,11 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import Chevron from 'src/assets/chevron.component.svg';
-import { medium } from '../../breakpoints';
-import { coreLightMinus1, mischka, coreLightBase } from '../../colors';
-import { H3 } from '../../typography';
-import ScoreBlock, { scoreBlockType } from '../../components/ScoreBlock';
-import Grid, { Column } from '../../elements/Grid';
+import { H3 } from 'src/typography';
+import { medium } from 'src/breakpoints';
+import { coreLightMinus1, mischka, coreLightBase } from 'src/colors';
+import ScoreBlock, { scoreBlockType } from 'src/components/ScoreBlock';
+import Grid, { Column } from 'src/elements/Grid';
 import ViewMore, { StyledViewMoreButton, StyledViewMoreButtonWrapper } from '../ViewMore';
 
 const StyledBreadcrumbElement = styled(H3)`
@@ -32,6 +32,27 @@ const StyledChevron = styled(Chevron)`
     fill: ${coreLightMinus1};
   }
 `;
+
+export const ShowMoreRow = ({ matches, scoreBlockProps }) =>
+  matches.length > 0 && (
+    <li>
+      <Grid.Row>
+        {matches.map((match, index) => (
+          <StyledColumn
+            tiny="full"
+            small="full"
+            medium="6"
+            large="6"
+            wide="5"
+            wideOffset={index % 2 === 0 ? '1' : '0'}
+            key={match.id}
+          >
+            <ScoreBlock.ScoreBlock {...scoreBlockProps} {...match} />
+          </StyledColumn>
+        ))}
+      </Grid.Row>
+    </li>
+  );
 
 export const Breadcrumbs = styled(({ className, items }) => (
   <div className={className}>
@@ -71,7 +92,7 @@ const StyledMatchGrid = styled.div`
   }
 `;
 
-const StyledColumn = styled(Column)`
+export const StyledColumn = styled(Column)`
   margin-bottom: 20px;
   ${medium(css`
     margin-bottom: 30px;
@@ -88,11 +109,11 @@ const StyledTitle = styled(H3)`
   `)};
 `;
 
-const StyledViewMoreWrapper = styled.div`
+export const StyledViewMoreWrapper = styled.div`
   text-align: center;
 `;
 
-const MatchGrid = ({ title, matches, showMoreText, showLessText, liveButtonText, matchInfoButtonText, eventName }) => {
+export const MatchGrid = ({ title, matches, showMoreText, showLessText, eventName, ...scoreBlockProps }) => {
   const firstMatches = matches.slice(0, 6);
   const restOfMatches = matches.slice(6);
   const breadcrumbs = [
@@ -112,53 +133,8 @@ const MatchGrid = ({ title, matches, showMoreText, showLessText, liveButtonText,
       </Grid.Row>
       <StyledViewMoreWrapper>
         <ViewMore showMoreText={showMoreText} showLessText={showLessText}>
-          <li>
-            <Grid.Row>
-              {firstMatches &&
-                firstMatches.map((match, index) => (
-                  <StyledColumn
-                    tiny="full"
-                    small="full"
-                    medium="6"
-                    large="6"
-                    wide="5"
-                    wideOffset={index % 2 === 0 ? '1' : '0'}
-                    key={match.id}
-                  >
-                    <ScoreBlock.ScoreBlock
-                      {...match}
-                      displayLeftCircle={false}
-                      liveButtonText={liveButtonText}
-                      matchInfoButtonText={matchInfoButtonText}
-                    />
-                  </StyledColumn>
-                ))}
-            </Grid.Row>
-          </li>
-          {restOfMatches.length > 0 && (
-            <li>
-              <Grid.Row>
-                {restOfMatches.map((match, index) => (
-                  <StyledColumn
-                    tiny="full"
-                    small="full"
-                    medium="6"
-                    large="6"
-                    wide="5"
-                    wideOffset={index % 2 === 0 ? '1' : '0'}
-                    key={match.id}
-                  >
-                    <ScoreBlock.ScoreBlock
-                      {...match}
-                      displayLeftCircle={false}
-                      liveButtonText={liveButtonText}
-                      matchInfoButtonText={matchInfoButtonText}
-                    />
-                  </StyledColumn>
-                ))}
-              </Grid.Row>
-            </li>
-          )}
+          <ShowMoreRow matches={firstMatches} displayLeftCircle={false} scoreBlockProps={scoreBlockProps} />
+          <ShowMoreRow matches={restOfMatches} displayLeftCircle={false} scoreBlockProps={scoreBlockProps} />
         </ViewMore>
       </StyledViewMoreWrapper>
     </StyledMatchGrid>

@@ -72,6 +72,7 @@ export { default as RoundTable } from './modules/RoundTable';
 export { default as Login } from './modules/Login';
 export { default as VideoPlayerModal } from './modules/VideoPlayerModal';
 export { default as PlayerStatistics } from './modules/PlayerStatistics';
+export { default as LiveMatchesGrid } from './modules/LiveMatchesGrid';
 
 /* HOCS */
 export { default as withMatchMedia } from './hocs/withMatchMedia';

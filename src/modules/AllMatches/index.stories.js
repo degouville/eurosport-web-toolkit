@@ -5,7 +5,6 @@ import { liveMatches, upcomingMatches, finishedMatches } from './mockData/mockMa
 import AllMatches from './index';
 
 const iconsStories = storiesOf('Modules|AllMatches', module);
-
 iconsStories.add('default', () => (
   <AllMatches
     liveMatches={object('liveMatches', liveMatches)}

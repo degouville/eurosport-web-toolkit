@@ -127,11 +127,11 @@ const StyledLabelIcon = styled.div`
   margin-right: 2px;
 `;
 
-const Labels = ({ labels, isSimpleMode }) => {
+const Labels = ({ labels, isSimpleMode, className }) => {
   const LabelComponent = isSimpleMode ? StyledLabelSimple : StyledLabel;
 
   return (
-    <StyledLabels isSimpleMode={isSimpleMode}>
+    <StyledLabels isSimpleMode={isSimpleMode} className={className}>
       {labels.map((label, index) => (
         <LabelComponent
           color={label.color}
@@ -158,11 +158,13 @@ export const labelsType = PropTypes.arrayOf(
 
 Labels.defaultProps = {
   isSimpleMode: false,
+  className: undefined,
 };
 
 Labels.propTypes = {
   labels: labelsType.isRequired,
   isSimpleMode: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 export default Labels;
