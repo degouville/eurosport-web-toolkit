@@ -14,7 +14,7 @@ const useInteraction = () => {
       return () => clearTimeout(timer);
     }
     return undefined;
-  }, [active, click]);
+  }, [active, click, setActive]);
 
   // Called when the user interact with the player
   const handlePlayerInteraction = useCallback(() => {

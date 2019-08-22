@@ -26,6 +26,7 @@ const Controls = ({
   volume,
   onVolume,
   mute,
+  onMute,
 }) => {
   const { isMobile } = useScreenInformation();
 
@@ -56,6 +57,7 @@ const Controls = ({
         seekPosition={seekPosition}
         onVolume={onVolume}
         volume={volume}
+        onMute={onMute}
         mute={mute}
       >
         {!isMobile && (
@@ -85,6 +87,7 @@ Controls.propTypes = {
   seekMax: PropTypes.number.isRequired,
   seekPosition: PropTypes.number.isRequired,
   onVolume: PropTypes.func.isRequired,
+  onMute: PropTypes.func.isRequired,
   volume: PropTypes.number.isRequired,
   mute: PropTypes.bool.isRequired,
 };

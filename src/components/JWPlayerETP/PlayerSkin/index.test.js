@@ -17,6 +17,7 @@ describe('Components|PlayerSkin', () => {
     onRewind: jest.fn(),
     onSeek: jest.fn(),
     onVolume: jest.fn(),
+    onMute: jest.fn(),
     isPlaying: false,
     isFullscreen: false,
     isLive: true,
@@ -237,30 +238,21 @@ describe('Components|PlayerSkin', () => {
       expect(handlePlayerInteraction).toHaveBeenCalledTimes(7);
     });
 
-    it('Should forward volume props', () => {
+    it('Should forward props', () => {
       // Given
       const props = createDefaultProps({ isPlaying: true });
       wrapper = shallow(<PlayerSkin {...props} />);
 
       // When
       wrapper.find(Controls).prop('onVolume')(42);
+      wrapper.find(Controls).prop('onSeek')(42);
+      wrapper.find(Controls).prop('onMute')(true);
 
       // Expect
       expect(props.onVolume).toHaveBeenCalledWith(42);
-      expect(handlePlayerInteraction).toHaveBeenCalled();
-    });
-
-    it('Should forward seek props', () => {
-      // Given
-      const props = createDefaultProps({ isPlaying: true });
-      wrapper = shallow(<PlayerSkin {...props} />);
-
-      // When
-      wrapper.find(Controls).prop('onSeek')(42);
-
-      // Expect
       expect(props.onSeek).toHaveBeenCalledWith(42);
-      expect(handlePlayerInteraction).toHaveBeenCalled();
+      expect(props.onMute).toHaveBeenCalledWith(true);
+      expect(handlePlayerInteraction).toHaveBeenCalledTimes(3);
     });
   });
 });

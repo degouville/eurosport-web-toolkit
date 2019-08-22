@@ -21,6 +21,7 @@ export const BottomBar = ({
   volume,
   onVolume,
   mute,
+  onMute,
 }) => (
   <BottomBarContainer>
     <HorizontalSeparator />
@@ -41,7 +42,7 @@ export const BottomBar = ({
           <LiveStatus isLive={isLive} rewindCounts={rewindCounts} />
         </BarControlWrapper>
         <VerticalSeparator />
-        <Volume volume={volume} mute={mute} onVolume={onVolume} />
+        <Volume volume={volume} mute={mute} onVolume={onVolume} onMute={onMute} />
         {children}
       </BarActionsContainer>
     </BarElementsContainer>

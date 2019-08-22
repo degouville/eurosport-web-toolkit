@@ -28,6 +28,7 @@ exports[`Components|PlayerSkin should match snapshot 1`] = `
       mute={false}
       onForward={[Function]}
       onFullscreenChange={[Function]}
+      onMute={[Function]}
       onPause={[Function]}
       onPlay={[Function]}
       onRewind={[Function]}

@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import ActionList from './index';
 
-describe('Components|JWPlayerETP|Controls|BottomBar', () => {
+describe('Components|JWPlayerETP|Controls|ActionList', () => {
   const createDefaultProps = newProps => ({
     isFullscreen: true,
     onFullscreenChange: jest.fn(),
@@ -25,10 +25,7 @@ describe('Components|JWPlayerETP|Controls|BottomBar', () => {
       const wrapper = shallow(<ActionList {...props} />);
 
       // When
-      wrapper
-        .find('[alt="minimise"]')
-        .parent()
-        .simulate('click');
+      wrapper.find('[alt="minimise"]').simulate('click');
 
       // Expect
       expect(props.onFullscreenChange).toHaveBeenCalled();

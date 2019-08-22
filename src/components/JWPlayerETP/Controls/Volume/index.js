@@ -1,7 +1,8 @@
-import React, { useCallback, useState, useRef } from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { withTheme } from 'emotion-theming';
+import { isMobile } from 'react-device-detect';
 import * as breakpoints from 'src/breakpoints';
 import VolumeOff from 'src/assets/icon-volume-off.svg';
 import VolumeMedium from 'src/assets/icon-volume-medium.svg';
@@ -11,7 +12,9 @@ import Icon from '../UI/icon';
 import Slider from '../Slider';
 import Dropdown from '../Dropdown';
 import { BOTTOM_BAR_HEIGHT_DESKTOP, BOTTOM_BAR_HEIGHT_MOBILE } from '../constants';
-import useClickOutside from './useClickOutside';
+import useVolumeWithDelay from './useVolumeWithDelay';
+
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 
 const getVolumeIcon = (volume, mute) => {
   if (mute === true) return VolumeOff;
@@ -19,31 +22,26 @@ const getVolumeIcon = (volume, mute) => {
   return VolumeHigh;
 };
 
-export const Volume = ({ volume, onVolume, mute, theme }) => {
-  const [showVolume, setShowVolume] = useState(false);
-  const [clickEnabled, setClickEnabled] = useState(true);
-  const containerRef = useRef(null);
+export const Volume = ({ volume, onVolume, mute, theme, onMute }) => {
+  const [showVolume, setShowVolume] = useVolumeWithDelay(false);
 
   const onMouseOver = useCallback(() => {
-    setClickEnabled(false);
-  }, [setClickEnabled]);
+    setShowVolume(true);
+  }, [setShowVolume]);
 
   const onMouseOut = useCallback(() => {
-    setClickEnabled(true);
-  }, [setClickEnabled]);
+    setShowVolume(false);
+  }, [setShowVolume]);
 
   const onVolumeClick = useCallback(() => {
-    setShowVolume(!showVolume);
-  }, [setShowVolume, showVolume]);
-
-  const callback = useCallback(() => setShowVolume(false), [setShowVolume]);
-  useClickOutside({ ref: containerRef, callback });
+    onMute(!mute);
+    isMobile && onVolume(100);
+  }, [mute, onMute, onVolume]);
 
   return (
-    <BarWithPointer innerRef={containerRef} medium onClick={clickEnabled ? onVolumeClick : null}>
+    <BarControlWrapper onMouseOver={!isMobile ? onMouseOver : null} onMouseOut={!isMobile ? onMouseOut : null} medium>
       {showVolume && (
-        // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
-        <DropdownContainer onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
+        <DropdownContainer>
           <Dropdown bottomDisplay>
             <VolumeSliderContainer>
               <Slider
@@ -58,8 +56,8 @@ export const Volume = ({ volume, onVolume, mute, theme }) => {
           </Dropdown>
         </DropdownContainer>
       )}
-      <Icon src={getVolumeIcon(volume, mute)} alt="Volume" />
-    </BarWithPointer>
+      <Icon onClick={onVolumeClick} src={getVolumeIcon(volume, mute)} alt="Volume" />
+    </BarControlWrapper>
   );
 };
 
@@ -68,12 +66,9 @@ Volume.propTypes = {
   theme: PropTypes.object.isRequired,
   onVolume: PropTypes.func.isRequired,
   volume: PropTypes.number.isRequired,
+  onMute: PropTypes.func.isRequired,
   mute: PropTypes.bool.isRequired,
 };
-
-export const BarWithPointer = styled(BarControlWrapper)`
-  cursor: pointer;
-`;
 
 export const DropdownContainer = styled.div`
   position: absolute;

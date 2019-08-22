@@ -9,6 +9,7 @@ const Icon = styled.img`
   width: 36px;
   `)};
   user-select: none;
+  cursor: pointer;
 `;
 
 export default Icon;

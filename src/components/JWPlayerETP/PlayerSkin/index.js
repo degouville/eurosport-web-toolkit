@@ -25,6 +25,7 @@ const PlayerSkin = ({
   onRewind,
   onSeek,
   onVolume,
+  onMute,
   controls,
   ...props
 }) => {
@@ -40,6 +41,7 @@ const PlayerSkin = ({
   const onRewindKeepInteraction = useKeepInteraction(onRewind, handlePlayerInteraction);
   const onSeekKeepInteraction = useKeepInteraction(onSeek, handlePlayerInteraction);
   const onVolumeKeepInteraction = useKeepInteraction(onVolume, handlePlayerInteraction);
+  const onMuteKeepInteraction = useKeepInteraction(onMute, handlePlayerInteraction);
 
   const showSpinner = !active && isBuffering;
   const showControls = showSpinner === false && (!isPlaying || active);
@@ -69,6 +71,7 @@ const PlayerSkin = ({
               onRewind={onRewindKeepInteraction}
               onSeek={onSeekKeepInteraction}
               onVolume={onVolumeKeepInteraction}
+              onMute={onMuteKeepInteraction}
               {...props}
             />
           </ControlsOverlay>
