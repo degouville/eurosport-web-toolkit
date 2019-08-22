@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object, boolean } from '@storybook/addon-knobs';
+import { object, boolean, number } from '@storybook/addon-knobs';
 import { BurgerMenu } from '../..';
 import menuMocks from './mocks/feed-menu';
 
@@ -16,6 +16,7 @@ story.add('configurable', () => {
       homePageUrl="www.google.com"
       onClose={e => e.preventDefault()}
       items={object('items', menuMocks.header, 'items prop example')}
+      initialSelectedMenuId={number('initialSelectedMenuId', 2)}
     />
   );
 });

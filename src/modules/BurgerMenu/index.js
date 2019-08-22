@@ -10,7 +10,9 @@ import BottomMenu from './BottomMenu/BottomMenu';
 
 import { points, large } from '../../breakpoints';
 import withMatchMedia from '../../hocs/withMatchMedia';
-import { BOTTOM_MENU_LINKS_IDS, BOTTOM_MENU_SOCIAL_ID, ALL_SPORTS_MENU_ID, MORE_MENU_ID } from './constants';
+import * as MENU_IDS from './constants';
+
+const { BOTTOM_MENU_LINKS_IDS, BOTTOM_MENU_SOCIAL_ID, ALL_SPORTS_MENU_ID, MORE_MENU_ID } = MENU_IDS;
 
 const StyledModal = styled.div`
   display: none;
@@ -68,10 +70,10 @@ const StyledMenuTop = styled.div`
 export class BurgerMenu extends React.Component {
   constructor(props) {
     super(props);
-    const { items } = this.props;
+    const { items, initialSelectedMenuId } = this.props;
     this.topMenu = items.filter(({ id }) => BOTTOM_MENU_LINKS_IDS.indexOf(id) === -1 && id !== BOTTOM_MENU_SOCIAL_ID);
     const hasAllSportsMenu = this.topMenu.filter(i => i.id === ALL_SPORTS_MENU_ID).length > 0;
-    const selectedMenuId = hasAllSportsMenu ? ALL_SPORTS_MENU_ID : MORE_MENU_ID;
+    const selectedMenuId = initialSelectedMenuId || (hasAllSportsMenu ? ALL_SPORTS_MENU_ID : MORE_MENU_ID);
     this.state = {
       selectedMenuId,
     };
@@ -132,6 +134,11 @@ BurgerMenu.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   isMobileMenu: PropTypes.bool.isRequired,
   homePageUrl: PropTypes.string.isRequired,
+  initialSelectedMenuId: PropTypes.number,
+};
+
+BurgerMenu.defaultProps = {
+  initialSelectedMenuId: null,
 };
 
 BurgerMenu.displayName = 'BurgerMenu';
@@ -160,5 +167,7 @@ BurgerMenuWithMatchMedia.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   homePageUrl: PropTypes.string.isRequired,
 };
+
+export { MENU_IDS };
 
 export default BurgerMenuWithMatchMedia;

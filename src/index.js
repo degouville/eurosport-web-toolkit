@@ -58,7 +58,7 @@ export { default as Hero } from './modules/Hero';
 export { default as ContentListing } from './modules/ContentListing';
 export { default as Article } from './modules/Article';
 export { default as WatchBar } from './modules/Watchbar';
-export { default as BurgerMenu } from './modules/BurgerMenu';
+export { default as BurgerMenu, MENU_IDS } from './modules/BurgerMenu';
 export { default as ViewMore } from './modules/ViewMore';
 export { default as PlayerCard } from './modules/PlayerCard';
 export { default as Tabs } from './modules/Tabs';

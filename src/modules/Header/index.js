@@ -131,14 +131,16 @@ Breadcrumbs.displayName = 'Breadcrumbs';
 class Header extends Component {
   state = {
     isBurgerMenuOpen: false,
+    initialSelectedMenuId: null,
   };
 
-  toggleBurgerMenu = e => {
-    e.preventDefault();
+  toggleBurgerMenu = (e, initialSelectedMenuId) => {
+    e && e.preventDefault();
     const { isBurgerMenuOpen } = this.state;
 
     this.setState({
       isBurgerMenuOpen: !isBurgerMenuOpen,
+      initialSelectedMenuId,
     });
 
     document.body.classList.toggle('modal--opened');
@@ -154,7 +156,7 @@ class Header extends Component {
 
   getBurgerMenu = () => {
     const { menuItems, homePageUrl } = this.props;
-    const { isBurgerMenuOpen } = this.state;
+    const { isBurgerMenuOpen, initialSelectedMenuId } = this.state;
 
     if (!menuItems) return null;
 
@@ -171,6 +173,8 @@ class Header extends Component {
         onClose={this.toggleBurgerMenu}
         items={menuItems}
         homePageUrl={homePageUrl}
+        initialSelectedMenuId={initialSelectedMenuId}
+        key={initialSelectedMenuId}
       />
     );
   };
