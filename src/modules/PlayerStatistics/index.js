@@ -35,7 +35,7 @@ PlayerStatistics.propTypes = {
   }).isRequired,
   comparisonPoints: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       currentValues: PropTypes.shape({
         one: PropTypes.number.isRequired,

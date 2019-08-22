@@ -5,7 +5,7 @@ export const names = {
 
 export const comparisonPoints = [
   {
-    id: 223341,
+    id: '223341',
     title: 'ages',
     currentValues: {
       one: 3,
@@ -14,7 +14,7 @@ export const comparisonPoints = [
     maximumValue: 11,
   },
   {
-    id: 223342,
+    id: '223342',
     title: 'double faults',
     currentValues: {
       one: 2,
@@ -23,7 +23,7 @@ export const comparisonPoints = [
     maximumValue: 3,
   },
   {
-    id: 223343,
+    id: '223343',
     title: 'point won second ball',
     currentValues: {
       one: 84,
@@ -33,7 +33,7 @@ export const comparisonPoints = [
     isPercent: true,
   },
   {
-    id: 223344,
+    id: '223344',
     title: 'first serve',
     currentValues: {
       one: 61,
@@ -43,7 +43,7 @@ export const comparisonPoints = [
     isPercent: true,
   },
   {
-    id: 223345,
+    id: '223345',
     title: 'ages',
     currentValues: {
       one: 70,
@@ -53,7 +53,7 @@ export const comparisonPoints = [
     isPercent: true,
   },
   {
-    id: 223346,
+    id: '223346',
     title: 'point won second ball',
     currentValues: {
       one: 3,
@@ -62,7 +62,7 @@ export const comparisonPoints = [
     maximumValue: 11,
   },
   {
-    id: 223347,
+    id: '223347',
     title: 'double faults',
     currentValues: {
       one: 3,
