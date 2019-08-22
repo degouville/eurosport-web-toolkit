@@ -4,14 +4,20 @@ import PropTypes from 'prop-types';
 
 import ScoreBlock, { scoreBlockType } from 'src/components/ScoreBlock';
 import SimpleTabs from 'src/modules/SimpleTabs';
+import Grid from '../../elements/Grid';
 
 const StyledMatches = styled.div``;
 const StyledSimpleTabs = styled.div`
-  border-bottom: solid ${({ theme }) => theme.tab.borderColor} 1px;
-  margin: 0 0 2em 0;
+  margin: 1em 0 1em 0;
 `;
 const StyledScoreBlock = styled.div`
-  margin: 0 0 2em 0;
+  margin: 2em 0 2em 0;
+`;
+const StyledHr = styled.div`
+  background-color: ${({ theme }) => theme.tab.borderColor};
+  width: 100%;
+  height: 1px;
+  margin: 1em 0;
 `;
 
 export default class RoundTableMobile extends Component {
@@ -65,19 +71,29 @@ export default class RoundTableMobile extends Component {
     return (
       <div className={className}>
         {hasTabs && (
-          <StyledSimpleTabs>
-            <SimpleTabs initialTabIndex={currentTab} onItemSelected={this.changeTab} tabs={tabs} />
-          </StyledSimpleTabs>
+          <Grid.Row>
+            <Grid.Column>
+              <StyledSimpleTabs>
+                <SimpleTabs initialTabIndex={currentTab} onItemSelected={this.changeTab} tabs={tabs} />
+              </StyledSimpleTabs>
+            </Grid.Column>
+          </Grid.Row>
         )}
 
+        <StyledHr />
+
         {hasMatches && (
-          <StyledMatches>
-            {matches.map(match => (
-              <StyledScoreBlock key={match.id}>
-                <ScoreBlock.ScoreBlock {...match} hasButton={false} />
-              </StyledScoreBlock>
-            ))}
-          </StyledMatches>
+          <Grid.Row>
+            <Grid.Column>
+              <StyledMatches>
+                {matches.map(match => (
+                  <StyledScoreBlock key={match.id}>
+                    <ScoreBlock.ScoreBlock {...match} hasButton={false} />
+                  </StyledScoreBlock>
+                ))}
+              </StyledMatches>
+            </Grid.Column>
+          </Grid.Row>
         )}
       </div>
     );
