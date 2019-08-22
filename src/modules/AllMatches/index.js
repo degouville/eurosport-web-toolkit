@@ -41,7 +41,7 @@ export const ShowMoreRow = ({ matches, scoreBlockProps }) =>
           <StyledColumn
             tiny="full"
             small="full"
-            medium="6"
+            medium="full"
             large="6"
             wide="5"
             wideOffset={index % 2 === 0 ? '1' : '0'}
