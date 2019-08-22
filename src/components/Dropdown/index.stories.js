@@ -8,6 +8,7 @@ const dropdownStories = storiesOf('Components|Dropdown', module);
 
 dropdownStories
   .add('Default', () => <Dropdown options={object('options', dropdownOptions)} />)
+  .add('Default with 1 item', () => <Dropdown options={object('options', dropdownOptions.slice(0, 1))} />)
   .add('With Initial Option', () => (
     <Dropdown
       options={object('options', dropdownOptions)}

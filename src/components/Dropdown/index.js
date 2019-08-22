@@ -102,13 +102,16 @@ export const StyledDropdown = styled.div`
 `;
 
 const StyledUl = styled.ul`
-  height: 130px;
-  overflow-y: scroll;
+  max-height: 130px;
+  overflow-y: auto;
   overflow-x: hidden;
 
   ${medium(css`
     width: 350px;
   `)};
+
+  scrollbar-width: thin;
+  scrollbar-color: ${({ theme }) => `${theme.scrollbar.color} ${theme.scrollbar.background}`};
 
   ::-webkit-scrollbar {
     width: 6px;
