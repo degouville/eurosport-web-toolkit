@@ -1,11 +1,12 @@
 import React, { useState, useCallback } from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import Input from 'src/components/Input/input.component';
 import ErrorBanner from 'src/elements/ErrorBanner';
 import Button from 'src/elements/Button';
 import ArrowLink from 'src/elements/ArrowLink';
 import UnderlineLink from 'src/elements/UnderlineLink';
+import { small, medium, large } from 'src/breakpoints';
 
 const Login = ({
   onSubmit,
@@ -22,6 +23,7 @@ const Login = ({
   showPasswordText,
   title,
   errorMessage,
+  showSubscribeSection,
 }) => {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -46,34 +48,40 @@ const Login = ({
           <ErrorBanner message={errorMessage} />
         </ComponentContainer>
       )}
-      <ComponentContainer>
-        <Input value={email} onChange={onEmailChange} placeholder={emailPlaceholder} />
-      </ComponentContainer>
-      <ComponentContainer>
-        <Input
-          value={password}
-          onChange={onPasswordChange}
-          placeholder={passwordPlaceholder}
-          type="password"
-          textButton={showPasswordText}
-        />
-      </ComponentContainer>
-      <ComponentContainer>
-        <Button type="form" onClick={onSignInSubmit}>
-          {signInText}
-        </Button>
-        <InvisibleSubmit type="submit" />
-      </ComponentContainer>
+      <InputsContainer>
+        <ComponentContainer>
+          <Input value={email} onChange={onEmailChange} placeholder={emailPlaceholder} />
+        </ComponentContainer>
+        <ComponentContainer>
+          <Input
+            value={password}
+            onChange={onPasswordChange}
+            placeholder={passwordPlaceholder}
+            type="password"
+            textButton={showPasswordText}
+          />
+        </ComponentContainer>
+        <ComponentContainer>
+          <Button type="form" onClick={onSignInSubmit} arrowType="arrow" tabIndex="0">
+            {signInText}
+          </Button>
+          <InvisibleSubmit type="submit" />
+        </ComponentContainer>
+      </InputsContainer>
       <ActionLinkContainer>
         <UnderlineLink href={forgotPasswordUrl}>{forgotPasswordText}</UnderlineLink>
         <LinkSeparator />
         <UnderlineLink href={needHelpUrl}>{needHelpText}</UnderlineLink>
       </ActionLinkContainer>
-      <Separator />
-      <CallToActionContainer>
-        <Text>{callToActionText}</Text>
-        <ArrowLink href={subscribeUrl}>{subscribeText}</ArrowLink>
-      </CallToActionContainer>
+      {showSubscribeSection && (
+        <>
+          <Separator />
+          <CallToActionContainer>
+            <Text>{callToActionText}</Text>
+            <ArrowLink href={subscribeUrl}>{subscribeText}</ArrowLink>
+          </CallToActionContainer>
+        </>
+      )}
     </FormContainer>
   );
 };
@@ -93,24 +101,42 @@ Login.propTypes = {
   showPasswordText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   errorMessage: PropTypes.string,
+  showSubscribeSection: PropTypes.bool,
 };
 
 Login.defaultProps = {
   errorMessage: undefined,
+  showSubscribeSection: true,
 };
 
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
   flex: 1;
+  ${large(css`
+    max-width: 500px;
+  `)};
 `;
 
 const ComponentContainer = styled.div`
-  margin-top: 8px;
+  margin-top: 28px;
+`;
+
+const InputsContainer = styled.div`
+  ${medium(css`
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+    align-items: end;
+  `)}
+  ${large(css`
+    display: block;
+  `)};
 `;
 
 const ActionLinkContainer = styled.div`
-  margin-top: 16px;
+  margin-top: 28px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -134,7 +160,7 @@ const Separator = styled.div`
   opacity: 0.15;
 `;
 
-const CallToActionContainer = styled.div`
+export const CallToActionContainer = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
@@ -143,19 +169,19 @@ const CallToActionContainer = styled.div`
 const Text = styled.p`
   height: 24px;
   color: ${({ theme }) => theme.login.text.color};
-  font-family: ${({ theme }) => theme.login.text.fontFamily};
+  ${({ theme }) => theme.login.text.fontFamily}
   font-size: 16px;
   line-height: 24px;
   margin-right: 8px;
 `;
 
 const Title = styled.h1`
-  height: 56px;
   color: ${({ theme }) => theme.login.title.color};
-  font-family: ${({ theme }) => theme.login.title.fontFamily};
-  font-size: 48px;
-  line-height: 56px;
-  margin-bottom: 32px;
+  ${({ theme }) => theme.login.title.fontFamily}
+  font-size: 24px;
+  ${small(css`
+    font-size: 30px;
+  `)};
 `;
 
 export const InvisibleSubmit = styled.input`

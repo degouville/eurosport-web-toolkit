@@ -1,11 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import Login from './index';
 
 const createDefaultProps = () => ({
-  onSubmit: () => null,
-  title: 'Sign in',
+  onSubmit: action('onSubmit'),
+  title: text('title', 'Sign in to your Eurosport Player account'),
   forgotPasswordText: text('forgotPasswordText', 'Forgot password?'),
   forgotPasswordUrl: text('forgotPasswordUrl', 'https://eurosport.fr'),
   subscribeText: text('subscribeText', 'Subscribe'),
@@ -17,6 +18,7 @@ const createDefaultProps = () => ({
   emailPlaceholder: text('emailPlaceholder', 'Email'),
   signInText: text('signInText', 'Sign In'),
   showPasswordText: text('showPasswordText', 'Show'),
+  showSubscribeSection: boolean('showSubscribeSection', true),
 });
 
 const createPropsWithErrorMessage = () => ({

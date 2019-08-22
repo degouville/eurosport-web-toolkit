@@ -7,7 +7,6 @@ const Button = styled(ArrowLink)`
   background-color: ${({ theme, type }) => theme.button[type].backgroundColor};
   color: ${({ theme, type }) => theme.button[type].color};
   cursor: pointer;
-  display: block;
   padding: 18px 10px;
   border-radius: 3px;
   font-size: 12px;

@@ -1,73 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login Snapshot testing renders Login with ErrorBanner 1`] = `
-<Styled(form)
-  onSubmit={[Function]}
->
-  <Styled(h1)>
-    Sign In
-  </Styled(h1)>
-  <Styled(div)>
-    <ErrorBanner
-      message="Impossible to connect"
-    />
-  </Styled(div)>
-  <Styled(div)>
-    <Input
-      onChange={[Function]}
-      placeholder="Email"
-      textButton=""
-      type="text"
-      value=""
-    />
-  </Styled(div)>
-  <Styled(div)>
-    <Input
-      onChange={[Function]}
-      placeholder="Password"
-      textButton="Show"
-      type="password"
-      value=""
-    />
-  </Styled(div)>
-  <Styled(div)>
-    <Button
-      onClick={[Function]}
-      type="form"
-    >
-      SignIn
-    </Button>
-    <Styled(input)
-      type="submit"
-    />
-  </Styled(div)>
-  <Styled(div)>
-    <UnderlineLink
-      href="es.com/forgot"
-    >
-      Forgot password
-    </UnderlineLink>
-    <Styled(div) />
-    <UnderlineLink
-      href="es.com/help"
-    >
-      Need Help?
-    </UnderlineLink>
-  </Styled(div)>
-  <Styled(div) />
-  <Styled(div)>
-    <Styled(p)>
-      New to eurosport player?
-    </Styled(p)>
-    <ArrowLink
-      href="es.com/subscribe"
-    >
-      Subscribe
-    </ArrowLink>
-  </Styled(div)>
-</Styled(form)>
-`;
-
 exports[`Login Snapshot testing renders Login without ErrorBanner 1`] = `
 <Styled(form)
   onSubmit={[Function]}
@@ -76,33 +8,39 @@ exports[`Login Snapshot testing renders Login without ErrorBanner 1`] = `
     Sign In
   </Styled(h1)>
   <Styled(div)>
-    <Input
-      onChange={[Function]}
-      placeholder="Email"
-      textButton=""
-      type="text"
-      value=""
-    />
-  </Styled(div)>
-  <Styled(div)>
-    <Input
-      onChange={[Function]}
-      placeholder="Password"
-      textButton="Show"
-      type="password"
-      value=""
-    />
-  </Styled(div)>
-  <Styled(div)>
-    <Button
-      onClick={[Function]}
-      type="form"
-    >
-      SignIn
-    </Button>
-    <Styled(input)
-      type="submit"
-    />
+    <Styled(div)>
+      <Input
+        hasLabelInside={false}
+        onChange={[Function]}
+        placeholder="Email"
+        textButton=""
+        type="text"
+        value=""
+      />
+    </Styled(div)>
+    <Styled(div)>
+      <Input
+        hasLabelInside={false}
+        onChange={[Function]}
+        placeholder="Password"
+        textButton="Show"
+        type="password"
+        value=""
+      />
+    </Styled(div)>
+    <Styled(div)>
+      <Button
+        arrowType="arrow"
+        onClick={[Function]}
+        tabIndex="0"
+        type="form"
+      >
+        SignIn
+      </Button>
+      <Styled(input)
+        type="submit"
+      />
+    </Styled(div)>
   </Styled(div)>
   <Styled(div)>
     <UnderlineLink
@@ -123,6 +61,7 @@ exports[`Login Snapshot testing renders Login without ErrorBanner 1`] = `
       New to eurosport player?
     </Styled(p)>
     <ArrowLink
+      arrowType="chevron"
       href="es.com/subscribe"
     >
       Subscribe

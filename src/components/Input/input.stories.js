@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import Input from './input.component';
 
 const indexStories = storiesOf('Components|Input', module);
@@ -18,10 +18,15 @@ indexStories
       type="text"
       value={text('value', 'test@eurosport.com')}
       onChange={() => null}
+      hasLabelInside={boolean('hasLabelInside', true)}
     />
   ))
   .add('text input controlled', () => (
-    <ControlledInput placeholder={text('placeholder', 'EMAIL ADDRESS')} type="text" />
+    <ControlledInput
+      placeholder={text('placeholder', 'EMAIL ADDRESS')}
+      type="text"
+      hasLabelInside={boolean('hasLabelInside', true)}
+    />
   ))
   .add('password input', () => (
     <Input
@@ -30,8 +35,14 @@ indexStories
       value={text('value', 'secret')}
       onChange={() => null}
       textButton="SHOW"
+      hasLabelInside={boolean('hasLabelInside', false)}
     />
   ))
   .add('password input controlled', () => (
-    <ControlledInput placeholder={text('placeholder', 'SECRET PASSWORD')} type="password" textButton="SHOW" />
+    <ControlledInput
+      placeholder={text('placeholder', 'SECRET PASSWORD')}
+      type="password"
+      textButton="SHOW"
+      hasLabelInside={boolean('hasLabelInside', true)}
+    />
   ));

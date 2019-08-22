@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Login, { InvisibleSubmit, FormContainer } from './index';
+import Login, { InvisibleSubmit, FormContainer, CallToActionContainer } from './index';
 import ErrorBanner from '../../elements/ErrorBanner';
 import Button from '../../elements/Button';
 import Input from '../../components/Input/input.component';
@@ -33,15 +33,24 @@ describe('Login', () => {
       // Expect
       expect(wrapper).toMatchSnapshot();
     });
+  });
 
-    it('renders Login with ErrorBanner', () => {
-      // Given
-      const props = createProps({ errorMessage: 'Impossible to connect' });
-      const wrapper = shallow(<Login {...props} />);
+  it('renders Login with ErrorBanner', () => {
+    // Given
+    const props = createProps({ errorMessage: 'Impossible to connect' });
+    const wrapper = shallow(<Login {...props} />);
 
-      // Expect
-      expect(wrapper).toMatchSnapshot();
-    });
+    // Expect
+    expect(wrapper.find(ErrorBanner)).toHaveLength(1);
+  });
+
+  it('renders Login without subscription section', () => {
+    // Given
+    const props = createProps({ showSubscribeSection: false });
+    const wrapper = shallow(<Login {...props} />);
+
+    // Expect
+    expect(wrapper.find(CallToActionContainer)).toHaveLength(0);
   });
 
   describe('Behaviour testing', () => {

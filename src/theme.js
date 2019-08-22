@@ -22,6 +22,8 @@ import {
   actionOneDarkBase,
   ebonyClay,
   martinique,
+  suitGray,
+  blackPearl,
 } from './colors';
 import { fontAlphaHeadline, fontInterUi } from './typography';
 
@@ -162,5 +164,24 @@ export default {
       two: martinique,
     },
     fringe: rgba(coreLightMinus1, 0.05),
+  },
+  marketingChecklist: {
+    title: {
+      color: coreLightMinus1,
+    },
+    subtitle: {
+      color: suitGray,
+    },
+    check: {
+      color: coreLightMinus1,
+    },
+  },
+  videoPlayerModal: {
+    closeIcon: {
+      fill: coreLightMinus1,
+    },
+  },
+  loginWithMarketing: {
+    mobileBackground: blackPearl,
   },
 };

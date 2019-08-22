@@ -1,15 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ETPlayerComponent from '@eurosport/toolkit-player';
-import VideoPlayerModal from 'src/modules/VideoPlayerModal';
-import Login from 'src/modules/Login';
 import PlayerSkin from './PlayerSkin';
-
-const LoginModal = props => (
-  <VideoPlayerModal>
-    <Login {...props} />
-  </VideoPlayerModal>
-);
 
 const ETPlayer = ({
   prefLang,
@@ -24,6 +16,7 @@ const ETPlayer = ({
   onAdStart,
   onAdTime,
   onError,
+  LoginModal,
   onLoginModalReady,
   onLoginModalDone,
   loginModalMountingPoint,
@@ -70,6 +63,7 @@ ETPlayer.defaultProps = {
 ETPlayer.propTypes = {
   prefLang: PropTypes.string.isRequired,
   elementId: PropTypes.string.isRequired,
+  LoginModal: PropTypes.elementType.isRequired,
 
   jwplayerData: PropTypes.shape({
     id: PropTypes.string.isRequired,

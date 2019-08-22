@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme/build';
-import Input, { InputText, ShowPasswordContainer } from './input.component';
+import Input, { InputText, ShowPasswordContainer, Placeholder } from './input.component';
 
 describe('Input', () => {
   let wrapper;
@@ -28,6 +28,23 @@ describe('Input', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('Should match snapshot for !hasLabelInside', () => {
+    // Given
+    wrapper = shallow(
+      <Input
+        placeholder="Password"
+        type="password"
+        value="mypassword"
+        onChange={onChange}
+        textButton="SHOW"
+        hasLabelInside={false}
+      />
+    );
+
+    // Expect
+    expect(wrapper).toMatchSnapshot();
+  });
+
   describe('Input Text', () => {
     const onFocus = wrp => wrp.find(InputText).prop('onFocus')();
     const onBlur = wrp => wrp.find(InputText).prop('onBlur')();
@@ -37,7 +54,7 @@ describe('Input', () => {
       wrapper = shallow(<Input placeholder="Mail" type="text" value="test@es.com" onChange={onChange} />);
 
       // When
-      const focused = wrapper.prop('focused');
+      const focused = wrapper.find(Placeholder).prop('focused');
 
       // Expect
       expect(focused).toBeTruthy();
@@ -60,7 +77,7 @@ describe('Input', () => {
 
       // When
       onFocus(wrapper);
-      const focused = wrapper.prop('focused');
+      const focused = wrapper.find(Placeholder).prop('focused');
 
       // Expect
       expect(focused).toBeTruthy();
@@ -85,7 +102,7 @@ describe('Input', () => {
 
       // When
       onBlur(wrapper);
-      const focused = wrapper.prop('focused');
+      const focused = wrapper.find(Placeholder).prop('focused');
 
       // Expect
       expect(focused).toBeTruthy();

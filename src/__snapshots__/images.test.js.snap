@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responsiveRetinaImage produces the css for a responsive retina image 1`] = `
+<div
+  className="css-1qxaacc ec1sid0"
+/>
+`;
+
+exports[`retinaImage produces the css for a retina image 1`] = `
+<div
+  className="css-1yo9myg ec1sid0"
+/>
+`;

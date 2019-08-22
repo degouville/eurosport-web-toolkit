@@ -2,6 +2,7 @@
 
 exports[`renders a ArrowLink 1`] = `
 <ArrowLink
+  arrowType="chevron"
   href="/"
 >
   Click me !

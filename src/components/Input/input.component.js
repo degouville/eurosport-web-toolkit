@@ -6,7 +6,7 @@ import Eye from 'src/assets/eye.component.svg';
 const INPUT_TEXT = 'text';
 const INPUT_PASSWORD = 'password';
 
-const Input = ({ placeholder, type, value, onChange, textButton }) => {
+const Input = ({ placeholder, type, value, onChange, textButton, hasLabelInside }) => {
   const [inputType, setInputType] = useState(type);
   const [focused, setFocused] = useState(value !== '');
 
@@ -20,25 +20,37 @@ const Input = ({ placeholder, type, value, onChange, textButton }) => {
   const showPasswordEnabled = inputType === INPUT_PASSWORD;
 
   return (
-    <MainContainer focused={focused}>
-      <InputContainer focused={focused}>
-        <Placeholder focused={focused}>{placeholder}</Placeholder>
-        <InputText
-          type={inputType}
-          focused={focused}
-          value={value}
-          onChange={onChange}
-          onBlur={onBlur}
-          onFocus={onFocus}
-        />
-      </InputContainer>
-      {type === INPUT_PASSWORD && (
-        <ShowPasswordContainer active={showPasswordEnabled} onClick={onShowPasswordClick}>
-          <Text>{textButton}</Text>
-          <Icon />
-        </ShowPasswordContainer>
+    <>
+      {!hasLabelInside && (
+        <Placeholder focused={focused} hasLabelInside={hasLabelInside}>
+          {placeholder}
+        </Placeholder>
       )}
-    </MainContainer>
+      <MainContainer focused={focused}>
+        <InputContainer focused={focused} hasLabelInside={hasLabelInside}>
+          {hasLabelInside && (
+            <Placeholder focused={focused} hasLabelInside={hasLabelInside}>
+              {placeholder}
+            </Placeholder>
+          )}
+          <InputText
+            type={inputType}
+            focused={focused}
+            value={value}
+            onChange={onChange}
+            onBlur={onBlur}
+            onFocus={onFocus}
+            hasLabelInside={hasLabelInside}
+          />
+        </InputContainer>
+        {type === INPUT_PASSWORD && (
+          <ShowPasswordContainer active={showPasswordEnabled} onClick={onShowPasswordClick}>
+            <Text>{textButton}</Text>
+            <Icon />
+          </ShowPasswordContainer>
+        )}
+      </MainContainer>
+    </>
   );
 };
 
@@ -46,6 +58,7 @@ Input.defaultProps = {
   placeholder: '',
   type: INPUT_TEXT,
   textButton: '',
+  hasLabelInside: false,
 };
 
 Input.propTypes = {
@@ -54,6 +67,7 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   type: PropTypes.string,
   textButton: PropTypes.string,
+  hasLabelInside: PropTypes.bool,
 };
 
 const Icon = styled(Eye)`
@@ -111,13 +125,13 @@ const MainContainer = styled.div`
   align-items: center;
   border: 1px solid ${({ focused, theme }) => (focused ? theme.input.borderFocused : theme.input.border)};
   transition: all 250ms ease;
-
+  margin-top: ${props => (props.hasLabelInside ? '0' : '13px')};
   border-radius: 4px;
   background-color: ${({ theme }) => theme.input.backgroundColor};
 `;
 
 const InputContainer = styled.div`
-  height: 72px;
+  ${props => (props.hasLabelInside ? 'height: 72px' : 'height: 48px')};
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -125,10 +139,10 @@ const InputContainer = styled.div`
   transition: all 250ms ease;
 `;
 
-const Placeholder = styled.label`
-  position: absolute;
+export const Placeholder = styled.label`
+  position: ${props => (props.hasLabelInside ? 'absolute' : 'static')};
   user-select: none;
-  margin-left: 24px;
+  margin-left: ${props => (props.hasLabelInside ? '24px' : '0')};
   margin-right: 24px;
   ${({ focused }) => focused && `margin-top: 18px;`}
   height: 14px;
@@ -142,10 +156,11 @@ const Placeholder = styled.label`
 `;
 
 export const InputText = styled.input`
-  ${({ focused }) => focused && `margin-top: 34px;`}
+  ${({ focused, hasLabelInside }) => focused && (hasLabelInside ? `margin-top: 34px;` : `margin-top: 12px;`)}
   position: relative;
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 13px;
   outline: 0;
   border: 0;
   border: none;
