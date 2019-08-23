@@ -48,13 +48,13 @@ const LiveMatchesGrid = ({ matches, title, showMoreText, showLessText, matchesTo
 };
 
 LiveMatchesGrid.defaultProps = {
-  title: '',
+  title: [],
   matchesToShow: 2,
 };
 
 LiveMatchesGrid.propTypes = {
   ...MatchGrid.propTypes,
-  title: PropTypes.string,
+  title: PropTypes.arrayOf(PropTypes.shape({ text: PropTypes.string.isRequired })),
   matchesToShow: PropTypes.number,
 };
 
