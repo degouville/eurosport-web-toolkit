@@ -179,8 +179,12 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.login.title.color};
   ${({ theme }) => theme.login.title.fontFamily}
   font-size: 24px;
+  line-height: 32px;
   ${small(css`
     font-size: 30px;
+  `)};
+  ${medium(css`
+    line-height: 36px;
   `)};
 `;
 

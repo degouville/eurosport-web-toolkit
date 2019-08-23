@@ -265,7 +265,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                 >
                   <Styled(h1)>
                     <h1
-                      className="css-kabwm0 e14ag6ly8"
+                      className="css-1url3ki e14ag6ly8"
                     >
                       Sign In
                     </h1>
