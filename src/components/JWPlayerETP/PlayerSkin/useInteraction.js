@@ -1,9 +1,17 @@
 import { useState, useCallback, useEffect } from 'react';
 
-const ENABLED_KEYS = [37, 39, 13, 9];
+const KEYBOARD_KEYS = {
+  ENTER: 13,
+  TAB: 9,
+  LEFT: 37,
+  RIGHT: 39,
+};
+
+const ENABLED_KEYS = Object.values(KEYBOARD_KEYS);
 const CONTROL_ACTIVE = 5000;
 
 const useInteraction = () => {
+  const [lockStatus, setLockStatus] = useState(false);
   const [click, setClick] = useState(0);
   const [active, setActive] = useState(false);
 
@@ -22,6 +30,15 @@ const useInteraction = () => {
     setClick(click + 1);
   }, [setActive, click, setClick]);
 
+  const lockInteraction = useCallback(() => {
+    setLockStatus(true);
+  }, [setLockStatus]);
+
+  const unLockInteraction = useCallback(() => {
+    setLockStatus(false);
+    handlePlayerInteraction();
+  }, [handlePlayerInteraction]);
+
   // Handle Allowed keys to show the player
   const onKeyUp = useCallback(
     ({ keyCode }) => {
@@ -30,7 +47,7 @@ const useInteraction = () => {
     [handlePlayerInteraction]
   );
 
-  return { onKeyUp, active, handlePlayerInteraction };
+  return { onKeyUp, active: lockStatus || active, handlePlayerInteraction, lockInteraction, unLockInteraction };
 };
 
 export default useInteraction;

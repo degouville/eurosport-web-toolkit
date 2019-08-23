@@ -29,7 +29,9 @@ const PlayerSkin = ({
   controls,
   ...props
 }) => {
-  const { onKeyUp, active, handlePlayerInteraction } = useInteraction({ isPlaying });
+  const { onKeyUp, active, handlePlayerInteraction, lockInteraction, unLockInteraction } = useInteraction({
+    isPlaying,
+  });
   const MainContainerRef = useRef();
 
   const [isFullscreen, onFullscreenChange] = useFullscreen(MainContainerRef.current);
@@ -47,12 +49,13 @@ const PlayerSkin = ({
   const showControls = showSpinner === false && (!isPlaying || active);
 
   return (
+    // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
     <MainContainer
       innerRef={MainContainerRef}
       onKeyUp={onKeyUp}
-      onMouseOver={handlePlayerInteraction}
+      onMouseOver={lockInteraction}
+      onMouseOut={unLockInteraction}
       onFocus={handlePlayerInteraction}
-      onMouseMove={handlePlayerInteraction}
       onTouchMove={handlePlayerInteraction}
       onTouchStart={handlePlayerInteraction}
     >

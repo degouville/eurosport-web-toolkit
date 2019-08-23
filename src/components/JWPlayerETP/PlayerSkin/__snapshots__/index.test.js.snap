@@ -9,7 +9,7 @@ exports[`Components|PlayerSkin should match snapshot 1`] = `
   }
   onFocus={[Function]}
   onKeyUp={[Function]}
-  onMouseMove={[Function]}
+  onMouseOut={[Function]}
   onMouseOver={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
