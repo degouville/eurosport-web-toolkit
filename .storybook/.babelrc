@@ -1,14 +1,20 @@
 {
   "presets": ["@babel/preset-react", ["@babel/preset-env"]],
   "plugins": [
-    "emotion",
+    [
+      "emotion",
+      {
+        "autoLabel": true
+      }
+    ],
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-optional-chaining",
-    ["babel-plugin-inline-import", {
-      "extensions": [
-        ".css"
-      ]
-    }],
+    [
+      "babel-plugin-inline-import",
+      {
+        "extensions": [".css"]
+      }
+    ],
     [
       "module-resolver",
       {
