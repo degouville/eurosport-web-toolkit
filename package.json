@@ -22,7 +22,8 @@
     "build:babel": "babel src --out-dir dist/cjs --ignore 'src/**/*.stories.js' --ignore 'src/**/*.test.js'",
     "build:babel:esm": "MODULE=true babel src --out-dir dist/esm --ignore 'src/**/*.stories.js' --ignore 'src/**/*.test.js'",
     "build": "npm run clean && npm run build:babel && npm run build:babel:esm",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "release": "release-it"
   },
   "husky": {
     "hooks": {
@@ -102,6 +103,7 @@
     "react-dom": "^16.8.6",
     "react-emotion": "^9.2.12",
     "react-helmet": "^5.2.1",
+    "release-it": "^12.3.5",
     "serve": "^11.1.0",
     "wait-on": "^3.3.0"
   },

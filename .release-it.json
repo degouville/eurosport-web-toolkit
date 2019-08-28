@@ -1,0 +1,6 @@
+{
+  "github": {
+    "release": true,
+    "commitMessage": "${version} [skip ci]"
+  }
+}
