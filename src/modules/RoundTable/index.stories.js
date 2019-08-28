@@ -6,8 +6,8 @@ import RoundTableMobile from './RoundTableMobile';
 
 import { matches, doubleMatches, rounds } from './mock/data';
 
-const convertToTab = ({ id, disabled, highligthed, name: label }) => {
-  const href = `${id}`;
+const convertToTab = ({ disabled, highligthed, name: label }, index) => {
+  const href = `${index + 1}`;
   return { label, href, disabled, highligthed };
 };
 const tabs = rounds.map(convertToTab);

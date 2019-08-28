@@ -1121,13 +1121,7 @@ export const matches = [
     data: {
       topTeam: {
         playerOneName: 'Nadal',
-        sets: [
-          { set: 1, score: 6, won: true, tie: null },
-          { set: 2, score: 6, won: true, tie: null },
-          { set: 3, score: 6, won: false, tie: 2 },
-          { set: 4, score: 6, won: true, tie: null },
-          { set: 5, score: 3, won: false, tie: null },
-        ],
+        sets: [],
         hasWon: true,
         isServing: false,
         playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png',
@@ -1135,18 +1129,16 @@ export const matches = [
       },
       bottomTeam: {
         playerOneName: 'Federer',
-        sets: [
-          { set: 1, score: 3, won: false, tie: null },
-          { set: 2, score: 3, won: true, tie: null },
-          { set: 3, score: 7, won: true, tie: 7 },
-          { set: 4, score: 3, won: false, tie: null },
-          { set: 5, score: 6, won: true, tie: null },
-        ],
+        sets: [],
         hasWon: false,
         isServing: false,
         playerOneImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png',
         playerTwoImage: 'https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png',
       },
+    },
+    schedule: {
+      date: '22 August 2019',
+      time: 'Starting from 17:00',
     },
   },
 ];

@@ -1234,38 +1234,7 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
                 "playerOneImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png",
                 "playerOneName": "Federer",
                 "playerTwoImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png",
-                "sets": Array [
-                  Object {
-                    "score": 3,
-                    "set": 1,
-                    "tie": null,
-                    "won": false,
-                  },
-                  Object {
-                    "score": 3,
-                    "set": 2,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 7,
-                    "set": 3,
-                    "tie": 7,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 3,
-                    "set": 4,
-                    "tie": null,
-                    "won": false,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 5,
-                    "tie": null,
-                    "won": true,
-                  },
-                ],
+                "sets": Array [],
               },
               "topTeam": Object {
                 "hasWon": true,
@@ -1273,38 +1242,7 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
                 "playerOneImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png",
                 "playerOneName": "Nadal",
                 "playerTwoImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png",
-                "sets": Array [
-                  Object {
-                    "score": 6,
-                    "set": 1,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 2,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 3,
-                    "tie": 2,
-                    "won": false,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 4,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 3,
-                    "set": 5,
-                    "tie": null,
-                    "won": false,
-                  },
-                ],
+                "sets": Array [],
               },
             },
             "hasWon": true,
@@ -1312,6 +1250,10 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
             "matchUrl": "https://eurosport.com",
             "round": Object {
               "number": 4,
+            },
+            "schedule": Object {
+              "date": "22 August 2019",
+              "time": "Starting from 17:00",
             },
           },
         ]
@@ -4186,38 +4128,7 @@ exports[`RoundTable should render as expected 1`] = `
                 "playerOneImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png",
                 "playerOneName": "Federer",
                 "playerTwoImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png",
-                "sets": Array [
-                  Object {
-                    "score": 3,
-                    "set": 1,
-                    "tie": null,
-                    "won": false,
-                  },
-                  Object {
-                    "score": 3,
-                    "set": 2,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 7,
-                    "set": 3,
-                    "tie": 7,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 3,
-                    "set": 4,
-                    "tie": null,
-                    "won": false,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 5,
-                    "tie": null,
-                    "won": true,
-                  },
-                ],
+                "sets": Array [],
               },
               "topTeam": Object {
                 "hasWon": true,
@@ -4225,38 +4136,7 @@ exports[`RoundTable should render as expected 1`] = `
                 "playerOneImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png",
                 "playerOneName": "Nadal",
                 "playerTwoImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png",
-                "sets": Array [
-                  Object {
-                    "score": 6,
-                    "set": 1,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 2,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 3,
-                    "tie": 2,
-                    "won": false,
-                  },
-                  Object {
-                    "score": 6,
-                    "set": 4,
-                    "tie": null,
-                    "won": true,
-                  },
-                  Object {
-                    "score": 3,
-                    "set": 5,
-                    "tie": null,
-                    "won": false,
-                  },
-                ],
+                "sets": Array [],
               },
             },
             "hasWon": true,
@@ -4264,6 +4144,10 @@ exports[`RoundTable should render as expected 1`] = `
             "matchUrl": "https://eurosport.com",
             "round": Object {
               "number": 4,
+            },
+            "schedule": Object {
+              "date": "22 August 2019",
+              "time": "Starting from 17:00",
             },
           },
         ]
@@ -6871,38 +6755,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
             "playerOneImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png",
             "playerOneName": "Federer",
             "playerTwoImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png",
-            "sets": Array [
-              Object {
-                "score": 3,
-                "set": 1,
-                "tie": null,
-                "won": false,
-              },
-              Object {
-                "score": 3,
-                "set": 2,
-                "tie": null,
-                "won": true,
-              },
-              Object {
-                "score": 7,
-                "set": 3,
-                "tie": 7,
-                "won": true,
-              },
-              Object {
-                "score": 3,
-                "set": 4,
-                "tie": null,
-                "won": false,
-              },
-              Object {
-                "score": 6,
-                "set": 5,
-                "tie": null,
-                "won": true,
-              },
-            ],
+            "sets": Array [],
           },
           "topTeam": Object {
             "hasWon": true,
@@ -6910,38 +6763,7 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
             "playerOneImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2202.png",
             "playerOneName": "Nadal",
             "playerTwoImage": "https://i.eurosport.com/_iss_/geo/country/flag/small/2231.png",
-            "sets": Array [
-              Object {
-                "score": 6,
-                "set": 1,
-                "tie": null,
-                "won": true,
-              },
-              Object {
-                "score": 6,
-                "set": 2,
-                "tie": null,
-                "won": true,
-              },
-              Object {
-                "score": 6,
-                "set": 3,
-                "tie": 2,
-                "won": false,
-              },
-              Object {
-                "score": 6,
-                "set": 4,
-                "tie": null,
-                "won": true,
-              },
-              Object {
-                "score": 3,
-                "set": 5,
-                "tie": null,
-                "won": false,
-              },
-            ],
+            "sets": Array [],
           },
         },
         "hasWon": true,
@@ -6949,6 +6771,10 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
         "matchUrl": "https://eurosport.com",
         "round": Object {
           "number": 4,
+        },
+        "schedule": Object {
+          "date": "22 August 2019",
+          "time": "Starting from 17:00",
         },
       },
     ]
