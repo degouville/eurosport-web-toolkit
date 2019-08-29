@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 
 import ScoreBlock, { scoreBlockType } from 'src/components/ScoreBlock';
 import SimpleTabs from 'src/modules/SimpleTabs';
-import Grid from '../../elements/Grid';
+import { coreNeutral9 } from 'src/colors';
+import Grid from 'src/elements/Grid';
 
 const StyledMatches = styled.div``;
 const StyledSimpleTabs = styled.div`
@@ -14,7 +15,7 @@ const StyledScoreBlock = styled.div`
   margin: 2em 0 2em 0;
 `;
 const StyledHr = styled.div`
-  background-color: ${({ theme }) => theme.tab.borderColor};
+  background-color: ${coreNeutral9};
   width: 100%;
   height: 1px;
   margin: 1em 0;
