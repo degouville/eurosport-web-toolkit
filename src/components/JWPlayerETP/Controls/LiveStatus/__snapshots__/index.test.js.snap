@@ -1,22 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offline 1`] = `
+.emotion-4 {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-0 {
+  color: #f8f8f9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  width: 43px;
+  border-radius: 1px;
+  background-color: transparent;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <LiveStatus
   isLive={false}
 >
   <Styled(div)>
     <div
-      className="css-1jzlc0z e1dvnz1v0"
+      className="emotion-4 emotion-5"
     >
       <Styled(div)
         isLive={false}
       >
         <div
-          className="css-3k17so e1dvnz1v2"
+          className="emotion-2 emotion-3"
         >
           <Styled(div)>
             <div
-              className="css-1fug72t e1dvnz1v3"
+              className="emotion-0 emotion-1"
             >
               LIVE
             </div>
@@ -41,22 +92,73 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
 `;
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 2`] = `
+.emotion-4 {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  width: 43px;
+  border-radius: 1px;
+  background-color: #d50032;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 {
+  color: #f8f8f9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 12px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+}
+
 <LiveStatus
   isLive={true}
 >
   <Styled(div)>
     <div
-      className="css-1jzlc0z e1dvnz1v0"
+      className="emotion-4 emotion-5"
     >
       <Styled(div)
         isLive={true}
       >
         <div
-          className="css-1yo9b17 e1dvnz1v2"
+          className="emotion-2 emotion-3"
         >
           <Styled(div)>
             <div
-              className="css-1fug72t e1dvnz1v3"
+              className="emotion-0 emotion-1"
             >
               LIVE
             </div>

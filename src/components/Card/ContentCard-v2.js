@@ -190,11 +190,6 @@ const desktopStyles = `
     font-size: 28px;
     line-height: 36px;
     margin: 14px 40px 0 40px;
-
-    ${breakpoints.large(`
-      font-size: 28px;
-      line-height: 36px;
-    `)};
   }
 
   ${DivDescription} {

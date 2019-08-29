@@ -1,6 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
+.emotion-4 {
+  padding: 0 6px 0 16px;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  text-align: right;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    font-size: 14px;
+  }
+}
+
+.emotion-0 {
+  opacity: 0.7;
+}
+
+.emotion-2 {
+  opacity: 0.8;
+  font-weight: bold;
+}
+
 <SetsSchedule
   data={
     Object {
@@ -21,11 +46,11 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
 >
   <Styled(p)>
     <p
-      className="css-1jajg3i e1y839xa0"
+      className="emotion-4 emotion-5"
     >
       <Styled(span)>
         <span
-          className="css-sllbpf e1y839xa1"
+          className="emotion-0 emotion-1"
         >
           le 28 Octobre
         </span>
@@ -33,7 +58,7 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
       <br />
       <Styled(b)>
         <b
-          className="css-1inhe6l e1y839xa2"
+          className="emotion-2 emotion-3"
         >
           à 18h00
         </b>

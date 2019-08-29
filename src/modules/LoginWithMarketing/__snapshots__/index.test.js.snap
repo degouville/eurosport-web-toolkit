@@ -1,6 +1,821 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
+.emotion-72 {
+  display: none;
+}
+
+.emotion-106 {
+  display: none;
+  width: 100%;
+}
+
+@media (min-width:480px) {
+  .emotion-106 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 37px 33px 40px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-106 {
+    margin-top: 71px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-106 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    padding: 0 calc(30vw - 277px);
+    margin-top: 25vh;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-27 {
+    margin-right: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+  }
+}
+
+.emotion-0 {
+  margin-bottom: 40px;
+}
+
+.emotion-4 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    font-size: 30px;
+  }
+}
+
+.emotion-6 {
+  font-size: 16px;
+  color: #b9bbca;
+  margin: 20px 0;
+  line-height: 24px;
+}
+
+.emotion-14 {
+  margin: 32px 0;
+}
+
+.emotion-8 {
+  color: #ffffff;
+  padding-left: 30px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  list-style: none;
+  background: url(/eurosport-web-toolkit/695670d208041efef022e15df6e34055.svg) left 5px no-repeat;
+}
+
+.emotion-23 {
+  background-color: #d50032;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  max-width: 222px;
+}
+
+.emotion-23:focus,
+.emotion-23:visited,
+.emotion-23:hover {
+  color: #ffffff;
+}
+
+.emotion-23:after {
+  margin-left: 11px;
+}
+
+.emotion-23:hover {
+  background-color: #ff3c6a;
+}
+
+@media (min-width:1024px) {
+  .emotion-23 {
+    max-width: none;
+  }
+}
+
+.emotion-21 {
+  color: #66cef9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1.27px;
+  -moz-letter-spacing: 1.27px;
+  -ms-letter-spacing: 1.27px;
+  letter-spacing: 1.27px;
+  line-height: 24px;
+  white-space: nowrap;
+  background-color: #d50032;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  max-width: 222px;
+}
+
+.emotion-21:focus,
+.emotion-21:visited,
+.emotion-21:hover {
+  color: #66cef9;
+}
+
+.emotion-21:focus,
+.emotion-21:visited,
+.emotion-21:hover {
+  color: #ffffff;
+}
+
+.emotion-21:after {
+  margin-left: 11px;
+}
+
+.emotion-21:hover {
+  background-color: #ff3c6a;
+}
+
+@media (min-width:1024px) {
+  .emotion-21 {
+    max-width: none;
+  }
+}
+
+.emotion-16 {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.emotion-16 path {
+  fill: currentColor;
+}
+
+.emotion-29 {
+  border-bottom: solid 2px #2d304a;
+  margin: 30px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-29 {
+    border-right: solid 2px #2d304a;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    margin: 0 118px;
+  }
+}
+
+.emotion-102 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (min-width:1024px) {
+  .emotion-102 {
+    max-width: 500px;
+  }
+}
+
+.emotion-31 {
+  color: #ffffff;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@media (min-width:480px) {
+  .emotion-31 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-31 {
+    line-height: 36px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-76 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+    -webkit-align-items: end;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-76 {
+    display: block;
+  }
+}
+
+.emotion-41 {
+  margin-top: 28px;
+}
+
+.emotion-33 {
+  position: static;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 0;
+  margin-right: 24px;
+  height: 14px;
+  color: #9798a6;
+  font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.emotion-39 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #41435b;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  margin-top: 13px;
+  border-radius: 4px;
+  background-color: #04050f;
+}
+
+.emotion-37 {
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.emotion-35 {
+  position: relative;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 13px;
+  outline: 0;
+  border: 0;
+  border: none;
+  padding: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: transparent;
+  height: 24px;
+  color: #f8f8f9;
+  font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.emotion-55 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.emotion-55 .emotion-52 {
+  fill: #41435b;
+}
+
+.emotion-55 .emotion-50 {
+  color: #41435b;
+  font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+}
+
+.emotion-55:hover .emotion-52 {
+  fill: #9798a6;
+}
+
+.emotion-55:hover .emotion-50 {
+  color: #9798a6;
+}
+
+.emotion-49 {
+  margin-right: 8px;
+  margin-left: 8px;
+  height: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-align: right;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.emotion-51 {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.emotion-68 {
+  background-color: #2d304a;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.emotion-68:focus,
+.emotion-68:visited,
+.emotion-68:hover {
+  color: #ffffff;
+}
+
+.emotion-68:after {
+  margin-left: 11px;
+}
+
+.emotion-68:hover {
+  background-color: #373a5a;
+}
+
+.emotion-66 {
+  color: #66cef9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1.27px;
+  -moz-letter-spacing: 1.27px;
+  -ms-letter-spacing: 1.27px;
+  letter-spacing: 1.27px;
+  line-height: 24px;
+  white-space: nowrap;
+  background-color: #2d304a;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.emotion-66:focus,
+.emotion-66:visited,
+.emotion-66:hover {
+  color: #66cef9;
+}
+
+.emotion-66:focus,
+.emotion-66:visited,
+.emotion-66:hover {
+  color: #ffffff;
+}
+
+.emotion-66:after {
+  margin-left: 11px;
+}
+
+.emotion-66:hover {
+  background-color: #373a5a;
+}
+
+.emotion-100 {
+  margin-top: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-86 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.emotion-80 {
+  height: 28px;
+  color: #9798a6;
+  font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.emotion-80:hover {
+  color: #c6c7ce;
+}
+
+.emotion-80:hover .emotion-79 {
+  background-color: #c6c7ce;
+}
+
+.emotion-78 {
+  background-color: #9798a6;
+  height: 2px;
+}
+
+.emotion-88 {
+  box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 1px;
+  height: 24px;
+  border: 1px solid #41435b;
+}
+
+.emotion-148 {
+  display: block;
+  margin: 20px;
+}
+
+@media (min-width:480px) {
+  .emotion-148 {
+    display: none;
+  }
+}
+
+.emotion-108 {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 29px;
+}
+
+.emotion-133 {
+  background-color: #d50032;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+}
+
+.emotion-133:focus,
+.emotion-133:visited,
+.emotion-133:hover {
+  color: #ffffff;
+}
+
+.emotion-133:after {
+  margin-left: 11px;
+}
+
+.emotion-133:hover {
+  background-color: #ff3c6a;
+}
+
+.emotion-131 {
+  color: #66cef9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1.27px;
+  -moz-letter-spacing: 1.27px;
+  -ms-letter-spacing: 1.27px;
+  letter-spacing: 1.27px;
+  line-height: 24px;
+  white-space: nowrap;
+  background-color: #d50032;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+}
+
+.emotion-131:focus,
+.emotion-131:visited,
+.emotion-131:hover {
+  color: #66cef9;
+}
+
+.emotion-131:focus,
+.emotion-131:visited,
+.emotion-131:hover {
+  color: #ffffff;
+}
+
+.emotion-131:after {
+  margin-left: 11px;
+}
+
+.emotion-131:hover {
+  background-color: #ff3c6a;
+}
+
+.emotion-144 {
+  background-color: #2d304a;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  margin-top: 16px;
+}
+
+.emotion-144:focus,
+.emotion-144:visited,
+.emotion-144:hover {
+  color: #ffffff;
+}
+
+.emotion-144:after {
+  margin-left: 11px;
+}
+
+.emotion-144:hover {
+  background-color: #373a5a;
+}
+
+.emotion-142 {
+  color: #66cef9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1.27px;
+  -moz-letter-spacing: 1.27px;
+  -ms-letter-spacing: 1.27px;
+  letter-spacing: 1.27px;
+  line-height: 24px;
+  white-space: nowrap;
+  background-color: #2d304a;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+  margin-top: 16px;
+}
+
+.emotion-142:focus,
+.emotion-142:visited,
+.emotion-142:hover {
+  color: #66cef9;
+}
+
+.emotion-142:focus,
+.emotion-142:visited,
+.emotion-142:hover {
+  color: #ffffff;
+}
+
+.emotion-142:after {
+  margin-left: 11px;
+}
+
+.emotion-142:hover {
+  background-color: #373a5a;
+}
+
 <LoginWithMarketing
   callToActionText="New to eurosport player?"
   emailPlaceholder="Email"
@@ -57,11 +872,11 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   >
     <Styled(div)>
       <div
-        className="css-67bf91 eikapd14"
+        className="emotion-106 emotion-107"
       >
         <Styled(div)>
           <div
-            className="css-1798j06 eikapd15"
+            className="emotion-27 emotion-28"
           >
             <Styled(ESPlayerLogo)
               height="17"
@@ -70,14 +885,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <ESPlayerLogo
-                className="css-10ib5jr eikapd16"
+                className="emotion-0 emotion-1"
                 height="17"
                 viewBox="0 0 219 17"
                 width="219"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
-                  className="css-10ib5jr eikapd16"
+                  className="emotion-0 emotion-1"
                   height="17"
                   viewBox="0 0 219 17"
                   width="219"
@@ -125,27 +940,27 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
             >
               <Styled(h2)>
                 <h2
-                  className="css-1aahk2c eikapd10"
+                  className="emotion-4 emotion-5"
                 >
                   Subscribe to watch now
                 </h2>
               </Styled(h2)>
               <Styled(div)>
                 <div
-                  className="css-yi3z0v eikapd11"
+                  className="emotion-6 emotion-7"
                 >
                   This content requires a Eurosport Player subscription. Subscribe now or log in below.
                 </div>
               </Styled(div)>
               <Styled(ul)>
                 <ul
-                  className="css-dbtbg3 eikapd12"
+                  className="emotion-14 emotion-15"
                 >
                   <Styled(li)
                     key="Watch your favorite sports live and on demand"
                   >
                     <li
-                      className="css-5z6suj eikapd13"
+                      className="emotion-8 emotion-9"
                     >
                       Watch your favorite sports live and on demand
                     </li>
@@ -154,7 +969,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                     key="Stream to your device at home and on the go"
                   >
                     <li
-                      className="css-5z6suj eikapd13"
+                      className="emotion-8 emotion-9"
                     >
                       Stream to your device at home and on the go
                     </li>
@@ -163,7 +978,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                     key="Grand Slam tennis, Grand Tour cycling, motorsports and more"
                   >
                     <li
-                      className="css-5z6suj eikapd13"
+                      className="emotion-8 emotion-9"
                     >
                       Grand Slam tennis, Grand Tour cycling, motorsports and more
                     </li>
@@ -178,17 +993,17 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
             >
               <ArrowLink
                 arrowType="arrow"
-                className="css-gmhvum eikapd17"
+                className="emotion-23 emotion-20"
                 href="es.com/subscribe"
                 type="primary"
               >
                 <Styled(a)
-                  className="css-gmhvum eikapd17"
+                  className="emotion-23 emotion-20"
                   href="es.com/subscribe"
                   type="primary"
                 >
                   <a
-                    className="eikapd17 css-1pu92ts e1tranhe2"
+                    className="emotion-20 emotion-21 emotion-22"
                     href="es.com/subscribe"
                     type="primary"
                   >
@@ -200,14 +1015,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <Arrow
-                        className="css-1v0uzda e1tranhe1"
+                        className="emotion-16 emotion-17"
                         height="8"
                         viewBox="0 0 14 8"
                         width="14"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <svg
-                          className="css-1v0uzda e1tranhe1"
+                          className="emotion-16 emotion-17"
                           height="8"
                           viewBox="0 0 14 8"
                           width="14"
@@ -232,12 +1047,12 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
         </Styled(div)>
         <Styled(div)>
           <div
-            className="css-18ofjx6 eikapd18"
+            className="emotion-29 emotion-30"
           />
         </Styled(div)>
         <Styled(div)>
           <div
-            className="css-1798j06 eikapd15"
+            className="emotion-27 emotion-28"
           >
             <Login
               callToActionText="New to eurosport player?"
@@ -261,23 +1076,23 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                 onSubmit={[Function]}
               >
                 <form
-                  className="css-czm1v3 e14ag6ly0"
+                  className="emotion-102 emotion-103"
                   onSubmit={[Function]}
                 >
                   <Styled(h1)>
                     <h1
-                      className="css-1url3ki e14ag6ly8"
+                      className="emotion-31 emotion-32"
                     >
                       Sign In
                     </h1>
                   </Styled(h1)>
                   <Styled(div)>
                     <div
-                      className="css-146svrc e14ag6ly2"
+                      className="emotion-76 emotion-77"
                     >
                       <Styled(div)>
                         <div
-                          className="css-177ty33 e14ag6ly1"
+                          className="emotion-41 emotion-42"
                         >
                           <Input
                             hasLabelInside={false}
@@ -292,7 +1107,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                               hasLabelInside={false}
                             >
                               <label
-                                className="css-1lx8lqk elotd1n5"
+                                className="emotion-33 emotion-34"
                               >
                                 Email
                               </label>
@@ -301,14 +1116,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                               focused={false}
                             >
                               <div
-                                className="css-u57hzt elotd1n3"
+                                className="emotion-39 emotion-40"
                               >
                                 <Styled(div)
                                   focused={false}
                                   hasLabelInside={false}
                                 >
                                   <div
-                                    className="css-1rna6w2 elotd1n4"
+                                    className="emotion-37 emotion-38"
                                   >
                                     <Styled(input)
                                       focused={false}
@@ -320,7 +1135,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                                       value=""
                                     >
                                       <input
-                                        className="css-5rrlqs elotd1n6"
+                                        className="emotion-35 emotion-36"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         onFocus={[Function]}
@@ -337,7 +1152,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                       </Styled(div)>
                       <Styled(div)>
                         <div
-                          className="css-177ty33 e14ag6ly1"
+                          className="emotion-41 emotion-42"
                         >
                           <Input
                             hasLabelInside={false}
@@ -352,7 +1167,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                               hasLabelInside={false}
                             >
                               <label
-                                className="css-1lx8lqk elotd1n5"
+                                className="emotion-33 emotion-34"
                               >
                                 Password
                               </label>
@@ -361,14 +1176,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                               focused={false}
                             >
                               <div
-                                className="css-u57hzt elotd1n3"
+                                className="emotion-39 emotion-40"
                               >
                                 <Styled(div)
                                   focused={false}
                                   hasLabelInside={false}
                                 >
                                   <div
-                                    className="css-1rna6w2 elotd1n4"
+                                    className="emotion-37 emotion-38"
                                   >
                                     <Styled(input)
                                       focused={false}
@@ -380,7 +1195,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                                       value=""
                                     >
                                       <input
-                                        className="css-5rrlqs elotd1n6"
+                                        className="emotion-35 emotion-36"
                                         onBlur={[Function]}
                                         onChange={[Function]}
                                         onFocus={[Function]}
@@ -395,12 +1210,12 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                                   onClick={[Function]}
                                 >
                                   <div
-                                    className="css-tnoxv4 elotd1n2"
+                                    className="emotion-55 emotion-56"
                                     onClick={[Function]}
                                   >
                                     <Styled(p)>
                                       <p
-                                        className="css-1i6pfsd elotd1n1"
+                                        className="emotion-49 emotion-50"
                                       >
                                         Show
                                       </p>
@@ -410,12 +1225,12 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <Eye
-                                        className="css-9vzgqc elotd1n0"
+                                        className="emotion-51 emotion-52"
                                         viewBox="0 0 24 14"
                                         xmlns="http://www.w3.org/2000/svg"
                                       >
                                         <svg
-                                          className="css-9vzgqc elotd1n0"
+                                          className="emotion-51 emotion-52"
                                           viewBox="0 0 24 14"
                                           xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -434,7 +1249,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                       </Styled(div)>
                       <Styled(div)>
                         <div
-                          className="css-177ty33 e14ag6ly1"
+                          className="emotion-41 emotion-42"
                         >
                           <Button
                             arrowType="arrow"
@@ -444,19 +1259,19 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                           >
                             <ArrowLink
                               arrowType="arrow"
-                              className="css-51gf51 ecyc6sh0"
+                              className="emotion-68 emotion-65"
                               onClick={[Function]}
                               tabIndex="0"
                               type="secondaryForm"
                             >
                               <Styled(a)
-                                className="css-51gf51 ecyc6sh0"
+                                className="emotion-68 emotion-65"
                                 onClick={[Function]}
                                 tabIndex="0"
                                 type="secondaryForm"
                               >
                                 <a
-                                  className="ecyc6sh0 css-njxai1 e1tranhe2"
+                                  className="emotion-65 emotion-66 emotion-22"
                                   onClick={[Function]}
                                   tabIndex="0"
                                   type="secondaryForm"
@@ -469,14 +1284,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <Arrow
-                                      className="css-1v0uzda e1tranhe1"
+                                      className="emotion-16 emotion-17"
                                       height="8"
                                       viewBox="0 0 14 8"
                                       width="14"
                                       xmlns="http://www.w3.org/2000/svg"
                                     >
                                       <svg
-                                        className="css-1v0uzda e1tranhe1"
+                                        className="emotion-16 emotion-17"
                                         height="8"
                                         viewBox="0 0 14 8"
                                         width="14"
@@ -501,7 +1316,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                             type="submit"
                           >
                             <input
-                              className="css-1hyfx7x e14ag6ly9"
+                              className="emotion-72 emotion-73"
                               type="submit"
                             />
                           </Styled(input)>
@@ -511,36 +1326,36 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                   </Styled(div)>
                   <Styled(div)>
                     <div
-                      className="css-2xjtt7 e14ag6ly3"
+                      className="emotion-100 emotion-101"
                     >
                       <UnderlineLink
                         href="es.com/forgot"
                       >
                         <Styled(div)>
                           <div
-                            className="css-1gb1rig e216aj90"
+                            className="emotion-86 emotion-87"
                           >
                             <Styled(Link)
                               href="es.com/forgot"
                               linkComponent={[Function]}
                             >
                               <Link
-                                className="css-1qbbfwn e216aj92"
+                                className="emotion-80 emotion-81"
                                 href="es.com/forgot"
                                 linkComponent={[Function]}
                               >
                                 <DefaultLinkComponent
-                                  className="css-1qbbfwn e216aj92"
+                                  className="emotion-80 emotion-81"
                                   href="es.com/forgot"
                                 >
                                   <a
-                                    className="css-1qbbfwn e216aj92"
+                                    className="emotion-80 emotion-81"
                                     href="es.com/forgot"
                                   >
                                     Forgot password
                                     <Styled(div)>
                                       <div
-                                        className="css-wk2vrc e216aj91"
+                                        className="emotion-78 emotion-79"
                                       />
                                     </Styled(div)>
                                   </a>
@@ -552,7 +1367,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                       </UnderlineLink>
                       <Styled(div)>
                         <div
-                          className="css-obh9g3 e14ag6ly4"
+                          className="emotion-88 emotion-89"
                         />
                       </Styled(div)>
                       <UnderlineLink
@@ -560,29 +1375,29 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                       >
                         <Styled(div)>
                           <div
-                            className="css-1gb1rig e216aj90"
+                            className="emotion-86 emotion-87"
                           >
                             <Styled(Link)
                               href="es.com/help"
                               linkComponent={[Function]}
                             >
                               <Link
-                                className="css-1qbbfwn e216aj92"
+                                className="emotion-80 emotion-81"
                                 href="es.com/help"
                                 linkComponent={[Function]}
                               >
                                 <DefaultLinkComponent
-                                  className="css-1qbbfwn e216aj92"
+                                  className="emotion-80 emotion-81"
                                   href="es.com/help"
                                 >
                                   <a
-                                    className="css-1qbbfwn e216aj92"
+                                    className="emotion-80 emotion-81"
                                     href="es.com/help"
                                   >
                                     Need Help?
                                     <Styled(div)>
                                       <div
-                                        className="css-wk2vrc e216aj91"
+                                        className="emotion-78 emotion-79"
                                       />
                                     </Styled(div)>
                                   </a>
@@ -631,11 +1446,11 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   >
     <Styled(div)>
       <div
-        className="css-1437bb7 eikapd110"
+        className="emotion-148 emotion-70"
       >
         <Styled(div)>
           <div
-            className="css-0 eikapd111"
+            className="emotion-112 emotion-71"
           >
             <Styled(ESPlayerLogo)
               height="17"
@@ -644,14 +1459,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
               xmlns="http://www.w3.org/2000/svg"
             >
               <ESPlayerLogo
-                className="css-rwvsq9 eikapd112"
+                className="emotion-108 emotion-72"
                 height="17"
                 viewBox="0 0 219 17"
                 width="219"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <svg
-                  className="css-rwvsq9 eikapd112"
+                  className="emotion-108 emotion-72"
                   height="17"
                   viewBox="0 0 219 17"
                   width="219"
@@ -701,27 +1516,27 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
         >
           <Styled(h2)>
             <h2
-              className="css-1aahk2c eikapd10"
+              className="emotion-4 emotion-5"
             >
               Subscribe to watch now
             </h2>
           </Styled(h2)>
           <Styled(div)>
             <div
-              className="css-yi3z0v eikapd11"
+              className="emotion-6 emotion-7"
             >
               This content requires a Eurosport Player subscription. Subscribe now or log in below.
             </div>
           </Styled(div)>
           <Styled(ul)>
             <ul
-              className="css-dbtbg3 eikapd12"
+              className="emotion-14 emotion-15"
             >
               <Styled(li)
                 key="Watch your favorite sports live and on demand"
               >
                 <li
-                  className="css-5z6suj eikapd13"
+                  className="emotion-8 emotion-9"
                 >
                   Watch your favorite sports live and on demand
                 </li>
@@ -730,7 +1545,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                 key="Stream to your device at home and on the go"
               >
                 <li
-                  className="css-5z6suj eikapd13"
+                  className="emotion-8 emotion-9"
                 >
                   Stream to your device at home and on the go
                 </li>
@@ -739,7 +1554,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                 key="Grand Slam tennis, Grand Tour cycling, motorsports and more"
               >
                 <li
-                  className="css-5z6suj eikapd13"
+                  className="emotion-8 emotion-9"
                 >
                   Grand Slam tennis, Grand Tour cycling, motorsports and more
                 </li>
@@ -754,17 +1569,17 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
         >
           <ArrowLink
             arrowType="arrow"
-            className="css-19fb2hi ecyc6sh0"
+            className="emotion-133 emotion-65"
             href="es.com/subscribe"
             type="primary"
           >
             <Styled(a)
-              className="css-19fb2hi ecyc6sh0"
+              className="emotion-133 emotion-65"
               href="es.com/subscribe"
               type="primary"
             >
               <a
-                className="ecyc6sh0 css-1cnvft e1tranhe2"
+                className="emotion-65 emotion-131 emotion-22"
                 href="es.com/subscribe"
                 type="primary"
               >
@@ -776,14 +1591,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <Arrow
-                    className="css-1v0uzda e1tranhe1"
+                    className="emotion-16 emotion-17"
                     height="8"
                     viewBox="0 0 14 8"
                     width="14"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <svg
-                      className="css-1v0uzda e1tranhe1"
+                      className="emotion-16 emotion-17"
                       height="8"
                       viewBox="0 0 14 8"
                       width="14"
@@ -811,17 +1626,17 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
         >
           <ArrowLink
             arrowType="arrow"
-            className="css-1qjj437 eikapd19"
+            className="emotion-144 emotion-141"
             onClick={[Function]}
             type="secondaryForm"
           >
             <Styled(a)
-              className="css-1qjj437 eikapd19"
+              className="emotion-144 emotion-141"
               onClick={[Function]}
               type="secondaryForm"
             >
               <a
-                className="eikapd19 css-1eugg7q e1tranhe2"
+                className="emotion-141 emotion-142 emotion-22"
                 onClick={[Function]}
                 type="secondaryForm"
               >
@@ -833,14 +1648,14 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <Arrow
-                    className="css-1v0uzda e1tranhe1"
+                    className="emotion-16 emotion-17"
                     height="8"
                     viewBox="0 0 14 8"
                     width="14"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <svg
-                      className="css-1v0uzda e1tranhe1"
+                      className="emotion-16 emotion-17"
                       height="8"
                       viewBox="0 0 14 8"
                       width="14"

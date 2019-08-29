@@ -1,12 +1,816 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
+.emotion-218 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  color: black;
+  z-index: 10;
+  display: block;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  background-size: 20px 20px;
+}
+
+.emotion-0:hover {
+  cursor: pointer;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    right: 35px;
+    top: 35px;
+  }
+}
+
+.emotion-216 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.emotion-174 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  min-height: 20px;
+  height: 100%;
+}
+
+.emotion-34 {
+  width: 21.25%;
+  min-width: 100px;
+  background: #04050f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  text-align: center;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width:1024px) {
+  .emotion-34 {
+    width: 195px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  padding: 0 25px 0 17px;
+  min-height: 53px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #41435b;
+}
+
+.emotion-4:hover {
+  background-color: #009cde;
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    height: 157px;
+  }
+}
+
+.emotion-4.emotion-4.emotion-4 .emotion-3 {
+  width: 20px;
+  height: 23px;
+  margin: 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    padding: 0;
+  }
+
+  .emotion-4.emotion-4.emotion-4 .emotion-3 {
+    width: 140px;
+    margin: 0;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  width: 147px;
+  height: 17px;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    width: 213px;
+    height: 26px;
+  }
+}
+
+.emotion-8 {
+  padding: 0 10px;
+  background: #d50032;
+  text-transform: uppercase;
+}
+
+.emotion-8 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-8 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-8:hover {
+  background: #009cde;
+}
+
+.emotion-8:hover {
+  background: #d50032;
+}
+
+.emotion-6 {
+  display: block;
+  color: #ffffff;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+
+.emotion-12 {
+  padding: 0 10px;
+}
+
+.emotion-12 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-12 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-12:hover {
+  background: #009cde;
+}
+
+.emotion-16 {
+  padding: 0 10px;
+  background: #009cde;
+}
+
+.emotion-16 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-16 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-16:hover {
+  background: #009cde;
+}
+
+.emotion-32 {
+  padding: 0 10px;
+  margin-top: auto;
+}
+
+.emotion-32 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-32 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-32:hover {
+  background: #009cde;
+}
+
+.emotion-32 .emotion-7 {
+  font-size: 10px;
+}
+
+.emotion-172 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 79px flex-shrink:0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media (min-width:1024px) {
+  .emotion-172 {
+    width: calc(100% - 195px);
+  }
+}
+
+.emotion-44 {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  z-index: 1;
+  padding: 20px;
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: left 0.3s,opacity 0.3s;
+  transition: left 0.3s,opacity 0.3s;
+}
+
+@media (min-width:1024px) {
+  .emotion-44 {
+    display: none;
+  }
+}
+
+.emotion-38 {
+  font-size: 30px;
+  position: absolute;
+  top: 28px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.emotion-36 {
+  background: #009cde;
+  height: 2px;
+  display: block;
+  width: 20px;
+  position: relative;
+  top: 15px;
+}
+
+.emotion-36:before,
+.emotion-36:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  border-top: 2px solid #009cde;
+  content: '';
+  width: 10px;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.emotion-36:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.emotion-40 {
+  border-bottom: 1px solid rgba(63,69,93,0.15);
+  margin-top: 0;
+  padding: 0 0 0 30px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+@media (min-width:1024px) {
+  .emotion-40 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 50px 0 19px 0;
+  }
+}
+
+.emotion-42 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:1024px) {
+
+}
+
+.emotion-170 {
+  padding: 0 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:1024px) {
+  .emotion-170 {
+    padding: 0 20px;
+  }
+}
+
+.emotion-78 {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  -webkit-flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  display: none;
+}
+
+.emotion-78:last-of-type {
+  padding-right: 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-78 {
+    display: block;
+  }
+}
+
+.emotion-46 {
+  color: rgba(61,66,72,0.5);
+  border-bottom: 1px solid rgba(61,66,72,0.15);
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (min-width:1024px) {
+  .emotion-46 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 50px 0 19px 0;
+  }
+}
+
+.emotion-50 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+}
+
+.emotion-48 {
+  color: #3d4248;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #009cde;
+}
+
+@media (min-width:700px) {
+  .emotion-48 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-48 {
+    font-size: 24px;
+  }
+}
+
+.emotion-48:hover {
+  color: #798490;
+}
+
+.emotion-48:hover {
+  color: #64dcff;
+}
+
+.emotion-168 {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.emotion-168:last-of-type {
+  padding-right: 0;
+}
+
+@media (min-width:1024px) {
+
+}
+
+.emotion-166 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-166 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: wrap column;
+    -ms-flex-flow: wrap column;
+    flex-flow: wrap column;
+    height: 385px;
+    overflow-x: hidden;
+  }
+}
+
+.emotion-82 {
+  color: #3d4248;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (min-width:700px) {
+  .emotion-82 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-82 {
+    font-size: 24px;
+  }
+}
+
+.emotion-82:hover {
+  color: #798490;
+}
+
+.emotion-82::after {
+  content: '>';
+  color: #e8e8eb;
+}
+
+@media (min-width:1024px) {
+  .emotion-82::after {
+    display: none;
+  }
+}
+
+.emotion-90 {
+  color: #3d4248;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+@media (min-width:700px) {
+  .emotion-90 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-90 {
+    font-size: 24px;
+  }
+}
+
+.emotion-90:hover {
+  color: #798490;
+}
+
+.emotion-214 {
+  width: 100%;
+  min-height: 68px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #151726;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+@media (min-width:700px) {
+  .emotion-214 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 0 30px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.emotion-204 {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: auto;
+  padding-top: 15px;
+}
+
+@media (min-width:700px) {
+  .emotion-204 {
+    padding-top: 0;
+  }
+}
+
+.emotion-176 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.emotion-202 {
+  margin: 0;
+  padding-left: 10px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1024px) {
+  .emotion-202 {
+    padding-left: 20px;
+  }
+}
+
+.emotion-182 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+@media (min-width:1024px) {
+  .emotion-182 {
+    margin-right: 20px;
+  }
+}
+
+.emotion-178 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/0877828b5ca291d18f7eb65b3ac841fc.svg);
+  background-color: #3d5a98;
+  background-size: 13px 13px;
+}
+
+.emotion-184 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/b49e5ecb17dd84f877bb90a58bb1ce57.svg);
+  background-size: 13px 13px;
+  background-color: #0090fe;
+}
+
+.emotion-190 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/7b476c3d9bf110d64b573b5cc8b56d97.svg);
+  background-size: 13px 13px;
+  background-color: #fffc00;
+}
+
+.emotion-196 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/6e193644debd8745aa4be9017e8d73d4.svg);
+  background-size: 19px 19px;
+}
+
+.emotion-212 {
+  list-style: none;
+  padding: 5px 0 10px;
+}
+
+@media (min-width:700px) {
+  .emotion-212 {
+    padding: 6px 0 10px;
+  }
+}
+
+.emotion-206 {
+  display: inline-block;
+  color: #c6c7ce;
+  font-size: 9px;
+  line-height: 12px;
+}
+
+@media (min-width:1024px) {
+  .emotion-206 {
+    line-height: normal;
+    font-size: 12px;
+  }
+}
+
+.emotion-206:not(:last-child)::after {
+  content: '|';
+  padding: 0 7px;
+}
+
+.emotion-206 a {
+  color: #c6c7ce;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-180 {
+  display: none;
+}
+
+@media (min-width:700px) {
+  .emotion-180 {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 5px;
+    line-height: 19px;
+    vertical-align: middle;
+  }
+}
+
 <div
-  class="css-tt17dr e1cerjsu0"
+  class="emotion-218 emotion-219"
   data-test="modal-container"
 >
   <svg
-    class="css-8rm5yy e1cerjsu1"
+    class="emotion-0 emotion-1"
     data-test="burger-menu-close"
     href="#"
     preserveAspectRatio="xMidYMid"
@@ -20,90 +824,90 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
     />
   </svg>
   <div
-    class="css-1rvvun1 e1cerjsu2"
+    class="emotion-216 emotion-217"
   >
     <div
-      class="css-1nm3sht e1cerjsu3"
+      class="emotion-174 emotion-175"
     >
       <ul
-        class="css-k2pbs6 e15sgnhs0"
+        class="emotion-34 emotion-35"
       >
         <a
-          class="css-1pr52mf e15sgnhs1"
+          class="emotion-4 emotion-5"
           data-test="burger-logo"
           href=""
         >
           <img
             alt="Eurosport"
-            class="css-nm00j4 eojfomz0"
+            class="emotion-2 emotion-3"
             src="/eurosport-web-toolkit/e6cae33e67433ad1dfcd8af34364b8fc.svg"
           />
         </a>
         <li
-          class="css-h1wkaw ez2m5u11"
+          class="emotion-8 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="/watch-eurosport-live-stream.shtml"
           >
             Watch Eurosport
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="/"
           >
             Home
           </a>
         </li>
         <li
-          class="css-8f5psi ez2m5u11"
+          class="emotion-16 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="#"
           >
             All sports
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="https://int-video.eurosport.co.uk"
           >
             Videos
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="//help.eurosport.com/hc/en-gb"
           >
             Help
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="#"
           >
             More
           </a>
         </li>
         <li
-          class="css-5qmh09 ez2m5u11"
+          class="emotion-32 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="#"
           >
             Version EN
@@ -111,46 +915,46 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
         </li>
       </ul>
       <div
-        class="css-11gsfft emqlr8s0"
+        class="emotion-172 emotion-173"
       >
         <div
-          class="css-3phua erde2st0"
+          class="emotion-44 emotion-45"
           data-test="subnav-sports-mobile"
         >
           <div
-            class="css-yc8xj9 erde2st2"
+            class="emotion-38 emotion-39"
           >
             <span
-              class="css-ta411o erde2st3"
+              class="emotion-36 emotion-37"
             />
           </div>
           <div
-            class="css-1fyfug8 erde2st4"
+            class="emotion-40 emotion-41"
           />
           <ul
-            class="css-ehk4yy erde2st1"
+            class="emotion-42 emotion-43"
             data-test="mobile-menu-list"
           />
         </div>
         <div
-          class="css-1jd1f80 emqlr8s1"
+          class="emotion-170 emotion-171"
         >
           <div
-            class="css-5xwnhj erde2st0"
+            class="emotion-78 emotion-45"
           >
             <div
-              class="css-1ff9muh erde2st4"
+              class="emotion-46 emotion-41"
             >
               Popular sports
             </div>
             <ul
-              class="css-ehk4yy erde2st1"
+              class="emotion-42 emotion-43"
             >
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-football"
                   href="/football/"
                 >
@@ -158,10 +962,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-olympics"
                   href="/olympics/"
                 >
@@ -169,10 +973,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-winter-sports"
                   href="/winter-sports/"
                 >
@@ -180,10 +984,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-tennis"
                   href="/tennis/"
                 >
@@ -191,10 +995,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-snooker"
                   href="/snooker/"
                 >
@@ -202,10 +1006,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-motorsports"
                   href="/allmotorsports/"
                 >
@@ -213,10 +1017,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-cycling"
                   href="/cycling/"
                 >
@@ -226,21 +1030,21 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
             </ul>
           </div>
           <div
-            class="css-1s18wcu erde2st0"
+            class="emotion-168 emotion-45"
           >
             <div
-              class="css-1ff9muh erde2st4"
+              class="emotion-46 emotion-41"
             >
               All sports
             </div>
             <ul
-              class="css-1xwddlu erde2st1"
+              class="emotion-166 emotion-43"
             >
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-athletics"
                   href="/athletics/"
                 >
@@ -248,10 +1052,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-basketball"
                   href="/basketball/"
                 >
@@ -259,10 +1063,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-boxing"
                   href="/boxing/"
                 >
@@ -270,10 +1074,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-bsb"
                   href="/british-superbikes/"
                 >
@@ -281,10 +1085,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-cricket"
                   href="/cricket/"
                 >
@@ -292,10 +1096,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-cycling"
                   href="/cycling/"
                 >
@@ -303,10 +1107,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-darts"
                   href="/darts/"
                 >
@@ -314,10 +1118,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-equestrian"
                   href="/equestrian/"
                 >
@@ -325,10 +1129,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-f-1"
                   href="/formula-1/"
                 >
@@ -336,10 +1140,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-fencing"
                   href="/fencing/"
                 >
@@ -347,10 +1151,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-football"
                   href="/football/"
                 >
@@ -358,10 +1162,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-formula-e"
                   href="/formula-e/"
                 >
@@ -369,10 +1173,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-golf"
                   href="/golf/"
                 >
@@ -380,10 +1184,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-horse-racing"
                   href="/horse-racing/"
                 >
@@ -391,10 +1195,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-judo"
                   href="/judo/"
                 >
@@ -402,10 +1206,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-motorsports"
                   href="/allmotorsports/"
                 >
@@ -413,10 +1217,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-olympics"
                   href="/olympics/"
                 >
@@ -424,10 +1228,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-snooker"
                   href="/snooker/"
                 >
@@ -435,10 +1239,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-90 emotion-49"
                   data-test="desktop-squash"
                   href="/squash/"
                 >
@@ -446,10 +1250,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-tennis"
                   href="/tennis/"
                 >
@@ -457,10 +1261,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="desktop-winter-sports"
                   href="/winter-sports/"
                 >
@@ -473,30 +1277,30 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
       </div>
     </div>
     <div
-      class="css-120vk9r evisfmq0"
+      class="emotion-214 emotion-215"
     >
       <div
-        class="css-1qhspg1 e1n47iff0"
+        class="emotion-204 emotion-205"
       >
         <div
-          class="css-1pwvd6w e1n47iff1"
+          class="emotion-176 emotion-177"
         >
           Follow us on :
         </div>
         <ul
-          class="css-19726qa e1n47iff2"
+          class="emotion-202 emotion-203"
         >
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-182 emotion-183"
               href="//facebook.com/Eurosport-828777003809568"
               target="_self"
             >
               <span
-                class="css-yo96p3 e18f09mm0"
+                class="emotion-178 emotion-179"
               />
               <span
-                class="css-mbm9py e1862d8r0"
+                class="emotion-180 emotion-181"
               >
                 Facebook
               </span>
@@ -504,15 +1308,15 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
           </li>
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-182 emotion-183"
               href="//twitter.com/Eurosport_UK"
               target="_self"
             >
               <span
-                class="css-lq4xgz e18f09mm3"
+                class="emotion-184 emotion-185"
               />
               <span
-                class="css-mbm9py e1862d8r0"
+                class="emotion-180 emotion-181"
               >
                 Twitter
               </span>
@@ -520,15 +1324,15 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
           </li>
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-182 emotion-183"
               href="//www.snapchat.com/add/eurosport"
               target="_self"
             >
               <span
-                class="css-l8siqh e18f09mm1"
+                class="emotion-190 emotion-191"
               />
               <span
-                class="css-mbm9py e1862d8r0"
+                class="emotion-180 emotion-181"
               >
                 Snapchat
               </span>
@@ -536,15 +1340,15 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
           </li>
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-182 emotion-183"
               href="//www.instagram.com/eurosport"
               target="_self"
             >
               <span
-                class="css-urwayz e18f09mm2"
+                class="emotion-196 emotion-197"
               />
               <span
-                class="css-mbm9py e1862d8r0"
+                class="emotion-180 emotion-181"
               >
                 Instagram
               </span>
@@ -553,10 +1357,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
         </ul>
       </div>
       <ul
-        class="css-1cuyefm evisfmq1"
+        class="emotion-212 emotion-213"
       >
         <li
-          class="css-7avswz evisfmq2"
+          class="emotion-206 emotion-207"
         >
           <a
             href="https://int.eurosport.co.uk/eurosport/legal-notice_sto4289230/story.shtml"
@@ -566,7 +1370,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
           </a>
         </li>
         <li
-          class="css-7avswz evisfmq2"
+          class="emotion-206 emotion-207"
         >
           <a
             href="https://int.eurosport.co.uk/eurosport/eurosport-privacy-policy_sto4264003/story.shtml"
@@ -576,7 +1380,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
           </a>
         </li>
         <li
-          class="css-7avswz evisfmq2"
+          class="emotion-206 emotion-207"
         >
           <a
             href="https://int.eurosport.co.uk/eurosport/cookie-policy_sto6832423/story.shtml"
@@ -592,12 +1396,802 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 `;
 
 exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
+.emotion-210 {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  color: black;
+  z-index: 10;
+  display: block;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  background-size: 20px 20px;
+}
+
+.emotion-0:hover {
+  cursor: pointer;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    right: 35px;
+    top: 35px;
+  }
+}
+
+.emotion-208 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.emotion-174 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  min-height: 20px;
+  height: 100%;
+}
+
+.emotion-34 {
+  width: 21.25%;
+  min-width: 100px;
+  background: #04050f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  text-align: center;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width:1024px) {
+  .emotion-34 {
+    width: 195px;
+  }
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  padding: 0 25px 0 17px;
+  min-height: 53px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #41435b;
+}
+
+.emotion-4:hover {
+  background-color: #009cde;
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    height: 157px;
+  }
+}
+
+.emotion-4.emotion-4.emotion-4 .emotion-3 {
+  width: 20px;
+  height: 23px;
+  margin: 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    padding: 0;
+  }
+
+  .emotion-4.emotion-4.emotion-4 .emotion-3 {
+    width: 140px;
+    margin: 0;
+  }
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  width: 147px;
+  height: 17px;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    width: 213px;
+    height: 26px;
+  }
+}
+
+.emotion-8 {
+  padding: 0 10px;
+  background: #d50032;
+  text-transform: uppercase;
+}
+
+.emotion-8 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-8 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-8:hover {
+  background: #009cde;
+}
+
+.emotion-8:hover {
+  background: #d50032;
+}
+
+.emotion-6 {
+  display: block;
+  color: #ffffff;
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+
+.emotion-12 {
+  padding: 0 10px;
+}
+
+.emotion-12 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-12 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-12:hover {
+  background: #009cde;
+}
+
+.emotion-16 {
+  padding: 0 10px;
+  background: #009cde;
+}
+
+.emotion-16 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-16 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-16:hover {
+  background: #009cde;
+}
+
+.emotion-32 {
+  padding: 0 10px;
+  margin-top: auto;
+}
+
+.emotion-32 .emotion-7 {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 18px 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-32 .emotion-7 {
+    padding: 22px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.emotion-32:hover {
+  background: #009cde;
+}
+
+.emotion-32 .emotion-7 {
+  font-size: 10px;
+}
+
+.emotion-172 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 79px flex-shrink:0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+@media (min-width:1024px) {
+  .emotion-172 {
+    width: calc(100% - 195px);
+  }
+}
+
+.emotion-44 {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: white;
+  z-index: 1;
+  padding: 20px;
+  left: 100%;
+  opacity: 0;
+  -webkit-transition: left 0.3s,opacity 0.3s;
+  transition: left 0.3s,opacity 0.3s;
+}
+
+@media (min-width:1024px) {
+  .emotion-44 {
+    display: none;
+  }
+}
+
+.emotion-38 {
+  font-size: 30px;
+  position: absolute;
+  top: 28px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.emotion-36 {
+  background: #009cde;
+  height: 2px;
+  display: block;
+  width: 20px;
+  position: relative;
+  top: 15px;
+}
+
+.emotion-36:before,
+.emotion-36:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  border-top: 2px solid #009cde;
+  content: '';
+  width: 10px;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.emotion-36:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.emotion-40 {
+  border-bottom: 1px solid rgba(63,69,93,0.15);
+  margin-top: 0;
+  padding: 0 0 0 30px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+@media (min-width:1024px) {
+  .emotion-40 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 50px 0 19px 0;
+  }
+}
+
+.emotion-42 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:1024px) {
+
+}
+
+.emotion-170 {
+  padding: 0 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:1024px) {
+  .emotion-170 {
+    padding: 0 20px;
+  }
+}
+
+.emotion-78 {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  -webkit-flex-basis: 20%;
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  display: none;
+}
+
+.emotion-78:last-of-type {
+  padding-right: 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-78 {
+    display: block;
+  }
+}
+
+.emotion-46 {
+  color: rgba(61,66,72,0.5);
+  border-bottom: 1px solid rgba(61,66,72,0.15);
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@media (min-width:1024px) {
+  .emotion-46 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 50px 0 19px 0;
+  }
+}
+
+.emotion-50 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+}
+
+.emotion-48 {
+  color: #3d4248;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  color: #009cde;
+}
+
+@media (min-width:700px) {
+  .emotion-48 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-48 {
+    font-size: 24px;
+  }
+}
+
+.emotion-48:hover {
+  color: #798490;
+}
+
+.emotion-48:hover {
+  color: #64dcff;
+}
+
+.emotion-168 {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.emotion-168:last-of-type {
+  padding-right: 0;
+}
+
+@media (min-width:1024px) {
+
+}
+
+.emotion-166 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:1024px) {
+  .emotion-166 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: wrap column;
+    -ms-flex-flow: wrap column;
+    flex-flow: wrap column;
+    height: 385px;
+    overflow-x: hidden;
+  }
+}
+
+.emotion-82 {
+  color: #3d4248;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (min-width:700px) {
+  .emotion-82 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-82 {
+    font-size: 24px;
+  }
+}
+
+.emotion-82:hover {
+  color: #798490;
+}
+
+.emotion-82::after {
+  content: '>';
+  color: #e8e8eb;
+}
+
+@media (min-width:1024px) {
+  .emotion-82::after {
+    display: none;
+  }
+}
+
+.emotion-110 {
+  color: #3d4248;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+@media (min-width:700px) {
+  .emotion-110 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-110 {
+    font-size: 24px;
+  }
+}
+
+.emotion-110:hover {
+  color: #798490;
+}
+
+.emotion-206 {
+  width: 100%;
+  min-height: 68px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #151726;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+@media (min-width:700px) {
+  .emotion-206 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 0 30px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.emotion-196 {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: auto;
+  padding-top: 15px;
+}
+
+@media (min-width:700px) {
+  .emotion-196 {
+    padding-top: 0;
+  }
+}
+
+.emotion-176 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.emotion-194 {
+  margin: 0;
+  padding-left: 10px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:1024px) {
+  .emotion-194 {
+    padding-left: 20px;
+  }
+}
+
+.emotion-180 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #ffffff;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+@media (min-width:1024px) {
+  .emotion-180 {
+    margin-right: 20px;
+  }
+}
+
+.emotion-178 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/0877828b5ca291d18f7eb65b3ac841fc.svg);
+  background-color: #3d5a98;
+  background-size: 13px 13px;
+}
+
+.emotion-182 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/b49e5ecb17dd84f877bb90a58bb1ce57.svg);
+  background-size: 13px 13px;
+  background-color: #0090fe;
+}
+
+.emotion-186 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/7b476c3d9bf110d64b573b5cc8b56d97.svg);
+  background-size: 13px 13px;
+  background-color: #fffc00;
+}
+
+.emotion-190 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/eurosport-web-toolkit/6e193644debd8745aa4be9017e8d73d4.svg);
+  background-size: 19px 19px;
+}
+
+.emotion-204 {
+  list-style: none;
+  padding: 5px 0 10px;
+}
+
+@media (min-width:700px) {
+  .emotion-204 {
+    padding: 6px 0 10px;
+  }
+}
+
+.emotion-198 {
+  display: inline-block;
+  color: #c6c7ce;
+  font-size: 9px;
+  line-height: 12px;
+}
+
+@media (min-width:1024px) {
+  .emotion-198 {
+    line-height: normal;
+    font-size: 12px;
+  }
+}
+
+.emotion-198:not(:last-child)::after {
+  content: '|';
+  padding: 0 7px;
+}
+
+.emotion-198 a {
+  color: #c6c7ce;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <div
-  class="css-tt17dr e1cerjsu0"
+  class="emotion-210 emotion-211"
   data-test="modal-container"
 >
   <svg
-    class="css-8rm5yy e1cerjsu1"
+    class="emotion-0 emotion-1"
     data-test="burger-menu-close"
     href="#"
     preserveAspectRatio="xMidYMid"
@@ -611,90 +2205,90 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
     />
   </svg>
   <div
-    class="css-1rvvun1 e1cerjsu2"
+    class="emotion-208 emotion-209"
   >
     <div
-      class="css-1nm3sht e1cerjsu3"
+      class="emotion-174 emotion-175"
     >
       <ul
-        class="css-k2pbs6 e15sgnhs0"
+        class="emotion-34 emotion-35"
       >
         <a
-          class="css-1pr52mf e15sgnhs1"
+          class="emotion-4 emotion-5"
           data-test="burger-logo"
           href=""
         >
           <img
             alt="Eurosport"
-            class="css-nm00j4 eojfomz0"
+            class="emotion-2 emotion-3"
             src="/eurosport-web-toolkit/a66a34c7f915823dd5f4576c33e1aed1.svg"
           />
         </a>
         <li
-          class="css-h1wkaw ez2m5u11"
+          class="emotion-8 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="/watch-eurosport-live-stream.shtml"
           >
             Watch
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="/"
           >
             Home
           </a>
         </li>
         <li
-          class="css-8f5psi ez2m5u11"
+          class="emotion-16 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="#"
           >
             All sports
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="https://int-video.eurosport.co.uk"
           >
             Videos
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="//help.eurosport.com/hc/en-gb"
           >
             Help
           </a>
         </li>
         <li
-          class="css-z7gdpn ez2m5u11"
+          class="emotion-12 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="#"
           >
             More
           </a>
         </li>
         <li
-          class="css-5qmh09 ez2m5u11"
+          class="emotion-32 emotion-9"
         >
           <a
-            class="css-rf8u0q ez2m5u10"
+            class="emotion-6 emotion-7"
             href="#"
           >
             Version EN
@@ -702,46 +2296,46 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
         </li>
       </ul>
       <div
-        class="css-11gsfft emqlr8s0"
+        class="emotion-172 emotion-173"
       >
         <div
-          class="css-3phua erde2st0"
+          class="emotion-44 emotion-45"
           data-test="subnav-sports-mobile"
         >
           <div
-            class="css-yc8xj9 erde2st2"
+            class="emotion-38 emotion-39"
           >
             <span
-              class="css-ta411o erde2st3"
+              class="emotion-36 emotion-37"
             />
           </div>
           <div
-            class="css-1fyfug8 erde2st4"
+            class="emotion-40 emotion-41"
           />
           <ul
-            class="css-ehk4yy erde2st1"
+            class="emotion-42 emotion-43"
             data-test="mobile-menu-list"
           />
         </div>
         <div
-          class="css-1jd1f80 emqlr8s1"
+          class="emotion-170 emotion-171"
         >
           <div
-            class="css-5xwnhj erde2st0"
+            class="emotion-78 emotion-45"
           >
             <div
-              class="css-1ff9muh erde2st4"
+              class="emotion-46 emotion-41"
             >
               Popular sports
             </div>
             <ul
-              class="css-ehk4yy erde2st1"
+              class="emotion-42 emotion-43"
             >
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-football"
                   href="/football/"
                 >
@@ -749,10 +2343,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-olympics"
                   href="/olympics/"
                 >
@@ -760,10 +2354,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-winter-sports"
                   href="/winter-sports/"
                 >
@@ -771,10 +2365,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-tennis"
                   href="/tennis/"
                 >
@@ -782,10 +2376,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-snooker"
                   href="/snooker/"
                 >
@@ -793,10 +2387,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-motorsports"
                   href="/allmotorsports/"
                 >
@@ -804,10 +2398,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-3jxfkk eacic0h1"
+                  class="emotion-48 emotion-49"
                   data-test="desktop-cycling"
                   href="/cycling/"
                 >
@@ -817,21 +2411,21 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
             </ul>
           </div>
           <div
-            class="css-1s18wcu erde2st0"
+            class="emotion-168 emotion-45"
           >
             <div
-              class="css-1ff9muh erde2st4"
+              class="emotion-46 emotion-41"
             >
               All sports
             </div>
             <ul
-              class="css-1xwddlu erde2st1"
+              class="emotion-166 emotion-43"
             >
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-football"
                   href="/football/"
                 >
@@ -839,10 +2433,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-olympics"
                   href="/olympics/"
                 >
@@ -850,10 +2444,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-winter-sports"
                   href="/winter-sports/"
                 >
@@ -861,10 +2455,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-tennis"
                   href="/tennis/"
                 >
@@ -872,10 +2466,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-snooker"
                   href="/snooker/"
                 >
@@ -883,10 +2477,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-motorsports"
                   href="/allmotorsports/"
                 >
@@ -894,10 +2488,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-cycling"
                   href="/cycling/"
                 >
@@ -905,10 +2499,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-darts"
                   href="/darts/"
                 >
@@ -916,10 +2510,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-athletics"
                   href="/athletics/"
                 >
@@ -927,10 +2521,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-f-1"
                   href="/formula-1/"
                 >
@@ -938,10 +2532,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-formula-e"
                   href="/formula-e/"
                 >
@@ -949,10 +2543,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-horse-racing"
                   href="/horse-racing/"
                 >
@@ -960,10 +2554,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-judo"
                   href="/judo/"
                 >
@@ -971,10 +2565,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-equestrian"
                   href="/equestrian/"
                 >
@@ -982,10 +2576,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-squash"
                   href="/squash/"
                 >
@@ -993,10 +2587,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-cricket"
                   href="/cricket/"
                 >
@@ -1004,10 +2598,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-bsb"
                   href="/british-superbikes/"
                 >
@@ -1015,10 +2609,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-golf"
                   href="/golf/"
                 >
@@ -1026,10 +2620,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1feyfxh eacic0h1"
+                  class="emotion-82 emotion-49"
                   data-test="mobile-basketball"
                   href="/basketball/"
                 >
@@ -1037,10 +2631,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-fencing"
                   href="/fencing/"
                 >
@@ -1048,10 +2642,10 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
                 </a>
               </li>
               <li
-                class="css-oso455 eacic0h0"
+                class="emotion-50 emotion-51"
               >
                 <a
-                  class="css-1w183op eacic0h1"
+                  class="emotion-110 emotion-49"
                   data-test="desktop-boxing"
                   href="/boxing/"
                 >
@@ -1064,70 +2658,70 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
       </div>
     </div>
     <div
-      class="css-120vk9r evisfmq0"
+      class="emotion-206 emotion-207"
     >
       <div
-        class="css-1qhspg1 e1n47iff0"
+        class="emotion-196 emotion-197"
       >
         <div
-          class="css-1pwvd6w e1n47iff1"
+          class="emotion-176 emotion-177"
         >
           Follow us on :
         </div>
         <ul
-          class="css-19726qa e1n47iff2"
+          class="emotion-194 emotion-195"
         >
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-180 emotion-181"
               href="//facebook.com/Eurosport-828777003809568"
               target="_self"
             >
               <span
-                class="css-yo96p3 e18f09mm0"
+                class="emotion-178 emotion-179"
               />
             </a>
           </li>
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-180 emotion-181"
               href="//twitter.com/Eurosport_UK"
               target="_self"
             >
               <span
-                class="css-lq4xgz e18f09mm3"
+                class="emotion-182 emotion-183"
               />
             </a>
           </li>
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-180 emotion-181"
               href="//www.snapchat.com/add/eurosport"
               target="_self"
             >
               <span
-                class="css-l8siqh e18f09mm1"
+                class="emotion-186 emotion-187"
               />
             </a>
           </li>
           <li>
             <a
-              class="css-1e0xen9 e1n47iff3"
+              class="emotion-180 emotion-181"
               href="//www.instagram.com/eurosport"
               target="_self"
             >
               <span
-                class="css-urwayz e18f09mm2"
+                class="emotion-190 emotion-191"
               />
             </a>
           </li>
         </ul>
       </div>
       <ul
-        class="css-1cuyefm evisfmq1"
+        class="emotion-204 emotion-205"
       >
         <li
-          class="css-7avswz evisfmq2"
+          class="emotion-198 emotion-199"
         >
           <a
             href="https://int.eurosport.co.uk/eurosport/legal-notice_sto4289230/story.shtml"
@@ -1137,7 +2731,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
           </a>
         </li>
         <li
-          class="css-7avswz evisfmq2"
+          class="emotion-198 emotion-199"
         >
           <a
             href="https://int.eurosport.co.uk/eurosport/eurosport-privacy-policy_sto4264003/story.shtml"
@@ -1147,7 +2741,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
           </a>
         </li>
         <li
-          class="css-7avswz evisfmq2"
+          class="emotion-198 emotion-199"
         >
           <a
             href="https://int.eurosport.co.uk/eurosport/cookie-policy_sto6832423/story.shtml"

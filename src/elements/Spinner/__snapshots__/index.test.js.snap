@@ -1,12 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Spinner should render default spinner 1`] = `
+.emotion-0 {
+  -webkit-animation: animation-n2ntg8 2s linear infinite;
+  animation: animation-n2ntg8 2s linear infinite;
+}
+
 <Styled(div)
   className="test"
   width="50px"
 >
   <svg
-    className="css-fgjwc2"
+    className="emotion-0"
     viewBox="0 0 66 66"
     xmlns="http://www.w3.org/2000/svg"
   >

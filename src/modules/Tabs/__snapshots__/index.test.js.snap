@@ -1,6 +1,330 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs renders its content 1`] = `
+.emotion-36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.emotion-34 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-6:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-6:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #afafbb;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+}
+
+@media (min-width:700px) {
+  .emotion-12 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-12 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-12:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-12:hover {
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-12:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-12:hover svg path {
+  fill: #ffffff;
+}
+
+.emotion-8 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-8 {
+    display: inline-block;
+  }
+}
+
+.emotion-8 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-8 > svg path {
+  fill: #afafbb;
+}
+
+.emotion-2 {
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    margin-left: 5px;
+  }
+}
+
+.emotion-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #afafbb;
+  position: relative;
+  padding: 23px 0;
+}
+
+.emotion-28:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-28:hover {
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-28:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-28:hover svg path {
+  fill: #ffffff;
+}
+
+.emotion-32 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #afafbb;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+@media (min-width:700px) {
+  .emotion-4 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-4:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-4:hover {
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-4:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4:hover svg path {
+  fill: #ffffff;
+}
+
+.emotion-4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4 svg path {
+  fill: #ffffff;
+}
+
+.emotion-0 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    display: inline-block;
+  }
+}
+
+.emotion-0 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-0 > svg path {
+  fill: #ffffff;
+}
+
 <Tabs
   defaultTab="keytab1"
   onItemSelected={[Function]}
@@ -47,29 +371,343 @@ exports[`Tabs renders its content 1`] = `
       slides={Array []}
     >
       <div
-        className="css-7w3mwd e595p110"
+        className="emotion-36 emotion-37"
         data-test="carousel"
       >
         <Styled(div)
           innerRef={
             Object {
-              "current": <div
-                class="css-1r51bj7 e595p111"
+              "current": .emotion-34 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-6:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-6:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #afafbb;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+}
+
+@media (min-width:700px) {
+  .emotion-12 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-12 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-12:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-12:hover {
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-12:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-12:hover svg path {
+  fill: #ffffff;
+}
+
+.emotion-8 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-8 {
+    display: inline-block;
+  }
+}
+
+.emotion-8 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-8 > svg path {
+  fill: #afafbb;
+}
+
+.emotion-2 {
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    margin-left: 5px;
+  }
+}
+
+.emotion-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #afafbb;
+  position: relative;
+  padding: 23px 0;
+}
+
+.emotion-28:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-28:hover {
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-28:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-28:hover svg path {
+  fill: #ffffff;
+}
+
+.emotion-32 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #afafbb;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+@media (min-width:700px) {
+  .emotion-4 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-4:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-4:hover {
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-4:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4:hover svg path {
+  fill: #ffffff;
+}
+
+.emotion-4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4 svg path {
+  fill: #ffffff;
+}
+
+.emotion-0 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    display: inline-block;
+  }
+}
+
+.emotion-0 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-0 > svg path {
+  fill: #ffffff;
+}
+
+<div
+                class="emotion-34 emotion-35"
               >
                 <div
-                  class="css-7o42oc e595p112"
+                  class="emotion-32 emotion-33"
                   data-test="carousel-slider"
                 >
                   <div
-                    class="css-gnj429 e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-0"
                   >
                     <div
-                      class="css-1aal19r e1sbjia20"
+                      class="emotion-4 emotion-5"
                       data-test="keytab1"
                     >
                       <div
-                        class="css-vvlbjy e1sbjia22"
+                        class="emotion-0 emotion-1"
                       >
                         <svg
                           height="40"
@@ -88,7 +726,7 @@ exports[`Tabs renders its content 1`] = `
                         </svg>
                       </div>
                       <span
-                        class="css-xcmftn e1sbjia21"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         Match
@@ -96,15 +734,15 @@ exports[`Tabs renders its content 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-gnj429 e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-1"
                   >
                     <div
-                      class="css-kv8j5g e1sbjia20"
+                      class="emotion-12 emotion-5"
                       data-test="keytab2"
                     >
                       <div
-                        class="css-1cfwsjd e1sbjia22"
+                        class="emotion-8 emotion-1"
                       >
                         <svg
                           id="Layer_1"
@@ -125,7 +763,7 @@ exports[`Tabs renders its content 1`] = `
                         </svg>
                       </div>
                       <span
-                        class="css-xcmftn e1sbjia21"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         All Matches
@@ -133,15 +771,15 @@ exports[`Tabs renders its content 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-gnj429 e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-2"
                   >
                     <div
-                      class="css-kv8j5g e1sbjia20"
+                      class="emotion-12 emotion-5"
                       data-test="keytab3"
                     >
                       <div
-                        class="css-1cfwsjd e1sbjia22"
+                        class="emotion-8 emotion-1"
                       >
                         <svg
                           id="Layer_1"
@@ -174,7 +812,7 @@ exports[`Tabs renders its content 1`] = `
                         </svg>
                       </div>
                       <span
-                        class="css-xcmftn e1sbjia21"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         User Comments
@@ -182,15 +820,15 @@ exports[`Tabs renders its content 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-gnj429 e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-3"
                   >
                     <div
-                      class="css-107ixc5 e1sbjia20"
+                      class="emotion-28 emotion-5"
                       data-test="keytab4"
                     >
                       <div
-                        class="css-1cfwsjd e1sbjia22"
+                        class="emotion-8 emotion-1"
                       >
                         <svg
                           id="Layer_1"
@@ -213,7 +851,7 @@ exports[`Tabs renders its content 1`] = `
                         </svg>
                       </div>
                       <span
-                        class="css-xcmftn e1sbjia21"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         Live Comments
@@ -227,7 +865,7 @@ exports[`Tabs renders its content 1`] = `
           trackWidth={0}
         >
           <div
-            className="css-1r51bj7 e595p111"
+            className="emotion-34 emotion-35"
           >
             <Styled(div)
               alignCenter={true}
@@ -237,19 +875,19 @@ exports[`Tabs renders its content 1`] = `
               innerRef={
                 Object {
                   "current": <div
-                    class="css-7o42oc e595p112"
+                    class="emotion-32 emotion-33"
                     data-test="carousel-slider"
                   >
                     <div
-                      class="css-gnj429 e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-0"
                     >
                       <div
-                        class="css-1aal19r e1sbjia20"
+                        class="emotion-4 emotion-5"
                         data-test="keytab1"
                       >
                         <div
-                          class="css-vvlbjy e1sbjia22"
+                          class="emotion-0 emotion-1"
                         >
                           <svg
                             height="40"
@@ -268,7 +906,7 @@ exports[`Tabs renders its content 1`] = `
                           </svg>
                         </div>
                         <span
-                          class="css-xcmftn e1sbjia21"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           Match
@@ -276,15 +914,15 @@ exports[`Tabs renders its content 1`] = `
                       </div>
                     </div>
                     <div
-                      class="css-gnj429 e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-1"
                     >
                       <div
-                        class="css-kv8j5g e1sbjia20"
+                        class="emotion-12 emotion-5"
                         data-test="keytab2"
                       >
                         <div
-                          class="css-1cfwsjd e1sbjia22"
+                          class="emotion-8 emotion-1"
                         >
                           <svg
                             id="Layer_1"
@@ -305,7 +943,7 @@ exports[`Tabs renders its content 1`] = `
                           </svg>
                         </div>
                         <span
-                          class="css-xcmftn e1sbjia21"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           All Matches
@@ -313,15 +951,15 @@ exports[`Tabs renders its content 1`] = `
                       </div>
                     </div>
                     <div
-                      class="css-gnj429 e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-2"
                     >
                       <div
-                        class="css-kv8j5g e1sbjia20"
+                        class="emotion-12 emotion-5"
                         data-test="keytab3"
                       >
                         <div
-                          class="css-1cfwsjd e1sbjia22"
+                          class="emotion-8 emotion-1"
                         >
                           <svg
                             id="Layer_1"
@@ -354,7 +992,7 @@ exports[`Tabs renders its content 1`] = `
                           </svg>
                         </div>
                         <span
-                          class="css-xcmftn e1sbjia21"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           User Comments
@@ -362,15 +1000,15 @@ exports[`Tabs renders its content 1`] = `
                       </div>
                     </div>
                     <div
-                      class="css-gnj429 e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-3"
                     >
                       <div
-                        class="css-107ixc5 e1sbjia20"
+                        class="emotion-28 emotion-5"
                         data-test="keytab4"
                       >
                         <div
-                          class="css-1cfwsjd e1sbjia22"
+                          class="emotion-8 emotion-1"
                         >
                           <svg
                             id="Layer_1"
@@ -393,7 +1031,7 @@ exports[`Tabs renders its content 1`] = `
                           </svg>
                         </div>
                         <span
-                          class="css-xcmftn e1sbjia21"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           Live Comments
@@ -408,7 +1046,7 @@ exports[`Tabs renders its content 1`] = `
               trackWidth={0}
             >
               <div
-                className="css-7o42oc e595p112"
+                className="emotion-32 emotion-33"
                 data-test="carousel-slider"
               >
                 <Styled(div)
@@ -419,7 +1057,7 @@ exports[`Tabs renders its content 1`] = `
                   offsetLeft="0"
                 >
                   <div
-                    className="css-gnj429 e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-0"
                   >
                     <Styled(div)
@@ -430,7 +1068,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-1aal19r e1sbjia20"
+                        className="emotion-4 emotion-5"
                         data-test="keytab1"
                         onClick={[Function]}
                       >
@@ -438,7 +1076,7 @@ exports[`Tabs renders its content 1`] = `
                           isActive={true}
                         >
                           <div
-                            className="css-vvlbjy e1sbjia22"
+                            className="emotion-0 emotion-1"
                           >
                             <Icon
                               icon="match"
@@ -473,7 +1111,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-xcmftn e1sbjia21"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             Match
@@ -491,7 +1129,7 @@ exports[`Tabs renders its content 1`] = `
                   offsetLeft="0"
                 >
                   <div
-                    className="css-gnj429 e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-1"
                   >
                     <Styled(div)
@@ -502,7 +1140,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-kv8j5g e1sbjia20"
+                        className="emotion-12 emotion-5"
                         data-test="keytab2"
                         onClick={[Function]}
                       >
@@ -510,7 +1148,7 @@ exports[`Tabs renders its content 1`] = `
                           isActive={false}
                         >
                           <div
-                            className="css-1cfwsjd e1sbjia22"
+                            className="emotion-8 emotion-1"
                           >
                             <Icon
                               icon="allmatches"
@@ -546,7 +1184,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-xcmftn e1sbjia21"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             All Matches
@@ -564,7 +1202,7 @@ exports[`Tabs renders its content 1`] = `
                   offsetLeft="0"
                 >
                   <div
-                    className="css-gnj429 e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-2"
                   >
                     <Styled(div)
@@ -575,7 +1213,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-kv8j5g e1sbjia20"
+                        className="emotion-12 emotion-5"
                         data-test="keytab3"
                         onClick={[Function]}
                       >
@@ -583,7 +1221,7 @@ exports[`Tabs renders its content 1`] = `
                           isActive={false}
                         >
                           <div
-                            className="css-1cfwsjd e1sbjia22"
+                            className="emotion-8 emotion-1"
                           >
                             <Icon
                               icon="usercomments"
@@ -631,7 +1269,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-xcmftn e1sbjia21"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             User Comments
@@ -649,7 +1287,7 @@ exports[`Tabs renders its content 1`] = `
                   offsetLeft="0"
                 >
                   <div
-                    className="css-gnj429 e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-3"
                   >
                     <Styled(div)
@@ -660,7 +1298,7 @@ exports[`Tabs renders its content 1`] = `
                       onClick={[Function]}
                     >
                       <div
-                        className="css-107ixc5 e1sbjia20"
+                        className="emotion-28 emotion-5"
                         data-test="keytab4"
                         onClick={[Function]}
                       >
@@ -668,7 +1306,7 @@ exports[`Tabs renders its content 1`] = `
                           isActive={false}
                         >
                           <div
-                            className="css-1cfwsjd e1sbjia22"
+                            className="emotion-8 emotion-1"
                           >
                             <Icon
                               icon="livecomments"
@@ -706,7 +1344,7 @@ exports[`Tabs renders its content 1`] = `
                           data-test="label"
                         >
                           <span
-                            className="css-xcmftn e1sbjia21"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             Live Comments

@@ -1,16 +1,188 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoPlayerModal should match snapshot 1`] = `
+.emotion-8 {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #050618;
+  background-image: url(/eurosport-web-toolkit/cfb70034f63cf4910f7ffa1d4b71964f.png);
+  background-position-x: center;
+  background-position-y: 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .emotion-8 {
+    background-image: url(/eurosport-web-toolkit/c6017025945c2b749d2a173f3c46668f.png);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+  .emotion-8 {
+    background-image: url(/eurosport-web-toolkit/259b297e1cf3ae08cfbf2bc802aac6e0.png);
+  }
+}
+
+@media (min-width:481px) {
+  .emotion-8 {
+    background-image: url(/eurosport-web-toolkit/4d1c27aa1ee6a006238ac9c519aabb42.png);
+  }
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .emotion-8 {
+      background-image: url(/eurosport-web-toolkit/4afb1836e81f8200c490751646e6507c.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+    .emotion-8 {
+      background-image: url(/eurosport-web-toolkit/efce51b430938beb4612202c0d4ed5f8.png);
+    }
+}
+}
+
+@media (min-width:701px) {
+  .emotion-8 {
+    background-image: url(/eurosport-web-toolkit/4d1c27aa1ee6a006238ac9c519aabb42.png);
+  }
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .emotion-8 {
+      background-image: url(/eurosport-web-toolkit/4afb1836e81f8200c490751646e6507c.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+    .emotion-8 {
+      background-image: url(/eurosport-web-toolkit/efce51b430938beb4612202c0d4ed5f8.png);
+    }
+}
+}
+
+@media (min-width:1025px) {
+  .emotion-8 {
+    background-image: url(/eurosport-web-toolkit/7fb7195f96c6e4304c6f4883c00f3e63.png);
+  }
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .emotion-8 {
+      background-image: url(/eurosport-web-toolkit/c930b426ae802beb16e668cec1557db0.png);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+    .emotion-8 {
+      background-image: url(/eurosport-web-toolkit/4e2af0abce7780a8de51e2d5773ed92d.png);
+    }
+}
+}
+
+@media (min-width:700px) {
+  .emotion-8 {
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    background-position-y: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-8 {
+    background-position-y: 26%;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-6 {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.emotion-0 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    top: 34px;
+    right: 27px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-0 {
+    top: 67px;
+    right: 38px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    top: 43px;
+    right: 38px;
+  }
+}
+
+.emotion-0 path {
+  fill: #ffffff;
+}
+
+.emotion-4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <VideoPlayerModal
   onClose={[Function]}
 >
   <Styled(div)>
     <div
-      className="css-cd4l6d effxb9z2"
+      className="emotion-8 emotion-9"
     >
       <Styled(div)>
         <div
-          className="css-1rf96ts effxb9z1"
+          className="emotion-6 emotion-7"
         >
           <Styled(CloseIcon)
             onClick={[Function]}
@@ -19,14 +191,14 @@ exports[`VideoPlayerModal should match snapshot 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <CloseIcon
-              className="css-1vy39ue effxb9z0"
+              className="emotion-0 emotion-1"
               onClick={[Function]}
               preserveAspectRatio="xMidYMid"
               viewBox="0 0 16 16"
               xmlns="http://www.w3.org/2000/svg"
             >
               <svg
-                className="css-1vy39ue effxb9z0"
+                className="emotion-0 emotion-1"
                 onClick={[Function]}
                 preserveAspectRatio="xMidYMid"
                 viewBox="0 0 16 16"
@@ -42,7 +214,7 @@ exports[`VideoPlayerModal should match snapshot 1`] = `
           </Styled(CloseIcon)>
           <Styled(div)>
             <div
-              className="css-fevtbh effxb9z3"
+              className="emotion-4 emotion-5"
             >
               <div />
             </div>
