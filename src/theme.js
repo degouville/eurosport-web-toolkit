@@ -24,6 +24,7 @@ import {
   martinique,
   suitGray,
   blackPearl,
+  coreNeutral9,
 } from './colors';
 import { fontAlphaHeadline, fontInterUi } from './typography';
 
@@ -47,6 +48,10 @@ export default {
     form: {
       color: coreLightMinus1,
       backgroundColor: dodgerBlue2,
+    },
+    secondaryForm: {
+      color: coreLightMinus1,
+      backgroundColor: coreNeutral9,
     },
   },
   input: {

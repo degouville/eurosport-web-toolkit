@@ -19,6 +19,7 @@ const createDefaultProps = () => ({
   signInText: text('signInText', 'Sign In'),
   showPasswordText: text('showPasswordText', 'Show'),
   showSubscribeSection: boolean('showSubscribeSection', true),
+  isSecondaryMode: boolean('isSecondaryMode', false),
 });
 
 const createPropsWithErrorMessage = () => ({

@@ -60,12 +60,17 @@ const DefaultModalWrapper = styled.div`
   ${breakpoints.small(css`
     display: flex;
     flex-direction: column;
+    margin: 37px 33px 40px;
+  `)};
+  ${breakpoints.medium(css`
+    margin-top: 71px;
   `)};
   ${breakpoints.large(css`
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     padding: 0 calc(30vw - 277px);
+    margin-top: 25vh;
   `)};
 `;
 
@@ -109,7 +114,13 @@ export const DefaultModal = ({ marketingMessages, subscribeUrl, subscribeText, .
     </HalfContainer>
     <Separator />
     <HalfContainer>
-      <Login showSubscribeSection={false} subscribeText={subscribeText} subscribeUrl="" {...loginProps} />
+      <Login
+        isSecondaryMode
+        showSubscribeSection={false}
+        subscribeText={subscribeText}
+        subscribeUrl=""
+        {...loginProps}
+      />
     </HalfContainer>
   </DefaultModalWrapper>
 );
@@ -120,6 +131,7 @@ export const SignInButton = styled(Button)`
 
 const MobileModalWrapper = styled.div`
   display: block;
+  margin: 20px;
   ${breakpoints.small(css`
     display: none;
   `)}
@@ -152,7 +164,7 @@ export const MobileModal = ({ marketingMessages, subscribeUrl, subscribeText, si
           <Button arrowType="arrow" href={subscribeUrl}>
             {subscribeText}
           </Button>
-          <SignInButton type="form" arrowType="arrow" onClick={useSetIsLoginScreen}>
+          <SignInButton type="secondaryForm" arrowType="arrow" onClick={useSetIsLoginScreen}>
             {signInText}
           </SignInButton>
         </>

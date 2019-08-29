@@ -15,8 +15,8 @@ const events = actions(
   'onAdStart',
   'onAdTime',
   'onError',
-  'onLoginModalReady',
-  'onLoginModalDone'
+  'onLoginComponentReady',
+  'onLoginComponentDone'
 );
 
 const stories = storiesOf('Components|JWPlayerETP', module);

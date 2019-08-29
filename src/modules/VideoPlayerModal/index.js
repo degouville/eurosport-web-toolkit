@@ -8,8 +8,10 @@ import { responsiveRetinaImage } from '../../images';
 
 const VideoPlayerModal = ({ children, onClose }) => (
   <MainContainer>
-    <StyledCloseIcon onClick={onClose} />
-    <ChildContainer>{children}</ChildContainer>
+    <StyledScrollable>
+      <StyledCloseIcon onClick={onClose} />
+      <ChildContainer>{children}</ChildContainer>
+    </StyledScrollable>
   </MainContainer>
 );
 
@@ -42,6 +44,12 @@ const StyledCloseIcon = styled(CloseIcon)`
   }
 `;
 
+const StyledScrollable = styled.div`
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+`;
+
 export const MainContainer = styled.div`
   z-index: 1000;
   position: fixed;
@@ -60,16 +68,9 @@ export const MainContainer = styled.div`
   background-position-y: 20%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20px;
-  ${breakpoints.small(css`
-    padding-top: 125px;
-  `)};
   ${breakpoints.medium(css`
     align-items: flex-start;
     background-position-y: 0;
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 69px;
   `)};
   ${breakpoints.large(css`
     background-position-y: 26%;

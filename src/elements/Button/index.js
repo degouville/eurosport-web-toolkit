@@ -41,10 +41,10 @@ const Button = styled(ArrowLink)`
     `};
 
   ${({ theme, type }) =>
-    type === 'form' &&
+    (type === 'form' || type === 'secondaryForm') &&
     css`
       &:hover {
-        background-color: ${lighten(0.05, theme.button.form.backgroundColor)};
+        background-color: ${lighten(0.05, theme.button[type].backgroundColor)};
       }
       transition: all 150ms ease;
     `};
@@ -55,7 +55,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['primary', 'secondary', 'form']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'form', 'secondaryForm']),
 };
 
 Button.displayName = 'Button';

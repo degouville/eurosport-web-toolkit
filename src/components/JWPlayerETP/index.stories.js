@@ -1,8 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text } from '@storybook/addon-knobs';
-import { actions } from '@storybook/addon-actions';
-import ETPlayer from './index';
+import { actions, action } from '@storybook/addon-actions';
+import { JWPlayerETP } from 'src';
+import VideoPlayerModal from '../../modules/VideoPlayerModal';
+import LoginWithMarketing from '../../modules/LoginWithMarketing';
+import { createDefaultProps } from '../../modules/LoginWithMarketing/index.stories';
 
 const events = actions(
   'onPlayerInstantiation',
@@ -14,14 +17,22 @@ const events = actions(
   'onAdStart',
   'onAdTime',
   'onError',
-  'onLoginModalReady',
-  'onLoginModalDone'
+  'onLoginComponentReady',
+  'onLoginComponentDone'
 );
 
-const getBaseProps = newProps => {
+const withVideoPlayerModal = Component => props => (
+  <VideoPlayerModal onClose={action('onClose')}>
+    <Component {...createDefaultProps()} {...props} />
+  </VideoPlayerModal>
+);
+
+// eslint-disable-next-line import/prefer-default-export
+export const getBaseProps = newProps => {
   const jwplayerId = text('ScriptId (jwplayerId)', 'DWNosgcz');
   return {
     prefLang: text('PrefLang', 'fr'),
+    locale: text('locale', 'fr'),
     elementId: text('elementId', 'ETPlayer'),
     jwplayerData: { id: jwplayerId },
     videoData: {
@@ -37,6 +48,7 @@ const getBaseProps = newProps => {
       subscribeUrl: 'https://eurosport.fr',
       needHelpUrl: 'https://eurosport.fr',
     },
+    LoginComponent: withVideoPlayerModal(LoginWithMarketing),
     ...events,
     ...newProps,
   };
@@ -44,4 +56,4 @@ const getBaseProps = newProps => {
 
 const stories = storiesOf('Components|JWPlayerETP', module);
 
-stories.add('JWPlayerETP default', () => <ETPlayer {...getBaseProps()} />);
+stories.add('JWPlayerETP default', () => <JWPlayerETP {...getBaseProps()} />);

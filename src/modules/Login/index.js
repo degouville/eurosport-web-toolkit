@@ -24,6 +24,7 @@ const Login = ({
   title,
   errorMessage,
   showSubscribeSection,
+  isSecondaryMode,
 }) => {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
@@ -62,7 +63,12 @@ const Login = ({
           />
         </ComponentContainer>
         <ComponentContainer>
-          <Button type="form" onClick={onSignInSubmit} arrowType="arrow" tabIndex="0">
+          <Button
+            type={isSecondaryMode ? 'secondaryForm' : 'form'}
+            onClick={onSignInSubmit}
+            arrowType="arrow"
+            tabIndex="0"
+          >
             {signInText}
           </Button>
           <InvisibleSubmit type="submit" />
@@ -102,11 +108,13 @@ Login.propTypes = {
   title: PropTypes.string.isRequired,
   errorMessage: PropTypes.string,
   showSubscribeSection: PropTypes.bool,
+  isSecondaryMode: PropTypes.bool,
 };
 
 Login.defaultProps = {
   errorMessage: undefined,
   showSubscribeSection: true,
+  isSecondaryMode: false,
 };
 
 export const FormContainer = styled.form`

@@ -6,41 +6,47 @@ exports[`VideoPlayerModal should match snapshot 1`] = `
 >
   <Styled(div)>
     <div
-      className="css-1bcdg8j effxb9z1"
+      className="css-cd4l6d effxb9z2"
     >
-      <Styled(CloseIcon)
-        onClick={[Function]}
-        preserveAspectRatio="xMidYMid"
-        viewBox="0 0 16 16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <CloseIcon
-          className="css-1vy39ue effxb9z0"
-          onClick={[Function]}
-          preserveAspectRatio="xMidYMid"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
+      <Styled(div)>
+        <div
+          className="css-1rf96ts effxb9z1"
         >
-          <svg
-            className="css-1vy39ue effxb9z0"
+          <Styled(CloseIcon)
             onClick={[Function]}
             preserveAspectRatio="xMidYMid"
             viewBox="0 0 16 16"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M15.988 14.522l-1.466 1.466L8 9.466l-6.522 6.522-1.466-1.466L6.534 8 .012 1.478 1.478.012 8 6.534 14.522.012l1.466 1.466L9.466 8l6.522 6.522z"
-              fill="#a9a9a9"
-              fillRule="evenodd"
-            />
-          </svg>
-        </CloseIcon>
-      </Styled(CloseIcon)>
-      <Styled(div)>
-        <div
-          className="css-fevtbh effxb9z2"
-        >
-          <div />
+            <CloseIcon
+              className="css-1vy39ue effxb9z0"
+              onClick={[Function]}
+              preserveAspectRatio="xMidYMid"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <svg
+                className="css-1vy39ue effxb9z0"
+                onClick={[Function]}
+                preserveAspectRatio="xMidYMid"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.988 14.522l-1.466 1.466L8 9.466l-6.522 6.522-1.466-1.466L6.534 8 .012 1.478 1.478.012 8 6.534 14.522.012l1.466 1.466L9.466 8l6.522 6.522z"
+                  fill="#a9a9a9"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </CloseIcon>
+          </Styled(CloseIcon)>
+          <Styled(div)>
+            <div
+              className="css-fevtbh effxb9z3"
+            >
+              <div />
+            </div>
+          </Styled(div)>
         </div>
       </Styled(div)>
     </div>

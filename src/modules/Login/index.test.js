@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Login, { InvisibleSubmit, FormContainer, CallToActionContainer } from './index';
 import ErrorBanner from '../../elements/ErrorBanner';
-import Button from '../../elements/Button';
 import Input from '../../components/Input/input.component';
+import Button from '../../elements/Button';
 
 describe('Login', () => {
   const createProps = newProps => ({

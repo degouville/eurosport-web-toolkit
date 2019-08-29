@@ -57,7 +57,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   >
     <Styled(div)>
       <div
-        className="css-17hwllo eikapd14"
+        className="css-67bf91 eikapd14"
       >
         <Styled(div)>
           <div
@@ -245,6 +245,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
               errorMessage=""
               forgotPasswordText="Forgot password"
               forgotPasswordUrl="es.com/forgot"
+              isSecondaryMode={true}
               needHelpText="Need Help?"
               needHelpUrl="es.com/help"
               onSubmit={[MockFunction]}
@@ -439,26 +440,26 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
                             arrowType="arrow"
                             onClick={[Function]}
                             tabIndex="0"
-                            type="form"
+                            type="secondaryForm"
                           >
                             <ArrowLink
                               arrowType="arrow"
-                              className="css-m3dh5r ecyc6sh0"
+                              className="css-51gf51 ecyc6sh0"
                               onClick={[Function]}
                               tabIndex="0"
-                              type="form"
+                              type="secondaryForm"
                             >
                               <Styled(a)
-                                className="css-m3dh5r ecyc6sh0"
+                                className="css-51gf51 ecyc6sh0"
                                 onClick={[Function]}
                                 tabIndex="0"
-                                type="form"
+                                type="secondaryForm"
                               >
                                 <a
-                                  className="ecyc6sh0 css-s025ay e1tranhe2"
+                                  className="ecyc6sh0 css-njxai1 e1tranhe2"
                                   onClick={[Function]}
                                   tabIndex="0"
-                                  type="form"
+                                  type="secondaryForm"
                                 >
                                   SignIn
                                   <Styled(Arrow)
@@ -630,7 +631,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   >
     <Styled(div)>
       <div
-        className="css-1rtshqz eikapd110"
+        className="css-1437bb7 eikapd110"
       >
         <Styled(div)>
           <div
@@ -806,23 +807,23 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
         <Styled(ArrowLink)
           arrowType="arrow"
           onClick={[Function]}
-          type="form"
+          type="secondaryForm"
         >
           <ArrowLink
             arrowType="arrow"
-            className="css-15aocdv eikapd19"
+            className="css-1qjj437 eikapd19"
             onClick={[Function]}
-            type="form"
+            type="secondaryForm"
           >
             <Styled(a)
-              className="css-15aocdv eikapd19"
+              className="css-1qjj437 eikapd19"
               onClick={[Function]}
-              type="form"
+              type="secondaryForm"
             >
               <a
-                className="eikapd19 css-5qn8qk e1tranhe2"
+                className="eikapd19 css-1eugg7q e1tranhe2"
                 onClick={[Function]}
-                type="form"
+                type="secondaryForm"
               >
                 SignIn
                 <Styled(Arrow)

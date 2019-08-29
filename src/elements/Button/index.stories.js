@@ -21,4 +21,9 @@ indexStories
     <Button type="form" arrowType={radios('arrowType', arrowTypeOptions, 'chevron')}>
       {text('Children', 'Children prop text')}
     </Button>
+  ))
+  .add('secondaryForm', () => (
+    <Button type="secondaryForm" arrowType={radios('arrowType', arrowTypeOptions, 'chevron')}>
+      {text('Children', 'Children prop text')}
+    </Button>
   ));

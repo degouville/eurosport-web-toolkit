@@ -4,7 +4,8 @@ import { text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import LoginWithMarketing from '.';
 
-const createDefaultProps = () => ({
+// eslint-disable-next-line import/prefer-default-export
+export const createDefaultProps = () => ({
   onSubmit: action('onSubmit'),
   title: text('title', 'Sign in to your Eurosport Player account'),
   forgotPasswordText: text('forgotPasswordText', 'Forgot password?'),
