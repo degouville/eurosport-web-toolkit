@@ -11,7 +11,6 @@ import * as types from './sectionTypes';
 const StyledColumn = styled.div`
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
 
   ${props =>
@@ -40,6 +39,7 @@ const StyledColumn = styled.div`
   ${props =>
     props.menuType === types.MENU.SPORTS &&
     css`
+      height: 100%;
       padding-right: 20px;
       &:last-of-type {
         padding-right: 0;

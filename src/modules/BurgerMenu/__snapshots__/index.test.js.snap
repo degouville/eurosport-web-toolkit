@@ -278,7 +278,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  min-width: 79px flex-shrink:0;
+  min-width: 79px;
   box-sizing: border-box;
   height: 100%;
 }
@@ -292,7 +292,6 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 .emotion-44 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -379,7 +378,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-170 {
-  padding: 0 15px;
+  padding: 0 0 0 15px;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -389,15 +388,15 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 
 @media (min-width:1024px) {
   .emotion-170 {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   }
 }
 
 .emotion-78 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
   padding-right: 20px;
   -webkit-flex-basis: 20%;
   -ms-flex-preferred-size: 20%;
@@ -478,8 +477,8 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 .emotion-168 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
   padding-right: 20px;
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
@@ -552,6 +551,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 .emotion-82::after {
   content: '>';
   color: #e8e8eb;
+  margin-right: 10px;
 }
 
 @media (min-width:1024px) {
@@ -1673,7 +1673,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  min-width: 79px flex-shrink:0;
+  min-width: 79px;
   box-sizing: border-box;
   height: 100%;
 }
@@ -1687,7 +1687,6 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 .emotion-44 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -1774,7 +1773,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-170 {
-  padding: 0 15px;
+  padding: 0 0 0 15px;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1784,15 +1783,15 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 
 @media (min-width:1024px) {
   .emotion-170 {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   }
 }
 
 .emotion-78 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
   padding-right: 20px;
   -webkit-flex-basis: 20%;
   -ms-flex-preferred-size: 20%;
@@ -1873,8 +1872,8 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 .emotion-168 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
   padding-right: 20px;
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
@@ -1947,6 +1946,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 .emotion-82::after {
   content: '>';
   color: #e8e8eb;
+  margin-right: 10px;
 }
 
 @media (min-width:1024px) {

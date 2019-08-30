@@ -54,6 +54,7 @@ const StyledItemLink = styled.a`
       &::after {
         content: '>';
         color: ${whiteLilac};
+        margin-right: 10px;
       }
       ${large(css`
         &::after {

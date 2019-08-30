@@ -8,8 +8,7 @@ import * as types from './sectionTypes';
 
 const StyledWrapper = styled.div`
   flex-grow: 1;
-  min-width: 79px
-  flex-shrink: 0;
+  min-width: 79px;
   box-sizing: border-box;
   height: 100%;
 
@@ -19,7 +18,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledContainer = styled.div`
-  padding: 0 15px;
+  padding: 0 0 0 15px;
   height: 100%;
 
   ${props =>
@@ -27,9 +26,14 @@ const StyledContainer = styled.div`
     css`
       display: flex;
     `};
+  ${props =>
+    props.menuType !== types.MENU.SPORTS &&
+    css`
+      overflow-y: auto;
+    `};
 
   ${large(css`
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   `)};
 `;
 
