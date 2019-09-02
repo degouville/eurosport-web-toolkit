@@ -24,6 +24,7 @@ export { default as Labels } from './elements/Labels';
 export { default as ProgramDetails } from './elements/ProgramDetails';
 export { default as Spinner } from './elements/Spinner';
 export { default as Toggle } from './elements/Toggle';
+export { default as ErrorBanner } from './elements/ErrorBanner';
 
 /* COMPONENTS */
 export { default as ArticleContent } from './components/ArticleContent';
