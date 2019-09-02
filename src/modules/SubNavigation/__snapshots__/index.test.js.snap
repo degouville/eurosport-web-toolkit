@@ -6,7 +6,10 @@ exports[`SubNavigation renders when everything passed in 1`] = `
 }
 
 <withMatchMedia(Component)>
-  <Styled(nav)>
+  <Styled(nav)
+    withArrow={false}
+    withBorders={false}
+  >
     <Carousel
       absoluteNavigation={false}
       alignCenter={false}

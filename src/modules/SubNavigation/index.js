@@ -44,7 +44,14 @@ const StyledItem = styled.li`
   margin-right: 35px;
   list-style-type: none;
   font-size: 14px;
-
+  ${props =>
+    props.withBorders &&
+    css`
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0 18px 0 18px;
+      margin-right: 18px;
+    `}
   ${props => (props.type === 'shop' ? 'margin-left: auto;' : '')}
   ${breakpoints.medium(css`
     font-size: 16px;
@@ -55,9 +62,34 @@ const StyledLink = styled.a`
   color: ${coreLightMinus1};
   text-decoration: none;
   cursor: pointer;
+  position: relative;
   &:hover {
     opacity: 0.5;
   }
+  ${props =>
+    props.withArrow &&
+    css`
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        height: 9px;
+        margin-top: -6px;
+        position: absolute;
+        transform: rotate(220deg);
+        right: -15px;
+        top: 10px;
+        width: 0px;
+        border-radius: 22px;
+        width: 3px;
+        background: white;
+      }
+      &:after {
+        transform: rotate(135deg);
+        top: 10px;
+        right: -10px;
+      }
+    `}
 `;
 
 const StyledShopLink = styled.a`
@@ -85,9 +117,9 @@ const SubNavigation = ({ items, ...props }) => {
     <LegacyHideOnMobile>
       <StyledNavWrapper {...props}>
         <Carousel slideMargin={0}>
-          {itemsWithoutShop.map(({ name, linkProps: { href, ...otherLinkProps } }) => (
-            <StyledItem key={name}>
-              <StyledLink href={href} {...otherLinkProps}>
+          {itemsWithoutShop.map(({ name, linkProps: { href, withArrow, withBorders, ...otherLinkProps } }) => (
+            <StyledItem key={name} withBorders={withBorders}>
+              <StyledLink href={href} {...otherLinkProps} withArrow={withArrow}>
                 {name}
               </StyledLink>
             </StyledItem>
@@ -115,6 +147,13 @@ SubNavigation.propTypes = {
       }).isRequired,
     })
   ).isRequired,
+  withArrow: PropTypes.bool,
+  withBorders: PropTypes.bool,
+};
+
+SubNavigation.defaultProps = {
+  withArrow: false,
+  withBorders: false,
 };
 
 SubNavigation.displayName = 'SubNavigation';
