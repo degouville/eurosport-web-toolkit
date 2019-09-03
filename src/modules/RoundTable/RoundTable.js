@@ -6,6 +6,7 @@ import { H5, fontAlphaHeadline } from 'src/typography';
 import ScoreBlock from 'src/components/ScoreBlock';
 import { coreNeutral4, coreNeutral11 } from 'src/colors';
 import Carousel from 'src/components/Carousel';
+import * as types from 'src/types';
 
 const StyledScoreBlockWrapper = styled.div`
   width: 350px;
@@ -88,6 +89,7 @@ export const RoundColumn = ({ matches, round }) => (
 
 const RoundTable = ({ matches, rounds, className, offsetLeft }) => {
   const groupedMatches = groupBy(matches, 'round.number');
+
   return (
     <FlexedContainer className={className}>
       <Carousel
@@ -112,7 +114,7 @@ RoundColumn.defaultProps = {
 };
 
 RoundColumn.propTypes = {
-  matches: PropTypes.arrayOf(PropTypes.object).isRequired,
+  matches: PropTypes.arrayOf(types.scoreBlock).isRequired,
   round: PropTypes.string,
 };
 
@@ -122,8 +124,8 @@ RoundTable.defaultProps = {
 };
 
 RoundTable.propTypes = {
-  matches: PropTypes.arrayOf(PropTypes.object).isRequired,
-  rounds: PropTypes.arrayOf(PropTypes.object).isRequired,
+  matches: PropTypes.arrayOf(types.scoreBlock).isRequired,
+  rounds: PropTypes.arrayOf(types.round).isRequired,
   className: PropTypes.string,
   offsetLeft: PropTypes.string,
 };

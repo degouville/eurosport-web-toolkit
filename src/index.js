@@ -1,9 +1,10 @@
 import * as colors from './colors';
 import * as breakpoints from './breakpoints';
 import * as typography from './typography';
+import * as types from './types';
 import * as tabsIconType from './modules/Tabs/icon-type';
 
-export { colors, breakpoints, typography, tabsIconType };
+export { colors, breakpoints, typography, tabsIconType, types };
 
 export { default as theme } from './theme';
 export { default as injectStyles } from './injectStyles';

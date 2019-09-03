@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import ScoreBlock, { scoreBlockType } from 'src/components/ScoreBlock';
+import ScoreBlock from 'src/components/ScoreBlock';
 import SimpleTabs from 'src/modules/SimpleTabs';
 import { coreNeutral9 } from 'src/colors';
 import Grid from 'src/elements/Grid';
+import * as types from 'src/types';
 
 const StyledMatches = styled.div``;
 const StyledSimpleTabs = styled.div`
@@ -21,39 +22,13 @@ const StyledHr = styled.div`
   margin: 1em 0;
 `;
 
-export default class RoundTableMobile extends Component {
-  state = {
-    currentTab: 0,
-  };
+class RoundTableMobile extends Component {
+  constructor(props) {
+    super(props);
 
-  static propTypes = {
-    matches: PropTypes.arrayOf(
-      PropTypes.shape({
-        ...scoreBlockType,
-        hasWon: PropTypes.bool,
-        round: PropTypes.object,
-      })
-    ).isRequired,
-    tabs: PropTypes.arrayOf(
-      PropTypes.shape({
-        label: PropTypes.string.isRequired,
-        href: PropTypes.string.isRequired,
-        disabled: PropTypes.boolean,
-        highlighted: PropTypes.boolean,
-      })
-    ).isRequired,
-    initialTab: PropTypes.number,
-    className: PropTypes.string,
-  };
-
-  static defaultProps = {
-    initialTab: 0,
-    className: undefined,
-  };
-
-  componentDidMount() {
-    const { initialTab } = this.props;
-    this.setState({ currentTab: initialTab });
+    this.state = {
+      currentTab: props.initialTab,
+    };
   }
 
   changeTab = (_href, tabIndex) => {
@@ -100,3 +75,22 @@ export default class RoundTableMobile extends Component {
     );
   }
 }
+
+RoundTableMobile.propTypes = {
+  matches: PropTypes.arrayOf(
+    PropTypes.shape({
+      ...types.scoreBlock,
+      round: types.round,
+    }).isRequired
+  ).isRequired,
+  tabs: PropTypes.arrayOf(types.simpleTab).isRequired,
+  initialTab: PropTypes.number,
+  className: PropTypes.string,
+};
+
+RoundTableMobile.defaultProps = {
+  initialTab: 0,
+  className: undefined,
+};
+
+export default RoundTableMobile;
