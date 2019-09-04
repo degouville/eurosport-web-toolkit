@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PlayerSkin, { ControlsOverlay, SpinnerOverlay } from './index';
+import PlayerSkin, { ControlsOverlay, SpinnerOverlay, ErrorOverlay } from './index';
 import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
@@ -152,6 +152,17 @@ describe('Components|PlayerSkin', () => {
 
       // Expect
       expect(isActive).toBe(true);
+    });
+  });
+
+  describe('Error display', () => {
+    it('Should display error overlay if there is an error', () => {
+      // Given
+      const props = createDefaultProps({ errorMessage: 'This is an error', isPlaying: true, isBuffering: true });
+      const wrapper = shallow(<PlayerSkin {...props} />);
+
+      // Expect
+      expect(wrapper.find(ErrorOverlay)).toHaveLength(1);
     });
   });
 

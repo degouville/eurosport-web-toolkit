@@ -2,6 +2,7 @@ import React, { useCallback, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import Spinner from 'src/elements/Spinner';
+import ErrorBanner from 'src/elements/ErrorBanner';
 import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
@@ -27,6 +28,7 @@ const PlayerSkin = ({
   onVolume,
   onMute,
   controls,
+  errorMessage,
   ...props
 }) => {
   const { onKeyUp, active, handlePlayerInteraction, lockInteraction, unLockInteraction } = useInteraction({
@@ -87,8 +89,17 @@ const PlayerSkin = ({
           )}
         </>
       )}
+      {errorMessage && (
+        <ErrorOverlay>
+          <ErrorBanner message={errorMessage} />
+        </ErrorOverlay>
+      )}
     </MainContainer>
   );
+};
+
+PlayerSkin.defaultProps = {
+  errorMessage: null,
 };
 
 // eslint-disable-next-line react/forbid-foreign-prop-types
@@ -98,6 +109,7 @@ PlayerSkin.propTypes = {
   id: PropTypes.string.isRequired,
   isPlaying: PropTypes.bool.isRequired,
   controls: PropTypes.bool.isRequired,
+  errorMessage: PropTypes.string,
 };
 
 const CommonOverlay = css`
@@ -123,6 +135,11 @@ export const ControlsOverlay = styled.div`
   ${({ active }) => active && Visible}
   transform: translateY(100%);
   transition: transform 300ms ease-in-out, visibility 300ms;
+`;
+
+export const ErrorOverlay = styled.div`
+  ${CommonOverlay}
+  height: auto;
 `;
 
 export const SpinnerOverlay = styled.div`

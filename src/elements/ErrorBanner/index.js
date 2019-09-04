@@ -20,19 +20,20 @@ const MainContainer = styled.div`
   flex: 1;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   border: 1px solid ${({ theme }) => theme.banner.error.borderColor};
   background-color: ${({ theme }) => theme.banner.error.backgroundColor};
 `;
 
 const Border = styled.div`
-  height: 100%;
+  height: auto;
+  align-self: stretch;
   width: 5px;
   background-color: ${({ theme }) => theme.banner.error.borderColor};
 `;
 
 const Icon = styled.img`
-  margin-top: 9px;
-  margin-left: 17px;
+  margin-left: 12px;
   height: 24px;
   width: 24px;
 `;
@@ -42,7 +43,7 @@ const Text = styled.p`
   font-family: ${({ theme }) => theme.banner.error.fontFamily};
   font-size: 16px;
   line-height: 24px;
-  margin: 9px 18px 15px 12px;
+  margin: 9px 12px 9px 12px;
   flex: 1;
 `;
 
