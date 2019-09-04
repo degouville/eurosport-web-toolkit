@@ -160,24 +160,17 @@ export const InputText = styled.input`
   position: relative;
   outline: 0;
   border: 0;
+  margin: 0 24px 13px 24px;
   border: none;
   padding: 0;
   text-decoration: none;
   background-color: transparent;
+  width: calc(100% - 48px);
   height: 24px;
   color: ${({ theme }) => theme.input.text.color};
   font-family: ${({ theme }) => theme.input.text.fontFamily};
   font-size: 16px;
   line-height: 24px;
-
-  // NOTE: FIX for android smartphone only
-  width: 90%;
-  margin: 10px;
-
-  @media (min-width: 375px) {
-    width: unset;
-    margin: 0 24px 13px 24px;
-  }
 `;
 
 export default Input;
