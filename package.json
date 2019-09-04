@@ -9,7 +9,8 @@
     "dist/*"
   ],
   "scripts": {
-    "test": "npm run test:ci -- --watch",
+    "test": "jest -w 1 --watch",
+    "test:coverage": "jest -w 1 --coverage --watchAll=false",
     "test:ci": "jest -w 1",
     "cypress": "cypress run",
     "cypress:open": "cypress open",
