@@ -160,7 +160,9 @@ export const InputText = styled.input`
   position: relative;
   outline: 0;
   border: 0;
-  margin: 0 24px 13px 24px;
+  margin-right: 24px;
+  margin-bottom: 13px;
+  margin-left: 24px;
   border: none;
   padding: 0;
   text-decoration: none;
