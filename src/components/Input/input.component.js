@@ -158,9 +158,6 @@ export const Placeholder = styled.label`
 export const InputText = styled.input`
   ${({ focused, hasLabelInside }) => focused && (hasLabelInside ? `margin-top: 34px;` : `margin-top: 12px;`)}
   position: relative;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 13px;
   outline: 0;
   border: 0;
   border: none;
@@ -172,6 +169,15 @@ export const InputText = styled.input`
   font-family: ${({ theme }) => theme.input.text.fontFamily};
   font-size: 16px;
   line-height: 24px;
+
+  // NOTE: FIX for android smartphone only
+  width: 90%;
+  margin: 10px;
+
+  @media (min-width: 375px) {
+    width: unset;
+    margin: 0 24px 13px 24px;
+  }
 `;
 
 export default Input;

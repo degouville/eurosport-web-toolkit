@@ -371,9 +371,6 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 
 .emotion-35 {
   position: relative;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 13px;
   outline: 0;
   border: 0;
   border: none;
@@ -389,6 +386,15 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   font-smooth: auto;
   font-size: 16px;
   line-height: 24px;
+  width: 90%;
+  margin: 10px;
+}
+
+@media (min-width:375px) {
+  .emotion-35 {
+    width: unset;
+    margin: 0 24px 13px 24px;
+  }
 }
 
 .emotion-55 {
