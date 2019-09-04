@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import ProgramDetails, { StyledSeparator } from '.';
 import ChannelIcon from '../ChannelIcon';
 
-describe.only('Program details', () => {
+describe('Program details', () => {
   it('should render as expected', () => {
     const wrapper = shallow(
       <ProgramDetails textDetail="Text details" callsign="E2NO" customIcon={<span id="icon" />} />

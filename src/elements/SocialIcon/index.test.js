@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, render } from 'enzyme';
 import SocialIcon, { StyledSnapchat, StyledInstagram, StyledTwitter, StyledFacebook } from '.';
 
-describe.only('SocialIcon', () => {
+describe('SocialIcon', () => {
   describe('render of social icons from iconType prop', () => {
     it('twitter', () => {
       const wrapper = shallow(<SocialIcon iconType="twitter" />);
