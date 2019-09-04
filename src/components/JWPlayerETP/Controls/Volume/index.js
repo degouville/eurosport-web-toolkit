@@ -34,8 +34,8 @@ export const Volume = ({ volume, onVolume, mute, theme, onMute }) => {
   }, [setShowVolume]);
 
   const onVolumeClick = useCallback(() => {
+    isMobile && mute && onVolume(100);
     onMute(!mute);
-    isMobile && onVolume(100);
   }, [mute, onMute, onVolume]);
 
   return (
