@@ -10,6 +10,7 @@ import {
   coreNeutral2,
   coreNeutral4,
   coreNeutral8,
+  coreNeutral7,
   coreLightBase,
   dodgerBlue2,
   actionTwoLightBase,
@@ -188,5 +189,9 @@ export default {
   },
   loginWithMarketing: {
     mobileBackground: blackPearl,
+  },
+  shareIcons: {
+    color: coreNeutral7,
+    background: coreLightMinus1,
   },
 };
