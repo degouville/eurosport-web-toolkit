@@ -22,8 +22,12 @@ const Title = styled(H2)`
 const Subtitle = styled.div`
   font-size: 16px;
   color: ${({ theme }) => theme.marketingChecklist.subtitle.color};
-  margin: 20px 0;
   line-height: 24px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  ${breakpoints.large(css`
+    margin-top: 0;
+  `)};
 `;
 
 const CheckList = styled.ul`

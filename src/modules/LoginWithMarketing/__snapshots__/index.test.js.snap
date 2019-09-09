@@ -91,8 +91,15 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-6 {
   font-size: 16px;
   color: #b9bbca;
-  margin: 20px 0;
   line-height: 24px;
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+@media (min-width:1024px) {
+  .emotion-6 {
+    margin-top: 0;
+  }
 }
 
 .emotion-14 {
