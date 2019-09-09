@@ -163,6 +163,9 @@ const MainContainer = styled.div`
   overflow: hidden;
   position: relative;
   width: 100%;
+  .jw-error-msg {
+    display: none !important;
+  }
 `;
 
 const JWPlayerContainer = styled.div``;
