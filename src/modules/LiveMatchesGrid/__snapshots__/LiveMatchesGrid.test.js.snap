@@ -681,6 +681,7 @@ exports[`LiveMatchesGrid renders as expected 1`] = `
   </Row>
   <Styled(div)>
     <ViewMore
+      animationDelay={400}
       showLessItemCount={1}
       showLessText="View less matches"
       showMoreText="View more matches"

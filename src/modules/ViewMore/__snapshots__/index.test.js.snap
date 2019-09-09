@@ -1,13 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ViewMore renders its content 1`] = `
-.emotion-0 {
-  overflow: hidden;
-  height: auto;
-  -webkit-transition: height 400ms ease;
-  transition: height 400ms ease;
-}
-
 .emotion-2 {
   color: #f8f8f9;
   font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
@@ -27,116 +20,154 @@ exports[`ViewMore renders its content 1`] = `
   cursor: pointer;
 }
 
+.emotion-0 {
+  max-height: auto;
+  -webkit-transition: max-height 400ms ease;
+  transition: max-height 400ms ease;
+  overflow: hidden;
+  border-top: 1em solid transparent;
+  margin-top: -1em;
+}
+
 <ViewMore
+  animationDelay={400}
   showLessItemCount={1}
   showLessText="View less"
   showMoreText="View more"
 >
-  <Styled(ul)
-    animate={true}
-    blockHeight={0}
-    innerRef={
-      Object {
-        "current": .emotion-0 {
+  <SizeMe
+    monitorHeight={true}
+    render={[Function]}
+  >
+    <SizeMe(Component)
+      onSize={[Function]}
+    >
+      <SizeMeRenderer(Component)
+        disablePlaceholder={true}
+        explicitRef={[Function]}
+        onSize={[Function]}
+        size={null}
+      >
+        <SizeMeReferenceWrapper>
+          <Component>
+            <Styled(ul)
+              animate={true}
+              animationDelay={400}
+              blockHeight={0}
+              innerRef={
+                Object {
+                  "current": .emotion-0 {
+  max-height: auto;
+  -webkit-transition: max-height 400ms ease;
+  transition: max-height 400ms ease;
   overflow: hidden;
-  height: auto;
-  -webkit-transition: height 400ms ease;
-  transition: height 400ms ease;
+  border-top: 1em solid transparent;
+  margin-top: -1em;
 }
 
 <ul
-          class="emotion-0 emotion-1"
-        >
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-          <div>
-            match
-          </div>
-        </ul>,
-      }
-    }
-    isExpanded={false}
-  >
-    <ul
-      className="emotion-0 emotion-1"
-    >
-      <div
-        key="0"
-      >
-        match
-      </div>
-      <div
-        key="1"
-      >
-        match
-      </div>
-      <div
-        key="2"
-      >
-        match
-      </div>
-      <div
-        key="3"
-      >
-        match
-      </div>
-      <div
-        key="4"
-      >
-        match
-      </div>
-      <div
-        key="5"
-      >
-        match
-      </div>
-      <div
-        key="6"
-      >
-        match
-      </div>
-      <div
-        key="7"
-      >
-        match
-      </div>
-      <div
-        key="8"
-      >
-        match
-      </div>
-      <div
-        key="9"
-      >
-        match
-      </div>
-    </ul>
-  </Styled(ul)>
+                    class="emotion-0 emotion-1"
+                  >
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div>
+                      match
+                    </div>
+                    <div
+                      class="erd_scroll_detection_container erd_scroll_detection_container_animation_active"
+                      style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"
+                    />
+                  </ul>,
+                }
+              }
+              isDelayGone={false}
+              isExpanded={false}
+            >
+              <ul
+                className="emotion-0 emotion-1"
+              >
+                <div
+                  key="0"
+                >
+                  match
+                </div>
+                <div
+                  key="1"
+                >
+                  match
+                </div>
+                <div
+                  key="2"
+                >
+                  match
+                </div>
+                <div
+                  key="3"
+                >
+                  match
+                </div>
+                <div
+                  key="4"
+                >
+                  match
+                </div>
+                <div
+                  key="5"
+                >
+                  match
+                </div>
+                <div
+                  key="6"
+                >
+                  match
+                </div>
+                <div
+                  key="7"
+                >
+                  match
+                </div>
+                <div
+                  key="8"
+                >
+                  match
+                </div>
+                <div
+                  key="9"
+                >
+                  match
+                </div>
+              </ul>
+            </Styled(ul)>
+          </Component>
+        </SizeMeReferenceWrapper>
+      </SizeMeRenderer(Component)>
+    </SizeMe(Component)>
+  </SizeMe>
   <Styled(div)>
     <div
       className="emotion-4 emotion-5"
