@@ -1073,6 +1073,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
               needHelpUrl="es.com/help"
               onSubmit={[MockFunction]}
               passwordPlaceholder="Password"
+              recaptchaSiteKey=""
               showPasswordText="Show"
               showSubscribeSection={false}
               signInText="SignIn"

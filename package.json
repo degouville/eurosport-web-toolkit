@@ -119,12 +119,13 @@
     "react-helmet": "5"
   },
   "dependencies": {
-    "@eurosport/toolkit-player": "^0.5.15",
+    "@eurosport/toolkit-player": "^0.5.16",
     "core-js": "^3.1.4",
     "hoist-non-react-statics": "^3.3.0",
     "lodash": "^4.17.14",
     "rc-slider": "^8.6.13",
     "react-device-detect": "^1.7.5",
+    "react-google-recaptcha": "^2.0.0-rc.1",
     "react-lines-ellipsis": "^0.14.1",
     "react-sizeme": "^2.6.7",
     "screenfull": "^4.2.1"

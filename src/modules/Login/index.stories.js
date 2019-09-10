@@ -20,6 +20,7 @@ const createDefaultProps = () => ({
   showPasswordText: text('showPasswordText', 'Show'),
   showSubscribeSection: boolean('showSubscribeSection', true),
   isSecondaryMode: boolean('isSecondaryMode', false),
+  recaptchaSiteKey: text('recaptchaSiteKey', '6LeHaK0UAAAAAF5SxiYjhFNMDpTKy4B8Mc_kWgiM'),
 });
 
 const createPropsWithErrorMessage = () => ({

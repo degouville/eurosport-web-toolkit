@@ -1,9 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Login, { InvisibleSubmit, FormContainer, CallToActionContainer } from './index';
+import Login, { CallToActionContainer } from './index';
 import ErrorBanner from '../../elements/ErrorBanner';
 import Input from '../../components/Input/input.component';
-import Button from '../../elements/Button';
 
 describe('Login', () => {
   const createProps = newProps => ({
@@ -79,61 +78,6 @@ describe('Login', () => {
 
       // Expect
       expect(elements.length).toBe(1);
-    });
-
-    it('Should trigger onSubmit when we click on submit button', () => {
-      // Given
-      const onSubmit = jest.fn();
-      const props = createProps({ onSubmit });
-      const wrapper = shallow(<Login {...props} />);
-
-      // When
-      wrapper.find(Button).prop('onClick')();
-
-      // Expect
-      expect(onSubmit).toHaveBeenCalled();
-    });
-
-    it('Should forward credentials to when click on submit button', () => {
-      // Given
-      const onSubmit = jest.fn();
-      const props = createProps({ onSubmit });
-      const wrapper = shallow(<Login {...props} />);
-
-      // When
-      const onEmailChange = getEmailInput(wrapper).prop('onChange');
-      onEmailChange({ target: { value: 'myEmail' } });
-
-      const onPasswordChange = getPasswordInput(wrapper).prop('onChange');
-      onPasswordChange({ target: { value: 'secret' } });
-
-      wrapper.find(Button).prop('onClick')();
-
-      // Expect
-      expect(onSubmit).toHaveBeenCalledWith({ email: 'myEmail', password: 'secret' });
-    });
-
-    it('Should forward credentials to when we submit the form', () => {
-      // Given
-      const preventDefault = jest.fn();
-      const onSubmit = jest.fn();
-      const props = createProps({ onSubmit });
-      const wrapper = shallow(<Login {...props} />);
-
-      // When
-      const onEmailChange = getEmailInput(wrapper).prop('onChange');
-      onEmailChange({ target: { value: 'myEmail' } });
-
-      const onPasswordChange = getPasswordInput(wrapper).prop('onChange');
-      onPasswordChange({ target: { value: 'secret' } });
-
-      wrapper.find(FormContainer).simulate('submit', { preventDefault });
-      const inputSubmit = wrapper.find(FormContainer).find(InvisibleSubmit);
-
-      // Expect
-      expect(inputSubmit.length).toBe(1);
-      expect(preventDefault).toHaveBeenCalled();
-      expect(onSubmit).toHaveBeenCalledWith({ email: 'myEmail', password: 'secret' });
     });
 
     it('Should update mail value when user write his email', () => {

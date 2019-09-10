@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import styled, { css } from 'react-emotion';
+import ReCAPTCHA from 'react-google-recaptcha';
 import PropTypes from 'prop-types';
 import Input from 'src/components/Input/input.component';
 import ErrorBanner from 'src/elements/ErrorBanner';
@@ -25,21 +26,55 @@ const Login = ({
   errorMessage,
   showSubscribeSection,
   isSecondaryMode,
+  recaptchaSiteKey,
 }) => {
+  const recaptchaRef = useRef(null);
+  const emailRef = useRef(null);
+  const passwordRef = useRef(null);
+
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
 
+  useEffect(() => {
+    emailRef.current = email;
+    passwordRef.current = password;
+  });
+
+  const [isRecaptchaLoaded, setisRecaptchaLoaded] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+
+  const handleSubmit = useCallback(
+    event => {
+      event && event.preventDefault();
+      if (recaptchaToken !== null) {
+        recaptchaRef.current.reset();
+        setRecaptchaToken(null);
+      }
+      isRecaptchaLoaded && recaptchaRef.current.execute();
+    },
+    [recaptchaToken, isRecaptchaLoaded, recaptchaRef, setRecaptchaToken]
+  );
+
+  const onSignInSubmit = useCallback(() => handleSubmit(), [handleSubmit]);
+
+  const onFormSubmit = useCallback(event => handleSubmit(event), [handleSubmit]);
+
+  const onRecaptchaChange = useCallback(
+    token => {
+      setRecaptchaToken(token);
+      if (token !== null) {
+        onSubmit({ email: emailRef.current, password: passwordRef.current, recaptchaToken: token });
+      }
+    },
+    [setRecaptchaToken, onSubmit]
+  );
+
+  const asyncRecaptchaOnLoad = useCallback(() => {
+    setisRecaptchaLoaded(true);
+  }, [setisRecaptchaLoaded]);
+
   const onEmailChange = useCallback(({ target }) => setEmail(target.value), [setEmail]);
   const onPasswordChange = useCallback(({ target }) => setPassword(target.value), [setPassword]);
-  const onSignInSubmit = useCallback(() => onSubmit({ email, password }), [email, onSubmit, password]);
-
-  const onFormSubmit = useCallback(
-    event => {
-      event.preventDefault();
-      onSubmit({ email, password });
-    },
-    [email, onSubmit, password]
-  );
 
   return (
     <FormContainer onSubmit={onFormSubmit}>
@@ -72,6 +107,16 @@ const Login = ({
             {signInText}
           </Button>
           <InvisibleSubmit type="submit" />
+          {recaptchaSiteKey && (
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              size="invisible"
+              sitekey={recaptchaSiteKey}
+              theme="dark"
+              onChange={onRecaptchaChange}
+              asyncScriptOnLoad={asyncRecaptchaOnLoad}
+            />
+          )}
         </ComponentContainer>
       </InputsContainer>
       <ActionLinkContainer>
@@ -109,12 +154,14 @@ Login.propTypes = {
   errorMessage: PropTypes.string,
   showSubscribeSection: PropTypes.bool,
   isSecondaryMode: PropTypes.bool,
+  recaptchaSiteKey: PropTypes.string,
 };
 
 Login.defaultProps = {
   errorMessage: undefined,
   showSubscribeSection: true,
   isSecondaryMode: false,
+  recaptchaSiteKey: '',
 };
 
 export const FormContainer = styled.form`
