@@ -160,7 +160,7 @@ PlayerCard.propTypes = {
 };
 
 PlayerCard.defaultProps = {
-  className: '',
+  className: undefined,
   previousMatchesText: 'Previous matches',
   showLessMatchesText: 'Show less matches',
   showMoreMatchesText: 'Show more matches',

@@ -504,7 +504,7 @@ Carousel.propTypes = {
 Carousel.defaultProps = {
   children: null,
   slideMargin: 8,
-  className: '',
+  className: undefined,
   withArrow: true,
   alignCenter: false,
   flex: false,

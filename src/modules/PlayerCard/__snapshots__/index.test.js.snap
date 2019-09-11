@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlayerCard should render as expected 1`] = `
-<Styled(div)
-  className=""
->
+<Styled(div)>
   <Styled(div)
     backgroundImageUrl="http://dnl.eurosport.com/web-toolkit/playercard/bg1.png"
   />

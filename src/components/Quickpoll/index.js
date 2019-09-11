@@ -171,7 +171,7 @@ class QuickPoll extends React.Component {
 
 QuickPoll.defaultProps = {
   showResults: false,
-  className: '',
+  className: undefined,
 };
 
 const choiceType = PropTypes.shape({

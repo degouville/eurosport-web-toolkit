@@ -174,7 +174,7 @@ const MatchHero = ({
 );
 
 MatchHero.defaultProps = {
-  className: '',
+  className: undefined,
   date: '',
   hour: '',
   courtInfo: '',
@@ -232,7 +232,7 @@ export const MatchHeroWithScore = ({
 );
 
 MatchHeroWithScore.defaultProps = {
-  className: '',
+  className: undefined,
   watchButtonText: 'WATCH',
   watchButtonLinkProps: null,
   highlightLastSet: false,

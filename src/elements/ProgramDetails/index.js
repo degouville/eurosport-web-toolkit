@@ -73,7 +73,7 @@ const ProgramDetails = ({ customIcon, callsign, textDetail, className }) => (
 
 ProgramDetails.defaultProps = {
   callsign: 'E',
-  className: '',
+  className: undefined,
   customIcon: null,
 };
 

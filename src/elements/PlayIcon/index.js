@@ -63,7 +63,7 @@ const PlayIcon = ({ alt, height, isLoading, isRounded, ...props }) =>
 
 PlayIcon.defaultProps = {
   alt: 'play',
-  className: '',
+  className: undefined,
   isLoading: false,
   isRounded: true,
   height: 20,

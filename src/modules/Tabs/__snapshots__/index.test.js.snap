@@ -356,7 +356,6 @@ exports[`Tabs renders its content 1`] = `
   <Carousel
     absoluteNavigation={false}
     alignCenter={true}
-    className=""
     flex={false}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -366,7 +365,6 @@ exports[`Tabs renders its content 1`] = `
     withArrow={false}
   >
     <Styled(div)
-      className=""
       data-test="carousel"
       slides={Array []}
     >

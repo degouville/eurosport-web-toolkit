@@ -13,7 +13,6 @@ exports[`SubNavigation renders when everything passed in 1`] = `
     <Carousel
       absoluteNavigation={false}
       alignCenter={false}
-      className=""
       flex={false}
       magneticMax={0.8}
       magneticMin={0.2}

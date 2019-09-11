@@ -7,7 +7,6 @@ exports[`renders a WatchBar 1`] = `
   <Carousel
     absoluteNavigation={false}
     alignCenter={false}
-    className=""
     flex={false}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -99,7 +98,6 @@ exports[`renders a WatchBar with a title 1`] = `
   <Carousel
     absoluteNavigation={false}
     alignCenter={false}
-    className=""
     flex={false}
     magneticMax={0.8}
     magneticMin={0.2}

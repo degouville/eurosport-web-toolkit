@@ -141,7 +141,7 @@ const Betting = ({ link, sponsor, sentences, choices, className, customAttr }) =
 );
 
 Betting.defaultProps = {
-  className: '',
+  className: undefined,
   customAttr: {},
 };
 

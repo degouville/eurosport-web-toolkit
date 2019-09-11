@@ -42,7 +42,7 @@ SetsSchedule.propTypes = {
   className: PropTypes.string,
 };
 SetsSchedule.defaultProps = {
-  className: '',
+  className: undefined,
 };
 
 export default SetsSchedule;

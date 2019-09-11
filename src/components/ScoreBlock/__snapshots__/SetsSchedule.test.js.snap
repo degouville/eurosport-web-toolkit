@@ -27,7 +27,6 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
 }
 
 <SetsSchedule
-  className=""
   data={
     Object {
       "bottomTeam": Object {
@@ -45,9 +44,7 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
     }
   }
 >
-  <Styled(div)
-    className=""
-  >
+  <Styled(div)>
     <div
       className="emotion-4 emotion-5"
     >

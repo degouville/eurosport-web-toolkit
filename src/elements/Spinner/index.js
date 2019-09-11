@@ -58,7 +58,7 @@ const Spinner = ({ color, width, className }) => (
 
 Spinner.defaultProps = {
   color: colors.coreLightMinus1,
-  className: '',
+  className: undefined,
 };
 
 Spinner.propTypes = {

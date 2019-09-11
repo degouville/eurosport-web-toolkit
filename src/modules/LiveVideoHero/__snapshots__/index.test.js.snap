@@ -16,7 +16,6 @@ exports[`Live Video Hero should render as expected 1`] = `
   >
     <Styled(PlayIcon)
       alt="play"
-      className=""
       height={84}
       isLoading={false}
       isRounded={true}
@@ -43,7 +42,6 @@ exports[`Live Video Hero should render as expected 1`] = `
     </Styled(h1)>
     <Styled(ProgramDetails)
       callsign="E2NO"
-      className=""
       customIcon={null}
       textDetail="14:00 - 16:00"
     />

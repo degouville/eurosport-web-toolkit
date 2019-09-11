@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Program details should render as expected 1`] = `
-<Styled(div)
-  className=""
->
+<Styled(div)>
   <Styled(div)>
     <ChannelIcon
       height={50}

@@ -5,7 +5,6 @@ exports[`RoundTable should handle empty round data without crashing 1`] = `
   <Carousel
     absoluteNavigation={true}
     alignCenter={false}
-    className=""
     flex={true}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -1269,7 +1268,6 @@ exports[`RoundTable should handle empty round data without crashing 2`] = `
   <Carousel
     absoluteNavigation={true}
     alignCenter={false}
-    className=""
     flex={true}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -2669,7 +2667,6 @@ exports[`RoundTable should handle single matches data without crashing 1`] = `
   <Carousel
     absoluteNavigation={true}
     alignCenter={false}
-    className=""
     flex={true}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -2783,7 +2780,6 @@ exports[`RoundTable should handle single matches data without crashing 2`] = `
   <Carousel
     absoluteNavigation={true}
     alignCenter={false}
-    className=""
     flex={true}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -2899,7 +2895,6 @@ exports[`RoundTable should render as expected 1`] = `
   <Carousel
     absoluteNavigation={true}
     alignCenter={false}
-    className=""
     flex={true}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -4163,7 +4158,6 @@ exports[`RoundTable should render as expected 2`] = `
   <Carousel
     absoluteNavigation={true}
     alignCenter={false}
-    className=""
     flex={true}
     magneticMax={0.8}
     magneticMin={0.2}
@@ -8407,7 +8401,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -9161,7 +9154,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -9891,7 +9883,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -10495,7 +10486,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -11249,7 +11239,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -12003,7 +11992,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -12733,7 +12721,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {
@@ -13337,7 +13324,6 @@ exports[`RoundTableMobile module matches snapshot 1`] = `
                                         >
                                           <Styled(SetsScore)
                                             baseFontSize="14px"
-                                            className=""
                                             data={
                                               Object {
                                                 "bottomTeam": Object {

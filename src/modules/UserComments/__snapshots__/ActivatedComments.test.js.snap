@@ -24,7 +24,6 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
     >
       <Styled(div)>
         <Styled(Spinner)
-          className=""
           color="#35D0FE"
           width="80px"
         />

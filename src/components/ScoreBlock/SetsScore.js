@@ -223,7 +223,7 @@ Team.defaultProps = {
 SetsScore.defaultProps = {
   baseFontSize: null,
   highlightLastSet: false,
-  className: '',
+  className: undefined,
 };
 
 export const setsScoreType = PropTypes.shape({

@@ -11,7 +11,6 @@ exports[`<ScoreBlock /> Renders a ScoreBlock component with expected snapshot 1`
   >
     <Styled(SetsScore)
       baseFontSize="14px"
-      className=""
       data={
         Object {
           "bottomTeam": Object {

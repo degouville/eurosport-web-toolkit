@@ -2,7 +2,6 @@
 
 exports[`PlayerPromotionBox renders its content 1`] = `
 <Styled(div)
-  className=""
   pictureUrl="https://www.eurosport.fr/watch-eurosport-react/static/media/features-summary-1024.fe17bcd2.jpg"
 >
   <Styled(div)>

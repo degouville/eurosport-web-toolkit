@@ -103,7 +103,7 @@ PlayerPromotionBox.defaultProps = {
   pictureUrl: null,
   textButton: null,
   linkButton: null,
-  className: '',
+  className: undefined,
 };
 
 export default PlayerPromotionBox;

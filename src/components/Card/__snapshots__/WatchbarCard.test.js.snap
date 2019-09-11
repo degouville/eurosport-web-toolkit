@@ -16,7 +16,6 @@ exports[`Watchbar card renders a WatchbarCard 1`] = `
     />
     <Styled(PlayIcon)
       alt="play"
-      className=""
       height={32}
       isLoading={false}
       isRounded={true}
