@@ -46,6 +46,7 @@ const StyledCloseIcon = styled(CloseIcon)`
 
 const StyledScrollable = styled.div`
   height: 100%;
+  width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
 `;
