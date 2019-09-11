@@ -19,9 +19,9 @@ const Wrapper = styled.div`
   max-width: 633px;
 `;
 
-const scoreBlockStories = storiesOf('Components|Score Block', module);
+const setScoreStories = storiesOf('Components|Set Score', module);
 
-scoreBlockStories.add('SetsScore', () => (
+setScoreStories.add('Default', () => (
   <Wrapper css={{ maxWidth: '1067px' }}>
     <ScoreBlocks.SetsScore
       data={object('score data', liveMatchDataSet)}
@@ -29,6 +29,16 @@ scoreBlockStories.add('SetsScore', () => (
     />
   </Wrapper>
 ));
+setScoreStories.add('With flags', () => (
+  <Wrapper css={{ maxWidth: '1067px' }}>
+    <ScoreBlocks.SetsScore
+      data={object('score data', liveMatchDataSetWithImages)}
+      highlightLastSet={boolean('highlightLastSet', false)}
+    />
+  </Wrapper>
+));
+
+const scoreBlockStories = storiesOf('Components|Score Block', module);
 
 scoreBlockStories.add(`ScoreBlock - info`, () => (
   <Wrapper>

@@ -1,12 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SetsScore, { StyledTeamName, StyledTeamSet, isTeam, StyledSetScoreWrapper, StyledPlayer } from './SetsScore';
-import {
-  pastMatchData,
-  liveMatchDataSet,
-  liveMatchDataSetWithImages,
-  pastMatchOnePlayerNoScoresDataSet,
-} from './mockData/mockScoreBlockData';
+import { pastMatchData, liveMatchDataSet, liveMatchDataSetWithImages } from './mockData/mockScoreBlockData';
 import { actionOneDarkBase } from '../../colors';
 
 describe('<SetsScore />', () => {
@@ -18,28 +13,6 @@ describe('<SetsScore />', () => {
   it('renders with font size passed as prop', () => {
     const setScoreWrapper = shallow(<SetsScore data={liveMatchDataSet} baseFontSize="16px" />);
     expect(setScoreWrapper).toHaveStyleRule('font-size', '16px');
-  });
-
-  it('renders full width name if no score is set', () => {
-    // GIVEN
-    const wrapper = mount(<SetsScore data={pastMatchOnePlayerNoScoresDataSet} baseFontSize="16px" />);
-
-    // WHEN
-    const styledTeamName = wrapper.find(StyledTeamName).first();
-
-    // EXPECT
-    expect(styledTeamName).toHaveStyleRule('flex-basis', '100%');
-  });
-
-  it('renders 60% wigth name if score is set', () => {
-    // GIVEN
-    const wrapper = mount(<SetsScore data={liveMatchDataSet} />);
-
-    // WHEN
-    const styledTeamName = wrapper.find(StyledTeamName).first();
-
-    // EXPECT
-    expect(styledTeamName).toHaveStyleRule('flex-basis', '60%');
   });
 
   it('displays the winning team name with a checkmark', () => {

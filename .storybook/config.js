@@ -41,7 +41,7 @@ addParameters({
     isFullscreen: false,
     hierarchySeparator: /\/|\./,
     hierarchyRootSeparator: /\|/,
-    panelPosition: 'bottom',
+    panelPosition: 'right',
     sidebarAnimations: true,
     isToolshown: true,
   },

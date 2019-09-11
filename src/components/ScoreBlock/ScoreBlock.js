@@ -32,22 +32,19 @@ export const StyledButton = styled.div`
   color: ${colors.coreLightMinus1};
   letter-spacing: 1px;
   line-height: 16px;
-  width: ${props => props.width};
-  max-width: 40px;
-  min-width: 30px;
-  ${breakpoints.small(css`
-    padding: 0 4px;
-  `)};
+  word-break: break-word;
+  padding: 0 4px;
+  min-width: 0;
+  flex: 0 0 32px;
   ${breakpoints.medium(css`
-    min-width: 58px;
-    max-width: 86px;
+    flex: 0 0 66px;
   `)};
   ${props =>
     css`
       &:after {
         content: '\u2192';
       }
-      ${breakpoints.large(css`
+      ${breakpoints.medium(css`
         &:after {
           content: ${props.contentText};
         }
@@ -65,8 +62,9 @@ const StyledScoreWrapper = styled.div`
     css`
       padding-left: 20px;
     `};
-  flex-basis: 400px;
-  flex-grow: 1;
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
   background-color: ${rgba(colors.coreNeutral11, 0.5)};
   ${StyledSpacer} {
     border-top-color: ${colors.midnightExpress2};
@@ -74,10 +72,13 @@ const StyledScoreWrapper = styled.div`
 `;
 
 const StyledPlayButton = styled(StyledButton)`
-  font-size: 24px;
+  font-size: 14px;
   display: none;
-  ${breakpoints.large(css`
+  ${breakpoints.small(css`
     display: inherit;
+  `)};
+  ${breakpoints.medium(css`
+    font-size: 20px;
   `)};
   &:after {
     content: none;
@@ -107,20 +108,24 @@ const StyledBigDot = styled.div`
   }
 `;
 
+const StyledSetsScore = styled(SetsScore)`
+  flex: 1 1 0;
+  min-width: 0;
+`;
+const StyledSetsSchedule = styled(SetsSchedule)`
+  flex: 0 0 auto;
+`;
+
 export const ScoreButton = ({ properties }) => {
   const { hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText } = properties;
   if (!hasButton) return null;
   return isLive ? (
     <>
-      {isWatchable && (
-        <StyledPlayButton color="actionTwoLightPlus1" width="68px">
-          &#9658;
-        </StyledPlayButton>
-      )}
-      <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} width="68px" />
+      {isWatchable && <StyledPlayButton color="actionTwoLightPlus1">&#9658;</StyledPlayButton>}
+      <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} />
     </>
   ) : (
-    <StyledButton color="actionOneDarkBase" contentText={`'${matchInfoButtonText}'`} width="144px" />
+    <StyledButton color="actionOneDarkBase" contentText={`'${matchInfoButtonText}'`} />
   );
 };
 
@@ -159,8 +164,8 @@ export const ScoreBlock = ({
             )}
           </StyledBigDot>
         )}
-        <SetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
-        {hasSchedule && <SetsSchedule schedule={schedule} />}
+        <StyledSetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
+        {hasSchedule && <StyledSetsSchedule schedule={schedule} />}
       </StyledScoreWrapper>
       <ScoreButton properties={{ hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText }} />
     </StyledClickableWrapper>

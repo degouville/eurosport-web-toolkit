@@ -11,11 +11,6 @@ import * as types from 'src/types';
 const StyledScoreBlockWrapper = styled.div`
   width: 350px;
   margin: 10px 0;
-  & * {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
 `;
 
 const Flexed = styled.div`

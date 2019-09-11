@@ -93,8 +93,8 @@ export const scheduledMatchDataSet = {
     },
   },
   schedule: {
-    date: 'le 28 Octobre',
-    time: 'à 18h00',
+    date: '28 Octobre 2019',
+    time: 'À partir de 18h00',
   },
 };
 

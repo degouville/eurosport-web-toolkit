@@ -3,6 +3,7 @@
 exports[`<SetsScore /> Renders a SetsScore component 1`] = `
 <Styled(div)
   baseFontSize={null}
+  className=""
   data-test="sets-score-wrapper"
 >
   <Team

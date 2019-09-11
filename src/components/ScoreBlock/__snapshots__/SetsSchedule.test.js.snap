@@ -3,12 +3,10 @@
 exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
 .emotion-4 {
   padding: 0 6px 0 16px;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
   text-align: right;
   color: #ffffff;
   font-size: 12px;
+  line-height: 1.5em;
 }
 
 @media (min-width:1024px) {
@@ -18,15 +16,18 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
 }
 
 .emotion-0 {
+  white-space: nowrap;
   opacity: 0.7;
 }
 
 .emotion-2 {
+  white-space: nowrap;
   opacity: 0.8;
   font-weight: bold;
 }
 
 <SetsSchedule
+  className=""
   data={
     Object {
       "bottomTeam": Object {
@@ -39,20 +40,22 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
   }
   schedule={
     Object {
-      "date": "le 28 Octobre",
-      "time": "à 18h00",
+      "date": "28 Octobre 2019",
+      "time": "À partir de 18h00",
     }
   }
 >
-  <Styled(p)>
-    <p
+  <Styled(div)
+    className=""
+  >
+    <div
       className="emotion-4 emotion-5"
     >
       <Styled(span)>
         <span
           className="emotion-0 emotion-1"
         >
-          le 28 Octobre
+          28 Octobre 2019
         </span>
       </Styled(span)>
       <br />
@@ -60,10 +63,10 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
         <b
           className="emotion-2 emotion-3"
         >
-          à 18h00
+          À partir de 18h00
         </b>
       </Styled(b)>
-    </p>
-  </Styled(p)>
+    </div>
+  </Styled(div)>
 </SetsSchedule>
 `;
