@@ -22,8 +22,10 @@ exports[`renders a WatchBar 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -37,8 +39,10 @@ exports[`renders a WatchBar 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -52,8 +56,10 @@ exports[`renders a WatchBar 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -67,8 +73,10 @@ exports[`renders a WatchBar 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -127,8 +135,10 @@ exports[`renders a WatchBar with a title 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -142,8 +152,10 @@ exports[`renders a WatchBar with a title 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -157,8 +169,10 @@ exports[`renders a WatchBar with a title 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }
@@ -172,8 +186,10 @@ exports[`renders a WatchBar with a title 1`] = `
           "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
           "isLive": false,
           "liveLabel": "live",
+          "playerChannelNameAnalytics": "analytics",
           "timestamp": "09:00 - 10:30",
           "title": "Darts: BDO World Championship",
+          "titleAnalytics": "title",
           "url": "/article/id",
         }
       }

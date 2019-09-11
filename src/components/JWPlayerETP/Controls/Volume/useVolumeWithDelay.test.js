@@ -36,7 +36,7 @@ describe('useVolumeWithDelay', () => {
       const [, setShowVolume] = result.current;
       setShowVolume(false);
     });
-    jest.runAllTimers();
+    act(() => jest.runAllTimers());
     const [showVolume] = result.current;
 
     // Expect
@@ -74,7 +74,7 @@ describe('useVolumeWithDelay', () => {
       const [, setShowVolume] = result.current;
       setShowVolume(true);
     });
-    jest.runAllTimers();
+    act(() => jest.runAllTimers());
     const [showVolume] = result.current;
 
     // Expect

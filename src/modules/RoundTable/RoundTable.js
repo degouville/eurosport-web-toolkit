@@ -109,7 +109,7 @@ RoundColumn.defaultProps = {
 };
 
 RoundColumn.propTypes = {
-  matches: PropTypes.arrayOf(types.scoreBlock).isRequired,
+  matches: PropTypes.arrayOf(PropTypes.shape(types.scoreBlock)).isRequired,
   round: PropTypes.string,
 };
 
@@ -119,8 +119,8 @@ RoundTable.defaultProps = {
 };
 
 RoundTable.propTypes = {
-  matches: PropTypes.arrayOf(types.scoreBlock).isRequired,
-  rounds: PropTypes.arrayOf(types.round).isRequired,
+  matches: PropTypes.arrayOf(PropTypes.shape(types.scoreBlock)).isRequired,
+  rounds: PropTypes.arrayOf(PropTypes.shape(types.round)).isRequired,
   className: PropTypes.string,
   offsetLeft: PropTypes.string,
 };

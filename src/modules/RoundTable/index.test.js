@@ -20,7 +20,6 @@ describe('RoundTableMobile module', () => {
         <RoundTableMobile matches={matches} tabs={tabs} />
       </ThemeProvider>
     );
-
     // When
     const roundTable = wrapper.find(RoundTableMobile);
 

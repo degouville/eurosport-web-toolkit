@@ -74,7 +74,7 @@ const CompactCard = ({ card, icon, ...props }) => {
 CompactCard.propTypes = {
   card: PropTypes.shape({
     img: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string,
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string,

@@ -162,7 +162,7 @@ Betting.propTypes = {
   ).isRequired,
   className: PropTypes.string,
   customAttr: PropTypes.shape({
-    [PropTypes.string.isRequired]: PropTypes.string.isRequired,
+    [PropTypes.string.isRequired]: PropTypes.string,
   }),
 };
 

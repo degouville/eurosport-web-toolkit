@@ -42,13 +42,13 @@ describe('Compact card', () => {
   });
 
   it('should render image', () => {
-    const wrapper = shallow(<CompactCard {...mockCardData} />);
+    const wrapper = shallow(<CompactCard card={mockCardData} icon={mockIcon} />);
     expect(wrapper.dive().find(StyledImage).length).toEqual(1);
   });
 
   it('should render placeholder if no image provided', () => {
     // GIVEN
-    const wrapper = shallow(<CompactCard {...mockCardData} image={null} />);
+    const wrapper = shallow(<CompactCard card={mockCardData} icon={mockIcon} image={null} />);
 
     // WHEN
     const images = wrapper.dive().find(StyledImage);
@@ -56,6 +56,6 @@ describe('Compact card', () => {
 
     // EXPECT
     expect(images.length).toEqual(1);
-    expect(imageSrc).toContain('/eurosport-web-toolkit/');
+    expect(imageSrc).toContain('https://i.eurosport.com/2018/10/29/2450727-50913270-2560-1440.jpg?w=200');
   });
 });

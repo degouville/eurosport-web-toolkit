@@ -166,7 +166,7 @@ WatchbarCard.defaultProps = {
 
 WatchbarCard.propTypes = {
   card: PropTypes.shape({
-    img: PropTypes.string.isRequired,
+    img: PropTypes.string,
     url: PropTypes.string.isRequired,
     isLive: PropTypes.bool,
     title: PropTypes.string.isRequired,

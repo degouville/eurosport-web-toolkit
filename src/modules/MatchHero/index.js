@@ -244,7 +244,7 @@ MatchHeroWithScore.propTypes = {
   className: PropTypes.string,
   watchButtonText: PropTypes.string,
   watchButtonLinkProps: PropTypes.shape({
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
   }),
   date: PropTypes.string,
   courtInfo: PropTypes.string,

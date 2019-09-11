@@ -33,6 +33,7 @@ exports[`ShareIcon should render ShareIcon facebook 1`] = `
 
 <ShareIcon
   icon="facebook"
+  onClick={null}
   size={30}
 >
   <Styled(div)
@@ -44,10 +45,12 @@ exports[`ShareIcon should render ShareIcon facebook 1`] = `
     >
       <Styled(span)
         icon="/eurosport-web-toolkit/0877828b5ca291d18f7eb65b3ac841fc.svg"
+        onClick={null}
         size={30}
       >
         <span
           className="emotion-0 emotion-1"
+          onClick={null}
           size={30}
         />
       </Styled(span)>

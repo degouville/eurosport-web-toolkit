@@ -18,6 +18,7 @@ describe('Components|JWPlayerETP|Controls', () => {
     onPlay: jest.fn(),
     onPause: jest.fn(),
     onSeek: jest.fn(),
+    onMute: jest.fn(),
     seekMin: 0,
     seekMax: 100,
     seekPosition: 50,

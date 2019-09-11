@@ -19,6 +19,7 @@ exports[`Components|JWPlayerETP|Controls Should match snapshot 1`] = `
     isMobile={false}
     mute={false}
     onFullscreenChange={[MockFunction]}
+    onMute={[MockFunction]}
     onSeek={[MockFunction]}
     onVolume={[MockFunction]}
     rewindCounts={null}

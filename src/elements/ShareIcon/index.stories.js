@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { storiesOf } from '@storybook/react';
-import { text, radios } from '@storybook/addon-knobs';
+import { number, radios } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import ShareIcon from './index';
 
@@ -35,5 +35,5 @@ ShareIconStories.add('twitter', () => <ShareIcon icon="twitter" size={100} onCli
 ShareIconStories.add('whatsapp', () => <ShareIcon icon="whatsapp" size={100} onClick={action('whatsapp')} />);
 
 ShareIconStories.add('custom - size', () => (
-  <ShareIcon size={text('size', '300')} icon={radios('Icon', options, 'facebook')} onClick={action('share')} />
+  <ShareIcon size={number('size', '300')} icon={radios('Icon', options, 'facebook')} onClick={action('share')} />
 ));

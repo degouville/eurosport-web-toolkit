@@ -43,7 +43,6 @@ class RoundTableMobile extends Component {
     const matches = rawMatches.filter(isCurrentRound(currentRound));
     const hasMatches = matches && !!matches.length;
     const hasTabs = tabs && !!tabs.length;
-
     return (
       <div className={className}>
         {hasTabs && (
@@ -80,10 +79,10 @@ RoundTableMobile.propTypes = {
   matches: PropTypes.arrayOf(
     PropTypes.shape({
       ...types.scoreBlock,
-      round: types.round,
-    }).isRequired
+      round: PropTypes.shape(types.round),
+    })
   ).isRequired,
-  tabs: PropTypes.arrayOf(types.simpleTab).isRequired,
+  tabs: PropTypes.arrayOf(PropTypes.shape(types.simpleTab)).isRequired,
   initialTab: PropTypes.number,
   className: PropTypes.string,
 };

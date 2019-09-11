@@ -7,6 +7,7 @@ const contentListingStories = storiesOf('Modules|Content Grid', module);
 
 const baseData = {
   img: 'https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-130536.jpeg?w=500',
+  url: '/article/id',
   category: 'British superbike',
   title: 'World superbikes: Argentina World',
   timestamp: '09:00 - 10:30',
@@ -32,7 +33,7 @@ contentListingStories
       subLink={object('subLink', { text: 'View Schedule', href: '#' })}
     >
       <Cards.Content card={cardWithDescription} type={select('Type', ['vod', 'article', 'live'], 'article')} />
-      <Cards.Content card={object('card', baseData)} type={select('Type', ['vod', 'article', 'live'], 'article')} />
+      <Cards.Content card={object('card', baseData)} type={select('Type', ['vod', 'article', 'live'])} />
       <Cards.Content card={object('card', baseData)} type={select('Type', ['vod', 'article', 'live'], 'article')} />
       <Cards.Content card={object('card', baseData)} type={select('Type', ['vod', 'article', 'live'], 'article')} />
     </ContentListing.Grid>

@@ -1,24 +1,24 @@
 import PropTypes from 'prop-types';
 
-export const option = PropTypes.shape({
+export const option = {
   id: PropTypes.number,
   text: PropTypes.string,
-});
+};
 
-export const round = PropTypes.shape({
-  id: PropTypes.number.isRequired,
+export const round = {
+  id: PropTypes.number,
   number: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-});
+  name: PropTypes.string,
+};
 
-export const label = PropTypes.shape({ text: PropTypes.string.isRequired });
+export const label = { text: PropTypes.string.isRequired };
 
-export const set = PropTypes.shape({
+export const set = {
   set: PropTypes.number,
   score: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   tie: PropTypes.number,
   won: PropTypes.bool,
-});
+};
 
 export const teamData = PropTypes.shape({
   hasWon: PropTypes.bool,
@@ -27,30 +27,30 @@ export const teamData = PropTypes.shape({
   playerTwoName: PropTypes.string,
   playerOneImage: PropTypes.string,
   playerTwoImage: PropTypes.string,
-  sets: PropTypes.arrayOf(set),
+  sets: PropTypes.arrayOf(PropTypes.shape(set)),
 });
 
-export const schedule = PropTypes.shape({
+export const schedule = {
   date: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
-});
+};
 
-export const simpleTab = PropTypes.shape({
+export const simpleTab = {
   label: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   disabled: PropTypes.boolean,
   highlighted: PropTypes.boolean,
-});
+};
 
-export const scoreBlock = PropTypes.shape({
+export const scoreBlock = {
   matchUrl: PropTypes.string.isRequired,
   data: PropTypes.shape({
     bottomTeam: teamData,
     topTeam: teamData,
   }).isRequired,
-  schedule,
+  schedule: PropTypes.shape(schedule),
   isLive: PropTypes.bool,
   isWatchable: PropTypes.bool,
   displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
   hasButton: PropTypes.bool,
-});
+};

@@ -10,11 +10,11 @@ describe('Betting', () => {
     global.Math = mockMath;
   });
   it('renders Betting for double choices', () => {
-    expect(shallow(<Betting {...doubleChoiceData} />)).toMatchSnapshot();
+    expect(shallow(<Betting {...doubleChoiceData} customAttr={{ attrName: 'attrValue' }} />)).toMatchSnapshot();
   });
 
   it('renders Betting for triple choices', () => {
-    expect(shallow(<Betting {...tripleChoiceData} />)).toMatchSnapshot();
+    expect(shallow(<Betting {...tripleChoiceData} customAttr={{ attrName: 'attrValue' }} />)).toMatchSnapshot();
   });
   it('should return a random sentence', () => {
     expect(getRandomSentence(['a', 'b'])).toEqual('a');

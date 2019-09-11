@@ -9,6 +9,8 @@ class VideoAnalyticsMock {
 
   onAdBreakComplete = jest.fn();
 
+  onLoginReady = jest.fn();
+
   onAdStart = jest.fn();
 
   onAdTime = jest.fn();

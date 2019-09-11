@@ -85,7 +85,7 @@ ContentCard.defaultProps = {
 
 ContentCard.propTypes = {
   card: PropTypes.shape({
-    img: PropTypes.string.isRequired,
+    img: PropTypes.string,
     url: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,

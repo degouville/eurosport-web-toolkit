@@ -38,9 +38,15 @@ const ShareIcons = ({ size, label, whatsappCTA, facebookCTA, twitterCTA }) => {
 ShareIcons.propTypes = {
   size: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
-  whatsappCTA: PropTypes.func.isRequired,
-  facebookCTA: PropTypes.func.isRequired,
-  twitterCTA: PropTypes.func.isRequired,
+  whatsappCTA: PropTypes.func,
+  facebookCTA: PropTypes.func,
+  twitterCTA: PropTypes.func,
+};
+
+ShareIcons.defaultProps = {
+  whatsappCTA: null,
+  facebookCTA: null,
+  twitterCTA: null,
 };
 
 export default ShareIcons;

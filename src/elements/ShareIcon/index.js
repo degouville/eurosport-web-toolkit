@@ -55,7 +55,11 @@ const ShareIcon = ({ icon, onClick, size }) => (
 ShareIcon.propTypes = {
   icon: PropTypes.oneOf(['facebook', 'twitter', 'whatsapp']).isRequired,
   size: PropTypes.number.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
+};
+
+ShareIcon.defaultProps = {
+  onClick: null,
 };
 
 export default ShareIcon;

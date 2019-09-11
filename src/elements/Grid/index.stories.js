@@ -56,22 +56,22 @@ gridStories
         largeOffset={select('large offset', Grid.TWELVE_OFFSETS, '0')}
         wideOffset={select('wide offset', Grid.TWELVE_OFFSETS, '0')}
       >
-        <Cards.Content card={cardData} />
+        <Cards.Content card={cardData} type="vod" />
       </Grid.Column>
       <Grid.Column tiny="1">
-        <Cards.Content card={cardData} />
+        <Cards.Content card={cardData} type="vod" />
       </Grid.Column>
       <Grid.Column tiny="1">
-        <Cards.Content card={cardData} />
+        <Cards.Content card={cardData} type="vod" />
       </Grid.Column>
       <Grid.Column tiny="1">
-        <Cards.Content card={cardData} />
+        <Cards.Content card={cardData} type="vod" />
       </Grid.Column>
       <Grid.Column tiny="1">
-        <Cards.Content card={cardData} />
+        <Cards.Content card={cardData} type="vod" />
       </Grid.Column>
       <Grid.Column tiny="1">
-        <Cards.Content card={cardData} />
+        <Cards.Content card={cardData} type="vod" />
       </Grid.Column>
     </Grid.Row>
   ))
@@ -85,8 +85,9 @@ gridStories
           medium={select('medium', Grid.TWELVE_COLUMNS, '6')}
           large={select('large', Grid.TWELVE_COLUMNS, '4')}
           wide={select('wide', Grid.TWELVE_COLUMNS, '3')}
+          key={i}
         >
-          <Cards.Content card={cardData} />
+          <Cards.Content card={cardData} type="vod" />
         </StyledColumn>
       );
     }

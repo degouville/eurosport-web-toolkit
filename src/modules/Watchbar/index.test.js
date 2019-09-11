@@ -10,6 +10,8 @@ const cardData = {
   timestamp: '09:00 - 10:30',
   channel: 'E1FR',
   liveLabel: 'live',
+  playerChannelNameAnalytics: 'analytics',
+  titleAnalytics: 'title',
 };
 
 const cards = [cardData, cardData, cardData, cardData];

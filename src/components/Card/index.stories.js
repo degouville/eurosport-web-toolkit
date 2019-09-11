@@ -84,7 +84,7 @@ cardStories
     <Wrapper>
       <Cards.Watchbar
         card={object('card', watchbar)}
-        trackingPosition={object('trackingPosition', watchbar.trackingPosition)}
+        trackingPosition={number('trackingPosition', watchbar.trackingPosition)}
       />
     </Wrapper>
   ))
