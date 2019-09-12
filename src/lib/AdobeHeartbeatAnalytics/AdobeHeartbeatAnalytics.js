@@ -118,6 +118,18 @@ export default class AdobeHeartbeatAnalytics {
     mediaHeartbeat && mediaHeartbeat.trackComplete();
   };
 
+  onSeek = () => {
+    const { mediaHeartbeat } = this;
+
+    mediaHeartbeat && mediaHeartbeat.trackSeekStart();
+  };
+
+  onSeeked = () => {
+    const { mediaHeartbeat } = this;
+
+    mediaHeartbeat && mediaHeartbeat.trackSeekComplete();
+  };
+
   onSessionEnd = () => {
     const { mediaHeartbeat } = this;
 

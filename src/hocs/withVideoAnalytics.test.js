@@ -20,6 +20,10 @@ class VideoAnalyticsMock {
   onPlay = jest.fn();
 
   onPause = jest.fn();
+
+  onSeek = jest.fn();
+
+  onSeeked = jest.fn();
 }
 
 describe('hocs/withVideoAnalytics', () => {

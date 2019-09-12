@@ -17,6 +17,8 @@ const events = actions(
   'onAdStart',
   'onAdTime',
   'onError',
+  'onSeek',
+  'onSeeked',
   'onLoginComponentReady',
   'onLoginComponentDone'
 );

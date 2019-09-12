@@ -79,6 +79,8 @@ export const mediaHeartbeatMockCreator = ({
   trackPauseSpy,
   trackCompleteSpy,
   trackSessionEndSpy,
+  trackSeekStartSpy,
+  trackSeekCompleteSpy,
   setValueSpy,
 }) => {
   const mockMHB = jest.fn();
@@ -88,6 +90,8 @@ export const mediaHeartbeatMockCreator = ({
   mockMHB.prototype.trackPause = trackPauseSpy;
   mockMHB.prototype.trackComplete = trackCompleteSpy;
   mockMHB.prototype.trackSessionEnd = trackSessionEndSpy;
+  mockMHB.prototype.trackSeekStart = trackSeekStartSpy;
+  mockMHB.prototype.trackSeekComplete = trackSeekCompleteSpy;
   mockMHB.createMediaObject = jest.fn().mockReturnValue({
     setValue: setValueSpy,
   });
