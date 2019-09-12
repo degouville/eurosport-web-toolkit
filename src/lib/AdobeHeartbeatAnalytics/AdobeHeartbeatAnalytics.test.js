@@ -15,8 +15,6 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
   const trackPauseSpy = jest.fn();
   const trackCompleteSpy = jest.fn();
   const trackSessionEndSpy = jest.fn();
-  const trackSeekStartSpy = jest.fn();
-  const trackSeekCompleteSpy = jest.fn();
   const setValueSpy = jest.fn();
 
   let analytics;
@@ -33,8 +31,6 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
           trackPauseSpy,
           trackCompleteSpy,
           trackSessionEndSpy,
-          trackSeekStartSpy,
-          trackSeekCompleteSpy,
           setValueSpy,
         }),
         MediaHeartbeatConfig: jest.fn(),
@@ -160,22 +156,22 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
   });
 
   describe('onSeek', () => {
-    it('should call MHB trackSeekStart', () => {
+    it('should call trackEvent with correct params', () => {
       // Then
       analytics.onSeek();
 
       // Expect
-      expect(trackSeekStartSpy).toHaveBeenCalled();
+      expect(trackEventSpy).toHaveBeenCalledWith('seekStart');
     });
   });
 
   describe('onSeeked', () => {
-    it('should call MHB trackSeekComplete', () => {
+    it('should call trackEvent with correct params', () => {
       // Then
       analytics.onSeeked();
 
       // Expect
-      expect(trackSeekCompleteSpy).toHaveBeenCalled();
+      expect(trackEventSpy).toHaveBeenCalledWith('seekComplete');
     });
   });
 });

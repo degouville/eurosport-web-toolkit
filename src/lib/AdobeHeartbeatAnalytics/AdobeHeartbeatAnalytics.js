@@ -119,15 +119,15 @@ export default class AdobeHeartbeatAnalytics {
   };
 
   onSeek = () => {
-    const { mediaHeartbeat } = this;
+    const { MediaHeartbeat, mediaHeartbeat } = this;
 
-    mediaHeartbeat && mediaHeartbeat.trackSeekStart();
+    mediaHeartbeat && mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
   };
 
   onSeeked = () => {
-    const { mediaHeartbeat } = this;
+    const { MediaHeartbeat, mediaHeartbeat } = this;
 
-    mediaHeartbeat && mediaHeartbeat.trackSeekComplete();
+    mediaHeartbeat && mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
   };
 
   onSessionEnd = () => {
