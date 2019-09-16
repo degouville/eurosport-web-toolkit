@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import get from 'lodash/get';
 import { medium, large, wide } from '../../breakpoints';
-import { jungleMist, halfBaked, turquoiseBlue, coreLightMinus1 } from '../../colors';
+import { jungleMist, halfBaked, turquoiseBlue, white } from '../../colors';
 import { fontAlphaHeadline } from '../../typography';
 
 import Cards from '../../components/Card';
@@ -34,7 +34,7 @@ const StyledCommentLeft = styled.div`
 const StyledCommentRight = styled.div`
   flex: 1;
   overflow: hidden;
-  color: ${coreLightMinus1};
+  color: ${white};
 `;
 
 export const StyledPlainHtml = styled.div`

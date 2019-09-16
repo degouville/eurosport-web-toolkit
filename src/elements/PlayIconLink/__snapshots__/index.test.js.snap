@@ -3,14 +3,14 @@
 exports[`PlayIconLink should render icon with link and text passed as children 1`] = `
 .emotion-0 {
   position: absolute;
-  color: #ffffff;
+  color: #FFFFFF;
   white-space: nowrap;
   height: 48px;
   line-height: 48px;
 }
 
 <Component
-  bgColorIcon="#4652ff"
+  bgColorIcon="#4652FF"
   bgColorText="#3c46dc"
   className="emotion-0 emotion-1"
   href="google.com"

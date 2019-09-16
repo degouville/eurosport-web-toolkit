@@ -31,7 +31,7 @@ describe('Toggle', () => {
   it('changes the UI based on isSetToLeft prop', () => {
     const wrapper = mount(<Toggle {...toggleProps} />);
     wrapper.setProps({ isSetToLeft: false });
-    expect(wrapper.find('span').at(0)).toHaveStyleRule('color', '#ffffff');
+    expect(wrapper.find('span').at(0)).toHaveStyleRule('color', '#FFFFFF');
     expect(wrapper.find('span').at(2)).toHaveStyleRule('color', '#0094F8');
   });
 });

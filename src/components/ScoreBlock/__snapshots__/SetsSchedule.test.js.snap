@@ -4,7 +4,7 @@ exports[`<SetsSchedule /> Renders a SetsSchedule component 1`] = `
 .emotion-4 {
   padding: 0 6px 0 16px;
   text-align: right;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 12px;
   line-height: 1.5em;
 }

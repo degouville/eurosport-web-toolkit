@@ -6,7 +6,7 @@ import CheckIcon from 'src/assets/red-check.svg';
 import ESPlayerLogo from 'src/assets/eurosport-player-logo.component.svg';
 
 import * as breakpoints from 'src/breakpoints';
-import { coreNeutral9 } from 'src/colors';
+import { martinique } from 'src/colors';
 import Button from 'src/elements/Button';
 import { H2 } from 'src/typography';
 import Login from '../Login';
@@ -98,10 +98,10 @@ const StyledSubscribeButton = styled(Button)`
 `;
 
 const Separator = styled.div`
-  border-bottom: solid 2px ${coreNeutral9};
+  border-bottom: solid 2px ${martinique};
   margin: 30px 0;
   ${breakpoints.large(css`
-    border-right: solid 2px ${coreNeutral9};
+    border-right: solid 2px ${martinique};
     align-self: stretch;
     margin: 0 118px;
   `)}

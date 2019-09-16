@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Chevron from 'src/assets/chevron.component.svg';
 import { H3 } from 'src/typography';
 import { medium } from 'src/breakpoints';
-import { coreLightMinus1, mischka, coreLightBase } from 'src/colors';
+import { white, mischka, athensGray } from 'src/colors';
 import ScoreBlock, { scoreBlockType } from 'src/components/ScoreBlock';
 import Grid, { Column } from 'src/elements/Grid';
 import ViewMore, { StyledViewMoreButton, StyledViewMoreButtonWrapper } from '../ViewMore';
@@ -18,7 +18,7 @@ const StyledBreadcrumbElement = styled(H3)`
     font-size: 26px;
   `)};
   &:last-child {
-    color: ${coreLightMinus1};
+    color: ${white};
   }
 `;
 
@@ -29,7 +29,7 @@ const StyledChevron = styled(Chevron)`
   display: inline-block;
   vertical-align: middle;
   path {
-    fill: ${coreLightMinus1};
+    fill: ${white};
   }
 `;
 
@@ -101,7 +101,7 @@ export const StyledColumn = styled(Column)`
 
 const StyledTitle = styled(H3)`
   margin-bottom: 30px;
-  color: ${coreLightBase};
+  color: ${athensGray};
   font-size: 22px;
   text-transform: uppercase;
   ${medium(css`

@@ -11,10 +11,10 @@ const StyledHeader = styled.div`
   font-size: 12px;
   ${fontAlphaHeadline};
   text-transform: capitalize;
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   padding: 24px 0;
-  border-top: 1px solid ${colors.coreNeutral4};
-  border-bottom: 1px solid ${colors.coreNeutral4};
+  border-top: 1px solid ${colors.manatee};
+  border-bottom: 1px solid ${colors.manatee};
   margin-bottom: 30px;
 
   ${breakpoints.medium(css`
@@ -61,7 +61,7 @@ const StyledFooter = styled.a`
   display: block;
   font-size: 12px;
   ${fontAlphaHeadline};
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   text-align: left;
   margin-top: 15px;
   text-decoration: none;
@@ -166,11 +166,11 @@ export const StyledContentCss = () => (
 }
 
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block .fyre-button-right-inner-box {
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 }
 
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block .fyre-button-right-inner-box:hover {
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre .fyre-comment-stream {
@@ -310,8 +310,8 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre .fyre-featured-content-wrapper .fyre-featured-body {
-	border: 1px solid ${colors.coreNeutral4} !important;
-	border-left: 5px solid ${colors.coreNeutral4} !important;
+	border: 1px solid ${colors.manatee} !important;
+	border-left: 5px solid ${colors.manatee} !important;
 	padding: 15px !important;
 	margin-left: 30px !important;
 	width: auto !important;
@@ -328,7 +328,7 @@ a.fyre-stream-sort-top-comments {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 }
 
 .fyre .fyre-featured-content-wrapper .fyre-comment-divider {
@@ -355,7 +355,7 @@ a.fyre-stream-sort-top-comments {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre .fyre-featured-content-wrapper .fyre-featured-author .fyre-comment-date {
@@ -381,7 +381,7 @@ a.fyre-stream-sort-top-comments {
 	-o-border-radius: 2px;
 	border-radius: 2px;
 	padding: 4px 8px !important;
-	background-color: ${colors.coreLightMinus1} !important;
+	background-color: ${colors.white} !important;
 	color: ${colors.blackPearl} !important;
 	margin: 0 !important;
 	font-size: 12px !important;
@@ -413,7 +413,7 @@ a.fyre-stream-sort-top-comments {
   font-smooth: antialiased;
 	font-weight: bold !important;
 	margin: 0px !important;
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 	text-transform: capitalize;
 	line-height:40px;
 }
@@ -446,7 +446,7 @@ a.fyre-stream-sort-top-comments {
 
 .fyre .fyre-box-wrapper span.fyre-user-drop {
 	background: none !important;
-	color: ${colors.arsenic} !important;
+	color: ${colors.mako} !important;
 	font-size: 14px !important;
 	font-weight: bold !important;
   font-family: ${fontFamilies.helvetica} !important;
@@ -488,9 +488,9 @@ a.fyre-stream-sort-top-comments {
   -moz-osx-font-smoothing: auto;
   font-smooth: auto;
 	line-height: 24px !important;
-	color: ${colors.arsenic} !important;
-	border: 1px solid ${colors.arsenic} !important;
-	background-color: ${colors.coreLightMinus1} !important;
+	color: ${colors.mako} !important;
+	border: 1px solid ${colors.mako} !important;
+	background-color: ${colors.white} !important;
 	-webkit-border-radius: 2px !important;
 	-moz-border-radius: 2px !important;
 	-ms-border-radius: 2px !important;
@@ -533,7 +533,7 @@ a.fyre-stream-sort-top-comments {
 
 .fyre-mention-menu {
 	left: 1px !important;
-	border: 1px solid ${colors.coreNeutral4} !important;
+	border: 1px solid ${colors.manatee} !important;
 	border-top: 0px !important
 }
 
@@ -561,7 +561,7 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre-editor .fyre-editor-toolbar .fyre-share-container {
-	border: 1px solid ${colors.coreNeutral4} !important;
+	border: 1px solid ${colors.manatee} !important;
 	border-top: 0px !important
 }
 
@@ -604,26 +604,26 @@ a.fyre-stream-sort-top-comments {
 
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block.fyre-post-button-new,
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block.fyre-post-button-reply {
-  border: 1px solid ${colors.coreNeutral4} !important;
+  border: 1px solid ${colors.manatee} !important;
 	border-radius: 0px !important;
 	display: block !important;
 	background-color: transparent !important;
 	background-image: none !important;
 	padding: 13px 20px !important;
 	height: auto !important;
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 }
 
 .fyre-user-authenticated .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block.fyre-post-button-new,
 .fyre-user-authenticated .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block.fyre-post-button-reply {
-  border: 1px solid ${colors.coreLightMinus1} !important;
-	color: ${colors.coreLightMinus1} !important;
+  border: 1px solid ${colors.white} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block.fyre-post-button-new:hover,
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block.fyre-post-button-reply:hover {
-  border: 1px solid ${colors.coreLightMinus1} !important;
-	color: ${colors.coreLightMinus1} !important;
+  border: 1px solid ${colors.white} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre-editor .fyre-editor-toolbar .goog-toolbar>.goog-inline-block .fyre-button-left-inner-box,
@@ -646,7 +646,7 @@ a.fyre-stream-sort-top-comments {
 .fyre-stream-sort {
 	padding-bottom: 5px !important;
 	text-align: center  !important;
-	border-bottom: 1px solid ${colors.coreNeutral4} !important;
+	border-bottom: 1px solid ${colors.manatee} !important;
 }
 
 .fyre-stream-sort .fyre-stream-sort-bar {
@@ -659,12 +659,12 @@ a.fyre-stream-sort-top-comments {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 }
 
 .fyre-stream-sort .fyre-stream-sort-options a:hover,
 .fyre-stream-sort .fyre-stream-sort-options a.fyre-stream-sort-selected {
-	color: ${colors.coreLightMinus1} !important
+	color: ${colors.white} !important
 }
 
 .fyre-comment-stream {
@@ -677,7 +677,7 @@ a.fyre-stream-sort-top-comments {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
-	color: ${colors.coreLightMinus1} !important; 
+	color: ${colors.white} !important; 
 	font-weight: bold !important;
 	text-transform: capitalize !important;
 }
@@ -713,7 +713,7 @@ a.fyre-stream-sort-top-comments {
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
 	padding: 4px !important;
-	background-color: ${colors.coreNeutral4} !important
+	background-color: ${colors.manatee} !important
 }
 
 .fyre .fyre-moderator {
@@ -727,7 +727,7 @@ a.fyre-stream-sort-top-comments {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   font-smooth: auto;
-  color: ${colors.coreLightMinus1} !important;
+  color: ${colors.white} !important;
 	line-height: 24px !important;
 	font-weight: normal !important;
 }
@@ -766,11 +766,11 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre-comment-divider .fyre-comment-reply-highlight {
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 }
 
 .fyre-comment-divider .fyre-comment-reply-highlight .fyre-comment-reply-count {
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 	padding: 0px !important;
 }
 
@@ -811,7 +811,7 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre-comment-wrapper .fyre-comment-like-count {
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 	margin-right: 3px !important;
 }
 
@@ -835,7 +835,7 @@ a.fyre-stream-sort-top-comments {
 	-ms-box-sizing: content-box !important;
 	-o-box-sizing: content-box !important;
 	box-sizing: content-box !important;
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 	cursor: pointer !important;
 	display: block !important;
   font-family: ${fontFamilies.helvetica} !important;
@@ -855,7 +855,7 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre .fyre-comment-divider>div.fyre-comment-divider {
-	background: ${colors.coreNeutral4} !important;
+	background: ${colors.manatee} !important;
 }
 
 .fyre .fyre-comment-divider>a,
@@ -882,7 +882,7 @@ a.fyre-stream-sort-top-comments {
   display:block;
   height:1px;
   width: 100%;
-  background:${colors.coreNeutral4};
+  background:${colors.manatee};
 	left:50%;
 	margin-top: 20px;
   z-index:1;
@@ -895,7 +895,7 @@ a.fyre-stream-sort-top-comments {
  {
 	background-color: ${colors.blackPearl} !important;
 	background-image: none !important;
-	border: 1px solid ${colors.coreNeutral4} !important;
+	border: 1px solid ${colors.manatee} !important;
 	font-family: ${fontFamilies.alphaHeadline} !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -915,8 +915,8 @@ a.fyre-stream-sort-top-comments {
 
 .fyre-velocity-next:hover,
 .fyre .fyre-stream-more .fyre-stream-more-container:hover {
-	border: 1px solid ${colors.coreLightMinus1} !important;
-	color: ${colors.coreLightMinus1} !important;
+	border: 1px solid ${colors.white} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre-velocity .fyre-velocity-refresh {
@@ -934,7 +934,7 @@ a.fyre-stream-sort-top-comments {
 .fyre-velocity .fyre-velocity-count,
 .fyre-velocity .fyre-velocity-text {
 	font-weight: normal !important;
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 	line-height: 20px !important;
 	-webkit-box-shadow: 0px !important;
 	-moz-box-shadow: none !important;
@@ -945,7 +945,7 @@ a.fyre-stream-sort-top-comments {
 
 .fyre-velocity:hover .fyre-velocity-count,
 .fyre-velocity:hover .fyre-velocity-text {
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre .fyre-stream-more {
@@ -954,13 +954,13 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre .fyre-stream-more .fyre-stream-more-container .fyre-text {
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 	line-height: 35px !important;
 	font-size: 12px !important;
 }
 
 .fyre .fyre-stream-more .fyre-stream-more-container:hover .fyre-text {
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 }
 
 .fyre .fyre-content-loading { 
@@ -983,9 +983,9 @@ a.fyre-stream-sort-top-comments {
 	width: 15px !important;
 	height: 15px !important;
 	border-radius: 50% !important;
-	border-top: 1px solid ${colors.dodgerBlue} !important;
-	border-right: 1px solid ${colors.dodgerBlue} !important;
-	border-bottom: 1px solid ${colors.dodgerBlue} !important;
+	border-top: 1px solid ${colors.malibu} !important;
+	border-right: 1px solid ${colors.malibu} !important;
+	border-bottom: 1px solid ${colors.malibu} !important;
 	animation: round 1s linear infinite !important;
 	background: none !important;
 }
@@ -1031,7 +1031,7 @@ a.fyre-stream-sort-top-comments {
 	left: 0 !important
 }
 .fyre-modal {
-	background-color: ${colors.coreNeutral9} !important;
+	background-color: ${colors.martinique} !important;
 	background-image: none !important;
 	padding: 30px !important;
 	-webkit-border-radius: 0px !important;
@@ -1058,8 +1058,8 @@ a.fyre-stream-sort-top-comments {
 	content: '';
 	max-width: 600px !important;
 	width: calc(100% - 60px);
-	border-top: 1px solid ${colors.coreLightMinus1};
-	border-bottom: 1px solid ${colors.coreLightMinus1};
+	border-top: 1px solid ${colors.white};
+	border-bottom: 1px solid ${colors.white};
   position: absolute;
 	left: 0;
 	height: 68px;
@@ -1072,7 +1072,7 @@ a.fyre-stream-sort-top-comments {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 	background: none !important;
 	margin-top: 20px !important;
 	margin-bottom: 40px !important;
@@ -1089,7 +1089,7 @@ a.fyre-stream-sort-top-comments {
 
 .fyre-modal .fyre-modal-subtitle {
 	display: none !important;
-	color: ${colors.arsenic};
+	color: ${colors.mako};
 	outline: none !important;
 	margin: 40px 0 10px 0 !important
 }
@@ -1109,8 +1109,8 @@ a.fyre-stream-sort-top-comments {
 }
 
 .fyre-modal .fyre-modal-textarea.fyre-modal-flagas option{	
-	color:${colors.blackRussian};
-	background-color: ${colors.coreLightMinus1};
+	color:${colors.gunPowder};
+	background-color: ${colors.white};
 }
 
 .fyre-modal-select-error {
@@ -1124,19 +1124,19 @@ a.fyre-stream-sort-top-comments {
   font-smooth: antialiased;
 	font-size: 20px !important;
 	background-color: transparent !important;
-	color: ${colors.coreLightMinus1} !important;
+	color: ${colors.white} !important;
 	border: none !important;	
 	
 }
 .fyre-modal .fyre-modal-textfield,
 .fyre-modal .fyre-modal-textarea {
 	font-size: 16px !important;
-	border: 1px solid ${colors.arsenic} !important;
+	border: 1px solid ${colors.mako} !important;
 	padding: 0 20px 0 20px !important;
 	outline: none !important;
 	float: none !important;
-	background-color: ${colors.coreLightMinus1} !important;
-	color: ${colors.arsenic} !important;
+	background-color: ${colors.white} !important;
+	color: ${colors.mako} !important;
 	-webkit-box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	-ms-box-shadow: none !important;
@@ -1148,24 +1148,24 @@ a.fyre-stream-sort-top-comments {
 	height: 50px !important;
 }
 .fyre-modal .fyre-modal-textfield ::-webkit-input-placeholder {
-	color: ${colors.coreNeutral4} !important
+	color: ${colors.manatee} !important
 }
 .fyre-modal .fyre-modal-textfield :-moz-placeholder {
-	color: ${colors.coreNeutral4} !important
+	color: ${colors.manatee} !important
 }
 .fyre-modal .fyre-modal-textfield ::-moz-placeholder {
-	color: ${colors.coreNeutral4} !important
+	color: ${colors.manatee} !important
 }
 .fyre-modal .fyre-modal-textfield :-ms-input-placeholder {
-	color: ${colors.coreNeutral4} !important
+	color: ${colors.manatee} !important
 }
 .fyre-modal .fyre-modal-textfield:focus {
-	border: 1px solid ${colors.arsenic} !important
+	border: 1px solid ${colors.mako} !important
 }
 .fyre-modal .fyre-modal-textarea {
 	cursor: pointer !important;
 	margin-bottom: 30px !important;
-	border-bottom: 1px solid ${colors.arsenic} !important;
+	border-bottom: 1px solid ${colors.mako} !important;
 	display: inline-block !important;
 	vertical-align: middle !important;
 	width: 40% !important
@@ -1194,9 +1194,9 @@ a.fyre-stream-sort-top-comments {
 .fyre-modal .fyre-modal-buttons>button {
 	height: 40px !important;
 	line-height: 40px !important;
-	border: 1px solid ${colors.coreNeutral4} !important;
+	border: 1px solid ${colors.manatee} !important;
 	background-color: transparent !important;
-	color: ${colors.coreNeutral4} !important;
+	color: ${colors.manatee} !important;
 	font-weight: bold !important;
 	text-transform: uppercase !important;
 	background-image: none !important;
@@ -1219,8 +1219,8 @@ a.fyre-stream-sort-top-comments {
 	box-shadow: none !important;
 }
 .fyre-modal .fyre-modal-buttons>button:hover {
-	border: 1px solid ${colors.coreLightMinus1} !important;
-	color: ${colors.coreLightMinus1} !important;
+	border: 1px solid ${colors.white} !important;
+	color: ${colors.white} !important;
 }
 .fyre-modal .fyre-modal-share textarea.fyre-modal-textfield {
 	height: 60px !important
@@ -1416,7 +1416,7 @@ export class ActivatedComments extends React.Component {
       <StyledContentCss />
     ) : (
       <StyledSpinnerWrapper>
-        <StyledSpinner color={colors.dodgerBlue} width="80px" />
+        <StyledSpinner color={colors.malibu} width="80px" />
       </StyledSpinnerWrapper>
     );
 

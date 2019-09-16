@@ -26,7 +26,7 @@ const StyledHeader = styled.div`
     position: absolute;
     height: 100%;
     width: 101%;
-    background: radial-gradient(circle, transparent, ${colors.brandPlus2} 100%);
+    background: radial-gradient(circle, transparent, ${colors.blackPearl} 100%);
     opacity: 0.5;
   }
 `;
@@ -44,7 +44,7 @@ const StyledCard = styled(Link)`
   border-radius: 2px;
   text-decoration: none;
   overflow: hidden;
-  background-color: ${colors.brandBase};
+  background-color: ${colors.bunting};
 
   &:hover {
     ${StyledHeader}:before {

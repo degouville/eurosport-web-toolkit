@@ -51,10 +51,7 @@ addDecorator(ThemeDecorator);
 addDecorator(withKnobs);
 
 addParameters({
-  backgrounds: [
-    { name: 'default', value: colors.brandPlus2, default: true },
-    { name: 'coreLightMinus1', value: colors.coreLightMinus1 },
-  ],
+  backgrounds: [{ name: 'default', value: colors.blackPearl, default: true }, { name: 'white', value: colors.white }],
 });
 
 configure(loadStories, module);

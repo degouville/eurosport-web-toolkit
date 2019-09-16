@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import { coreLightMinus1, azureRadiance } from '../../colors';
+import { white, azureRadiance } from '../../colors';
 import { fontInterUi } from '../../typography';
 
 const StyledToggleWrapper = styled.div`
@@ -19,7 +19,7 @@ const StyledLabel = styled.span`
   letter-spacing: 1px;
   font-family: ${fontInterUi};
   font-weight: bold;
-  ${props => (props.isActive ? `color: ${azureRadiance};` : `color: ${coreLightMinus1};`)}
+  ${props => (props.isActive ? `color: ${azureRadiance};` : `color: ${white};`)}
 `;
 
 const StyledSwitch = styled.label`

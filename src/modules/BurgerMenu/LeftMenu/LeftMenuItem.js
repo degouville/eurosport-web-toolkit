@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
 import { large } from '../../../breakpoints';
-import { cerulean, coreLightMinus1, utahCrimson } from '../../../colors';
+import { cerulean, white, utahCrimson } from '../../../colors';
 
 const StyledItemLink = styled.a`
   display: block;
-  color: ${coreLightMinus1};
+  color: ${white};
   width: 100%;
   text-decoration: none;
   text-align: center;
-  border-bottom: 1px solid ${rgba(coreLightMinus1, 0.15)};
+  border-bottom: 1px solid ${rgba(white, 0.15)};
   cursor: pointer;
 `;
 

@@ -13,10 +13,10 @@ const StyledWrapper = styled.div`
   ${props =>
     props.pictureUrl &&
     css`
-      background: url(${props.pictureUrl}) ${colors.brandPlus2} top right;
+      background: url(${props.pictureUrl}) ${colors.blackPearl} top right;
       background-size: cover;
     `};
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   padding: 40px 20px 45px;
   ${breakpoints.medium(css`
     padding: 54px 34px 86px;

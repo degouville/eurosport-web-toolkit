@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import LinesEllipsis from 'react-lines-ellipsis';
 import LinesEllipsisResponsive from 'react-lines-ellipsis/lib/responsiveHOC';
 import CardPlaceholder from 'src/assets/card-placeholder.jpg';
-import { coreLightMinus1, coreNeutral3, coreNeutral10, coreLightBase, coreNeutral4 } from '../../colors';
+import { white, spunPearl, martinique, athensGray, manatee } from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import { fontAlphaHeadline, fontInterUi, H2 } from '../../typography';
 import Link from '../../elements/Link';
@@ -24,7 +24,7 @@ const DivImageContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: ${coreNeutral10};
+  background-color: ${martinique};
 `;
 
 const SpanBottomOverlay = styled.span`
@@ -33,7 +33,7 @@ const SpanBottomOverlay = styled.span`
   width: 100%;
   height: 100%;
   left: -10%;
-  background-color: ${coreNeutral10};
+  background-color: ${martinique};
   top: calc(100% - 65px);
   transform-origin: top left;
   transform: scale(1.3) rotate(-2.6deg);
@@ -97,7 +97,7 @@ const DivTopic = styled.div`
 `;
 
 const Title = styled(H2)`
-  color: ${coreLightMinus1};
+  color: ${white};
   ${fontAlphaHeadline};
   font-weight: normal;
 `;
@@ -115,7 +115,7 @@ const DivTextWrapper = styled.div`
 
 export const SpanTimeLabel = styled.span`
   position: absolute;
-  color: ${coreNeutral4};
+  color: ${manatee};
   ${fontInterUi};
   font-size: 12px;
   letter-spacing: 1px;
@@ -130,11 +130,11 @@ const mobileStyles = `
 
   ${DivTopic} {
     margin: 0 24px;
-    color: ${coreNeutral3};
+    color: ${spunPearl};
   }
 
   ${Title} {
-    color: ${coreLightBase};
+    color: ${athensGray};
     margin: 11.5px 24px 0 24px;
     ${fontInterUi};
     font-size: 16px;
@@ -143,7 +143,7 @@ const mobileStyles = `
 
   ${DivDescription} {
     margin: 9px 24px 0 24px;
-    color: ${coreNeutral3};
+    color: ${spunPearl};
   }
 
   ${SpanTimeLabel} {
@@ -183,7 +183,7 @@ const desktopStyles = `
 
   ${DivTopic} {
     margin: 0 42px;
-    color: ${coreLightBase};
+    color: ${athensGray};
   }
 
   ${Title} {
@@ -194,7 +194,7 @@ const desktopStyles = `
 
   ${DivDescription} {
     margin: 16px 42px 0 42px;
-    color: ${coreLightBase};
+    color: ${athensGray};
     text-transform: uppercase;
   }
 

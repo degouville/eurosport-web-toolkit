@@ -27,7 +27,7 @@ const StyledContent = styled.div`
   ${breakpoints.medium(css`
     margin-top: 30px;
   `)};
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   flex-wrap: wrap;
   ${breakpoints.medium(css`
     flex-wrap: nowrap;
@@ -99,7 +99,7 @@ export const StyledCTA = styled.div`
 `;
 
 export const StyledDivider = styled.span`
-  border-right: solid 2px ${colors.scarpaGrey};
+  border-right: solid 2px ${colors.scarpaFlow};
   margin: 0 10px;
   ${breakpoints.medium(css`
     margin: 0 18px;
@@ -117,7 +117,7 @@ export const StyledWatchButton = styled(Button)`
 `;
 
 export const StyledSmallDivider = styled.span`
-  border-right: solid 1px ${colors.coreLightMinus1};
+  border-right: solid 1px ${colors.white};
   opacity: 0.25;
   margin: 0 10px;
   ${breakpoints.medium(css`
@@ -126,7 +126,7 @@ export const StyledSmallDivider = styled.span`
 `;
 
 export const StyledMatchInfo = styled(StyledCourtInfo)`
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   margin-bottom: 24px;
   ${breakpoints.medium(css`
     margin-bottom: 24px;

@@ -29,7 +29,7 @@ export const StyledButton = styled.div`
   font-size: 11px;
   text-align: center;
   text-transform: uppercase;
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   letter-spacing: 1px;
   line-height: 16px;
   word-break: break-word;
@@ -65,9 +65,9 @@ const StyledScoreWrapper = styled.div`
   flex: 1 1 0;
   min-width: 0;
   overflow: hidden;
-  background-color: ${rgba(colors.coreNeutral11, 0.5)};
+  background-color: ${rgba(colors.comet, 0.5)};
   ${StyledSpacer} {
-    border-top-color: ${colors.midnightExpress2};
+    border-top-color: ${colors.mirage};
   }
 `;
 
@@ -89,7 +89,7 @@ const StyledBigDot = styled.div`
   display: flex;
   align-items: center;
   ${fontInterUi};
-  color: ${colors.featureThreeBase};
+  color: ${colors.lima};
   margin: 0 11px;
   font-size: 72px;
   width: 19px;
@@ -121,11 +121,11 @@ export const ScoreButton = ({ properties }) => {
   if (!hasButton) return null;
   return isLive ? (
     <>
-      {isWatchable && <StyledPlayButton color="actionTwoLightPlus1">&#9658;</StyledPlayButton>}
+      {isWatchable && <StyledPlayButton color="monza">&#9658;</StyledPlayButton>}
       <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} />
     </>
   ) : (
-    <StyledButton color="actionOneDarkBase" contentText={`'${matchInfoButtonText}'`} />
+    <StyledButton color="dodgerBlue" contentText={`'${matchInfoButtonText}'`} />
   );
 };
 

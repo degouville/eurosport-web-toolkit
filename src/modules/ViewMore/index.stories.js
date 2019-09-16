@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import styled from 'react-emotion';
 import { object, text, number } from '@storybook/addon-knobs';
 import { ViewMore } from '../..';
-import { coreLightMinus1 } from '../../colors';
+import { white } from '../../colors';
 
 const viewmore = storiesOf('Modules|ViewMore', module);
 
@@ -13,7 +13,7 @@ const labels = {
 };
 
 const Wrapper = styled.div`
-  color: ${coreLightMinus1};
+  color: ${white};
 `;
 
 const Element = styled.div`

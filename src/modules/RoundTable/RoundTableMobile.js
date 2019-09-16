@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import ScoreBlock from 'src/components/ScoreBlock';
 import SimpleTabs from 'src/modules/SimpleTabs';
-import { coreNeutral9 } from 'src/colors';
+import { martinique } from 'src/colors';
 import Grid from 'src/elements/Grid';
 import * as types from 'src/types';
 
@@ -16,7 +16,7 @@ const StyledScoreBlock = styled.div`
   margin: 2em 0 2em 0;
 `;
 const StyledHr = styled.div`
-  background-color: ${coreNeutral9};
+  background-color: ${martinique};
   width: 100%;
   height: 1px;
   margin: 1em 0;

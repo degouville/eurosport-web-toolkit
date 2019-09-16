@@ -18,7 +18,7 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offlin
 }
 
 .emotion-0 {
-  color: #f8f8f9;
+  color: #F8F8F9;
   font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -116,7 +116,7 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
   height: 20px;
   width: 43px;
   border-radius: 1px;
-  background-color: #d50032;
+  background-color: #CC0036;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -128,7 +128,7 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
 }
 
 .emotion-0 {
-  color: #f8f8f9;
+  color: #F8F8F9;
   font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

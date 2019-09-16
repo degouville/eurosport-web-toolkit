@@ -5,7 +5,7 @@ import AllMatchesIcon from 'src/assets/tabs/all-matches.component.svg';
 import MatchIcon from 'src/assets/tabs/tennis.component.svg';
 import UserCommentsIcon from 'src/assets/tabs/user-comments.component.svg';
 import LiveCommentsIcon from 'src/assets/tabs/live-comments.component.svg';
-import { azureRadiance, coreLightMinus1, coreNeutral3 } from '../../colors';
+import { azureRadiance, white, spunPearl } from '../../colors';
 import { fontInterUi } from '../../typography';
 import Carousel from '../../components/Carousel';
 import * as icons from './icon-type';
@@ -19,7 +19,7 @@ const iconsMap = {
 };
 
 const activeItemStyle = `cursor: pointer;
-  color: ${coreLightMinus1};
+  color: ${white};
   transition: color 0.2s;
   &:after {
     content: '';
@@ -34,14 +34,14 @@ const activeItemStyle = `cursor: pointer;
   }
 
   svg path {
-    fill: ${coreLightMinus1};
+    fill: ${white};
   }
 `;
 
 export const StyledItem = styled.div`
   display: flex;
   align-items: center;
-  color: ${coreNeutral3};
+  color: ${spunPearl};
   position: relative;
   padding: 23px 0;
 
@@ -111,7 +111,7 @@ const StyledIconContainer = styled.div`
     height: 100%;
     width: 100%;
     path {
-      fill: ${props => (props.isActive ? coreLightMinus1 : coreNeutral3)};
+      fill: ${props => (props.isActive ? white : spunPearl)};
     }
   }
 `;

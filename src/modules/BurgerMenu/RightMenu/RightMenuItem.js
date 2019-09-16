@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import kebabCase from 'lodash/kebabCase';
 import { medium, large } from '../../../breakpoints';
-import { arsenic, cerulean, regentGray, turquoiseBlue, whiteLilac } from '../../../colors';
+import { mako, cerulean, regentGray, turquoiseBlue, blackHaze } from '../../../colors';
 import * as types from './sectionTypes';
 
 const StyledItem = styled.li`
@@ -14,7 +14,7 @@ const StyledItem = styled.li`
 `;
 
 const StyledItemLink = styled.a`
-  color: ${arsenic};
+  color: ${mako};
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -53,7 +53,7 @@ const StyledItemLink = styled.a`
       justify-content: space-between;
       &::after {
         content: '>';
-        color: ${whiteLilac};
+        color: ${blackHaze};
         margin-right: 10px;
       }
       ${large(css`

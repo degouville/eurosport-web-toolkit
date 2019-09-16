@@ -1,34 +1,26 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import {
-  coreNeutral9,
-  coreLightMinus1,
-  coreNeutral4,
-  royalBlue,
-  utahCrimson,
-  dodgerBlue,
-  brandBase,
-} from '../../colors';
+import { martinique, white, manatee, royalBlue, utahCrimson, malibu, bunting } from '../../colors';
 import { fontHelvetica } from '../../typography';
 import * as breakpoints from '../../breakpoints';
 
 const colorsMapping = {
   white: {
-    text: coreNeutral9,
-    background: coreLightMinus1,
+    text: martinique,
+    background: white,
   },
   blue: {
-    text: coreLightMinus1,
+    text: white,
     background: royalBlue,
   },
   red: {
-    text: coreLightMinus1,
+    text: white,
     background: utahCrimson,
   },
   cyan: {
-    text: brandBase,
-    background: dodgerBlue,
+    text: bunting,
+    background: malibu,
   },
 };
 
@@ -39,7 +31,7 @@ const StyledLabels = styled.div`
   ${props =>
     props.isSimpleMode &&
     css`
-      color: ${coreLightMinus1};
+      color: ${white};
       font-size: 8px;
       line-height: 11px;
       letter-spacing: 0.41px;
@@ -49,7 +41,7 @@ const StyledLabels = styled.div`
     props.isSimpleMode &&
     breakpoints.small(
       css`
-        color: ${coreLightMinus1};
+        color: ${white};
         font-size: 11px;
         line-height: 13px;
         letter-spacing: 0.5px;
@@ -65,7 +57,7 @@ export const StyledLabelSimple = styled.div`
     display: inline-block;
     content: '/';
     margin: 0 0.5em;
-    color: ${coreNeutral4};
+    color: ${manatee};
   }
 
   &:last-child {

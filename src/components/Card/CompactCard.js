@@ -15,7 +15,7 @@ const StyledWrapper = styled.div`
   display: flex;
   border-radius: 2px;
   overflow: hidden;
-  box-shadow: 0 2px 3px 0 ${rgba(colors.brandPlus2, 0.3)};
+  box-shadow: 0 2px 3px 0 ${rgba(colors.blackPearl, 0.3)};
 `;
 
 export const StyledImage = styled.div`
@@ -38,8 +38,8 @@ export const StyledImage = styled.div`
     background: linear-gradient(
       180deg,
       transparent,
-      ${rgba(colors.brandPlus2, 0.3)} 18.66%,
-      ${rgba(colors.brandPlus2, 0.85)} 100%
+      ${rgba(colors.blackPearl, 0.3)} 18.66%,
+      ${rgba(colors.blackPearl, 0.85)} 100%
     );
     opacity: 0.5;
   }

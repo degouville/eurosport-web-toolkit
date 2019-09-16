@@ -22,7 +22,7 @@ const StyledImage = styled.img`
 const StyledSpacer = styled.div`
   width: 1px;
   height: 48px;
-  background: ${colors.coreLightMinus1};
+  background: ${colors.white};
   opacity: 0.3;
   margin: 0 18px 0 11px;
   ${breakpoints.small(css`
@@ -45,12 +45,12 @@ const StyledContent = styled.div`
 `;
 
 const StyledName = styled.div`
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   font-weight: bold;
 `;
 
 const StyledTime = styled.div`
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
 `;
 
 const Author = ({ name, img, time, ...props }) => {

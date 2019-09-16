@@ -24,7 +24,7 @@ exports[`VideoPlayerModal should match snapshot 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
-  background-color: #050618;
+  background-color: #060825;
   background-image: url(/eurosport-web-toolkit/cfb70034f63cf4910f7ffa1d4b71964f.png);
   background-position-x: center;
   background-position-y: 20%;
@@ -155,7 +155,7 @@ exports[`VideoPlayerModal should match snapshot 1`] = `
 }
 
 .emotion-0 path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4 {

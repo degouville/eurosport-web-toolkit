@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
-import { coreNeutral9, coreLightMinus1, martinique, manatee } from '../../colors';
+import { white, martinique, manatee } from '../../colors';
 import { fontAlphaHeadlineBold } from '../../typography';
 import Link from '../../elements/Link';
 import * as breakpoints from '../../breakpoints';
 
 const StyledCard = styled(Link)`
-  background-color: ${coreNeutral9};
-  color: ${coreLightMinus1};
+  background-color: ${martinique};
+  color: ${white};
   display: flex;
   flex-direction: column;
   flex-grow: 0;
@@ -78,7 +78,7 @@ const StyledChoiceOdds = styled.div`
   color: inherit;
   padding: 6px 20px 4px 20px;
   font-size: 24px;
-  background-color: ${rgba(coreLightMinus1, 0.2)};
+  background-color: ${rgba(white, 0.2)};
   margin: 0 8px;
   border-radius: 3px;
   ${breakpoints.medium(css`

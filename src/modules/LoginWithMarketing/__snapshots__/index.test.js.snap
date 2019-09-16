@@ -71,7 +71,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   font-smooth: antialiased;
   font-size: 28px;
   line-height: 36px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 24px;
 }
 
@@ -90,7 +90,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 
 .emotion-6 {
   font-size: 16px;
-  color: #b9bbca;
+  color: #B9BBCA;
   line-height: 24px;
   margin-top: 14px;
   margin-bottom: 20px;
@@ -107,7 +107,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-8 {
-  color: #ffffff;
+  color: #FFFFFF;
   padding-left: 30px;
   font-size: 16px;
   margin-bottom: 8px;
@@ -117,8 +117,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-23 {
-  background-color: #d50032;
-  color: #ffffff;
+  background-color: #D50032;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -134,7 +134,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-23:focus,
 .emotion-23:visited,
 .emotion-23:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-23:after {
@@ -152,7 +152,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-21 {
-  color: #66cef9;
+  color: #66CEF9;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -177,8 +177,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   letter-spacing: 1.27px;
   line-height: 24px;
   white-space: nowrap;
-  background-color: #d50032;
-  color: #ffffff;
+  background-color: #D50032;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -194,13 +194,13 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-21:focus,
 .emotion-21:visited,
 .emotion-21:hover {
-  color: #66cef9;
+  color: #66CEF9;
 }
 
 .emotion-21:focus,
 .emotion-21:visited,
 .emotion-21:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-21:after {
@@ -227,13 +227,13 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-29 {
-  border-bottom: solid 2px #2d304a;
+  border-bottom: solid 2px #2D304A;
   margin: 30px 0;
 }
 
 @media (min-width:1024px) {
   .emotion-29 {
-    border-right: solid 2px #2d304a;
+    border-right: solid 2px #2D304A;
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
     align-self: stretch;
@@ -261,7 +261,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-31 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -314,7 +314,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   margin-left: 0;
   margin-right: 24px;
   height: 14px;
-  color: #9798a6;
+  color: #9798A6;
   font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
@@ -348,12 +348,12 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid #41435b;
+  border: 1px solid #41435B;
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   margin-top: 13px;
   border-radius: 4px;
-  background-color: #04050f;
+  background-color: #04050F;
 }
 
 .emotion-37 {
@@ -390,7 +390,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   background-color: transparent;
   width: calc(100% - 48px);
   height: 24px;
-  color: #f8f8f9;
+  color: #F8F8F9;
   font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
@@ -416,11 +416,11 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-55 .emotion-52 {
-  fill: #41435b;
+  fill: #41435B;
 }
 
 .emotion-55 .emotion-50 {
-  color: #41435b;
+  color: #41435B;
   font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
@@ -428,11 +428,11 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-55:hover .emotion-52 {
-  fill: #9798a6;
+  fill: #9798A6;
 }
 
 .emotion-55:hover .emotion-50 {
-  color: #9798a6;
+  color: #9798A6;
 }
 
 .emotion-49 {
@@ -463,8 +463,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-68 {
-  background-color: #2d304a;
-  color: #ffffff;
+  background-color: #2D304A;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -481,7 +481,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-68:focus,
 .emotion-68:visited,
 .emotion-68:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-68:after {
@@ -493,7 +493,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-66 {
-  color: #66cef9;
+  color: #66CEF9;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -518,8 +518,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   letter-spacing: 1.27px;
   line-height: 24px;
   white-space: nowrap;
-  background-color: #2d304a;
-  color: #ffffff;
+  background-color: #2D304A;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -536,13 +536,13 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-66:focus,
 .emotion-66:visited,
 .emotion-66:hover {
-  color: #66cef9;
+  color: #66CEF9;
 }
 
 .emotion-66:focus,
 .emotion-66:visited,
 .emotion-66:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-66:after {
@@ -584,7 +584,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 
 .emotion-80 {
   height: 28px;
-  color: #9798a6;
+  color: #9798A6;
   font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
@@ -606,15 +606,15 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-80:hover {
-  color: #c6c7ce;
+  color: #C6C7CE;
 }
 
 .emotion-80:hover .emotion-79 {
-  background-color: #c6c7ce;
+  background-color: #C6C7CE;
 }
 
 .emotion-78 {
-  background-color: #9798a6;
+  background-color: #9798A6;
   height: 2px;
 }
 
@@ -624,7 +624,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   margin-right: 16px;
   width: 1px;
   height: 24px;
-  border: 1px solid #41435b;
+  border: 1px solid #41435B;
 }
 
 .emotion-148 {
@@ -645,8 +645,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-133 {
-  background-color: #d50032;
-  color: #ffffff;
+  background-color: #D50032;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -661,7 +661,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-133:focus,
 .emotion-133:visited,
 .emotion-133:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-133:after {
@@ -673,7 +673,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-131 {
-  color: #66cef9;
+  color: #66CEF9;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -698,8 +698,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   letter-spacing: 1.27px;
   line-height: 24px;
   white-space: nowrap;
-  background-color: #d50032;
-  color: #ffffff;
+  background-color: #D50032;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -714,13 +714,13 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-131:focus,
 .emotion-131:visited,
 .emotion-131:hover {
-  color: #66cef9;
+  color: #66CEF9;
 }
 
 .emotion-131:focus,
 .emotion-131:visited,
 .emotion-131:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-131:after {
@@ -732,8 +732,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-144 {
-  background-color: #2d304a;
-  color: #ffffff;
+  background-color: #2D304A;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -751,7 +751,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-144:focus,
 .emotion-144:visited,
 .emotion-144:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-144:after {
@@ -763,7 +763,7 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 }
 
 .emotion-142 {
-  color: #66cef9;
+  color: #66CEF9;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -788,8 +788,8 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
   letter-spacing: 1.27px;
   line-height: 24px;
   white-space: nowrap;
-  background-color: #2d304a;
-  color: #ffffff;
+  background-color: #2D304A;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 18px 10px;
   border-radius: 3px;
@@ -807,13 +807,13 @@ exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
 .emotion-142:focus,
 .emotion-142:visited,
 .emotion-142:hover {
-  color: #66cef9;
+  color: #66CEF9;
 }
 
 .emotion-142:focus,
 .emotion-142:visited,
 .emotion-142:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .emotion-142:after {

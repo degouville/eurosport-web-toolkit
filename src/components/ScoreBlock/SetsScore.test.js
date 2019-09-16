@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SetsScore, { StyledTeamName, StyledTeamSet, isTeam, StyledSetScoreWrapper, StyledPlayer } from './SetsScore';
 import { pastMatchData, liveMatchDataSet, liveMatchDataSetWithImages } from './mockData/mockScoreBlockData';
-import { actionOneDarkBase } from '../../colors';
+import { dodgerBlue } from '../../colors';
 
 describe('<SetsScore />', () => {
   it('Renders a SetsScore component', () => {
@@ -53,7 +53,7 @@ describe('<SetsScore />', () => {
   it('renders blue background on last set if requested as prop', () => {
     const biggerWrapper = mount(<SetsScore data={liveMatchDataSet} highlightLastSet />);
     const lastSetWrapper = biggerWrapper.find(StyledSetScoreWrapper).last();
-    expect(lastSetWrapper.childAt(0)).toHaveStyleRule('background-color', `${actionOneDarkBase}`);
+    expect(lastSetWrapper.childAt(0)).toHaveStyleRule('background-color', `${dodgerBlue}`);
     biggerWrapper.unmount();
   });
 

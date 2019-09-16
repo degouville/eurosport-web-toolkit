@@ -49,7 +49,7 @@ const StyledTeamMark = styled.div`
 export const StyledTeamName = styled.div`
   display: flex;
   justify-content: flex-start;
-  color: ${props => (props.hasWon === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
+  color: ${props => (props.hasWon === false ? colors.manatee : colors.white)};
   ${fontAlphaHeadline};
   font-size: 1em;
   flex: 1 1 0;
@@ -64,11 +64,11 @@ export const StyledSetScoreWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 2em;
-  ${props => props.highlight && `background-color: ${colors.actionOneDarkBase}`}
+  ${props => props.highlight && `background-color: ${colors.dodgerBlue}`}
 `;
 
 export const StyledTeamSet = styled.div`
-  color: ${props => (props.highlight === false ? colors.coreNeutral4 : colors.coreLightMinus1)};
+  color: ${props => (props.highlight === false ? colors.manatee : colors.white)};
   ${fontAlphaHeadline};
   font-weight: bold;
   font-size: 1em;
@@ -175,7 +175,7 @@ export const StyledSpacer = styled.hr`
   border: 0;
   border-top: 1px solid;
   padding: 0;
-  border-top-color: ${colors.coreLightMinus1};
+  border-top-color: ${colors.white};
   margin: 0;
 `;
 

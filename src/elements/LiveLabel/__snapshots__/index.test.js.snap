@@ -16,8 +16,8 @@ exports[`LiveLabel renders LiveLabel 1`] = `
   justify-content: center;
   padding: 5px 8px;
   border-radius: 2px;
-  background-color: #d50032;
-  color: #ffffff;
+  background-color: #D50032;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-size: 12px;
   -webkit-letter-spacing: 1.2px;

@@ -8,10 +8,10 @@ import Spinner from '../../elements/Spinner';
 
 const StyledContainer = styled.div`
   border-radius: 4px;
-  background-color: ${colors.flawlessMahogany};
+  background-color: ${colors.martinique};
   position: relative;
   width: 100%;
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   padding-bottom: 20px;
   padding-top: 10px;
   overflow: hidden;
@@ -22,7 +22,7 @@ const StyledBackground = styled.div`
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  background-color: ${colors.coreNeutral9};
+  background-color: ${colors.martinique};
   clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
   z-index: 1;
 `;
@@ -46,13 +46,13 @@ const StyledChoice = styled(Button)`
   align-items: center;
   position: relative;
   z-index: 3;
-  background-color: ${colors.blackRussian};
-  border: 1px solid ${colors.nobel};
+  background-color: ${colors.gunPowder};
+  border: 1px solid ${colors.dustyGray};
   border-radius: 24px;
   margin-bottom: 10px;
   margin-right: 19px;
   margin-left: 19px;
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   ${fontInterUi};
   font-size: 12px;
   svg {
@@ -64,7 +64,7 @@ const StyledChoice = styled(Button)`
       padding: 2px 0;
       border: 0px;
       border-radius: 0;
-      background-color: ${colors.actionOneDarkMinus1};
+      background-color: ${colors.cornflowerBlue};
       height: 48px;
       :hover {
         color: inherit;
@@ -74,7 +74,7 @@ const StyledChoice = styled(Button)`
 `;
 
 const StyledResultBar = styled.div`
-  background-color: ${colors.actionOneDarkBase};
+  background-color: ${colors.dodgerBlue};
   width: ${props => props.result};
   height: 100%;
   position: absolute;
@@ -161,7 +161,7 @@ class QuickPoll extends React.Component {
           </StyledChoices>
         ) : (
           <StyledSpinnerWrapper>
-            <StyledSpinner color={colors.dodgerBlue} width="80px" />
+            <StyledSpinner color={colors.malibu} width="80px" />
           </StyledSpinnerWrapper>
         )}
       </StyledContainer>

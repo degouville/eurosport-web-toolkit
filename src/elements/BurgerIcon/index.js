@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import { coreLightMinus1 } from '../../colors';
+import { white } from '../../colors';
 import { medium } from '../../breakpoints';
 
 const StyledBurger = styled.a`
@@ -36,7 +36,7 @@ const StyledBurgerIcon = styled.div`
   left: 0;
   right: 0;
   height: 2px;
-  background: ${coreLightMinus1};
+  background: ${white};
   border-radius: 3px;
   &:before,
   &:after {
@@ -45,7 +45,7 @@ const StyledBurgerIcon = styled.div`
     left: 0;
     width: 100%;
     height: 2px;
-    background: ${coreLightMinus1};
+    background: ${white};
     border-radius: 3px;
     content: '';
   }

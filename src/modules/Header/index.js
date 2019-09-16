@@ -8,7 +8,7 @@ import Logo from '../../elements/Logo';
 import BurgerMenu from '../BurgerMenu';
 import BurgerIcon from '../../elements/BurgerIcon';
 import * as breakpoints from '../../breakpoints';
-import { brandBase, coreLightMinus1, mischka } from '../../colors';
+import { bunting, white, mischka } from '../../colors';
 import Button from '../../elements/Button';
 import { fontHelvetica } from '../../typography';
 
@@ -27,7 +27,7 @@ const StyledButton = styled(Button)`
 
 const StyledWrapper = styled.header`
   box-sizing: border-box;
-  background: ${brandBase};
+  background: ${bunting};
   height: 50px;
   ${props =>
     !props.menuItems &&
@@ -65,7 +65,7 @@ const StyledLink = styled(Link)`
   }
 
   &:last-child {
-    color: ${coreLightMinus1};
+    color: ${white};
   }
 `;
 
@@ -76,7 +76,7 @@ const StyledChevron = styled(Chevron)`
   display: inline-block;
   vertical-align: middle;
   path {
-    fill: ${coreLightMinus1};
+    fill: ${white};
   }
 `;
 
@@ -120,7 +120,7 @@ export const Breadcrumbs = styled(({ className, items }) => (
       top: -2px;
       bottom: 2px;
       width: 1px;
-      border-left: 1px solid ${coreLightMinus1};
+      border-left: 1px solid ${white};
       opacity: 0.3;
     }
   `)};

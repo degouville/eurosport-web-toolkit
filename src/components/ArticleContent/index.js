@@ -6,7 +6,7 @@ import * as colors from '../../colors';
 import { Row, Column } from '../../elements/Grid';
 
 const StyledWrapper = styled(Row)`
-  color: ${colors.coreDarkBase};
+  color: ${colors.mirage};
 `;
 
 export const StyledTeaser = styled.h4`

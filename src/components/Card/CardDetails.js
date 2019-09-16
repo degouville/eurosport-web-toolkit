@@ -18,7 +18,7 @@ const StyledCategory = styled.div`
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  color: ${colors.featureOneMinus2};
+  color: ${colors.malibu};
   letter-spacing: 1px;
   margin: 0 0 10px;
 `;
@@ -38,12 +38,12 @@ const StyledFooter = styled.div`
 const StyledTitle = styled.div`
   font-size: 14px;
   font-weight: bold;
-  color: ${colors.coreLightBase};
+  color: ${colors.athensGray};
   margin: 0 0 10px;
 `;
 
 const StyledDescription = styled.div`
-  color: ${colors.coreNeutral4};
+  color: ${colors.manatee};
   font-size: 12px;
   line-height: 20px;
   margin: 0 0 10px;

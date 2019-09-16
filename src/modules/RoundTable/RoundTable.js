@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import { groupBy } from 'lodash';
 import { H5, fontAlphaHeadline } from 'src/typography';
 import ScoreBlock from 'src/components/ScoreBlock';
-import { coreNeutral4, coreNeutral11 } from 'src/colors';
+import { manatee, comet } from 'src/colors';
 import Carousel from 'src/components/Carousel';
 import * as types from 'src/types';
 
@@ -33,7 +33,7 @@ const Column = styled(FlexedColum)`
 const Placeholder = styled.div`
   min-width: 30px;
   height: 100%;
-  border: 2px solid ${coreNeutral11};
+  border: 2px solid ${comet};
   box-sizing: border-box;
 `;
 
@@ -50,7 +50,7 @@ const SingleDashPlaceholder = styled(Placeholder)`
 `;
 
 const NeutralH5 = styled(H5)`
-  color: ${coreNeutral4};
+  color: ${manatee};
   ${fontAlphaHeadline};
   padding: 24px 0;
   margin-bottom: 60px;

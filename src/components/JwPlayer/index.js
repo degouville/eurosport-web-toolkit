@@ -5,7 +5,7 @@ import debounce from 'lodash/debounce';
 import Cross from 'src/assets/close-cross.component.svg';
 import ScriptInjector from '../ScriptInjector';
 import { medium, large, wide } from '../../breakpoints';
-import { brandPlus2, coreLightMinus1 } from '../../colors';
+import { blackPearl, white } from '../../colors';
 
 export const playerId = 'eurosport-web-player';
 
@@ -42,7 +42,7 @@ const StyledPlayer = styled.div`
   ${props =>
     props.isSticky &&
     css`
-      background: ${coreLightMinus1};
+      background: ${white};
       box-sizing: border-box;
       margin: 0 auto;
       display: flex;
@@ -52,7 +52,7 @@ const StyledPlayer = styled.div`
       width: 100%;
       max-width: 355px;
       height: 67px;
-      color: ${brandPlus2};
+      color: ${blackPearl};
       border-radius: 4px;
       overflow: hidden;
       transform: translate3d(0, 0, 0);

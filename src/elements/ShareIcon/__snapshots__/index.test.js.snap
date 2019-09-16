@@ -4,10 +4,10 @@ exports[`ShareIcon should render ShareIcon facebook 1`] = `
 .emotion-2 {
   width: 30px;
   height: 30px;
-  background-color: rgba(#ffffff,0.05);
+  background-color: rgba(#FFFFFF,0.05);
   border-radius: 50%;
   position: relative;
-  border: 1px solid #55586d;
+  border: 1px solid #55586D;
   cursor: pointer;
 }
 

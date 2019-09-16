@@ -9,7 +9,7 @@ exports[`ViewMore renders its content 1`] = `
 }
 
 .emotion-2 {
-  color: #f8f8f9;
+  color: #F8F8F9;
   font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;

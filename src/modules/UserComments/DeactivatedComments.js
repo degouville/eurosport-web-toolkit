@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import lockIcon from 'src/assets/lock-icon.svg';
 import { fontAlphaHeadline } from '../../typography';
 import { medium } from '../../breakpoints';
-import { coreLightMinus1 } from '../../colors';
+import { white } from '../../colors';
 
 const StyledWrapper = styled.div`
   display: block;
   text-align: center;
   font-size: 12px;
   ${fontAlphaHeadline};
-  color: ${coreLightMinus1};
+  color: ${white};
 
   ${medium(css`
     font-size: 16px;

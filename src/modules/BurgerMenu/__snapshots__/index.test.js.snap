@@ -72,7 +72,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 .emotion-34 {
   width: 21.25%;
   min-width: 100px;
-  background: #04050f;
+  background: #04050F;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -119,11 +119,11 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #41435b;
+  border-bottom: 1px solid #41435B;
 }
 
 .emotion-4:hover {
-  background-color: #009cde;
+  background-color: #009CDE;
 }
 
 @media (min-width:1024px) {
@@ -164,7 +164,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 
 .emotion-8 {
   padding: 0 10px;
-  background: #d50032;
+  background: #D50032;
   text-transform: uppercase;
 }
 
@@ -183,16 +183,16 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-8:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-8:hover {
-  background: #d50032;
+  background: #D50032;
 }
 
 .emotion-6 {
   display: block;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -220,12 +220,12 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-12:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-16 {
   padding: 0 10px;
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-16 .emotion-7 {
@@ -243,7 +243,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-16:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-32 {
@@ -266,7 +266,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-32:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-32 .emotion-7 {
@@ -322,7 +322,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-36 {
-  background: #009cde;
+  background: #009CDE;
   height: 2px;
   display: block;
   width: 20px;
@@ -335,7 +335,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
   position: absolute;
   display: block;
   left: 0;
-  border-top: 2px solid #009cde;
+  border-top: 2px solid #009CDE;
   content: '';
   width: 10px;
   -webkit-transform-origin: left;
@@ -353,7 +353,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-40 {
-  border-bottom: 1px solid rgba(63,69,93,0.15);
+  border-bottom: 1px solid rgba(65,67,91,0.15);
   margin-top: 0;
   padding: 0 0 0 30px;
   line-height: 50px;
@@ -442,7 +442,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-48 {
-  color: #3d4248;
+  color: #3D4248;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -451,7 +451,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 16px;
-  color: #009cde;
+  color: #009CDE;
 }
 
 @media (min-width:700px) {
@@ -471,7 +471,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-48:hover {
-  color: #64dcff;
+  color: #64DCFF;
 }
 
 .emotion-168 {
@@ -513,7 +513,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-82 {
-  color: #3d4248;
+  color: #3D4248;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -550,7 +550,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 
 .emotion-82::after {
   content: '>';
-  color: #e8e8eb;
+  color: #E8E8EB;
   margin-right: 10px;
 }
 
@@ -561,7 +561,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-90 {
-  color: #3d4248;
+  color: #3D4248;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -638,7 +638,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-204 {
-  color: #ffffff;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -692,7 +692,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 .emotion-182 {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
   vertical-align: middle;
   margin-right: 10px;
   font-size: 12px;
@@ -768,7 +768,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 
 .emotion-206 {
   display: inline-block;
-  color: #c6c7ce;
+  color: #C6C7CE;
   font-size: 9px;
   line-height: 12px;
 }
@@ -786,7 +786,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on desktop 1`] = `
 }
 
 .emotion-206 a {
-  color: #c6c7ce;
+  color: #C6C7CE;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1467,7 +1467,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 .emotion-34 {
   width: 21.25%;
   min-width: 100px;
-  background: #04050f;
+  background: #04050F;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1514,11 +1514,11 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #41435b;
+  border-bottom: 1px solid #41435B;
 }
 
 .emotion-4:hover {
-  background-color: #009cde;
+  background-color: #009CDE;
 }
 
 @media (min-width:1024px) {
@@ -1559,7 +1559,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 
 .emotion-8 {
   padding: 0 10px;
-  background: #d50032;
+  background: #D50032;
   text-transform: uppercase;
 }
 
@@ -1578,16 +1578,16 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-8:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-8:hover {
-  background: #d50032;
+  background: #D50032;
 }
 
 .emotion-6 {
   display: block;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1615,12 +1615,12 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-12:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-16 {
   padding: 0 10px;
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-16 .emotion-7 {
@@ -1638,7 +1638,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-16:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-32 {
@@ -1661,7 +1661,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-32:hover {
-  background: #009cde;
+  background: #009CDE;
 }
 
 .emotion-32 .emotion-7 {
@@ -1717,7 +1717,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-36 {
-  background: #009cde;
+  background: #009CDE;
   height: 2px;
   display: block;
   width: 20px;
@@ -1730,7 +1730,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
   position: absolute;
   display: block;
   left: 0;
-  border-top: 2px solid #009cde;
+  border-top: 2px solid #009CDE;
   content: '';
   width: 10px;
   -webkit-transform-origin: left;
@@ -1748,7 +1748,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-40 {
-  border-bottom: 1px solid rgba(63,69,93,0.15);
+  border-bottom: 1px solid rgba(65,67,91,0.15);
   margin-top: 0;
   padding: 0 0 0 30px;
   line-height: 50px;
@@ -1837,7 +1837,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-48 {
-  color: #3d4248;
+  color: #3D4248;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1846,7 +1846,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 16px;
-  color: #009cde;
+  color: #009CDE;
 }
 
 @media (min-width:700px) {
@@ -1866,7 +1866,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-48:hover {
-  color: #64dcff;
+  color: #64DCFF;
 }
 
 .emotion-168 {
@@ -1908,7 +1908,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-82 {
-  color: #3d4248;
+  color: #3D4248;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1945,7 +1945,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 
 .emotion-82::after {
   content: '>';
-  color: #e8e8eb;
+  color: #E8E8EB;
   margin-right: 10px;
 }
 
@@ -1956,7 +1956,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-110 {
-  color: #3d4248;
+  color: #3D4248;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -2033,7 +2033,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-196 {
-  color: #ffffff;
+  color: #FFFFFF;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2087,7 +2087,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 .emotion-180 {
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
   vertical-align: middle;
   margin-right: 10px;
   font-size: 12px;
@@ -2163,7 +2163,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 
 .emotion-198 {
   display: inline-block;
-  color: #c6c7ce;
+  color: #C6C7CE;
   font-size: 9px;
   line-height: 12px;
 }
@@ -2181,7 +2181,7 @@ exports[`<BurgerMenu /> renders with expected snapshot on mobile 1 1`] = `
 }
 
 .emotion-198 a {
-  color: #c6c7ce;
+  color: #C6C7CE;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

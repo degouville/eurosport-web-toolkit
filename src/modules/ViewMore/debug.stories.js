@@ -9,7 +9,7 @@ import { Global } from '@emotion/core';
 import { object, text, number, select } from '@storybook/addon-knobs';
 import { random } from 'lodash';
 import { ViewMore, Button } from 'src';
-import { coreLightMinus1 } from '../../colors';
+import { white } from '../../colors';
 import SimpleTabs from '../SimpleTabs';
 
 const viewmore = storiesOf('Modules|ViewMore', module);
@@ -20,7 +20,7 @@ const labels = {
 };
 
 const Wrapper = styled.div`
-  color: ${coreLightMinus1};
+  color: ${white};
 `;
 
 const StyledElement = styled.div`

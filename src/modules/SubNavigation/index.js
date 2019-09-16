@@ -4,7 +4,7 @@ import styled, { css } from 'react-emotion';
 import get from 'lodash/get';
 import { rgba } from 'polished';
 import * as breakpoints from '../../breakpoints';
-import { brandBase, coreLightMinus1, loftySilver } from '../../colors';
+import { bunting, white } from '../../colors';
 import shopIcon from '../../assets/shop-icon.svg';
 import Carousel, { StyledArrow, StyledArrowLeft, StyledContainer } from '../../components/Carousel';
 import { LegacyHideOnMobile } from '../../hocs/withMatchMedia';
@@ -13,12 +13,12 @@ const StyledArrowCSS = css`
   height: 100%;
   background: transparent;
   padding: 0 6px;
-  border-left: solid 1px ${rgba(loftySilver, 0.1)};
+  border-left: solid 1px ${rgba(white, 0.1)};
 `;
 
 export const StyledNavWrapper = styled.nav`
   display: flex;
-  background: ${brandBase};
+  background: ${bunting};
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   height: 50px;
 
@@ -59,7 +59,7 @@ const StyledItem = styled.li`
 `;
 
 const StyledLink = styled.a`
-  color: ${coreLightMinus1};
+  color: ${white};
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -95,7 +95,7 @@ const StyledLink = styled.a`
 const StyledShopLink = styled.a`
   display: flex;
   align-items: center;
-  color: ${coreLightMinus1};
+  color: ${white};
   text-decoration: none;
 `;
 

@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 
 import SocialIcon from '../../../../elements/SocialIcon';
 import Link from '../../../../elements/Link';
-import { coreLightMinus1 } from '../../../../colors';
+import { white } from '../../../../colors';
 import { large, medium } from '../../../../breakpoints';
 
 const StyledWrapper = styled.div`
-  color: ${coreLightMinus1};
+  color: ${white};
   display: flex;
   align-items: center;
   flex-grow: 0;
@@ -38,7 +38,7 @@ const StyledSocialItems = styled.ul`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: ${coreLightMinus1};
+  color: ${white};
   vertical-align: middle;
   margin-right: 10px;
   font-size: 12px;

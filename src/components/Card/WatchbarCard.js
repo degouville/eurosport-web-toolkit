@@ -36,7 +36,7 @@ const StyledHeader = styled.div`
     position: absolute;
     height: 100%;
     width: 101%;
-    background: radial-gradient(circle, transparent, ${colors.brandPlus2} 100%);
+    background: radial-gradient(circle, transparent, ${colors.blackPearl} 100%);
     opacity: 0.5;
   }
 `;
@@ -66,7 +66,7 @@ const StyledCard = styled(Link)`
   border-radius: 2px;
   text-decoration: none;
   overflow: hidden;
-  background-color: ${colors.brandBase};
+  background-color: ${colors.bunting};
   white-space: normal;
 
   width: 288px;
@@ -114,7 +114,7 @@ const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: ${colors.actionTwoDarkBase};
+  background: ${colors.utahCrimson};
   font-size: 13px;
   flex-basis: 0;
 `;
@@ -130,7 +130,7 @@ const StyledFooter = styled.div`
 const StyledTitle = styled.div`
   box-sizing: border-box;
   font-weight: bold;
-  color: ${colors.coreLightBase};
+  color: ${colors.athensGray};
   margin: 0 0 10px;
 `;
 

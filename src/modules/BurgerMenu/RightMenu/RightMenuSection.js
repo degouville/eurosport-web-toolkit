@@ -5,7 +5,7 @@ import { rgba } from 'polished';
 import sortBy from 'lodash/sortBy';
 import RightMenuItem from './RightMenuItem';
 import { large } from '../../../breakpoints';
-import { arsenic, cerulean, gunPowder } from '../../../colors';
+import { mako, cerulean, gunPowder } from '../../../colors';
 import * as types from './sectionTypes';
 
 const StyledColumn = styled.div`
@@ -149,8 +149,8 @@ const StyledTitle = styled.div`
   ${props =>
     !props.subMenuMobile &&
     css`
-      color: ${rgba(arsenic, 0.5)};
-      border-bottom: 1px solid ${rgba(arsenic, 0.15)};
+      color: ${rgba(mako, 0.5)};
+      border-bottom: 1px solid ${rgba(mako, 0.15)};
       width: 100%;
       display: inline-block;
       text-transform: uppercase;

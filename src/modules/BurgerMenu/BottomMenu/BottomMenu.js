@@ -3,7 +3,7 @@ import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import SocialMenu from './SocialMenu/SocialMenu';
 import Link from '../../../elements/Link';
-import { coreNeutral2, coreDarkBase } from '../../../colors';
+import { frenchGray, mirage } from '../../../colors';
 import { large, medium } from '../../../breakpoints';
 import { PRIVACY_SETTINGS_ID } from '../constants';
 
@@ -12,7 +12,7 @@ const StyledContainer = styled.div`
   min-height: 68px;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: ${coreDarkBase};
+  background-color: ${mirage};
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
   display: inline-block;
-  color: ${coreNeutral2};
+  color: ${frenchGray};
   font-size: 9px;
   line-height: 12px;
 
@@ -55,7 +55,7 @@ const StyledListItem = styled.li`
   }
 
   a {
-    color: ${coreNeutral2};
+    color: ${frenchGray};
     text-decoration: none;
   }
 `;

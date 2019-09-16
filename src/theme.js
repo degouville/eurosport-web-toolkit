@@ -1,197 +1,193 @@
 import { transparentize, rgba } from 'polished';
 import {
+  dodgerBlue,
+  mako,
+  white,
+  malibu,
+  monza,
+  ebony,
+  frenchGray,
+  manatee,
+  gunPowder,
+  comet,
+  athensGray,
   plausibleViolet,
-  crashingAmber,
-  coreLightMinus1,
-  significantAzure,
-  featureOneMinus2,
-  actionTwoDarkBase,
-  coreDarkPlus1,
-  coreNeutral2,
-  coreNeutral4,
-  coreNeutral8,
-  coreNeutral7,
-  coreLightBase,
-  dodgerBlue2,
-  actionTwoLightBase,
+  torchRed,
   melanzane,
-  coreDarkBase,
-  hydroelectricTar,
-  coreNeutral6,
-  coreNeutral1,
-  actionOneDarkMinus1,
-  actionOneDarkBase,
+  mirage,
+  stormGray,
+  iron,
   ebonyClay,
   martinique,
   suitGray,
   blackPearl,
-  coreNeutral9,
+  utahCrimson,
 } from './colors';
 import { fontAlphaHeadline, fontInterUi } from './typography';
 
 export default {
   underlineLink: {
     fontFamily: fontInterUi,
-    color: coreNeutral4,
-    hoverColor: coreNeutral2,
+    color: manatee,
+    hoverColor: frenchGray,
   },
   link: {
-    color: featureOneMinus2,
+    color: malibu,
   },
   button: {
     primary: {
-      color: coreLightMinus1,
-      backgroundColor: actionTwoDarkBase,
+      color: white,
+      backgroundColor: utahCrimson,
     },
     secondary: {
-      color: featureOneMinus2,
+      color: malibu,
     },
     form: {
-      color: coreLightMinus1,
-      backgroundColor: dodgerBlue2,
+      color: white,
+      backgroundColor: dodgerBlue,
     },
     secondaryForm: {
-      color: coreLightMinus1,
-      backgroundColor: coreNeutral9,
+      color: white,
+      backgroundColor: martinique,
     },
   },
   input: {
-    backgroundColor: coreDarkPlus1,
-    borderFocused: coreNeutral4,
-    border: coreNeutral8,
+    backgroundColor: ebony,
+    borderFocused: manatee,
+    border: gunPowder,
     placeholder: {
-      color: coreNeutral4,
+      color: manatee,
       fontFamily: fontInterUi,
     },
     text: {
-      color: coreLightBase,
+      color: athensGray,
       fontFamily: fontInterUi,
     },
   },
   login: {
     separator: {
-      primary: coreLightBase,
-      secondary: coreNeutral8,
+      primary: athensGray,
+      secondary: gunPowder,
     },
     text: {
-      color: coreLightBase,
+      color: athensGray,
       fontFamily: fontInterUi,
     },
     title: {
-      color: coreLightMinus1,
+      color: white,
       fontFamily: fontAlphaHeadline,
     },
   },
   banner: {
     error: {
-      borderColor: actionTwoLightBase,
+      borderColor: torchRed,
       backgroundColor: melanzane,
-      textColor: coreLightBase,
+      textColor: athensGray,
       fontFamily: fontInterUi,
     },
   },
   tab: {
     active: {
-      color: coreLightMinus1,
-      borderColor: featureOneMinus2,
+      color: white,
+      borderColor: malibu,
     },
-    borderColor: transparentize(0.5, coreLightMinus1),
+    borderColor: transparentize(0.5, white),
   },
   typo: {
     primary: {
-      color: coreLightMinus1,
+      color: white,
     },
   },
   playerControls: {
     dropdown: {
-      background: transparentize(0.1, coreDarkBase),
-      border: transparentize(0.2, coreNeutral6),
+      background: transparentize(0.1, mirage),
+      border: transparentize(0.2, stormGray),
     },
     seek: {
-      trackColor: dodgerBlue2,
+      trackColor: dodgerBlue,
       handleSize: 20,
-      handleColor: coreLightBase,
-      railColor: rgba(coreNeutral1, 0.3),
+      handleColor: athensGray,
+      railColor: rgba(iron, 0.3),
       railThickness: 5,
       vertical: false,
     },
     volume: {
-      trackColor: dodgerBlue2,
+      trackColor: dodgerBlue,
       handleSize: 20,
-      handleColor: coreLightBase,
-      railColor: rgba(coreNeutral1, 0.3),
+      handleColor: athensGray,
+      railColor: rgba(iron, 0.3),
       railThickness: 5,
       vertical: true,
     },
     bar: {
-      backgroundColor: transparentize(0.4, coreDarkBase),
+      backgroundColor: transparentize(0.4, mirage),
     },
-    separator: transparentize(0.5, coreNeutral4),
+    separator: transparentize(0.5, manatee),
     liveIcon: {
       fontFamily: fontAlphaHeadline,
-      backgroundColor: actionTwoDarkBase,
-      color: coreLightBase,
+      backgroundColor: monza,
+      color: athensGray,
     },
     text: {
       fontFamily: fontAlphaHeadline,
-      color: coreLightBase,
+      color: athensGray,
     },
   },
   dropdown: {
     label: {
-      color: coreLightMinus1,
+      color: white,
     },
     list: {
       default: {
-        color: coreNeutral2,
+        color: frenchGray,
       },
       selected: {
-        color: coreLightMinus1,
+        color: white,
       },
     },
     checkMark: {
-      color: significantAzure,
+      color: plausibleViolet,
     },
-    background: hydroelectricTar,
-    border: transparentize(0.2, coreNeutral6),
+    background: mirage,
+    border: transparentize(0.2, stormGray),
   },
   scrollbar: {
     color: plausibleViolet,
-    background: crashingAmber,
+    background: mako,
   },
   statistics: {
     comparison: {
-      colorOne: actionOneDarkMinus1,
-      colorTwo: actionOneDarkBase,
-      background: rgba(coreLightMinus1, 0.1),
+      colorOne: malibu,
+      colorTwo: dodgerBlue,
+      background: rgba(white, 0.1),
     },
     background: {
       one: ebonyClay,
       two: martinique,
     },
-    fringe: rgba(coreLightMinus1, 0.05),
+    fringe: rgba(white, 0.05),
   },
   marketingChecklist: {
     title: {
-      color: coreLightMinus1,
+      color: white,
     },
     subtitle: {
       color: suitGray,
     },
     check: {
-      color: coreLightMinus1,
+      color: white,
     },
   },
   videoPlayerModal: {
     closeIcon: {
-      fill: coreLightMinus1,
+      fill: white,
     },
   },
   loginWithMarketing: {
     mobileBackground: blackPearl,
   },
   shareIcons: {
-    color: coreNeutral7,
-    background: coreLightMinus1,
+    color: comet,
+    background: white,
   },
 };

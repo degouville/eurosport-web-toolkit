@@ -14,11 +14,11 @@ exports[`Content card v2 renders Card with Play Button 1`] = `
 
 .emotion-0 .e129r5mb6 {
   margin: 0 24px;
-  color: #afafbb;
+  color: #AFAFBB;
 }
 
 .emotion-0 .e129r5mb7 {
-  color: #f8f8f9;
+  color: #F8F8F9;
   margin: 11.5px 24px 0 24px;
   font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
@@ -30,7 +30,7 @@ exports[`Content card v2 renders Card with Play Button 1`] = `
 
 .emotion-0 .e129r5mb8 {
   margin: 9px 24px 0 24px;
-  color: #afafbb;
+  color: #AFAFBB;
 }
 
 .emotion-0 .e129r5mb10 {
@@ -64,7 +64,7 @@ exports[`Content card v2 renders Card with Play Button 1`] = `
 
   .emotion-0 .e129r5mb6 {
     margin: 0 42px;
-    color: #f8f8f9;
+    color: #F8F8F9;
   }
 
   .emotion-0 .e129r5mb7 {
@@ -75,7 +75,7 @@ exports[`Content card v2 renders Card with Play Button 1`] = `
 
   .emotion-0 .e129r5mb8 {
     margin: 16px 42px 0 42px;
-    color: #f8f8f9;
+    color: #F8F8F9;
     text-transform: uppercase;
   }
 
@@ -125,11 +125,11 @@ exports[`Content card v2 renders Card with Play Button 2`] = `
 
 .emotion-0 .e129r5mb6 {
   margin: 0 24px;
-  color: #afafbb;
+  color: #AFAFBB;
 }
 
 .emotion-0 .e129r5mb7 {
-  color: #f8f8f9;
+  color: #F8F8F9;
   margin: 11.5px 24px 0 24px;
   font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: auto;
@@ -141,7 +141,7 @@ exports[`Content card v2 renders Card with Play Button 2`] = `
 
 .emotion-0 .e129r5mb8 {
   margin: 9px 24px 0 24px;
-  color: #afafbb;
+  color: #AFAFBB;
 }
 
 .emotion-0 .e129r5mb10 {

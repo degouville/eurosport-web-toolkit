@@ -1,117 +1,70 @@
-export const brandMinus2 = '#30355e';
-export const brandMinus1 = '#1f2555';
-export const brandBase = '#141b4d';
-export const brandPlus1 = '#0f1236';
-export const brandPlus2 = '#060825';
+/**
+ * COLORS
+ * ---
+ * Color name are generated via http://chir.ag/projects/name-that-color to avoid duplicates
+ */
 
-export const actionOneLightMinus1 = '#7ca1ff';
-export const actionOneLightBase = '#497cff';
-export const actionOneLightPlus1 = '#1657ff';
-export const actionTwoLightMinus1 = '#ff3d5c';
-export const actionTwoLightBase = '#ff0043';
-export const actionTwoLightPlus1 = '#cc0036';
+// NOTE: For the moment, color variants can't be setted as we need new pallet from the product
+// import { lighten, darken } from 'polished'; is not used
 
-export const actionOneDarkMinus1 = '#7982ff';
-export const actionOneDarkBase = '#4652ff';
-export const actionOneDarkPlus1 = '#1322ff';
-export const actionTwoDarkMinus1 = '#ff0943';
-export const actionTwoDarkBase = '#d50032';
-export const actionTwoDarkPlus1 = '#a20026';
+// TODO: purge color variant setted by opacity and use opacity in the theme properly
 
-export const coreLightMinus1 = '#ffffff';
-export const coreLightBase = '#f8f8f9';
-export const coreDarkBase = '#151726';
-export const coreDarkPlus1 = '#04050f';
-
-export const coreNeutral1 = '#dedfe3';
-export const coreNeutral2 = '#c6c7ce';
-export const coreNeutral3 = '#afafbb';
-export const coreNeutral4 = '#9798a6';
-export const coreNeutral5 = '#808293';
-export const coreNeutral6 = '#6b6c80';
-export const coreNeutral7 = '#55586d';
-export const coreNeutral8 = '#41435b';
-export const coreNeutral9 = '#2d304a';
-export const coreNeutral10 = '#2d2f4a';
-export const coreNeutral11 = '#4f526a';
-
-export const featureOneMinus2 = '#66cef9';
-export const featureOneMinus1 = '#3fc1f8';
-export const featureOneBase = '#00acf5';
-export const featureOnePlus1 = '#009ef2';
-export const featureOnePlus2 = '#0092f0';
-
-export const featureTwoMinus2 = '#7deef2';
-export const featureTwoMinus1 = '#4ce8ed';
-export const featureTwoBase = '#06dfe7';
-export const featureTwoPlus1 = '#05d1d9';
-export const featureTwoPlus2 = '#02c2ca';
-
-export const featureThreeMinus2 = '#9eed6e';
-export const featureThreeMinus1 = '#89e94f';
-export const featureThreeBase = '#74e530';
-export const featureThreePlus1 = '#61de24';
-export const featureThreePlus2 = '#44d313';
-
-export const featureFourMinus2 = '#fff580';
-export const featureFourMinus1 = '#fff04d';
-export const featureFourBase = '#ffea00';
-export const featureFourPlus1 = '#ffdf00';
-export const featureFourPlus2 = '#ffd200';
-
-export const featureFiveMinus2 = '#ff9a56';
-export const featureFiveMinus1 = '#ff8838';
-export const featureFiveBase = '#ff7315';
-export const featureFivePlus1 = '#ff5c0f';
-export const featureFivePlus2 = '#ff4709';
-
-export const featureSixMinus2 = '#ff72ce';
-export const featureSixMinus1 = '#ff60c8';
-export const featureSixBase = '#ff48bf';
-export const featureSixPlus1 = '#ff34aa';
-export const featureSixPlus2 = '#ff1e94';
-
-export const featureSevenMinus2 = '#ae43dd';
-export const featureSevenMinus1 = '#9f30d6';
-export const featureSevenBase = '#9600d4';
-export const featureSevenPlus1 = '#8800cc';
-export const featureSevenPlus2 = '#7900c3';
-
-export const midnightExpress = '#22263c';
-export const midnightExpress2 = '#1e2037';
-export const cerulean = '#009cde';
-export const utahCrimson = '#d50032';
-export const arsenic = '#3d4248';
-export const regentGray = '#798490';
-export const turquoiseBlue = '#64dcff';
-export const whiteLilac = '#e8e8eb';
-export const gunPowder = '#3f455d';
-export const venetianRed = '#b6012d';
-export const royalBlue = '#3c46dc';
-export const dodgerBlue = '#35D0FE';
-export const dodgerBlue2 = '#4652FF';
-export const flawlessMahogany = '#353851';
-export const nobel = '#979797';
-export const blackRussian = '#3E4159';
-export const alto = '#D8D8D8';
-export const manatee = '#8185A0';
-export const martinique = '#353851';
-export const stormGray = '#6D6D78';
-export const azureRadiance = '#0094F8';
-export const mischka = '#D0D1DA';
-export const ebonyClay = '#252741';
-export const halfBaked = '#87C3D4';
+/**
+ *  Blues
+ */
 export const jungleMist = '#AECCD4';
-export const athensGray = '#E3E4EA';
+export const halfBaked = '#87C3D4';
+export const turquoiseBlue = '#64DCFF';
+export const malibu = '#66CEF9';
+export const cerulean = '#009CDE';
+export const azureRadiance = '#0094F8';
+export const plausibleViolet = '#4A7EFF';
+export const cornflowerBlue = '#7982FF';
+export const dodgerBlue = '#4652FF';
+export const royalBlue = '#3C46DC';
 export const blueZodiac = '#0E143D';
-export const geyser = '#D3D9DE';
-export const paleSky = '#6D777F';
-export const blackPearl = '#050618';
-export const scarpaGrey = '#4c4b4f';
-export const loftySilver = '#ffffff';
-export const suitGray = '#b9bbca';
+export const bunting = '#141B4D';
+export const haiti = '#0F1236';
+
+/**
+ *  Reds
+ */
+export const radicalRed = '#FF3D5C';
+export const torchRed = '#FF0043';
+export const monza = '#CC0036';
+export const venetianRed = '#B6012D';
+export const utahCrimson = '#D50032';
 export const melanzane = '#290416';
-export const significantAzure = '#4A7EFF';
-export const crashingAmber = '#434450';
-export const plausibleViolet = '#4a7eff';
-export const hydroelectricTar = '#131625';
+
+/**
+ *  Greys
+ */
+export const white = '#FFFFFF';
+export const athensGray = '#F8F8F9';
+export const blackHaze = '#E8E8EB';
+export const mirage = '#151726';
+export const ebony = '#04050F';
+export const iron = '#DEDFE3';
+export const alto = '#D8D8D8';
+export const mischka = '#D0D1DA';
+export const geyser = '#D3D9DE';
+export const suitGray = '#B9BBCA';
+export const frenchGray = '#C6C7CE';
+export const spunPearl = '#AFAFBB';
+export const manatee = '#9798A6';
+export const comet = '#55586D';
+export const paleSky = '#6D777F';
+export const regentGray = '#798490';
+export const dustyGray = '#979797';
+export const stormGray = '#6D6D78';
+export const scarpaFlow = '#4C4B4F';
+export const mako = '#3D4248';
+export const gunPowder = '#41435B';
+export const martinique = '#2D304A';
+export const ebonyClay = '#22263C';
+export const blackPearl = '#060825';
+
+/**
+ *  Greens
+ */
+export const lima = '#74E530';

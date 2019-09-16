@@ -6,12 +6,12 @@ import LeftMenuItem, { LeftMenuItemPropType } from './LeftMenuItem';
 import Logo from '../../../elements/Logo';
 
 import { large } from '../../../breakpoints';
-import { cerulean, coreDarkPlus1, coreNeutral8 } from '../../../colors';
+import { cerulean, ebony, gunPowder } from '../../../colors';
 
 const StyledTabs = styled.ul`
   width: 21.25%;
   min-width: 100px;
-  background: ${coreDarkPlus1};
+  background: ${ebony};
 
   ${large(css`
     width: 195px;
@@ -37,7 +37,7 @@ const StyledTabLogo = styled.a`
   flex-grow: 0;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid ${coreNeutral8};
+  border-bottom: 1px solid ${gunPowder};
   &:hover {
     background-color: ${cerulean};
   }

@@ -37,7 +37,7 @@ const StyledPreviousMatches = styled.div`
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 18px;
-  color: ${colors.coreNeutral3};
+  color: ${colors.spunPearl};
   text-transform: uppercase;
   margin: 21px 40px 0 40px;
   ${breakpoints.medium(css`

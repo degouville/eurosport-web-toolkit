@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import ChannelIcon from '../ChannelIcon';
-import { coreNeutral4 } from '../../colors';
+import { manatee } from '../../colors';
 import { medium } from '../../breakpoints';
 
 export const StyledDetails = styled.div`
@@ -11,7 +11,7 @@ export const StyledDetails = styled.div`
   width: 100%;
   height: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  color: ${coreNeutral4};
+  color: ${manatee};
   font-size: 11px;
 
   svg {

@@ -41,7 +41,7 @@ exports[`Tabs renders its content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #afafbb;
+  color: #AFAFBB;
   position: relative;
   padding: 23px 0;
   margin-right: 15px;
@@ -72,7 +72,7 @@ exports[`Tabs renders its content 1`] = `
 
 .emotion-12:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -94,7 +94,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-12:hover svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-8 {
@@ -115,7 +115,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-8 > svg path {
-  fill: #afafbb;
+  fill: #AFAFBB;
 }
 
 .emotion-2 {
@@ -144,7 +144,7 @@ exports[`Tabs renders its content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #afafbb;
+  color: #AFAFBB;
   position: relative;
   padding: 23px 0;
 }
@@ -162,7 +162,7 @@ exports[`Tabs renders its content 1`] = `
 
 .emotion-28:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -184,7 +184,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-28:hover svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-32 {
@@ -224,12 +224,12 @@ exports[`Tabs renders its content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #afafbb;
+  color: #AFAFBB;
   position: relative;
   padding: 23px 0;
   margin-right: 15px;
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -259,7 +259,7 @@ exports[`Tabs renders its content 1`] = `
 
 .emotion-4:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -281,7 +281,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-4:hover svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4:after {
@@ -301,7 +301,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-4 svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-0 {
@@ -322,7 +322,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-0 > svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <Tabs
@@ -405,7 +405,7 @@ exports[`Tabs renders its content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #afafbb;
+  color: #AFAFBB;
   position: relative;
   padding: 23px 0;
   margin-right: 15px;
@@ -436,7 +436,7 @@ exports[`Tabs renders its content 1`] = `
 
 .emotion-12:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -458,7 +458,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-12:hover svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-8 {
@@ -479,7 +479,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-8 > svg path {
-  fill: #afafbb;
+  fill: #AFAFBB;
 }
 
 .emotion-2 {
@@ -508,7 +508,7 @@ exports[`Tabs renders its content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #afafbb;
+  color: #AFAFBB;
   position: relative;
   padding: 23px 0;
 }
@@ -526,7 +526,7 @@ exports[`Tabs renders its content 1`] = `
 
 .emotion-28:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -548,7 +548,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-28:hover svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-32 {
@@ -588,12 +588,12 @@ exports[`Tabs renders its content 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #afafbb;
+  color: #AFAFBB;
   position: relative;
   padding: 23px 0;
   margin-right: 15px;
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -623,7 +623,7 @@ exports[`Tabs renders its content 1`] = `
 
 .emotion-4:hover {
   cursor: pointer;
-  color: #ffffff;
+  color: #FFFFFF;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -645,7 +645,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-4:hover svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-4:after {
@@ -665,7 +665,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-4 svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .emotion-0 {
@@ -686,7 +686,7 @@ exports[`Tabs renders its content 1`] = `
 }
 
 .emotion-0 > svg path {
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 <div
