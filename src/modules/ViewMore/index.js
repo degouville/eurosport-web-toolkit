@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
-import { throttle, get } from 'lodash';
-import { SizeMe } from 'react-sizeme';
+import get from 'lodash/get';
+import throttle from 'lodash/throttle';
 import { coreLightMinus1, coreLightBase, coreDarkPlus1 } from '../../colors';
 import { fontAlphaHeadlineBold } from '../../typography';
 
@@ -25,24 +25,19 @@ export const StyledViewMoreButton = styled.span`
 `;
 
 const StyledList = styled.ul`
-  ${({ blockHeight, animate, isDelayGone, animationDelay }) =>
+  overflow: hidden;
+  ${props =>
     css`
-      max-height: ${blockHeight !== 0 ? `${blockHeight}px` : 'auto'};
-      transition: ${animate ? `max-height ${animationDelay}ms ease` : 'none'};
-      overflow: ${isDelayGone ? 'unset' : 'hidden'};
-
-      // NOTE: <SizeMe> required to have an extra height to render properly
-      border-top: 1em solid transparent;
-      margin-top: -1em;
+      max-height: ${props.blockHeight !== 0 ? `${props.blockHeight - 2}px;` : 'auto;'}
+      transition: ${props.animate ? 'max-height 400ms ease;' : 'none;'}
     `}
 `;
 
-class ViewMore extends React.Component {
+export default class ViewMore extends React.Component {
   listRef = React.createRef();
 
   state = {
     animate: true,
-    isDelayGone: false,
   };
 
   handleWindowResize = throttle(() => this.setState({ animate: false }), 250);
@@ -61,71 +56,46 @@ class ViewMore extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleWindowResize);
-    clearInterval(this.delayTimer);
   }
 
-  computeBlockHeight(height) {
+  computeBlockHeight() {
     const { showLessItemCount } = this.props;
     const { expanded } = this.state;
     const listElement = get(this, 'listRef.current', {});
     const listChildren = get(listElement, 'children', []);
-    const shouldExpand = expanded || showLessItemCount >= listChildren?.length;
-    const expandedSize = height;
-    const unExpandedSize = listChildren[showLessItemCount]?.offsetTop;
-    const hasChildren = listChildren?.length > 0;
-    const currentSize = shouldExpand ? expandedSize : unExpandedSize;
-    return hasChildren ? currentSize : 0;
-  }
 
-  handleDelay() {
-    this.setState(({ isDelayGone }) => ({ isDelayGone: !isDelayGone }));
+    let height = 0;
+    if (listChildren.length > 0)
+      height =
+        expanded || showLessItemCount >= listChildren.length
+          ? listElement.scrollHeight
+          : listChildren[showLessItemCount].offsetTop - listElement.offsetTop;
+
+    return height;
   }
 
   handleClick() {
-    const { animationDelay } = this.props;
-    const { isDelayGone, animate } = this.state;
-
-    this.setState(({ expanded }) => ({
-      expanded: !expanded,
+    this.setState(state => ({
+      expanded: !state.expanded,
       animate: true,
     }));
-
-    if (isDelayGone) {
-      this.setState({ isDelayGone: !isDelayGone });
-    } else {
-      this.setState({ animate: !animate });
-      this.delayTimer = setTimeout(() => this.handleDelay(), animationDelay);
-    }
-  }
-
-  renderStyledList(height) {
-    const { children, animationDelay } = this.props;
-    const { expanded, animate, isDelayGone } = this.state;
-
-    return (
-      <StyledList
-        isExpanded={expanded}
-        innerRef={this.listRef}
-        blockHeight={this.computeBlockHeight(height)}
-        animate={animate}
-        isDelayGone={isDelayGone}
-        animationDelay={animationDelay}
-      >
-        {children}
-      </StyledList>
-    );
   }
 
   render() {
     const { children, showLessText, showMoreText, showLessItemCount } = this.props;
-    const { expanded } = this.state;
+    const { expanded, animate } = this.state;
     if (!children || !children.length) return null;
-
     return (
       <>
-        <SizeMe monitorHeight render={({ size: { height } }) => this.renderStyledList(height)} />
-
-        {children?.length > 1 && children?.length > showLessItemCount && (
+        <StyledList
+          isExpanded={expanded}
+          innerRef={this.listRef}
+          blockHeight={this.computeBlockHeight()}
+          animate={animate}
+        >
+          {children}
+        </StyledList>
+        {children.length > 1 && children.length > showLessItemCount && (
           <StyledViewMoreButtonWrapper>
             <StyledViewMoreButton onClick={() => this.handleClick()}>
               {expanded ? showLessText : showMoreText}
@@ -141,7 +111,6 @@ ViewMore.defaultProps = {
   showLessItemCount: 1,
   showLessText: 'show less',
   showMoreText: 'show more',
-  animationDelay: 400,
 };
 
 ViewMore.propTypes = {
@@ -149,7 +118,4 @@ ViewMore.propTypes = {
   showLessText: PropTypes.string,
   showMoreText: PropTypes.string,
   showLessItemCount: PropTypes.number,
-  animationDelay: PropTypes.number,
 };
-
-export default ViewMore;

@@ -30,7 +30,6 @@ exports[`PlayerCard should render as expected 1`] = `
   </Styled(div)>
   <Styled(div)>
     <ViewMore
-      animationDelay={400}
       forceToggle={false}
       onClick={null}
       showLessItemCount={1}
