@@ -1,52 +1,58 @@
 import React from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
-import ShareIcon from 'src/elements/ShareIcon';
-import { isMobile } from 'react-device-detect';
+import ShareSvg from 'src/assets/share.svg';
+import ShareIcon from '../../elements/ShareIcon';
+import { frenchGray } from '../../colors';
+import { H5 } from '../../typography';
 
-const ShareIconsContainer = styled.div`
+const Wrapper = styled.div`
+  width: 320px;
   display: flex;
   align-items: center;
 `;
 
-const ShareIconsWrapper = styled.div`
-  width: ${({ size, numberIcons }) => size * numberIcons + numberIcons * 10}px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+const Icons = styled(ShareIcon)`
+  margin-right: 20px;
 `;
 
-const ShareLabel = styled.div`
-  color: ${({ theme }) => theme.shareIcons.color};
+const Label = styled(H5)`
+  text-transform: uppercase;
+  color: ${frenchGray};
+  margin-right: 20px;
+  margin-top: 1px;
 `;
 
-const ShareIcons = ({ size, label, whatsappCTA, facebookCTA, twitterCTA }) => {
-  const CTA = [whatsappCTA, facebookCTA, twitterCTA];
-  const numberIcons = CTA.filter(el => el !== undefined).length;
-  return (
-    <ShareIconsContainer>
-      <ShareLabel>{label}</ShareLabel>
-      <ShareIconsWrapper size={size} numberIcons={isMobile ? numberIcons : numberIcons - 1}>
-        {whatsappCTA && isMobile && <ShareIcon size={size} icon="whatsapp" onClick={whatsappCTA} />}
-        {facebookCTA && <ShareIcon size={size} icon="facebook" onClick={facebookCTA} />}
-        {twitterCTA && <ShareIcon size={size} icon="twitter" onClick={twitterCTA} />}
-      </ShareIconsWrapper>
-    </ShareIconsContainer>
-  );
-};
+const Share = styled.div`
+  background: url(${ShareSvg}) no-repeat;
+  width: 11px;
+  height: 11px;
+  margin-right: 10px;
+`;
+
+const ShareIcons = ({ label, icons, labelIcon }) => (
+  <Wrapper>
+    {labelIcon && <Share />}
+    {label && <Label>{label}</Label>}
+    {icons && icons.map(icon => <Icons key={icon.icon} icon={icon.icon} size={icon.size} onClick={icon.onClick} />)}
+  </Wrapper>
+);
 
 ShareIcons.propTypes = {
-  size: PropTypes.number.isRequired,
-  label: PropTypes.string.isRequired,
-  whatsappCTA: PropTypes.func,
-  facebookCTA: PropTypes.func,
-  twitterCTA: PropTypes.func,
+  icons: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.string,
+      size: PropTypes.number,
+      onClick: PropTypes.func,
+    })
+  ).isRequired,
+  label: PropTypes.string,
+  labelIcon: PropTypes.bool,
 };
 
 ShareIcons.defaultProps = {
-  whatsappCTA: null,
-  facebookCTA: null,
-  twitterCTA: null,
+  label: null,
+  labelIcon: false,
 };
 
 export default ShareIcons;

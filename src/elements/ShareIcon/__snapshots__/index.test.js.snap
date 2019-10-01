@@ -4,10 +4,10 @@ exports[`ShareIcon should render ShareIcon facebook 1`] = `
 .emotion-2 {
   width: 30px;
   height: 30px;
-  background-color: rgba(#FFFFFF,0.05);
+  background-color: rgba(255,255,255,0.3);
   border-radius: 50%;
   position: relative;
-  border: 1px solid #55586D;
+  border: 1px solid rgba(255,255,255,0.3);
   cursor: pointer;
 }
 
@@ -20,9 +20,7 @@ exports[`ShareIcon should render ShareIcon facebook 1`] = `
   height: 30px;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
+  opacity: 0.8;
   position: relative;
   background-image: url(/eurosport-web-toolkit/0877828b5ca291d18f7eb65b3ac841fc.svg);
 }

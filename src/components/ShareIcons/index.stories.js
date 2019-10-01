@@ -1,17 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, number } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import ShareIcons from './index';
 
-const shareIconsStories = storiesOf('Components|ShareIcons', module);
+const ShareIconsStories = storiesOf('Component|SharIcons', module);
 
-shareIconsStories.add('ShareIcons', () => (
-  <ShareIcons
-    size={number('size', 50)}
-    label={text('label', 'SHARE')}
-    whatsappCTA={action('whatsapp')}
-    facebookCTA={action('facebook')}
-    twitterCTA={action('twitter')}
-  />
+const icons = [
+  { icon: 'facebook', size: 32, onClick: action('facebook') },
+  { icon: 'twitter', size: 32, onClick: action('twitter') },
+  { icon: 'whatsapp', size: 32, onClick: action('whatsapp') },
+];
+
+ShareIconsStories.add('ShareModule', () => (
+  <ShareIcons labelIcon={boolean('Label Icon', true)} icons={icons} label={text('Share Label', 'share')} />
 ));

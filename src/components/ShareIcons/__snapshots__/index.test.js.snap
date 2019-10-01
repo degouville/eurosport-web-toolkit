@@ -1,29 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ShareIcons renders ShareIcons 1`] = `
+exports[`Footer renders when everything passed in 1`] = `
 <Styled(div)>
-  <Styled(div)>
-    SHARE
-  </Styled(div)>
-  <Styled(div)
-    numberIcons={3}
-    size={50}
-  >
-    <ShareIcon
-      icon="whatsapp"
-      onClick={[Function]}
-      size={50}
-    />
-    <ShareIcon
-      icon="facebook"
-      onClick={[Function]}
-      size={50}
-    />
-    <ShareIcon
-      icon="twitter"
-      onClick={[Function]}
-      size={50}
-    />
-  </Styled(div)>
+  <Styled(div) />
+  <Styled(h5)>
+    share
+  </Styled(h5)>
+  <Styled(ShareIcon)
+    icon="facebook"
+    key="facebook"
+    onClick={[Function]}
+    size={32}
+  />
+  <Styled(ShareIcon)
+    icon="twitter"
+    key="twitter"
+    onClick={[Function]}
+    size={32}
+  />
+  <Styled(ShareIcon)
+    icon="whatsapp"
+    key="whatsapp"
+    onClick={[Function]}
+    size={32}
+  />
+</Styled(div)>
+`;
+
+exports[`Footer renders with no label share icon 1`] = `
+<Styled(div)>
+  <Styled(ShareIcon)
+    icon="facebook"
+    key="facebook"
+    onClick={[Function]}
+    size={32}
+  />
+  <Styled(ShareIcon)
+    icon="twitter"
+    key="twitter"
+    onClick={[Function]}
+    size={32}
+  />
+  <Styled(ShareIcon)
+    icon="whatsapp"
+    key="whatsapp"
+    onClick={[Function]}
+    size={32}
+  />
+</Styled(div)>
+`;
+
+exports[`Footer renders without label 1`] = `
+<Styled(div)>
+  <Styled(div) />
+  <Styled(ShareIcon)
+    icon="facebook"
+    key="facebook"
+    onClick={[Function]}
+    size={32}
+  />
+  <Styled(ShareIcon)
+    icon="twitter"
+    key="twitter"
+    onClick={[Function]}
+    size={32}
+  />
+  <Styled(ShareIcon)
+    icon="whatsapp"
+    key="whatsapp"
+    onClick={[Function]}
+    size={32}
+  />
 </Styled(div)>
 `;
