@@ -30,8 +30,8 @@ const Share = styled.div`
   margin-right: 10px;
 `;
 
-const ShareIcons = ({ label, icons, labelIcon }) => (
-  <Wrapper>
+const ShareIcons = ({ label, icons, labelIcon, className }) => (
+  <Wrapper className={className}>
     {labelIcon && <Share />}
     {label && <Label>{label}</Label>}
     {icons && icons.map(icon => <Icons key={icon.icon} icon={icon.icon} size={icon.size} onClick={icon.onClick} />)}
@@ -47,12 +47,14 @@ ShareIcons.propTypes = {
     })
   ).isRequired,
   label: PropTypes.string,
+  className: PropTypes.string,
   labelIcon: PropTypes.bool,
 };
 
 ShareIcons.defaultProps = {
   label: null,
   labelIcon: false,
+  className: undefined,
 };
 
 export default ShareIcons;
