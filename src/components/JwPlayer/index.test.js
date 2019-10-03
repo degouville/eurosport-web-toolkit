@@ -270,7 +270,7 @@ describe('components/<Player />', () => {
 
       const mockIsOnScreenFull = () => {
         mockBoundClientRect = () => ({
-          bottom: 100,
+          bottom: 120,
           top: 10,
           height: 90,
         });
@@ -296,6 +296,9 @@ describe('components/<Player />', () => {
         wrapper = shallow(<Player {...initialProps} stickyContent="sticky content" />);
         wrapper.instance().styledWrapperRef.current = {
           getBoundingClientRect: () => mockBoundClientRect(),
+        };
+        wrapper.instance().styledStickyContentRef.current = {
+          offsetHeight: 42,
         };
 
         delete global.document;
@@ -360,6 +363,7 @@ describe('components/<Player />', () => {
           wrapper.instance().handleStickyOnScroll();
           expect(wrapper.state('isPlayerSticky')).toBe(true);
           expect(wrapper.state('minWrapperHeight')).toBe(90);
+          expect(wrapper.state('stickyContentHeight')).toBe(42);
 
           invalidateState();
           mockIsOutOfScreenAtTheTop();
@@ -367,6 +371,7 @@ describe('components/<Player />', () => {
           wrapper.instance().handleStickyOnScroll();
           expect(wrapper.state('isPlayerSticky')).toBe(true);
           expect(wrapper.state('minWrapperHeight')).toBe(100);
+          expect(wrapper.state('stickyContentHeight')).toBe(42);
         });
 
         it('sets isPlayerSticky only when player out of screen and isStickyPanelClosed is false', () => {

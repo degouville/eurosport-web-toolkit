@@ -1,0 +1,1115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stickyContent should render as expected 1`] = `
+.emotion-0 {
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.emotion-11 {
+  display: none;
+}
+
+@media (min-width:700px) {
+  .emotion-11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.emotion-9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #FFFFFF;
+  font-size: 8px;
+  line-height: 11px;
+  -webkit-letter-spacing: 0.41px;
+  -moz-letter-spacing: 0.41px;
+  -ms-letter-spacing: 0.41px;
+  letter-spacing: 0.41px;
+  display: none;
+}
+
+@media (min-width:480px) {
+  .emotion-9 {
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 13px;
+    -webkit-letter-spacing: 0.5px;
+    -moz-letter-spacing: 0.5px;
+    -ms-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.emotion-2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #060825;
+}
+
+.emotion-2::after {
+  display: inline-block;
+  content: '/';
+  margin: 0 0.5em;
+  color: #9798A6;
+}
+
+.emotion-2:last-child::after {
+  display: none;
+}
+
+.emotion-104 {
+  background-color: #55586D;
+  display: none;
+}
+
+@media (min-width:700px) {
+  .emotion-104 {
+    display: inherit;
+  }
+}
+
+.emotion-102 {
+  width: 100%;
+  font-size: 14px;
+  background-color: #55586D;
+  display: none;
+}
+
+@media (min-width:700px) {
+  .emotion-102 {
+    display: inherit;
+  }
+}
+
+.emotion-55 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.emotion-31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  color: #FFFFFF;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 1em;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 11px 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.emotion-27 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-19:not(:first-of-type) {
+  margin-top: 0.25em;
+}
+
+.emotion-17 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emotion-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex: 0 0 1em;
+  -ms-flex: 0 0 1em;
+  flex: 0 0 1em;
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  padding-left: 0.5em;
+}
+
+.emotion-53 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex: 0 0 10em;
+  -ms-flex: 0 0 10em;
+  flex: 0 0 10em;
+}
+
+.emotion-35 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 2em;
+}
+
+.emotion-33 {
+  color: #FFFFFF;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: bold;
+  font-size: 1em;
+  margin: auto;
+}
+
+.emotion-33 sup {
+  font-size: 0.55em;
+  vertical-align: super;
+  position: relative;
+  top: -0.4em;
+  right: -0.2em;
+}
+
+.emotion-41 {
+  color: #9798A6;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: bold;
+  font-size: 1em;
+  margin: auto;
+}
+
+.emotion-41 sup {
+  font-size: 0.55em;
+  vertical-align: super;
+  position: relative;
+  top: -0.4em;
+  right: -0.2em;
+}
+
+.emotion-51 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 2em;
+  background-color: #4652FF;
+}
+
+.emotion-57 {
+  display: block;
+  border: 0;
+  border-top: 1px solid;
+  padding: 0;
+  border-top-color: #FFFFFF;
+  margin: 0;
+}
+
+<MatchStickyContent
+  stickyLabels={
+    Array [
+      Object {
+        "color": "transparent",
+        "text": "ROLAND GARROS",
+      },
+      Object {
+        "color": "transparent",
+        "text": "MENS",
+      },
+      Object {
+        "color": "transparent",
+        "text": "SEMI-FINAL",
+      },
+    ]
+  }
+  stickyScore={
+    Object {
+      "bottomTeam": Object {
+        "hasWon": null,
+        "isServing": true,
+        "playerOneName": "A. MENENDEZ-MACEIRAS",
+        "playerTwoName": "A. DAVIDOVICH FOKINA",
+        "sets": Array [
+          Object {
+            "score": 3,
+            "set": 1,
+            "tie": null,
+            "won": false,
+          },
+          Object {
+            "score": 3,
+            "set": 2,
+            "tie": null,
+            "won": true,
+          },
+          Object {
+            "score": 7,
+            "set": 3,
+            "tie": 7,
+            "won": true,
+          },
+          Object {
+            "score": 3,
+            "set": 4,
+            "tie": null,
+            "won": false,
+          },
+          Object {
+            "score": 6,
+            "set": 5,
+            "tie": null,
+            "won": null,
+          },
+        ],
+      },
+      "topTeam": Object {
+        "hasWon": null,
+        "isServing": false,
+        "playerOneName": "A. MENENDEZ-MACEIRAS",
+        "playerTwoName": "A. Rahman MAKSSOUD",
+        "sets": Array [
+          Object {
+            "score": 6,
+            "set": 1,
+            "tie": null,
+            "won": true,
+          },
+          Object {
+            "score": 6,
+            "set": 2,
+            "tie": null,
+            "won": true,
+          },
+          Object {
+            "score": 6,
+            "set": 3,
+            "tie": 2,
+            "won": false,
+          },
+          Object {
+            "score": 6,
+            "set": 4,
+            "tie": null,
+            "won": true,
+          },
+          Object {
+            "score": 3,
+            "set": 5,
+            "tie": null,
+            "won": null,
+          },
+        ],
+      },
+    }
+  }
+  stickyTitle="Roland Garros"
+>
+  <Styled(h4)>
+    <h4
+      className="emotion-0 emotion-1"
+    >
+      Roland Garros
+    </h4>
+  </Styled(h4)>
+  <Styled(Labels)
+    isSimpleMode={true}
+    labels={
+      Array [
+        Object {
+          "color": "transparent",
+          "text": "ROLAND GARROS",
+        },
+        Object {
+          "color": "transparent",
+          "text": "MENS",
+        },
+        Object {
+          "color": "transparent",
+          "text": "SEMI-FINAL",
+        },
+      ]
+    }
+  >
+    <Labels
+      className="emotion-11 emotion-8"
+      isSimpleMode={true}
+      labels={
+        Array [
+          Object {
+            "color": "transparent",
+            "text": "ROLAND GARROS",
+          },
+          Object {
+            "color": "transparent",
+            "text": "MENS",
+          },
+          Object {
+            "color": "transparent",
+            "text": "SEMI-FINAL",
+          },
+        ]
+      }
+    >
+      <Styled(div)
+        className="emotion-11 emotion-8"
+        isSimpleMode={true}
+      >
+        <div
+          className="emotion-8 emotion-9 emotion-10"
+        >
+          <Styled(div)
+            color="transparent"
+            key="ROLAND GARROStransparent"
+            layer={3}
+          >
+            <div
+              className="emotion-2 emotion-3"
+              color="transparent"
+            >
+              ROLAND GARROS
+            </div>
+          </Styled(div)>
+          <Styled(div)
+            color="transparent"
+            key="MENStransparent"
+            layer={2}
+          >
+            <div
+              className="emotion-2 emotion-3"
+              color="transparent"
+            >
+              MENS
+            </div>
+          </Styled(div)>
+          <Styled(div)
+            color="transparent"
+            key="SEMI-FINALtransparent"
+            layer={1}
+          >
+            <div
+              className="emotion-2 emotion-3"
+              color="transparent"
+            >
+              SEMI-FINAL
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </Labels>
+  </Styled(Labels)>
+  <Styled(SetsScore)
+    baseFontSize="14px"
+    data={
+      Object {
+        "bottomTeam": Object {
+          "hasWon": null,
+          "isServing": true,
+          "playerOneName": "A. MENENDEZ-MACEIRAS",
+          "playerTwoName": "A. DAVIDOVICH FOKINA",
+          "sets": Array [
+            Object {
+              "score": 3,
+              "set": 1,
+              "tie": null,
+              "won": false,
+            },
+            Object {
+              "score": 3,
+              "set": 2,
+              "tie": null,
+              "won": true,
+            },
+            Object {
+              "score": 7,
+              "set": 3,
+              "tie": 7,
+              "won": true,
+            },
+            Object {
+              "score": 3,
+              "set": 4,
+              "tie": null,
+              "won": false,
+            },
+            Object {
+              "score": 6,
+              "set": 5,
+              "tie": null,
+              "won": null,
+            },
+          ],
+        },
+        "topTeam": Object {
+          "hasWon": null,
+          "isServing": false,
+          "playerOneName": "A. MENENDEZ-MACEIRAS",
+          "playerTwoName": "A. Rahman MAKSSOUD",
+          "sets": Array [
+            Object {
+              "score": 6,
+              "set": 1,
+              "tie": null,
+              "won": true,
+            },
+            Object {
+              "score": 6,
+              "set": 2,
+              "tie": null,
+              "won": true,
+            },
+            Object {
+              "score": 6,
+              "set": 3,
+              "tie": 2,
+              "won": false,
+            },
+            Object {
+              "score": 6,
+              "set": 4,
+              "tie": null,
+              "won": true,
+            },
+            Object {
+              "score": 3,
+              "set": 5,
+              "tie": null,
+              "won": null,
+            },
+          ],
+        },
+      }
+    }
+    highlightLastSet={true}
+  >
+    <SetsScore
+      baseFontSize="14px"
+      className="emotion-104 emotion-101"
+      data={
+        Object {
+          "bottomTeam": Object {
+            "hasWon": null,
+            "isServing": true,
+            "playerOneName": "A. MENENDEZ-MACEIRAS",
+            "playerTwoName": "A. DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": 7,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": null,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "hasWon": null,
+            "isServing": false,
+            "playerOneName": "A. MENENDEZ-MACEIRAS",
+            "playerTwoName": "A. Rahman MAKSSOUD",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": 2,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": null,
+              },
+            ],
+          },
+        }
+      }
+      highlightLastSet={true}
+    >
+      <Styled(div)
+        baseFontSize="14px"
+        className="emotion-104 emotion-101"
+        data-test="sets-score-wrapper"
+      >
+        <div
+          className="emotion-101 emotion-102 emotion-201"
+          data-test="sets-score-wrapper"
+        >
+          <Team
+            highlightLastSet={true}
+            isTeamMatch={true}
+            teamData={
+              Object {
+                "hasWon": null,
+                "isServing": false,
+                "playerOneName": "A. MENENDEZ-MACEIRAS",
+                "playerTwoName": "A. Rahman MAKSSOUD",
+                "sets": Array [
+                  Object {
+                    "score": 6,
+                    "set": 1,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 3,
+                    "tie": 2,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 4,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 5,
+                    "tie": null,
+                    "won": null,
+                  },
+                ],
+              }
+            }
+          >
+            <Styled(div)>
+              <div
+                className="emotion-55 emotion-56"
+              >
+                <Styled(div)
+                  hasWon={null}
+                >
+                  <div
+                    className="emotion-31 emotion-32"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-27 emotion-28"
+                      >
+                        <Player
+                          image={null}
+                          name="A. MENENDEZ-MACEIRAS"
+                        >
+                          <Styled(div)>
+                            <div
+                              className="emotion-19 emotion-20"
+                            >
+                              <Styled(div)>
+                                <div
+                                  className="emotion-17 emotion-18"
+                                >
+                                  <Styled(span)>
+                                    <span
+                                      className="emotion-15 emotion-16"
+                                    >
+                                      A. MENENDEZ-MACEIRAS
+                                    </span>
+                                  </Styled(span)>
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </Player>
+                        <Player
+                          image={null}
+                          name="A. Rahman MAKSSOUD"
+                        >
+                          <Styled(div)>
+                            <div
+                              className="emotion-19 emotion-20"
+                            >
+                              <Styled(div)>
+                                <div
+                                  className="emotion-17 emotion-18"
+                                >
+                                  <Styled(span)>
+                                    <span
+                                      className="emotion-15 emotion-16"
+                                    >
+                                      A. Rahman MAKSSOUD
+                                    </span>
+                                  </Styled(span)>
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </Player>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)>
+                      <div
+                        className="emotion-29 emotion-30"
+                      />
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+                <Styled(div)
+                  nbSets={5}
+                >
+                  <div
+                    className="emotion-53 emotion-200"
+                  >
+                    <Styled(div)
+                      highlight={false}
+                      key="set-1"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            6
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={false}
+                      key="set-2"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            6
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={false}
+                      key="set-3"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={false}
+                        >
+                          <div
+                            className="emotion-41 emotion-34"
+                          >
+                            6
+                            <sup>
+                              2
+                            </sup>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={false}
+                      key="set-4"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            6
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={true}
+                      key="set-5"
+                    >
+                      <div
+                        className="emotion-51 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            3
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </Styled(div)>
+          </Team>
+          <Styled(hr)>
+            <hr
+              className="emotion-57 emotion-202"
+            />
+          </Styled(hr)>
+          <Team
+            highlightLastSet={true}
+            isTeamMatch={true}
+            teamData={
+              Object {
+                "hasWon": null,
+                "isServing": true,
+                "playerOneName": "A. MENENDEZ-MACEIRAS",
+                "playerTwoName": "A. DAVIDOVICH FOKINA",
+                "sets": Array [
+                  Object {
+                    "score": 3,
+                    "set": 1,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 2,
+                    "tie": null,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 7,
+                    "set": 3,
+                    "tie": 7,
+                    "won": true,
+                  },
+                  Object {
+                    "score": 3,
+                    "set": 4,
+                    "tie": null,
+                    "won": false,
+                  },
+                  Object {
+                    "score": 6,
+                    "set": 5,
+                    "tie": null,
+                    "won": null,
+                  },
+                ],
+              }
+            }
+          >
+            <Styled(div)>
+              <div
+                className="emotion-55 emotion-56"
+              >
+                <Styled(div)
+                  hasWon={null}
+                >
+                  <div
+                    className="emotion-31 emotion-32"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-27 emotion-28"
+                      >
+                        <Player
+                          image={null}
+                          name="A. MENENDEZ-MACEIRAS"
+                        >
+                          <Styled(div)>
+                            <div
+                              className="emotion-19 emotion-20"
+                            >
+                              <Styled(div)>
+                                <div
+                                  className="emotion-17 emotion-18"
+                                >
+                                  <Styled(span)>
+                                    <span
+                                      className="emotion-15 emotion-16"
+                                    >
+                                      A. MENENDEZ-MACEIRAS
+                                    </span>
+                                  </Styled(span)>
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </Player>
+                        <Player
+                          image={null}
+                          name="A. DAVIDOVICH FOKINA"
+                        >
+                          <Styled(div)>
+                            <div
+                              className="emotion-19 emotion-20"
+                            >
+                              <Styled(div)>
+                                <div
+                                  className="emotion-17 emotion-18"
+                                >
+                                  <Styled(span)>
+                                    <span
+                                      className="emotion-15 emotion-16"
+                                    >
+                                      A. DAVIDOVICH FOKINA
+                                    </span>
+                                  </Styled(span)>
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </Player>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)>
+                      <div
+                        className="emotion-29 emotion-30"
+                      >
+                        •
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+                <Styled(div)
+                  nbSets={5}
+                >
+                  <div
+                    className="emotion-53 emotion-200"
+                  >
+                    <Styled(div)
+                      highlight={false}
+                      key="set-1"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={false}
+                        >
+                          <div
+                            className="emotion-41 emotion-34"
+                          >
+                            3
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={false}
+                      key="set-2"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            3
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={false}
+                      key="set-3"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            7
+                            <sup>
+                              7
+                            </sup>
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={false}
+                      key="set-4"
+                    >
+                      <div
+                        className="emotion-35 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={false}
+                        >
+                          <div
+                            className="emotion-41 emotion-34"
+                          >
+                            3
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)
+                      highlight={true}
+                      key="set-5"
+                    >
+                      <div
+                        className="emotion-51 emotion-36"
+                      >
+                        <Styled(div)
+                          highlight={true}
+                        >
+                          <div
+                            className="emotion-33 emotion-34"
+                          >
+                            6
+                          </div>
+                        </Styled(div)>
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </div>
+            </Styled(div)>
+          </Team>
+        </div>
+      </Styled(div)>
+    </SetsScore>
+  </Styled(SetsScore)>
+</MatchStickyContent>
+`;

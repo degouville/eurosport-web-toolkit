@@ -1,7 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, object, select } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import { JwPlayer } from '../..';
+import MatchStickyContent from './stickyContent';
+import { liveMatchDataSet } from '../ScoreBlock/mockData/mockScoreBlockData';
 
 const freewheelAdParams = {
   adManagerURL: 'https://mssl.fwmrm.net/p/eurosport_js/AdManager.js',
@@ -18,6 +21,29 @@ const freewheelAdParams = {
   _fw_gdpr: 0,
   _fw_gdpr_consent: '',
 };
+
+const labels = [
+  {
+    text: 'ROLAND GARROS',
+    color: 'transparent',
+  },
+  {
+    text: 'MENS',
+    color: 'transparent',
+  },
+  {
+    text: 'SEMI-FINAL',
+    color: 'transparent',
+  },
+];
+
+const getStickyContent = () => (
+  <MatchStickyContent
+    stickyTitle={text('stickyTitle', 'Tennis - Roland Garros')}
+    stickyLabels={object('stickyLabels', labels)}
+    stickyScore={object('stickyScore', liveMatchDataSet)}
+  />
+);
 
 const getBaseProps = () => ({
   scriptUrl: text('ScriptUrl', 'https://dist.eurosportdigital.com/production/v3.7.1/eurosport-web-player.js'),
@@ -47,10 +73,19 @@ stories
     <Wrapper>
       <JwPlayer
         {...getBaseProps()}
-        stickyContent={text('stickyContent', 'this is some title')}
+        stickyContent={text('stickyContent', 'Cyclisme - Vuelta Espagne 2019')}
         stickTo={select('stickTo', ['top', 'bottom'], 'bottom')}
-        /* eslint-disable-next-line no-alert */
-        onStickyPlayerClick={() => alert('you clicked on stickyPanel')}
+        onStickyPlayerClick={() => action('you clicked on stickyPanel')}
+      />
+    </Wrapper>
+  ))
+  .add('sticky mode with enhanced info', () => (
+    <Wrapper>
+      <JwPlayer
+        {...getBaseProps()}
+        stickyContent={getStickyContent()}
+        stickTo={select('stickTo', ['top', 'bottom'], 'bottom')}
+        onStickyPlayerClick={() => action('you clicked on stickyPanel')}
       />
     </Wrapper>
   ));

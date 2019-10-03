@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import { martinique, white, manatee, royalBlue, utahCrimson, malibu, bunting } from '../../colors';
+import { martinique, white, manatee, royalBlue, utahCrimson, malibu, bunting, blackPearl } from '../../colors';
 import { fontHelvetica } from '../../typography';
 import * as breakpoints from '../../breakpoints';
 
@@ -21,6 +21,10 @@ const colorsMapping = {
   cyan: {
     text: bunting,
     background: malibu,
+  },
+  transparent: {
+    text: blackPearl,
+    background: 'transparent',
   },
 };
 
@@ -52,7 +56,7 @@ const StyledLabels = styled.div`
 export const StyledLabelSimple = styled.div`
   text-transform: uppercase;
   font-weight: 300;
-
+  color: ${props => (props.color ? colorsMapping[props.color].text : white)};
   &::after {
     display: inline-block;
     content: '/';

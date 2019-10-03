@@ -3,17 +3,24 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import debounce from 'lodash/debounce';
 import Cross from 'src/assets/close-cross.component.svg';
+import { medium, wide } from 'src/breakpoints';
 import ScriptInjector from '../ScriptInjector';
-import { medium, large, wide } from '../../breakpoints';
 import { blackPearl, white } from '../../colors';
+import { StyledTeamName } from '../ScoreBlock/SetsScore';
 
 export const playerId = 'eurosport-web-player';
 
 export const ONE_FRAME = 16.7;
 
 export const StyledCloseButton = styled(Cross)`
+  display: none;
+  ${props =>
+    props.isVisible &&
+    css`
+      display: initial;
+    `}
   position: absolute;
-  top: 50%;
+  top: 24px;
   right: 20px;
   transform: translateY(-50%);
   width: 17px;
@@ -25,17 +32,22 @@ export const StyledCloseButton = styled(Cross)`
 `;
 
 export const StyledStickyContent = styled.div`
-  display: none;
-
+  visibility: hidden;
   ${props =>
     props.isVisible &&
     css`
+      visibility: inherit;
       padding: 0 40px 0 20px;
-      flex: 5;
       display: block;
-      overflow: hidden;
       position: relative;
+      ${medium(css`
+        padding-right: 50px;
+      `)}
     `}
+
+  ${StyledTeamName} {
+    margin: 5px 0 5px 6px;
+  }
 `;
 
 const StyledPlayer = styled.div`
@@ -46,7 +58,7 @@ const StyledPlayer = styled.div`
       box-sizing: border-box;
       margin: 0 auto;
       display: flex;
-      animation: slide-from-${props.stickTo} 250ms ease-out forwards;
+      animation: ${css`slide-from-${props.stickTo} 250ms ease-out forwards`};
       flex-flow: nowrap row;
       align-items: center;
       width: 100%;
@@ -56,40 +68,34 @@ const StyledPlayer = styled.div`
       border-radius: 4px;
       overflow: hidden;
       transform: translate3d(0, 0, 0);
-      box-shadow: 0 0 30px 10px rgba(0,0,0,0.2);
-      
+      box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2);
+
       > #${playerId} {
-        flex: 3;
-        max-width: 121px;
+        width: calc((16 / 9) * ${props.stickyContentHeight}px);
+        min-width: 121px;
+        min-height: 56px;
+        flex: auto;
 
         ${medium(css`
-          max-width: 146px;
+          min-width: 146px;
         `)}
 
         ${wide(css`
-          max-width: 198px;
+          min-width: 198px;
         `)}
       }
-      
+
       ${StyledStickyContent} {
-        flex-grow: 1;
-        flex-shrink: 1;
         font-weight: 700;
         line-height: 20px;
+        ${medium(css`
+          flex: none;
+          max-width: 500px;
+        `)}
       }
 
       ${medium(css`
-        height: 80px;
-        max-width: 516px;
-      `)}
-      
-      ${large(css`
-        max-width: 534px;
-      `)}
-      
-      ${wide(css`
-        height: 104px;
-        max-width: 552px;
+        max-width: 673px;
       `)}
     `}
 
@@ -135,33 +141,48 @@ const StyledWrapper = styled.div`
     `}
 `;
 
+const StyledStickyWrapper = styled.div`
+  ${props =>
+    props.isSticky &&
+    css`
+      display: table;
+      margin: auto;
+    `}
+`;
+
 export default class Player extends Component {
   styledWrapperRef = React.createRef();
+
+  styledStickyContentRef = React.createRef();
 
   state = {
     isPlaying: false,
     isPlayerSticky: false,
     isStickyPanelClosed: false,
     minWrapperHeight: null,
+    stickyContentHeight: null,
   };
 
   handleStickyOnScroll = debounce(() => {
     const { isStickyPanelClosed } = this.state;
     const wrapperElement = this.styledWrapperRef.current;
+    const stickyContent = this.styledStickyContentRef.current;
     const { top, bottom, height } = wrapperElement.getBoundingClientRect();
     const { clientHeight } = document.documentElement;
 
-    if (bottom <= 0 || top > clientHeight) {
+    if (bottom <= 100 || top > clientHeight) {
       if (!isStickyPanelClosed)
         this.setState({
           minWrapperHeight: height,
           isPlayerSticky: true,
+          stickyContentHeight: stickyContent?.offsetHeight,
         });
     } else {
       this.setState({
         isPlayerSticky: false,
         minWrapperHeight: null,
         isStickyPanelClosed: false,
+        stickyContentHeight: stickyContent?.offsetHeight,
       });
     }
   }, ONE_FRAME);
@@ -275,7 +296,7 @@ export default class Player extends Component {
 
   render() {
     const { scriptUrl, stickyContent, stickTo } = this.props;
-    const { isPlaying, isPlayerSticky, minWrapperHeight } = this.state;
+    const { isPlaying, isPlayerSticky, minWrapperHeight, stickyContentHeight } = this.state;
 
     const shouldStickPlayer = isPlayerSticky && isPlaying;
 
@@ -283,14 +304,16 @@ export default class Player extends Component {
       <StyledWrapper innerRef={this.styledWrapperRef} minHeight={minWrapperHeight}>
         <ScriptInjector isServer={false} src={scriptUrl} onLoad={this.initPlayer} />
         <StyledPlayerWrapper isSticky={shouldStickPlayer} stickTo={stickTo}>
-          <StyledPlayer isSticky={shouldStickPlayer} stickTo={stickTo}>
-            {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
-            <div id={playerId} onClick={this.handleStickyPlayerClick} />
-            <StyledStickyContent isVisible={shouldStickPlayer}>
-              {stickyContent}
-              <StyledCloseButton onClick={this.closeStickyPanel} />
-            </StyledStickyContent>
-          </StyledPlayer>
+          <StyledStickyWrapper isSticky={shouldStickPlayer}>
+            <StyledPlayer isSticky={shouldStickPlayer} stickTo={stickTo} stickyContentHeight={stickyContentHeight}>
+              {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+              <div id={playerId} onClick={this.handleStickyPlayerClick} />
+              <StyledStickyContent innerRef={this.styledStickyContentRef} isVisible={shouldStickPlayer}>
+                {stickyContent}
+              </StyledStickyContent>
+              <StyledCloseButton isVisible={shouldStickPlayer} onClick={this.closeStickyPanel} />
+            </StyledPlayer>
+          </StyledStickyWrapper>
         </StyledPlayerWrapper>
       </StyledWrapper>
     );

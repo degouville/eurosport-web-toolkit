@@ -23,17 +23,28 @@ exports[`components/<Player /> Player sticky mode matches snapshot 1`] = `
   >
     <Styled(div)
       isSticky={false}
-      stickTo="bottom"
     >
-      <div
-        id="eurosport-web-player"
-        onClick={[Function]}
-      />
       <Styled(div)
-        isVisible={false}
+        isSticky={false}
+        stickTo="bottom"
+        stickyContentHeight={null}
       >
-        sticky content
+        <div
+          id="eurosport-web-player"
+          onClick={[Function]}
+        />
+        <Styled(div)
+          innerRef={
+            Object {
+              "current": null,
+            }
+          }
+          isVisible={false}
+        >
+          sticky content
+        </Styled(div)>
         <Styled(Cross)
+          isVisible={false}
           onClick={[Function]}
           preserveAspectRatio="xMidYMid"
           viewBox="0 0 16 16"
