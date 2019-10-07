@@ -28,7 +28,6 @@ const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') =>
       const {
         state: { matches },
         props,
-        ...rest
       } = this;
 
       const newProps = {
@@ -36,7 +35,7 @@ const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') =>
         [injectedProp]: matches,
       };
 
-      return <Component {...newProps} {...rest} />;
+      return <Component {...newProps} />;
     }
   }
 

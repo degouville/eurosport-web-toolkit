@@ -10,6 +10,7 @@ import { martinique } from 'src/colors';
 import Button from 'src/elements/Button';
 import { H2 } from 'src/typography';
 import Login from '../Login';
+import withMatchMedia from '../../hocs/withMatchMedia';
 
 const Title = styled(H2)`
   color: ${({ theme }) => theme.marketingChecklist.title.color};
@@ -59,13 +60,10 @@ MarketingContent.propTypes = {
 };
 
 const DefaultModalWrapper = styled.div`
-  display: none;
   width: 100%;
-  ${breakpoints.small(css`
-    display: flex;
-    flex-direction: column;
-    margin: 37px 33px 40px;
-  `)};
+  display: flex;
+  flex-direction: column;
+  margin: 37px 33px 40px;
   ${breakpoints.medium(css`
     margin-top: 71px;
   `)};
@@ -134,14 +132,8 @@ export const SignInButton = styled(Button)`
 `;
 
 const MobileModalWrapper = styled.div`
-  display: block;
   margin: 20px;
-  ${breakpoints.small(css`
-    display: none;
-  `)}
 `;
-
-const MobileHeader = styled.div``;
 
 const StyledESPlayerLogo = styled(ESPlayerLogo)`
   margin: auto;
@@ -157,9 +149,9 @@ export const MobileModal = ({ marketingMessages, subscribeUrl, subscribeText, si
 
   return (
     <MobileModalWrapper>
-      <MobileHeader>
+      <div>
         <StyledESPlayerLogo />
-      </MobileHeader>
+      </div>
       {isLoginScreen ? (
         <Login subscribeText={subscribeText} subscribeUrl={subscribeUrl} signInText={signInText} {...loginProps} />
       ) : (
@@ -177,10 +169,18 @@ export const MobileModal = ({ marketingMessages, subscribeUrl, subscribeText, si
   );
 };
 
+const childRenderer = ({ breakpointMatched, children }) => (breakpointMatched ? children : null);
+const DesktopVersion = withMatchMedia(`(min-width: ${breakpoints.points.small}px)`)(childRenderer);
+const MobileVersion = withMatchMedia(`(max-width: ${breakpoints.points.small - 1}px)`)(childRenderer);
+
 const LoginWithMarketing = props => (
   <>
-    <DefaultModal {...props} />
-    <MobileModal {...props} />
+    <DesktopVersion>
+      <DefaultModal {...props} />
+    </DesktopVersion>
+    <MobileVersion>
+      <MobileModal {...props} />
+    </MobileVersion>
   </>
 );
 
