@@ -129,20 +129,5 @@
     "react-lines-ellipsis": "^0.14.1",
     "react-sizeme": "^2.6.7",
     "screenfull": "^4.2.1"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/testSetup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
-    }
   }
 }

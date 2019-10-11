@@ -1,5 +1,7 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import theme from 'src/theme';
 import LiveEventHero from '.';
 
 describe('Live Event Hero', () => {
@@ -10,7 +12,11 @@ describe('Live Event Hero', () => {
   });
 
   it('should render as expected', () => {
-    const wrapper = shallow(<LiveEventHero {...makeProps()} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <LiveEventHero {...makeProps()} />
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,76 +1,396 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlayerInfos renders its content 1`] = `
-<Styled(div)>
+.emotion-38 {
+  position: relative;
+  color: #FFFFFF;
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  padding: 60px 20px 55px;
+  margin-top: 55px;
+}
+
+.emotion-34 {
+  width: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.emotion-0 {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  -webkit-flex: 0 0 130px;
+  -ms-flex: 0 0 130px;
+  flex: 0 0 130px;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  overflow: hidden;
+  -webkit-transition: ease-out 0.15s all;
+  transition: ease-out 0.15s all;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+@media (min-width:700px) {
+  .emotion-0 {
+    height: 130px;
+    width: 130px;
+    margin: 0 0 30px;
+  }
+}
+
+.emotion-0 img {
+  width: 100%;
+}
+
+.emotion-24 {
+  -webkit-flex-basis: calc(100% - 130px);
+  -ms-flex-preferred-size: calc(100% - 130px);
+  flex-basis: calc(100% - 130px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.emotion-24:last-child {
+  text-align: center;
+  -webkit-flex-basis: 100px;
+  -ms-flex-preferred-size: 100px;
+  flex-basis: 100px;
+  position: relative;
+  top: -104px;
+  -webkit-transition: ease-out 0.15s top;
+  transition: ease-out 0.15s top;
+}
+
+@media (min-width:700px) {
+  .emotion-24:last-child {
+    top: 0;
+    margin-top: -80px;
+  }
+}
+
+.emotion-2 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 38px;
+  line-height: 42px;
+  word-break: break-word;
+  margin-bottom: 10px;
+  -webkit-transition: ease-out 0.15s font-size;
+  transition: ease-out 0.15s font-size;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    font-size: 48px;
+    line-height: 42px;
+  }
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
+  height: 16px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+.emotion-6 {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+.emotion-22 {
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: initial;
+  margin-top: 30px;
+  width: calc(100% + 100px);
+  -webkit-transition: ease-out 0.15s all;
+  transition: ease-out 0.15s all;
+}
+
+@media (min-width:700px) {
+  .emotion-22 {
+    margin-top: 45px;
+    width: 90%;
+  }
+}
+
+.emotion-12 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 32px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  text-align: center;
+  list-style: none;
+}
+
+.emotion-10 {
+  font-size: 12px;
+  color: #AFAFBB;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.emotion-30 {
+  padding-top: 120px;
+}
+
+@media (min-width:700px) {
+  .emotion-30 {
+    width: 130px;
+  }
+}
+
+.emotion-28 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 72px;
+  line-height: 60px;
+}
+
+.emotion-36 {
+  position: absolute;
+  background: #2D304A;
+  -webkit-clip-path: polygon(0 11%,101% 0%,101% 89%,0% 100%);
+  clip-path: polygon(0 11%,101% 0%,101% 89%,0% 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+<PlayerInfos
+  ageText="Age"
+  heightText="Height (m)"
+  player={
+    Object {
+      "age": "32",
+      "country": "Spain",
+      "firstName": "Rafael",
+      "flagUrl": "https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png",
+      "height": "1.85",
+      "lastName": "Nadal",
+      "organisation": "ATP",
+      "pictureUrl": "https://i.eurosport.com/_iss_/person/pp_clubteam/large/435121.jpg",
+      "ranking": "2",
+      "weight": "85",
+    }
+  }
+  rankingText="Ranking"
+  t={[Function]}
+  weightText="Weight (Kg)"
+>
   <Styled(div)>
-    <Styled(div)>
-      <img
-        alt="Rafael Nadal"
-        data-test="player-picture"
-        src="https://i.eurosport.com/_iss_/person/pp_clubteam/large/435121.jpg"
-      />
-    </Styled(div)>
-    <Styled(div)>
-      <Styled(div)
-        data-test="player-name"
-        textLength={6}
-      >
-        Rafael
-        <br />
-        Nadal
+    <div
+      className="emotion-38 emotion-39"
+    >
+      <Styled(div)>
+        <div
+          className="emotion-34 emotion-35"
+        >
+          <Styled(div)>
+            <div
+              className="emotion-0 emotion-1"
+            >
+              <img
+                alt="Rafael Nadal"
+                data-test="player-picture"
+                src="https://i.eurosport.com/_iss_/person/pp_clubteam/large/435121.jpg"
+              />
+            </div>
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="emotion-24 emotion-25"
+            >
+              <Styled(div)
+                data-test="player-name"
+                textLength={6}
+              >
+                <div
+                  className="emotion-2 emotion-3"
+                  data-test="player-name"
+                  textLength={6}
+                >
+                  Rafael
+                  <br />
+                  Nadal
+                </div>
+              </Styled(div)>
+              <Styled(div)>
+                <div
+                  className="emotion-8 emotion-9"
+                >
+                  <Styled(img)
+                    alt="Spain"
+                    data-test="flag-picture"
+                    src="https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png"
+                  >
+                    <img
+                      alt="Spain"
+                      className="emotion-4 emotion-5"
+                      data-test="flag-picture"
+                      src="https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png"
+                    />
+                  </Styled(img)>
+                  <Styled(span)
+                    data-test="player-country"
+                  >
+                    <span
+                      className="emotion-6 emotion-7"
+                      data-test="player-country"
+                    >
+                      Spain
+                    </span>
+                  </Styled(span)>
+                </div>
+              </Styled(div)>
+              <Styled(ul)>
+                <ul
+                  className="emotion-22 emotion-23"
+                >
+                  <Styled(li)
+                    data-test="player-height"
+                  >
+                    <li
+                      className="emotion-12 emotion-13"
+                      data-test="player-height"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-10 emotion-11"
+                        >
+                          Height (m)
+                        </div>
+                      </Styled(div)>
+                      1.85
+                    </li>
+                  </Styled(li)>
+                  <Styled(li)
+                    data-test="player-weight"
+                  >
+                    <li
+                      className="emotion-12 emotion-13"
+                      data-test="player-weight"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-10 emotion-11"
+                        >
+                          Weight (Kg)
+                        </div>
+                      </Styled(div)>
+                      85
+                    </li>
+                  </Styled(li)>
+                  <Styled(li)
+                    data-test="player-age"
+                  >
+                    <li
+                      className="emotion-12 emotion-13"
+                      data-test="player-age"
+                    >
+                      <Styled(div)>
+                        <div
+                          className="emotion-10 emotion-11"
+                        >
+                          Age
+                        </div>
+                      </Styled(div)>
+                      32
+                    </li>
+                  </Styled(li)>
+                </ul>
+              </Styled(ul)>
+            </div>
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="emotion-24 emotion-25"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-30 emotion-31"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-10 emotion-11"
+                    >
+                      Ranking
+                    </div>
+                  </Styled(div)>
+                  <Styled(span)
+                    data-test="player-ranking"
+                  >
+                    <span
+                      className="emotion-28 emotion-29"
+                      data-test="player-ranking"
+                    >
+                      2
+                    </span>
+                  </Styled(span)>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </div>
       </Styled(div)>
       <Styled(div)>
-        <Styled(img)
-          alt="Spain"
-          data-test="flag-picture"
-          src="https://i.eurosport.com/_iss_/geo/country/flag/medium/2203.png"
+        <div
+          className="emotion-36 emotion-37"
         />
-        <Styled(span)
-          data-test="player-country"
-        >
-          Spain
-        </Styled(span)>
       </Styled(div)>
-      <Styled(ul)>
-        <Styled(li)
-          data-test="player-height"
-        >
-          <Styled(div)>
-            Height (m)
-          </Styled(div)>
-          1.85
-        </Styled(li)>
-        <Styled(li)
-          data-test="player-weight"
-        >
-          <Styled(div)>
-            Weight (Kg)
-          </Styled(div)>
-          85
-        </Styled(li)>
-        <Styled(li)
-          data-test="player-age"
-        >
-          <Styled(div)>
-            Age
-          </Styled(div)>
-          32
-        </Styled(li)>
-      </Styled(ul)>
-    </Styled(div)>
-    <Styled(div)>
-      <Styled(div)>
-        <Styled(div)>
-          Ranking
-        </Styled(div)>
-        <Styled(span)
-          data-test="player-ranking"
-        >
-          2
-        </Styled(span)>
-      </Styled(div)>
-    </Styled(div)>
+    </div>
   </Styled(div)>
-  <Styled(div) />
-</Styled(div)>
+</PlayerInfos>
 `;

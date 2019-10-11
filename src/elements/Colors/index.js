@@ -7,12 +7,9 @@ import * as breakpoints from '../../breakpoints';
 // eslint-disable-next-line react/prop-types
 const renderColor = ({ option, ...color }) => {
   const [[name, hex]] = Object.entries(color);
-  const isLegacy = name.includes('_');
 
-  // TODO: Remove '❌' after QA
   return (
     <StyledColor hex={hex} option={option} key={name}>
-      {isLegacy && '❌'}
       {upperFirst(name)} <StyledHex>{hex}</StyledHex>
     </StyledColor>
   );

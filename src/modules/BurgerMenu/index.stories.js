@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { object, boolean, number } from '@storybook/addon-knobs';
 import { BurgerMenu } from '../..';
-import menuMocks from './mocks/feed-menu';
+import menuMocks from './mocks/feed-menu.mock';
 
 const story = storiesOf('Modules|BurgerMenu', module);
 

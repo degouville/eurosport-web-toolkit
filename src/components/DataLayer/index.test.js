@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, mount, shallow } from 'enzyme';
 import DataLayer from '.';
-import dataLayerMock from './mocks/dataLayerMock';
+import dataLayerMock from './mocks/dataLayer.mock';
 
 describe('<DataLayer />', () => {
   it('renders with expected snapshot', () => {

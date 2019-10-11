@@ -19,4 +19,10 @@ describe('<Quantcast />', () => {
     const cmp = window.__cmp;
     expect(cmp).toBeDefined();
   });
+
+  it('returns null if cmpConf is not set', () => {
+    mount(<script />, { attachTo: document.head });
+    const wrapper = mount(<Quantcast scriptUrl="'https://quantcast.mgr.consensu.org/cmp.js'" cmpConf={null} />);
+    expect(wrapper.exists()).toBe(true);
+  });
 });

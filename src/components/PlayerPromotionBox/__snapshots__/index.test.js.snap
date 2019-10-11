@@ -1,39 +1,524 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlayerPromotionBox renders its content 1`] = `
-<Styled(div)
-  pictureUrl="https://www.eurosport.fr/watch-eurosport-react/static/media/features-summary-1024.fe17bcd2.jpg"
+.emotion-23 {
+  position: relative;
+  background: url(https://www.eurosport.fr/watch-eurosport-react/static/media/features-summary-1024.fe17bcd2.jpg) #060825 top right;
+  background-size: cover;
+  color: #FFFFFF;
+  padding: 40px 20px 45px;
+}
+
+@media (min-width:700px) {
+  .emotion-23 {
+    padding: 54px 34px 86px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-23 {
+    padding: 34px;
+  }
+}
+
+.emotion-23:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(270deg,rgba(14,20,61,0) 0%,#0E143D 100%);
+  z-index: 0;
+}
+
+.emotion-21 {
+  max-width: 213px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width:1024px) {
+  .emotion-21 {
+    max-width: 70%;
+  }
+}
+
+.emotion-0 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 30px;
+  color: #F8F8F9;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.emotion-8 {
+  margin-bottom: 20px;
+}
+
+.emotion-2 {
+  background: url(/eurosport-web-toolkit/695670d208041efef022e15df6e34055.svg) no-repeat;
+  line-height: 19px;
+  background-size: 24px 19px;
+  padding-left: 35px;
+  margin-bottom: 23px;
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 14px;
+}
+
+.emotion-17 {
+  background-color: #D50032;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  display: inline-block;
+  font-size: 11px;
+  width: 213px;
+}
+
+.emotion-17:focus,
+.emotion-17:visited,
+.emotion-17:hover {
+  color: #FFFFFF;
+}
+
+.emotion-17:after {
+  margin-left: 11px;
+}
+
+.emotion-17:hover {
+  background-color: #ff3c6a;
+}
+
+.emotion-15 {
+  color: #66CEF9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1.27px;
+  -moz-letter-spacing: 1.27px;
+  -ms-letter-spacing: 1.27px;
+  letter-spacing: 1.27px;
+  line-height: 24px;
+  white-space: nowrap;
+  background-color: #D50032;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 18px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  display: inline-block;
+  font-size: 11px;
+  width: 213px;
+}
+
+.emotion-15:focus,
+.emotion-15:visited,
+.emotion-15:hover {
+  color: #66CEF9;
+}
+
+.emotion-15:focus,
+.emotion-15:visited,
+.emotion-15:hover {
+  color: #FFFFFF;
+}
+
+.emotion-15:after {
+  margin-left: 11px;
+}
+
+.emotion-15:hover {
+  background-color: #ff3c6a;
+}
+
+.emotion-10 {
+  margin-left: 6px;
+}
+
+.emotion-10 path {
+  fill: currentColor;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#FF0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#F8F8F9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#FFFFFF",
+        },
+        "primary": Object {
+          "backgroundColor": "#D50032",
+          "color": "#FFFFFF",
+        },
+        "secondary": Object {
+          "color": "#66CEF9",
+        },
+        "secondaryForm": Object {
+          "backgroundColor": "#2D304A",
+          "color": "#FFFFFF",
+        },
+      },
+      "dropdown": Object {
+        "background": "#151726",
+        "border": "rgba(109,109,120,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "label": Object {
+          "color": "#FFFFFF",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#C6C7CE",
+          },
+          "selected": Object {
+            "color": "#FFFFFF",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050F",
+        "border": "#41435B",
+        "borderFocused": "#9798A6",
+        "placeholder": Object {
+          "color": "#9798A6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66CEF9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#F8F8F9",
+          "secondary": "#41435B",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "loginWithMarketing": Object {
+        "mobileBackground": "#060825",
+      },
+      "marketingChecklist": Object {
+        "check": Object {
+          "color": "#FFFFFF",
+        },
+        "subtitle": Object {
+          "color": "#B9BBCA",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "playerControls": Object {
+        "bar": Object {
+          "backgroundColor": "rgba(21,23,38,0.6)",
+        },
+        "dropdown": Object {
+          "background": "rgba(21,23,38,0.9)",
+          "border": "rgba(109,109,120,0.8)",
+        },
+        "liveIcon": Object {
+          "backgroundColor": "#CC0036",
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "seek": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": false,
+        },
+        "separator": "rgba(151,152,166,0.5)",
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "volume": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": true,
+        },
+      },
+      "scrollbar": Object {
+        "background": "#3D4248",
+        "color": "#4A7EFF",
+      },
+      "shareIcons": Object {
+        "background": "#FFFFFF",
+        "color": "#55586D",
+      },
+      "statistics": Object {
+        "background": Object {
+          "one": "#22263C",
+          "two": "#2D304A",
+        },
+        "comparison": Object {
+          "background": "rgba(255,255,255,0.1)",
+          "colorOne": "#66CEF9",
+          "colorTwo": "#4652FF",
+        },
+        "fringe": "rgba(255,255,255,0.05)",
+      },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66CEF9",
+          "color": "#FFFFFF",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798A6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#C6C7CE",
+      },
+      "videoPlayerModal": Object {
+        "closeIcon": Object {
+          "fill": "#FFFFFF",
+        },
+      },
+    }
+  }
 >
-  <Styled(div)>
-    <Styled(h2)>
-      Watch Eurosport
-    </Styled(h2)>
-    <Styled(ul)
-      data-test="promotion-list"
+  <PlayerPromotionBox
+    linkButton="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
+    pictureUrl="https://www.eurosport.fr/watch-eurosport-react/static/media/features-summary-1024.fe17bcd2.jpg"
+    textButton="Find out more"
+    texts={
+      Array [
+        "Watch your favourite sports live and on demand",
+        "Stream to your device at home and on the go",
+        "Grand Slam tennis, cycling, motorsports and much more",
+      ]
+    }
+    title="Watch Eurosport"
+  >
+    <Styled(div)
+      pictureUrl="https://www.eurosport.fr/watch-eurosport-react/static/media/features-summary-1024.fe17bcd2.jpg"
     >
-      <Styled(li)
-        key="0"
+      <div
+        className="emotion-23 emotion-24"
       >
-        Watch your favourite sports live and on demand
-      </Styled(li)>
-      <Styled(li)
-        key="1"
-      >
-        Stream to your device at home and on the go
-      </Styled(li)>
-      <Styled(li)
-        key="2"
-      >
-        Grand Slam tennis, cycling, motorsports and much more
-      </Styled(li)>
-    </Styled(ul)>
-    <Styled(ArrowLink)
-      data-test="promotion-link"
-      href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
-      type="primary"
-    >
-      Find out more
-    </Styled(ArrowLink)>
-  </Styled(div)>
-</Styled(div)>
+        <Styled(div)>
+          <div
+            className="emotion-21 emotion-22"
+          >
+            <Styled(h2)>
+              <h2
+                className="emotion-0 emotion-1"
+              >
+                Watch Eurosport
+              </h2>
+            </Styled(h2)>
+            <Styled(ul)
+              data-test="promotion-list"
+            >
+              <ul
+                className="emotion-8 emotion-9"
+                data-test="promotion-list"
+              >
+                <Styled(li)
+                  key="0"
+                >
+                  <li
+                    className="emotion-2 emotion-3"
+                  >
+                    Watch your favourite sports live and on demand
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  key="1"
+                >
+                  <li
+                    className="emotion-2 emotion-3"
+                  >
+                    Stream to your device at home and on the go
+                  </li>
+                </Styled(li)>
+                <Styled(li)
+                  key="2"
+                >
+                  <li
+                    className="emotion-2 emotion-3"
+                  >
+                    Grand Slam tennis, cycling, motorsports and much more
+                  </li>
+                </Styled(li)>
+              </ul>
+            </Styled(ul)>
+            <Styled(ArrowLink)
+              data-test="promotion-link"
+              href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
+              type="primary"
+            >
+              <ArrowLink
+                arrowType="chevron"
+                className="emotion-17 emotion-14"
+                data-test="promotion-link"
+                href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
+                type="primary"
+              >
+                <Styled(a)
+                  className="emotion-17 emotion-14"
+                  data-test="promotion-link"
+                  href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
+                  type="primary"
+                >
+                  <a
+                    className="emotion-14 emotion-15 emotion-16"
+                    data-test="promotion-link"
+                    href="https://www.eurosport.fr/regardez-eurosport-en-direct.shtml?int_campaign=player-france-prospect-allsports-undefined&int_content=home-toolbar-button-watch"
+                    type="primary"
+                  >
+                    Find out more
+                    <Styled(Chevron)
+                      height="9"
+                      viewBox="0 0 6 9"
+                      width="6"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <Chevron
+                        className="emotion-10 emotion-11"
+                        height="9"
+                        viewBox="0 0 6 9"
+                        width="6"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <svg
+                          className="emotion-10 emotion-11"
+                          height="9"
+                          viewBox="0 0 6 9"
+                          width="6"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.15 0L0 1.06 3.71 4.5 0 7.94 1.15 9 6 4.5z"
+                          />
+                        </svg>
+                      </Chevron>
+                    </Styled(Chevron)>
+                  </a>
+                </Styled(a)>
+              </ArrowLink>
+            </Styled(ArrowLink)>
+          </div>
+        </Styled(div)>
+      </div>
+    </Styled(div)>
+  </PlayerPromotionBox>
+</ThemeProvider>
 `;

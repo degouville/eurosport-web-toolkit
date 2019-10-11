@@ -171,11 +171,60 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
 `;
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rewindCounts 1`] = `
-<Styled(div)>
-  <Styled(p)
-    length={8}
-  >
-    -1.23.23
-  </Styled(p)>
-</Styled(div)>
+.emotion-2 {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-0 {
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 13px;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  width: 8ch;
+  line-height: 16px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+<LiveStatus
+  isLive={false}
+  rewindCounts="-1.23.23"
+>
+  <Styled(div)>
+    <div
+      className="emotion-2 emotion-3"
+    >
+      <Styled(p)
+        length={8}
+      >
+        <p
+          className="emotion-0 emotion-1"
+        >
+          -1.23.23
+        </p>
+      </Styled(p)>
+    </div>
+  </Styled(div)>
+</LiveStatus>
 `;

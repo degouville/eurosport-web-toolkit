@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Player, { playerId, StyledCloseButton, StyledPlayerWrapper, StyledStickyContent } from '.';
 import ScriptInjector from '../ScriptInjector';
 
@@ -221,16 +221,32 @@ describe('components/<Player />', () => {
     });
 
     it('matches snapshot', () => {
-      const wrapper = shallow(
-        <Player {...initialProps} stickyContent="sticky content" onStickyPlayerClick={() => '123'} />
+      const wrapper = mount(
+        <Player
+          {...initialProps}
+          stickyContent="sticky content"
+          onStickyPlayerClick={() => '123'}
+          isSticky
+          minHeight={500}
+        />
       );
-      expect(wrapper).toMatchSnapshot();
+      expect(wrapper.find(Player)).toMatchSnapshot();
     });
 
     it('sets up listeners on mount if stickyContnent provided', () => {
       const wrapper = shallow(<Player {...initialProps} stickyContent="sticky content" />);
       const fn = jest.spyOn(window, 'addEventListener');
       wrapper.instance().componentDidMount();
+      expect(fn).toHaveBeenCalledTimes(2);
+      expect(fn).toHaveBeenCalledWith('scroll', wrapper.instance().handleStickyOnScroll);
+      expect(fn).toHaveBeenCalledWith('resize', wrapper.instance().handleStickyOnScroll);
+      jest.resetAllMocks();
+    });
+
+    it('remove listeners on unmount', () => {
+      const wrapper = shallow(<Player {...initialProps} stickyContent="sticky content" />);
+      const fn = jest.spyOn(window, 'removeEventListener');
+      wrapper.instance().componentWillUnmount();
       expect(fn).toHaveBeenCalledTimes(2);
       expect(fn).toHaveBeenCalledWith('scroll', wrapper.instance().handleStickyOnScroll);
       expect(fn).toHaveBeenCalledWith('resize', wrapper.instance().handleStickyOnScroll);

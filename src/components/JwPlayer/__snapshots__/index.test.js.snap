@@ -1,57 +1,334 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/<Player /> Player sticky mode matches snapshot 1`] = `
-<Styled(div)
-  innerRef={
-    Object {
-      "current": null,
-    }
+.emotion-10 {
+  will-change: transform;
+}
+
+@-webkit-keyframes slide-from-bottom {
+  from {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
   }
-  minHeight={null}
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-bottom {
+  from {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-from-top {
+  from {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-top {
+  from {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.emotion-0 {
+  visibility: hidden;
+}
+
+.emotion-0 .e1uethu97 {
+  margin: 5px 0 5px 6px;
+}
+
+.emotion-2 {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.emotion-2 path {
+  fill: black;
+}
+
+<Player
+  configurationUrl=""
+  entityId="E1FR"
+  isSticky={true}
+  minHeight={500}
+  onAdBreakComplete={[Function]}
+  onAdBreakStart={[Function]}
+  onAdComplete={[Function]}
+  onAdStart={[Function]}
+  onAdTime={[Function]}
+  onError={[Function]}
+  onLoginReady={[Function]}
+  onModalClosed={[Function]}
+  onPause={[Function]}
+  onPlay={[Function]}
+  onReady={[Function]}
+  onStickyPlayerClick={[Function]}
+  scriptUrl="player-script"
+  stickTo="bottom"
+  stickyContent="sticky content"
+  streamType="channel_live"
+  title="lorem ipsum"
 >
-  <ScriptInjector
-    async={false}
-    injectPlace="head"
-    innerHTML=""
-    isServer={false}
-    onLoad={[Function]}
-    src="player-script"
-  />
   <Styled(div)
-    isSticky={false}
-    stickTo="bottom"
+    innerRef={
+      Object {
+        "current": .emotion-8 {
+  will-change: transform;
+}
+
+@-webkit-keyframes slide-from-bottom {
+  from {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-bottom {
+  from {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-from-top {
+  from {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-top {
+  from {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.emotion-0 {
+  visibility: hidden;
+}
+
+.emotion-0 .e1uethu97 {
+  margin: 5px 0 5px 6px;
+}
+
+.emotion-2 {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.emotion-2 path {
+  fill: black;
+}
+
+<div
+          class="emotion-6 emotion-11"
+        >
+          <div
+            class="emotion-8 emotion-9"
+          >
+            <div
+              class="emotion-6 emotion-7"
+            >
+              <div
+                class="emotion-4 emotion-5"
+              >
+                <div
+                  id="eurosport-web-player"
+                />
+                <div
+                  class="emotion-0 emotion-1"
+                >
+                  sticky content
+                </div>
+                <svg
+                  class="emotion-2 emotion-3"
+                  preserveAspectRatio="xMidYMid"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.988 14.522l-1.466 1.466L8 9.466l-6.522 6.522-1.466-1.466L6.534 8 .012 1.478 1.478.012 8 6.534 14.522.012l1.466 1.466L9.466 8l6.522 6.522z"
+                    fill="#a9a9a9"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>,
+      }
+    }
+    minHeight={null}
   >
-    <Styled(div)
-      isSticky={false}
+    <div
+      className="emotion-8 emotion-13"
     >
+      <ScriptInjector
+        async={false}
+        injectPlace="head"
+        innerHTML=""
+        isServer={false}
+        onLoad={[Function]}
+        src="player-script"
+      />
       <Styled(div)
         isSticky={false}
         stickTo="bottom"
-        stickyContentHeight={null}
       >
         <div
-          id="eurosport-web-player"
-          onClick={[Function]}
-        />
-        <Styled(div)
-          innerRef={
-            Object {
-              "current": null,
-            }
-          }
-          isVisible={false}
+          className="emotion-10 emotion-11"
         >
-          sticky content
-        </Styled(div)>
-        <Styled(Cross)
-          isVisible={false}
-          onClick={[Function]}
-          preserveAspectRatio="xMidYMid"
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
-        />
+          <Styled(div)
+            isSticky={false}
+          >
+            <div
+              className="emotion-8 emotion-9"
+            >
+              <Styled(div)
+                isSticky={false}
+                stickTo="bottom"
+                stickyContentHeight={null}
+              >
+                <div
+                  className="emotion-6 emotion-7"
+                >
+                  <div
+                    id="eurosport-web-player"
+                    onClick={[Function]}
+                  />
+                  <Styled(div)
+                    innerRef={
+                      Object {
+                        "current": <div
+                          class="emotion-0 emotion-1"
+                        >
+                          sticky content
+                        </div>,
+                      }
+                    }
+                    isVisible={false}
+                  >
+                    <div
+                      className="emotion-0 emotion-1"
+                    >
+                      sticky content
+                    </div>
+                  </Styled(div)>
+                  <Styled(Cross)
+                    isVisible={false}
+                    onClick={[Function]}
+                    preserveAspectRatio="xMidYMid"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <Cross
+                      className="emotion-2 emotion-3"
+                      isVisible={false}
+                      onClick={[Function]}
+                      preserveAspectRatio="xMidYMid"
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <svg
+                        className="emotion-2 emotion-3"
+                        isVisible={false}
+                        onClick={[Function]}
+                        preserveAspectRatio="xMidYMid"
+                        viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.988 14.522l-1.466 1.466L8 9.466l-6.522 6.522-1.466-1.466L6.534 8 .012 1.478 1.478.012 8 6.534 14.522.012l1.466 1.466L9.466 8l6.522 6.522z"
+                          fill="#a9a9a9"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </Cross>
+                  </Styled(Cross)>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </div>
       </Styled(div)>
-    </Styled(div)>
+    </div>
   </Styled(div)>
-</Styled(div)>
+</Player>
 `;

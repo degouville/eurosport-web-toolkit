@@ -4,7 +4,7 @@ import { text, object } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import { Header } from '../..';
 
-import menu from '../BurgerMenu/mocks/feed-menu';
+import menu from '../BurgerMenu/mocks/feed-menu.mock';
 
 const cta = { link: 'www.eurosport.fr', label: 'subscribe' };
 const breadcrumbs = [

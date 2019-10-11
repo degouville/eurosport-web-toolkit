@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, shallow } from 'enzyme';
 import BurgerMenuWithMedia, { BurgerMenu } from './index';
-import menu from './mocks/feed-menu';
+import menu from './mocks/feed-menu.mock';
 
 describe('<BurgerMenu />', () => {
   it('renders with expected snapshot on mobile 1', () => {

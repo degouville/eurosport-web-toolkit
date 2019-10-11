@@ -13,7 +13,7 @@ const StyledItem = styled.li`
   line-height: 50px;
 `;
 
-const StyledItemLink = styled.a`
+export const StyledItemLink = styled.a`
   color: ${mako};
   font-weight: bold;
   text-decoration: none;

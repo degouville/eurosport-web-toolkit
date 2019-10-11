@@ -1,50 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Live Event Hero should render as expected 1`] = `
-.emotion-4 {
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
+exports[`Separators HorizontalSeparator 1`] = `
 .emotion-0 {
-  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: antialiased;
-  font-size: 32px;
-  line-height: 40px;
-}
-
-@media (min-width:700px) {
-  .emotion-0 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-}
-
-@media (min-width:1024px) {
-  .emotion-0 {
-    font-size: 48px;
-    line-height: 56px;
-  }
-}
-
-.emotion-2 {
-  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: antialiased;
-  font-size: 24px;
-  line-height: 32px;
-  margin-top: 20px;
-  text-transform: uppercase;
-}
-
-@media (min-width:1024px) {
-  .emotion-2 {
-    font-size: 28px;
-    line-height: 36px;
-  }
+  height: 1px;
+  width: 100%;
+  background-color: rgba(151,152,166,0.5);
 }
 
 <ThemeProvider
@@ -257,30 +217,235 @@ exports[`Live Event Hero should render as expected 1`] = `
     }
   }
 >
-  <LiveEventHero
-    subtitle="3RD ROUND"
-    title="ROLAND GARROS"
-  >
-    <Styled(div)>
-      <div
-        className="emotion-4 emotion-5"
-      >
-        <Styled(h1)>
-          <h1
-            className="emotion-0 emotion-1"
-          >
-            ROLAND GARROS
-          </h1>
-        </Styled(h1)>
-        <Styled(h3)>
-          <h3
-            className="emotion-2 emotion-3"
-          >
-            3RD ROUND
-          </h3>
-        </Styled(h3)>
-      </div>
-    </Styled(div)>
-  </LiveEventHero>
+  <Styled(div)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </Styled(div)>
+</ThemeProvider>
+`;
+
+exports[`Separators VerticalSeparator 1`] = `
+.emotion-0 {
+  height: 100%;
+  width: 1px;
+  background-color: rgba(151,152,166,0.5);
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#FF0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#F8F8F9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#FFFFFF",
+        },
+        "primary": Object {
+          "backgroundColor": "#D50032",
+          "color": "#FFFFFF",
+        },
+        "secondary": Object {
+          "color": "#66CEF9",
+        },
+        "secondaryForm": Object {
+          "backgroundColor": "#2D304A",
+          "color": "#FFFFFF",
+        },
+      },
+      "dropdown": Object {
+        "background": "#151726",
+        "border": "rgba(109,109,120,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "label": Object {
+          "color": "#FFFFFF",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#C6C7CE",
+          },
+          "selected": Object {
+            "color": "#FFFFFF",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050F",
+        "border": "#41435B",
+        "borderFocused": "#9798A6",
+        "placeholder": Object {
+          "color": "#9798A6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66CEF9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#F8F8F9",
+          "secondary": "#41435B",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "loginWithMarketing": Object {
+        "mobileBackground": "#060825",
+      },
+      "marketingChecklist": Object {
+        "check": Object {
+          "color": "#FFFFFF",
+        },
+        "subtitle": Object {
+          "color": "#B9BBCA",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "playerControls": Object {
+        "bar": Object {
+          "backgroundColor": "rgba(21,23,38,0.6)",
+        },
+        "dropdown": Object {
+          "background": "rgba(21,23,38,0.9)",
+          "border": "rgba(109,109,120,0.8)",
+        },
+        "liveIcon": Object {
+          "backgroundColor": "#CC0036",
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "seek": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": false,
+        },
+        "separator": "rgba(151,152,166,0.5)",
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "volume": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": true,
+        },
+      },
+      "scrollbar": Object {
+        "background": "#3D4248",
+        "color": "#4A7EFF",
+      },
+      "shareIcons": Object {
+        "background": "#FFFFFF",
+        "color": "#55586D",
+      },
+      "statistics": Object {
+        "background": Object {
+          "one": "#22263C",
+          "two": "#2D304A",
+        },
+        "comparison": Object {
+          "background": "rgba(255,255,255,0.1)",
+          "colorOne": "#66CEF9",
+          "colorTwo": "#4652FF",
+        },
+        "fringe": "rgba(255,255,255,0.05)",
+      },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66CEF9",
+          "color": "#FFFFFF",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798A6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#C6C7CE",
+      },
+      "videoPlayerModal": Object {
+        "closeIcon": Object {
+          "fill": "#FFFFFF",
+        },
+      },
+    }
+  }
+>
+  <Styled(div)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </Styled(div)>
 </ThemeProvider>
 `;

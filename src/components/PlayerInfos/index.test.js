@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { PlayerInfos } from '.';
 
 const player = {
@@ -18,7 +18,7 @@ const player = {
 describe('PlayerInfos', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<PlayerInfos player={player} t={key => key} />);
+    wrapper = mount(<PlayerInfos player={player} t={key => key} />);
   });
 
   it('renders its content', () => {
@@ -30,6 +30,8 @@ describe('PlayerInfos', () => {
   });
 
   it('renders the players infos with a flag pictures URL', () => {
-    expect(wrapper.find('[data-test="flag-picture"]').prop('src')).toEqual(player.flagUrl);
+    expect(
+      wrapper.find('[data-test="flag-picture"]').filterWhere(item => item.prop('src') === player.flagUrl)
+    ).toHaveLength(2);
   });
 });

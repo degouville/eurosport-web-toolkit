@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { ThemeProvider } from 'emotion-theming';
-import theme from '../../theme';
+import theme from 'src/theme';
 import RoundTable from './RoundTable';
 import RoundTableMobile from './RoundTableMobile';
 import { matches, rounds, doubleMatches } from './mock/data';
@@ -107,9 +107,17 @@ describe('RoundTable', () => {
   };
 
   it('should render as expected', () => {
-    const wrapper = shallow(<RoundTable rounds={rounds} matches={matches} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <RoundTable rounds={rounds} matches={matches} />
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
-    const wrapperDouble = shallow(<RoundTable rounds={rounds} matches={doubleMatches} />);
+    const wrapperDouble = mount(
+      <ThemeProvider theme={theme}>
+        <RoundTable rounds={rounds} matches={doubleMatches} />
+      </ThemeProvider>
+    );
     expect(wrapperDouble).toMatchSnapshot();
   });
 

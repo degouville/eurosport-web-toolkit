@@ -1,5 +1,7 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import theme from 'src/theme';
 import PlayerButtons, { SpinnerStyled } from './index';
 
 describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
@@ -16,7 +18,11 @@ describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
   it('Should match snapshot when isPlaying is true', () => {
     // Given
     const props = createDefaultProps({ isPlaying: true });
-    const wrapper = shallow(<PlayerButtons {...props} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <PlayerButtons {...props} />
+      </ThemeProvider>
+    );
 
     // Expect
     expect(wrapper).toMatchSnapshot();
@@ -25,7 +31,11 @@ describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
   it('Should match snapshot when isPlaying is false', () => {
     // Given
     const props = createDefaultProps({ isPlaying: false });
-    const wrapper = shallow(<PlayerButtons {...props} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <PlayerButtons {...props} />
+      </ThemeProvider>
+    );
 
     // Expect
     expect(wrapper).toMatchSnapshot();

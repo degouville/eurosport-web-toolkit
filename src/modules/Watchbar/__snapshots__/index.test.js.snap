@@ -1,201 +1,4133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`do not renders Watchbar without cards 1`] = `""`;
+exports[`do not renders Watchbar without cards 1`] = `
+<WatchBar
+  cards={Array []}
+  title="Live on Eurosport"
+/>
+`;
 
 exports[`renders a WatchBar 1`] = `
-<div>
-  <Carousel
-    absoluteNavigation={false}
-    alignCenter={false}
-    flex={false}
-    magneticMax={0.8}
-    magneticMin={0.2}
-    minWidthArrowDisplaying={900}
-    offsetLeft="0"
-    slideMargin={8}
-    withArrow={true}
-  >
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={0}
-    />
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={1}
-    />
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={2}
-    />
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={3}
-    />
-  </Carousel>
-</div>
+.emotion-152 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.emotion-150 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-148 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-35 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-35:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-35:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-29 {
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #141B4D;
+  white-space: normal;
+  width: 288px;
+  height: 76px;
+}
+
+@media (min-width:900px) {
+  .emotion-29 {
+    width: 335px;
+    height: 88px;
+  }
+}
+
+.emotion-29:hover .emotion-22:before {
+  opacity: 0.1;
+}
+
+.emotion-29:hover .emotion-13 {
+  border-color: #FFFFFF;
+}
+
+.emotion-21 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 0 0 139px;
+  -ms-flex: 0 0 139px;
+  flex: 0 0 139px;
+}
+
+@media (min-width:900px) {
+  .emotion-21 {
+    -webkit-flex: 0 0 159px;
+    -ms-flex: 0 0 159px;
+    flex: 0 0 159px;
+  }
+}
+
+.emotion-21:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  background: radial-gradient(circle,transparent,#060825 100%);
+  opacity: 0.5;
+}
+
+.emotion-0 {
+  background-image: url(https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640);
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+}
+
+.emotion-8 {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.emotion-8:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  background: hsla(100%,100%,0%,1);
+}
+
+.emotion-8 path {
+  fill: white;
+}
+
+.emotion-3 {
+  height: 15px;
+  width: 21.299999999999997px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.emotion-3:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  background: hsla(100%,100%,0%,1);
+}
+
+.emotion-3 path {
+  fill: white;
+}
+
+.emotion-17 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.emotion-15 {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  padding: 7.2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(6,8,37,0.2);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.emotion-15:hover .emotion-13 {
+  border-color: #FFFFFF;
+}
+
+.emotion-12 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.emotion-27 {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  line-height: 1.3;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #D50032;
+  font-size: 13px;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-23 {
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #F8F8F9;
+  margin: 0 0 10px;
+}
+
+.emotion-25 {
+  box-sizing: border-box;
+  color: rgba(251,251,255,0.8);
+  font-size: 11px;
+  border-top: 1px solid rgba(242,243,245,0.4);
+  padding-top: 8px;
+}
+
+<WatchBar
+  cards={
+    Array [
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+    ]
+  }
+  title={null}
+>
+  <div>
+    <Carousel
+      absoluteNavigation={false}
+      alignCenter={false}
+      flex={false}
+      magneticMax={0.8}
+      magneticMin={0.2}
+      minWidthArrowDisplaying={900}
+      offsetLeft="0"
+      slideMargin={8}
+      withArrow={true}
+    >
+      <Styled(div)
+        data-test="carousel"
+        slides={Array []}
+      >
+        <div
+          className="emotion-152 emotion-153"
+          data-test="carousel"
+        >
+          <Styled(div)
+            innerRef={
+              Object {
+                "current": .emotion-90 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-88 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-20 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-20:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-20:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-18 {
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #141B4D;
+  white-space: normal;
+  width: 288px;
+  height: 76px;
+}
+
+@media (min-width:900px) {
+  .emotion-18 {
+    width: 335px;
+    height: 88px;
+  }
+}
+
+.emotion-18:hover .emotion-11:before {
+  opacity: 0.1;
+}
+
+.emotion-18:hover .emotion-6 {
+  border-color: #FFFFFF;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 0 0 139px;
+  -ms-flex: 0 0 139px;
+  flex: 0 0 139px;
+}
+
+@media (min-width:900px) {
+  .emotion-10 {
+    -webkit-flex: 0 0 159px;
+    -ms-flex: 0 0 159px;
+    flex: 0 0 159px;
+  }
+}
+
+.emotion-10:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  background: radial-gradient(circle,transparent,#060825 100%);
+  opacity: 0.5;
+}
+
+.emotion-0 {
+  background-image: url(https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640);
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+}
+
+.emotion-3 {
+  height: 15px;
+  width: 21.299999999999997px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.emotion-3:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  background: hsla(100%,100%,0%,1);
+}
+
+.emotion-3 path {
+  fill: white;
+}
+
+.emotion-8 {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  padding: 7.2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(6,8,37,0.2);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.emotion-8:hover .emotion-6 {
+  border-color: #FFFFFF;
+}
+
+.emotion-5 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.emotion-16 {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  line-height: 1.3;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #D50032;
+  font-size: 13px;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-12 {
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #F8F8F9;
+  margin: 0 0 10px;
+}
+
+.emotion-14 {
+  box-sizing: border-box;
+  color: rgba(251,251,255,0.8);
+  font-size: 11px;
+  border-top: 1px solid rgba(242,243,245,0.4);
+  padding-top: 8px;
+}
+
+<div
+                  class="emotion-90 emotion-91"
+                >
+                  <div
+                    class="emotion-88 emotion-89"
+                    data-test="carousel-slider"
+                  >
+                    <div
+                      class="emotion-20 emotion-21"
+                      data-test="carousel-item-0"
+                    >
+                      <a
+                        class="emotion-18 emotion-19"
+                        data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-10 emotion-11"
+                        >
+                          <div
+                            class="emotion-0 emotion-1"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-2 emotion-3 emotion-4"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-7 emotion-8 emotion-9"
+                          >
+                            <div
+                              class="emotion-5 emotion-6"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-16 emotion-17"
+                        >
+                          <div
+                            class="emotion-12 emotion-13"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-14 emotion-15"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-20 emotion-21"
+                      data-test="carousel-item-1"
+                    >
+                      <a
+                        class="emotion-18 emotion-19"
+                        data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-10 emotion-11"
+                        >
+                          <div
+                            class="emotion-0 emotion-1"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-2 emotion-3 emotion-4"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-7 emotion-8 emotion-9"
+                          >
+                            <div
+                              class="emotion-5 emotion-6"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-16 emotion-17"
+                        >
+                          <div
+                            class="emotion-12 emotion-13"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-14 emotion-15"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-20 emotion-21"
+                      data-test="carousel-item-2"
+                    >
+                      <a
+                        class="emotion-18 emotion-19"
+                        data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-10 emotion-11"
+                        >
+                          <div
+                            class="emotion-0 emotion-1"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-2 emotion-3 emotion-4"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-7 emotion-8 emotion-9"
+                          >
+                            <div
+                              class="emotion-5 emotion-6"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-16 emotion-17"
+                        >
+                          <div
+                            class="emotion-12 emotion-13"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-14 emotion-15"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-20 emotion-21"
+                      data-test="carousel-item-3"
+                    >
+                      <a
+                        class="emotion-18 emotion-19"
+                        data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-10 emotion-11"
+                        >
+                          <div
+                            class="emotion-0 emotion-1"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-2 emotion-3 emotion-4"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-7 emotion-8 emotion-9"
+                          >
+                            <div
+                              class="emotion-5 emotion-6"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-16 emotion-17"
+                        >
+                          <div
+                            class="emotion-12 emotion-13"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-14 emotion-15"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>,
+              }
+            }
+            trackWidth={0}
+          >
+            <div
+              className="emotion-150 emotion-151"
+            >
+              <Styled(div)
+                alignCenter={false}
+                data-test="carousel-slider"
+                disableNavigation={true}
+                flex={false}
+                innerRef={
+                  Object {
+                    "current": <div
+                      class="emotion-148 emotion-149"
+                      data-test="carousel-slider"
+                    >
+                      <div
+                        class="emotion-35 emotion-36"
+                        data-test="carousel-item-0"
+                      >
+                        <a
+                          class="emotion-29 emotion-30"
+                          data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-21 emotion-22"
+                          >
+                            <div
+                              class="emotion-0 emotion-1"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-2 emotion-3 emotion-4"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-14 emotion-15 emotion-16"
+                            >
+                              <div
+                                class="emotion-12 emotion-13"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-27 emotion-28"
+                          >
+                            <div
+                              class="emotion-23 emotion-24"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-25 emotion-26"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-35 emotion-36"
+                        data-test="carousel-item-1"
+                      >
+                        <a
+                          class="emotion-29 emotion-30"
+                          data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-21 emotion-22"
+                          >
+                            <div
+                              class="emotion-0 emotion-1"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-2 emotion-3 emotion-4"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-14 emotion-15 emotion-16"
+                            >
+                              <div
+                                class="emotion-12 emotion-13"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-27 emotion-28"
+                          >
+                            <div
+                              class="emotion-23 emotion-24"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-25 emotion-26"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-35 emotion-36"
+                        data-test="carousel-item-2"
+                      >
+                        <a
+                          class="emotion-29 emotion-30"
+                          data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-21 emotion-22"
+                          >
+                            <div
+                              class="emotion-0 emotion-1"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-2 emotion-3 emotion-4"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-14 emotion-15 emotion-16"
+                            >
+                              <div
+                                class="emotion-12 emotion-13"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-27 emotion-28"
+                          >
+                            <div
+                              class="emotion-23 emotion-24"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-25 emotion-26"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-35 emotion-36"
+                        data-test="carousel-item-3"
+                      >
+                        <a
+                          class="emotion-29 emotion-30"
+                          data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-21 emotion-22"
+                          >
+                            <div
+                              class="emotion-0 emotion-1"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-2 emotion-3 emotion-4"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-14 emotion-15 emotion-16"
+                            >
+                              <div
+                                class="emotion-12 emotion-13"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-27 emotion-28"
+                          >
+                            <div
+                              class="emotion-23 emotion-24"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-25 emotion-26"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>,
+                  }
+                }
+                isDragging={false}
+                left={0}
+                trackWidth={0}
+              >
+                <div
+                  className="emotion-148 emotion-149"
+                  data-test="carousel-slider"
+                >
+                  <Styled(div)
+                    data-test="carousel-item-0"
+                    flex={false}
+                    key="0"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-35 emotion-36"
+                      data-test="carousel-item-0"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={0}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-29 emotion-30"
+                            data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-29 emotion-30"
+                              data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-29 emotion-30"
+                                data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-21 emotion-22"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-0 emotion-1"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-8 emotion-2"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-8 emotion-2"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-2 emotion-3 emotion-4"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-2 emotion-3 emotion-4"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-17 emotion-14"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-17 emotion-14"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-14 emotion-15 emotion-16"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-12 emotion-13"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-27 emotion-28"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-23 emotion-24"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-25 emotion-26"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-1"
+                    flex={false}
+                    key="1"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-35 emotion-36"
+                      data-test="carousel-item-1"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={1}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-29 emotion-30"
+                            data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-29 emotion-30"
+                              data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-29 emotion-30"
+                                data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-21 emotion-22"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-0 emotion-1"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-8 emotion-2"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-8 emotion-2"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-2 emotion-3 emotion-4"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-2 emotion-3 emotion-4"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-17 emotion-14"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-17 emotion-14"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-14 emotion-15 emotion-16"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-12 emotion-13"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-27 emotion-28"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-23 emotion-24"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-25 emotion-26"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-2"
+                    flex={false}
+                    key="2"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-35 emotion-36"
+                      data-test="carousel-item-2"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={2}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-29 emotion-30"
+                            data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-29 emotion-30"
+                              data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-29 emotion-30"
+                                data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-21 emotion-22"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-0 emotion-1"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-8 emotion-2"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-8 emotion-2"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-2 emotion-3 emotion-4"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-2 emotion-3 emotion-4"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-17 emotion-14"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-17 emotion-14"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-14 emotion-15 emotion-16"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-12 emotion-13"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-27 emotion-28"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-23 emotion-24"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-25 emotion-26"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-3"
+                    flex={false}
+                    key="3"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-35 emotion-36"
+                      data-test="carousel-item-3"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={3}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-29 emotion-30"
+                            data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-29 emotion-30"
+                              data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-29 emotion-30"
+                                data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-21 emotion-22"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-0 emotion-1"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-8 emotion-2"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-8 emotion-2"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-2 emotion-3 emotion-4"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-2 emotion-3 emotion-4"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-17 emotion-14"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-17 emotion-14"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-14 emotion-15 emotion-16"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-12 emotion-13"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-27 emotion-28"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-23 emotion-24"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-25 emotion-26"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </Carousel>
+  </div>
+</WatchBar>
 `;
 
 exports[`renders a WatchBar with a title 1`] = `
-<div>
-  <Styled(div)
-    isCarouselCard={false}
-    key="Live on Eurosport"
-  >
-    <Styled(div)>
-      <Styled(Play)
-        viewBox="0 0 16 16"
-        xmlns="http://www.w3.org/2000/svg"
-      />
-      <Styled(div)>
-        Live on Eurosport
-      </Styled(div)>
-    </Styled(div)>
-  </Styled(div)>
-  <Carousel
-    absoluteNavigation={false}
-    alignCenter={false}
-    flex={false}
-    magneticMax={0.8}
-    magneticMin={0.2}
-    minWidthArrowDisplaying={900}
-    offsetLeft="0"
-    slideMargin={8}
-    withArrow={true}
-  >
+.emotion-174 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.emotion-172 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-170 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-20 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-20:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-20:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-51 {
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #141B4D;
+  white-space: normal;
+  width: 288px;
+  height: 76px;
+}
+
+@media (min-width:900px) {
+  .emotion-51 {
+    width: 335px;
+    height: 88px;
+  }
+}
+
+.emotion-51:hover .emotion-44:before {
+  opacity: 0.1;
+}
+
+.emotion-51:hover .emotion-35 {
+  border-color: #FFFFFF;
+}
+
+.emotion-43 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 0 0 139px;
+  -ms-flex: 0 0 139px;
+  flex: 0 0 139px;
+}
+
+@media (min-width:900px) {
+  .emotion-43 {
+    -webkit-flex: 0 0 159px;
+    -ms-flex: 0 0 159px;
+    flex: 0 0 159px;
+  }
+}
+
+.emotion-43:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  background: radial-gradient(circle,transparent,#060825 100%);
+  opacity: 0.5;
+}
+
+.emotion-22 {
+  background-image: url(https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640);
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+}
+
+.emotion-30 {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.emotion-30:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  background: hsla(100%,100%,0%,1);
+}
+
+.emotion-30 path {
+  fill: white;
+}
+
+.emotion-25 {
+  height: 15px;
+  width: 21.299999999999997px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.emotion-25:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  background: hsla(100%,100%,0%,1);
+}
+
+.emotion-25 path {
+  fill: white;
+}
+
+.emotion-39 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.emotion-37 {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  padding: 7.2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(6,8,37,0.2);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.emotion-37:hover .emotion-35 {
+  border-color: #FFFFFF;
+}
+
+.emotion-34 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.emotion-49 {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  line-height: 1.3;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #D50032;
+  font-size: 13px;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-45 {
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #F8F8F9;
+  margin: 0 0 10px;
+}
+
+.emotion-47 {
+  box-sizing: border-box;
+  color: rgba(251,251,255,0.8);
+  font-size: 11px;
+  border-top: 1px solid rgba(242,243,245,0.4);
+  padding-top: 8px;
+}
+
+.emotion-8 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 14px;
+  color: #DEDFE3;
+  width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: none;
+}
+
+@media (min-width:900px) {
+  .emotion-8 {
+    font-size: 12px;
+    display: block;
+    margin-right: 16px;
+  }
+}
+
+.emotion-6 {
+  height: 76px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (min-width:900px) {
+  .emotion-6 {
+    height: 88px;
+  }
+}
+
+.emotion-0 {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.emotion-4 {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.emotion-18 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 14px;
+  color: #DEDFE3;
+  width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: none;
+  display: block;
+  white-space: normal;
+}
+
+@media (min-width:900px) {
+  .emotion-18 {
+    font-size: 12px;
+    display: block;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-18 {
+    display: none;
+    margin-right: inherit;
+  }
+}
+
+<WatchBar
+  cards={
+    Array [
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+      Object {
+        "channel": "E1FR",
+        "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+        "isLive": false,
+        "liveLabel": "live",
+        "playerChannelNameAnalytics": "analytics",
+        "timestamp": "09:00 - 10:30",
+        "title": "Darts: BDO World Championship",
+        "titleAnalytics": "title",
+        "url": "/article/id",
+      },
+    ]
+  }
+  title="Live on Eurosport"
+>
+  <div>
     <Styled(div)
-      isCarouselCard={true}
+      isCarouselCard={false}
       key="Live on Eurosport"
     >
-      <Styled(div)>
-        <Styled(Play)
-          viewBox="0 0 16 16"
-          xmlns="http://www.w3.org/2000/svg"
-        />
+      <div
+        className="emotion-8 emotion-9"
+      >
         <Styled(div)>
-          Live on Eurosport
+          <div
+            className="emotion-6 emotion-7"
+          >
+            <Styled(Play)
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <Play
+                className="emotion-0 emotion-1"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <svg
+                  className="emotion-0 emotion-1"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    27B5DA1E-B6A0-4E4C-A0D3-B9709EC5CAB0
+                  </title>
+                  <g
+                    fill="none"
+                    fillRule="evenodd"
+                  >
+                    <circle
+                      cx="8"
+                      cy="8"
+                      r="7.25"
+                      stroke="#E25"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M10.249 8.95l-3.153 2.164A.7.7 0 0 1 6 10.537V5.713a.7.7 0 0 1 1.096-.577L10.25 7.3a1 1 0 0 1 0 1.648z"
+                      fill="#E25"
+                    />
+                  </g>
+                </svg>
+              </Play>
+            </Styled(Play)>
+            <Styled(div)>
+              <div
+                className="emotion-4 emotion-5"
+              >
+                Live on Eurosport
+              </div>
+            </Styled(div)>
+          </div>
         </Styled(div)>
-      </Styled(div)>
+      </div>
     </Styled(div)>
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={0}
-    />
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={1}
-    />
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={2}
-    />
-    <Cards.Content
-      card={
-        Object {
-          "channel": "E1FR",
-          "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
-          "isLive": false,
-          "liveLabel": "live",
-          "playerChannelNameAnalytics": "analytics",
-          "timestamp": "09:00 - 10:30",
-          "title": "Darts: BDO World Championship",
-          "titleAnalytics": "title",
-          "url": "/article/id",
-        }
-      }
-      key="Darts: BDO World Championshipundefinedundefined"
-      trackingPosition={3}
-    />
-  </Carousel>
-</div>
+    <Carousel
+      absoluteNavigation={false}
+      alignCenter={false}
+      flex={false}
+      magneticMax={0.8}
+      magneticMin={0.2}
+      minWidthArrowDisplaying={900}
+      offsetLeft="0"
+      slideMargin={8}
+      withArrow={true}
+    >
+      <Styled(div)
+        data-test="carousel"
+        slides={Array []}
+      >
+        <div
+          className="emotion-174 emotion-175"
+          data-test="carousel"
+        >
+          <Styled(div)
+            innerRef={
+              Object {
+                "current": .emotion-100 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-98 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-8 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-8:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-8:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-28 {
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #141B4D;
+  white-space: normal;
+  width: 288px;
+  height: 76px;
+}
+
+@media (min-width:900px) {
+  .emotion-28 {
+    width: 335px;
+    height: 88px;
+  }
+}
+
+.emotion-28:hover .emotion-21:before {
+  opacity: 0.1;
+}
+
+.emotion-28:hover .emotion-16 {
+  border-color: #FFFFFF;
+}
+
+.emotion-20 {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  -webkit-flex: 0 0 139px;
+  -ms-flex: 0 0 139px;
+  flex: 0 0 139px;
+}
+
+@media (min-width:900px) {
+  .emotion-20 {
+    -webkit-flex: 0 0 159px;
+    -ms-flex: 0 0 159px;
+    flex: 0 0 159px;
+  }
+}
+
+.emotion-20:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  background: radial-gradient(circle,transparent,#060825 100%);
+  opacity: 0.5;
+}
+
+.emotion-10 {
+  background-image: url(https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640);
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+}
+
+.emotion-13 {
+  height: 15px;
+  width: 21.299999999999997px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.emotion-13:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  content: '';
+  background: hsla(100%,100%,0%,1);
+}
+
+.emotion-13 path {
+  fill: white;
+}
+
+.emotion-18 {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  padding: 7.2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(6,8,37,0.2);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.emotion-18:hover .emotion-16 {
+  border-color: #FFFFFF;
+}
+
+.emotion-15 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.emotion-26 {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  line-height: 1.3;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #D50032;
+  font-size: 13px;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.emotion-22 {
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #F8F8F9;
+  margin: 0 0 10px;
+}
+
+.emotion-24 {
+  box-sizing: border-box;
+  color: rgba(251,251,255,0.8);
+  font-size: 11px;
+  border-top: 1px solid rgba(242,243,245,0.4);
+  padding-top: 8px;
+}
+
+.emotion-4 {
+  height: 76px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (min-width:900px) {
+  .emotion-4 {
+    height: 88px;
+  }
+}
+
+.emotion-0 {
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.emotion-6 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 14px;
+  color: #DEDFE3;
+  width: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: none;
+  display: block;
+  white-space: normal;
+}
+
+@media (min-width:900px) {
+  .emotion-6 {
+    font-size: 12px;
+    display: block;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-6 {
+    display: none;
+    margin-right: inherit;
+  }
+}
+
+<div
+                  class="emotion-100 emotion-101"
+                >
+                  <div
+                    class="emotion-98 emotion-99"
+                    data-test="carousel-slider"
+                  >
+                    <div
+                      class="emotion-8 emotion-9"
+                      data-test="carousel-item-0"
+                    >
+                      <div
+                        class="emotion-6 emotion-7"
+                      >
+                        <div
+                          class="emotion-4 emotion-5"
+                        >
+                          <svg
+                            class="emotion-0 emotion-1"
+                            viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              27B5DA1E-B6A0-4E4C-A0D3-B9709EC5CAB0
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <circle
+                                cx="8"
+                                cy="8"
+                                r="7.25"
+                                stroke="#E25"
+                                stroke-width="1.5"
+                              />
+                              <path
+                                d="M10.249 8.95l-3.153 2.164A.7.7 0 0 1 6 10.537V5.713a.7.7 0 0 1 1.096-.577L10.25 7.3a1 1 0 0 1 0 1.648z"
+                                fill="#E25"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-2 emotion-3"
+                          >
+                            Live on Eurosport
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="emotion-8 emotion-9"
+                      data-test="carousel-item-1"
+                    >
+                      <a
+                        class="emotion-28 emotion-29"
+                        data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-20 emotion-21"
+                        >
+                          <div
+                            class="emotion-10 emotion-11"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-12 emotion-13 emotion-14"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-17 emotion-18 emotion-19"
+                          >
+                            <div
+                              class="emotion-15 emotion-16"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-26 emotion-27"
+                        >
+                          <div
+                            class="emotion-22 emotion-23"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-24 emotion-25"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-8 emotion-9"
+                      data-test="carousel-item-2"
+                    >
+                      <a
+                        class="emotion-28 emotion-29"
+                        data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-20 emotion-21"
+                        >
+                          <div
+                            class="emotion-10 emotion-11"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-12 emotion-13 emotion-14"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-17 emotion-18 emotion-19"
+                          >
+                            <div
+                              class="emotion-15 emotion-16"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-26 emotion-27"
+                        >
+                          <div
+                            class="emotion-22 emotion-23"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-24 emotion-25"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-8 emotion-9"
+                      data-test="carousel-item-3"
+                    >
+                      <a
+                        class="emotion-28 emotion-29"
+                        data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-20 emotion-21"
+                        >
+                          <div
+                            class="emotion-10 emotion-11"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-12 emotion-13 emotion-14"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-17 emotion-18 emotion-19"
+                          >
+                            <div
+                              class="emotion-15 emotion-16"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-26 emotion-27"
+                        >
+                          <div
+                            class="emotion-22 emotion-23"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-24 emotion-25"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="emotion-8 emotion-9"
+                      data-test="carousel-item-4"
+                    >
+                      <a
+                        class="emotion-28 emotion-29"
+                        data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                        href="/article/id"
+                      >
+                        <div
+                          class="emotion-20 emotion-21"
+                        >
+                          <div
+                            class="emotion-10 emotion-11"
+                            src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                          />
+                          <svg
+                            class="emotion-12 emotion-13 emotion-14"
+                            viewBox="0 0 21 15"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              Eurosport 1
+                            </title>
+                            <g
+                              fill="none"
+                              fill-rule="evenodd"
+                            >
+                              <path
+                                d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                fill="#c6c7ce"
+                              />
+                            </g>
+                          </svg>
+                          <div
+                            class="emotion-17 emotion-18 emotion-19"
+                          >
+                            <div
+                              class="emotion-15 emotion-16"
+                            />
+                            <img
+                              alt="play"
+                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="emotion-26 emotion-27"
+                        >
+                          <div
+                            class="emotion-22 emotion-23"
+                          >
+                            <div
+                              class="LinesEllipsis  "
+                            >
+                              Darts: BDO World Championship
+                              <wbr />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-24 emotion-25"
+                          >
+                             - 
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>,
+              }
+            }
+            trackWidth={0}
+          >
+            <div
+              className="emotion-172 emotion-173"
+            >
+              <Styled(div)
+                alignCenter={false}
+                data-test="carousel-slider"
+                disableNavigation={true}
+                flex={false}
+                innerRef={
+                  Object {
+                    "current": <div
+                      class="emotion-170 emotion-171"
+                      data-test="carousel-slider"
+                    >
+                      <div
+                        class="emotion-20 emotion-21"
+                        data-test="carousel-item-0"
+                      >
+                        <div
+                          class="emotion-18 emotion-9"
+                        >
+                          <div
+                            class="emotion-6 emotion-7"
+                          >
+                            <svg
+                              class="emotion-0 emotion-1"
+                              viewBox="0 0 16 16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                27B5DA1E-B6A0-4E4C-A0D3-B9709EC5CAB0
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <circle
+                                  cx="8"
+                                  cy="8"
+                                  r="7.25"
+                                  stroke="#E25"
+                                  stroke-width="1.5"
+                                />
+                                <path
+                                  d="M10.249 8.95l-3.153 2.164A.7.7 0 0 1 6 10.537V5.713a.7.7 0 0 1 1.096-.577L10.25 7.3a1 1 0 0 1 0 1.648z"
+                                  fill="#E25"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-4 emotion-5"
+                            >
+                              Live on Eurosport
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="emotion-20 emotion-21"
+                        data-test="carousel-item-1"
+                      >
+                        <a
+                          class="emotion-51 emotion-52"
+                          data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-43 emotion-44"
+                          >
+                            <div
+                              class="emotion-22 emotion-23"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-24 emotion-25 emotion-26"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-36 emotion-37 emotion-38"
+                            >
+                              <div
+                                class="emotion-34 emotion-35"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-49 emotion-50"
+                          >
+                            <div
+                              class="emotion-45 emotion-46"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-47 emotion-48"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-20 emotion-21"
+                        data-test="carousel-item-2"
+                      >
+                        <a
+                          class="emotion-51 emotion-52"
+                          data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-43 emotion-44"
+                          >
+                            <div
+                              class="emotion-22 emotion-23"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-24 emotion-25 emotion-26"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-36 emotion-37 emotion-38"
+                            >
+                              <div
+                                class="emotion-34 emotion-35"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-49 emotion-50"
+                          >
+                            <div
+                              class="emotion-45 emotion-46"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-47 emotion-48"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-20 emotion-21"
+                        data-test="carousel-item-3"
+                      >
+                        <a
+                          class="emotion-51 emotion-52"
+                          data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-43 emotion-44"
+                          >
+                            <div
+                              class="emotion-22 emotion-23"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-24 emotion-25 emotion-26"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-36 emotion-37 emotion-38"
+                            >
+                              <div
+                                class="emotion-34 emotion-35"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-49 emotion-50"
+                          >
+                            <div
+                              class="emotion-45 emotion-46"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-47 emotion-48"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="emotion-20 emotion-21"
+                        data-test="carousel-item-4"
+                      >
+                        <a
+                          class="emotion-51 emotion-52"
+                          data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                          href="/article/id"
+                        >
+                          <div
+                            class="emotion-43 emotion-44"
+                          >
+                            <div
+                              class="emotion-22 emotion-23"
+                              src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                            />
+                            <svg
+                              class="emotion-24 emotion-25 emotion-26"
+                              viewBox="0 0 21 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <title>
+                                Eurosport 1
+                              </title>
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                              >
+                                <path
+                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                  fill="#c6c7ce"
+                                />
+                              </g>
+                            </svg>
+                            <div
+                              class="emotion-36 emotion-37 emotion-38"
+                            >
+                              <div
+                                class="emotion-34 emotion-35"
+                              />
+                              <img
+                                alt="play"
+                                src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="emotion-49 emotion-50"
+                          >
+                            <div
+                              class="emotion-45 emotion-46"
+                            >
+                              <div
+                                class="LinesEllipsis  "
+                              >
+                                Darts: BDO World Championship
+                                <wbr />
+                              </div>
+                            </div>
+                            <div
+                              class="emotion-47 emotion-48"
+                            >
+                               - 
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>,
+                  }
+                }
+                isDragging={false}
+                left={0}
+                trackWidth={0}
+              >
+                <div
+                  className="emotion-170 emotion-171"
+                  data-test="carousel-slider"
+                >
+                  <Styled(div)
+                    data-test="carousel-item-0"
+                    flex={false}
+                    key="0"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-20 emotion-21"
+                      data-test="carousel-item-0"
+                    >
+                      <Styled(div)
+                        isCarouselCard={true}
+                        key="Live on Eurosport"
+                      >
+                        <div
+                          className="emotion-18 emotion-9"
+                        >
+                          <Styled(div)>
+                            <div
+                              className="emotion-6 emotion-7"
+                            >
+                              <Styled(Play)
+                                viewBox="0 0 16 16"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <Play
+                                  className="emotion-0 emotion-1"
+                                  viewBox="0 0 16 16"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <svg
+                                    className="emotion-0 emotion-1"
+                                    viewBox="0 0 16 16"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <title>
+                                      27B5DA1E-B6A0-4E4C-A0D3-B9709EC5CAB0
+                                    </title>
+                                    <g
+                                      fill="none"
+                                      fillRule="evenodd"
+                                    >
+                                      <circle
+                                        cx="8"
+                                        cy="8"
+                                        r="7.25"
+                                        stroke="#E25"
+                                        strokeWidth="1.5"
+                                      />
+                                      <path
+                                        d="M10.249 8.95l-3.153 2.164A.7.7 0 0 1 6 10.537V5.713a.7.7 0 0 1 1.096-.577L10.25 7.3a1 1 0 0 1 0 1.648z"
+                                        fill="#E25"
+                                      />
+                                    </g>
+                                  </svg>
+                                </Play>
+                              </Styled(Play)>
+                              <Styled(div)>
+                                <div
+                                  className="emotion-4 emotion-5"
+                                >
+                                  Live on Eurosport
+                                </div>
+                              </Styled(div)>
+                            </div>
+                          </Styled(div)>
+                        </div>
+                      </Styled(div)>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-1"
+                    flex={false}
+                    key="1"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-20 emotion-21"
+                      data-test="carousel-item-1"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={0}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-51 emotion-52"
+                            data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-51 emotion-52"
+                              data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-51 emotion-52"
+                                data-aa-livetowatch="what-to-watch-bar:block-1:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-43 emotion-44"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-22 emotion-23"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-30 emotion-24"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-30 emotion-24"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-24 emotion-25 emotion-26"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-24 emotion-25 emotion-26"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-39 emotion-36"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-39 emotion-36"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-36 emotion-37 emotion-38"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-34 emotion-35"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-49 emotion-50"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-45 emotion-46"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-47 emotion-48"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-2"
+                    flex={false}
+                    key="2"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-20 emotion-21"
+                      data-test="carousel-item-2"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={1}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-51 emotion-52"
+                            data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-51 emotion-52"
+                              data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-51 emotion-52"
+                                data-aa-livetowatch="what-to-watch-bar:block-2:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-43 emotion-44"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-22 emotion-23"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-30 emotion-24"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-30 emotion-24"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-24 emotion-25 emotion-26"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-24 emotion-25 emotion-26"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-39 emotion-36"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-39 emotion-36"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-36 emotion-37 emotion-38"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-34 emotion-35"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-49 emotion-50"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-45 emotion-46"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-47 emotion-48"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-3"
+                    flex={false}
+                    key="3"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-20 emotion-21"
+                      data-test="carousel-item-3"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={2}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-51 emotion-52"
+                            data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-51 emotion-52"
+                              data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-51 emotion-52"
+                                data-aa-livetowatch="what-to-watch-bar:block-3:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-43 emotion-44"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-22 emotion-23"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-30 emotion-24"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-30 emotion-24"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-24 emotion-25 emotion-26"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-24 emotion-25 emotion-26"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-39 emotion-36"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-39 emotion-36"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-36 emotion-37 emotion-38"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-34 emotion-35"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-49 emotion-50"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-45 emotion-46"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-47 emotion-48"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    data-test="carousel-item-4"
+                    flex={false}
+                    key="4"
+                    margin={8}
+                    offsetLeft="0"
+                  >
+                    <div
+                      className="emotion-20 emotion-21"
+                      data-test="carousel-item-4"
+                    >
+                      <Cards.Content
+                        card={
+                          Object {
+                            "channel": "E1FR",
+                            "img": "https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640",
+                            "isLive": false,
+                            "liveLabel": "live",
+                            "playerChannelNameAnalytics": "analytics",
+                            "timestamp": "09:00 - 10:30",
+                            "title": "Darts: BDO World Championship",
+                            "titleAnalytics": "title",
+                            "url": "/article/id",
+                          }
+                        }
+                        key="Darts: BDO World Championshipundefinedundefined"
+                        trackingPosition={3}
+                      >
+                        <Styled(Link)
+                          data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                          href="/article/id"
+                          linkComponent={[Function]}
+                        >
+                          <Link
+                            className="emotion-51 emotion-52"
+                            data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                            href="/article/id"
+                            linkComponent={[Function]}
+                          >
+                            <DefaultLinkComponent
+                              className="emotion-51 emotion-52"
+                              data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                              href="/article/id"
+                            >
+                              <a
+                                className="emotion-51 emotion-52"
+                                data-aa-livetowatch="what-to-watch-bar:block-4:analytics:title"
+                                href="/article/id"
+                              >
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-43 emotion-44"
+                                  >
+                                    <Styled(div)
+                                      src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                    >
+                                      <div
+                                        className="emotion-22 emotion-23"
+                                        src="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20180710-125830.jpeg?w=640"
+                                      />
+                                    </Styled(div)>
+                                    <Styled(ChannelIcon)
+                                      height={15}
+                                      type="E1FR"
+                                    >
+                                      <ChannelIcon
+                                        className="emotion-30 emotion-24"
+                                        height={15}
+                                        type="E1FR"
+                                      >
+                                        <Styled(E1Component)
+                                          className="emotion-30 emotion-24"
+                                          viewBox="0 0 21 15"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <E1Component
+                                            className="emotion-24 emotion-25 emotion-26"
+                                            viewBox="0 0 21 15"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                            <svg
+                                              className="emotion-24 emotion-25 emotion-26"
+                                              viewBox="0 0 21 15"
+                                              xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                              <title>
+                                                Eurosport 1
+                                              </title>
+                                              <g
+                                                fill="none"
+                                                fillRule="evenodd"
+                                              >
+                                                <path
+                                                  d="M21 .58a.49.49 0 0 0-.5-.48h-5a.5.5 0 0 0-.5.48v2.1c0 .29.19.5.48.5h2.14V14.5a.47.47 0 0 0 .47.48h2.44a.47.47 0 0 0 .47-.48V.58zM6.79 4.37H3.5V.63c0-.27.22-.48.48-.48h8.54c.27 0 .49.22.49.48v2.1c0 .29-.18.5-.47.5H6.8v1.14zm-3.4 10.67l3.4-3.07h5.75c.28 0 .48.23.48.48v2.1c0 .28-.2.5-.46.5H3.4zm3.4-5.84l4.34-1.87H6.8V4.37L4.27 7.33H0l2.73 1.86-2.34 2.78 3.9-1.7 2.5 1.7z"
+                                                  fill="#c6c7ce"
+                                                />
+                                              </g>
+                                            </svg>
+                                          </E1Component>
+                                        </Styled(E1Component)>
+                                      </ChannelIcon>
+                                    </Styled(ChannelIcon)>
+                                    <Styled(PlayIcon)
+                                      alt="play"
+                                      height={32}
+                                      isLoading={false}
+                                      isRounded={true}
+                                    >
+                                      <PlayIcon
+                                        alt="play"
+                                        className="emotion-39 emotion-36"
+                                        height={32}
+                                        isLoading={false}
+                                        isRounded={true}
+                                      >
+                                        <Styled(div)
+                                          className="emotion-39 emotion-36"
+                                          iconHeight={32}
+                                          isLoading={false}
+                                        >
+                                          <div
+                                            className="emotion-36 emotion-37 emotion-38"
+                                          >
+                                            <Styled(div)
+                                              isLoading={false}
+                                            >
+                                              <div
+                                                className="emotion-34 emotion-35"
+                                              />
+                                            </Styled(div)>
+                                            <img
+                                              alt="play"
+                                              src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                                            />
+                                          </div>
+                                        </Styled(div)>
+                                      </PlayIcon>
+                                    </Styled(PlayIcon)>
+                                  </div>
+                                </Styled(div)>
+                                <Styled(div)>
+                                  <div
+                                    className="emotion-49 emotion-50"
+                                  >
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-45 emotion-46"
+                                      >
+                                        <Responsive(LinesEllipsis)
+                                          basedOn="letters"
+                                          ellipsis="..."
+                                          innerRef={[Function]}
+                                          maxLine={2}
+                                          text="Darts: BDO World Championship"
+                                          trimRight={true}
+                                        >
+                                          <LinesEllipsis
+                                            basedOn="letters"
+                                            className=""
+                                            component="div"
+                                            ellipsis="..."
+                                            maxLine={2}
+                                            onReflow={[Function]}
+                                            text="Darts: BDO World Championship"
+                                            trimRight={true}
+                                            winWidth={1024}
+                                          >
+                                            <div
+                                              className="LinesEllipsis  "
+                                            >
+                                              Darts: BDO World Championship
+                                              <wbr />
+                                            </div>
+                                          </LinesEllipsis>
+                                        </Responsive(LinesEllipsis)>
+                                      </div>
+                                    </Styled(div)>
+                                    <Styled(div)>
+                                      <div
+                                        className="emotion-47 emotion-48"
+                                      >
+                                         - 
+                                      </div>
+                                    </Styled(div)>
+                                  </div>
+                                </Styled(div)>
+                              </a>
+                            </DefaultLinkComponent>
+                          </Link>
+                        </Styled(Link)>
+                      </Cards.Content>
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </Carousel>
+  </div>
+</WatchBar>
 `;

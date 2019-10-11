@@ -16,7 +16,11 @@ describe('Components|JWPlayerETP|Controls|LiveStatus', () => {
 
   it('Should match snapshot on rewindCounts', () => {
     // Given
-    const wrapper = shallow(<LiveStatus rewindCounts="-1.23.23" />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <LiveStatus rewindCounts="-1.23.23" />
+      </ThemeProvider>
+    ).find(LiveStatus);
 
     // Expect
     expect(wrapper).toMatchSnapshot();

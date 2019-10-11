@@ -1,5 +1,7 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import theme from 'src/theme';
 import { BottomBar } from './index';
 
 describe('Components|JWPlayerETP|Controls|BottomBar', () => {
@@ -28,13 +30,18 @@ describe('Components|JWPlayerETP|Controls|BottomBar', () => {
     volume: 50,
     mute: false,
     onVolume: jest.fn(),
+    onMute: jest.fn(),
     ...newProps,
   });
 
   it('Should match snapshot', () => {
     // Given
     const props = createDefaultProps();
-    const wrapper = shallow(<BottomBar {...props} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <BottomBar {...props} />
+      </ThemeProvider>
+    ).find(BottomBar);
 
     // Expect
     expect(wrapper).toMatchSnapshot();

@@ -1,8 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import Login, { CallToActionContainer } from './index';
+import { mount, shallow } from 'enzyme';
+import ReCAPTCHA from 'react-google-recaptcha';
+import { ThemeProvider } from 'emotion-theming';
+import { act } from 'react-dom/test-utils';
+import Login, { CallToActionContainer, FormContainer } from './index';
 import ErrorBanner from '../../elements/ErrorBanner';
 import Input from '../../components/Input/input.component';
+import { theme } from '../..';
 
 describe('Login', () => {
   const createProps = newProps => ({
@@ -55,6 +59,7 @@ describe('Login', () => {
   describe('Behaviour testing', () => {
     const getEmailInput = wrp => wrp.find(Input).find({ placeholder: 'Email' });
     const getPasswordInput = wrp => wrp.find(Input).find({ type: 'password' });
+    const getFormContainer = wrp => wrp.find(FormContainer);
 
     it('Should not display ErrorBanner when it is not defined', () => {
       // Given
@@ -110,6 +115,32 @@ describe('Login', () => {
 
       // Expect
       expect(password).toBe('secret');
+    });
+
+    it('Should reset reCAPTCHA on form submit', () => {
+      // Given
+      const props = createProps();
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <Login {...props} recaptchaSiteKey="site-key" />
+        </ThemeProvider>
+      );
+      const reCAPTCHA = wrapper.find(ReCAPTCHA);
+      const resetCallback = jest.fn();
+
+      reCAPTCHA.getElement().ref.current.reset = resetCallback;
+
+      // When
+      act(() => {
+        reCAPTCHA.props().onChange('token');
+      });
+      act(() => {
+        getFormContainer(wrapper).simulate('submit');
+      });
+
+      // Expect
+      expect(resetCallback).toHaveBeenCalled();
+      wrapper.unmount();
     });
   });
 });

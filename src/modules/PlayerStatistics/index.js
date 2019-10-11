@@ -106,7 +106,7 @@ const StyledStats = styled.ul`
   `)}
 `;
 
-const StyledSponsored = styled.img`
+export const StyledSponsored = styled.img`
   height: 26px;
   width: 60px;
   display: block;

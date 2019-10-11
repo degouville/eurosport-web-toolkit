@@ -5,7 +5,7 @@ import { rgba } from 'polished';
 import { large } from '../../../breakpoints';
 import { cerulean, white, utahCrimson } from '../../../colors';
 
-const StyledItemLink = styled.a`
+export const StyledItemLink = styled.a`
   display: block;
   color: ${white};
   width: 100%;

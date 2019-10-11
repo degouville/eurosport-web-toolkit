@@ -1,5 +1,7 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import theme from 'src/theme';
 import LiveVideoHero, { StyledBackground } from '.';
 import { beforeEventLabels } from '../../elements/Labels/mockData/labels';
 import PlayIcon from '../../elements/PlayIcon';
@@ -18,7 +20,11 @@ describe('Live Video Hero', () => {
   });
 
   it('should render as expected', () => {
-    const wrapper = shallow(<LiveVideoHero {...makeProps()} />);
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <LiveVideoHero {...makeProps()} />
+      </ThemeProvider>
+    );
     expect(wrapper).toMatchSnapshot();
   });
 

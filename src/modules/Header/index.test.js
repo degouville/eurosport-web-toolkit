@@ -4,7 +4,7 @@ import Header, { Breadcrumbs } from '.';
 import Link from '../../elements/Link';
 import Logo from '../../elements/Logo';
 
-import menu from '../BurgerMenu/mocks/feed-menu';
+import menu from '../BurgerMenu/mocks/feed-menu.mock';
 import BurgerMenu from '../BurgerMenu';
 import BurgerIcon from '../../elements/BurgerIcon';
 

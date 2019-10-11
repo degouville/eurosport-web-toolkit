@@ -99,7 +99,7 @@ export const StyledColumn = styled(Column)`
   `)};
 `;
 
-const StyledTitle = styled(H3)`
+export const StyledTitle = styled(H3)`
   margin-bottom: 30px;
   color: ${athensGray};
   font-size: 22px;

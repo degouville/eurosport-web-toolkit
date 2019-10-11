@@ -1,17 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { ThemeProvider } from 'emotion-theming';
 import theme from 'src/theme';
-import PlayerStatistics from '.';
+import ibmLogo from 'src/assets/ibm-logo.svg';
+import PlayerStatistics, { StyledSponsored } from '.';
 import { names, comparisonPoints } from './mock/data';
-
 import { setStatsBar, addPercentMark } from './utils';
 
 describe('PlayerStatistics', () => {
   describe('Component', () => {
     it('renders as expected', () => {
       // Given
-      const wrapper = shallow(
+      const wrapper = mount(
         <ThemeProvider theme={theme}>
           <PlayerStatistics names={names} comparisonPoints={comparisonPoints} />
         </ThemeProvider>
@@ -21,6 +21,20 @@ describe('PlayerStatistics', () => {
 
       // Expect
       expect(playerStatistics).toMatchSnapshot();
+    });
+
+    it('should display sponsore logo', () => {
+      // Given
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <PlayerStatistics isSponsored names={names} comparisonPoints={comparisonPoints} />
+        </ThemeProvider>
+      );
+
+      const playerStatistics = wrapper.find(StyledSponsored);
+
+      // Expect
+      expect(playerStatistics.props().src).toEqual(ibmLogo);
     });
   });
 

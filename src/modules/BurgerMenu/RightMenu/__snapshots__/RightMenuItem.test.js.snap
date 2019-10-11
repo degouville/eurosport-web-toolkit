@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RightMenuItem Snapshot testing renders with expected snapshot for desktop 1`] = `
+<Styled(li)>
+  <Styled(a)
+    data-test="desktop-foo"
+    href="#"
+    item={
+      Object {
+        "id": 1,
+        "name": "foo",
+        "sections": Array [],
+      }
+    }
+    onClick={[Function]}
+  >
+    foo
+  </Styled(a)>
+</Styled(li)>
+`;
+
+exports[`RightMenuItem Snapshot testing renders with expected snapshot for mobile 1`] = `
+<Styled(li)>
+  <Styled(a)
+    data-test="desktop-foo"
+    href="#"
+    item={
+      Object {
+        "id": 1,
+        "name": "foo",
+        "sections": Array [],
+      }
+    }
+    onClick={[Function]}
+  >
+    foo
+  </Styled(a)>
+</Styled(li)>
+`;

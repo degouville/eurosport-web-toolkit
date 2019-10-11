@@ -1,50 +1,816 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Live Video Hero should render as expected 1`] = `
-<Styled(div)
-  videoPlayerMode={false}
+.emotion-38 {
+  position: relative;
+  min-height: 350px;
+}
+
+.emotion-38::before,
+.emotion-38::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.emotion-38::before {
+  opacity: 0.5;
+  background: radial-gradient(circle,transparent 0,#0E143D 100%);
+  z-index: 1;
+}
+
+.emotion-38::after {
+  opacity: 0.8;
+  background: linear-gradient(180deg,rgba(20,27,77,0.03),#060825);
+  z-index: 2;
+}
+
+@media (min-width:480px) {
+  .emotion-38 {
+    min-height: 385px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-38 {
+    min-height: 408px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-38 {
+    min-height: 450px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-38 {
+    min-height: 580px;
+  }
+}
+
+.emotion-0 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20190612-103247.jpeg?w=1030);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.emotion-36 {
+  position: relative;
+  margin: 0 auto;
+  z-index: 3;
+  width: 83%;
+  padding-top: 100px;
+}
+
+.emotion-36 >:nth-last-child(3) {
+  padding-top: 20px;
+  margin-bottom: 7px;
+}
+
+@media (min-width:1024px) {
+  .emotion-36 {
+    width: 800px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-36 {
+    width: 965px;
+  }
+}
+
+@media (min-width:480px) {
+  .emotion-36 {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-36 {
+    padding-top: 138px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-36 {
+    padding-top: 270px;
+  }
+}
+
+.emotion-7 {
+  cursor: pointer;
+}
+
+.emotion-5 {
+  position: relative;
+  display: inline-block;
+  height: 84px;
+  width: 84px;
+  padding: 18.900000000000002px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: rgba(6,8,37,0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.emotion-5:hover .emotion-3 {
+  border-color: #FFFFFF;
+}
+
+.emotion-2 {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 9.6px;
+  line-height: 27px;
+  height: 25px;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+  padding: 0 12px;
+  text-transform: uppercase;
+  z-index: 2;
+  font-weight: bold;
+  color: #2D304A;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.emotion-11::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: 0;
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #FFFFFF;
+  -webkit-transform: skew(-5deg);
+  -ms-transform: skew(-5deg);
+  transform: skew(-5deg);
+}
+
+@media (min-width:700px) {
+  .emotion-11 {
+    font-size: 12px;
+    line-height: 30px;
+    height: 28px;
+    -webkit-letter-spacing: 1px;
+    -moz-letter-spacing: 1px;
+    -ms-letter-spacing: 1px;
+    letter-spacing: 1px;
+    padding: 0 15px;
+  }
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica,Roboto,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 9.6px;
+  line-height: 27px;
+  height: 25px;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+  padding: 0 12px;
+  text-transform: uppercase;
+  z-index: 1;
+  color: #FFFFFF;
+  background-color: #3C46DC;
+  position: relative;
+}
+
+.emotion-13::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: 0;
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #3C46DC;
+  -webkit-transform: skew(-5deg);
+  -ms-transform: skew(-5deg);
+  transform: skew(-5deg);
+}
+
+@media (min-width:700px) {
+  .emotion-13 {
+    font-size: 12px;
+    line-height: 30px;
+    height: 28px;
+    -webkit-letter-spacing: 1px;
+    -moz-letter-spacing: 1px;
+    -ms-letter-spacing: 1px;
+    letter-spacing: 1px;
+    padding: 0 15px;
+  }
+}
+
+.emotion-17 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+  overflow-wrap: break-word;
+  margin-top: 0.2em;
+}
+
+@media (min-width:700px) {
+  .emotion-17 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-17 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-17 {
+    padding-bottom: 18px;
+  }
+}
+
+.emotion-32 {
+  padding-bottom: 20px;
+}
+
+@media (min-width:700px) {
+  .emotion-32 {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-32 {
+    padding-bottom: 45px;
+  }
+}
+
+.emotion-30 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  color: #9798A6;
+  font-size: 11px;
+  padding-bottom: 20px;
+}
+
+.emotion-30 svg {
+  width: auto;
+  height: 100%;
+}
+
+@media (min-width:700px) {
+  .emotion-30 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-30 {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-30 {
+    padding-bottom: 45px;
+  }
+}
+
+.emotion-23 {
+  height: 15px;
+  padding: 10px 0;
+}
+
+@media (min-width:700px) {
+  .emotion-23 {
+    padding: 15px 0;
+    height: 23px;
+  }
+}
+
+.emotion-19 {
+  height: 50px;
+  width: 103px;
+}
+
+.emotion-25 {
+  width: 1px;
+  background: rgba(255,255,255,0.15);
+  margin: 0 10px;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emotion-27 {
+  padding: 10px 10px 10px 0;
+}
+
+@media (min-width:700px) {
+  .emotion-27 {
+    padding: 15px 15px 15px 0;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#FF0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#F8F8F9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#FFFFFF",
+        },
+        "primary": Object {
+          "backgroundColor": "#D50032",
+          "color": "#FFFFFF",
+        },
+        "secondary": Object {
+          "color": "#66CEF9",
+        },
+        "secondaryForm": Object {
+          "backgroundColor": "#2D304A",
+          "color": "#FFFFFF",
+        },
+      },
+      "dropdown": Object {
+        "background": "#151726",
+        "border": "rgba(109,109,120,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "label": Object {
+          "color": "#FFFFFF",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#C6C7CE",
+          },
+          "selected": Object {
+            "color": "#FFFFFF",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050F",
+        "border": "#41435B",
+        "borderFocused": "#9798A6",
+        "placeholder": Object {
+          "color": "#9798A6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66CEF9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#F8F8F9",
+          "secondary": "#41435B",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "loginWithMarketing": Object {
+        "mobileBackground": "#060825",
+      },
+      "marketingChecklist": Object {
+        "check": Object {
+          "color": "#FFFFFF",
+        },
+        "subtitle": Object {
+          "color": "#B9BBCA",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "playerControls": Object {
+        "bar": Object {
+          "backgroundColor": "rgba(21,23,38,0.6)",
+        },
+        "dropdown": Object {
+          "background": "rgba(21,23,38,0.9)",
+          "border": "rgba(109,109,120,0.8)",
+        },
+        "liveIcon": Object {
+          "backgroundColor": "#CC0036",
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "seek": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": false,
+        },
+        "separator": "rgba(151,152,166,0.5)",
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "volume": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": true,
+        },
+      },
+      "scrollbar": Object {
+        "background": "#3D4248",
+        "color": "#4A7EFF",
+      },
+      "shareIcons": Object {
+        "background": "#FFFFFF",
+        "color": "#55586D",
+      },
+      "statistics": Object {
+        "background": Object {
+          "one": "#22263C",
+          "two": "#2D304A",
+        },
+        "comparison": Object {
+          "background": "rgba(255,255,255,0.1)",
+          "colorOne": "#66CEF9",
+          "colorTwo": "#4652FF",
+        },
+        "fringe": "rgba(255,255,255,0.05)",
+      },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66CEF9",
+          "color": "#FFFFFF",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798A6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#C6C7CE",
+      },
+      "videoPlayerModal": Object {
+        "closeIcon": Object {
+          "fill": "#FFFFFF",
+        },
+      },
+    }
+  }
 >
-  <Styled(div)
+  <LiveVideoHero
     backgroundImageUrl="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20190612-103247.jpeg?w=1030"
-    hideBackground={false}
-  />
-  <div
-    id="video-player-container"
-  />
-  <Styled(div)
+    isPlayerLoading={false}
+    labels={
+      Array [
+        Object {
+          "bold": true,
+          "color": "white",
+          "text": "French Open",
+        },
+        Object {
+          "color": "blue",
+          "text": "Men's singles | Final",
+        },
+      ]
+    }
+    onPlayIconClick={[Function]}
+    programCallSign="E2NO"
+    programDetails="14:00 - 16:00"
+    title="Athletics: Marathon des Sables"
     videoPlayerMode={false}
   >
-    <Styled(PlayIcon)
-      alt="play"
-      height={84}
-      isLoading={false}
-      isRounded={true}
-      onClick={[Function]}
-    />
-    <Labels
-      isSimpleMode={false}
-      labels={
-        Array [
-          Object {
-            "bold": true,
-            "color": "white",
-            "text": "French Open",
-          },
-          Object {
-            "color": "blue",
-            "text": "Men's singles | Final",
-          },
-        ]
-      }
-    />
-    <Styled(h1)>
-      Athletics: Marathon des Sables
-    </Styled(h1)>
-    <Styled(ProgramDetails)
-      callsign="E2NO"
-      customIcon={null}
-      textDetail="14:00 - 16:00"
-    />
-  </Styled(div)>
-</Styled(div)>
+    <Styled(div)
+      videoPlayerMode={false}
+    >
+      <div
+        className="emotion-38 emotion-39"
+      >
+        <Styled(div)
+          backgroundImageUrl="https://i.eurosport.com/taiga/MagicBox/Crop/16_9/0_20190612-103247.jpeg?w=1030"
+          hideBackground={false}
+        >
+          <div
+            className="emotion-0 emotion-1"
+          />
+        </Styled(div)>
+        <div
+          id="video-player-container"
+        />
+        <Styled(div)
+          videoPlayerMode={false}
+        >
+          <div
+            className="emotion-36 emotion-37"
+          >
+            <Styled(PlayIcon)
+              alt="play"
+              height={84}
+              isLoading={false}
+              isRounded={true}
+              onClick={[Function]}
+            >
+              <PlayIcon
+                alt="play"
+                className="emotion-7 emotion-4"
+                height={84}
+                isLoading={false}
+                isRounded={true}
+                onClick={[Function]}
+              >
+                <Styled(div)
+                  className="emotion-7 emotion-4"
+                  iconHeight={84}
+                  isLoading={false}
+                  onClick={[Function]}
+                >
+                  <div
+                    className="emotion-4 emotion-5 emotion-6"
+                    onClick={[Function]}
+                  >
+                    <Styled(div)
+                      isLoading={false}
+                    >
+                      <div
+                        className="emotion-2 emotion-3"
+                      />
+                    </Styled(div)>
+                    <img
+                      alt="play"
+                      src="/eurosport-web-toolkit/c4f3845e6946bdba20bfe526b47cc40c.svg"
+                    />
+                  </div>
+                </Styled(div)>
+              </PlayIcon>
+            </Styled(PlayIcon)>
+            <Labels
+              isSimpleMode={false}
+              labels={
+                Array [
+                  Object {
+                    "bold": true,
+                    "color": "white",
+                    "text": "French Open",
+                  },
+                  Object {
+                    "color": "blue",
+                    "text": "Men's singles | Final",
+                  },
+                ]
+              }
+            >
+              <Styled(div)
+                isSimpleMode={false}
+              >
+                <div
+                  className="emotion-15 emotion-16"
+                >
+                  <Styled(div)
+                    bold={true}
+                    color="white"
+                    key="French Openwhite"
+                    layer={2}
+                  >
+                    <div
+                      className="emotion-11 emotion-12"
+                      color="white"
+                    >
+                      French Open
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    color="blue"
+                    key="Men's singles | Finalblue"
+                    layer={1}
+                  >
+                    <div
+                      className="emotion-13 emotion-12"
+                      color="blue"
+                    >
+                      Men's singles | Final
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </Labels>
+            <Styled(h1)>
+              <h1
+                className="emotion-17 emotion-18"
+              >
+                Athletics: Marathon des Sables
+              </h1>
+            </Styled(h1)>
+            <Styled(ProgramDetails)
+              callsign="E2NO"
+              customIcon={null}
+              textDetail="14:00 - 16:00"
+            >
+              <ProgramDetails
+                callsign="E2NO"
+                className="emotion-32 emotion-29"
+                customIcon={null}
+                textDetail="14:00 - 16:00"
+              >
+                <Styled(div)
+                  className="emotion-32 emotion-29"
+                >
+                  <div
+                    className="emotion-29 emotion-30 emotion-31"
+                  >
+                    <Styled(div)>
+                      <div
+                        className="emotion-23 emotion-24"
+                      >
+                        <ChannelIcon
+                          height={50}
+                          type="E2NO"
+                        >
+                          <Styled(E2NOComponent)
+                            viewBox="0 0 47 23"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <E2NOComponent
+                              className="emotion-19 emotion-20"
+                              viewBox="0 0 47 23"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <svg
+                                className="emotion-19 emotion-20"
+                                viewBox="0 0 47 23"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <title>
+                                  Eurosport 2
+                                </title>
+                                <path
+                                  d="M10.61 6.55H5.54V.79a.74.74 0 0 1 .74-.74H19.5c.41 0 .74.34.74.74v3.23c0 .43-.28.76-.72.76H10.6v1.77zm8.92 16.41H5.35l5.26-4.73h8.91c.43 0 .74.36.74.74v3.25c-.01.41-.3.74-.73.74m-8.92-9l6.73-2.86h-6.73V6.55l-3.9 4.55H.1l4.22 2.86-3.63 4.27 6.05-2.62 3.87 2.62zM23.24.04H46.2v22.92H23.24V.04zm4.92 18.02h3.29v-7.84L38 18.06h3.28V4.96H38v7.88l-6.55-7.88h-3.29v13.1z"
+                                  fill="#c6c7ce"
+                                />
+                              </svg>
+                            </E2NOComponent>
+                          </Styled(E2NOComponent)>
+                        </ChannelIcon>
+                      </div>
+                    </Styled(div)>
+                    <Styled(div)>
+                      <div
+                        className="emotion-25 emotion-26"
+                      />
+                    </Styled(div)>
+                    <Styled(div)>
+                      <div
+                        className="emotion-27 emotion-28"
+                      >
+                        14:00 - 16:00
+                      </div>
+                    </Styled(div)>
+                  </div>
+                </Styled(div)>
+              </ProgramDetails>
+            </Styled(ProgramDetails)>
+          </div>
+        </Styled(div)>
+      </div>
+    </Styled(div)>
+  </LiveVideoHero>
+</ThemeProvider>
 `;

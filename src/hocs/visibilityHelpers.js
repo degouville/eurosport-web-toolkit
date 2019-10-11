@@ -1,4 +1,4 @@
-const closestPolyfill = () => {
+export const closestPolyfill = () => {
   if (!Element.prototype.matches)
     Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 
@@ -17,7 +17,7 @@ const closestPolyfill = () => {
 
 typeof window !== 'undefined' && closestPolyfill();
 
-const isElement1ParentOfElement2 = (parent, child) => {
+export const isElement1ParentOfElement2 = (parent, child) => {
   // eslint-disable-next-line no-nested-ternary
   const selector = parent.id ? `#${parent.id}` : parent.className ? parent.className : parent.tagName;
   const closestRoot = child.closest(selector);
