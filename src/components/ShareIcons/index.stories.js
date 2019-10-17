@@ -4,7 +4,7 @@ import { text, boolean } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 import ShareIcons from './index';
 
-const ShareIconsStories = storiesOf('Component|SharIcons', module);
+const ShareIconsStories = storiesOf('Components|ShareIcons', module);
 
 const icons = [
   { icon: 'facebook', size: 32, onClick: action('facebook') },
