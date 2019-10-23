@@ -41,7 +41,7 @@ export const getBaseProps = newProps => {
       provider: 'sonic',
       id: text('videoId', 'eurosport-e14558529c9717131ch3'),
       sonic: {
-        baseUrl: text('sonicBaseUrl', 'https://eu1-test.disco-api.com'),
+        baseUrl: text('sonicBaseUrl', 'https://eu3-prod.disco-api.com'),
         realm: text('sonicRealm', 'eurosport'),
       },
     },
@@ -51,7 +51,7 @@ export const getBaseProps = newProps => {
       needHelpUrl: 'https://eurosport.fr',
     },
     LoginComponent: withVideoPlayerModal(LoginWithMarketing),
-    recaptchaSiteKey: text('recaptchaSiteKey', '6LeHaK0UAAAAAF5SxiYjhFNMDpTKy4B8Mc_kWgiM'),
+    recaptchaSiteKey: text('recaptchaSiteKey', '6LfvErIUAAAAABlpqACnxRiUhqhX4p14sPxx_sKf'),
     ...events,
     ...newProps,
   };
