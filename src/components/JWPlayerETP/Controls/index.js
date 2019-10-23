@@ -98,6 +98,7 @@ const MainContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
+  background: rgba(6, 8, 37, 0.4);
 `;
 
 const PlayerButtonContainer = styled.div`

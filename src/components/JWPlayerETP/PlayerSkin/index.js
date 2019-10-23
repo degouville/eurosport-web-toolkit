@@ -126,15 +126,15 @@ const CommonOverlay = css`
 
 const Visible = styled.css`
   visibility: visible;
-  transform: translateY(0%);
-  transition: transform 300ms ease-in-out;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
 `;
 
 export const ControlsOverlay = styled.div`
   ${CommonOverlay}
   ${({ active }) => active && Visible}
-  transform: translateY(100%);
-  transition: transform 300ms ease-in-out, visibility 300ms;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out, visibility 300ms;
 `;
 
 export const ErrorOverlay = styled.div`
