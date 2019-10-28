@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
+import { css } from 'emotion';
+import * as breakpoints from 'src/breakpoints';
 import { VerticalSeparator } from './UI/separators';
 import useScreenInformation from './useScreenInformation';
 import PlayerButtons from './PlayerButtons';
@@ -27,6 +29,7 @@ const Controls = ({
   onVolume,
   mute,
   onMute,
+  title,
 }) => {
   const { isMobile } = useScreenInformation();
 
@@ -45,6 +48,9 @@ const Controls = ({
           onPause={onPause}
         />
       </PlayerButtonContainer>
+
+      <TitleContainer>{title}</TitleContainer>
+
       <BottomBar
         isMobile={isMobile}
         isLive={isLive}
@@ -74,6 +80,7 @@ const Controls = ({
 Controls.defaultProps = {
   isLive: false,
   rewindCounts: null,
+  title: undefined,
 };
 
 Controls.propTypes = {
@@ -90,6 +97,7 @@ Controls.propTypes = {
   onMute: PropTypes.func.isRequired,
   volume: PropTypes.number.isRequired,
   mute: PropTypes.bool.isRequired,
+  title: PropTypes.string,
 };
 
 const MainContainer = styled.div`
@@ -112,6 +120,21 @@ export const TopBarContainer = styled.div`
   ${BarContainer}
   flex-direction: row;
   justify-content: flex-end;
+`;
+
+export const TitleContainer = styled.div`
+  margin: 16px;
+  color: #efeff4;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+  ${breakpoints.small(css`
+    margin: 30px 25px;
+    font-size: 16px;
+    line-height: 19px;
+  `)};
 `;
 
 export default Controls;

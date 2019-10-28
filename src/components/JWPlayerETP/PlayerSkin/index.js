@@ -29,6 +29,7 @@ const PlayerSkin = ({
   onMute,
   controls,
   errorMessage,
+  title,
   ...props
 }) => {
   const { onKeyUp, active, handlePlayerInteraction, lockInteraction, unLockInteraction } = useInteraction({
@@ -77,6 +78,7 @@ const PlayerSkin = ({
               onSeek={onSeekKeepInteraction}
               onVolume={onVolumeKeepInteraction}
               onMute={onMuteKeepInteraction}
+              title={title}
               {...props}
             />
           </ControlsOverlay>

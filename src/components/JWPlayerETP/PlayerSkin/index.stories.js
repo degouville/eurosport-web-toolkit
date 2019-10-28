@@ -23,22 +23,27 @@ const events = actions(
 
 const stories = storiesOf('Components|JWPlayerETP', module);
 
-stories.add('PlayerSkin', () => (
-  <ETPlayer
-    loginEndpoints={{
-      forgotPasswordUrl: 'https://eurosport.fr',
-      subscribeUrl: 'https://eurosport.fr',
-      needHelpUrl: 'https://eurosport.fr',
-    }}
-    locale="en"
-    elementId="playerId"
-    jwplayerData={{ id: 'DWNosgcz' }}
-    videoData={{
-      controls: false,
-      provider: 'url',
-      id: text('video', 'https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8'),
-    }}
-    {...events}
-    PlayerControls={PlayerSkin}
-  />
-));
+stories.add('PlayerSkin', () => {
+  const title = text('Title', 'title');
+
+  return (
+    <ETPlayer
+      loginEndpoints={{
+        forgotPasswordUrl: 'https://eurosport.fr',
+        subscribeUrl: 'https://eurosport.fr',
+        needHelpUrl: 'https://eurosport.fr',
+      }}
+      locale="en"
+      elementId="playerId"
+      jwplayerData={{ id: 'DWNosgcz' }}
+      videoData={{
+        controls: false,
+        provider: 'url',
+        id: text('video', 'https://bitmovin-a.akamaihd.net/content/playhouse-vr/m3u8s/105560.m3u8'),
+      }}
+      {...events}
+      PlayerControls={PlayerSkin}
+      title={title}
+    />
+  );
+});

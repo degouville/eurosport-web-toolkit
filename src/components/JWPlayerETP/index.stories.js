@@ -32,6 +32,8 @@ const withVideoPlayerModal = Component => props => (
 // eslint-disable-next-line import/prefer-default-export
 export const getBaseProps = newProps => {
   const jwplayerId = text('ScriptId (jwplayerId)', 'DWNosgcz');
+  const title = text('Title', 'title');
+
   return {
     prefLang: text('PrefLang', 'fr'),
     locale: text('locale', 'fr'),
@@ -52,6 +54,7 @@ export const getBaseProps = newProps => {
     },
     LoginComponent: withVideoPlayerModal(LoginWithMarketing),
     recaptchaSiteKey: text('recaptchaSiteKey', '6LfvErIUAAAAABlpqACnxRiUhqhX4p14sPxx_sKf'),
+    title,
     ...events,
     ...newProps,
   };

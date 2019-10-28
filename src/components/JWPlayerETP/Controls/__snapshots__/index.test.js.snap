@@ -13,6 +13,7 @@ exports[`Components|JWPlayerETP|Controls Should match snapshot 1`] = `
       onRewind={[MockFunction]}
     />
   </Styled(div)>
+  <Styled(div) />
   <WithTheme(BottomBar)
     isFullscreen={true}
     isLive={true}

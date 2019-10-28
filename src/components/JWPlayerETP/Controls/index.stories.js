@@ -10,6 +10,8 @@ const events = actions('onForward', 'onRewind', 'onPlay', 'onPause', 'onFullscre
 
 stories.add('Controls default', () => {
   const rewindCounts = text('rewindCounts', null);
+  const title = text('Title', 'title');
+
   return (
     <Controls
       isLive={boolean('isLive', true)}
@@ -20,6 +22,7 @@ stories.add('Controls default', () => {
       seekMax={number('seekMax', 100)}
       seekMin={number('seekMin', 0)}
       seekPosition={number('seekPosition', 50)}
+      title={title}
       {...events}
     />
   );
