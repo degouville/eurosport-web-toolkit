@@ -34,22 +34,24 @@ const Controls = ({
   const { isMobile } = useScreenInformation();
 
   return (
-    <MainContainer>
-      <TopBarContainer>
-        {isMobile && <ActionList isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />}
-      </TopBarContainer>
-      <PlayerButtonContainer>
-        <PlayerButtons
-          isBuffering={isBuffering}
-          isPlaying={isPlaying}
-          onForward={onForward}
-          onRewind={onRewind}
-          onPlay={onPlay}
-          onPause={onPause}
-        />
-      </PlayerButtonContainer>
+    <>
+      <MainContainer>
+        <TopBarContainer>
+          {isMobile && <ActionList isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />}
+        </TopBarContainer>
+        <PlayerButtonContainer>
+          <PlayerButtons
+            isBuffering={isBuffering}
+            isPlaying={isPlaying}
+            onForward={onForward}
+            onRewind={onRewind}
+            onPlay={onPlay}
+            onPause={onPause}
+          />
+        </PlayerButtonContainer>
 
-      <TitleContainer>{title}</TitleContainer>
+        <TitleContainer>{title}</TitleContainer>
+      </MainContainer>
 
       <BottomBar
         isMobile={isMobile}
@@ -73,7 +75,7 @@ const Controls = ({
           </>
         )}
       </BottomBar>
-    </MainContainer>
+    </>
   );
 };
 
@@ -123,7 +125,7 @@ export const TopBarContainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-  margin: 16px;
+  padding: 5px 16px 10px;
   color: #efeff4;
   font-size: 14px;
   line-height: 16px;
@@ -131,7 +133,7 @@ export const TitleContainer = styled.div`
   text-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
 
   ${breakpoints.small(css`
-    margin: 30px 25px;
+    padding: 30px 25px;
     font-size: 16px;
     line-height: 19px;
   `)};

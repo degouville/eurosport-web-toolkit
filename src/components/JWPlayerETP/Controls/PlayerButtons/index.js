@@ -7,6 +7,7 @@ import play from 'src/assets/icon-play.svg';
 import Spinner from 'src/elements/Spinner';
 import forward from 'src/assets/icon-jump-fwd.svg';
 import rewind from 'src/assets/icon-jump-rwd.svg';
+import { css } from 'emotion';
 
 const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause, isBuffering }) => (
   <MainContainer>
@@ -49,9 +50,12 @@ const Label = styled.p`
 `;
 
 const SecondIcon = styled.img`
-  height: 44px;
+  height: 24px;
   user-select: none;
   cursor: pointer;
+  ${breakpoints.small(css`
+    height: 44px;
+  `)};
 `;
 
 export const SpinnerStyled = styled(Spinner)`
@@ -67,7 +71,11 @@ const CentralContainer = styled.div`
   align-items: center;
 
   width: 100px;
-  height: 100px;
+  height: 50px;
+
+  ${breakpoints.small(css`
+    height: 100px;
+  `)};
 
   margin-left: 20px;
   margin-right: 20px;
@@ -78,9 +86,12 @@ const CentralContainer = styled.div`
 `;
 
 const MainIcon = styled.img`
-  height: 64px;
+  height: 44px;
   user-select: none;
   cursor: pointer;
+  ${breakpoints.small(css`
+    height: 64px;
+  `)};
 `;
 
 export default PlayerButtons;
