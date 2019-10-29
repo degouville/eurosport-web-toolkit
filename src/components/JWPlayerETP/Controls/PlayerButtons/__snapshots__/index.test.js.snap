@@ -20,12 +20,18 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
 }
 
 .emotion-0 {
-  height: 44px;
+  height: 24px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    height: 44px;
+  }
 }
 
 .emotion-2 {
@@ -62,9 +68,15 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
   -ms-flex-align: center;
   align-items: center;
   width: 100px;
-  height: 100px;
+  height: 50px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    height: 100px;
+  }
 }
 
 @media (min-width:480px) {
@@ -75,12 +87,18 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
 }
 
 .emotion-4 {
-  height: 64px;
+  height: 44px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    height: 64px;
+  }
 }
 
 <ThemeProvider
@@ -405,12 +423,18 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
 }
 
 .emotion-0 {
-  height: 44px;
+  height: 24px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    height: 44px;
+  }
 }
 
 .emotion-2 {
@@ -447,9 +471,15 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
   -ms-flex-align: center;
   align-items: center;
   width: 100px;
-  height: 100px;
+  height: 50px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    height: 100px;
+  }
 }
 
 @media (min-width:480px) {
@@ -460,12 +490,18 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
 }
 
 .emotion-4 {
-  height: 64px;
+  height: 44px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    height: 64px;
+  }
 }
 
 <ThemeProvider
