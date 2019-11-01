@@ -132,6 +132,12 @@ export default {
       fontFamily: fontAlphaHeadline,
       color: athensGray,
     },
+    errorMessage: {
+      backgroundColor: mirage,
+      textColor: athensGray,
+      link: dodgerBlue,
+      iconColor: martinique,
+    },
   },
   dropdown: {
     label: {

@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage Should match snapshot 1`] = `
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  background-color: #151726;
+}
+
+.emotion-6 {
+  width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  width: 72px;
+}
+
+.emotion-0 path {
+  fill: #2D304A;
+}
+
+@media (min-width:700px) {
+  .emotion-0 {
+    width: 96px;
+  }
+}
+
+.emotion-4 {
+  margin: 19px 0 19px;
+  color: #F8F8F9;
+  font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+@media (min-width:700px) {
+  .emotion-4 {
+    margin: 27px 0 27px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.emotion-8 {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(151,152,166,0.5);
+}
+
+<ErrorMessage
+  message="Error"
+>
+  <Styled(div)>
+    <div
+      className="emotion-10 emotion-11"
+    >
+      <Styled(div)>
+        <div
+          className="emotion-6 emotion-7"
+        >
+          <Styled(ErrorIcon)
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <ErrorIcon
+              className="emotion-0 emotion-1"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <svg
+                className="emotion-0 emotion-1"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <path
+                    d="M16 26c5.523 0 10-4.477 10-10S21.523 6 16 6 6 10.477 6 16s4.477 10 10 10zm0 2C9.373 28 4 22.627 4 16S9.373 4 16 4s12 5.373 12 12-5.373 12-12 12zm-.027-8.73c.41 0 .753.131 1.026.393.274.261.41.588.41.98s-.136.719-.41.98-.616.393-1.026.393-.753-.131-1.027-.393c-.273-.261-.41-.588-.41-.98s.137-.719.41-.98.616-.393 1.027-.393zm-.565-10.392h1.13c.205 0 .367.058.487.172.12.114.162.253.128.417l-.36 8.235c0 .163-.059.302-.179.416a.608.608 0 0 1-.436.172h-.41a.608.608 0 0 1-.437-.172c-.12-.114-.18-.236-.18-.367l-.359-8.284a.422.422 0 0 1 .129-.417c.12-.114.282-.172.487-.172z"
+                    id="a"
+                  />
+                </defs>
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  transform="translate(-4 -4)"
+                >
+                  <mask
+                    fill="#fff"
+                    id="b"
+                  >
+                    <use
+                      xlinkHref="#a"
+                    />
+                  </mask>
+                  <use
+                    fill="#979797"
+                    fillRule="nonzero"
+                    xlinkHref="#a"
+                  />
+                  <g
+                    fill="#FF0043"
+                    mask="url(#b)"
+                  >
+                    <path
+                      d="M0 0h32v32H0z"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </ErrorIcon>
+          </Styled(ErrorIcon)>
+          <Styled(p)>
+            <p
+              className="emotion-4 emotion-5"
+            >
+              Error
+            </p>
+          </Styled(p)>
+        </div>
+      </Styled(div)>
+      <Styled(div)>
+        <div
+          className="emotion-8 emotion-9"
+        />
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</ErrorMessage>
+`;

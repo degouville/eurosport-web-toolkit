@@ -2,7 +2,7 @@ import React, { useCallback, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import Spinner from 'src/elements/Spinner';
-import ErrorBanner from 'src/elements/ErrorBanner';
+import ErrorMessage from '../Controls/ErrorMessage';
 import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
 import Controls from '../Controls';
@@ -93,7 +93,7 @@ const PlayerSkin = ({
       )}
       {errorMessage && (
         <ErrorOverlay>
-          <ErrorBanner message={errorMessage} />
+          <ErrorMessage message={errorMessage} />
         </ErrorOverlay>
       )}
     </MainContainer>
@@ -141,7 +141,6 @@ export const ControlsOverlay = styled.div`
 
 export const ErrorOverlay = styled.div`
   ${CommonOverlay}
-  height: auto;
 `;
 
 export const SpinnerOverlay = styled.div`

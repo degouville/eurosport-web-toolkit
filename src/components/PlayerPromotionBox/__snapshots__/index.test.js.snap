@@ -307,6 +307,12 @@ exports[`PlayerPromotionBox renders its content 1`] = `
           "background": "rgba(21,23,38,0.9)",
           "border": "rgba(109,109,120,0.8)",
         },
+        "errorMessage": Object {
+          "backgroundColor": "#151726",
+          "iconColor": "#2D304A",
+          "link": "#4652FF",
+          "textColor": "#F8F8F9",
+        },
         "liveIcon": Object {
           "backgroundColor": "#CC0036",
           "color": "#F8F8F9",
