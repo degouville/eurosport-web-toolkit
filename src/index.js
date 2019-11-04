@@ -41,7 +41,6 @@ export { default as GoogleTagManager } from './components/GoogleTagManager';
 export { default as ScoreBlocks } from './components/ScoreBlock';
 export { default as PlayerInfos } from './components/PlayerInfos';
 export { default as QuickPoll } from './components/Quickpoll';
-export { default as JwPlayer } from './components/JwPlayer';
 export { default as JWPlayerETP } from './components/JWPlayerETP';
 export { default as ScriptInjector } from './components/ScriptInjector';
 export { default as AdInit } from './components/Advertisement/AdInit';
@@ -81,6 +80,5 @@ export { default as LiveMatchesGrid } from './modules/LiveMatchesGrid';
 /* HOCS */
 export { default as withMatchMedia } from './hocs/withMatchMedia';
 export { default as withReload } from './hocs/withReload';
-export { default as withVideoAnalytics } from './hocs/withVideoAnalytics';
 
 export { default as AdobeHeartbeatAnalytics } from './lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics';
