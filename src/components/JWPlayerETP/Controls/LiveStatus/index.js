@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
+import forward from 'src/assets/icon-jump-fwd.svg';
+import * as breakpoints from 'src/breakpoints';
 
-const LiveStatus = ({ rewindCounts, isLive }) => (
-  <LiveContainer>
-    {!rewindCounts && (
-      <Icon isLive={isLive}>
-        <Text>LIVE</Text>
-      </Icon>
-    )}
-    {rewindCounts && <RewindText length={rewindCounts?.length}>{rewindCounts}</RewindText>}
-  </LiveContainer>
-);
+const LiveStatus = ({ rewindCounts, isLive, onSeek, seekMax }) => {
+  const onClickBackToLive = useCallback(() => onSeek(seekMax), [onSeek, seekMax]);
+
+  return (
+    <LiveContainer>
+      <BackToLiveAction rewindCounts={rewindCounts} onClick={onClickBackToLive}>
+        {rewindCounts && <ForwardIcon src={forward} alt="Forward" />}
+        <Icon isLive={isLive} rewindCounts={rewindCounts}>
+          <Text>LIVE</Text>
+        </Icon>
+      </BackToLiveAction>
+
+      {rewindCounts && <RewindText length={rewindCounts?.length}>{rewindCounts}</RewindText>}
+    </LiveContainer>
+  );
+};
 
 LiveStatus.defaultProps = {
   isLive: false,
@@ -21,45 +29,84 @@ LiveStatus.defaultProps = {
 LiveStatus.propTypes = {
   isLive: PropTypes.bool,
   rewindCounts: PropTypes.string,
+  onSeek: PropTypes.func.isRequired,
+  seekMax: PropTypes.number.isRequired,
 };
 
 const LiveContainer = styled.div`
-  margin-left: 16px;
-  margin-right: 16px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 `;
 
-const RewindText = styled.p`
+const BackToLiveAction = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: ${({ rewindCounts }) => (rewindCounts ? 'initial' : 'none')};
+`;
+
+const ForwardIcon = styled.img`
+  height: 13px;
+  margin-left: -7px;
+  ${breakpoints.small(css`
+    height: 20px;
+    margin-left: -12px;
+  `)};
+`;
+
+const RewindText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: ${({ theme }) => theme.playerControls.liveIcon.color};
   font-family: ${({ theme }) => theme.playerControls.liveIcon.fontFamily};
-  font-size: 13px;
   letter-spacing: 1px;
   ${({ length }) => `width: ${length}ch;`}
   line-height: 16px;
   text-align: center;
   user-select: none;
+  border-top: ${({ theme }) => `1px solid ${theme.playerControls.separator}`};
+
+  font-size: 11px;
+  padding: 0 16px;
+  ${breakpoints.small(css`
+    font-size: 13px;
+    padding: 5px 16px;
+  `)};
 `;
 
 const Icon = styled.div`
   display: flex;
-  height: 20px;
   width: 43px;
+  margin: 0 16px;
   border-radius: 1px;
-  background-color: ${({ theme, isLive }) => (isLive ? theme.playerControls.liveIcon.backgroundColor : 'transparent')};
+  background-color: ${({ theme, isLive, rewindCounts }) =>
+    isLive && !rewindCounts ? theme.playerControls.liveIcon.backgroundColor : 'transparent'};
   justify-content: center;
   align-items: center;
+
+  ${breakpoints.small(css`
+    height: 20px;
+  `)};
 `;
 
 const Text = styled.div`
   color: ${({ theme }) => theme.playerControls.liveIcon.color};
   font-family: ${({ theme }) => theme.playerControls.liveIcon.fontFamily};
-  font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 15px;
   text-align: center;
+
+  font-size: 10px;
+  ${breakpoints.small(css`
+    font-size: 12px;
+  `)};
 `;
 
 export default LiveStatus;

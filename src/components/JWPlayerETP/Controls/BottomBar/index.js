@@ -39,7 +39,7 @@ export const BottomBar = ({
       <BarActionsContainer>
         <VerticalSeparator />
         <BarControlWrapper>
-          <LiveStatus isLive={isLive} rewindCounts={rewindCounts} />
+          <LiveStatus isLive={isLive} rewindCounts={rewindCounts} onSeek={onSeek} seekMax={seekMax} />
         </BarControlWrapper>
         <VerticalSeparator />
         <Volume volume={volume} mute={mute} onVolume={onVolume} onMute={onMute} />

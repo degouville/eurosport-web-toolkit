@@ -1,9 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offline 1`] = `
-.emotion-4 {
-  margin-left: 16px;
-  margin-right: 16px;
+.emotion-6 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11,26 +10,6 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offlin
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.emotion-0 {
-  color: #F8F8F9;
-  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: antialiased;
-  font-size: 12px;
-  font-weight: bold;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 15px;
-  text-align: center;
 }
 
 .emotion-2 {
@@ -38,8 +17,8 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offlin
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 20px;
   width: 43px;
+  margin: 0 16px;
   border-radius: 1px;
   background-color: transparent;
   -webkit-box-pack: center;
@@ -52,24 +31,90 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offlin
   align-items: center;
 }
 
+@media (min-width:480px) {
+  .emotion-2 {
+    height: 20px;
+  }
+}
+
+.emotion-0 {
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: bold;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    font-size: 12px;
+  }
+}
+
+.emotion-4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
 <LiveStatus
   isLive={false}
+  onSeek={[Function]}
+  seekMax={-25}
 >
   <Styled(div)>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-6 emotion-7"
     >
       <Styled(div)
-        isLive={false}
+        onClick={[Function]}
       >
         <div
-          className="emotion-2 emotion-3"
+          className="emotion-4 emotion-5"
+          onClick={[Function]}
         >
-          <Styled(div)>
+          <Styled(div)
+            isLive={false}
+          >
             <div
-              className="emotion-0 emotion-1"
+              className="emotion-2 emotion-3"
             >
-              LIVE
+              <Styled(div)>
+                <div
+                  className="emotion-0 emotion-1"
+                >
+                  LIVE
+                </div>
+              </Styled(div)>
             </div>
           </Styled(div)>
         </div>
@@ -82,19 +127,22 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offlin
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 1`] = `
 <Styled(div)>
   <Styled(div)
-    isLive={true}
+    onClick={[Function]}
   >
-    <Styled(div)>
-      LIVE
+    <Styled(div)
+      isLive={true}
+    >
+      <Styled(div)>
+        LIVE
+      </Styled(div)>
     </Styled(div)>
   </Styled(div)>
 </Styled(div)>
 `;
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 2`] = `
-.emotion-4 {
-  margin-left: 16px;
-  margin-right: 16px;
+.emotion-6 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,10 +150,55 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+}
+
+.emotion-0 {
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: bold;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    font-size: 12px;
+  }
+}
+
+.emotion-4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: none;
 }
 
 .emotion-2 {
@@ -113,8 +206,8 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 20px;
   width: 43px;
+  margin: 0 16px;
   border-radius: 1px;
   background-color: #CC0036;
   -webkit-box-pack: center;
@@ -127,40 +220,41 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
   align-items: center;
 }
 
-.emotion-0 {
-  color: #F8F8F9;
-  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: antialiased;
-  font-size: 12px;
-  font-weight: bold;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 15px;
-  text-align: center;
+@media (min-width:480px) {
+  .emotion-2 {
+    height: 20px;
+  }
 }
 
 <LiveStatus
   isLive={true}
+  onSeek={[Function]}
+  seekMax={-25}
 >
   <Styled(div)>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-6 emotion-7"
     >
       <Styled(div)
-        isLive={true}
+        onClick={[Function]}
       >
         <div
-          className="emotion-2 emotion-3"
+          className="emotion-4 emotion-5"
+          onClick={[Function]}
         >
-          <Styled(div)>
+          <Styled(div)
+            isLive={true}
+          >
             <div
-              className="emotion-0 emotion-1"
+              className="emotion-2 emotion-3"
             >
-              LIVE
+              <Styled(div)>
+                <div
+                  className="emotion-0 emotion-1"
+                >
+                  LIVE
+                </div>
+              </Styled(div)>
             </div>
           </Styled(div)>
         </div>
@@ -171,9 +265,8 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on liv
 `;
 
 exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rewindCounts 1`] = `
-.emotion-2 {
-  margin-left: 16px;
-  margin-right: 16px;
+.emotion-10 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -181,19 +274,112 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rew
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+}
+
+.emotion-6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: initial;
 }
 
 .emotion-0 {
+  height: 13px;
+  margin-left: -7px;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    height: 20px;
+    margin-left: -12px;
+  }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 43px;
+  margin: 0 16px;
+  border-radius: 1px;
+  background-color: transparent;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    height: 20px;
+  }
+}
+
+.emotion-2 {
   color: #F8F8F9;
   font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: antialiased;
-  font-size: 13px;
+  font-weight: bold;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (min-width:480px) {
+  .emotion-2 {
+    font-size: 12px;
+  }
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;
   -ms-letter-spacing: 1px;
@@ -205,25 +391,73 @@ exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rew
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-top: 1px solid rgba(151,152,166,0.5);
+  font-size: 11px;
+  padding: 0 16px;
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    font-size: 13px;
+    padding: 5px 16px;
+  }
 }
 
 <LiveStatus
   isLive={false}
+  onSeek={[Function]}
   rewindCounts="-1.23.23"
+  seekMax={-25}
 >
   <Styled(div)>
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-10 emotion-11"
     >
-      <Styled(p)
+      <Styled(div)
+        onClick={[Function]}
+        rewindCounts="-1.23.23"
+      >
+        <div
+          className="emotion-6 emotion-7"
+          onClick={[Function]}
+        >
+          <Styled(img)
+            alt="Forward"
+            src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+          >
+            <img
+              alt="Forward"
+              className="emotion-0 emotion-1"
+              src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+            />
+          </Styled(img)>
+          <Styled(div)
+            isLive={false}
+            rewindCounts="-1.23.23"
+          >
+            <div
+              className="emotion-4 emotion-5"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-2 emotion-3"
+                >
+                  LIVE
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+      <Styled(div)
         length={8}
       >
-        <p
-          className="emotion-0 emotion-1"
+        <div
+          className="emotion-8 emotion-9"
         >
           -1.23.23
-        </p>
-      </Styled(p)>
+        </div>
+      </Styled(div)>
     </div>
   </Styled(div)>
 </LiveStatus>
