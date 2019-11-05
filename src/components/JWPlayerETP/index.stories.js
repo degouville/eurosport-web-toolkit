@@ -41,7 +41,7 @@ export const getBaseProps = newProps => {
     jwplayerData: { id: jwplayerId },
     videoData: {
       provider: 'sonic',
-      id: text('videoId', 'eurosport-e14534637c9752108ch3'),
+      id: text('videoId', 'eurosport-e14687651c9753505ch3'),
       sonic: {
         baseUrl: text('sonicBaseUrl', 'https://eu3-prod.disco-api.com'),
         realm: text('sonicRealm', 'eurosport'),

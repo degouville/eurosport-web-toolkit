@@ -32,6 +32,11 @@ const useInteraction = () => {
 
   const lockInteraction = useCallback(() => {
     setLockStatus(true);
+    let timeout;
+    (() => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => setLockStatus(false), 5000);
+    })();
   }, [setLockStatus]);
 
   const unLockInteraction = useCallback(() => {
