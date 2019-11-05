@@ -29,6 +29,7 @@ describe('Components|PlayerSkin', () => {
     mute: false,
     controls: false,
     isBuffering: false,
+    title: 'title',
     ...newProps,
   });
 
@@ -268,6 +269,41 @@ describe('Components|PlayerSkin', () => {
       expect(props.onSeek).toHaveBeenCalledWith(42);
       expect(props.onMute).toHaveBeenCalledWith(true);
       expect(handlePlayerInteraction).toHaveBeenCalledTimes(3);
+    });
+  });
+
+  describe('Display title only on Fullscreen', () => {
+    let wrapper;
+    let onFullscreenChange;
+
+    beforeEach(() => {
+      onFullscreenChange = jest.fn();
+    });
+
+    it('Should display title when Fullscreen is active', () => {
+      useFullscreen.mockReturnValue([true, onFullscreenChange]);
+      // Given
+      const props = createDefaultProps({ isPlaying: true });
+      wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      wrapper.find(Controls).prop('onFullscreenChange')();
+
+      // Expect
+      expect(wrapper.find(Controls).prop('title')).toEqual('title');
+    });
+
+    it('Should not display title when Fullscreen is inactive', () => {
+      useFullscreen.mockReturnValue([false, onFullscreenChange]);
+      // Given
+      const props = createDefaultProps({ isPlaying: true });
+      wrapper = shallow(<PlayerSkin {...props} />);
+
+      // When
+      wrapper.find(Controls).prop('onFullscreenChange')();
+
+      // Expect
+      expect(wrapper.find(Controls).prop('title')).toBeUndefined();
     });
   });
 });

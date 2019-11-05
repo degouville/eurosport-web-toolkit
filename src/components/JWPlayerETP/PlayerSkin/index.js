@@ -78,7 +78,7 @@ const PlayerSkin = ({
               onSeek={onSeekKeepInteraction}
               onVolume={onVolumeKeepInteraction}
               onMute={onMuteKeepInteraction}
-              title={title}
+              title={isFullscreen ? title : undefined}
               {...props}
             />
           </ControlsOverlay>
