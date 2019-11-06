@@ -7,12 +7,8 @@ exports[`Components|PlayerSkin should match snapshot 1`] = `
       "current": undefined,
     }
   }
-  onFocus={[Function]}
   onKeyUp={[Function]}
-  onMouseOut={[Function]}
-  onMouseOver={[Function]}
-  onTouchMove={[Function]}
-  onTouchStart={[Function]}
+  onMouseMove={[Function]}
 >
   <Styled(div)
     id="1234"

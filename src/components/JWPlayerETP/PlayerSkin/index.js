@@ -32,7 +32,7 @@ const PlayerSkin = ({
   title,
   ...props
 }) => {
-  const { onKeyUp, active, handlePlayerInteraction, lockInteraction, unLockInteraction } = useInteraction({
+  const { onKeyUp, active, handlePlayerInteraction } = useInteraction({
     isPlaying,
   });
   const MainContainerRef = useRef();
@@ -53,15 +53,7 @@ const PlayerSkin = ({
 
   return (
     // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
-    <MainContainer
-      innerRef={MainContainerRef}
-      onKeyUp={onKeyUp}
-      onMouseOver={lockInteraction}
-      onMouseOut={unLockInteraction}
-      onFocus={handlePlayerInteraction}
-      onTouchMove={handlePlayerInteraction}
-      onTouchStart={handlePlayerInteraction}
-    >
+    <MainContainer innerRef={MainContainerRef} onKeyUp={onKeyUp} onMouseMove={handlePlayerInteraction}>
       <JWPlayerContainer id={id} />
       {controls === false && (
         <>

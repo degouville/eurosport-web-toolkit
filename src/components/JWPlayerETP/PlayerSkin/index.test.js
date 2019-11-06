@@ -103,26 +103,13 @@ describe('Components|PlayerSkin', () => {
       expect(isActive).toBeTruthy();
     });
 
-    it('Should show skin on a mouseOver', () => {
+    it('Should show skin on a onMouseMove', () => {
       // Given
       const props = createDefaultProps({ isPlaying: true });
       const wrapper = shallow(<PlayerSkin {...props} />);
 
       // When
-      wrapper.prop('onMouseOver')();
-      const isActive = getControlsActiveState(wrapper);
-
-      // Expect
-      expect(isActive).toBeTruthy();
-    });
-
-    it('Should show skin on mouseOut', () => {
-      // Given
-      const props = createDefaultProps({ isPlaying: true });
-      const wrapper = shallow(<PlayerSkin {...props} />);
-
-      // When
-      wrapper.prop('onMouseOut')();
+      wrapper.prop('onMouseMove')();
       const isActive = getControlsActiveState(wrapper);
 
       // Expect
@@ -184,36 +171,9 @@ describe('Components|PlayerSkin', () => {
       expect(onKeyUp).not.toBeUndefined();
     });
 
-    it('Should handle onMouseOver events', () => {
+    it('Should handle onMouseMove events', () => {
       // When
-      wrapper.prop('onMouseOver')();
-      const isActive = getControlsActiveState(wrapper);
-
-      // Expect
-      expect(isActive).toBeTruthy();
-    });
-
-    it('Should handle onFocus events', () => {
-      // When
-      wrapper.prop('onFocus')();
-      const isActive = getControlsActiveState(wrapper);
-
-      // Expect
-      expect(isActive).toBeTruthy();
-    });
-
-    it('Should handle onTouchMove events', () => {
-      // When
-      wrapper.prop('onTouchMove')();
-      const isActive = getControlsActiveState(wrapper);
-
-      // Expect
-      expect(isActive).toBeTruthy();
-    });
-
-    it('Should handle onTouchStart events', () => {
-      // When
-      wrapper.prop('onTouchStart')();
+      wrapper.prop('onMouseMove')();
       const isActive = getControlsActiveState(wrapper);
 
       // Expect

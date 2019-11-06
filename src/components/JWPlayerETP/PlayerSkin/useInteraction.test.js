@@ -97,50 +97,6 @@ describe('Hooks|useInteraction', () => {
       expect(result.current.active).toBe(true);
     });
 
-    describe('Lock / Unlock state', () => {
-      it('Should lock the active status', () => {
-        // Given
-        const { result } = renderHook(() => useInteraction());
-
-        // When
-        act(() => {
-          result.current.lockInteraction();
-        });
-
-        // Expect
-        expect(result.current.active).toBe(true);
-      });
-
-      it('Should unlock the active status and delay it', () => {
-        // Given
-        const { result } = renderHook(() => useInteraction());
-
-        // When
-        act(() => {
-          result.current.unLockInteraction();
-        });
-
-        // Expect
-        expect(result.current.active).toBe(true);
-      });
-
-      it('Should remove the delayed status after x seconds', () => {
-        // Given
-        const { result } = renderHook(() => useInteraction());
-
-        // When
-        act(() => {
-          result.current.unLockInteraction();
-        });
-        act(() => {
-          jest.runAllTimers();
-        });
-
-        // Expect
-        expect(result.current.active).toBe(false);
-      });
-    });
-
     describe('handlePlayerInteraction', () => {
       it('Should set active state', () => {
         // Given
