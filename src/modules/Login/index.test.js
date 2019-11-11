@@ -3,6 +3,7 @@ import { mount, shallow } from 'enzyme';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { ThemeProvider } from 'emotion-theming';
 import { act } from 'react-dom/test-utils';
+import Button from 'src/elements/Button';
 import Login, { CallToActionContainer, FormContainer } from './index';
 import ErrorBanner from '../../elements/ErrorBanner';
 import Input from '../../components/Input/input.component';
@@ -60,6 +61,7 @@ describe('Login', () => {
     const getEmailInput = wrp => wrp.find(Input).find({ placeholder: 'Email' });
     const getPasswordInput = wrp => wrp.find(Input).find({ type: 'password' });
     const getFormContainer = wrp => wrp.find(FormContainer);
+    const getButton = wrp => wrp.find(Button);
 
     it('Should not display ErrorBanner when it is not defined', () => {
       // Given
@@ -140,6 +142,100 @@ describe('Login', () => {
 
       // Expect
       expect(resetCallback).toHaveBeenCalled();
+      wrapper.unmount();
+    });
+
+    it('Should not reset reCAPTCHA on form submit when token is null', () => {
+      // Given
+      const props = createProps();
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <Login {...props} recaptchaSiteKey="site-key" />
+        </ThemeProvider>
+      );
+      const reCAPTCHA = wrapper.find(ReCAPTCHA);
+      const resetCallback = jest.fn();
+
+      reCAPTCHA.getElement().ref.current.reset = resetCallback;
+
+      // When
+      act(() => {
+        reCAPTCHA.props().onChange(null);
+      });
+      act(() => {
+        getFormContainer(wrapper).simulate('submit');
+      });
+
+      // Expect
+      expect(resetCallback).not.toHaveBeenCalled();
+      wrapper.unmount();
+    });
+
+    it('should execute reCAPTCHA on form submit', () => {
+      const props = createProps();
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <Login {...props} recaptchaSiteKey="site-key" />
+        </ThemeProvider>
+      );
+      const reCAPTCHA = wrapper.find(ReCAPTCHA);
+      const executeCallback = jest.fn();
+
+      reCAPTCHA.getElement().ref.current.execute = executeCallback;
+
+      // When
+      act(() => {
+        reCAPTCHA.props().asyncScriptOnLoad();
+      });
+      act(() => {
+        reCAPTCHA.props().onChange('token');
+      });
+      act(() => {
+        getFormContainer(wrapper).simulate('submit');
+      });
+      // Expect
+      expect(executeCallback).toHaveBeenCalled();
+      wrapper.unmount();
+    });
+
+    it('should call onSubmit with token and correct password and email', () => {
+      const props = createProps();
+      const wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <Login {...props} recaptchaSiteKey="site-key" />
+        </ThemeProvider>
+      );
+      const reCAPTCHA = wrapper.find(ReCAPTCHA);
+      const onChange = jest.fn();
+
+      reCAPTCHA.getElement().ref.current.onChange = onChange;
+
+      // When
+      act(() => {
+        const onEmailChange = getEmailInput(wrapper).prop('onChange');
+        onEmailChange({ target: { value: 'email' } });
+
+        const onPasswordChange = getPasswordInput(wrapper)
+          .first()
+          .prop('onChange');
+        onPasswordChange({ target: { value: 'password' } });
+      });
+
+      act(() => {
+        reCAPTCHA.props().asyncScriptOnLoad();
+      });
+      act(() => {
+        reCAPTCHA.props().onChange('token');
+      });
+      act(() => {
+        getButton(wrapper).simulate('click');
+      });
+      // Expect
+      expect(wrapper.find(Login).props().onSubmit).toHaveBeenCalledWith({
+        email: 'email',
+        password: 'password',
+        recaptchaToken: 'token',
+      });
       wrapper.unmount();
     });
   });
