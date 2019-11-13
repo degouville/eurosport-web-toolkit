@@ -1430,7 +1430,7 @@ export class ActivatedComments extends React.Component {
           </StyledComments>
           <StyledAdvertisement>{rightAdElement}</StyledAdvertisement>
         </StyledWrapper>
-        <StyledFooter href="http://livefyre.fr" target="_blank">
+        <StyledFooter href="http://livefyre.com" target="_blank">
           Powered by Livefyre
         </StyledFooter>
       </>

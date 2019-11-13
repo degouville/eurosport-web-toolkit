@@ -450,12 +450,12 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
     </div>
   </Styled(div)>
   <Styled(a)
-    href="http://livefyre.fr"
+    href="http://livefyre.com"
     target="_blank"
   >
     <a
       className="emotion-18 emotion-19"
-      href="http://livefyre.fr"
+      href="http://livefyre.com"
       target="_blank"
     >
       Powered by Livefyre
