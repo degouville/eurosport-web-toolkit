@@ -1,9 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import { act } from 'react-dom/test-utils';
+import { ThemeProvider } from 'emotion-theming';
+import theme from 'src/theme';
 import PlayerSkin, { ControlsOverlay, SpinnerOverlay, ErrorOverlay } from './index';
 import useInteraction from './useInteraction';
 import useFullscreen from './useFullscreen';
-import Controls from '../Controls';
+import Controls, { TitleContainer } from '../Controls';
 
 jest.mock('./useInteraction');
 jest.mock('./useFullscreen');
@@ -30,6 +33,7 @@ describe('Components|PlayerSkin', () => {
     controls: false,
     isBuffering: false,
     title: 'title',
+    isAdPlaying: false,
     ...newProps,
   });
 
@@ -232,7 +236,7 @@ describe('Components|PlayerSkin', () => {
     });
   });
 
-  describe('Display title only on Fullscreen', () => {
+  describe('Display title', () => {
     let wrapper;
     let onFullscreenChange;
 
@@ -244,26 +248,57 @@ describe('Components|PlayerSkin', () => {
       useFullscreen.mockReturnValue([true, onFullscreenChange]);
       // Given
       const props = createDefaultProps({ isPlaying: true });
-      wrapper = shallow(<PlayerSkin {...props} />);
+      wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <PlayerSkin {...props} />
+        </ThemeProvider>
+      );
 
       // When
-      wrapper.find(Controls).prop('onFullscreenChange')();
+      act(() => {
+        wrapper.find(Controls).prop('onFullscreenChange')();
+      });
 
       // Expect
-      expect(wrapper.find(Controls).prop('title')).toEqual('title');
+      expect(wrapper.find(TitleContainer).text()).toEqual('title');
     });
 
     it('Should not display title when Fullscreen is inactive', () => {
       useFullscreen.mockReturnValue([false, onFullscreenChange]);
       // Given
       const props = createDefaultProps({ isPlaying: true });
-      wrapper = shallow(<PlayerSkin {...props} />);
+      wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <PlayerSkin {...props} />
+        </ThemeProvider>
+      );
 
       // When
-      wrapper.find(Controls).prop('onFullscreenChange')();
+      act(() => {
+        wrapper.find(Controls).prop('onFullscreenChange')();
+      });
 
       // Expect
-      expect(wrapper.find(Controls).prop('title')).toBeUndefined();
+      expect(wrapper.find(TitleContainer).text()).toEqual('');
+    });
+
+    it('Should display title when not Fullscreen if isAdPlaying is true', () => {
+      useFullscreen.mockReturnValue([false, onFullscreenChange]);
+      // Given
+      const props = createDefaultProps({ isPlaying: true, isAdPlaying: true });
+      wrapper = mount(
+        <ThemeProvider theme={theme}>
+          <PlayerSkin {...props} />
+        </ThemeProvider>
+      );
+
+      // When
+      act(() => {
+        wrapper.find(Controls).prop('onFullscreenChange')();
+      });
+
+      // Expect
+      expect(wrapper.find(TitleContainer).text()).toEqual('title');
     });
   });
 });

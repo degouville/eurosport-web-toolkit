@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { ThemeProvider } from 'emotion-theming';
 import theme from 'src/theme';
-import PlayerButtons, { SpinnerStyled } from './index';
+import PlayerButtons, { SpinnerStyled, SecondIcon } from './index';
 
 describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
   const createDefaultProps = newProps => ({
@@ -12,6 +12,7 @@ describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
     onPlay: jest.fn(),
     onPause: jest.fn(),
     isBuffering: false,
+    isAdPlaying: false,
     ...newProps,
   });
 
@@ -101,5 +102,29 @@ describe('Components|JWPlayerETP|Controls|PlayerButtons', () => {
 
     // Expect
     expect(result).toBe(true);
+  });
+
+  it('Should display rewind and forward buttons when isAdPlaying is false', () => {
+    // Given
+    const props = createDefaultProps({ isAdPlaying: false });
+    const wrapper = shallow(<PlayerButtons {...props} />);
+
+    // When
+    const result = wrapper.find(SecondIcon);
+
+    // Expect
+    expect(result).toHaveLength(2);
+  });
+
+  it('Should not display rewind and forward buttons when isAdPlaying is true', () => {
+    // Given
+    const props = createDefaultProps({ isAdPlaying: true });
+    const wrapper = shallow(<PlayerButtons {...props} />);
+
+    // When
+    const result = wrapper.find(SecondIcon);
+
+    // Expect
+    expect(result).toHaveLength(0);
   });
 });

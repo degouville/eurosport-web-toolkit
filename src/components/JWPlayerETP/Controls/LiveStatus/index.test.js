@@ -54,7 +54,7 @@ describe('Components|JWPlayerETP|Controls|LiveStatus', () => {
     // Given
     const wrapper = mount(
       <ThemeProvider theme={theme}>
-        <LiveStatus rewindCounts="-11:38" onSeek={jest.fn} seekMax={-25} />
+        <LiveStatus rewindCounts="-11:38" onSeek={jest.fn} seekMax={-25} isLive />
       </ThemeProvider>
     ).find(LiveStatus);
 
@@ -68,6 +68,18 @@ describe('Components|JWPlayerETP|Controls|LiveStatus', () => {
     const wrapper = mount(
       <ThemeProvider theme={theme}>
         <LiveStatus onSeek={jest.fn} seekMax={-25} />
+      </ThemeProvider>
+    ).find(LiveStatus);
+
+    // Expect
+    expect(wrapper.find('img')).toHaveLength(0);
+  });
+
+  it('Should not show Back to Live action if isLive is false', () => {
+    // Given
+    const wrapper = mount(
+      <ThemeProvider theme={theme}>
+        <LiveStatus rewindCounts="-11:38" onSeek={jest.fn} seekMax={-25} isLive={false} />
       </ThemeProvider>
     ).find(LiveStatus);
 

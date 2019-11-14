@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text } from '@storybook/addon-knobs';
+import { text, boolean } from '@storybook/addon-knobs';
 import { actions, action } from '@storybook/addon-actions';
 import { JWPlayerETP } from 'src';
 import VideoPlayerModal from '../../modules/VideoPlayerModal';
@@ -29,6 +29,39 @@ const withVideoPlayerModal = Component => props => (
   </VideoPlayerModal>
 );
 
+const id = text('VideoId', 'eurosport-e14695902c9756223ch3');
+const enableFreewheel = boolean('Enable Freewheel', true);
+
+const freewheelConfig = {
+  adManagerURL: 'https://mssl.fwmrm.net/p/eurosport_js/AdManager.js',
+  serverURL: 'https://7cee0.v.fwmrm.net/ad/g/1',
+  networkID: 511712,
+  profileId: '511712:euro_sport_com_web',
+  afid: '146895011',
+  video_targeting: 'live_stream',
+  auth: 'premium',
+  vdur: 12300,
+  enabled: true,
+  fwassetId: id,
+  sectionId: 'www.eurosport.fr_desktop_video',
+  _fw_gdpr: '1',
+  /* eslint-disable max-len */
+  _fw_gdpr_consent:
+    'BOoN3eROoN3eRAKAOBENCo-AAAAq57_______9______9uz_Ov_v_f__33e8__9v_l_7_-___u_-3zd4u_1vf99yfm1-7etr3tp_87ues2_Xur__79__3z3_9phP78k89r7337Ew-v-3o8Lg',
+};
+
+const customProps = {
+  videoData: {
+    provider: 'sonic',
+    id,
+    sonic: {
+      baseUrl: text('sonic.baseUrl', 'https://eu3-prod.disco-api.com'),
+      realm: 'eurosport',
+    },
+    freewheelAdParams: enableFreewheel && freewheelConfig,
+  },
+};
+
 // eslint-disable-next-line import/prefer-default-export
 export const getBaseProps = newProps => {
   const jwplayerId = text('ScriptId (jwplayerId)', 'DWNosgcz');
@@ -41,7 +74,7 @@ export const getBaseProps = newProps => {
     jwplayerData: { id: jwplayerId },
     videoData: {
       provider: 'sonic',
-      id: text('videoId', 'eurosport-e14687651c9753505ch3'),
+      id,
       sonic: {
         baseUrl: text('sonicBaseUrl', 'https://eu3-prod.disco-api.com'),
         realm: text('sonicRealm', 'eurosport'),
@@ -63,3 +96,4 @@ export const getBaseProps = newProps => {
 const stories = storiesOf('Components|JWPlayerETP', module);
 
 stories.add('JWPlayerETP default', () => <JWPlayerETP {...getBaseProps()} />);
+stories.add('JWPlayerETP with Ads', () => <JWPlayerETP {...getBaseProps(customProps)} />);

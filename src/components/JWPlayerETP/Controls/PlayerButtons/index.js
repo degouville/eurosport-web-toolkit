@@ -9,19 +9,31 @@ import forward from 'src/assets/icon-jump-fwd.svg';
 import rewind from 'src/assets/icon-jump-rwd.svg';
 import { css } from 'emotion';
 
-const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause, isBuffering }) => (
+const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause, isBuffering, isAdPlaying }) => (
   <MainContainer>
-    <SecondIcon src={rewind} alt="Rewind" onClick={onRewind} />
-    <Label>15</Label>
+    {!isAdPlaying && (
+      <>
+        <SecondIcon src={rewind} alt="Rewind" onClick={onRewind} />
+        <Label>15</Label>
+      </>
+    )}
     <CentralContainer isBuffering={isBuffering}>
       {isBuffering && <SpinnerStyled width="90px" />}
       <MainIcon hidden={!isPlaying} src={pause} alt="Pause" onClick={onPause} />
       <MainIcon hidden={isPlaying} src={play} alt="Play" onClick={onPlay} />
     </CentralContainer>
-    <Label>15</Label>
-    <SecondIcon src={forward} alt="Forward" onClick={onForward} />
+    {!isAdPlaying && (
+      <>
+        <Label>15</Label>
+        <SecondIcon src={forward} alt="Forward" onClick={onForward} />
+      </>
+    )}
   </MainContainer>
 );
+
+PlayerButtons.defaultProps = {
+  isAdPlaying: false,
+};
 
 PlayerButtons.propTypes = {
   isBuffering: PropTypes.bool.isRequired,
@@ -30,6 +42,7 @@ PlayerButtons.propTypes = {
   onRewind: PropTypes.func.isRequired,
   onPlay: PropTypes.func.isRequired,
   onPause: PropTypes.func.isRequired,
+  isAdPlaying: PropTypes.bool,
 };
 
 const MainContainer = styled.div`
@@ -49,7 +62,7 @@ const Label = styled.p`
   cursor: pointer;
 `;
 
-const SecondIcon = styled.img`
+export const SecondIcon = styled.img`
   height: 24px;
   user-select: none;
   cursor: pointer;

@@ -318,6 +318,7 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
   }
 >
   <PlayerButtons
+    isAdPlaying={false}
     isBuffering={false}
     isPlaying={false}
     onForward={[MockFunction]}
@@ -727,6 +728,7 @@ exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot whe
   }
 >
   <PlayerButtons
+    isAdPlaying={false}
     isBuffering={false}
     isPlaying={true}
     onForward={[MockFunction]}

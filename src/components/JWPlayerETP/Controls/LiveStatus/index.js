@@ -9,14 +9,20 @@ const LiveStatus = ({ rewindCounts, isLive, onSeek, seekMax }) => {
 
   return (
     <LiveContainer>
-      <BackToLiveAction rewindCounts={rewindCounts} onClick={onClickBackToLive}>
-        {rewindCounts && <ForwardIcon src={forward} alt="Forward" />}
-        <Icon isLive={isLive} rewindCounts={rewindCounts}>
-          <Text>LIVE</Text>
-        </Icon>
-      </BackToLiveAction>
+      {isLive && (
+        <BackToLiveAction rewindCounts={rewindCounts} onClick={onClickBackToLive}>
+          {rewindCounts && <ForwardIcon src={forward} alt="Forward" />}
+          <Icon isLive rewindCounts={rewindCounts}>
+            <Text>LIVE</Text>
+          </Icon>
+        </BackToLiveAction>
+      )}
 
-      {rewindCounts && <RewindText length={rewindCounts?.length}>{rewindCounts}</RewindText>}
+      {rewindCounts && (
+        <RewindText length={rewindCounts?.length} isLive>
+          {rewindCounts}
+        </RewindText>
+      )}
     </LiveContainer>
   );
 };
@@ -70,7 +76,8 @@ const RewindText = styled.div`
   line-height: 16px;
   text-align: center;
   user-select: none;
-  border-top: ${({ theme }) => `1px solid ${theme.playerControls.separator}`};
+  flex: 1;
+  border-top: ${({ theme, isLive }) => isLive && `1px solid ${theme.playerControls.separator}`};
 
   font-size: 11px;
   padding: 0 16px;

@@ -30,6 +30,7 @@ const PlayerSkin = ({
   controls,
   errorMessage,
   title,
+  isAdPlaying,
   ...props
 }) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({
@@ -70,7 +71,8 @@ const PlayerSkin = ({
               onSeek={onSeekKeepInteraction}
               onVolume={onVolumeKeepInteraction}
               onMute={onMuteKeepInteraction}
-              title={isFullscreen ? title : undefined}
+              title={isFullscreen || isAdPlaying ? title : undefined}
+              isAdPlaying={isAdPlaying}
               {...props}
             />
           </ControlsOverlay>
@@ -104,6 +106,7 @@ PlayerSkin.propTypes = {
   isPlaying: PropTypes.bool.isRequired,
   controls: PropTypes.bool.isRequired,
   errorMessage: PropTypes.string,
+  isAdPlaying: PropTypes.bool.isRequired,
 };
 
 const CommonOverlay = css`

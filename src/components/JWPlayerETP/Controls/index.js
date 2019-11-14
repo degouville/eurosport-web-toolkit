@@ -30,6 +30,7 @@ const Controls = ({
   mute,
   onMute,
   title,
+  isAdPlaying,
 }) => {
   const { isMobile } = useScreenInformation();
 
@@ -47,6 +48,7 @@ const Controls = ({
             onRewind={onRewind}
             onPlay={onPlay}
             onPause={onPause}
+            isAdPlaying={isAdPlaying}
           />
         </PlayerButtonContainer>
 
@@ -83,6 +85,8 @@ Controls.defaultProps = {
   isLive: false,
   rewindCounts: null,
   title: undefined,
+  // eslint-disable-next-line react/default-props-match-prop-types
+  isAdPlaying: false,
 };
 
 Controls.propTypes = {

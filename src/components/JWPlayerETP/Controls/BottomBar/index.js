@@ -69,7 +69,7 @@ BottomBar.propTypes = {
 
 const BottomBarContainer = styled.div`
   ${BarContainer}
- 
+
   background-color: ${({ theme }) => theme.playerControls.bar.backgroundColor};
   flex-direction: column;
   justify-content: space-between;
