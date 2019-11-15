@@ -140,6 +140,9 @@ export default {
     },
   },
   dropdown: {
+    heading: {
+      color: manatee,
+    },
     label: {
       color: white,
     },

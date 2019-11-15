@@ -3,19 +3,24 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { css } from 'emotion';
 import * as breakpoints from 'src/breakpoints';
+import { audioTracks as audioTracksPropTypes } from 'src/types';
 import { VerticalSeparator } from './UI/separators';
 import useScreenInformation from './useScreenInformation';
 import PlayerButtons from './PlayerButtons';
 import BarContainer from './UI/bar';
 import BottomBar from './BottomBar';
-import ActionList from './ActionList';
+import FullScreen from './FullScreen';
+import { LanguageSelector } from './LanguageSelector';
+import BarControlWrapper from './UI/barControlWrapper';
 
 const Controls = ({
+  audioTracks,
   isPlaying,
   isBuffering,
   isLive,
   rewindCounts,
   isFullscreen,
+  onAudioTrackChange,
   onFullscreenChange,
   onForward,
   onRewind,
@@ -33,12 +38,21 @@ const Controls = ({
   isAdPlaying,
 }) => {
   const { isMobile } = useScreenInformation();
+  const shouldDisplayLanguageSelector = audioTracks?.length > 1;
 
   return (
     <>
       <MainContainer>
         <TopBarContainer>
-          {isMobile && <ActionList isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />}
+          {isMobile && (
+            <>
+              (
+              {shouldDisplayLanguageSelector && (
+                <LanguageSelector audioTracks={audioTracks} onAudioTrackChange={onAudioTrackChange} />
+              )}
+              <FullScreen isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />
+            </>
+          )}
         </TopBarContainer>
         <PlayerButtonContainer>
           <PlayerButtons
@@ -70,11 +84,14 @@ const Controls = ({
         onMute={onMute}
         mute={mute}
       >
+        <VerticalSeparator />
         {!isMobile && (
-          <>
-            <VerticalSeparator />
-            <ActionList isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />
-          </>
+          <StyledBarControlWrapper>
+            {shouldDisplayLanguageSelector && (
+              <LanguageSelector audioTracks={audioTracks} onAudioTrackChange={onAudioTrackChange} />
+            )}
+            <FullScreen isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />
+          </StyledBarControlWrapper>
         )}
       </BottomBar>
     </>
@@ -91,7 +108,9 @@ Controls.defaultProps = {
 
 Controls.propTypes = {
   ...PlayerButtons.propTypes,
+  audioTracks: audioTracksPropTypes.isRequired,
   isFullscreen: PropTypes.bool.isRequired,
+  onAudioTrackChange: PropTypes.func.isRequired,
   onFullscreenChange: PropTypes.func.isRequired,
   isLive: PropTypes.bool,
   rewindCounts: PropTypes.string,
@@ -105,6 +124,13 @@ Controls.propTypes = {
   mute: PropTypes.bool.isRequired,
   title: PropTypes.string,
 };
+
+const StyledBarControlWrapper = styled(BarControlWrapper)`
+  padding: 0 30px;
+  > *:not(:last-child) {
+    margin-right: 30px;
+  }
+`;
 
 const MainContainer = styled.div`
   display: flex;

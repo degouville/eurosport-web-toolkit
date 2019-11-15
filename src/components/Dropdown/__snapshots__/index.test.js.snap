@@ -30,17 +30,36 @@ exports[`Dropdown Renders Dropdown 1`] = `
   display: none;
   z-index: 2;
   opacity: 0.95;
+  padding: 8px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
   border: solid 1px rgba(109,109,120,0.8);
   border-radius: 3px;
   background-color: #151726;
-  padding: 17px 8px 12px 17px;
 }
 
-@media (min-width:700px) {
+.emotion-30::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  border-top: 1px solid rgba(109,109,120,0.8);
+  border-left: 1px solid rgba(109,109,120,0.8);
+  border-radius: 1px;
+  background: #151726;
+  height: 10px;
+  display: block;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  top: -6px;
+  left: 0;
+}
+
+@media (min-width:480px) {
   .emotion-30 {
+    padding: 17px 8px 12px 17px;
     right: -183px;
     top: 42px;
     bottom: auto;
@@ -63,24 +82,6 @@ exports[`Dropdown Renders Dropdown 1`] = `
 }
 }
 
-.emotion-30::before {
-  content: '';
-  position: absolute;
-  width: 10px;
-  border-top: 1px solid rgba(109,109,120,0.8);
-  border-left: 1px solid rgba(109,109,120,0.8);
-  border-radius: 1px;
-  background: #151726;
-  height: 10px;
-  display: block;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
-  top: -6px;
-  left: 0;
-}
-
 .emotion-28 {
   max-height: 130px;
   overflow-y: auto;
@@ -93,12 +94,6 @@ exports[`Dropdown Renders Dropdown 1`] = `
   -moz-scrollbar-color: #4A7EFF #3D4248;
   -ms-scrollbar-color: #4A7EFF #3D4248;
   scrollbar-color: #4A7EFF #3D4248;
-}
-
-@media (min-width:700px) {
-  .emotion-28 {
-    width: 350px;
-  }
 }
 
 .emotion-28::-webkit-scrollbar {
@@ -115,11 +110,17 @@ exports[`Dropdown Renders Dropdown 1`] = `
   border-radius: 2px;
 }
 
+@media (min-width:480px) {
+  .emotion-28 {
+    width: 350px;
+  }
+}
+
 .emotion-6 {
   color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
-  padding: 13px 0;
+  padding: 6px 0;
   margin-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -147,8 +148,21 @@ exports[`Dropdown Renders Dropdown 1`] = `
   color: #FFFFFF;
 }
 
+@media (min-width:480px) {
+  .emotion-6 {
+    padding: 13px 0;
+  }
+}
+
 .emotion-2 {
+  font-size: 11px;
   width: 100%;
+}
+
+@media (min-width:480px) {
+  .emotion-2 {
+    font-size: initial;
+  }
 }
 
 .emotion-4 {
@@ -160,7 +174,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
   color: #C6C7CE;
   font-size: 14px;
   cursor: pointer;
-  padding: 13px 0;
+  padding: 6px 0;
   margin-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -186,6 +200,12 @@ exports[`Dropdown Renders Dropdown 1`] = `
 
 .emotion-10:hover {
   color: #FFFFFF;
+}
+
+@media (min-width:480px) {
+  .emotion-10 {
+    padding: 13px 0;
+  }
 }
 
 .emotion-38 {
@@ -246,7 +266,9 @@ exports[`Dropdown Renders Dropdown 1`] = `
 }
 
 <Dropdown
+  heading={null}
   initialOptionID={null}
+  isTop={false}
   onItemSelected={null}
   options={
     Array [
@@ -276,6 +298,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
       },
     ]
   }
+  width={null}
 >
   <Styled(div)>
     <div
@@ -292,13 +315,19 @@ exports[`Dropdown Renders Dropdown 1`] = `
       </Styled(div)>
       <Styled(div)
         isDropdownOpen={false}
+        isTop={false}
+        width={null}
       >
         <div
           className="emotion-30 emotion-31"
+          width={null}
         >
-          <Styled(ul)>
+          <Styled(ul)
+            width={null}
+          >
             <ul
               className="emotion-28 emotion-29"
+              width={null}
             >
               <Styled(li)
                 isSelected={true}
@@ -311,7 +340,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
                 >
                   <Styled(p)>
                     <p
-                      className="emotion-2 emotion-3"
+                      className="emotion-2 emotion-10"
                     >
                       Men singles
                     </p>
@@ -336,7 +365,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
                 >
                   <Styled(p)>
                     <p
-                      className="emotion-2 emotion-3"
+                      className="emotion-2 emotion-10"
                     >
                       Women singles
                     </p>
@@ -354,7 +383,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
                 >
                   <Styled(p)>
                     <p
-                      className="emotion-2 emotion-3"
+                      className="emotion-2 emotion-10"
                     >
                       Men doubles
                     </p>
@@ -372,7 +401,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
                 >
                   <Styled(p)>
                     <p
-                      className="emotion-2 emotion-3"
+                      className="emotion-2 emotion-10"
                     >
                       Roland Garros women doubles longer
                     </p>
@@ -390,7 +419,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
                 >
                   <Styled(p)>
                     <p
-                      className="emotion-2 emotion-3"
+                      className="emotion-2 emotion-10"
                     >
                       Men triples
                     </p>
@@ -408,7 +437,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
                 >
                   <Styled(p)>
                     <p
-                      className="emotion-2 emotion-3"
+                      className="emotion-2 emotion-10"
                     >
                       Women triples
                     </p>

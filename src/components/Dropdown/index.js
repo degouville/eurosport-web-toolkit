@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import Chevron from 'src/assets/chevron.component.svg';
-import { medium } from '../../breakpoints';
-import { H3 } from '../../typography';
+import { small, medium } from '../../breakpoints';
+import { H3, H5 } from '../../typography';
+import { removeUnit } from './utils';
 
 export const StyledContainer = styled.div`
   display: flex;
@@ -18,8 +19,8 @@ export const StyledOverlay = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
-
   display: none;
+
   ${({ isDropdownOpen }) =>
     isDropdownOpen &&
     css`
@@ -28,15 +29,17 @@ export const StyledOverlay = styled.div`
 `;
 
 export const StyledWrapper = styled.div`
+  position: relative;
+
   ${medium(css`
     width: fit-content;
   `)};
-  position: relative;
 `;
 
 export const StyledText = styled(H3)`
   color: ${({ theme }) => theme.dropdown.label.color};
   text-transform: uppercase;
+
   ${medium(css`
     display: flex;
     align-items: center;
@@ -54,36 +57,53 @@ export const StyledArrow = styled(Chevron)`
   }
 `;
 
+const StyledHeading = styled(H5)`
+  color: ${({ theme }) => theme.dropdown.heading.color};
+  margin-bottom: 15px;
+  text-transform: uppercase;
+`;
+
+const StyledDropdownTop = () => css`
+  &::before {
+    top: auto;
+    transform: translateX(-50%) rotate(220deg);
+    bottom: -6px;
+  }
+
+  ${small(css`
+    top: auto;
+    bottom: 42px;
+  `)}
+`;
+
+const StyledDropdownWithCustomWidth = ({ width }) => {
+  const outerWidth = removeUnit(width) + 16.25;
+
+  return css`
+    width: ${width};
+
+    ${small(css`
+      right: -${outerWidth / 2}px;
+      @-moz-document url-prefix() {
+        right: -${outerWidth / 2}px;
+      }
+    `)}
+  `;
+};
+
 export const StyledDropdown = styled.div`
   position: absolute;
   width: calc(100% - 25px);
   bottom: -165px;
-  ${medium(css`
-    right: -183px;
-    top: 42px;
-    @-moz-document url-prefix() {
-      right: -183px;
-    }
-    @supports (-ms-ime-align: auto) {
-      right: unset;
-      width: auto;
-    }
-    bottom: auto;
-    width: fit-content;
-  `)};
   display: none;
   z-index: 2;
   opacity: 0.95;
+  padding: 8px;
   align-self: flex-end;
   border: solid 1px ${({ theme }) => theme.dropdown.border};
   border-radius: 3px;
   background-color: ${({ theme }) => theme.dropdown.background};
-  padding: 17px 8px 12px 17px;
-  ${({ isDropdownOpen }) =>
-    isDropdownOpen &&
-    css`
-      display: block;
-    `}
+
   &::before {
     content: '';
     position: absolute;
@@ -99,17 +119,36 @@ export const StyledDropdown = styled.div`
     top: -6px;
     left: 0;
   }
+
+  ${small(css`
+    padding: 17px 8px 12px 17px;
+    right: -183px;
+    top: 42px;
+    @-moz-document url-prefix() {
+      right: -183px;
+    }
+    @supports (-ms-ime-align: auto) {
+      right: unset;
+      width: auto;
+    }
+    bottom: auto;
+    width: fit-content;
+  `)};
+
+  ${({ isDropdownOpen }) =>
+    isDropdownOpen &&
+    css`
+      display: block;
+    `}
+
+  ${({ isTop }) => isTop && StyledDropdownTop};
+  ${({ width }) => width && StyledDropdownWithCustomWidth};
 `;
 
 const StyledUl = styled.ul`
   max-height: 130px;
   overflow-y: auto;
   overflow-x: hidden;
-
-  ${medium(css`
-    width: 350px;
-  `)};
-
   scrollbar-width: thin;
   scrollbar-color: ${({ theme }) => `${theme.scrollbar.color} ${theme.scrollbar.background}`};
 
@@ -126,6 +165,11 @@ const StyledUl = styled.ul`
     background: ${({ theme }) => theme.scrollbar.color};
     border-radius: 2px;
   }
+
+  ${({ width }) =>
+    small(css`
+      width: ${width || '350px'};
+    `)};
 `;
 
 export const StyledLi = styled.li`
@@ -133,11 +177,12 @@ export const StyledLi = styled.li`
     isSelected ? theme.dropdown.list.selected.color : theme.dropdown.list.default.color};
   font-size: 14px;
   cursor: pointer;
-  padding: 13px 0;
+  padding: 6px 0;
   margin-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &:first-of-type {
     padding-top: 0;
   }
@@ -147,6 +192,10 @@ export const StyledLi = styled.li`
   &:hover {
     color: ${({ theme }) => theme.dropdown.list.selected.color};
   }
+
+  ${small(css`
+    padding: 13px 0;
+  `)}
 `;
 
 export const StyledCheckMark = styled.span`
@@ -155,7 +204,12 @@ export const StyledCheckMark = styled.span`
 `;
 
 const StyledP = styled.p`
+  font-size: 11px;
   width: 100%;
+
+  ${small(css`
+    font-size: initial;
+  `)}
 `;
 
 class Dropdown extends React.Component {
@@ -194,13 +248,15 @@ class Dropdown extends React.Component {
   };
 
   render() {
-    const { options } = this.props;
+    const { children, className, heading, isTop, options, width } = this.props;
     const { isDropdownOpen, selectedOption } = this.state;
+
     return (
       <StyledWrapper>
         <StyledOverlay isDropdownOpen={isDropdownOpen} onClick={this.toggleOpen} />
-        <StyledDropdown isDropdownOpen={isDropdownOpen}>
-          <StyledUl>
+        <StyledDropdown className={className} isDropdownOpen={isDropdownOpen} isTop={isTop} width={width}>
+          {heading && <StyledHeading>{heading}</StyledHeading>}
+          <StyledUl width={width}>
             {options &&
               options.map(option => (
                 <StyledLi
@@ -216,8 +272,12 @@ class Dropdown extends React.Component {
         </StyledDropdown>
         <StyledContainer onClick={this.toggleOpen}>
           <StyledText>
-            {selectedOption.text}
-            <StyledArrow />
+            {children || (
+              <>
+                {selectedOption.text}
+                <StyledArrow />
+              </>
+            )}
           </StyledText>
         </StyledContainer>
       </StyledWrapper>
@@ -226,11 +286,20 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.defaultProps = {
+  children: null,
+  className: undefined,
+  heading: null,
+  isTop: false,
   onItemSelected: null,
   initialOptionID: null,
+  width: null,
 };
 
 Dropdown.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  heading: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+  isTop: PropTypes.bool,
   options: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,
@@ -239,6 +308,7 @@ Dropdown.propTypes = {
   ).isRequired,
   initialOptionID: PropTypes.number,
   onItemSelected: PropTypes.func,
+  width: PropTypes.string,
 };
 
 export default Dropdown;

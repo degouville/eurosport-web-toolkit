@@ -54,3 +54,14 @@ export const scoreBlock = {
   displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
   hasButton: PropTypes.bool,
 };
+
+export const audioTracks = PropTypes.arrayOf(
+  PropTypes.shape({
+    autoselect: PropTypes.bool,
+    defaulttrack: PropTypes.bool,
+    groupid: PropTypes.string,
+    hlsjsIndex: PropTypes.number,
+    language: PropTypes.string,
+    name: PropTypes.string,
+  })
+);

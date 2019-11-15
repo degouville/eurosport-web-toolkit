@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Controls, { TopBarContainer } from './index';
 import useScreenInformation from './useScreenInformation';
-import ActionList from './ActionList';
+import FullScreen from './FullScreen';
 import BottomBar from './BottomBar';
 
 jest.mock('./useScreenInformation');
@@ -43,31 +43,31 @@ describe('Components|JWPlayerETP|Controls', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('ActionList', () => {
-    it('Should display action list in Top bar on mobile', () => {
+  describe('FullScreen', () => {
+    it('Should display FullScreen component in Top bar on mobile', () => {
       // Given
       useScreenInformation.mockImplementation(() => ({ isMobile: true }));
       const props = createDefaultProps();
       const wrapper = shallow(<Controls {...props} />);
 
       // When
-      const actionList = wrapper.find(TopBarContainer).find(ActionList);
+      const fullScreen = wrapper.find(TopBarContainer).find(FullScreen);
 
       // Expect
-      expect(actionList.exists()).toBeTruthy();
+      expect(fullScreen.exists()).toBeTruthy();
     });
 
-    it('Should display action list in Bottom bar on desktop', () => {
+    it('Should display FullScreen component in Bottom bar on desktop', () => {
       // Given
       useScreenInformation.mockImplementation(() => ({ isMobile: false }));
       const props = createDefaultProps();
       const wrapper = shallow(<Controls {...props} />);
 
       // When
-      const actionList = wrapper.find(BottomBar).find(ActionList);
+      const fullScreen = wrapper.find(BottomBar).find(FullScreen);
 
       // Expect
-      expect(actionList.exists()).toBeTruthy();
+      expect(fullScreen.exists()).toBeTruthy();
     });
   });
 });

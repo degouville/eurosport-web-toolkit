@@ -33,10 +33,12 @@ exports[`Components|JWPlayerETP|Controls Should match snapshot 1`] = `
     volume={50}
   >
     <Styled(div) />
-    <ActionList
-      isFullscreen={true}
-      onFullscreenChange={[MockFunction]}
-    />
+    <Styled(div)>
+      <FullScreen
+        isFullscreen={true}
+        onFullscreenChange={[MockFunction]}
+      />
+    </Styled(div)>
   </WithTheme(BottomBar)>
 </Fragment>
 `;

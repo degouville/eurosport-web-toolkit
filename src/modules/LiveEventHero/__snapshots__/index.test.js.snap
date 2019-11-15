@@ -86,6 +86,9 @@ exports[`Live Event Hero should render as expected 1`] = `
         "checkMark": Object {
           "color": "#4A7EFF",
         },
+        "heading": Object {
+          "color": "#9798A6",
+        },
         "label": Object {
           "color": "#FFFFFF",
         },

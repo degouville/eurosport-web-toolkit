@@ -63,14 +63,14 @@ export const getBaseProps = (id, newProps) => {
 const stories = storiesOf('Components|JWPlayerETP', module);
 
 stories.add('JWPlayerETP default', () => {
-  const id = text('VideoId', 'eurosport-e14695902c9756223ch3');
+  const id = text('VideoId', 'eurosport-e14690956c9757146ch0');
 
   return <JWPlayerETP {...getBaseProps(id)} />;
 });
 
 stories.add('JWPlayerETP with Ads', () => {
   const enableFreewheel = boolean('Enable Freewheel', true);
-  const id = text('VideoId', 'eurosport-e14695902c9756223ch3');
+  const id = text('VideoId', 'eurosport-e14690956c9757146ch0');
 
   const freewheelConfig = {
     adManagerURL: 'https://mssl.fwmrm.net/p/eurosport_js/AdManager.js',

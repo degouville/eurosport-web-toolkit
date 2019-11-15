@@ -3418,6 +3418,9 @@ exports[`RoundTable should render as expected 1`] = `
         "checkMark": Object {
           "color": "#4A7EFF",
         },
+        "heading": Object {
+          "color": "#9798A6",
+        },
         "label": Object {
           "color": "#FFFFFF",
         },
@@ -27381,6 +27384,9 @@ exports[`RoundTable should render as expected 2`] = `
         "border": "rgba(109,109,120,0.8)",
         "checkMark": Object {
           "color": "#4A7EFF",
+        },
+        "heading": Object {
+          "color": "#9798A6",
         },
         "label": Object {
           "color": "#FFFFFF",

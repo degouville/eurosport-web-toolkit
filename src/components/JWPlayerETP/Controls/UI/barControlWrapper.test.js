@@ -19,6 +19,6 @@ describe('BarControlWrapper', () => {
         <BarControlWrapper medium />
       </ThemeProvider>
     );
-    expect(wrapper).toHaveStyleRule('width', '72px');
+    expect(wrapper).toHaveStyleRule('width', '80px');
   });
 });

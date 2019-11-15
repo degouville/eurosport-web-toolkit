@@ -1,0 +1,26 @@
+[
+  {
+    "autoselect": true,
+    "defaulttrack": true,
+    "groupid": "audio_0",
+    "hlsjsIndex": 0,
+    "language": "eng",
+    "name": "English"
+  },
+  {
+    "autoselect": false,
+    "defaulttrack": false,
+    "groupid": "audio_0",
+    "hlsjsIndex": 1,
+    "language": "gre",
+    "name": "Greek"
+  },
+  {
+    "autoselect": false,
+    "defaulttrack": false,
+    "groupid": "audio_0",
+    "hlsjsIndex": 2,
+    "language": "bul",
+    "name": "Bulgarian"
+  }
+]
