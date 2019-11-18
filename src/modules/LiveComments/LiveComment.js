@@ -115,7 +115,8 @@ const StyledCardWrapper = styled.div`
 const LiveComment = ({ liveComment, labelPlayButton, className }) => {
   const iconUrl = get(liveComment, ['icon', 'svg'], null);
   const pictureUrl = get(liveComment, ['picture', 'format', 'url'], null);
-  const shouldDisplayComment = !!liveComment.html || !!liveComment.marker || !!iconUrl || !!liveComment.tweet;
+  const shouldDisplayComment =
+    !!liveComment.html || !!liveComment.marker || !!iconUrl || !!liveComment.tweet || !!liveComment.sharedlink;
 
   return shouldDisplayComment ? (
     <StyledComment className={className}>
