@@ -26,7 +26,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
 .emotion-30 {
   position: absolute;
   width: calc(100% - 25px);
-  bottom: -165px;
+  top: 42px;
   display: none;
   z-index: 2;
   opacity: 0.95;
@@ -57,12 +57,10 @@ exports[`Dropdown Renders Dropdown 1`] = `
   left: 0;
 }
 
-@media (min-width:480px) {
+@media (min-width:700px) {
   .emotion-30 {
     padding: 17px 8px 12px 17px;
     right: -183px;
-    top: 42px;
-    bottom: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -110,7 +108,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
   border-radius: 2px;
 }
 
-@media (min-width:480px) {
+@media (min-width:700px) {
   .emotion-28 {
     width: 350px;
   }
@@ -120,7 +118,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
   color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
-  padding: 6px 0;
+  padding: 8px 0;
   margin-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -155,14 +153,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
 }
 
 .emotion-2 {
-  font-size: 11px;
   width: 100%;
-}
-
-@media (min-width:480px) {
-  .emotion-2 {
-    font-size: initial;
-  }
 }
 
 .emotion-4 {
@@ -174,7 +165,7 @@ exports[`Dropdown Renders Dropdown 1`] = `
   color: #C6C7CE;
   font-size: 14px;
   cursor: pointer;
-  padding: 6px 0;
+  padding: 8px 0;
   margin-right: 10px;
   display: -webkit-box;
   display: -webkit-flex;

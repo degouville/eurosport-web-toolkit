@@ -1,11 +1,25 @@
 import React, { useCallback, useMemo } from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import Dropdown from 'src/components/Dropdown';
 import languageIcon from 'src/assets/icon-language.svg';
 import { audioTracks as audioTracksPropTypes } from 'src/types';
+import { small } from 'src/breakpoints';
 import Icon from '../UI/icon';
 import useScreenInformation from '../useScreenInformation';
+
+const StyledDropdown = styled(Dropdown)`
+  :before {
+    left: auto;
+    margin-left: auto;
+    right: 5px;
+  }
+
+  ${small(css`
+    bottom: 58px;
+    right: 0;
+  `)}
+`;
 
 const StyledDropdownForMobile = styled(Dropdown)`
   bottom: auto;
@@ -32,8 +46,8 @@ export const LanguageSelector = ({ audioTracks, onAudioTrackChange }) => {
   const options = useMemo(
     () =>
       audioTracks &&
-      audioTracks.map(({ hlsjsIndex, name }) => ({
-        id: hlsjsIndex,
+      audioTracks.map(({ name }, index) => ({
+        id: index,
         text: name,
       })),
     [audioTracks]
@@ -44,16 +58,16 @@ export const LanguageSelector = ({ audioTracks, onAudioTrackChange }) => {
       <Icon alt="Language" src={languageIcon} />
     </StyledDropdownForMobile>
   ) : (
-    <Dropdown
+    <StyledDropdown
       heading="audio"
       InitialOptionID={0}
       isTop
       onItemSelected={onLanguageSelected}
       options={options}
-      width="160px"
+      width="200px"
     >
       <Icon alt="Language" src={languageIcon} />
-    </Dropdown>
+    </StyledDropdown>
   );
 };
 

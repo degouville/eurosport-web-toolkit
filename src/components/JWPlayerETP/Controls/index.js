@@ -46,7 +46,6 @@ const Controls = ({
         <TopBarContainer>
           {isMobile && (
             <>
-              (
               {shouldDisplayLanguageSelector && (
                 <LanguageSelector audioTracks={audioTracks} onAudioTrackChange={onAudioTrackChange} />
               )}

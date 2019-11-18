@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import Chevron from 'src/assets/chevron.component.svg';
-import { small, medium } from '../../breakpoints';
-import { H3, H5 } from '../../typography';
+import { small, medium } from 'src/breakpoints';
+import { H3, H5 } from 'src/typography';
 import { removeUnit } from './utils';
 
 export const StyledContainer = styled.div`
@@ -64,6 +64,9 @@ const StyledHeading = styled(H5)`
 `;
 
 const StyledDropdownTop = () => css`
+  top: auto;
+  bottom: 42px;
+
   &::before {
     top: auto;
     transform: translateX(-50%) rotate(220deg);
@@ -82,7 +85,7 @@ const StyledDropdownWithCustomWidth = ({ width }) => {
   return css`
     width: ${width};
 
-    ${small(css`
+    ${medium(css`
       right: -${outerWidth / 2}px;
       @-moz-document url-prefix() {
         right: -${outerWidth / 2}px;
@@ -94,7 +97,7 @@ const StyledDropdownWithCustomWidth = ({ width }) => {
 export const StyledDropdown = styled.div`
   position: absolute;
   width: calc(100% - 25px);
-  bottom: -165px;
+  top: 42px;
   display: none;
   z-index: 2;
   opacity: 0.95;
@@ -120,10 +123,9 @@ export const StyledDropdown = styled.div`
     left: 0;
   }
 
-  ${small(css`
+  ${medium(css`
     padding: 17px 8px 12px 17px;
     right: -183px;
-    top: 42px;
     @-moz-document url-prefix() {
       right: -183px;
     }
@@ -131,7 +133,6 @@ export const StyledDropdown = styled.div`
       right: unset;
       width: auto;
     }
-    bottom: auto;
     width: fit-content;
   `)};
 
@@ -167,7 +168,7 @@ const StyledUl = styled.ul`
   }
 
   ${({ width }) =>
-    small(css`
+    medium(css`
       width: ${width || '350px'};
     `)};
 `;
@@ -177,7 +178,7 @@ export const StyledLi = styled.li`
     isSelected ? theme.dropdown.list.selected.color : theme.dropdown.list.default.color};
   font-size: 14px;
   cursor: pointer;
-  padding: 6px 0;
+  padding: 8px 0;
   margin-right: 10px;
   display: flex;
   justify-content: space-between;
@@ -204,12 +205,7 @@ export const StyledCheckMark = styled.span`
 `;
 
 const StyledP = styled.p`
-  font-size: 11px;
   width: 100%;
-
-  ${small(css`
-    font-size: initial;
-  `)}
 `;
 
 class Dropdown extends React.Component {

@@ -26,7 +26,7 @@ describe('LanguageSelector', () => {
     // Given
     const props = createDefaultProps();
     const wrapper = shallow(<LanguageSelector {...props} />).dive();
-    const languages = wrapper.find(StyledLi);
+    const languages = wrapper.dive().find(StyledLi);
 
     // Expect
     expect(languages).toHaveLength(3);
@@ -38,7 +38,7 @@ describe('LanguageSelector', () => {
       onAudioTrackChange: jest.fn(),
     });
     const wrapper = shallow(<LanguageSelector {...props} />).dive();
-    const languages = wrapper.find(StyledLi);
+    const languages = wrapper.dive().find(StyledLi);
     const bulgarianLanguage = languages.at(2);
 
     // When
