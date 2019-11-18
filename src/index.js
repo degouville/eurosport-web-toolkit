@@ -79,6 +79,7 @@ export { default as LiveMatchesGrid } from './modules/LiveMatchesGrid';
 
 /* HOCS */
 export { default as withMatchMedia } from './hocs/withMatchMedia';
+export { default as withVideoAnalytics } from './hocs/withVideoAnalytics';
 export { default as withReload } from './hocs/withReload';
 
 export { default as AdobeHeartbeatAnalytics } from './lib/AdobeHeartbeatAnalytics/AdobeHeartbeatAnalytics';
