@@ -1,9 +1,9 @@
-// TODO: REMOVE THIS AFTER REVIEW
+// TODO: This file is here for the moment because we will have to test this behaviour we the new design
 
 import React, { useState, useEffect, useRef } from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'react-emotion';
-import { css } from 'emotion';
+import styled, { css } from 'react-emotion';
+
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Global } from '@emotion/core';
 import { object, text, number, select } from '@storybook/addon-knobs';

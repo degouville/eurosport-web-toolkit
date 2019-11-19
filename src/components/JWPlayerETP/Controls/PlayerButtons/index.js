@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import * as breakpoints from 'src/breakpoints';
 import pause from 'src/assets/icon-pause.svg';
@@ -7,7 +7,6 @@ import play from 'src/assets/icon-play.svg';
 import Spinner from 'src/elements/Spinner';
 import forward from 'src/assets/icon-jump-fwd.svg';
 import rewind from 'src/assets/icon-jump-rwd.svg';
-import { css } from 'emotion';
 
 const PlayerButtons = ({ isPlaying, onForward, onRewind, onPlay, onPause, isBuffering, isAdPlaying }) => (
   <MainContainer>

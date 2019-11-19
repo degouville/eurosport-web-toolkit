@@ -1,4 +1,4 @@
-import { css } from 'emotion';
+import { css } from 'react-emotion';
 import * as breakpoints from 'src/breakpoints';
 import { BOTTOM_BAR_HEIGHT_DESKTOP, BOTTOM_BAR_HEIGHT_MOBILE } from '../constants';
 

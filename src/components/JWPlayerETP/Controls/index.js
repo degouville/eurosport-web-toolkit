@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import { css } from 'emotion';
+
 import * as breakpoints from 'src/breakpoints';
 import { audioTracks as audioTracksPropTypes } from 'src/types';
 import { VerticalSeparator } from './UI/separators';
