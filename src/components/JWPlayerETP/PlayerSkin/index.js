@@ -27,10 +27,13 @@ const PlayerSkin = ({
   onSeek,
   onVolume,
   onMute,
+  onSkipAd,
   controls,
   errorMessage,
   title,
   isAdPlaying,
+  skipEnabled,
+  skipTime,
   ...props
 }) => {
   const { onKeyUp, active, handlePlayerInteraction } = useInteraction({
@@ -73,6 +76,9 @@ const PlayerSkin = ({
               onMute={onMuteKeepInteraction}
               title={isFullscreen || isAdPlaying ? title : undefined}
               isAdPlaying={isAdPlaying}
+              onSkipAd={onSkipAd}
+              skipEnabled={skipEnabled}
+              skipTime={skipTime}
               {...props}
             />
           </ControlsOverlay>

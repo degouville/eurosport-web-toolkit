@@ -36,6 +36,9 @@ const Controls = ({
   onMute,
   title,
   isAdPlaying,
+  onSkipAd,
+  skipEnabled,
+  skipTime,
 }) => {
   const { isMobile } = useScreenInformation();
   const shouldDisplayLanguageSelector = audioTracks?.length > 1;
@@ -82,16 +85,22 @@ const Controls = ({
         volume={volume}
         onMute={onMute}
         mute={mute}
+        onSkipAd={onSkipAd}
+        skipEnabled={skipEnabled}
+        skipTime={skipTime}
+        isAdPlaying={isAdPlaying}
       >
-        <VerticalSeparator />
-        {!isMobile && (
-          <StyledBarControlWrapper>
-            {shouldDisplayLanguageSelector && (
-              <LanguageSelector audioTracks={audioTracks} onAudioTrackChange={onAudioTrackChange} />
-            )}
-            <FullScreen isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />
-          </StyledBarControlWrapper>
-        )}
+        <>
+          <VerticalSeparator />
+          {!isMobile && (
+            <StyledBarControlWrapper>
+              {shouldDisplayLanguageSelector && (
+                <LanguageSelector audioTracks={audioTracks} onAudioTrackChange={onAudioTrackChange} />
+              )}
+              <FullScreen isFullscreen={isFullscreen} onFullscreenChange={onFullscreenChange} />
+            </StyledBarControlWrapper>
+          )}
+        </>
       </BottomBar>
     </>
   );
@@ -103,13 +112,15 @@ Controls.defaultProps = {
   title: undefined,
   // eslint-disable-next-line react/default-props-match-prop-types
   isAdPlaying: false,
+  audioTracks: undefined,
+  onAudioTrackChange: undefined,
 };
 
 Controls.propTypes = {
   ...PlayerButtons.propTypes,
-  audioTracks: audioTracksPropTypes.isRequired,
+  audioTracks: audioTracksPropTypes,
   isFullscreen: PropTypes.bool.isRequired,
-  onAudioTrackChange: PropTypes.func.isRequired,
+  onAudioTrackChange: PropTypes.func,
   onFullscreenChange: PropTypes.func.isRequired,
   isLive: PropTypes.bool,
   rewindCounts: PropTypes.string,

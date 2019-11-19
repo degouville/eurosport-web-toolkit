@@ -21,6 +21,7 @@ describe('Components|PlayerSkin', () => {
     onSeek: jest.fn(),
     onVolume: jest.fn(),
     onMute: jest.fn(),
+    onSkipAd: jest.fn(),
     isPlaying: false,
     isFullscreen: false,
     isLive: true,

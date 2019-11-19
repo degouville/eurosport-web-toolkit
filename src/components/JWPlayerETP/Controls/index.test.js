@@ -26,6 +26,8 @@ describe('Components|JWPlayerETP|Controls', () => {
     volume: 50,
     mute: false,
     onVolume: jest.fn(),
+    isAdPlaying: false,
+    onSkipAd: jest.fn(),
     ...newProps,
   });
 

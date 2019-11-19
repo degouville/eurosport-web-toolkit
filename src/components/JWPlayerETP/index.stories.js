@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { text, boolean } from '@storybook/addon-knobs';
+import { text, boolean, number } from '@storybook/addon-knobs';
 import { actions, action } from '@storybook/addon-actions';
 import { JWPlayerETP } from 'src';
 import VideoPlayerModal from '../../modules/VideoPlayerModal';
@@ -20,7 +20,8 @@ const events = actions(
   'onSeek',
   'onSeeked',
   'onLoginComponentReady',
-  'onLoginComponentDone'
+  'onLoginComponentDone',
+  'onSkipAd'
 );
 
 const withVideoPlayerModal = Component => props => (
@@ -33,6 +34,8 @@ const withVideoPlayerModal = Component => props => (
 export const getBaseProps = (id, newProps) => {
   const jwplayerId = text('ScriptId (jwplayerId)', 'DWNosgcz');
   const title = text('Title', 'title');
+  const skipEnabled = boolean('skipEnabled', true);
+  const skipTime = number('skipTime', 6);
 
   return {
     prefLang: text('PrefLang', 'fr'),
@@ -54,6 +57,8 @@ export const getBaseProps = (id, newProps) => {
     },
     LoginComponent: withVideoPlayerModal(LoginWithMarketing),
     recaptchaSiteKey: text('recaptchaSiteKey', '6LfvErIUAAAAABlpqACnxRiUhqhX4p14sPxx_sKf'),
+    skipEnabled,
+    skipTime,
     title,
     ...events,
     ...newProps,
@@ -70,7 +75,7 @@ stories.add('JWPlayerETP default', () => {
 
 stories.add('JWPlayerETP with Ads', () => {
   const enableFreewheel = boolean('Enable Freewheel', true);
-  const id = text('VideoId', 'eurosport-e14690956c9757146ch0');
+  const id = text('VideoId', 'eurosport-e14677243c9759747ch3');
 
   const freewheelConfig = {
     adManagerURL: 'https://mssl.fwmrm.net/p/eurosport_js/AdManager.js',

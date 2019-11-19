@@ -30,6 +30,7 @@ exports[`Components|PlayerSkin should match snapshot 1`] = `
       onPlay={[Function]}
       onRewind={[Function]}
       onSeek={[Function]}
+      onSkipAd={[MockFunction]}
       onVolume={[Function]}
       rewindCounts={null}
       seekMax={100}

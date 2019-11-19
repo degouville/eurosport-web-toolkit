@@ -6,11 +6,14 @@ import Controls from './index';
 
 const stories = storiesOf('Components|JWPlayerETP', module);
 
-const events = actions('onForward', 'onRewind', 'onPlay', 'onPause', 'onFullscreenChange', 'onSeek');
+const events = actions('onForward', 'onRewind', 'onPlay', 'onPause', 'onFullscreenChange', 'onSeek', 'onSkipAd');
 
 stories.add('Controls default', () => {
   const rewindCounts = text('rewindCounts', null);
   const title = text('Title', 'title');
+  const skipEnabled = boolean('skipEnabled', true);
+  const skipTime = number('skipTime', 6);
+  const isAdPlaying = boolean('isAdPlaying', true);
 
   return (
     <Controls
@@ -23,6 +26,9 @@ stories.add('Controls default', () => {
       seekMin={number('seekMin', 0)}
       seekPosition={number('seekPosition', 50)}
       title={title}
+      skipEnabled={skipEnabled}
+      skipTime={skipTime}
+      isAdPlaying={isAdPlaying}
       {...events}
     />
   );

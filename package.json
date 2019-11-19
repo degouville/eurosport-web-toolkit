@@ -119,7 +119,7 @@
     "react-helmet": "5"
   },
   "dependencies": {
-    "@eurosport/toolkit-player": "^0.5.27",
+    "@eurosport/toolkit-player": "^0.5.30",
     "core-js": "^3.1.4",
     "hoist-non-react-statics": "^3.3.0",
     "lodash": "^4.17.14",

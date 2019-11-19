@@ -19,7 +19,7 @@ const LiveStatus = ({ rewindCounts, isLive, onSeek, seekMax }) => {
       )}
 
       {rewindCounts && (
-        <RewindText length={rewindCounts?.length} isLive>
+        <RewindText length={rewindCounts?.length} isLive={isLive}>
           {rewindCounts}
         </RewindText>
       )}
