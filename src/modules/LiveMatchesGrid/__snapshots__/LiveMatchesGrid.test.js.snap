@@ -1,0 +1,1357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveMatchesGrid renders as expected 1`] = `
+<Styled(div)
+  matches={
+    Array [
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 0,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 1,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 2,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 3,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 4,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 5,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 6,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+      Object {
+        "data": Object {
+          "bottomTeam": Object {
+            "isServing": false,
+            "playerOneName": "DAVIDOVICH FOKINA",
+            "sets": Array [
+              Object {
+                "score": 3,
+                "set": 1,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 3,
+                "set": 2,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 7,
+                "set": 3,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 4,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 5,
+                "tie": null,
+                "won": true,
+              },
+            ],
+          },
+          "topTeam": Object {
+            "isServing": true,
+            "playerOneName": "MENENDEZ-MACEIRAS",
+            "sets": Array [
+              Object {
+                "score": 6,
+                "set": 1,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 2,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 6,
+                "set": 3,
+                "tie": null,
+                "won": false,
+              },
+              Object {
+                "score": 6,
+                "set": 4,
+                "tie": null,
+                "won": true,
+              },
+              Object {
+                "score": 3,
+                "set": 5,
+                "tie": null,
+                "won": false,
+              },
+            ],
+          },
+        },
+        "id": 7,
+        "isLive": true,
+        "isWatchable": true,
+        "matchUrl": "https://eurosport.com",
+      },
+    ]
+  }
+  matchesToShow={2}
+>
+  <Row>
+    <Column
+      large={null}
+      largeOffset={null}
+      medium={null}
+      mediumOffset={null}
+      small={null}
+      smallOffset={null}
+      tiny="full"
+      tinyOffset="0"
+      wide={null}
+      wideOffset="1"
+    >
+      <Styled(Labels)
+        isSimpleMode={true}
+        labels={
+          Array [
+            Object {
+              "text": "ROLAND GARROS",
+            },
+            Object {
+              "text": "MENS",
+            },
+            Object {
+              "text": "SEMI-FINAL",
+            },
+          ]
+        }
+      />
+    </Column>
+  </Row>
+  <Styled(div)>
+    <ViewMore
+      showLessItemCount={1}
+      showLessText="View less matches"
+      showMoreText="View more matches"
+    >
+      <ShowMoreRow
+        displayLeftCircle={false}
+        matches={
+          Array [
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 0,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 1,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+          ]
+        }
+        scoreBlockProps={
+          Object {
+            "liveButtonText": "LIVE",
+            "matchInfoButtonText": "matchInfoButtonText",
+          }
+        }
+      />
+      <ShowMoreRow
+        displayLeftCircle={false}
+        matches={
+          Array [
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 2,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 3,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 4,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 5,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 6,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+            Object {
+              "data": Object {
+                "bottomTeam": Object {
+                  "isServing": false,
+                  "playerOneName": "DAVIDOVICH FOKINA",
+                  "sets": Array [
+                    Object {
+                      "score": 3,
+                      "set": 1,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 2,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 7,
+                      "set": 3,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 4,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 5,
+                      "tie": null,
+                      "won": true,
+                    },
+                  ],
+                },
+                "topTeam": Object {
+                  "isServing": true,
+                  "playerOneName": "MENENDEZ-MACEIRAS",
+                  "sets": Array [
+                    Object {
+                      "score": 6,
+                      "set": 1,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 2,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 3,
+                      "tie": null,
+                      "won": false,
+                    },
+                    Object {
+                      "score": 6,
+                      "set": 4,
+                      "tie": null,
+                      "won": true,
+                    },
+                    Object {
+                      "score": 3,
+                      "set": 5,
+                      "tie": null,
+                      "won": false,
+                    },
+                  ],
+                },
+              },
+              "id": 7,
+              "isLive": true,
+              "isWatchable": true,
+              "matchUrl": "https://eurosport.com",
+            },
+          ]
+        }
+        scoreBlockProps={
+          Object {
+            "liveButtonText": "LIVE",
+            "matchInfoButtonText": "matchInfoButtonText",
+          }
+        }
+      />
+    </ViewMore>
+  </Styled(div)>
+</Styled(div)>
+`;

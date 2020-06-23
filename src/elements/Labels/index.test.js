@@ -1,12 +1,20 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import theme from 'src/theme';
 import Labels, { StyledLabelSimple, StyledLabel } from '.';
 import { beforeEventLabels, liveEventLabels, afterEventLabels, simpleLabels } from './mockData/labels';
+
+const LabelsWithThemeProvider = props => (
+  <ThemeProvider theme={theme}>
+    <Labels {...props} />
+  </ThemeProvider>
+);
 
 describe('Labels', () => {
   describe('when isSimpleMode', () => {
     it('renders <StyledLabelSimple /> component', () => {
-      const wrapper = shallow(<Labels labels={simpleLabels} isSimpleMode />);
+      const wrapper = mount(<LabelsWithThemeProvider labels={simpleLabels} isSimpleMode />);
       expect(wrapper.find(StyledLabelSimple)).toHaveLength(simpleLabels.length);
     });
 
@@ -18,7 +26,7 @@ describe('Labels', () => {
 
   describe('when default mode', () => {
     it('renders <StyledLabel /> component', () => {
-      const wrapper = shallow(<Labels labels={simpleLabels} />);
+      const wrapper = mount(<LabelsWithThemeProvider labels={simpleLabels} />);
       expect(wrapper.find(StyledLabel)).toHaveLength(simpleLabels.length);
     });
 

@@ -21,6 +21,8 @@ const withVideoAnalytics = VideoPlayerComponent =>
       onAdComplete: undefined,
       onPlay: undefined,
       onPause: undefined,
+      onSeek: undefined,
+      onSeeked: undefined,
     };
 
     static propTypes = {
@@ -34,6 +36,8 @@ const withVideoAnalytics = VideoPlayerComponent =>
         onAdComplete: PropTypes.func.isRequired,
         onPlay: PropTypes.func.isRequired,
         onPause: PropTypes.func.isRequired,
+        onSeek: PropTypes.func.isRequired,
+        onSeeked: PropTypes.func.isRequired,
       }),
       onReady: PropTypes.func,
       onLoginReady: PropTypes.func,
@@ -44,6 +48,8 @@ const withVideoAnalytics = VideoPlayerComponent =>
       onAdComplete: PropTypes.func,
       onPlay: PropTypes.func,
       onPause: PropTypes.func,
+      onSeek: PropTypes.func,
+      onSeeked: PropTypes.func,
     };
 
     static eventList = [
@@ -56,6 +62,8 @@ const withVideoAnalytics = VideoPlayerComponent =>
       'onAdComplete',
       'onPlay',
       'onPause',
+      'onSeek',
+      'onSeeked',
     ];
 
     generateEvents = list =>
@@ -66,8 +74,10 @@ const withVideoAnalytics = VideoPlayerComponent =>
         return {
           ...acc,
           [eventValue]: (...args) => {
-            eventAction && eventAction(...args);
-            analytics && analytics[eventValue] && analytics[eventValue](...args);
+            // eslint-disable-next-line no-unused-expressions
+            eventAction?.(...args);
+            // eslint-disable-next-line no-unused-expressions
+            analytics?.[eventValue]?.(...args);
           },
         };
       }, {});

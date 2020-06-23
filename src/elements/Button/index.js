@@ -7,7 +7,6 @@ const Button = styled(ArrowLink)`
   background-color: ${({ theme, type }) => theme.button[type].backgroundColor};
   color: ${({ theme, type }) => theme.button[type].color};
   cursor: pointer;
-  display: block;
   padding: 18px 10px;
   border-radius: 3px;
   font-size: 12px;
@@ -40,6 +39,15 @@ const Button = styled(ArrowLink)`
         border-color: ${theme.button.secondary.color};
       }
     `};
+
+  ${({ theme, type }) =>
+    (type === 'form' || type === 'secondaryForm') &&
+    css`
+      &:hover {
+        background-color: ${lighten(0.05, theme.button[type].backgroundColor)};
+      }
+      transition: all 150ms ease;
+    `};
 `;
 
 Button.defaultProps = {
@@ -47,7 +55,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['primary', 'secondary']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'form', 'secondaryForm']),
 };
 
 Button.displayName = 'Button';

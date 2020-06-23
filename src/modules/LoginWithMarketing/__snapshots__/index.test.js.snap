@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginWithMarketing renders LoginWithMarketing as expected 1`] = `
+<LoginWithMarketing
+  callToActionText="New to eurosport player?"
+  emailPlaceholder="Email"
+  errorMessage=""
+  forgotPasswordText="Forgot password"
+  forgotPasswordUrl="es.com/forgot"
+  marketingMessages={
+    Object {
+      "checklist": Array [
+        "Watch your favorite sports live and on demand",
+        "Stream to your device at home and on the go",
+        "Grand Slam tennis, Grand Tour cycling, motorsports and more",
+      ],
+      "subtitle": "This content requires a Eurosport Player subscription. Subscribe now or log in below.",
+      "title": "Subscribe to watch now",
+    }
+  }
+  needHelpText="Need Help?"
+  needHelpUrl="es.com/help"
+  onSubmit={[MockFunction]}
+  passwordPlaceholder="Password"
+  showPasswordText="Show"
+  signInText="SignIn"
+  subscribeText="Subscribe"
+  subscribeUrl="es.com/subscribe"
+  title="Sign In"
+>
+  <withMatchMedia(childRenderer)>
+    <childRenderer
+      breakpointMatched={false}
+    />
+  </withMatchMedia(childRenderer)>
+  <withMatchMedia(childRenderer)>
+    <childRenderer
+      breakpointMatched={false}
+    />
+  </withMatchMedia(childRenderer)>
+</LoginWithMarketing>
+`;

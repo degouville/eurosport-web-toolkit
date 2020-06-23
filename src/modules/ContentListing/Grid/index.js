@@ -12,7 +12,7 @@ const StyledColumn = styled(Column)`
 `;
 
 export const StyledTitle = styled(H2)`
-  color: ${colors.coreLightBase};
+  color: ${colors.athensGray};
   margin-bottom: 24px;
   margin-left: 5px;
 `;
@@ -33,11 +33,11 @@ export const StyledChevron = styled(Chevron)`
 export const StyledLink = styled(Link)`
   margin-left: 40px;
   text-decoration: none;
-  color: ${colors.coreLightBase};
+  color: ${colors.athensGray};
   border-bottom: 2px solid currentColor;
   :hover,
   :active {
-    color: ${colors.coreLightBase};
+    color: ${colors.athensGray};
   }
 `;
 

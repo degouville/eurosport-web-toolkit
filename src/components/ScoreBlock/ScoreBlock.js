@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
+import { rgba } from 'polished';
 import circleWithCross from 'src/assets/circle-with-cross.svg';
 import greenCircle from 'src/assets/green-circle.svg';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import SetsScore, { StyledSpacer, setsScoreType } from './SetsScore';
 import { fontInterUi } from '../../typography';
-
+import SetsSchedule, { setsScheduleType } from './SetsSchedule';
 import Link from '../../elements/Link';
 
 const StyledClickableWrapper = styled(Link)`
@@ -28,25 +29,22 @@ export const StyledButton = styled.div`
   font-size: 11px;
   text-align: center;
   text-transform: uppercase;
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   letter-spacing: 1px;
   line-height: 16px;
-  width: ${props => props.width};
-  max-width: 40px;
-  min-width: 30px;
-  ${breakpoints.small(css`
-    padding: 0 4px;
-  `)};
+  word-break: break-word;
+  padding: 0 4px;
+  min-width: 0;
+  flex: 0 0 32px;
   ${breakpoints.medium(css`
-    min-width: 58px;
-    max-width: 86px;
+    flex: 0 0 66px;
   `)};
   ${props =>
     css`
       &:after {
         content: '\u2192';
       }
-      ${breakpoints.large(css`
+      ${breakpoints.medium(css`
         &:after {
           content: ${props.contentText};
         }
@@ -64,19 +62,23 @@ const StyledScoreWrapper = styled.div`
     css`
       padding-left: 20px;
     `};
-  flex-basis: 400px;
-  flex-grow: 1;
-  background-color: rgba(79, 82, 106, 0.5);
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  background-color: ${rgba(colors.comet, 0.5)};
   ${StyledSpacer} {
-    border-top-color: ${colors.midnightExpress2};
+    border-top-color: ${colors.mirage};
   }
 `;
 
 const StyledPlayButton = styled(StyledButton)`
-  font-size: 24px;
+  font-size: 14px;
   display: none;
-  ${breakpoints.large(css`
+  ${breakpoints.small(css`
     display: inherit;
+  `)};
+  ${breakpoints.medium(css`
+    font-size: 20px;
   `)};
   &:after {
     content: none;
@@ -87,7 +89,7 @@ const StyledBigDot = styled.div`
   display: flex;
   align-items: center;
   ${fontInterUi};
-  color: ${colors.featureThreeBase};
+  color: ${colors.lima};
   margin: 0 11px;
   font-size: 72px;
   width: 19px;
@@ -106,16 +108,50 @@ const StyledBigDot = styled.div`
   }
 `;
 
+const StyledSetsScore = styled(SetsScore)`
+  flex: 1 1 0;
+  min-width: 0;
+`;
+const StyledSetsSchedule = styled(SetsSchedule)`
+  flex: 0 0 auto;
+`;
+
+export const ScoreButton = ({ properties }) => {
+  const { hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText } = properties;
+  if (!hasButton) return null;
+  return isLive ? (
+    <>
+      {isWatchable && <StyledPlayButton color="monza">&#9658;</StyledPlayButton>}
+      <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} />
+    </>
+  ) : (
+    <StyledButton color="dodgerBlue" contentText={`'${matchInfoButtonText}'`} />
+  );
+};
+
+ScoreButton.propTypes = {
+  properties: PropTypes.shape({
+    hasButton: PropTypes.bool.isRequired,
+    isLive: PropTypes.bool.isRequired,
+    isWatchable: PropTypes.bool.isRequired,
+    liveButtonText: PropTypes.string.isRequired,
+    matchInfoButtonText: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 export const ScoreBlock = ({
   matchUrl,
   data,
+  schedule,
   isLive,
   isWatchable,
   displayLeftCircle,
   liveButtonText,
   matchInfoButtonText,
+  hasButton,
 }) => {
   const hasLeftCircle = ['won', 'lost'].includes(displayLeftCircle);
+  const hasSchedule = !!schedule && !data?.topTeam?.sets?.length && !data?.bottomTeam?.sets?.length;
   return (
     <StyledClickableWrapper href={matchUrl} data-test="clickable-scoreblock-wrapper">
       <StyledScoreWrapper hasLeftCircle={hasLeftCircle}>
@@ -128,20 +164,10 @@ export const ScoreBlock = ({
             )}
           </StyledBigDot>
         )}
-        <SetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
+        <StyledSetsScore data={data} baseFontSize="14px" highlightLastSet={isLive} />
+        {hasSchedule && <StyledSetsSchedule schedule={schedule} />}
       </StyledScoreWrapper>
-      {isLive ? (
-        <>
-          {isWatchable && (
-            <StyledPlayButton color="actionTwoLightPlus1" width="68px">
-              &#9658;
-            </StyledPlayButton>
-          )}
-          <StyledButton color="venetianRed" contentText={`'${liveButtonText}'`} width="68px" />
-        </>
-      ) : (
-        <StyledButton color="actionOneDarkBase" contentText={`'${matchInfoButtonText}'`} width="144px" />
-      )}
+      <ScoreButton properties={{ hasButton, isLive, isWatchable, liveButtonText, matchInfoButtonText }} />
     </StyledClickableWrapper>
   );
 };
@@ -149,9 +175,11 @@ export const ScoreBlock = ({
 export const scoreBlockType = {
   matchUrl: PropTypes.string.isRequired,
   data: setsScoreType.isRequired,
+  schedule: setsScheduleType,
   isLive: PropTypes.bool,
   isWatchable: PropTypes.bool,
   displayLeftCircle: PropTypes.oneOf(['won', 'lost', false]),
+  hasButton: PropTypes.bool,
 };
 
 ScoreBlock.defaultProps = {
@@ -162,7 +190,11 @@ ScoreBlock.defaultProps = {
   // eslint-disable-next-line react/default-props-match-prop-types
   isWatchable: false,
   liveButtonText: 'Live',
+  // eslint-disable-next-line react/default-props-match-prop-types
+  schedule: null,
   matchInfoButtonText: 'Match Info',
+  // eslint-disable-next-line react/default-props-match-prop-types
+  hasButton: true,
 };
 
 ScoreBlock.propTypes = {

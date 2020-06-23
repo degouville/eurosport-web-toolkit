@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Spinner from '.';
 
-describe.only('Spinner', () => {
+describe('Spinner', () => {
   it('should render default spinner', () => {
     const wrapper = shallow(<Spinner className="test" width="50px" />);
     expect(wrapper).toMatchSnapshot();

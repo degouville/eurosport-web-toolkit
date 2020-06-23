@@ -9,7 +9,7 @@ aliases:
   - &restore_cache
     restore_cache:
       keys:
-        - v2-dependencies-{{ checksum "package-lock.json" }}
+        - v2.1-dependencies-{{ checksum "package-lock.json" }}
   - &filter-only-master
     branches:
       only:
@@ -43,32 +43,61 @@ jobs:
           paths:
             - node_modules
             - ~/.cache/Cypress
-          key: v2-dependencies-{{ checksum "package-lock.json" }}
+          key: v2.1-dependencies-{{ checksum "package-lock.json" }}
   test_unit:
     <<: *defaults
     steps:
       - checkout
       - *restore_cache
       - run: npm run test:ci
+      - persist_to_workspace:
+          root: .
+          paths:
+            - coverage/*
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - *restore_cache
+      - run: npm run build
   lint:
     <<: *defaults
     steps:
       - checkout
       - *restore_cache
       - run: npm run lint
-  test_visual:
-    <<: *defaults
+  sonarcloud:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/openjdk:8
     steps:
       - checkout
-      - *restore_cache
-      - run: 'export APPLITOOLS_BATCH_ID=`echo $CIRCLE_SHA1`'
+      - attach_workspace:
+          at: .
       - run:
+          name: Run sonarCloud
           command: |
-            if [[ -n $ENABLE_VISUAL_TEST ]]; then
-              npm run test:visual
-            else
-              echo "Not running visual test"
-            fi
+            export SONAR_SCANNER_VERSION=3.3.0.1492
+            export SONAR_SCANNER_HOME=$HOME/.sonar/sonar-scanner-$SONAR_SCANNER_VERSION
+            rm -rf $SONAR_SCANNER_HOME
+            mkdir -p $SONAR_SCANNER_HOME
+            curl -sSLo $HOME/.sonar/sonar-scanner.zip http://repo1.maven.org/maven2/org/sonarsource/scanner/cli/sonar-scanner-cli/$SONAR_SCANNER_VERSION/sonar-scanner-cli-$SONAR_SCANNER_VERSION.zip
+            unzip $HOME/.sonar/sonar-scanner.zip -d $HOME/.sonar/
+            rm $HOME/.sonar/sonar-scanner.zip
+            export PATH=$SONAR_SCANNER_HOME/bin:$PATH
+            export SONAR_SCANNER_OPTS="-server"
+            curl -L https://git.io/n-install | N_PREFIX=~/util/n bash -s -- -y 10.12.0
+            export PATH=/home/circleci/util/n/bin:$PATH
+            node -v
+            sonar-scanner \
+             -Dsonar.projectKey=EurosportDigital_web-toolkit \
+             -Dsonar.organization=eurosportdigital \
+             -Dsonar.sources=./src \
+             -Dsonar.branch.name=$CIRCLE_BRANCH \
+             -Dsonar.host.url=https://sonarcloud.io \
+             -Dsonar.login=$SONAR_CLOUD_LOGIN \
+             -Dsonar.javascript.lcov.reportPaths=./coverage/lcov.info \
+
   test_cypress:
     <<: *defaults
     steps:
@@ -90,9 +119,7 @@ jobs:
       - *authenticate_npm
       - *add_ssh_key
       - *authenticate_git
-      - run: npm version patch -m "%s [skip ci]"
-      - run: npm publish
-      - run: git push
+      - run: npm run release -- patch --ci
       - *slack_notification
   npm_minor:
     <<: *defaults
@@ -102,9 +129,7 @@ jobs:
       - *authenticate_npm
       - *add_ssh_key
       - *authenticate_git
-      - run: npm version minor -m "%s [skip ci]"
-      - run: npm publish
-      - run: git push
+      - run: npm run release -- minor --ci
       - *slack_notification
   npm_major:
     <<: *defaults
@@ -114,9 +139,7 @@ jobs:
       - *authenticate_npm
       - *add_ssh_key
       - *authenticate_git
-      - run: npm version major -m "%s [skip ci]"
-      - run: npm publish
-      - run: git push
+      - run: npm run release -- major --ci
       - *slack_notification
 
 workflows:
@@ -130,27 +153,22 @@ workflows:
       - test_unit:
           requires:
             - dependencies
+      - build:
+          requires:
+            - dependencies
       - lint:
           requires:
             - dependencies
+      - sonarcloud:
+          requires:
+            - test_unit
       - qa_validation:
           type: approval
           requires:
             - test_unit
             - test_cypress
             - lint
-      - run_visual_test:
-          type: approval
-          requires:
-            - dependencies
-          filters: *filter-only-master
-      - test_visual:
-          requires:
-            - test_unit
-            - lint
-            - test_cypress
-            - run_visual_test
-          filters: *filter-only-master
+            - build
       - run_npm_patch:
           type: approval
           requires:

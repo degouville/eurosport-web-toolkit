@@ -1,34 +1,30 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import {
-  coreNeutral9,
-  coreLightMinus1,
-  coreNeutral4,
-  royalBlue,
-  utahCrimson,
-  dodgerBlue,
-  brandBase,
-} from '../../colors';
+import { martinique, white, manatee, royalBlue, utahCrimson, malibu, bunting, blackPearl } from '../../colors';
 import { fontHelvetica } from '../../typography';
 import * as breakpoints from '../../breakpoints';
 
 const colorsMapping = {
   white: {
-    text: coreNeutral9,
-    background: coreLightMinus1,
+    text: martinique,
+    background: white,
   },
   blue: {
-    text: coreLightMinus1,
+    text: white,
     background: royalBlue,
   },
   red: {
-    text: coreLightMinus1,
+    text: white,
     background: utahCrimson,
   },
   cyan: {
-    text: brandBase,
-    background: dodgerBlue,
+    text: bunting,
+    background: malibu,
+  },
+  transparent: {
+    text: blackPearl,
+    background: 'transparent',
   },
 };
 
@@ -39,7 +35,7 @@ const StyledLabels = styled.div`
   ${props =>
     props.isSimpleMode &&
     css`
-      color: ${coreLightMinus1};
+      color: ${white};
       font-size: 8px;
       line-height: 11px;
       letter-spacing: 0.41px;
@@ -49,7 +45,7 @@ const StyledLabels = styled.div`
     props.isSimpleMode &&
     breakpoints.small(
       css`
-        color: ${coreLightMinus1};
+        color: ${white};
         font-size: 11px;
         line-height: 13px;
         letter-spacing: 0.5px;
@@ -60,12 +56,12 @@ const StyledLabels = styled.div`
 export const StyledLabelSimple = styled.div`
   text-transform: uppercase;
   font-weight: 300;
-
+  color: ${props => (props.color ? colorsMapping[props.color].text : white)};
   &::after {
     display: inline-block;
     content: '/';
     margin: 0 0.5em;
-    color: ${coreNeutral4};
+    color: ${manatee};
   }
 
   &:last-child {
@@ -127,11 +123,11 @@ const StyledLabelIcon = styled.div`
   margin-right: 2px;
 `;
 
-const Labels = ({ labels, isSimpleMode }) => {
+const Labels = ({ labels, isSimpleMode, className }) => {
   const LabelComponent = isSimpleMode ? StyledLabelSimple : StyledLabel;
 
   return (
-    <StyledLabels isSimpleMode={isSimpleMode}>
+    <StyledLabels isSimpleMode={isSimpleMode} className={className}>
       {labels.map((label, index) => (
         <LabelComponent
           color={label.color}
@@ -158,11 +154,13 @@ export const labelsType = PropTypes.arrayOf(
 
 Labels.defaultProps = {
   isSimpleMode: false,
+  className: undefined,
 };
 
 Labels.propTypes = {
   labels: labelsType.isRequired,
   isSimpleMode: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 export default Labels;

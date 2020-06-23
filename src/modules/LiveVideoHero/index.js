@@ -5,7 +5,7 @@ import PlayIcon from '../../elements/PlayIcon';
 import * as breakpoints from '../../breakpoints';
 import Labels, { labelsType } from '../../elements/Labels';
 import { H1 } from '../../typography';
-import { coreLightMinus1, blueZodiac, brandPlus2 } from '../../colors';
+import { white, blueZodiac, blackPearl } from '../../colors';
 import ProgramDetails from '../../elements/ProgramDetails';
 
 const StyledLiveVideoHeroWrapper = styled.div`
@@ -30,7 +30,7 @@ const StyledLiveVideoHeroWrapper = styled.div`
 
   &::after {
     opacity: 0.8;
-    background: linear-gradient(180deg, rgba(20, 27, 77, 0.03), ${brandPlus2});
+    background: linear-gradient(180deg, rgba(20, 27, 77, 0.03), ${blackPearl});
     z-index: 2;
   }
 
@@ -116,7 +116,7 @@ const StyledDetails = styled.div`
 `;
 
 const StyledH1 = styled(H1)`
-  color: ${coreLightMinus1};
+  color: ${white};
   overflow-wrap: break-word;
   margin-top: 0.2em;
   ${breakpoints.large(css`

@@ -1,9 +1,21 @@
 module.exports = {
   presets: ['@babel/preset-react', ['@babel/preset-env', { modules: process.env.MODULE ? false : 'commonjs' }]],
   plugins: [
-    'emotion',
+    [
+      'emotion',
+      {
+        hoist: true,
+      },
+    ],
     '@babel/plugin-proposal-class-properties',
+    '@babel/plugin-proposal-optional-chaining',
     'react-docgen',
+    [
+      'babel-plugin-inline-import',
+      {
+        extensions: ['.css'],
+      },
+    ],
     [
       'module-resolver',
       {

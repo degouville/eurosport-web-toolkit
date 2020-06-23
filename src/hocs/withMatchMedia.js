@@ -28,7 +28,6 @@ const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') =>
       const {
         state: { matches },
         props,
-        ...rest
       } = this;
 
       const newProps = {
@@ -36,7 +35,7 @@ const withMatchMedia = (mediaQueryString, injectedProp = 'breakpointMatched') =>
         [injectedProp]: matches,
       };
 
-      return <Component {...newProps} {...rest} />;
+      return <Component {...newProps} />;
     }
   }
 
@@ -49,7 +48,7 @@ export const HideOnMobile = withMatchMedia(`(min-width: ${points.medium}px)`)(({
   breakpointMatched ? props.children : null
 );
 
-export const LegacyHideOnMobile = withMatchMedia(`(min-width: 900px)`)(({ breakpointMatched, ...props }) =>
+export const LegacyHideOnMobile = withMatchMedia(`(min-width: 700px)`)(({ breakpointMatched, ...props }) =>
   breakpointMatched ? props.children : null
 );
 

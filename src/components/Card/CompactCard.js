@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { rgba } from 'polished';
+import CardPlaceholder from 'src/assets/card-placeholder.jpg';
 import * as colors from '../../colors';
 
 import CardDetails from './CardDetails';
@@ -14,10 +15,10 @@ const StyledWrapper = styled.div`
   display: flex;
   border-radius: 2px;
   overflow: hidden;
-  box-shadow: 0 2px 3px 0 ${rgba(colors.brandPlus2, 0.3)};
+  box-shadow: 0 2px 3px 0 ${rgba(colors.blackPearl, 0.3)};
 `;
 
-const StyledImage = styled.div`
+export const StyledImage = styled.div`
   background-image: ${({ img }) => `url(${img})`};
   height: 100%;
   width: 100%;
@@ -37,8 +38,8 @@ const StyledImage = styled.div`
     background: linear-gradient(
       180deg,
       transparent,
-      ${rgba(colors.brandPlus2, 0.3)} 18.66%,
-      ${rgba(colors.brandPlus2, 0.85)} 100%
+      ${rgba(colors.blackPearl, 0.3)} 18.66%,
+      ${rgba(colors.blackPearl, 0.85)} 100%
     );
     opacity: 0.5;
   }
@@ -62,17 +63,18 @@ const StyledLink = styled(Link)`
 const CompactCard = ({ card, icon, ...props }) => {
   const node = (
     <StyledWrapper {...props}>
-      <StyledImage img={card.img} />
+      <StyledImage img={card?.img || CardPlaceholder} />
       <StyledCardDetails card={card} icon={icon} />
     </StyledWrapper>
   );
 
-  return card.url ? <StyledLink href={card.url}>{node}</StyledLink> : node;
+  return card?.url ? <StyledLink href={card.url}>{node}</StyledLink> : node;
 };
 
 CompactCard.propTypes = {
   card: PropTypes.shape({
     img: PropTypes.string.isRequired,
+    url: PropTypes.string,
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string,

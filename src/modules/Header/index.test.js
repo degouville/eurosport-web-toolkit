@@ -4,7 +4,7 @@ import Header, { Breadcrumbs } from '.';
 import Link from '../../elements/Link';
 import Logo from '../../elements/Logo';
 
-import menu from '../BurgerMenu/mocks/feed-menu';
+import menu from '../BurgerMenu/mocks/feed-menu.mock';
 import BurgerMenu from '../BurgerMenu';
 import BurgerIcon from '../../elements/BurgerIcon';
 
@@ -19,6 +19,16 @@ describe('Header', () => {
   });
 
   describe('with submenu', () => {
+    beforeAll(() => {
+      window.matchMedia = jest.fn().mockImplementation(query => ({
+        matches: false,
+        media: query,
+        onchange: null,
+        addListener: jest.fn(),
+        removeListener: jest.fn(),
+      }));
+    });
+
     it('renders Header with BurgerMenu', () => {
       const wrapper = shallow(<Header menuItems={menu.header} breadcrumbs={breadcrumbs} />);
       expect(wrapper).toMatchSnapshot();
@@ -31,6 +41,18 @@ describe('Header', () => {
       });
       expect(wrapper.find(BurgerMenu)).toHaveLength(1);
       expect(wrapper.find(BurgerMenu).prop('isOpen')).toBe(true);
+    });
+
+    it('should open the menu with a specific selected menu item', () => {
+      const wrapper = mount(<Header menuItems={menu.header} />);
+      wrapper.instance().toggleBurgerMenu(null, 5);
+      wrapper.update();
+      expect(
+        wrapper
+          .find(BurgerMenu)
+          .childAt(0)
+          .state('selectedMenuId')
+      ).toEqual(5);
     });
   });
 

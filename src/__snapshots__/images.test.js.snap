@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responsiveRetinaImage produces the css for a responsive retina image 1`] = `
+.emotion-0 {
+  background-image: background-image:url(image375);
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .emotion-0 {
+    background-image: url(image375X2);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+  .emotion-0 {
+    background-image: url(image375X3);
+  }
+}
+
+@media (min-width:481px) {
+  .emotion-0 {
+    background-image: url(image768);
+  }
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .emotion-0 {
+      background-image: url(image768X2);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+    .emotion-0 {
+      background-image: url(image768X3);
+    }
+}
+}
+
+@media (min-width:701px) {
+  .emotion-0 {
+    background-image: url(image1024);
+  }
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .emotion-0 {
+      background-image: url(image1024X2);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+    .emotion-0 {
+      background-image: url(image1024X3);
+    }
+}
+}
+
+@media (min-width:1025px) {
+  .emotion-0 {
+    background-image: url(image1440);
+  }
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .emotion-0 {
+      background-image: url(image1440X2);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+    .emotion-0 {
+      background-image: url(image1440X3);
+    }
+}
+}
+
+<div
+  className="emotion-0 emotion-1"
+/>
+`;
+
+exports[`retinaImage produces the css for a retina image 1`] = `
+.emotion-0 {
+  background-image: background-image:url(image);
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .emotion-0 {
+    background-image: url(imageX2);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio:3) {
+  .emotion-0 {
+    background-image: url(imageX3);
+  }
+}
+
+<div
+  className="emotion-0 emotion-1"
+/>
+`;

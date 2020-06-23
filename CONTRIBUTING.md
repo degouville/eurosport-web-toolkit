@@ -9,7 +9,7 @@ Each PR should have an approving review from one person from the other two teams
 3. Components should spread props onto the top level component, for example: `const Comp = ({...props}) => <div {...props} />`, this should have a test
 4. `PropTypes` are required, with a max of 2 levels of `shape` nesting.
 5. Add `defaultProps` when necessary, for example if it fails to render without.
-6. When using emotion, use `styled.div` over `styled('div')` unless restyling React components
+6. When using emotion, use `styled.div` over `styled('div')` unless restyling React components.
 
 ## Adding SVGs
 

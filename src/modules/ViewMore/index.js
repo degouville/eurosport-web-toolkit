@@ -4,16 +4,16 @@ import styled, { css } from 'react-emotion';
 import { rgba } from 'polished';
 import get from 'lodash/get';
 import throttle from 'lodash/throttle';
-import { coreLightMinus1, coreLightBase, coreDarkPlus1 } from '../../colors';
+import { white, athensGray, ebony } from '../../colors';
 import { fontAlphaHeadlineBold } from '../../typography';
 
 export const StyledViewMoreButtonWrapper = styled.div``;
 
 export const StyledViewMoreButton = styled.span`
-  color: ${coreLightBase};
+  color: ${athensGray};
   ${fontAlphaHeadlineBold};
-  border: 1px solid ${rgba(coreLightMinus1, 0.35)};
-  background: ${rgba(coreDarkPlus1, 0.2)};
+  border: 1px solid ${rgba(white, 0.35)};
+  background: ${rgba(ebony, 0.2)};
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 11px;

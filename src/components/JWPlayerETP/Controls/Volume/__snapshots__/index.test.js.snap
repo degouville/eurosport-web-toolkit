@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Volume Snapshots Should match snapshot when the volume is not shown 1`] = `
+<Styled(div)
+  medium={true}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Styled(img)
+    alt="Volume"
+    onClick={[Function]}
+    src="/eurosport-web-toolkit/da25f9b732454df2ec19e374f2219635.svg"
+  />
+</Styled(div)>
+`;

@@ -154,4 +154,24 @@ describe('lib/AdobeHeartbeatAnalytics', () => {
       expect(trackSessionEndSpy).toHaveBeenCalled();
     });
   });
+
+  describe('onSeek', () => {
+    it('should call trackEvent with correct params', () => {
+      // Then
+      analytics.onSeek();
+
+      // Expect
+      expect(trackEventSpy).toHaveBeenCalledWith('seekStart');
+    });
+  });
+
+  describe('onSeeked', () => {
+    it('should call trackEvent with correct params', () => {
+      // Then
+      analytics.onSeeked();
+
+      // Expect
+      expect(trackEventSpy).toHaveBeenCalledWith('seekComplete');
+    });
+  });
 });

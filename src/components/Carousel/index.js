@@ -9,6 +9,7 @@ const StyledWrapper = styled.div`
   display: flex;
   opacity: 0;
   overflow: hidden;
+  position: relative;
   ${props =>
     props.slides.length &&
     css`
@@ -33,7 +34,7 @@ const StyledSlidesTrack = styled.div`
   white-space: nowrap;
   top: 0;
   transform: translateX(${props => props.left}px);
-  display: block;
+  display: ${props => (props.flex ? 'flex' : 'block')};
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -53,13 +54,16 @@ const StyledSlidesTrack = styled.div`
   user-select: none;
 `;
 
-const StyledSlide = styled.div`
-  display: inline-block;
+export const StyledSlide = styled.div`
+  display: ${props => (props.flex ? 'flex' : 'inline-block')};
   vertical-align: top;
   width: auto;
   margin-right: ${props => props.margin}px;
   &:last-of-type {
     margin-right: 0;
+  }
+  &:first-of-type {
+    padding-left: ${props => (props.offsetLeft ? props.offsetLeft : 0)};
   }
 `;
 
@@ -71,20 +75,33 @@ const StyledChevron = styled(Chevron)`
   }
 `;
 
+export const StyledAbsoluteArrowWrapper = styled.div`
+  position: absolute;
+  right: ${props => props.offsetLeft || 0};
+  top: 77px;
+  display: flex;
+  width: 98px;
+  z-index: 2;
+`;
+
 export const StyledArrow = styled.div`
   display: none;
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.08);
-  width: 36px;
+  ${props =>
+    !props.absoluteNavigation &&
+    css`
+      width: 36px;
+    `};
   margin: 0 1px;
-  flex: 0 0 36px;
+  flex: ${props => (props.absoluteNavigation ? '0 0 48px;' : '0 0 36px;')};
   border-radius: 0 2px 2px 0;
   height: 76px;
 
-  @media (min-width: 900px) {
+  @media (min-width: ${props => `${props.minWidthArrowDisplaying}px`}) {
     display: flex;
-    height: 88px;
+    height: ${props => (props.absoluteNavigation ? '48px;' : '88px;')};
   }
 
   &:hover {
@@ -278,10 +295,11 @@ export default class Carousel extends React.Component {
    * @param deltaX
    */
   lockSlides() {
+    const { magneticMin, magneticMax } = this.props;
     const { slides, left, disableNavigation } = this.state;
     const deltaX = this.coords.deltaX();
 
-    if (disableNavigation) return;
+    if (disableNavigation || deltaX === 0) return;
 
     let slideToLock = slides.find(
       slide => Math.abs(left) >= slide.position && Math.abs(left) <= slide.position + slide.width
@@ -291,7 +309,7 @@ export default class Carousel extends React.Component {
       const nextSlide = slides.find(s => s.slideId > slideToLock.slideId);
 
       const ratio = (left * -1 - slideToLock.position) / slideToLock.width;
-      const limit = deltaX > 0 ? 0.2 : 0.8;
+      const limit = deltaX > 0 ? magneticMin : magneticMax;
       if (ratio > limit) {
         slideToLock = nextSlide || slideToLock;
       }
@@ -330,7 +348,6 @@ export default class Carousel extends React.Component {
     if (lastSlide === undefined) {
       lastSlide = slides[slides.length - 1];
     }
-
     if (newSlideId >= lastSlide.slideId && this.checkSlideOutOfScrollRight(newSlideId)) {
       this.setState({
         left: -(trackWidth - wrapperWidth),
@@ -376,13 +393,58 @@ export default class Carousel extends React.Component {
     }
   }
 
+  nextSlide = () => {
+    this.slide();
+  };
+
+  previousSlide = () => {
+    this.slide(true);
+  };
+
   render() {
-    const { children, slideMargin, className, withArrow, alignCenter } = this.props;
+    const {
+      children,
+      slideMargin,
+      className,
+      withArrow,
+      alignCenter,
+      flex,
+      absoluteNavigation,
+      offsetLeft,
+      minWidthArrowDisplaying,
+    } = this.props;
     const { left, trackWidth, disableNavigation, slides, isDragging } = this.state;
+    const defaultNavigationEnabled = !disableNavigation && !absoluteNavigation && withArrow;
+    const absoluteNavigationEnabled = !disableNavigation && absoluteNavigation && withArrow;
+
     return (
       <StyledWrapper className={className} slides={slides} data-test="carousel">
-        {!disableNavigation && withArrow && (
-          <StyledArrowLeft onClick={() => this.slide(true)} data-test="carousel-arrow-left">
+        {absoluteNavigationEnabled && (
+          <StyledAbsoluteArrowWrapper offsetLeft={offsetLeft}>
+            <StyledArrowLeft
+              onClick={this.previousSlide}
+              data-test="carousel-arrow-left"
+              absoluteNavigation
+              minWidthArrowDisplaying={minWidthArrowDisplaying}
+            >
+              <StyledChevron />
+            </StyledArrowLeft>
+            <StyledArrow
+              onClick={this.nextSlide}
+              data-test="carousel-arrow-right"
+              absoluteNavigation
+              minWidthArrowDisplaying={minWidthArrowDisplaying}
+            >
+              <StyledChevron />
+            </StyledArrow>
+          </StyledAbsoluteArrowWrapper>
+        )}
+        {defaultNavigationEnabled && (
+          <StyledArrowLeft
+            onClick={this.previousSlide}
+            data-test="carousel-arrow-left"
+            minWidthArrowDisplaying={minWidthArrowDisplaying}
+          >
             <StyledChevron />
           </StyledArrowLeft>
         )}
@@ -395,17 +457,28 @@ export default class Carousel extends React.Component {
             data-test="carousel-slider"
             alignCenter={alignCenter}
             disableNavigation={disableNavigation}
+            flex={flex}
           >
             {children.map((child, index) => (
-              /* eslint-disable-next-line react/no-array-index-key */
-              <StyledSlide key={index} margin={slideMargin} data-test={`carousel-item-${index}`}>
+              <StyledSlide
+                /* eslint-disable-next-line react/no-array-index-key */
+                key={index}
+                margin={slideMargin}
+                data-test={`carousel-item-${index}`}
+                flex={flex}
+                offsetLeft={offsetLeft}
+              >
                 {child}
               </StyledSlide>
             ))}
           </StyledSlidesTrack>
         </StyledContainer>
-        {!disableNavigation && withArrow && (
-          <StyledArrow onClick={() => this.slide()} data-test="carousel-arrow-right">
+        {defaultNavigationEnabled && (
+          <StyledArrow
+            onClick={this.nextSlide}
+            data-test="carousel-arrow-right"
+            minWidthArrowDisplaying={minWidthArrowDisplaying}
+          >
             <StyledChevron />
           </StyledArrow>
         )}
@@ -420,12 +493,24 @@ Carousel.propTypes = {
   className: PropTypes.string,
   withArrow: PropTypes.bool,
   alignCenter: PropTypes.bool,
+  flex: PropTypes.bool,
+  magneticMin: PropTypes.number,
+  magneticMax: PropTypes.number,
+  absoluteNavigation: PropTypes.bool,
+  offsetLeft: PropTypes.string,
+  minWidthArrowDisplaying: PropTypes.number,
 };
 
 Carousel.defaultProps = {
   children: null,
   slideMargin: 8,
-  className: '',
+  className: undefined,
   withArrow: true,
   alignCenter: false,
+  flex: false,
+  magneticMin: 0.2,
+  magneticMax: 0.8,
+  absoluteNavigation: false,
+  offsetLeft: '0',
+  minWidthArrowDisplaying: 900,
 };

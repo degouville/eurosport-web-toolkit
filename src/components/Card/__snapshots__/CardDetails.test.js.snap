@@ -12,7 +12,6 @@ exports[`CardDetails Renders a carddetail component 1`] = `
     <Styled(div)>
       <Styled(ProgramDetails)
         callsign={null}
-        className=""
         customIcon={<div />}
         textDetail="09:00 - 10:30"
       />

@@ -1,11 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SubNavigation renders when everything passed in 1`] = `
+.emotion-0 {
+  margin-left: auto;
+}
+
 <withMatchMedia(Component)>
-  <Styled(nav)>
+  <Styled(nav)
+    withArrow={false}
+    withBorders={false}
+  >
     <Carousel
+      absoluteNavigation={false}
       alignCenter={false}
-      className=""
+      flex={false}
+      magneticMax={0.8}
+      magneticMin={0.2}
+      minWidthArrowDisplaying={900}
+      offsetLeft="0"
       slideMargin={0}
       withArrow={true}
     >
@@ -119,7 +131,7 @@ exports[`SubNavigation renders when everything passed in 1`] = `
       </Styled(li)>
     </Carousel>
     <Styled(li)
-      className="css-zdpt2t"
+      className="emotion-0"
       key="Shop"
     >
       <Styled(a)

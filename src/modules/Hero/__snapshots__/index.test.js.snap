@@ -1,31 +1,699 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hero renders Hero 1`] = `
-<Styled(header)>
-  <Styled(div)
+.emotion-32 {
+  position: relative;
+  background-color: #060825;
+  -webkit-clip-path: polygon(0 0,100% 0%,100% calc(100% - 30px),0% 100%);
+  clip-path: polygon(0 0,100% 0%,100% calc(100% - 30px),0% 100%);
+  height: 445px;
+}
+
+.emotion-32:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(transparent 30%,#04050F 90%,#04050F);
+  z-index: 1;
+  opacity: 0.4;
+}
+
+@media (min-width:480px) {
+  .emotion-32 {
+    height: 475px;
+    -webkit-clip-path: polygon(0 0,100% 0%,100% calc(100% - 35px),0% 100%);
+    clip-path: polygon(0 0,100% 0%,100% calc(100% - 35px),0% 100%);
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-32 {
+    height: 630px;
+    -webkit-clip-path: polygon(0 0,100% 0%,100% calc(100% - 50px),0% 100%);
+    clip-path: polygon(0 0,100% 0%,100% calc(100% - 50px),0% 100%);
+  }
+}
+
+.emotion-0 {
+  position: relative;
+  background-image: url(Picture);
+  background-size: cover;
+  background-position: 50% 0;
+  opacity: 0.65;
+  height: 100%;
+}
+
+.emotion-28 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:480px) {
+  .emotion-28 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.emotion-26 {
+  margin-left: 5.07%;
+  margin-right: 5.07%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:480px) {
+  .emotion-26 {
+    margin-left: 4.44%;
+    margin-right: 4.44%;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-26 {
+    margin-left: 4.3%;
+    margin-right: 4.3%;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-26 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 964px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-26 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1289px;
+  }
+}
+
+@media (min-width:480px) {
+  .emotion-26 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+.emotion-23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -2.6703887074686614%;
+}
+
+@media (min-width:480px) {
+  .emotion-23 {
+    margin: 0 -2.323147760569276%;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-23 {
+    margin: 0 -1.248%;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-23 {
+    margin: 0 -10px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-23 {
+    margin: 0 -9.5px;
+  }
+}
+
+.emotion-21 {
+  box-sizing: border-box;
+  width: 99.98946592225849%;
+  margin-left: 0%;
+  padding: 0 2.6703887074686614%;
+}
+
+@media (min-width:480px) {
+  .emotion-21 {
+    width: 99.95814148179156%;
+    margin-left: 0%;
+    padding: 0 2.323147760569276%;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-21 {
+    width: 74.97599999999998%;
+    margin-left: 8.330666666666666%;
+    padding: 0 1.248%;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-21 {
+    width: 738px;
+    margin-left: 82px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-21 {
+    width: 763px;
+    margin-left: 109px;
+    padding: 0 9.5px;
+  }
+}
+
+.emotion-2 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+  word-break: break-word;
+  margin-bottom: 32px;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    margin-bottom: 23px;
+  }
+}
+
+.emotion-17 {
+  margin-bottom: 57px;
+}
+
+@media (min-width:700px) {
+  .emotion-17 {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-17 {
+    margin-bottom: 108px;
+  }
+}
+
+.emotion-15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 57px;
+}
+
+@media (min-width:700px) {
+  .emotion-15 {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-15 {
+    margin-bottom: 108px;
+  }
+}
+
+.emotion-4 {
+  height: 32px;
+  width: 32px;
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.emotion-6 {
+  width: 1px;
+  height: 48px;
+  background: #FFFFFF;
+  opacity: 0.3;
+  margin: 0 18px 0 11px;
+}
+
+@media (min-width:480px) {
+  .emotion-6 {
+    height: 64px;
+    margin: 0 17px 0 13px;
+  }
+}
+
+@media (min-width:480px) {
+  .emotion-6 {
+    height: 56px;
+    margin: 0 33px 0 26px;
+  }
+}
+
+.emotion-12 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width:480px) {
+  .emotion-12 {
+    font-size: 16px;
+  }
+}
+
+.emotion-8 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.emotion-10 {
+  color: #FFFFFF;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#FF0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#F8F8F9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#FFFFFF",
+        },
+        "primary": Object {
+          "backgroundColor": "#D50032",
+          "color": "#FFFFFF",
+        },
+        "secondary": Object {
+          "color": "#66CEF9",
+        },
+        "secondaryForm": Object {
+          "backgroundColor": "#2D304A",
+          "color": "#FFFFFF",
+        },
+      },
+      "dropdown": Object {
+        "background": "#151726",
+        "border": "rgba(109,109,120,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "heading": Object {
+          "color": "#9798A6",
+        },
+        "label": Object {
+          "color": "#FFFFFF",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#C6C7CE",
+          },
+          "selected": Object {
+            "color": "#FFFFFF",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050F",
+        "border": "#41435B",
+        "borderFocused": "#9798A6",
+        "placeholder": Object {
+          "color": "#9798A6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66CEF9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#F8F8F9",
+          "secondary": "#41435B",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "loginWithMarketing": Object {
+        "mobileBackground": "#060825",
+      },
+      "marketingChecklist": Object {
+        "check": Object {
+          "color": "#FFFFFF",
+        },
+        "subtitle": Object {
+          "color": "#B9BBCA",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "playerControls": Object {
+        "bar": Object {
+          "backgroundColor": "rgba(21,23,38,0.6)",
+        },
+        "dropdown": Object {
+          "background": "rgba(21,23,38,0.9)",
+          "border": "rgba(109,109,120,0.8)",
+        },
+        "errorMessage": Object {
+          "backgroundColor": "#151726",
+          "iconColor": "#2D304A",
+          "link": "#4652FF",
+          "textColor": "#F8F8F9",
+        },
+        "liveIcon": Object {
+          "backgroundColor": "#CC0036",
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "seek": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": false,
+        },
+        "separator": "rgba(151,152,166,0.5)",
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "volume": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": true,
+        },
+      },
+      "scrollbar": Object {
+        "background": "#3D4248",
+        "color": "#4A7EFF",
+      },
+      "shareIcons": Object {
+        "background": "#FFFFFF",
+        "color": "#55586D",
+      },
+      "statistics": Object {
+        "background": Object {
+          "one": "#22263C",
+          "two": "#2D304A",
+        },
+        "comparison": Object {
+          "background": "rgba(255,255,255,0.1)",
+          "colorOne": "#66CEF9",
+          "colorTwo": "#4652FF",
+        },
+        "fringe": "rgba(255,255,255,0.05)",
+      },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66CEF9",
+          "color": "#FFFFFF",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798A6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#C6C7CE",
+      },
+      "videoPlayerModal": Object {
+        "closeIcon": Object {
+          "fill": "#FFFFFF",
+        },
+      },
+    }
+  }
+>
+  <Hero
+    author={
+      Object {
+        "name": "Author name",
+      }
+    }
     img="Picture"
-  />
-  <Styled(Row)>
-    <Column
-      large={null}
-      largeOffset={null}
-      medium="9"
-      mediumOffset="1"
-      small={null}
-      smallOffset={null}
-      tiny="full"
-      tinyOffset="0"
-      wide="7"
-      wideOffset={null}
-    >
-      <Styled(h1)>
-        Title
-      </Styled(h1)>
-      <Styled(Author)
-        img="/eurosport-web-toolkit/5ac1e61e7c13b738321e34d40fe8de63.svg"
-        time=""
-      />
-    </Column>
-  </Styled(Row)>
-</Styled(header)>
+    time=""
+    title="Title"
+  >
+    <Styled(header)>
+      <header
+        className="emotion-32 emotion-33"
+      >
+        <Styled(div)
+          img="Picture"
+        >
+          <div
+            className="emotion-0 emotion-1"
+          />
+        </Styled(div)>
+        <Styled(Row)>
+          <Row
+            className="emotion-28 emotion-25"
+          >
+            <Styled(div)
+              className="emotion-28 emotion-25"
+            >
+              <div
+                className="emotion-25 emotion-26 emotion-27"
+              >
+                <Styled(div)>
+                  <div
+                    className="emotion-23 emotion-24"
+                  >
+                    <Column
+                      large={null}
+                      largeOffset={null}
+                      medium="9"
+                      mediumOffset="1"
+                      small={null}
+                      smallOffset={null}
+                      tiny="full"
+                      tinyOffset="0"
+                      wide="7"
+                      wideOffset={null}
+                    >
+                      <Styled(div)
+                        large="9"
+                        largeOffset="1"
+                        medium="9"
+                        mediumOffset="1"
+                        small="full"
+                        smallOffset="0"
+                        tiny="full"
+                        tinyOffset="0"
+                        wide="7"
+                        wideOffset="1"
+                      >
+                        <div
+                          className="emotion-21 emotion-22"
+                        >
+                          <Styled(h1)>
+                            <h1
+                              className="emotion-2 emotion-3"
+                            >
+                              Title
+                            </h1>
+                          </Styled(h1)>
+                          <Styled(Author)
+                            img="/eurosport-web-toolkit/5ac1e61e7c13b738321e34d40fe8de63.svg"
+                            name="Author name"
+                            time=""
+                          >
+                            <Author
+                              className="emotion-17 emotion-14"
+                              img="/eurosport-web-toolkit/5ac1e61e7c13b738321e34d40fe8de63.svg"
+                              name="Author name"
+                              time=""
+                            >
+                              <Styled(div)
+                                className="emotion-17 emotion-14"
+                              >
+                                <div
+                                  className="emotion-14 emotion-15 emotion-16"
+                                >
+                                  <Styled(img)
+                                    alt="Author name"
+                                    src="/eurosport-web-toolkit/5ac1e61e7c13b738321e34d40fe8de63.svg"
+                                  >
+                                    <img
+                                      alt="Author name"
+                                      className="emotion-4 emotion-5"
+                                      src="/eurosport-web-toolkit/5ac1e61e7c13b738321e34d40fe8de63.svg"
+                                    />
+                                  </Styled(img)>
+                                  <Styled(div)>
+                                    <div
+                                      className="emotion-6 emotion-7"
+                                    />
+                                  </Styled(div)>
+                                  <Styled(div)>
+                                    <div
+                                      className="emotion-12 emotion-13"
+                                    >
+                                      <Styled(div)>
+                                        <div
+                                          className="emotion-8 emotion-9"
+                                        >
+                                          Author name
+                                        </div>
+                                      </Styled(div)>
+                                      <Styled(div)>
+                                        <div
+                                          className="emotion-10 emotion-11"
+                                        />
+                                      </Styled(div)>
+                                    </div>
+                                  </Styled(div)>
+                                </div>
+                              </Styled(div)>
+                            </Author>
+                          </Styled(Author)>
+                        </div>
+                      </Styled(div)>
+                    </Column>
+                  </div>
+                </Styled(div)>
+              </div>
+            </Styled(div)>
+          </Row>
+        </Styled(Row)>
+      </header>
+    </Styled(header)>
+  </Hero>
+</ThemeProvider>
 `;

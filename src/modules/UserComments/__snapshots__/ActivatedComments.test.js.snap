@@ -1,7 +1,332 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActivatedComments renders an activated UserComments Component 1`] = `
-<Fragment>
+.emotion-0 {
+  font-size: 12px;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 24px 0;
+  border-top: 1px solid #9798A6;
+  border-bottom: 1px solid #9798A6;
+  margin-bottom: 30px;
+}
+
+@media (min-width:700px) {
+  .emotion-0 {
+    font-size: 16px;
+  }
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: nowrap row;
+  -ms-flex-flow: nowrap row;
+  flex-flow: nowrap row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+.emotion-12 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.emotion-10 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-6 svg {
+  position: relative;
+  z-index: 2;
+}
+
+.emotion-2 {
+  -webkit-animation: animation-n2ntg8 2s linear infinite;
+  animation: animation-n2ntg8 2s linear infinite;
+}
+
+.emotion-4 {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.emotion-4 svg {
+  position: relative;
+  z-index: 2;
+}
+
+.emotion-14 {
+  display: none;
+}
+
+@media (min-width:1366px) {
+  .emotion-14 {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 50px;
+    width: 300px;
+  }
+}
+
+.emotion-18 {
+  display: block;
+  font-size: 12px;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  color: #FFFFFF;
+  text-align: left;
+  margin-top: 15px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (min-width:700px) {
+  .emotion-18 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1366px) {
+  .emotion-18 {
+    padding-left: 10%;
+  }
+}
+
+<ActivatedComments
+  commentsCountCallback={null}
+  fullWidth={true}
+  livefyreConfig={
+    Object {
+      "areCommentsActivated": true,
+      "collection": Object {
+        "articleId": "948848_4",
+        "checksum": "5662654f95ebee3b55eec72f64b3a787",
+        "collectionMeta": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3d3dy5ldXJvc3BvcnQuZnIvZm9vdGJhbGwvbGlndWUtZGVzLWNoYW1waW9ucy8yMDE3LTIwMTgvbGl2ZS1yZWFsLW1hZHJpZC1wYXJpcy1zYWludC1nZXJtYWluX210Yzk0ODg0OC9saXZlLnNodG1sIiwidGl0bGUiOiJMaWd1ZSBkZXMgY2hhbXBpb25zIDIwMTctMjAxOCBSZWFsIE1hZHJpZC1QYXJpcyBTYWludC1HZXJtYWluIiwidHlwZSI6ImxpdmVjb21tZW50cyIsImFydGljbGVJZCI6Ijk0ODg0OF80In0.QlshF5MD-J1ivClFm6GPp_X77z6njW-cvhLW2Lv3fLk",
+      },
+      "config": Object {
+        "networkDomain": "eurosport-fr.fyre.co",
+        "scriptUrl": "//cdn.livefyre.com/Livefyre.js",
+        "siteId": 373116,
+      },
+      "labels": Object {
+        "MultipleMediaNotAllowedError": "Your permissions only grant you one media attachment at a time.",
+        "archiveHeaderTitle": "From the Archive",
+        "archiveShowMore": "Show More",
+        "backToComments": "Back to Newest",
+        "backToHotThreads": "Back to Hot Threads",
+        "banCancelButton": "Cancel",
+        "banConfirmButton": "OK",
+        "banConfirmation": "Are you sure you want to ban this user?",
+        "banTitle": "Ban user",
+        "banUserButton": "Ban user",
+        "banUserTooltip": "Ban user",
+        "bozoButton": "Bozo",
+        "bozoCommentTooltip": "Bozo",
+        "commentCountLabel": "%s comment",
+        "commentCountLabelPlural": "%s comments",
+        "commentNotifier": "New Comment",
+        "commentNotifierPlural": "New Comments",
+        "commentTombstone": "This comment has been deleted",
+        "customHtmlDialogTitle": "Add Custom HTML",
+        "deleteButton": "Delete",
+        "deleteCommentTooltip": "Delete",
+        "displayName": "%s",
+        "displayNameGuest": "%s (guest)",
+        "editButton": "Edit",
+        "editProfile": "Edit profile",
+        "editorDisabled": "This conversation is currently closed to new comments.",
+        "errorAuthError": "You're not authorized to post a comment on this conversation",
+        "errorCommentsNotAllowed": "Comments are not allowed on this conversation",
+        "errorDefault": "An error has occurred. Please try again.",
+        "errorDuplicate": "As much as you liked your comment, you're not allowed to post it twice.",
+        "errorEditDuplicate": "You must change the body of the comment when you edit it.",
+        "errorEditNotAllowed": "You're not allowed to edit comments on this conversation.",
+        "errorEditTimeExceeded": "Sorry, your comment editing period has expired.",
+        "errorEmpty": "It seems you're attempting to post an empty comment.",
+        "errorExpired": "Your session has expired. Please reload the page.",
+        "errorFlagNotSelected": "Please select a flag type.",
+        "errorGuestLiked": "Sorry, only those with accounts can like content.",
+        "errorInsufficientPermissions": "Insufficient Permissions",
+        "errorInvalidChar": "It seems you're attempting to post an invalid character.",
+        "errorLikeOwnComment": "You cannot like your own comment",
+        "errorMalformed": "It seems you're attempting to post malformed content.",
+        "errorMaxChars": "Sorry, your comment is too long. Please edit and try again.",
+        "errorMediaNotAvailable": "Media is no longer visible.",
+        "errorShowMore": "There was an error loading more comments.",
+        "featureButton": "Feature",
+        "featureCommentTooltip": "Feature",
+        "featuredCommentTooltip": "Unfeature",
+        "featuredCommentsTag": "Featured",
+        "featuredCommentsTitlePlural": "Featured Comment",
+        "flagButton": "Flag",
+        "flagCancelButton": "Cancel",
+        "flagCommentTooltip": "...More",
+        "flagConfirmButton": "OK",
+        "flagConfirmationMessage": "Flag %s's comment as %s?",
+        "flagDefaultSelectOption": "Select",
+        "flagDisagree": "Disagree",
+        "flagDisagreeButton": "Disagree",
+        "flagDisagreeCommentTooltip": "Disagree",
+        "flagEmail": "Email",
+        "flagEmailPlaceholder": "Your e-mail address",
+        "flagNotes": "Notes",
+        "flagNotesPlaceholder": "Notes",
+        "flagOffTopic": "Off-Topic",
+        "flagOffTopicButton": "Off-Topic",
+        "flagOffTopicCommentTooltip": "Off-Topic",
+        "flagOffensive": "Offensive",
+        "flagOffensiveButton": "Offensive",
+        "flagOffensiveCommentTooltip": "Offensive",
+        "flagSpam": "Spam",
+        "flagSpamButton": "Spam",
+        "flagSpamCommentTooltip": "Spam",
+        "flagSubtitle": "Flag as",
+        "flagSuccessMsg": "Comment has been flagged.",
+        "flagTitle": "Flag %s's comment",
+        "follow": "+ Follow",
+        "hotThreadsContentNotFoundMsg": "There are not enough threads yet.",
+        "hovercardViewProfile": "View Full Profile",
+        "likeButton": "Like",
+        "likesPlural": "Likes",
+        "likesSingular": "Like",
+        "listenerCount": "person listening",
+        "listenerCountPlural": "people listening",
+        "liveblogFollow": "Follow Live Blog",
+        "liveblogNotifier": "New Post",
+        "liveblogNotifierPlural": "New Posts",
+        "liveblogPostCountLabel": "post",
+        "liveblogPostCountLabelPlural": "posts",
+        "liveblogUnfollow": "Unfollow Live Blog",
+        "livechatOtherInstruction": "Press command+enter to post",
+        "livechatPostButtonLabel": "Post",
+        "livechatPostEditButton": "Edit",
+        "livechatWindowsInstruction": "Press control+enter to post",
+        "loadingPermalink": "Loading short url...",
+        "mentionCancelButton": "Cancel",
+        "mentionConfirmButton": "OK",
+        "mentionDefaultText": "I mentioned you in a Livefyre comment!",
+        "mentionErrorGeneral": "Oops! Something went wrong! Livefyre has been alerted.",
+        "mentionErrorNoneSelected": "You must have at least one mention enabled.",
+        "mentionMenuTitle": "To see and mention your friends",
+        "mentionSubtitleTwitter": "Share Tweet to:",
+        "mentionSuccessMsg": "Mentions have been successfully sent.",
+        "mentionTitle": "Share Mention",
+        "mentionTwitterConnect": "Connect to Twitter",
+        "mentionTwitterFetching": "Fetching Friends...",
+        "modQ": "ModQ",
+        "moderator": "moderator",
+        "moderatorEditTimestamp": "Edited by a Moderator",
+        "moreButton": "...More",
+        "newComment": "New Comment",
+        "newComments": "New Comments",
+        "newReplies": "new replies",
+        "newReply": "new reply",
+        "notificationSettings": "Notification settings",
+        "pendingComment": "pending",
+        "permalinkNotFoundMsg": "This comment is no longer visible.",
+        "postAsButton": "Post comment as…",
+        "postButton": "Post comment",
+        "postEditAsButton": "Edit comment as...",
+        "postEditButton": "Edit comment",
+        "postEditCancelButton": "Cancel",
+        "postReplyAsButton": "Post comment as…",
+        "postReplyButton": "Post comment",
+        "quickProfileTooltip": "Quick Profile",
+        "refresh": "Refresh",
+        "replyButton": "Reply",
+        "replyButtonPlural": "Replies",
+        "replyButtonSingular": "reply",
+        "shareButton": "Share",
+        "shareButtonText": "Share",
+        "shareCommentTooltip": "Share",
+        "shareDefaultText": "Check out %s's post!",
+        "shareLabel": "Share on:",
+        "sharePermalink": "Permalink",
+        "shareText": "I just posted a comment. Check it out!",
+        "shareTextFacebook": "blank",
+        "shareTextLinkedin": "blank",
+        "shareTextTwitter": "blank",
+        "shareTitle": "Share Comment",
+        "showMore": "Show More Comments",
+        "showMoreLiveblog": "Show More Posts",
+        "signIn": "Sign in",
+        "signInGuest": "Sign in or Post as Guest",
+        "signOut": "Sign out",
+        "siteAdmin": "Admin Console",
+        "sortHotThreads": "Hot Threads",
+        "sortNewest": "Newest",
+        "sortOldest": "Oldest",
+        "sortTopComments": "Top Comments",
+        "streamRefreshMsg": "See what's new.",
+        "streamSorting": "Loading",
+        "threadBreakoutButton": "Show entire Thread",
+        "timeDaysAgo": "day ago",
+        "timeDaysAgoPlural": "days ago",
+        "timeHoursAgo": "hour ago",
+        "timeHoursAgoPlural": "hours ago",
+        "timeInDays": "in %s day",
+        "timeInDaysPlural": "in %s days",
+        "timeInHours": "in %s hour",
+        "timeInHoursPlural": "in %s hours",
+        "timeInMinutes": "in %s minute",
+        "timeInMinutesPlural": "in %s minutes",
+        "timeJustNow": "just now",
+        "timeMinutesAgo": "minute ago",
+        "timeMinutesAgoPlural": "minutes ago",
+        "toggleCollapse": "Toggle Collapse",
+        "topCommentsContentNotFoundMsg": "There are not enough likes yet.",
+        "unfeatureButton": "Unfeature",
+        "unfollow": "- Unfollow",
+        "unlikeButton": "Unlike",
+        "voteDownvote": "No",
+        "voteReplyTitle": "Was this reply helpful?",
+        "voteTitle": "Was this comment helpful?",
+        "voteUpvote": "Yes",
+      },
+    }
+  }
+  loginCallback={[Function]}
+  logoutCallback={[Function]}
+  nbCommentsText="Comments"
+  rightAdElement={null}
+  t={[Function]}
+  userToken=""
+>
   <ScriptInjector
     async={false}
     injectPlace="head"
@@ -13,30 +338,128 @@ exports[`ActivatedComments renders an activated UserComments Component 1`] = `
   <Styled(div)
     fullWidth={true}
   >
-    Comments
+    <div
+      className="emotion-0 emotion-1"
+    >
+      Comments
+    </div>
   </Styled(div)>
   <Styled(div)
     fullWidth={true}
   >
-    <Styled(div)
-      data-test="activated-comments"
-      id="livefyre"
+    <div
+      className="emotion-16 emotion-17"
     >
+      <Styled(div)
+        data-test="activated-comments"
+        id="livefyre"
+      >
+        <div
+          className="emotion-12 emotion-13"
+          data-test="activated-comments"
+          id="livefyre"
+        >
+          <Styled(div)>
+            <div
+              className="emotion-10 emotion-11"
+            >
+              <Styled(Spinner)
+                color="#66CEF9"
+                width="80px"
+              >
+                <Spinner
+                  className="emotion-6 emotion-3"
+                  color="#66CEF9"
+                  width="80px"
+                >
+                  <Styled(div)
+                    className="emotion-6 emotion-3"
+                    width="80px"
+                  >
+                    <div
+                      className="emotion-3 emotion-4 emotion-5"
+                      width="80px"
+                    >
+                      <svg
+                        className="emotion-2"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="33"
+                          cy="33"
+                          r="31"
+                          stroke="url(#gradient)"
+                          style={
+                            Object {
+                              "fill": "transparent",
+                              "height": "100%",
+                              "strokeDasharray": 170,
+                              "strokeDashoffset": 20,
+                              "strokeWidth": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                        <linearGradient
+                          id="gradient"
+                        >
+                          <stop
+                            offset="50%"
+                            stopColor="#66CEF9"
+                            stopOpacity="1"
+                          />
+                          <stop
+                            offset="65%"
+                            stopColor="#66CEF9"
+                            stopOpacity="1"
+                          />
+                          <stop
+                            offset="100%"
+                            stopColor="#66CEF9"
+                            stopOpacity="0"
+                          />
+                        </linearGradient>
+                        <circle
+                          cx="36.8"
+                          cy="2.3"
+                          fill="#66CEF9"
+                          r="0.5"
+                          stroke="#66CEF9"
+                          style={
+                            Object {
+                              "strokeDasharray": 170,
+                              "strokeDashoffset": 20,
+                            }
+                          }
+                        />
+                      </svg>
+                    </div>
+                  </Styled(div)>
+                </Spinner>
+              </Styled(Spinner)>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
       <Styled(div)>
-        <Styled(Spinner)
-          className=""
-          color="#35D0FE"
-          width="80px"
+        <div
+          className="emotion-14 emotion-15"
         />
       </Styled(div)>
-    </Styled(div)>
-    <Styled(div) />
+    </div>
   </Styled(div)>
   <Styled(a)
-    href="http://livefyre.fr"
+    href="http://livefyre.com"
     target="_blank"
   >
-    Powered by Livefyre
+    <a
+      className="emotion-18 emotion-19"
+      href="http://livefyre.com"
+      target="_blank"
+    >
+      Powered by Livefyre
+    </a>
   </Styled(a)>
-</Fragment>
+</ActivatedComments>
 `;

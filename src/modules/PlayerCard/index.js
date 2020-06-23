@@ -5,6 +5,7 @@ import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
 import { fontInterUi } from '../../typography';
 import PlayerInfos, { playerType } from '../../components/PlayerInfos';
+import Labels, { labelsType } from '../../elements/Labels';
 import ScoreBlock, { scoreBlockType } from '../../components/ScoreBlock';
 import ViewMore, { StyledViewMoreButton } from '../ViewMore';
 
@@ -32,46 +33,46 @@ const StyledPlayerInfos = styled(PlayerInfos)`
 
 const StyledPreviousMatches = styled.div`
   ${fontInterUi};
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 18px;
-  color: ${colors.coreNeutral3};
+  color: ${colors.spunPearl};
   text-transform: uppercase;
-  margin: 21px 31px;
+  margin: 21px 40px 0 40px;
+  ${breakpoints.medium(css`
+    margin: 21px 80px 0 80px;
+  `)};
 `;
 
 export const StyledScoreBlock = styled.div`
   display: inherit;
 `;
 
-const StyledBefore = styled.div`
-  :before {
-    content: '';
-    width: 19px;
-    ${breakpoints.medium(css`
-      width: 40px;
-    `)};
-    height: 20px;
-    border-right: 2px solid ${colors.coreLightMinus1};
-    display: block;
-  }
-`;
-
 const StyledMatches = styled.div`
   text-align: center;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   ${breakpoints.medium(css`
+    padding-bottom: 50px;
     text-align: left;
   `)};
   ul {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   ${StyledViewMoreButton} {
     ${breakpoints.medium(css`
-      margin-left: 70px;
+      margin-left: 80px;
     `)};
   }
+`;
+
+export const StyledLabels = styled.div`
+  margin: auto 40px;
+  padding: 20px 0 10px 0;
+  ${breakpoints.medium(css`
+    margin: auto 80px;
+    padding: 30px 0 20px 0;
+  `)};
 `;
 
 export const PlayerCard = ({
@@ -111,15 +112,18 @@ export const PlayerCard = ({
             onClick={onViewMoreClick}
             forceToggle={isViewMoreOpen}
           >
-            {previousMatches.map((match, index) => (
-              <StyledScoreBlock key={match.id}>
-                {index > 0 && <StyledBefore />}
+            {previousMatches.map(({ id, matchUrl, data, hasWon, labels }) => (
+              <StyledScoreBlock key={id}>
+                <StyledLabels>
+                  <Labels labels={labels} isSimpleMode />
+                </StyledLabels>
+
                 <ScoreBlock.ScoreBlock
-                  matchUrl={match.matchUrl}
-                  data={match.data}
+                  matchUrl={matchUrl}
+                  data={data}
                   isLive={false}
                   isWatchable={false}
-                  displayLeftCircle={match.hasWon ? 'won' : 'lost'}
+                  displayLeftCircle={hasWon ? 'won' : 'lost'}
                   liveButtonText={liveButtonText}
                   matchInfoButtonText={matchInfoButtonText}
                 />
@@ -131,6 +135,11 @@ export const PlayerCard = ({
     )}
   </StyledContainer>
 );
+
+const scoreBlockWithLabelsType = {
+  ...scoreBlockType,
+  labels: labelsType.isRequired,
+};
 
 PlayerCard.propTypes = {
   previousMatchesText: PropTypes.string,
@@ -144,14 +153,14 @@ PlayerCard.propTypes = {
   matchInfoButtonText: PropTypes.string,
   playerInfo: playerType.isRequired,
   backgroundImageUrl: PropTypes.string.isRequired,
-  previousMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockType)).isRequired,
+  previousMatches: PropTypes.arrayOf(PropTypes.shape(scoreBlockWithLabelsType)).isRequired,
   className: PropTypes.string,
   onViewMoreClick: PropTypes.func,
   isViewMoreOpen: PropTypes.bool,
 };
 
 PlayerCard.defaultProps = {
-  className: '',
+  className: undefined,
   previousMatchesText: 'Previous matches',
   showLessMatchesText: 'Show less matches',
   showMoreMatchesText: 'Show more matches',

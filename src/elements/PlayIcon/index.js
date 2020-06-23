@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css, keyframes } from 'react-emotion';
 import { rgba } from 'polished';
 import play from 'src/assets/play.svg';
-import { coreLightMinus1, brandPlus2 } from '../../colors';
+import { white, blackPearl } from '../../colors';
 
 const spin = keyframes`
   from 0% {
@@ -24,14 +24,14 @@ const StyledBorder = styled.div`
   bottom: 0;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 2px solid ${rgba(coreLightMinus1, 0.5)};
+  border: 2px solid ${rgba(white, 0.5)};
   border-right-color: ${({ isLoading }) => isLoading && `transparent`};
   animation: ${({ isLoading }) => isLoading && `${spin} 1s linear infinite`};
 `;
 
 export const hoverStyles = css`
   ${StyledBorder} {
-    border-color: ${coreLightMinus1};
+    border-color: ${white};
   }
 `;
 
@@ -43,7 +43,7 @@ const StyledWrapper = styled.div`
   padding: ${({ iconHeight }) => `${(iconHeight * 0.45) / 2}px`};
   box-sizing: border-box;
   border-radius: 50%;
-  background: ${rgba(brandPlus2, 0.2)};
+  background: ${rgba(blackPearl, 0.2)};
   overflow: hidden;
 
   :hover {
@@ -63,7 +63,7 @@ const PlayIcon = ({ alt, height, isLoading, isRounded, ...props }) =>
 
 PlayIcon.defaultProps = {
   alt: 'play',
-  className: '',
+  className: undefined,
   isLoading: false,
   isRounded: true,
   height: 20,

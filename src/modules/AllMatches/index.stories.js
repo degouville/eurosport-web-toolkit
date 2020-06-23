@@ -5,15 +5,14 @@ import { liveMatches, upcomingMatches, finishedMatches } from './mockData/mockMa
 import AllMatches from './index';
 
 const iconsStories = storiesOf('Modules|AllMatches', module);
-
 iconsStories.add('default', () => (
   <AllMatches
     liveMatches={object('liveMatches', liveMatches)}
     upcomingMatches={object('upcomingMatches', upcomingMatches)}
     finishedMatches={object('finishedMatches', finishedMatches)}
-    liveMatchesText={object('liveMatchesText', 'Live now')}
-    upcomingMatchesText={object('upcomingMatchesText', 'Upcoming')}
-    finishedMatchesText={object('finishedMatchesText', 'Finished')}
+    liveMatchesText={text('liveMatchesText', 'Live now')}
+    upcomingMatchesText={text('upcomingMatchesText', 'Upcoming')}
+    finishedMatchesText={text('finishedMatchesText', 'Finished')}
     showMoreText={text('showMoreText', 'View more matches')}
     showLessText={text('showLessText', 'View less matches')}
     liveButtonText={text('liveButtonText', 'Live')}

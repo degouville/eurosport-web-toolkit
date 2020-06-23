@@ -1,17 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import { coreLightMinus1, azureRadiance } from '../../colors';
+import { white, azureRadiance } from '../../colors';
 import { fontInterUi } from '../../typography';
 
 const StyledToggleWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 50% 49px 50%;
-  grid-template-rows: auto;
-  grid-column-gap: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -23,12 +19,13 @@ const StyledLabel = styled.span`
   letter-spacing: 1px;
   font-family: ${fontInterUi};
   font-weight: bold;
-  ${props => (props.isActive ? `color: ${azureRadiance};` : `color: ${coreLightMinus1};`)}
+  ${props => (props.isActive ? `color: ${azureRadiance};` : `color: ${white};`)}
 `;
 
 const StyledSwitch = styled.label`
   position: relative;
-  display: inline-block;
+  margin: 0 10px;
+  flex: 0 0 44px;
   width: 44px;
   height: 26px;
   & > input {

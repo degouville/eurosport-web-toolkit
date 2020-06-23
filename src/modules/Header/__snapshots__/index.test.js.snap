@@ -1257,6 +1257,7 @@ exports[`Header with submenu renders Header with BurgerMenu 1`] = `
 >
   <withMatchMedia(BurgerMenu)
     homePageUrl=""
+    initialSelectedMenuId={null}
     isOpen={false}
     items={
       Array [
@@ -2443,6 +2444,7 @@ exports[`Header with submenu renders Header with BurgerMenu 1`] = `
         },
       ]
     }
+    key="null"
     onClose={[Function]}
   />
   <BurgerIcon

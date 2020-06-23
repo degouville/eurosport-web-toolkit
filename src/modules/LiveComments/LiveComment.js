@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import get from 'lodash/get';
 import { medium, large, wide } from '../../breakpoints';
-import { jungleMist, halfBaked, turquoiseBlue, coreLightMinus1 } from '../../colors';
+import { jungleMist, halfBaked, turquoiseBlue, white } from '../../colors';
 import { fontAlphaHeadline } from '../../typography';
 
 import Cards from '../../components/Card';
@@ -34,7 +34,7 @@ const StyledCommentLeft = styled.div`
 const StyledCommentRight = styled.div`
   flex: 1;
   overflow: hidden;
-  color: ${coreLightMinus1};
+  color: ${white};
 `;
 
 export const StyledPlainHtml = styled.div`
@@ -79,14 +79,8 @@ const StyledPictogram = styled.img`
   max-height: 17px;
 `;
 
-export const StyledTwitterCard = styled(Cards.Twitter)`
-  margin-top: 25px;
-`;
-
-const StyledCardWrapper = styled.div`
-  margin-top: 25px;
+const cardsMaxWidth = css`
   max-width: 308px;
-  text-decoration: none;
 
   ${medium(css`
     max-width: 388px;
@@ -95,24 +89,37 @@ const StyledCardWrapper = styled.div`
   ${large(css`
     max-width: 342px;
   `)}
-  
+
   ${wide(css`
     max-width: 308px;
   `)}
-  
+`;
+
+export const StyledTwitterCard = styled(Cards.Twitter)`
+  ${cardsMaxWidth};
+  margin-top: 25px;
+`;
+
+const StyledCardWrapper = styled.div`
+  ${cardsMaxWidth};
+
+  margin-top: 25px;
+  text-decoration: none;
+
   img {
     max-width: 100%;
     border-radius: 4px;
   }
 `;
 
-const LiveComment = ({ liveComment, labelPlayButton }) => {
+const LiveComment = ({ liveComment, labelPlayButton, className }) => {
   const iconUrl = get(liveComment, ['icon', 'svg'], null);
   const pictureUrl = get(liveComment, ['picture', 'format', 'url'], null);
-  const shouldDisplayComment = !!liveComment.html || !!liveComment.marker || !!iconUrl || !!liveComment.tweet;
+  const shouldDisplayComment =
+    !!liveComment.html || !!liveComment.marker || !!iconUrl || !!liveComment.tweet || !!liveComment.sharedlink;
 
   return shouldDisplayComment ? (
-    <StyledComment>
+    <StyledComment className={className}>
       <StyledCommentLeft>
         {!!liveComment.marker && <StyledMarker>{liveComment.marker}</StyledMarker>}
         {iconUrl && <StyledPictogram src={iconUrl} />}
@@ -138,6 +145,7 @@ const LiveComment = ({ liveComment, labelPlayButton }) => {
 
 LiveComment.defaultProps = {
   labelPlayButton: 'watch',
+  className: undefined,
 };
 
 export const LiveCommentPropTypeShape = PropTypes.shape({
@@ -161,6 +169,7 @@ export const LiveCommentPropTypeShape = PropTypes.shape({
 LiveComment.propTypes = {
   liveComment: LiveCommentPropTypeShape.isRequired,
   labelPlayButton: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default LiveComment;

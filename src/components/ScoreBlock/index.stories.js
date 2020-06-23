@@ -8,6 +8,8 @@ import {
   liveMatchData,
   liveMatchDataSet,
   pastMatchOnePlayerNoScoresDataSet,
+  liveMatchDataSetWithImages,
+  scheduledMatchDataSet,
 } from './mockData/mockScoreBlockData';
 
 const MATCH_URL =
@@ -17,9 +19,9 @@ const Wrapper = styled.div`
   max-width: 633px;
 `;
 
-const scoreBlockStories = storiesOf('Components|Score Block', module);
+const setScoreStories = storiesOf('Components|Set Score', module);
 
-scoreBlockStories.add('SetsScore', () => (
+setScoreStories.add('Default', () => (
   <Wrapper css={{ maxWidth: '1067px' }}>
     <ScoreBlocks.SetsScore
       data={object('score data', liveMatchDataSet)}
@@ -27,6 +29,16 @@ scoreBlockStories.add('SetsScore', () => (
     />
   </Wrapper>
 ));
+setScoreStories.add('With flags', () => (
+  <Wrapper css={{ maxWidth: '1067px' }}>
+    <ScoreBlocks.SetsScore
+      data={object('score data', liveMatchDataSetWithImages)}
+      highlightLastSet={boolean('highlightLastSet', false)}
+    />
+  </Wrapper>
+));
+
+const scoreBlockStories = storiesOf('Components|Score Block', module);
 
 scoreBlockStories.add(`ScoreBlock - info`, () => (
   <Wrapper>
@@ -38,32 +50,71 @@ scoreBlockStories.add(`ScoreBlock - info`, () => (
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
       liveButtonText={text('liveButtonText', 'Live')}
       matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', true)}
     />
   </Wrapper>
 ));
-scoreBlockStories.add(`ScoreBlock - live`, () => (
+
+scoreBlockStories.add(`ScoreBlock - with flags`, () => (
   <Wrapper>
     <ScoreBlocks.ScoreBlock
       matchUrl={MATCH_URL}
-      data={object('score data', liveMatchData)}
-      isLive={boolean('isLive', true)}
-      isWatchable={boolean('isWatchable', true)}
-      displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
-      liveButtonText={text('liveButtonText', 'Live')}
-      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
-    />
-  </Wrapper>
-));
-scoreBlockStories.add(`ScoreBlock - no scores`, () => (
-  <Wrapper>
-    <ScoreBlocks.ScoreBlock
-      matchUrl={MATCH_URL}
-      data={object('score data', pastMatchOnePlayerNoScoresDataSet)}
+      data={object('score data', liveMatchDataSetWithImages)}
       isLive={boolean('isLive', false)}
       isWatchable={boolean('isWatchable', false)}
       displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
       liveButtonText={text('liveButtonText', 'Live')}
       matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', false)}
+    />
+  </Wrapper>
+));
+
+const { players: data, schedule } = scheduledMatchDataSet;
+scoreBlockStories.add(`ScoreBlock - scheduled`, () => (
+  <Wrapper>
+    <ScoreBlocks.ScoreBlock
+      matchUrl={MATCH_URL}
+      data={object('players data', data)}
+      schedule={object('schedule', schedule)}
+      isLive={boolean('isLive', false)}
+      isWatchable={boolean('isWatchable', false)}
+      displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', false)}
+    />
+  </Wrapper>
+));
+
+scoreBlockStories.add(`ScoreBlock - live`, () => (
+  <Wrapper>
+    <ScoreBlocks.ScoreBlock
+      matchUrl={MATCH_URL}
+      data={object('score data', liveMatchData)}
+      schedule={object('schedule', schedule)}
+      isLive={boolean('isLive', true)}
+      isWatchable={boolean('isWatchable', true)}
+      displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', true)}
+    />
+  </Wrapper>
+));
+
+scoreBlockStories.add(`ScoreBlock - no scores`, () => (
+  <Wrapper>
+    <ScoreBlocks.ScoreBlock
+      matchUrl={MATCH_URL}
+      data={object('score data', pastMatchOnePlayerNoScoresDataSet)}
+      schedule={object('schedule', schedule)}
+      isLive={boolean('isLive', false)}
+      isWatchable={boolean('isWatchable', false)}
+      displayLeftCircle={select('displayLeftCircle', ['won', 'lost', false], false)}
+      liveButtonText={text('liveButtonText', 'Live')}
+      matchInfoButtonText={text('matchInfoButtonText', 'Match info')}
+      hasButton={boolean('hasButton', true)}
     />
   </Wrapper>
 ));

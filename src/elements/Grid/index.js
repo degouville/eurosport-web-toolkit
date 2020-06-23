@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import * as breakpoints from '../../breakpoints';
 
 // ratio is the content width in percent plus 2 half gaps (so one gap) because of negative margins on the row
-const grid = {
+const gridInfo = {
   tiny: {
     ratio: 100 / (89.86 + 5.07),
     gutter: 5.07,
@@ -65,36 +65,36 @@ const SIX_OFFSETS = ['0', '1', '2', '3', '4', '5'];
 const TWELVE_OFFSETS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
 
 export const getWidthString = (colNumber, size) => {
-  const width = colNumber * grid[size].columnSize + (colNumber - 1) * grid[size].gap + grid[size].gap;
-  return `width: ${width + grid[size].type};`;
+  const width = colNumber * gridInfo[size].columnSize + (colNumber - 1) * gridInfo[size].gap + gridInfo[size].gap;
+  return `width: ${width + gridInfo[size].type};`;
 };
 
 export const getOffset = (offset, size) => {
-  const width = offset * grid[size].columnSize + offset * grid[size].gap;
-  return `margin-left: ${width + grid[size].type};`;
+  const width = offset * gridInfo[size].columnSize + offset * gridInfo[size].gap;
+  return `margin-left: ${width + gridInfo[size].type};`;
 };
 
 export const getContainerStyles = size => {
-  const marginValue = grid[size].gutter + grid[size].type;
+  const marginValue = gridInfo[size].gutter + gridInfo[size].type;
   const margin =
-    grid[size].gutter === 'auto'
+    gridInfo[size].gutter === 'auto'
       ? `margin-left: auto;margin-right: auto;`
       : `margin-left: ${marginValue};margin-right: ${marginValue};`;
-  const width = grid[size].width ? `width: ${grid[size].width + grid[size].type};` : '';
+  const width = gridInfo[size].width ? `width: ${gridInfo[size].width + gridInfo[size].type};` : '';
 
   return `${margin}${width}`;
 };
 
 const getHalfGap = (size, negative = false) => {
-  const { gap } = grid[size];
+  const { gap } = gridInfo[size];
   return negative ? gap / -2 : gap / 2;
 };
 
 export const getColumnStyles = (colNumber, offset, size) => {
-  const columns = colNumber === 'full' ? grid[size].columns : colNumber;
+  const columns = colNumber === 'full' ? gridInfo[size].columns : colNumber;
   const width = getWidthString(columns, size);
   const offsetStyle = getOffset(offset, size);
-  const padding = `padding: 0 ${getHalfGap(size)}${grid[size].type};`;
+  const padding = `padding: 0 ${getHalfGap(size)}${gridInfo[size].type};`;
   return `${width}${offsetStyle}${padding}`;
 };
 
@@ -118,7 +118,7 @@ export const Container = styled.div`
   `)};
 `;
 
-const getSubContainerMargin = size => `margin: 0 ${getHalfGap(size, true)}${grid[size].type};`;
+const getSubContainerMargin = size => `margin: 0 ${getHalfGap(size, true)}${gridInfo[size].type};`;
 
 const StyledSubContainer = styled.div`
   display: flex;
@@ -242,4 +242,14 @@ Column.propTypes = {
   wideOffset: PropTypes.oneOf(TWELVE_OFFSETS),
 };
 
-export default { Container, Row, Column, SIX_COLUMNS, TWELVE_COLUMNS, SIX_OFFSETS, TWELVE_OFFSETS };
+export default {
+  Container,
+  Row,
+  Column,
+  SIX_COLUMNS,
+  TWELVE_COLUMNS,
+  SIX_OFFSETS,
+  TWELVE_OFFSETS,
+  getOffset,
+  gridInfo,
+};

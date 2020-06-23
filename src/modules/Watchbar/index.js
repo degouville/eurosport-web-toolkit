@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Play from 'src/assets/circleplay.component.svg';
 import Carousel from '../../components/Carousel';
 import Cards from '../../components/Card';
-import { coreLightMinus1, coreNeutral1 } from '../../colors';
+import { white, iron } from '../../colors';
 
 const StyledPlayIco = styled(Play)`
   width: 16px;
@@ -19,7 +19,7 @@ const StyledTitle = styled.div`
   text-transform: uppercase;
   font-size: 11px;
   line-height: 14px;
-  color: ${coreNeutral1};
+  color: ${iron};
   width: 100px;
   user-select: none;
   display: none;
@@ -54,7 +54,7 @@ const StyledTitleContent = styled.div`
 
 const StyledTitleText = styled.div`
   padding-bottom: 6px;
-  border-bottom: 1px solid ${rgba(coreLightMinus1, 0.3)};
+  border-bottom: 1px solid ${rgba(white, 0.3)};
 `;
 
 const generateTitle = (title, isCarouselCard = false) => (

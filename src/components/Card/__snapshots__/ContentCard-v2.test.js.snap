@@ -1,8 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Content card v2 renders Card with Play Button 1`] = `
+.emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 387px;
+}
+
+.emotion-0 .e129r5mb2,
+.emotion-0 .e129r5mb3 {
+  height: 50%;
+}
+
+.emotion-0 .e129r5mb6 {
+  margin: 0 24px;
+  color: #AFAFBB;
+}
+
+.emotion-0 .e129r5mb7 {
+  color: #F8F8F9;
+  margin: 11.5px 24px 0 24px;
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.emotion-0 .e129r5mb8 {
+  margin: 9px 24px 0 24px;
+  color: #AFAFBB;
+}
+
+.emotion-0 .e129r5mb10 {
+  bottom: 24px;
+  left: 24px;
+}
+
+.emotion-0 .exb52wv3 {
+  bottom: 190px;
+  right: 0;
+}
+
+.emotion-0 .e129r5mb2 {
+  top: calc(100% - 200px);
+}
+
+.emotion-0 .e129r5mb9 {
+  top: 211px;
+  bottom: auto;
+}
+
+@media (min-width:700px) {
+  .emotion-0 {
+    height: 378px;
+  }
+
+  .emotion-0 .e129r5mb2,
+  .emotion-0 .e129r5mb3 {
+    height: 86%;
+  }
+
+  .emotion-0 .e129r5mb6 {
+    margin: 0 42px;
+    color: #F8F8F9;
+  }
+
+  .emotion-0 .e129r5mb7 {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 14px 40px 0 40px;
+  }
+
+  .emotion-0 .e129r5mb8 {
+    margin: 16px 42px 0 42px;
+    color: #F8F8F9;
+    text-transform: uppercase;
+  }
+
+  .emotion-0 .exb52wv3 {
+    bottom: 71px;
+    right: 0;
+  }
+
+  .emotion-0 .e129r5mb2 {
+    top: calc(100% - 57px);
+  }
+
+  .emotion-0 .e129r5mb9 {
+    top: auto;
+    bottom: 99px;
+  }
+
+  .emotion-0 .e129r5mb10 {
+    bottom: 28px;
+    left: 42px;
+  }
+}
+
 <Component
-  className="css-9dqutl e129r5mb12"
+  className="emotion-0 emotion-1"
   darkness={50}
   description="Roland-garros"
   image="https://i.eurosport.com/2019/04/21/2570541-53309530-2560-1440.jpg?w=800"
@@ -14,8 +112,79 @@ exports[`Content card v2 renders Card with Play Button 1`] = `
 `;
 
 exports[`Content card v2 renders Card with Play Button 2`] = `
+.emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 387px;
+}
+
+.emotion-0 .e129r5mb2,
+.emotion-0 .e129r5mb3 {
+  height: 50%;
+}
+
+.emotion-0 .e129r5mb6 {
+  margin: 0 24px;
+  color: #AFAFBB;
+}
+
+.emotion-0 .e129r5mb7 {
+  color: #F8F8F9;
+  margin: 11.5px 24px 0 24px;
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.emotion-0 .e129r5mb8 {
+  margin: 9px 24px 0 24px;
+  color: #AFAFBB;
+}
+
+.emotion-0 .e129r5mb10 {
+  bottom: 24px;
+  left: 24px;
+}
+
+.emotion-0 .exb52wv3 {
+  bottom: 190px;
+  right: 0;
+}
+
+.emotion-0 .e129r5mb2 {
+  top: calc(100% - 200px);
+}
+
+.emotion-0 .e129r5mb9 {
+  top: 211px;
+  bottom: auto;
+}
+
+@media (min-width:700px) {
+  .emotion-0 {
+    height: 352px;
+  }
+
+  .emotion-0 .e129r5mb9 {
+    top: 185px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    height: 378px;
+  }
+
+  .emotion-0 .e129r5mb9 {
+    top: 211px;
+  }
+}
+
 <Component
-  className="css-1fcvp33 e129r5mb13"
+  className="emotion-0 emotion-1"
   darkness={50}
   description="Roland-garros"
   image="https://i.eurosport.com/2019/04/21/2570541-53309530-2560-1440.jpg?w=800"

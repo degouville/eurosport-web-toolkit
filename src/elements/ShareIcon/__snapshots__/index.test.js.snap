@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShareIcon should render ShareIcon facebook 1`] = `
+.emotion-2 {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.emotion-0 {
+  position: absolute;
+  background-size: 15px 15px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  position: relative;
+  background-image: url(/eurosport-web-toolkit/0877828b5ca291d18f7eb65b3ac841fc.svg);
+}
+
+.emotion-0:hover {
+  opacity: 1;
+}
+
+<ShareIcon
+  icon="facebook"
+  onClick={null}
+  size={30}
+>
+  <Styled(div)
+    size={30}
+  >
+    <div
+      className="emotion-2 emotion-3"
+      size={30}
+    >
+      <Styled(span)
+        icon="/eurosport-web-toolkit/0877828b5ca291d18f7eb65b3ac841fc.svg"
+        onClick={null}
+        size={30}
+      >
+        <span
+          className="emotion-0 emotion-1"
+          onClick={null}
+          size={30}
+        />
+      </Styled(span)>
+    </div>
+  </Styled(div)>
+</ShareIcon>
+`;

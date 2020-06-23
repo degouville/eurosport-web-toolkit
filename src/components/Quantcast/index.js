@@ -196,12 +196,13 @@ const Quantcast = ({ scriptUrl, cmpConf }) => {
 
 Quantcast.defaultProps = {
   scriptUrl: 'https://quantcast.mgr.consensu.org/v14/cmp.js',
+  cmpConf: {},
 };
 
 Quantcast.propTypes = {
   scriptUrl: PropTypes.string,
   // eslint-disable-next-line react/forbid-prop-types
-  cmpConf: PropTypes.object.isRequired,
+  cmpConf: PropTypes.object,
 };
 
 export default Quantcast;

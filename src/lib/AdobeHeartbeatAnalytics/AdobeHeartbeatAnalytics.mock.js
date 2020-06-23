@@ -102,6 +102,8 @@ export const mediaHeartbeatMockCreator = ({
     AdBreakComplete: 'adBreakComplete',
     AdStart: 'adStart',
     AdComplete: 'adComplete',
+    SeekStart: 'seekStart',
+    SeekComplete: 'seekComplete',
   };
   mockMHB.createAdBreakObject = jest.fn().mockReturnValue('createAdBreakObject');
   mockMHB.createAdObject = jest.fn().mockReturnValue('createAdObject');

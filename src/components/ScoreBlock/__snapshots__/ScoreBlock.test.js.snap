@@ -9,7 +9,7 @@ exports[`<ScoreBlock /> Renders a ScoreBlock component with expected snapshot 1`
   <Styled(div)
     hasLeftCircle={false}
   >
-    <SetsScore
+    <Styled(SetsScore)
       baseFontSize="14px"
       data={
         Object {
@@ -92,16 +92,16 @@ exports[`<ScoreBlock /> Renders a ScoreBlock component with expected snapshot 1`
       highlightLastSet={true}
     />
   </Styled(div)>
-  <Styled(div)
-    color="actionTwoLightPlus1"
-    width="68px"
-  >
-    ►
-  </Styled(div)>
-  <Styled(div)
-    color="venetianRed"
-    contentText="'Live'"
-    width="68px"
+  <ScoreButton
+    properties={
+      Object {
+        "hasButton": true,
+        "isLive": true,
+        "isWatchable": true,
+        "liveButtonText": "Live",
+        "matchInfoButtonText": "Match Info",
+      }
+    }
   />
 </Styled(Link)>
 `;

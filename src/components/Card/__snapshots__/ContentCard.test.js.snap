@@ -17,6 +17,7 @@ exports[`renders a Article ContentCard 1`] = `
         "category": "Tennis",
         "channel": "E1",
         "description": "Description",
+        "img": "https://i.eurosport.com/2018/10/29/2450727-50913270-2560-1440.jpg?w=200",
         "timestamp": "09:00 - 10:30",
         "title": "Youth olympic summer games",
       }

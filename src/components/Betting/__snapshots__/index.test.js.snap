@@ -1,113 +1,659 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Betting renders Betting for double choices 1`] = `
-<Styled(Link)
-  className=""
-  href="mainLink"
-  linkComponent={[Function]}
-  target="_blank"
+.emotion-22 {
+  background-color: #2D304A;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.emotion-22::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 60px;
+  background-color: #2D304A;
+  -webkit-transform: skew(0,-5deg);
+  -ms-transform: skew(0,-5deg);
+  transform: skew(0,-5deg);
+  z-index: 1;
+}
+
+.emotion-0 {
+  background-color: #b4292c;
+  color: #ffffff;
+  padding: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.emotion-2 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  line-height: 30px;
+  margin-bottom: 35px;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-4 {
+  font-size: 13px;
+  color: #9798A6;
+}
+
+.emotion-6 {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  padding: 6px 20px 4px 20px;
+  font-size: 24px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 8px;
+  border-radius: 3px;
+}
+
+@media (min-width:700px) {
+  .emotion-6 {
+    margin: 0 3px;
+  }
+}
+
+.emotion-8 {
+  text-transform: uppercase;
+  font-weight: normal;
+  max-width: 120px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (min-width:700px) {
+  .emotion-8 {
+    line-height: 42px;
+    position: absolute;
+    top: 30px;
+    white-space: nowrap;
+    max-width: inherit;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-11:first-child .emotion-8 {
+    right: 100%;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-11:last-child .emotion-8 {
+    left: 100%;
+    margin-left: 12px;
+  }
+}
+
+<Betting
+  choices={
+    Array [
+      Object {
+        "label": "DAVIDOVICH FOKINA",
+        "number": 1,
+        "odds": "2.80",
+      },
+      Object {
+        "label": "MENENDEZ-MACEIRAS",
+        "number": 2,
+        "odds": "1.70",
+      },
+    ]
+  }
+  customAttr={
+    Object {
+      "attrname": "attrValue",
+    }
+  }
+  link="mainLink"
+  sentences={
+    Array [
+      "Pariez !",
+      "PARIEZ AVEC Betline",
+    ]
+  }
+  sponsor={
+    Object {
+      "backgroundColor": "#b4292c",
+      "name": "Betline",
+      "textColor": "#ffffff",
+    }
+  }
 >
-  <Styled(div)
-    background="#b4292c"
-    text="#ffffff"
+  <Styled(Link)
+    attrname="attrValue"
+    href="mainLink"
+    linkComponent={[Function]}
+    target="_blank"
   >
-    Betline
-  </Styled(div)>
-  <Styled(div)>
-    Pariez !
-  </Styled(div)>
-  <Styled(div)>
-    <Styled(div)
-      key="1"
+    <Link
+      attrname="attrValue"
+      className="emotion-22 emotion-23"
+      href="mainLink"
+      linkComponent={[Function]}
+      target="_blank"
     >
-      <Styled(div)>
-        1
-      </Styled(div)>
-      <Styled(div)>
-        2.80
-      </Styled(div)>
-      <Styled(div)
-        textLength={17}
+      <DefaultLinkComponent
+        attrname="attrValue"
+        className="emotion-22 emotion-23"
+        href="mainLink"
+        target="_blank"
       >
-        DAVIDOVICH FOKINA
-      </Styled(div)>
-    </Styled(div)>
-    <Styled(div)
-      key="2"
-    >
-      <Styled(div)>
-        2
-      </Styled(div)>
-      <Styled(div)>
-        1.70
-      </Styled(div)>
-      <Styled(div)
-        textLength={17}
-      >
-        MENENDEZ-MACEIRAS
-      </Styled(div)>
-    </Styled(div)>
-  </Styled(div)>
-</Styled(Link)>
+        <a
+          attrname="attrValue"
+          className="emotion-22 emotion-23"
+          href="mainLink"
+          target="_blank"
+        >
+          <Styled(div)
+            background="#b4292c"
+            text="#ffffff"
+          >
+            <div
+              className="emotion-0 emotion-1"
+            >
+              Betline
+            </div>
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="emotion-2 emotion-3"
+            >
+              Pariez !
+            </div>
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="emotion-20 emotion-21"
+            >
+              <Styled(div)
+                key="1"
+              >
+                <div
+                  className="emotion-10 emotion-11"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4 emotion-5"
+                    >
+                      1
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      2.80
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    textLength={17}
+                  >
+                    <div
+                      className="emotion-8 emotion-9"
+                      textLength={17}
+                    >
+                      DAVIDOVICH FOKINA
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                key="2"
+              >
+                <div
+                  className="emotion-10 emotion-11"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4 emotion-5"
+                    >
+                      2
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      1.70
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    textLength={17}
+                  >
+                    <div
+                      className="emotion-8 emotion-9"
+                      textLength={17}
+                    >
+                      MENENDEZ-MACEIRAS
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </a>
+      </DefaultLinkComponent>
+    </Link>
+  </Styled(Link)>
+</Betting>
 `;
 
 exports[`Betting renders Betting for triple choices 1`] = `
-<Styled(Link)
-  className=""
-  href="mainLink"
-  linkComponent={[Function]}
-  target="_blank"
+.emotion-28 {
+  background-color: #2D304A;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.emotion-28::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 60px;
+  background-color: #2D304A;
+  -webkit-transform: skew(0,-5deg);
+  -ms-transform: skew(0,-5deg);
+  transform: skew(0,-5deg);
+  z-index: 1;
+}
+
+.emotion-0 {
+  background-color: #b4292c;
+  color: #ffffff;
+  padding: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.emotion-2 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  line-height: 30px;
+  margin-bottom: 35px;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.emotion-4 {
+  font-size: 13px;
+  color: #9798A6;
+}
+
+.emotion-6 {
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  padding: 6px 20px 4px 20px;
+  font-size: 24px;
+  background-color: rgba(255,255,255,0.2);
+  margin: 0 8px;
+  border-radius: 3px;
+}
+
+@media (min-width:700px) {
+  .emotion-6 {
+    margin: 0 3px;
+  }
+}
+
+.emotion-8 {
+  text-transform: uppercase;
+  font-weight: normal;
+  max-width: 120px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (min-width:700px) {
+  .emotion-8 {
+    line-height: 42px;
+    position: absolute;
+    top: 30px;
+    white-space: nowrap;
+    max-width: inherit;
+    text-align: inherit;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-11:first-child .emotion-8 {
+    right: 100%;
+    margin-right: 12px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-11:last-child .emotion-8 {
+    left: 100%;
+    margin-left: 12px;
+  }
+}
+
+<Betting
+  choices={
+    Array [
+      Object {
+        "label": "DAVIDOVICH FOKINA",
+        "number": 1,
+        "odds": "2.80",
+      },
+      Object {
+        "number": 2,
+        "odds": "4.90",
+      },
+      Object {
+        "label": "MENENDEZ-MACEIRAS",
+        "number": 3,
+        "odds": "1.70",
+      },
+    ]
+  }
+  customAttr={
+    Object {
+      "attrname": "attrValue",
+    }
+  }
+  link="mainLink"
+  sentences={
+    Array [
+      "Pariez !",
+      "PARIEZ AVEC Betline",
+    ]
+  }
+  sponsor={
+    Object {
+      "backgroundColor": "#b4292c",
+      "name": "Betline",
+      "textColor": "#ffffff",
+    }
+  }
 >
-  <Styled(div)
-    background="#b4292c"
-    text="#ffffff"
+  <Styled(Link)
+    attrname="attrValue"
+    href="mainLink"
+    linkComponent={[Function]}
+    target="_blank"
   >
-    Betline
-  </Styled(div)>
-  <Styled(div)>
-    Pariez !
-  </Styled(div)>
-  <Styled(div)>
-    <Styled(div)
-      key="1"
+    <Link
+      attrname="attrValue"
+      className="emotion-28 emotion-29"
+      href="mainLink"
+      linkComponent={[Function]}
+      target="_blank"
     >
-      <Styled(div)>
-        1
-      </Styled(div)>
-      <Styled(div)>
-        2.80
-      </Styled(div)>
-      <Styled(div)
-        textLength={17}
+      <DefaultLinkComponent
+        attrname="attrValue"
+        className="emotion-28 emotion-29"
+        href="mainLink"
+        target="_blank"
       >
-        DAVIDOVICH FOKINA
-      </Styled(div)>
-    </Styled(div)>
-    <Styled(div)
-      key="2"
-    >
-      <Styled(div)>
-        2
-      </Styled(div)>
-      <Styled(div)>
-        4.90
-      </Styled(div)>
-    </Styled(div)>
-    <Styled(div)
-      key="3"
-    >
-      <Styled(div)>
-        3
-      </Styled(div)>
-      <Styled(div)>
-        1.70
-      </Styled(div)>
-      <Styled(div)
-        textLength={17}
-      >
-        MENENDEZ-MACEIRAS
-      </Styled(div)>
-    </Styled(div)>
-  </Styled(div)>
-</Styled(Link)>
+        <a
+          attrname="attrValue"
+          className="emotion-28 emotion-29"
+          href="mainLink"
+          target="_blank"
+        >
+          <Styled(div)
+            background="#b4292c"
+            text="#ffffff"
+          >
+            <div
+              className="emotion-0 emotion-1"
+            >
+              Betline
+            </div>
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="emotion-2 emotion-3"
+            >
+              Pariez !
+            </div>
+          </Styled(div)>
+          <Styled(div)>
+            <div
+              className="emotion-26 emotion-27"
+            >
+              <Styled(div)
+                key="1"
+              >
+                <div
+                  className="emotion-10 emotion-11"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4 emotion-5"
+                    >
+                      1
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      2.80
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    textLength={17}
+                  >
+                    <div
+                      className="emotion-8 emotion-9"
+                      textLength={17}
+                    >
+                      DAVIDOVICH FOKINA
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                key="2"
+              >
+                <div
+                  className="emotion-10 emotion-11"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4 emotion-5"
+                    >
+                      2
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      4.90
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+              <Styled(div)
+                key="3"
+              >
+                <div
+                  className="emotion-10 emotion-11"
+                >
+                  <Styled(div)>
+                    <div
+                      className="emotion-4 emotion-5"
+                    >
+                      3
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)>
+                    <div
+                      className="emotion-6 emotion-7"
+                    >
+                      1.70
+                    </div>
+                  </Styled(div)>
+                  <Styled(div)
+                    textLength={17}
+                  >
+                    <div
+                      className="emotion-8 emotion-9"
+                      textLength={17}
+                    >
+                      MENENDEZ-MACEIRAS
+                    </div>
+                  </Styled(div)>
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </a>
+      </DefaultLinkComponent>
+    </Link>
+  </Styled(Link)>
+</Betting>
 `;

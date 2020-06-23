@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SeoText renders SeoText 1`] = `
+<Fragment>
+  <Styled(h3)>
+    title
+  </Styled(h3)>
+  <Styled(h3)>
+    subtitle
+  </Styled(h3)>
+  <Styled(p)>
+    content
+  </Styled(p)>
+</Fragment>
+`;

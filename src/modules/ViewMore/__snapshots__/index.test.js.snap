@@ -1,6 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ViewMore renders its content 1`] = `
+.emotion-0 {
+  overflow: hidden;
+  max-height: auto;
+  -webkit-transition: max-height 400ms ease;
+  transition: max-height 400ms ease;
+}
+
+.emotion-2 {
+  color: #F8F8F9;
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(4,5,15,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 6px 14px;
+  line-height: 11px;
+}
+
+.emotion-2:hover {
+  cursor: pointer;
+}
+
 <ViewMore
   showLessItemCount={1}
   showLessText="View less"
@@ -11,8 +37,15 @@ exports[`ViewMore renders its content 1`] = `
     blockHeight={0}
     innerRef={
       Object {
-        "current": <ul
-          class="css-1ewy8bg e1e87viu2"
+        "current": .emotion-0 {
+  overflow: hidden;
+  max-height: auto;
+  -webkit-transition: max-height 400ms ease;
+  transition: max-height 400ms ease;
+}
+
+<ul
+          class="emotion-0 emotion-1"
         >
           <div>
             match
@@ -50,7 +83,7 @@ exports[`ViewMore renders its content 1`] = `
     isExpanded={false}
   >
     <ul
-      className="css-1ewy8bg e1e87viu2"
+      className="emotion-0 emotion-1"
     >
       <div
         key="0"
@@ -106,13 +139,13 @@ exports[`ViewMore renders its content 1`] = `
   </Styled(ul)>
   <Styled(div)>
     <div
-      className="css-0 e1e87viu0"
+      className="emotion-4 emotion-5"
     >
       <Styled(span)
         onClick={[Function]}
       >
         <span
-          className="css-1378kpz e1e87viu1"
+          className="emotion-2 emotion-3"
           onClick={[Function]}
         >
           View more

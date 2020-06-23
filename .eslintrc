@@ -9,7 +9,12 @@
     "cy": true,
     "Cypress": true
   },
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "import/no-named-as-default": false,
     "react/jsx-one-expression-per-line": false,
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],

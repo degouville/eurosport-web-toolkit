@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import styled from 'react-emotion';
 import { object, text } from '@storybook/addon-knobs';
 import { Tabs } from '../..';
-import { coreLightMinus1 } from '../../colors';
+import { white } from '../../colors';
 import * as icons from './icon-type';
 
 const tabs = storiesOf('Modules|Tabs', module);
@@ -32,7 +32,7 @@ const tabsData = [
 ];
 
 const Wrapper = styled.div`
-  color: ${coreLightMinus1};
+  color: ${white};
 `;
 
 tabs.add('tabs', () => (

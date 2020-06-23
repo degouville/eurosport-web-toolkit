@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
 class ScriptInjector extends React.Component {
   componentDidMount() {
@@ -41,16 +42,26 @@ class ScriptInjector extends React.Component {
   }
 
   render() {
-    const { id, src, async, isServer, innerHTML } = this.props;
+    const { id, src, async, isServer, innerHTML, injectPlace } = this.props;
 
     if (isServer) {
       const ssrProps = {
-        dangerouslySetInnerHTML: innerHTML ? { __html: innerHTML } : undefined,
         src,
         async,
         id,
       };
-      return <script {...ssrProps} />;
+
+      if (injectPlace === 'body') {
+        return innerHTML ? (
+          // eslint-disable-next-line react/no-danger
+          <script {...ssrProps} dangerouslySetInnerHTML={{ __html: innerHTML }} />
+        ) : (
+          <script {...ssrProps} />
+        );
+      }
+
+      // eslint-disable-next-line react/no-danger-with-children
+      return <Helmet>{innerHTML ? <script {...ssrProps}>{`${innerHTML}`}</script> : <script {...ssrProps} />}</Helmet>;
     }
     return null;
   }

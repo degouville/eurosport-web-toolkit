@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
-import { actionOneDarkBase, coreLightMinus1, coreLightBase } from '../../colors';
+import { dodgerBlue, white, athensGray } from '../../colors';
 import { fontInterUi } from '../../typography';
 import PlayIcon from '../PlayIcon';
 import Link from '../Link';
@@ -19,7 +19,7 @@ export const DivTextBg = styled.div`
   display: inline-block;
   vertical-align: top;
   background-color: ${props => props.bgColorText};
-  color: ${coreLightBase};
+  color: ${athensGray};
   height: 100%;
   padding: 0 16px;
   text-align: center;
@@ -47,7 +47,7 @@ const PlayIconLink = styled(({ children, bgColorIcon, bgColorText, ...props }) =
   );
 })`
   position: absolute;
-  color: ${coreLightMinus1};
+  color: ${white};
   white-space: nowrap;
   height: 48px;
   line-height: 48px;
@@ -61,7 +61,7 @@ PlayIconLink.propTypes = {
 };
 
 PlayIconLink.defaultProps = {
-  bgColorIcon: actionOneDarkBase,
+  bgColorIcon: dodgerBlue,
   bgColorText: '#3c46dc',
 };
 

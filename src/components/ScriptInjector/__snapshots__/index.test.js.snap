@@ -18,9 +18,37 @@ exports[`ScriptInjector server side matches default snapshot 1`] = `
   isServer={true}
   src=""
 >
-  <script
-    async={false}
-    src=""
-  />
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <SideEffect(NullComponent)
+      defer={true}
+      encodeSpecialCharacters={true}
+      script={
+        Array [
+          Object {
+            "async": false,
+            "id": undefined,
+            "src": "",
+          },
+        ]
+      }
+    >
+      <NullComponent
+        defer={true}
+        encodeSpecialCharacters={true}
+        script={
+          Array [
+            Object {
+              "async": false,
+              "id": undefined,
+              "src": "",
+            },
+          ]
+        }
+      />
+    </SideEffect(NullComponent)>
+  </HelmetWrapper>
 </ScriptInjector>
 `;

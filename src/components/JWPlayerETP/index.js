@@ -1,27 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import ETPlayerComponent from '@eurosport/toolkit-player';
+import ETPlayer, { ETPDefaultProps, ETPPropTypes } from '@eurosport/toolkit-player';
+import PlayerSkin from './PlayerSkin';
 
-const ETPlayer = ({ prefLang, videoData, jwplayerId, elementId }) => (
-  <ETPlayerComponent locale={prefLang} videoData={videoData} jwplayerId={jwplayerId} elementId={elementId} />
-);
+const JWPlayerETP = props => <ETPlayer {...props} />;
 
-ETPlayer.defaultProps = {
-  jwplayerId: undefined,
+JWPlayerETP.defaultProps = {
+  ...ETPDefaultProps,
+  PlayerControls: PlayerSkin,
 };
 
-ETPlayer.propTypes = {
-  prefLang: PropTypes.string.isRequired,
-  elementId: PropTypes.string.isRequired,
-  jwplayerId: PropTypes.string,
-  videoData: PropTypes.shape({
-    provider: PropTypes.string.isRequired,
-    videoId: PropTypes.string.isRequired,
-    sonic: PropTypes.shape({
-      baseUrl: PropTypes.string.isRequired,
-      realm: PropTypes.string.isRequired,
-    }),
-  }).isRequired,
-};
+JWPlayerETP.propTypes = ETPPropTypes;
 
-export default ETPlayer;
+export default JWPlayerETP;

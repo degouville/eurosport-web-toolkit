@@ -1,4 +1,4 @@
-# Eurosport Web Toolkit
+# This project is no longer maintained. Please use https://github.com/EurosportDigital/zephyr instead.
 
 <p>
 <a href="https://www.npmjs.com/package/@eurosport/web-toolkit">

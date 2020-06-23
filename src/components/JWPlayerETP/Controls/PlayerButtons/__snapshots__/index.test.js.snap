@@ -1,0 +1,827 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot when isPlaying is false 1`] = `
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 {
+  height: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    height: 44px;
+  }
+}
+
+.emotion-2 {
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.emotion-8 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    height: 100px;
+  }
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    margin-left: 88px;
+    margin-right: 88px;
+  }
+}
+
+.emotion-4 {
+  height: 44px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    height: 64px;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#FF0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#F8F8F9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#FFFFFF",
+        },
+        "primary": Object {
+          "backgroundColor": "#D50032",
+          "color": "#FFFFFF",
+        },
+        "secondary": Object {
+          "color": "#66CEF9",
+        },
+        "secondaryForm": Object {
+          "backgroundColor": "#2D304A",
+          "color": "#FFFFFF",
+        },
+      },
+      "dropdown": Object {
+        "background": "#151726",
+        "border": "rgba(109,109,120,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "heading": Object {
+          "color": "#9798A6",
+        },
+        "label": Object {
+          "color": "#FFFFFF",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#C6C7CE",
+          },
+          "selected": Object {
+            "color": "#FFFFFF",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050F",
+        "border": "#41435B",
+        "borderFocused": "#9798A6",
+        "placeholder": Object {
+          "color": "#9798A6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66CEF9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#F8F8F9",
+          "secondary": "#41435B",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "loginWithMarketing": Object {
+        "mobileBackground": "#060825",
+      },
+      "marketingChecklist": Object {
+        "check": Object {
+          "color": "#FFFFFF",
+        },
+        "subtitle": Object {
+          "color": "#B9BBCA",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "playerControls": Object {
+        "bar": Object {
+          "backgroundColor": "rgba(21,23,38,0.6)",
+        },
+        "dropdown": Object {
+          "background": "rgba(21,23,38,0.9)",
+          "border": "rgba(109,109,120,0.8)",
+        },
+        "errorMessage": Object {
+          "backgroundColor": "#151726",
+          "iconColor": "#2D304A",
+          "link": "#4652FF",
+          "textColor": "#F8F8F9",
+        },
+        "liveIcon": Object {
+          "backgroundColor": "#CC0036",
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "seek": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": false,
+        },
+        "separator": "rgba(151,152,166,0.5)",
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "volume": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": true,
+        },
+      },
+      "scrollbar": Object {
+        "background": "#3D4248",
+        "color": "#4A7EFF",
+      },
+      "shareIcons": Object {
+        "background": "#FFFFFF",
+        "color": "#55586D",
+      },
+      "statistics": Object {
+        "background": Object {
+          "one": "#22263C",
+          "two": "#2D304A",
+        },
+        "comparison": Object {
+          "background": "rgba(255,255,255,0.1)",
+          "colorOne": "#66CEF9",
+          "colorTwo": "#4652FF",
+        },
+        "fringe": "rgba(255,255,255,0.05)",
+      },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66CEF9",
+          "color": "#FFFFFF",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798A6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#C6C7CE",
+      },
+      "videoPlayerModal": Object {
+        "closeIcon": Object {
+          "fill": "#FFFFFF",
+        },
+      },
+    }
+  }
+>
+  <PlayerButtons
+    isAdPlaying={false}
+    isBuffering={false}
+    isPlaying={false}
+    onForward={[MockFunction]}
+    onPause={[MockFunction]}
+    onPlay={[MockFunction]}
+    onRewind={[MockFunction]}
+  >
+    <Styled(div)>
+      <div
+        className="emotion-14 emotion-15"
+      >
+        <Styled(img)
+          alt="Rewind"
+          onClick={[MockFunction]}
+          src="/eurosport-web-toolkit/b5baa2dbfb4a6d100cf6bb9d3f00ac09.svg"
+        >
+          <img
+            alt="Rewind"
+            className="emotion-0 emotion-1"
+            onClick={[MockFunction]}
+            src="/eurosport-web-toolkit/b5baa2dbfb4a6d100cf6bb9d3f00ac09.svg"
+          />
+        </Styled(img)>
+        <Styled(p)>
+          <p
+            className="emotion-2 emotion-3"
+          >
+            15
+          </p>
+        </Styled(p)>
+        <Styled(div)
+          isBuffering={false}
+        >
+          <div
+            className="emotion-8 emotion-9"
+          >
+            <Styled(img)
+              alt="Pause"
+              hidden={true}
+              onClick={[MockFunction]}
+              src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+            >
+              <img
+                alt="Pause"
+                className="emotion-4 emotion-5"
+                hidden={true}
+                onClick={[MockFunction]}
+                src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+              />
+            </Styled(img)>
+            <Styled(img)
+              alt="Play"
+              hidden={false}
+              onClick={[MockFunction]}
+              src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
+            >
+              <img
+                alt="Play"
+                className="emotion-4 emotion-5"
+                hidden={false}
+                onClick={[MockFunction]}
+                src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
+              />
+            </Styled(img)>
+          </div>
+        </Styled(div)>
+        <Styled(p)>
+          <p
+            className="emotion-2 emotion-3"
+          >
+            15
+          </p>
+        </Styled(p)>
+        <Styled(img)
+          alt="Forward"
+          onClick={[MockFunction]}
+          src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+        >
+          <img
+            alt="Forward"
+            className="emotion-0 emotion-1"
+            onClick={[MockFunction]}
+            src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+          />
+        </Styled(img)>
+      </div>
+    </Styled(div)>
+  </PlayerButtons>
+</ThemeProvider>
+`;
+
+exports[`Components|JWPlayerETP|Controls|PlayerButtons Should match snapshot when isPlaying is true 1`] = `
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0 {
+  height: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    height: 44px;
+  }
+}
+
+.emotion-2 {
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.emotion-8 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    height: 100px;
+  }
+}
+
+@media (min-width:480px) {
+  .emotion-8 {
+    margin-left: 88px;
+    margin-right: 88px;
+  }
+}
+
+.emotion-4 {
+  height: 44px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media (min-width:480px) {
+  .emotion-4 {
+    height: 64px;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "banner": Object {
+        "error": Object {
+          "backgroundColor": "#290416",
+          "borderColor": "#FF0043",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+          "textColor": "#F8F8F9",
+        },
+      },
+      "button": Object {
+        "form": Object {
+          "backgroundColor": "#4652FF",
+          "color": "#FFFFFF",
+        },
+        "primary": Object {
+          "backgroundColor": "#D50032",
+          "color": "#FFFFFF",
+        },
+        "secondary": Object {
+          "color": "#66CEF9",
+        },
+        "secondaryForm": Object {
+          "backgroundColor": "#2D304A",
+          "color": "#FFFFFF",
+        },
+      },
+      "dropdown": Object {
+        "background": "#151726",
+        "border": "rgba(109,109,120,0.8)",
+        "checkMark": Object {
+          "color": "#4A7EFF",
+        },
+        "heading": Object {
+          "color": "#9798A6",
+        },
+        "label": Object {
+          "color": "#FFFFFF",
+        },
+        "list": Object {
+          "default": Object {
+            "color": "#C6C7CE",
+          },
+          "selected": Object {
+            "color": "#FFFFFF",
+          },
+        },
+      },
+      "input": Object {
+        "backgroundColor": "#04050F",
+        "border": "#41435B",
+        "borderFocused": "#9798A6",
+        "placeholder": Object {
+          "color": "#9798A6",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+      },
+      "link": Object {
+        "color": "#66CEF9",
+      },
+      "login": Object {
+        "separator": Object {
+          "primary": "#F8F8F9",
+          "secondary": "#41435B",
+        },
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+      },
+      "loginWithMarketing": Object {
+        "mobileBackground": "#060825",
+      },
+      "marketingChecklist": Object {
+        "check": Object {
+          "color": "#FFFFFF",
+        },
+        "subtitle": Object {
+          "color": "#B9BBCA",
+        },
+        "title": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "playerControls": Object {
+        "bar": Object {
+          "backgroundColor": "rgba(21,23,38,0.6)",
+        },
+        "dropdown": Object {
+          "background": "rgba(21,23,38,0.9)",
+          "border": "rgba(109,109,120,0.8)",
+        },
+        "errorMessage": Object {
+          "backgroundColor": "#151726",
+          "iconColor": "#2D304A",
+          "link": "#4652FF",
+          "textColor": "#F8F8F9",
+        },
+        "liveIcon": Object {
+          "backgroundColor": "#CC0036",
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "seek": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": false,
+        },
+        "separator": "rgba(151,152,166,0.5)",
+        "text": Object {
+          "color": "#F8F8F9",
+          "fontFamily": "
+  font-family: 'ESP AlphaHeadline Tab', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+",
+        },
+        "volume": Object {
+          "handleColor": "#F8F8F9",
+          "handleSize": 20,
+          "railColor": "rgba(222,223,227,0.3)",
+          "railThickness": 5,
+          "trackColor": "#4652FF",
+          "vertical": true,
+        },
+      },
+      "scrollbar": Object {
+        "background": "#3D4248",
+        "color": "#4A7EFF",
+      },
+      "shareIcons": Object {
+        "background": "#FFFFFF",
+        "color": "#55586D",
+      },
+      "statistics": Object {
+        "background": Object {
+          "one": "#22263C",
+          "two": "#2D304A",
+        },
+        "comparison": Object {
+          "background": "rgba(255,255,255,0.1)",
+          "colorOne": "#66CEF9",
+          "colorTwo": "#4652FF",
+        },
+        "fringe": "rgba(255,255,255,0.05)",
+      },
+      "tab": Object {
+        "active": Object {
+          "borderColor": "#66CEF9",
+          "color": "#FFFFFF",
+        },
+        "borderColor": "rgba(255,255,255,0.5)",
+      },
+      "typo": Object {
+        "primary": Object {
+          "color": "#FFFFFF",
+        },
+      },
+      "underlineLink": Object {
+        "color": "#9798A6",
+        "fontFamily": "
+  font-family: 'Inter UI', -apple-system, -system-ui, system-ui, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+",
+        "hoverColor": "#C6C7CE",
+      },
+      "videoPlayerModal": Object {
+        "closeIcon": Object {
+          "fill": "#FFFFFF",
+        },
+      },
+    }
+  }
+>
+  <PlayerButtons
+    isAdPlaying={false}
+    isBuffering={false}
+    isPlaying={true}
+    onForward={[MockFunction]}
+    onPause={[MockFunction]}
+    onPlay={[MockFunction]}
+    onRewind={[MockFunction]}
+  >
+    <Styled(div)>
+      <div
+        className="emotion-14 emotion-15"
+      >
+        <Styled(img)
+          alt="Rewind"
+          onClick={[MockFunction]}
+          src="/eurosport-web-toolkit/b5baa2dbfb4a6d100cf6bb9d3f00ac09.svg"
+        >
+          <img
+            alt="Rewind"
+            className="emotion-0 emotion-1"
+            onClick={[MockFunction]}
+            src="/eurosport-web-toolkit/b5baa2dbfb4a6d100cf6bb9d3f00ac09.svg"
+          />
+        </Styled(img)>
+        <Styled(p)>
+          <p
+            className="emotion-2 emotion-3"
+          >
+            15
+          </p>
+        </Styled(p)>
+        <Styled(div)
+          isBuffering={false}
+        >
+          <div
+            className="emotion-8 emotion-9"
+          >
+            <Styled(img)
+              alt="Pause"
+              hidden={false}
+              onClick={[MockFunction]}
+              src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+            >
+              <img
+                alt="Pause"
+                className="emotion-4 emotion-5"
+                hidden={false}
+                onClick={[MockFunction]}
+                src="/eurosport-web-toolkit/1c7147030f676ebee7ca378c9cf8bcc3.svg"
+              />
+            </Styled(img)>
+            <Styled(img)
+              alt="Play"
+              hidden={true}
+              onClick={[MockFunction]}
+              src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
+            >
+              <img
+                alt="Play"
+                className="emotion-4 emotion-5"
+                hidden={true}
+                onClick={[MockFunction]}
+                src="/eurosport-web-toolkit/c882641b09eb53c6f712b634b9575733.svg"
+              />
+            </Styled(img)>
+          </div>
+        </Styled(div)>
+        <Styled(p)>
+          <p
+            className="emotion-2 emotion-3"
+          >
+            15
+          </p>
+        </Styled(p)>
+        <Styled(img)
+          alt="Forward"
+          onClick={[MockFunction]}
+          src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+        >
+          <img
+            alt="Forward"
+            className="emotion-0 emotion-1"
+            onClick={[MockFunction]}
+            src="/eurosport-web-toolkit/419f592abfa52c6fca46ebf1b8e26190.svg"
+          />
+        </Styled(img)>
+      </div>
+    </Styled(div)>
+  </PlayerButtons>
+</ThemeProvider>
+`;

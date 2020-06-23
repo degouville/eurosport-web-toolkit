@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import ChannelIcon from 'src/elements/ChannelIcon';
-import ContentCard, { StyledPlayIcon, StyledLiveLabel } from './ContentCard';
+import ContentCard, { StyledPlayIcon, StyledLiveLabel, StyledImage } from './ContentCard';
 import CardDetails from './CardDetails';
 
 const cardData = {
@@ -32,6 +32,7 @@ it('should pass correct props to CardDetails', () => {
     card: {
       category: cardData.category,
       title: cardData.title,
+      img: cardData.img,
       description: cardData.description,
       channel: cardData.channel,
       timestamp: cardData.timestamp,
@@ -54,5 +55,18 @@ describe('Live Content Card', () => {
   it('renders a play icon', () => {
     const wrapper = shallow(<ContentCard card={cardData} type="live" />);
     expect(wrapper.find(StyledPlayIcon).length).toEqual(1);
+  });
+
+  it('should render placeholder if no image provided', () => {
+    // GIVEN
+    const wrapper = shallow(<ContentCard card={{ ...cardData, img: null }} type="live" />);
+
+    // WHEN
+    const images = wrapper.dive().find(StyledImage);
+    const { src: imageSrc } = images.first().props();
+
+    // EXPECT
+    expect(images.length).toEqual(1);
+    expect(imageSrc).toContain('/eurosport-web-toolkit/');
   });
 });

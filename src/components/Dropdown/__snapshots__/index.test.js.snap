@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Renders Dropdown 1`] = `
+.emotion-40 {
+  position: relative;
+}
+
+@media (min-width:700px) {
+  .emotion-40 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.emotion-30 {
+  position: absolute;
+  width: calc(100% - 25px);
+  top: 42px;
+  display: none;
+  z-index: 2;
+  opacity: 0.95;
+  padding: 8px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  border: solid 1px rgba(109,109,120,0.8);
+  border-radius: 3px;
+  background-color: #151726;
+}
+
+.emotion-30::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  border-top: 1px solid rgba(109,109,120,0.8);
+  border-left: 1px solid rgba(109,109,120,0.8);
+  border-radius: 1px;
+  background: #151726;
+  height: 10px;
+  display: block;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  top: -6px;
+  left: 0;
+}
+
+@media (min-width:700px) {
+  .emotion-30 {
+    padding: 17px 8px 12px 17px;
+    right: -183px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+@-moz-document url-prefix()  {
+    .emotion-30 {
+      right: -183px;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    .emotion-30 {
+      right: unset;
+      width: auto;
+    }
+}
+}
+
+.emotion-28 {
+  max-height: 130px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-scrollbar-width: thin;
+  -moz-scrollbar-width: thin;
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
+  -webkit-scrollbar-color: #4A7EFF #3D4248;
+  -moz-scrollbar-color: #4A7EFF #3D4248;
+  -ms-scrollbar-color: #4A7EFF #3D4248;
+  scrollbar-color: #4A7EFF #3D4248;
+}
+
+.emotion-28::-webkit-scrollbar {
+  width: 6px;
+}
+
+.emotion-28::-webkit-scrollbar-track {
+  background: #3D4248;
+  border-radius: 2px;
+}
+
+.emotion-28::-webkit-scrollbar-thumb {
+  background: #4A7EFF;
+  border-radius: 2px;
+}
+
+@media (min-width:700px) {
+  .emotion-28 {
+    width: 350px;
+  }
+}
+
+.emotion-6 {
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6:first-of-type {
+  padding-top: 0;
+}
+
+.emotion-6:not(:last-of-type) {
+  border-bottom: solid 1px rgba(109,109,120,0.8);
+}
+
+.emotion-6:hover {
+  color: #FFFFFF;
+}
+
+@media (min-width:480px) {
+  .emotion-6 {
+    padding: 13px 0;
+  }
+}
+
+.emotion-2 {
+  width: 100%;
+}
+
+.emotion-4 {
+  color: #4A7EFF;
+  margin: 0 0 0 1em;
+}
+
+.emotion-10 {
+  color: #C6C7CE;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-10:first-of-type {
+  padding-top: 0;
+}
+
+.emotion-10:not(:last-of-type) {
+  border-bottom: solid 1px rgba(109,109,120,0.8);
+}
+
+.emotion-10:hover {
+  color: #FFFFFF;
+}
+
+@media (min-width:480px) {
+  .emotion-10 {
+    padding: 13px 0;
+  }
+}
+
+.emotion-38 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-36 {
+  font-family: 'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+@media (min-width:1024px) {
+  .emotion-36 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width:700px) {
+  .emotion-36 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.emotion-32 {
+  height: 12px;
+  width: 12px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.emotion-32 path {
+  fill: #FFFFFF;
+}
+
+<Dropdown
+  heading={null}
+  initialOptionID={null}
+  isTop={false}
+  onItemSelected={null}
+  options={
+    Array [
+      Object {
+        "id": 1231,
+        "text": "Men singles",
+      },
+      Object {
+        "id": 1232,
+        "text": "Women singles",
+      },
+      Object {
+        "id": 1233,
+        "text": "Men doubles",
+      },
+      Object {
+        "id": 1234,
+        "text": "Roland Garros women doubles longer",
+      },
+      Object {
+        "id": 1235,
+        "text": "Men triples",
+      },
+      Object {
+        "id": 1236,
+        "text": "Women triples",
+      },
+    ]
+  }
+  width={null}
+>
+  <Styled(div)>
+    <div
+      className="emotion-40 emotion-41"
+    >
+      <Styled(div)
+        isDropdownOpen={false}
+        onClick={[Function]}
+      >
+        <div
+          className="emotion-0 emotion-1"
+          onClick={[Function]}
+        />
+      </Styled(div)>
+      <Styled(div)
+        isDropdownOpen={false}
+        isTop={false}
+        width={null}
+      >
+        <div
+          className="emotion-30 emotion-31"
+          width={null}
+        >
+          <Styled(ul)
+            width={null}
+          >
+            <ul
+              className="emotion-28 emotion-29"
+              width={null}
+            >
+              <Styled(li)
+                isSelected={true}
+                key="1231"
+                onClick={[Function]}
+              >
+                <li
+                  className="emotion-6 emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(p)>
+                    <p
+                      className="emotion-2 emotion-10"
+                    >
+                      Men singles
+                    </p>
+                  </Styled(p)>
+                  <Styled(span)>
+                    <span
+                      className="emotion-4 emotion-5"
+                    >
+                       ✓
+                    </span>
+                  </Styled(span)>
+                </li>
+              </Styled(li)>
+              <Styled(li)
+                isSelected={false}
+                key="1232"
+                onClick={[Function]}
+              >
+                <li
+                  className="emotion-10 emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(p)>
+                    <p
+                      className="emotion-2 emotion-10"
+                    >
+                      Women singles
+                    </p>
+                  </Styled(p)>
+                </li>
+              </Styled(li)>
+              <Styled(li)
+                isSelected={false}
+                key="1233"
+                onClick={[Function]}
+              >
+                <li
+                  className="emotion-10 emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(p)>
+                    <p
+                      className="emotion-2 emotion-10"
+                    >
+                      Men doubles
+                    </p>
+                  </Styled(p)>
+                </li>
+              </Styled(li)>
+              <Styled(li)
+                isSelected={false}
+                key="1234"
+                onClick={[Function]}
+              >
+                <li
+                  className="emotion-10 emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(p)>
+                    <p
+                      className="emotion-2 emotion-10"
+                    >
+                      Roland Garros women doubles longer
+                    </p>
+                  </Styled(p)>
+                </li>
+              </Styled(li)>
+              <Styled(li)
+                isSelected={false}
+                key="1235"
+                onClick={[Function]}
+              >
+                <li
+                  className="emotion-10 emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(p)>
+                    <p
+                      className="emotion-2 emotion-10"
+                    >
+                      Men triples
+                    </p>
+                  </Styled(p)>
+                </li>
+              </Styled(li)>
+              <Styled(li)
+                isSelected={false}
+                key="1236"
+                onClick={[Function]}
+              >
+                <li
+                  className="emotion-10 emotion-7"
+                  onClick={[Function]}
+                >
+                  <Styled(p)>
+                    <p
+                      className="emotion-2 emotion-10"
+                    >
+                      Women triples
+                    </p>
+                  </Styled(p)>
+                </li>
+              </Styled(li)>
+            </ul>
+          </Styled(ul)>
+        </div>
+      </Styled(div)>
+      <Styled(div)
+        onClick={[Function]}
+      >
+        <div
+          className="emotion-38 emotion-39"
+          onClick={[Function]}
+        >
+          <Styled(h3)>
+            <h3
+              className="emotion-36 emotion-37"
+            >
+              Men singles
+              <Styled(Chevron)
+                height="9"
+                viewBox="0 0 6 9"
+                width="6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <Chevron
+                  className="emotion-32 emotion-33"
+                  height="9"
+                  viewBox="0 0 6 9"
+                  width="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <svg
+                    className="emotion-32 emotion-33"
+                    height="9"
+                    viewBox="0 0 6 9"
+                    width="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.15 0L0 1.06 3.71 4.5 0 7.94 1.15 9 6 4.5z"
+                    />
+                  </svg>
+                </Chevron>
+              </Styled(Chevron)>
+            </h3>
+          </Styled(h3)>
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</Dropdown>
+`;

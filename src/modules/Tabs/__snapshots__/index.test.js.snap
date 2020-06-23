@@ -1,6 +1,330 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs renders its content 1`] = `
+.emotion-36 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.emotion-34 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-6:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-6:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #AFAFBB;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+}
+
+@media (min-width:700px) {
+  .emotion-12 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-12 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-12:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-12:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-12:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-12:hover svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-8 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-8 {
+    display: inline-block;
+  }
+}
+
+.emotion-8 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-8 > svg path {
+  fill: #AFAFBB;
+}
+
+.emotion-2 {
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    margin-left: 5px;
+  }
+}
+
+.emotion-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #AFAFBB;
+  position: relative;
+  padding: 23px 0;
+}
+
+.emotion-28:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-28:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-28:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-28:hover svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-32 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #AFAFBB;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+@media (min-width:700px) {
+  .emotion-4 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-4:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-4:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-4:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4:hover svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4 svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-0 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    display: inline-block;
+  }
+}
+
+.emotion-0 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-0 > svg path {
+  fill: #FFFFFF;
+}
+
 <Tabs
   defaultTab="keytab1"
   onItemSelected={[Function]}
@@ -30,43 +354,377 @@ exports[`Tabs renders its content 1`] = `
   }
 >
   <Carousel
+    absoluteNavigation={false}
     alignCenter={true}
-    className=""
+    flex={false}
+    magneticMax={0.8}
+    magneticMin={0.2}
+    minWidthArrowDisplaying={900}
+    offsetLeft="0"
     slideMargin={8}
     withArrow={false}
   >
     <Styled(div)
-      className=""
       data-test="carousel"
       slides={Array []}
     >
       <div
-        className="css-95cx95 e595p110"
+        className="emotion-36 emotion-37"
         data-test="carousel"
       >
         <Styled(div)
           innerRef={
             Object {
-              "current": <div
-                class="css-1r51bj7 e595p111"
+              "current": .emotion-34 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-6:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-6:first-of-type {
+  padding-left: 0;
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #AFAFBB;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+}
+
+@media (min-width:700px) {
+  .emotion-12 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-12 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-12:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-12:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-12:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-12:hover svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-8 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-8 {
+    display: inline-block;
+  }
+}
+
+.emotion-8 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-8 > svg path {
+  fill: #AFAFBB;
+}
+
+.emotion-2 {
+  font-family: 'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+@media (min-width:700px) {
+  .emotion-2 {
+    margin-left: 5px;
+  }
+}
+
+.emotion-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #AFAFBB;
+  position: relative;
+  padding: 23px 0;
+}
+
+.emotion-28:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-28:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-28:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-28:hover svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-32 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #AFAFBB;
+  position: relative;
+  padding: 23px 0;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+@media (min-width:700px) {
+  .emotion-4 {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width:1024px) {
+  .emotion-4 {
+    margin-right: 52px;
+  }
+}
+
+.emotion-4:after {
+  content: '';
+  height: 0;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.emotion-4:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.emotion-4:hover:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4:hover svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-4:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #0094F8;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.emotion-4 svg path {
+  fill: #FFFFFF;
+}
+
+.emotion-0 {
+  height: 32px;
+  width: 32px;
+  display: none;
+}
+
+@media (min-width:1024px) {
+  .emotion-0 {
+    display: inline-block;
+  }
+}
+
+.emotion-0 > svg {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-0 > svg path {
+  fill: #FFFFFF;
+}
+
+<div
+                class="emotion-34 emotion-35"
               >
                 <div
-                  class="css-7o42oc e595p112"
+                  class="emotion-32 emotion-33"
                   data-test="carousel-slider"
                 >
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-0"
                   >
                     <div
-                      class="css-6el4d e1sbjia20"
+                      class="emotion-4 emotion-5"
                       data-test="keytab1"
                     >
+                      <div
+                        class="emotion-0 emotion-1"
+                      >
+                        <svg
+                          height="40"
+                          viewBox="0 0 40 40"
+                          width="40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>
+                            sport-icons/white/tennis
+                          </title>
+                          <path
+                            d="M30.784 9.526c-.879-.887-2.037-1.46-3.35-1.654-1.17-.174-2.44-.045-3.688.37a2.741 2.741 0 0 0-1.881-.742c-.741 0-1.438.291-1.962.82a2.792 2.792 0 0 0-.812 1.979c0 .325.054.641.16.938-1.437 1.59-2.353 3.505-2.598 5.435l-.001-.001-.378 3.11a11.11 11.11 0 0 1-2.935 6.258l-.152.16-.01-.01a.434.434 0 0 0-.619 0l-4.93 4.973a.444.444 0 0 0 0 .623l1.076 1.086a.436.436 0 0 0 .618 0l4.93-4.973a.443.443 0 0 0 0-.624l-.02-.02c1.8-1.84 4.18-2.984 6.739-3.227l1.92-.183c.255-.007.515-.026.778-.06 2.088-.262 4.149-1.324 5.802-2.992 1.653-1.667 2.707-3.746 2.967-5.853.265-2.148-.322-4.07-1.654-5.413zm-21.77 22.41l-.459-.462 4.312-4.35.458.462-4.312 4.35zM23.1 10.243c0-.38.11-.744.313-1.054.228.322.35.705.35 1.109 0 .38-.109.744-.312 1.054a1.913 1.913 0 0 1-.35-1.109zm-.874 0c0 .63.206 1.228.584 1.717a1.875 1.875 0 0 1-.946.254c-.315 0-.619-.077-.89-.222a2.823 2.823 0 0 0 .06-3.42c.256-.124.538-.19.83-.19.315 0 .618.076.889.22a2.793 2.793 0 0 0-.527 1.641zm-1.91 1.166a1.913 1.913 0 0 1-.352-1.111c0-.428.138-.833.392-1.166.48.68.467 1.61-.04 2.277zm-3.23 8.88a5.659 5.659 0 0 0 2.875 2.987 11.708 11.708 0 0 0-4.994 2.165 12.038 12.038 0 0 0 2.118-5.153zm11.765-.121c-1.515 1.529-3.395 2.502-5.291 2.74-1.856.234-3.504-.27-4.64-1.416-1.116-1.125-1.619-2.755-1.415-4.59.19-1.703.964-3.407 2.197-4.851a2.744 2.744 0 0 0 2.162 1.045c.741 0 1.438-.291 1.962-.82a2.792 2.792 0 0 0 .812-1.978c0-.465-.112-.913-.322-1.312 2.288-.673 4.444-.255 5.85 1.162 1.136 1.147 1.634 2.809 1.403 4.681-.236 1.913-1.201 3.81-2.718 5.339z"
+                            fill="#FFF"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
                       <span
-                        class="css-5st8wz e1sbjia22"
-                      />
-                      <span
-                        class="css-1eb0044 e1sbjia23"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         Match
@@ -74,18 +732,36 @@ exports[`Tabs renders its content 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-1"
                   >
                     <div
-                      class="css-18nzjid e1sbjia20"
+                      class="emotion-12 emotion-5"
                       data-test="keytab2"
                     >
+                      <div
+                        class="emotion-8 emotion-1"
+                      >
+                        <svg
+                          id="Layer_1"
+                          viewBox="0 0 40 40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <style>
+                            .st1
+                            {
+                            fill:#fff
+                            }
+                          </style>
+                          <path
+                            class="st1"
+                            d="M13.5 22.6l-4.7 5.6 7.8-3.4 5.8 4v-6.6l8.6-3.7h-8.6v-6.7l-5.6 6.7H7.5l6 4.1zm-1.5.3l-7.7-5.3h12l7.1-8.4v8.4h12.3l-12.3 5.3v7.9l-7-4.8-11 4.8 6.6-7.9z"
+                            id="XMLID_5_"
+                          />
+                        </svg>
+                      </div>
                       <span
-                        class="css-36cz7a e1sbjia22"
-                      />
-                      <span
-                        class="css-1eb0044 e1sbjia23"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         All Matches
@@ -93,18 +769,48 @@ exports[`Tabs renders its content 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-2"
                   >
                     <div
-                      class="css-18nzjid e1sbjia20"
+                      class="emotion-12 emotion-5"
                       data-test="keytab3"
                     >
+                      <div
+                        class="emotion-8 emotion-1"
+                      >
+                        <svg
+                          id="Layer_1"
+                          viewBox="0 0 40 40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <style>
+                            .st0
+                            {
+                            fill:#fff
+                            }
+                            .st1
+                            {
+                            fill:none
+                            }
+                          </style>
+                          <g
+                            id="XMLID_4_"
+                          >
+                            <g
+                              id="Responsive-web"
+                            >
+                              <path
+                                class="st0"
+                                d="M20 8.8c-2.3 0-4.5.5-6.4 1.3-1.9.9-3.5 2.1-4.6 3.6-1.1 1.5-1.7 3.2-1.7 4.9 0 1.5.4 3 1.3 4.3.8 1.4 2 2.5 3.5 3.4l.3.2-.1.5c-.1.3-.3.6-.4.9-.1.3-.3.6-.5.9l-.4.6c-.1.2-.3.4-.5.6-.2.2-.4.4-.4.5l-.4.5v.1c0 .1 0 .1.1.1h.1c.5-.1 1.1-.2 1.5-.3 1.8-.5 3.5-1.4 5-2.5l.2-.1h.2c3.5.7 6.8.3 9.6-1 1.9-.9 3.5-2.1 4.6-3.6 1.1-1.5 1.7-3.2 1.7-4.9 0-1.8-.6-3.4-1.7-4.9-1.1-1.5-2.7-2.7-4.6-3.6-1.9-1.1-4.1-1.5-6.4-1.5zM9.9 32.2c-.4 0-.6-.1-.8-.3-.2-.2-.3-.4-.4-.7V31v-.2c0-.1 0-.2.1-.2l.4-.6c.1-.1.2-.3.4-.5s.4-.4.5-.6l.4-.6c.2-.2.3-.5.4-.7.1-.2.1-.3.2-.5-1.4-1-2.6-2.2-3.5-3.5-.9-1.5-1.4-3.1-1.4-4.8 0-2 .6-3.8 1.9-5.5 1.2-1.7 2.9-3 5-4s4.4-1.4 6.8-1.4 4.7.5 6.8 1.4c2.1 1 3.8 2.3 5 4 1.2 1.7 1.9 3.5 1.9 5.5s-.6 3.8-1.9 5.5c-1.2 1.7-2.9 3-5 4-3 1.4-6.4 1.8-10 1.1-1.5 1.2-3.3 2-5.2 2.6-.3 0-.9.1-1.6.2z"
+                                id="Fill-1"
+                              />
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
                       <span
-                        class="css-1lj7tzs e1sbjia22"
-                      />
-                      <span
-                        class="css-1eb0044 e1sbjia23"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         User Comments
@@ -112,18 +818,38 @@ exports[`Tabs renders its content 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-6 emotion-7"
                     data-test="carousel-item-3"
                   >
                     <div
-                      class="css-18nzjid e1sbjia20"
+                      class="emotion-28 emotion-5"
                       data-test="keytab4"
                     >
+                      <div
+                        class="emotion-8 emotion-1"
+                      >
+                        <svg
+                          id="Layer_1"
+                          viewBox="-400 575.5 40 40"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <style>
+                            .st1
+                            {
+                            fill:#fff
+                            }
+                          </style>
+                          <title>
+                            sport-icons/white/winter-sports
+                          </title>
+                          <path
+                            class="st1"
+                            d="M-389.3 586.8c-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-2.2 2.5-3.4 5.7-3.4 9 0 3.2 1.2 6.4 3.3 8.8.1.1.2.2.4.2.1 0 .3-.1.4-.2.2-.2.2-.5 0-.7-2-2.3-3-5.1-3-8.1s1.1-6 3.1-8.2c.2-.3.2-.6 0-.8zM-369.9 586.9c-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-.2.2-.2.5 0 .8 2 2.2 3.1 5.1 3.1 8.2 0 2.9-1.1 5.8-3 8.1-.2.2-.2.5 0 .7.1.1.2.2.4.2s.3-.1.4-.2c2.1-2.4 3.2-5.6 3.2-8.8.1-3.4-1.1-6.6-3.3-9zM-373.5 590.1c-.2 0-.3.1-.4.2-.2.2-.2.5-.1.7 1.1 1.4 1.7 3.1 1.7 4.9 0 1.7-.6 3.4-1.6 4.8-.1.2-.2.5.1.7.1.1.2.2.3.2.2-.1.4-.1.5-.3 1.2-1.6 1.8-3.4 1.8-5.4 0-2-.7-4-2-5.6 0-.2-.2-.2-.3-.2zM-386.5 590c-.2 0-.3.1-.4.2-1.3 1.6-2 3.5-2 5.6 0 2 .7 3.9 1.9 5.5.1.1.2.2.4.2.1 0 .2-.1.4-.2.2-.2.2-.5.1-.7-1.1-1.4-1.7-3.1-1.7-4.8 0-1.8.6-3.6 1.8-5 .2-.2.1-.5-.1-.7-.1-.1-.2-.1-.4-.1zM-380 591.5c-2.4 0-4.3 1.9-4.3 4.3s1.9 4.3 4.3 4.3 4.3-1.9 4.3-4.3-1.9-4.3-4.3-4.3zm3.2 4.2c0 1.7-1.4 3.2-3.2 3.2-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7.1 3.2 1.5 3.2 3.2z"
+                          />
+                        </svg>
+                      </div>
                       <span
-                        class="css-f7erkt e1sbjia22"
-                      />
-                      <span
-                        class="css-1eb0044 e1sbjia23"
+                        class="emotion-2 emotion-3"
                         data-test="label"
                       >
                         Live Comments
@@ -137,31 +863,48 @@ exports[`Tabs renders its content 1`] = `
           trackWidth={0}
         >
           <div
-            className="css-1r51bj7 e595p111"
+            className="emotion-34 emotion-35"
           >
             <Styled(div)
               alignCenter={true}
               data-test="carousel-slider"
               disableNavigation={true}
+              flex={false}
               innerRef={
                 Object {
                   "current": <div
-                    class="css-7o42oc e595p112"
+                    class="emotion-32 emotion-33"
                     data-test="carousel-slider"
                   >
                     <div
-                      class="css-14gl6bk e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-0"
                     >
                       <div
-                        class="css-6el4d e1sbjia20"
+                        class="emotion-4 emotion-5"
                         data-test="keytab1"
                       >
+                        <div
+                          class="emotion-0 emotion-1"
+                        >
+                          <svg
+                            height="40"
+                            viewBox="0 0 40 40"
+                            width="40"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <title>
+                              sport-icons/white/tennis
+                            </title>
+                            <path
+                              d="M30.784 9.526c-.879-.887-2.037-1.46-3.35-1.654-1.17-.174-2.44-.045-3.688.37a2.741 2.741 0 0 0-1.881-.742c-.741 0-1.438.291-1.962.82a2.792 2.792 0 0 0-.812 1.979c0 .325.054.641.16.938-1.437 1.59-2.353 3.505-2.598 5.435l-.001-.001-.378 3.11a11.11 11.11 0 0 1-2.935 6.258l-.152.16-.01-.01a.434.434 0 0 0-.619 0l-4.93 4.973a.444.444 0 0 0 0 .623l1.076 1.086a.436.436 0 0 0 .618 0l4.93-4.973a.443.443 0 0 0 0-.624l-.02-.02c1.8-1.84 4.18-2.984 6.739-3.227l1.92-.183c.255-.007.515-.026.778-.06 2.088-.262 4.149-1.324 5.802-2.992 1.653-1.667 2.707-3.746 2.967-5.853.265-2.148-.322-4.07-1.654-5.413zm-21.77 22.41l-.459-.462 4.312-4.35.458.462-4.312 4.35zM23.1 10.243c0-.38.11-.744.313-1.054.228.322.35.705.35 1.109 0 .38-.109.744-.312 1.054a1.913 1.913 0 0 1-.35-1.109zm-.874 0c0 .63.206 1.228.584 1.717a1.875 1.875 0 0 1-.946.254c-.315 0-.619-.077-.89-.222a2.823 2.823 0 0 0 .06-3.42c.256-.124.538-.19.83-.19.315 0 .618.076.889.22a2.793 2.793 0 0 0-.527 1.641zm-1.91 1.166a1.913 1.913 0 0 1-.352-1.111c0-.428.138-.833.392-1.166.48.68.467 1.61-.04 2.277zm-3.23 8.88a5.659 5.659 0 0 0 2.875 2.987 11.708 11.708 0 0 0-4.994 2.165 12.038 12.038 0 0 0 2.118-5.153zm11.765-.121c-1.515 1.529-3.395 2.502-5.291 2.74-1.856.234-3.504-.27-4.64-1.416-1.116-1.125-1.619-2.755-1.415-4.59.19-1.703.964-3.407 2.197-4.851a2.744 2.744 0 0 0 2.162 1.045c.741 0 1.438-.291 1.962-.82a2.792 2.792 0 0 0 .812-1.978c0-.465-.112-.913-.322-1.312 2.288-.673 4.444-.255 5.85 1.162 1.136 1.147 1.634 2.809 1.403 4.681-.236 1.913-1.201 3.81-2.718 5.339z"
+                              fill="#FFF"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                        </div>
                         <span
-                          class="css-5st8wz e1sbjia22"
-                        />
-                        <span
-                          class="css-1eb0044 e1sbjia23"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           Match
@@ -169,18 +912,36 @@ exports[`Tabs renders its content 1`] = `
                       </div>
                     </div>
                     <div
-                      class="css-14gl6bk e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-1"
                     >
                       <div
-                        class="css-18nzjid e1sbjia20"
+                        class="emotion-12 emotion-5"
                         data-test="keytab2"
                       >
+                        <div
+                          class="emotion-8 emotion-1"
+                        >
+                          <svg
+                            id="Layer_1"
+                            viewBox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <style>
+                              .st1
+                              {
+                              fill:#fff
+                              }
+                            </style>
+                            <path
+                              class="st1"
+                              d="M13.5 22.6l-4.7 5.6 7.8-3.4 5.8 4v-6.6l8.6-3.7h-8.6v-6.7l-5.6 6.7H7.5l6 4.1zm-1.5.3l-7.7-5.3h12l7.1-8.4v8.4h12.3l-12.3 5.3v7.9l-7-4.8-11 4.8 6.6-7.9z"
+                              id="XMLID_5_"
+                            />
+                          </svg>
+                        </div>
                         <span
-                          class="css-36cz7a e1sbjia22"
-                        />
-                        <span
-                          class="css-1eb0044 e1sbjia23"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           All Matches
@@ -188,18 +949,48 @@ exports[`Tabs renders its content 1`] = `
                       </div>
                     </div>
                     <div
-                      class="css-14gl6bk e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-2"
                     >
                       <div
-                        class="css-18nzjid e1sbjia20"
+                        class="emotion-12 emotion-5"
                         data-test="keytab3"
                       >
+                        <div
+                          class="emotion-8 emotion-1"
+                        >
+                          <svg
+                            id="Layer_1"
+                            viewBox="0 0 40 40"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <style>
+                              .st0
+                              {
+                              fill:#fff
+                              }
+                              .st1
+                              {
+                              fill:none
+                              }
+                            </style>
+                            <g
+                              id="XMLID_4_"
+                            >
+                              <g
+                                id="Responsive-web"
+                              >
+                                <path
+                                  class="st0"
+                                  d="M20 8.8c-2.3 0-4.5.5-6.4 1.3-1.9.9-3.5 2.1-4.6 3.6-1.1 1.5-1.7 3.2-1.7 4.9 0 1.5.4 3 1.3 4.3.8 1.4 2 2.5 3.5 3.4l.3.2-.1.5c-.1.3-.3.6-.4.9-.1.3-.3.6-.5.9l-.4.6c-.1.2-.3.4-.5.6-.2.2-.4.4-.4.5l-.4.5v.1c0 .1 0 .1.1.1h.1c.5-.1 1.1-.2 1.5-.3 1.8-.5 3.5-1.4 5-2.5l.2-.1h.2c3.5.7 6.8.3 9.6-1 1.9-.9 3.5-2.1 4.6-3.6 1.1-1.5 1.7-3.2 1.7-4.9 0-1.8-.6-3.4-1.7-4.9-1.1-1.5-2.7-2.7-4.6-3.6-1.9-1.1-4.1-1.5-6.4-1.5zM9.9 32.2c-.4 0-.6-.1-.8-.3-.2-.2-.3-.4-.4-.7V31v-.2c0-.1 0-.2.1-.2l.4-.6c.1-.1.2-.3.4-.5s.4-.4.5-.6l.4-.6c.2-.2.3-.5.4-.7.1-.2.1-.3.2-.5-1.4-1-2.6-2.2-3.5-3.5-.9-1.5-1.4-3.1-1.4-4.8 0-2 .6-3.8 1.9-5.5 1.2-1.7 2.9-3 5-4s4.4-1.4 6.8-1.4 4.7.5 6.8 1.4c2.1 1 3.8 2.3 5 4 1.2 1.7 1.9 3.5 1.9 5.5s-.6 3.8-1.9 5.5c-1.2 1.7-2.9 3-5 4-3 1.4-6.4 1.8-10 1.1-1.5 1.2-3.3 2-5.2 2.6-.3 0-.9.1-1.6.2z"
+                                  id="Fill-1"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
                         <span
-                          class="css-1lj7tzs e1sbjia22"
-                        />
-                        <span
-                          class="css-1eb0044 e1sbjia23"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           User Comments
@@ -207,18 +998,38 @@ exports[`Tabs renders its content 1`] = `
                       </div>
                     </div>
                     <div
-                      class="css-14gl6bk e595p113"
+                      class="emotion-6 emotion-7"
                       data-test="carousel-item-3"
                     >
                       <div
-                        class="css-18nzjid e1sbjia20"
+                        class="emotion-28 emotion-5"
                         data-test="keytab4"
                       >
+                        <div
+                          class="emotion-8 emotion-1"
+                        >
+                          <svg
+                            id="Layer_1"
+                            viewBox="-400 575.5 40 40"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <style>
+                              .st1
+                              {
+                              fill:#fff
+                              }
+                            </style>
+                            <title>
+                              sport-icons/white/winter-sports
+                            </title>
+                            <path
+                              class="st1"
+                              d="M-389.3 586.8c-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-2.2 2.5-3.4 5.7-3.4 9 0 3.2 1.2 6.4 3.3 8.8.1.1.2.2.4.2.1 0 .3-.1.4-.2.2-.2.2-.5 0-.7-2-2.3-3-5.1-3-8.1s1.1-6 3.1-8.2c.2-.3.2-.6 0-.8zM-369.9 586.9c-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-.2.2-.2.5 0 .8 2 2.2 3.1 5.1 3.1 8.2 0 2.9-1.1 5.8-3 8.1-.2.2-.2.5 0 .7.1.1.2.2.4.2s.3-.1.4-.2c2.1-2.4 3.2-5.6 3.2-8.8.1-3.4-1.1-6.6-3.3-9zM-373.5 590.1c-.2 0-.3.1-.4.2-.2.2-.2.5-.1.7 1.1 1.4 1.7 3.1 1.7 4.9 0 1.7-.6 3.4-1.6 4.8-.1.2-.2.5.1.7.1.1.2.2.3.2.2-.1.4-.1.5-.3 1.2-1.6 1.8-3.4 1.8-5.4 0-2-.7-4-2-5.6 0-.2-.2-.2-.3-.2zM-386.5 590c-.2 0-.3.1-.4.2-1.3 1.6-2 3.5-2 5.6 0 2 .7 3.9 1.9 5.5.1.1.2.2.4.2.1 0 .2-.1.4-.2.2-.2.2-.5.1-.7-1.1-1.4-1.7-3.1-1.7-4.8 0-1.8.6-3.6 1.8-5 .2-.2.1-.5-.1-.7-.1-.1-.2-.1-.4-.1zM-380 591.5c-2.4 0-4.3 1.9-4.3 4.3s1.9 4.3 4.3 4.3 4.3-1.9 4.3-4.3-1.9-4.3-4.3-4.3zm3.2 4.2c0 1.7-1.4 3.2-3.2 3.2-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7.1 3.2 1.5 3.2 3.2z"
+                            />
+                          </svg>
+                        </div>
                         <span
-                          class="css-f7erkt e1sbjia22"
-                        />
-                        <span
-                          class="css-1eb0044 e1sbjia23"
+                          class="emotion-2 emotion-3"
                           data-test="label"
                         >
                           Live Comments
@@ -233,41 +1044,72 @@ exports[`Tabs renders its content 1`] = `
               trackWidth={0}
             >
               <div
-                className="css-7o42oc e595p112"
+                className="emotion-32 emotion-33"
                 data-test="carousel-slider"
               >
                 <Styled(div)
                   data-test="carousel-item-0"
+                  flex={false}
                   key="0"
                   margin={8}
+                  offsetLeft="0"
                 >
                   <div
-                    className="css-14gl6bk e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-0"
                   >
                     <Styled(div)
                       data-test="keytab1"
                       isActive={true}
+                      isLast={false}
                       key="keytab1"
                       onClick={[Function]}
                     >
                       <div
-                        className="css-6el4d e1sbjia20"
+                        className="emotion-4 emotion-5"
                         data-test="keytab1"
                         onClick={[Function]}
                       >
-                        <Styled(span)
-                          icon="/eurosport-web-toolkit/238d011c21dec96134beac6335086908.svg"
+                        <Styled(div)
+                          isActive={true}
                         >
-                          <span
-                            className="css-5st8wz e1sbjia22"
-                          />
-                        </Styled(span)>
+                          <div
+                            className="emotion-0 emotion-1"
+                          >
+                            <Icon
+                              icon="match"
+                              otherProps={Object {}}
+                            >
+                              <MatchIcon
+                                height="40"
+                                viewBox="0 0 40 40"
+                                width="40"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  height="40"
+                                  viewBox="0 0 40 40"
+                                  width="40"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <title>
+                                    sport-icons/white/tennis
+                                  </title>
+                                  <path
+                                    d="M30.784 9.526c-.879-.887-2.037-1.46-3.35-1.654-1.17-.174-2.44-.045-3.688.37a2.741 2.741 0 0 0-1.881-.742c-.741 0-1.438.291-1.962.82a2.792 2.792 0 0 0-.812 1.979c0 .325.054.641.16.938-1.437 1.59-2.353 3.505-2.598 5.435l-.001-.001-.378 3.11a11.11 11.11 0 0 1-2.935 6.258l-.152.16-.01-.01a.434.434 0 0 0-.619 0l-4.93 4.973a.444.444 0 0 0 0 .623l1.076 1.086a.436.436 0 0 0 .618 0l4.93-4.973a.443.443 0 0 0 0-.624l-.02-.02c1.8-1.84 4.18-2.984 6.739-3.227l1.92-.183c.255-.007.515-.026.778-.06 2.088-.262 4.149-1.324 5.802-2.992 1.653-1.667 2.707-3.746 2.967-5.853.265-2.148-.322-4.07-1.654-5.413zm-21.77 22.41l-.459-.462 4.312-4.35.458.462-4.312 4.35zM23.1 10.243c0-.38.11-.744.313-1.054.228.322.35.705.35 1.109 0 .38-.109.744-.312 1.054a1.913 1.913 0 0 1-.35-1.109zm-.874 0c0 .63.206 1.228.584 1.717a1.875 1.875 0 0 1-.946.254c-.315 0-.619-.077-.89-.222a2.823 2.823 0 0 0 .06-3.42c.256-.124.538-.19.83-.19.315 0 .618.076.889.22a2.793 2.793 0 0 0-.527 1.641zm-1.91 1.166a1.913 1.913 0 0 1-.352-1.111c0-.428.138-.833.392-1.166.48.68.467 1.61-.04 2.277zm-3.23 8.88a5.659 5.659 0 0 0 2.875 2.987 11.708 11.708 0 0 0-4.994 2.165 12.038 12.038 0 0 0 2.118-5.153zm11.765-.121c-1.515 1.529-3.395 2.502-5.291 2.74-1.856.234-3.504-.27-4.64-1.416-1.116-1.125-1.619-2.755-1.415-4.59.19-1.703.964-3.407 2.197-4.851a2.744 2.744 0 0 0 2.162 1.045c.741 0 1.438-.291 1.962-.82a2.792 2.792 0 0 0 .812-1.978c0-.465-.112-.913-.322-1.312 2.288-.673 4.444-.255 5.85 1.162 1.136 1.147 1.634 2.809 1.403 4.681-.236 1.913-1.201 3.81-2.718 5.339z"
+                                    fill="#FFF"
+                                    fillRule="evenodd"
+                                  />
+                                </svg>
+                              </MatchIcon>
+                            </Icon>
+                          </div>
+                        </Styled(div)>
                         <Styled(span)
                           data-test="label"
                         >
                           <span
-                            className="css-1eb0044 e1sbjia23"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             Match
@@ -279,36 +1121,68 @@ exports[`Tabs renders its content 1`] = `
                 </Styled(div)>
                 <Styled(div)
                   data-test="carousel-item-1"
+                  flex={false}
                   key="1"
                   margin={8}
+                  offsetLeft="0"
                 >
                   <div
-                    className="css-14gl6bk e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-1"
                   >
                     <Styled(div)
                       data-test="keytab2"
                       isActive={false}
+                      isLast={false}
                       key="keytab2"
                       onClick={[Function]}
                     >
                       <div
-                        className="css-18nzjid e1sbjia20"
+                        className="emotion-12 emotion-5"
                         data-test="keytab2"
                         onClick={[Function]}
                       >
-                        <Styled(span)
-                          icon="/eurosport-web-toolkit/c97b22c64a2bd24b94b868787ee1f71c.svg"
+                        <Styled(div)
+                          isActive={false}
                         >
-                          <span
-                            className="css-36cz7a e1sbjia22"
-                          />
-                        </Styled(span)>
+                          <div
+                            className="emotion-8 emotion-1"
+                          >
+                            <Icon
+                              icon="allmatches"
+                              otherProps={Object {}}
+                            >
+                              <AllMatchesIcon
+                                id="Layer_1"
+                                viewBox="0 0 40 40"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  id="Layer_1"
+                                  viewBox="0 0 40 40"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <style>
+                                    .st1
+                                    {
+                                    fill:#fff
+                                    }
+                                  </style>
+                                  <path
+                                    className="st1"
+                                    d="M13.5 22.6l-4.7 5.6 7.8-3.4 5.8 4v-6.6l8.6-3.7h-8.6v-6.7l-5.6 6.7H7.5l6 4.1zm-1.5.3l-7.7-5.3h12l7.1-8.4v8.4h12.3l-12.3 5.3v7.9l-7-4.8-11 4.8 6.6-7.9z"
+                                    id="XMLID_5_"
+                                  />
+                                </svg>
+                              </AllMatchesIcon>
+                            </Icon>
+                          </div>
+                        </Styled(div)>
                         <Styled(span)
                           data-test="label"
                         >
                           <span
-                            className="css-1eb0044 e1sbjia23"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             All Matches
@@ -320,36 +1194,80 @@ exports[`Tabs renders its content 1`] = `
                 </Styled(div)>
                 <Styled(div)
                   data-test="carousel-item-2"
+                  flex={false}
                   key="2"
                   margin={8}
+                  offsetLeft="0"
                 >
                   <div
-                    className="css-14gl6bk e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-2"
                   >
                     <Styled(div)
                       data-test="keytab3"
                       isActive={false}
+                      isLast={false}
                       key="keytab3"
                       onClick={[Function]}
                     >
                       <div
-                        className="css-18nzjid e1sbjia20"
+                        className="emotion-12 emotion-5"
                         data-test="keytab3"
                         onClick={[Function]}
                       >
-                        <Styled(span)
-                          icon="/eurosport-web-toolkit/9aa8c31196f4a94ed8cf304852bd0097.svg"
+                        <Styled(div)
+                          isActive={false}
                         >
-                          <span
-                            className="css-1lj7tzs e1sbjia22"
-                          />
-                        </Styled(span)>
+                          <div
+                            className="emotion-8 emotion-1"
+                          >
+                            <Icon
+                              icon="usercomments"
+                              otherProps={Object {}}
+                            >
+                              <UserCommentsIcon
+                                id="Layer_1"
+                                viewBox="0 0 40 40"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  id="Layer_1"
+                                  viewBox="0 0 40 40"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <style>
+                                    .st0
+                                    {
+                                    fill:#fff
+                                    }
+                                    .st1
+                                    {
+                                    fill:none
+                                    }
+                                  </style>
+                                  <g
+                                    id="XMLID_4_"
+                                  >
+                                    <g
+                                      id="Responsive-web"
+                                    >
+                                      <path
+                                        className="st0"
+                                        d="M20 8.8c-2.3 0-4.5.5-6.4 1.3-1.9.9-3.5 2.1-4.6 3.6-1.1 1.5-1.7 3.2-1.7 4.9 0 1.5.4 3 1.3 4.3.8 1.4 2 2.5 3.5 3.4l.3.2-.1.5c-.1.3-.3.6-.4.9-.1.3-.3.6-.5.9l-.4.6c-.1.2-.3.4-.5.6-.2.2-.4.4-.4.5l-.4.5v.1c0 .1 0 .1.1.1h.1c.5-.1 1.1-.2 1.5-.3 1.8-.5 3.5-1.4 5-2.5l.2-.1h.2c3.5.7 6.8.3 9.6-1 1.9-.9 3.5-2.1 4.6-3.6 1.1-1.5 1.7-3.2 1.7-4.9 0-1.8-.6-3.4-1.7-4.9-1.1-1.5-2.7-2.7-4.6-3.6-1.9-1.1-4.1-1.5-6.4-1.5zM9.9 32.2c-.4 0-.6-.1-.8-.3-.2-.2-.3-.4-.4-.7V31v-.2c0-.1 0-.2.1-.2l.4-.6c.1-.1.2-.3.4-.5s.4-.4.5-.6l.4-.6c.2-.2.3-.5.4-.7.1-.2.1-.3.2-.5-1.4-1-2.6-2.2-3.5-3.5-.9-1.5-1.4-3.1-1.4-4.8 0-2 .6-3.8 1.9-5.5 1.2-1.7 2.9-3 5-4s4.4-1.4 6.8-1.4 4.7.5 6.8 1.4c2.1 1 3.8 2.3 5 4 1.2 1.7 1.9 3.5 1.9 5.5s-.6 3.8-1.9 5.5c-1.2 1.7-2.9 3-5 4-3 1.4-6.4 1.8-10 1.1-1.5 1.2-3.3 2-5.2 2.6-.3 0-.9.1-1.6.2z"
+                                        id="Fill-1"
+                                      />
+                                    </g>
+                                  </g>
+                                </svg>
+                              </UserCommentsIcon>
+                            </Icon>
+                          </div>
+                        </Styled(div)>
                         <Styled(span)
                           data-test="label"
                         >
                           <span
-                            className="css-1eb0044 e1sbjia23"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             User Comments
@@ -361,36 +1279,70 @@ exports[`Tabs renders its content 1`] = `
                 </Styled(div)>
                 <Styled(div)
                   data-test="carousel-item-3"
+                  flex={false}
                   key="3"
                   margin={8}
+                  offsetLeft="0"
                 >
                   <div
-                    className="css-14gl6bk e595p113"
+                    className="emotion-6 emotion-7"
                     data-test="carousel-item-3"
                   >
                     <Styled(div)
                       data-test="keytab4"
                       isActive={false}
+                      isLast={true}
                       key="keytab4"
                       onClick={[Function]}
                     >
                       <div
-                        className="css-18nzjid e1sbjia20"
+                        className="emotion-28 emotion-5"
                         data-test="keytab4"
                         onClick={[Function]}
                       >
-                        <Styled(span)
-                          icon="/eurosport-web-toolkit/b68e3ced50ca07bc53fe8df7e7440aca.svg"
+                        <Styled(div)
+                          isActive={false}
                         >
-                          <span
-                            className="css-f7erkt e1sbjia22"
-                          />
-                        </Styled(span)>
+                          <div
+                            className="emotion-8 emotion-1"
+                          >
+                            <Icon
+                              icon="livecomments"
+                              otherProps={Object {}}
+                            >
+                              <LiveCommentsIcon
+                                id="Layer_1"
+                                viewBox="-400 575.5 40 40"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <svg
+                                  id="Layer_1"
+                                  viewBox="-400 575.5 40 40"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <style>
+                                    .st1
+                                    {
+                                    fill:#fff
+                                    }
+                                  </style>
+                                  <title>
+                                    sport-icons/white/winter-sports
+                                  </title>
+                                  <path
+                                    className="st1"
+                                    d="M-389.3 586.8c-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-2.2 2.5-3.4 5.7-3.4 9 0 3.2 1.2 6.4 3.3 8.8.1.1.2.2.4.2.1 0 .3-.1.4-.2.2-.2.2-.5 0-.7-2-2.3-3-5.1-3-8.1s1.1-6 3.1-8.2c.2-.3.2-.6 0-.8zM-369.9 586.9c-.1-.1-.2-.2-.4-.2-.1 0-.3.1-.4.2-.2.2-.2.5 0 .8 2 2.2 3.1 5.1 3.1 8.2 0 2.9-1.1 5.8-3 8.1-.2.2-.2.5 0 .7.1.1.2.2.4.2s.3-.1.4-.2c2.1-2.4 3.2-5.6 3.2-8.8.1-3.4-1.1-6.6-3.3-9zM-373.5 590.1c-.2 0-.3.1-.4.2-.2.2-.2.5-.1.7 1.1 1.4 1.7 3.1 1.7 4.9 0 1.7-.6 3.4-1.6 4.8-.1.2-.2.5.1.7.1.1.2.2.3.2.2-.1.4-.1.5-.3 1.2-1.6 1.8-3.4 1.8-5.4 0-2-.7-4-2-5.6 0-.2-.2-.2-.3-.2zM-386.5 590c-.2 0-.3.1-.4.2-1.3 1.6-2 3.5-2 5.6 0 2 .7 3.9 1.9 5.5.1.1.2.2.4.2.1 0 .2-.1.4-.2.2-.2.2-.5.1-.7-1.1-1.4-1.7-3.1-1.7-4.8 0-1.8.6-3.6 1.8-5 .2-.2.1-.5-.1-.7-.1-.1-.2-.1-.4-.1zM-380 591.5c-2.4 0-4.3 1.9-4.3 4.3s1.9 4.3 4.3 4.3 4.3-1.9 4.3-4.3-1.9-4.3-4.3-4.3zm3.2 4.2c0 1.7-1.4 3.2-3.2 3.2-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7.1 3.2 1.5 3.2 3.2z"
+                                  />
+                                </svg>
+                              </LiveCommentsIcon>
+                            </Icon>
+                          </div>
+                        </Styled(div)>
                         <Styled(span)
                           data-test="label"
                         >
                           <span
-                            className="css-1eb0044 e1sbjia23"
+                            className="emotion-2 emotion-3"
                             data-test="label"
                           >
                             Live Comments

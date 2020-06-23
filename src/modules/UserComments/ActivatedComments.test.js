@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { ActivatedComments, StyledContentCss, StyledSpinnerWrapper } from './ActivatedComments';
 import activatedCommentsConfig from './mockData/activatedComments.json';
 import ScriptInjector from '../../components/ScriptInjector';
@@ -22,7 +22,7 @@ describe('ActivatedComments', () => {
 
   beforeEach(() => {
     global.Livefyre = new ActivatedCommentsMock(requireSpy);
-    wrapper = shallow(
+    wrapper = mount(
       <ActivatedComments
         livefyreConfig={activatedCommentsConfig}
         loginCallback={() => null}
@@ -53,9 +53,30 @@ describe('ActivatedComments', () => {
   });
 
   describe('Livefyre init', () => {
+    it('should process auth if userToken is defined', () => {
+      const auth = {
+        authenticate: jest.fn(),
+        logout: jest.fn(),
+      };
+      wrapper.instance().auth = auth;
+      wrapper.setProps({ userToken: 'token' });
+      expect(auth.authenticate).toHaveBeenCalledWith({ livefyre: 'token' });
+    });
+
+    it('should process logout if userToken is not defined', () => {
+      const auth = {
+        authenticate: jest.fn(),
+        logout: jest.fn(),
+      };
+      wrapper.instance().auth = auth;
+      wrapper.setProps({ userToken: '' });
+      expect(auth.logout).toBeCalled();
+    });
+
     it('should init Livefyre Widget when script is loaded', () => {
-      wrapper.find(ScriptInjector).simulate('load');
-      expect(requireSpy).toHaveBeenCalledWith(['fyre.conv#3', 'auth']);
+      global.Livefyre.require = jest.fn();
+      wrapper.instance().initLivefyre();
+      expect(global.Livefyre.require).toHaveBeenCalled();
     });
 
     it('should get getNetworkConfig with the good values', () => {

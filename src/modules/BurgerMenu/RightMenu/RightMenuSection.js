@@ -5,13 +5,12 @@ import { rgba } from 'polished';
 import sortBy from 'lodash/sortBy';
 import RightMenuItem from './RightMenuItem';
 import { large } from '../../../breakpoints';
-import { arsenic, cerulean, gunPowder } from '../../../colors';
+import { mako, cerulean, gunPowder } from '../../../colors';
 import * as types from './sectionTypes';
 
 const StyledColumn = styled.div`
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 100%;
   box-sizing: border-box;
 
   ${props =>
@@ -40,6 +39,7 @@ const StyledColumn = styled.div`
   ${props =>
     props.menuType === types.MENU.SPORTS &&
     css`
+      height: 100%;
       padding-right: 20px;
       &:last-of-type {
         padding-right: 0;
@@ -149,8 +149,8 @@ const StyledTitle = styled.div`
   ${props =>
     !props.subMenuMobile &&
     css`
-      color: ${rgba(arsenic, 0.5)};
-      border-bottom: 1px solid ${rgba(arsenic, 0.15)};
+      color: ${rgba(mako, 0.5)};
+      border-bottom: 1px solid ${rgba(mako, 0.15)};
       width: 100%;
       display: inline-block;
       text-transform: uppercase;

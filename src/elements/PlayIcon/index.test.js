@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import PlayIcon from '.';
 
-describe.only('PlayIcon', () => {
+describe('PlayIcon', () => {
   it('should render default icon', () => {
     const wrapper = shallow(<PlayIcon className="test" height={50} />);
     expect(wrapper).toMatchSnapshot();

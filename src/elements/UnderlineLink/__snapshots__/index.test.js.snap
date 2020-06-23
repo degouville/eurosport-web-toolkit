@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UnderlineLink should render default UnderlineLink 1`] = `
+<Styled(div)>
+  <Styled(Link)
+    href="/eurosport"
+    linkComponent={[Function]}
+  >
+    NEED HELP?
+    <Styled(div) />
+  </Styled(Link)>
+</Styled(div)>
+`;

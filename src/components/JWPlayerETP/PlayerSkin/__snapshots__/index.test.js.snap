@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|PlayerSkin should match snapshot 1`] = `
+<Styled(div)
+  innerRef={
+    Object {
+      "current": undefined,
+    }
+  }
+  onKeyUp={[Function]}
+  onMouseMove={[Function]}
+>
+  <Styled(div)
+    id="1234"
+  />
+  <Styled(div)
+    active={false}
+  >
+    <Controls
+      isAdPlaying={false}
+      isBuffering={false}
+      isFullscreen={false}
+      isLive={true}
+      isPlaying={true}
+      mute={false}
+      onForward={[Function]}
+      onFullscreenChange={[Function]}
+      onMute={[Function]}
+      onPause={[Function]}
+      onPlay={[Function]}
+      onRewind={[Function]}
+      onSeek={[Function]}
+      onSkipAd={[MockFunction]}
+      onVolume={[Function]}
+      rewindCounts={null}
+      seekMax={100}
+      seekMin={0}
+      seekPosition={50}
+      volume={50}
+    />
+  </Styled(div)>
+</Styled(div)>
+`;

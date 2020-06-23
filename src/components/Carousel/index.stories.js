@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { object, boolean } from '@storybook/addon-knobs';
+import { object, boolean, number } from '@storybook/addon-knobs';
 import styled from 'react-emotion';
 import { rgba } from 'polished';
 import Play from 'src/assets/circleplay.component.svg';
 import { Carousel } from '../..';
 import WatchbarCard from '../Card/WatchbarCard';
-import { coreLightMinus1, coreNeutral1 } from '../../colors';
+import { white, iron } from '../../colors';
 
 const indexStories = storiesOf('Components|Carousel', module);
 
@@ -37,18 +37,25 @@ const StyledPlayIco = styled(Play)`
 `;
 
 const StyledTitle = styled.div`
-  border-bottom: 1px solid ${rgba(coreLightMinus1, 0.3)};
+  border-bottom: 1px solid ${rgba(white, 0.3)};
   text-transform: uppercase;
   padding-bottom: 6px;
   font-size: 12px;
   line-height: 14px;
-  color: ${coreNeutral1};
+  color: ${iron};
   width: 100px;
   user-select: none;
 `;
 
 indexStories.add('Carousel', () => (
-  <Carousel alignCenter={boolean('alignCenter', false)} withArrow={boolean('withArrow', true)}>
+  <Carousel
+    magneticMax={number('magnetic', 0.2)}
+    magneticMin={number('magnetic', 0.8)}
+    absoluteNavigation={boolean('absoluteNavigation', false)}
+    alignCenter={boolean('alignCenter', false)}
+    withArrow={boolean('withArrow', true)}
+    offsetLeft={number('offsetLeft', 0)}
+  >
     <StyledTitle>
       <StyledPlayIco />
       En direct sur Eurosport Player

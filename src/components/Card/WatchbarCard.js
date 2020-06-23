@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import LinesEllipsis from 'react-lines-ellipsis';
 import LinesEllipsisResponsive from 'react-lines-ellipsis/lib/responsiveHOC';
+import CardPlaceholder from 'src/assets/card-placeholder.jpg';
 import * as colors from '../../colors';
 import PlayIcon, { hoverStyles as playIconHoverStyle } from '../../elements/PlayIcon';
 import ChannelIcon from '../../elements/ChannelIcon';
@@ -12,7 +13,7 @@ import { fontHelvetica } from '../../typography';
 
 const ResponsiveEllipsis = LinesEllipsisResponsive()(LinesEllipsis);
 
-const StyledImage = styled.div`
+export const StyledImage = styled.div`
   background-image: ${({ src }) => `url(${src})`};
   background-size: cover;
   background-position: 50% 0;
@@ -35,7 +36,7 @@ const StyledHeader = styled.div`
     position: absolute;
     height: 100%;
     width: 101%;
-    background: radial-gradient(circle, transparent, ${colors.brandPlus2} 100%);
+    background: radial-gradient(circle, transparent, ${colors.blackPearl} 100%);
     opacity: 0.5;
   }
 `;
@@ -65,7 +66,7 @@ const StyledCard = styled(Link)`
   border-radius: 2px;
   text-decoration: none;
   overflow: hidden;
-  background-color: ${colors.brandBase};
+  background-color: ${colors.bunting};
   white-space: normal;
 
   width: 288px;
@@ -113,7 +114,7 @@ const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: ${colors.actionTwoDarkBase};
+  background: ${colors.utahCrimson};
   font-size: 13px;
   flex-basis: 0;
 `;
@@ -129,7 +130,7 @@ const StyledFooter = styled.div`
 const StyledTitle = styled.div`
   box-sizing: border-box;
   font-weight: bold;
-  color: ${colors.coreLightBase};
+  color: ${colors.athensGray};
   margin: 0 0 10px;
 `;
 
@@ -142,7 +143,7 @@ const WatchbarCard = ({ card, trackingPosition, ...props }) => {
   return (
     <StyledCard {...props} href={url} data-aa-livetowatch={dataTracking}>
       <StyledHeader>
-        <StyledImage src={img} />
+        <StyledImage src={img || CardPlaceholder} />
         <StyledChannelIcon height={15} type={card.channel} />
         <StyledPlayIcon height={32} />
         {isLive && <StyledLiveLabel>{liveLabel}</StyledLiveLabel>}
@@ -165,7 +166,7 @@ WatchbarCard.defaultProps = {
 
 WatchbarCard.propTypes = {
   card: PropTypes.shape({
-    img: PropTypes.string.isRequired,
+    img: PropTypes.string,
     url: PropTypes.string.isRequired,
     isLive: PropTypes.bool,
     title: PropTypes.string.isRequired,
@@ -173,6 +174,8 @@ WatchbarCard.propTypes = {
     endTime: PropTypes.string,
     channel: PropTypes.string,
     liveLabel: PropTypes.string,
+    playerChannelNameAnalytics: PropTypes.string.isRequired,
+    titleAnalytics: PropTypes.string.isRequired,
   }).isRequired,
   linkComponent: PropTypes.func,
   trackingPosition: PropTypes.number.isRequired,

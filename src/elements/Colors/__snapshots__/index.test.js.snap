@@ -1,0 +1,718 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorDiff Should match snapshot 1`] = `
+Array [
+  <Styled(article)
+    key="blue"
+  >
+    <Styled(h1)>
+      Blue
+       colors
+    </Styled(h1)>
+    <Styled(section)>
+      <Styled(p)
+        hex="#04050F"
+        key="ebony"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        Ebony
+         
+        <Styled(span)>
+          #04050F
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#0F1236"
+        key="haiti"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        Haiti
+         
+        <Styled(span)>
+          #0F1236
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#0E143D"
+        key="blueZodiac"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        BlueZodiac
+         
+        <Styled(span)>
+          #0E143D
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#66CEF9"
+        key="malibu"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": false,
+          }
+        }
+      >
+        Malibu
+         
+        <Styled(span)>
+          #66CEF9
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#64DCFF"
+        key="turquoiseBlue"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": false,
+          }
+        }
+      >
+        TurquoiseBlue
+         
+        <Styled(span)>
+          #64DCFF
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#4A7EFF"
+        key="plausibleViolet"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": false,
+          }
+        }
+      >
+        PlausibleViolet
+         
+        <Styled(span)>
+          #4A7EFF
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#4652FF"
+        key="dodgerBlue"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": false,
+          }
+        }
+      >
+        DodgerBlue
+         
+        <Styled(span)>
+          #4652FF
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#3C46DC"
+        key="royalBlue"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": false,
+          }
+        }
+      >
+        RoyalBlue
+         
+        <Styled(span)>
+          #3C46DC
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#0094F8"
+        key="azureRadiance"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        AzureRadiance
+         
+        <Styled(span)>
+          #0094F8
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#009CDE"
+        key="cerulean"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        Cerulean
+         
+        <Styled(span)>
+          #009CDE
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#141B4D"
+        key="bunting"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        Bunting
+         
+        <Styled(span)>
+          #141B4D
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#060825"
+        key="blackPearl"
+        option={
+          Object {
+            "familly": "blue",
+            "isDark": true,
+          }
+        }
+      >
+        BlackPearl
+         
+        <Styled(span)>
+          #060825
+        </Styled(span)>
+      </Styled(p)>
+    </Styled(section)>
+  </Styled(article)>,
+  <Styled(article)
+    key="green"
+  >
+    <Styled(h1)>
+      Green
+       colors
+    </Styled(h1)>
+    <Styled(section)>
+      <Styled(p)
+        hex="#74E530"
+        key="lima"
+        option={
+          Object {
+            "familly": "green",
+            "isDark": false,
+          }
+        }
+      >
+        Lima
+         
+        <Styled(span)>
+          #74E530
+        </Styled(span)>
+      </Styled(p)>
+    </Styled(section)>
+  </Styled(article)>,
+  <Styled(article)
+    key="red"
+  >
+    <Styled(h1)>
+      Red
+       colors
+    </Styled(h1)>
+    <Styled(section)>
+      <Styled(p)
+        hex="#CC0036"
+        key="monza"
+        option={
+          Object {
+            "familly": "red",
+            "isDark": true,
+          }
+        }
+      >
+        Monza
+         
+        <Styled(span)>
+          #CC0036
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#B6012D"
+        key="venetianRed"
+        option={
+          Object {
+            "familly": "red",
+            "isDark": true,
+          }
+        }
+      >
+        VenetianRed
+         
+        <Styled(span)>
+          #B6012D
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#FF3D5C"
+        key="radicalRed"
+        option={
+          Object {
+            "familly": "red",
+            "isDark": false,
+          }
+        }
+      >
+        RadicalRed
+         
+        <Styled(span)>
+          #FF3D5C
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#FF0043"
+        key="torchRed"
+        option={
+          Object {
+            "familly": "red",
+            "isDark": false,
+          }
+        }
+      >
+        TorchRed
+         
+        <Styled(span)>
+          #FF0043
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#290416"
+        key="melanzane"
+        option={
+          Object {
+            "familly": "red",
+            "isDark": true,
+          }
+        }
+      >
+        Melanzane
+         
+        <Styled(span)>
+          #290416
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#D50032"
+        key="utahCrimson"
+        option={
+          Object {
+            "familly": "red",
+            "isDark": true,
+          }
+        }
+      >
+        UtahCrimson
+         
+        <Styled(span)>
+          #D50032
+        </Styled(span)>
+      </Styled(p)>
+    </Styled(section)>
+  </Styled(article)>,
+  <Styled(article)
+    key="unsaturate"
+  >
+    <Styled(h1)>
+      Unsaturate
+       colors
+    </Styled(h1)>
+    <Styled(section)>
+      <Styled(p)
+        hex="#41435B"
+        key="gunPowder"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        GunPowder
+         
+        <Styled(span)>
+          #41435B
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#6D6D78"
+        key="stormGray"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        StormGray
+         
+        <Styled(span)>
+          #6D6D78
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#2D304A"
+        key="martinique"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        Martinique
+         
+        <Styled(span)>
+          #2D304A
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#87C3D4"
+        key="halfBaked"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        HalfBaked
+         
+        <Styled(span)>
+          #87C3D4
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#9798A6"
+        key="manatee"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        Manatee
+         
+        <Styled(span)>
+          #9798A6
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#151726"
+        key="mirage"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        Mirage
+         
+        <Styled(span)>
+          #151726
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#AFAFBB"
+        key="spunPearl"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        SpunPearl
+         
+        <Styled(span)>
+          #AFAFBB
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#AECCD4"
+        key="jungleMist"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        JungleMist
+         
+        <Styled(span)>
+          #AECCD4
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#B9BBCA"
+        key="suitGray"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        SuitGray
+         
+        <Styled(span)>
+          #B9BBCA
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#C6C7CE"
+        key="frenchGray"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        FrenchGray
+         
+        <Styled(span)>
+          #C6C7CE
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#6D777F"
+        key="paleSky"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        PaleSky
+         
+        <Styled(span)>
+          #6D777F
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#D0D1DA"
+        key="mischka"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        Mischka
+         
+        <Styled(span)>
+          #D0D1DA
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#979797"
+        key="dustyGray"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        DustyGray
+         
+        <Styled(span)>
+          #979797
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#D8D8D8"
+        key="alto"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        Alto
+         
+        <Styled(span)>
+          #D8D8D8
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#4C4B4F"
+        key="scarpaFlow"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        ScarpaFlow
+         
+        <Styled(span)>
+          #4C4B4F
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#D3D9DE"
+        key="geyser"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        Geyser
+         
+        <Styled(span)>
+          #D3D9DE
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#22263C"
+        key="ebonyClay"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        EbonyClay
+         
+        <Styled(span)>
+          #22263C
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#55586D"
+        key="comet"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        Comet
+         
+        <Styled(span)>
+          #55586D
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#DEDFE3"
+        key="iron"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        Iron
+         
+        <Styled(span)>
+          #DEDFE3
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#F8F8F9"
+        key="athensGray"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        AthensGray
+         
+        <Styled(span)>
+          #F8F8F9
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#3D4248"
+        key="mako"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": true,
+          }
+        }
+      >
+        Mako
+         
+        <Styled(span)>
+          #3D4248
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#FFFFFF"
+        key="white"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        White
+         
+        <Styled(span)>
+          #FFFFFF
+        </Styled(span)>
+      </Styled(p)>
+      <Styled(p)
+        hex="#798490"
+        key="regentGray"
+        option={
+          Object {
+            "familly": "unsaturate",
+            "isDark": false,
+          }
+        }
+      >
+        RegentGray
+         
+        <Styled(span)>
+          #798490
+        </Styled(span)>
+      </Styled(p)>
+    </Styled(section)>
+  </Styled(article)>,
+]
+`;

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBanner Should match snapshot 1`] = `
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #FF0043;
+  background-color: #290416;
+}
+
+.emotion-0 {
+  height: auto;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  width: 5px;
+  background-color: #FF0043;
+}
+
+.emotion-2 {
+  margin-left: 12px;
+  height: 24px;
+  width: 24px;
+}
+
+.emotion-4 {
+  color: #F8F8F9;
+  font-family: font-family:'Inter UI',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-smooth: auto;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 9px 12px 9px 12px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+<ErrorBanner
+  message="Error"
+>
+  <Styled(div)>
+    <div
+      className="emotion-6 emotion-7"
+    >
+      <Styled(div)>
+        <div
+          className="emotion-0 emotion-1"
+        />
+      </Styled(div)>
+      <Styled(img)
+        alt="errorIcon"
+        src="/eurosport-web-toolkit/9b0a0cd75d013aa08f39924c4dd86a63.svg"
+      >
+        <img
+          alt="errorIcon"
+          className="emotion-2 emotion-3"
+          src="/eurosport-web-toolkit/9b0a0cd75d013aa08f39924c4dd86a63.svg"
+        />
+      </Styled(img)>
+      <Styled(p)>
+        <p
+          className="emotion-4 emotion-5"
+        >
+          Error
+        </p>
+      </Styled(p)>
+    </div>
+  </Styled(div)>
+</ErrorBanner>
+`;

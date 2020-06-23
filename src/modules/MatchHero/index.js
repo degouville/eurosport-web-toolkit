@@ -3,26 +3,20 @@ import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import * as colors from '../../colors';
 import * as breakpoints from '../../breakpoints';
-import { fontAlphaHeadline, fontInterUi, H1, H4, H5 } from '../../typography';
+import { fontHelvetica, fontAlphaHeadline, fontInterUi, H1, H4, H5 } from '../../typography';
 import Labels, { labelsType } from '../../elements/Labels';
 import SetsScore, { setsScoreType } from '../../components/ScoreBlock/SetsScore';
 import Button from '../../elements/Button';
-import PlayIconLink from '../../elements/PlayIconLink';
 import ArrowLink from '../../elements/ArrowLink';
 
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  ${PlayIconLink} {
-    position: relative;
-    cursor: pointer;
-  }
 `;
 
 const StyledScoreWrapper = styled.div`
-  margin: 22px 0;
+  margin: 19px 0;
 `;
 
 const StyledContent = styled.div`
@@ -31,9 +25,9 @@ const StyledContent = styled.div`
   align-items: center;
   margin-top: 20px;
   ${breakpoints.medium(css`
-    margin-top: 24px;
+    margin-top: 30px;
   `)};
-  color: ${colors.coreLightMinus1};
+  color: ${colors.white};
   flex-wrap: wrap;
   ${breakpoints.medium(css`
     flex-wrap: nowrap;
@@ -47,7 +41,7 @@ const StyledBasicInfo = styled.div`
 export const StyledTime = styled(H4)`
   ${fontAlphaHeadline};
   margin-top: 20px;
-  margin-bottom: 43px;
+  ${props => (props.hasCourtInfo ? 'margin-bottom: 20px;' : 'margin-bottom: 30px;')}
   text-transform: uppercase;
   ${breakpoints.medium(css`
     font-size: 22px;
@@ -56,8 +50,17 @@ export const StyledTime = styled(H4)`
   `)};
   ${breakpoints.large(css`
     font-size: 26px;
-    margin-top: 29px;
+    margin-top: 15px;
     display: block;
+  `)};
+`;
+
+export const StyledCourtInfo = styled.div`
+  font-size: 13px;
+  opacity: 0.75;
+  margin-bottom: 20px;
+  ${breakpoints.medium(css`
+    margin-bottom: 0;
   `)};
 `;
 
@@ -87,7 +90,7 @@ export const StyledCTA = styled.div`
   width: 100%;
   min-width: 282px;
   max-width: 368px;
-  ${breakpoints.medium(css`
+  ${breakpoints.large(css`
     margin-bottom: 43px;
   `)};
   ${Button} {
@@ -96,10 +99,37 @@ export const StyledCTA = styled.div`
 `;
 
 export const StyledDivider = styled.span`
-  border-right: solid 2px ${colors.scarpaGrey};
+  border-right: solid 2px ${colors.scarpaFlow};
   margin: 0 10px;
   ${breakpoints.medium(css`
     margin: 0 18px;
+  `)};
+`;
+
+export const StyledWatchButton = styled(Button)`
+  ${fontHelvetica};
+  font-size: 12px;
+  max-width: 320px;
+  ${breakpoints.medium(css`
+    font-size: 16px;
+    letter-spacing: 2.18px;
+  `)};
+`;
+
+export const StyledSmallDivider = styled.span`
+  border-right: solid 1px ${colors.white};
+  opacity: 0.25;
+  margin: 0 10px;
+  ${breakpoints.medium(css`
+    margin: 0 13px;
+  `)};
+`;
+
+export const StyledMatchInfo = styled(StyledCourtInfo)`
+  color: ${colors.white};
+  margin-bottom: 24px;
+  ${breakpoints.medium(css`
+    margin-bottom: 24px;
   `)};
 `;
 
@@ -108,6 +138,7 @@ const MatchHero = ({
   title,
   date,
   hour,
+  courtInfo,
   labels,
   cTAText,
   cTALink,
@@ -121,10 +152,11 @@ const MatchHero = ({
     <StyledContent>
       <StyledBasicInfo>
         <H1>{title}</H1>
-        <StyledTime>
+        <StyledTime hasCourtInfo={courtInfo}>
           {date} {date && hour && <StyledDivider />}
           {hour}
         </StyledTime>
+        {courtInfo && <StyledCourtInfo>{courtInfo}</StyledCourtInfo>}
       </StyledBasicInfo>
       {displayCTA && (
         <StyledCTA>
@@ -142,9 +174,10 @@ const MatchHero = ({
 );
 
 MatchHero.defaultProps = {
-  className: '',
+  className: undefined,
   date: '',
   hour: '',
+  courtInfo: '',
   marketingMessage: '',
   marketingLink: '',
   marketingLinkText: '',
@@ -156,6 +189,7 @@ MatchHero.propTypes = {
   title: PropTypes.node.isRequired,
   date: PropTypes.string,
   hour: PropTypes.string,
+  courtInfo: PropTypes.string,
   labels: labelsType.isRequired,
   cTAText: PropTypes.string.isRequired,
   cTALink: PropTypes.string.isRequired,
@@ -169,6 +203,8 @@ export const MatchHeroWithScore = ({
   className,
   scoreData,
   labels,
+  date,
+  courtInfo,
   displayWatchButton,
   watchButtonLinkProps,
   watchButtonText,
@@ -180,32 +216,38 @@ export const MatchHeroWithScore = ({
     <StyledScoreWrapper>
       <SetsScore data={scoreData} highlightLastSet={highlightLastSet} />
     </StyledScoreWrapper>
+    {(courtInfo || date) && (
+      <StyledMatchInfo>
+        {date}
+        {date && courtInfo && <StyledSmallDivider />}
+        {courtInfo}
+      </StyledMatchInfo>
+    )}
     {displayWatchButton && (
-      <PlayIconLink
-        bgColorIcon={colors.utahCrimson}
-        bgColorText={colors.venetianRed}
-        onClick={onWatchButtonClick}
-        {...watchButtonLinkProps || null}
-      >
+      <StyledWatchButton onClick={onWatchButtonClick} {...watchButtonLinkProps}>
         {watchButtonText}
-      </PlayIconLink>
+      </StyledWatchButton>
     )}
   </StyledWrapper>
 );
 
 MatchHeroWithScore.defaultProps = {
-  className: '',
+  className: undefined,
   watchButtonText: 'WATCH',
   watchButtonLinkProps: null,
   highlightLastSet: false,
+  date: '',
+  courtInfo: '',
 };
 
 MatchHeroWithScore.propTypes = {
   className: PropTypes.string,
   watchButtonText: PropTypes.string,
   watchButtonLinkProps: PropTypes.shape({
-    href: PropTypes.string.isRequired,
+    href: PropTypes.string,
   }),
+  date: PropTypes.string,
+  courtInfo: PropTypes.string,
   labels: labelsType.isRequired,
   scoreData: setsScoreType.isRequired,
   displayWatchButton: PropTypes.bool.isRequired,

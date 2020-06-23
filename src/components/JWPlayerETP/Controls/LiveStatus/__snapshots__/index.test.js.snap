@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot offline 1`] = `
+.emotion-0 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<LiveStatus
+  isLive={false}
+  onSeek={[Function]}
+  seekMax={-25}
+>
+  <Styled(div)>
+    <div
+      className="emotion-0 emotion-1"
+    />
+  </Styled(div)>
+</LiveStatus>
+`;
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 1`] = `
+<Styled(div)>
+  <Styled(div)
+    onClick={[Function]}
+  >
+    <Styled(div)
+      isLive={true}
+    >
+      <Styled(div)>
+        LIVE
+      </Styled(div)>
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on live 2`] = `
+.emotion-6 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 43px;
+  margin: 0 16px;
+  border-radius: 1px;
+  background-color: #CC0036;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:480px) {
+  .emotion-2 {
+    height: 20px;
+  }
+}
+
+.emotion-0 {
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  font-weight: bold;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    font-size: 12px;
+  }
+}
+
+<LiveStatus
+  isLive={true}
+  onSeek={[Function]}
+  seekMax={-25}
+>
+  <Styled(div)>
+    <div
+      className="emotion-6 emotion-7"
+    >
+      <Styled(div)
+        onClick={[Function]}
+      >
+        <div
+          className="emotion-4 emotion-5"
+          onClick={[Function]}
+        >
+          <Styled(div)
+            isLive={true}
+          >
+            <div
+              className="emotion-2 emotion-3"
+            >
+              <Styled(div)>
+                <div
+                  className="emotion-0 emotion-1"
+                >
+                  LIVE
+                </div>
+              </Styled(div)>
+            </div>
+          </Styled(div)>
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</LiveStatus>
+`;
+
+exports[`Components|JWPlayerETP|Controls|LiveStatus Should match snapshot on rewindCounts 1`] = `
+.emotion-2 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F8F8F9;
+  font-family: font-family:'ESP AlphaHeadline Tab',-apple-system,-system-ui,system-ui,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: antialiased;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  width: 8ch;
+  line-height: 16px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 11px;
+  padding: 0 16px;
+}
+
+@media (min-width:480px) {
+  .emotion-0 {
+    font-size: 13px;
+    padding: 5px 16px;
+  }
+}
+
+<LiveStatus
+  isLive={false}
+  onSeek={[Function]}
+  rewindCounts="-1.23.23"
+  seekMax={-25}
+>
+  <Styled(div)>
+    <div
+      className="emotion-2 emotion-3"
+    >
+      <Styled(div)
+        isLive={false}
+        length={8}
+      >
+        <div
+          className="emotion-0 emotion-1"
+        >
+          -1.23.23
+        </div>
+      </Styled(div)>
+    </div>
+  </Styled(div)>
+</LiveStatus>
+`;

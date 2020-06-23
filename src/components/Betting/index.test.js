@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme/build';
+import { shallow, mount } from 'enzyme/build';
 import React from 'react';
 import Betting, { getRandomSentence } from '.';
 import { doubleChoiceData, tripleChoiceData } from './mock';
@@ -10,11 +10,11 @@ describe('Betting', () => {
     global.Math = mockMath;
   });
   it('renders Betting for double choices', () => {
-    expect(shallow(<Betting {...doubleChoiceData} />)).toMatchSnapshot();
+    expect(mount(<Betting {...doubleChoiceData} customAttr={{ attrname: 'attrValue' }} />)).toMatchSnapshot();
   });
 
   it('renders Betting for triple choices', () => {
-    expect(shallow(<Betting {...tripleChoiceData} />)).toMatchSnapshot();
+    expect(mount(<Betting {...tripleChoiceData} customAttr={{ attrname: 'attrValue' }} />)).toMatchSnapshot();
   });
   it('should return a random sentence', () => {
     expect(getRandomSentence(['a', 'b'])).toEqual('a');

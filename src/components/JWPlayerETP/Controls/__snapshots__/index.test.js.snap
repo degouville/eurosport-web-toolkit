@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components|JWPlayerETP|Controls Should match snapshot 1`] = `
+<Fragment>
+  <Styled(div)>
+    <Styled(div) />
+    <Styled(div)>
+      <PlayerButtons
+        isAdPlaying={false}
+        isBuffering={false}
+        isPlaying={true}
+        onForward={[MockFunction]}
+        onPause={[MockFunction]}
+        onPlay={[MockFunction]}
+        onRewind={[MockFunction]}
+      />
+    </Styled(div)>
+    <Styled(div) />
+  </Styled(div)>
+  <WithTheme(BottomBar)
+    isAdPlaying={false}
+    isFullscreen={true}
+    isLive={true}
+    isMobile={false}
+    mute={false}
+    onFullscreenChange={[MockFunction]}
+    onMute={[MockFunction]}
+    onSeek={[MockFunction]}
+    onSkipAd={[MockFunction]}
+    onVolume={[MockFunction]}
+    rewindCounts={null}
+    seekMax={100}
+    seekMin={0}
+    seekPosition={50}
+    volume={50}
+  >
+    <Styled(div) />
+    <Styled(div)>
+      <FullScreen
+        isFullscreen={true}
+        onFullscreenChange={[MockFunction]}
+      />
+    </Styled(div)>
+  </WithTheme(BottomBar)>
+</Fragment>
+`;

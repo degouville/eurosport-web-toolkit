@@ -7,8 +7,8 @@ export default styled.div`
   justify-content: center;
   padding: 5px 8px;
   border-radius: 2px;
-  background-color: ${colors.actionTwoDarkBase};
-  color: ${colors.coreLightMinus1};
+  background-color: ${colors.utahCrimson};
+  color: ${colors.white};
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1.2px;

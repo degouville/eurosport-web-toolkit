@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeftMenuItem Snapshot testing renders with expected snapshot for desktop 1`] = `
+<Styled(li)
+  isActive={false}
+>
+  <Styled(a)
+    href="#"
+    onClick={[Function]}
+  >
+    foo
+  </Styled(a)>
+</Styled(li)>
+`;
+
+exports[`LeftMenuItem Snapshot testing renders with expected snapshot for mobile 1`] = `
+<Styled(li)
+  isActive={false}
+>
+  <Styled(a)
+    href="#"
+    onClick={[Function]}
+  >
+    foo
+  </Styled(a)>
+</Styled(li)>
+`;

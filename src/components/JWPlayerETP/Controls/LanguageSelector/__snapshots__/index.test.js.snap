@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LanguageSelector Snapshots Should match snapshot 1`] = `
+<Styled(Dropdown)
+  InitialOptionID={0}
+  heading="audio"
+  initialOptionID={null}
+  isTop={true}
+  onItemSelected={[Function]}
+  options={
+    Array [
+      Object {
+        "id": 0,
+        "text": "English",
+      },
+      Object {
+        "id": 1,
+        "text": "Greek",
+      },
+      Object {
+        "id": 2,
+        "text": "Bulgarian",
+      },
+    ]
+  }
+  width="200px"
+>
+  <Styled(img)
+    alt="Language"
+    src="/eurosport-web-toolkit/203b0a9c38be6e5e8480dfe9c61b5a34.svg"
+  />
+</Styled(Dropdown)>
+`;

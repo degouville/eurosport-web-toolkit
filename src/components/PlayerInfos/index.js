@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'react-emotion';
 import { fontAlphaHeadline, fontInterUi } from '../../typography';
-import { coreNeutral9, coreLightMinus1, coreNeutral3 } from '../../colors';
+import { martinique, white, spunPearl } from '../../colors';
 import * as breakpoints from '../../breakpoints';
 
 const StyledPlayerInfosBackground = styled.div`
   position: absolute;
-  background: ${coreNeutral9};
+  background: ${martinique};
   clip-path: polygon(0 11%, 101% 0%, 101% 89%, 0% 100%);
   top: 0;
   bottom: 0;
@@ -18,7 +18,7 @@ const StyledPlayerInfosBackground = styled.div`
 
 const StyledPlayerInfos = styled.div`
   position: relative;
-  color: ${coreLightMinus1};
+  color: ${white};
   ${fontInterUi};
   padding: 60px 20px 55px;
   margin-top: 55px;
@@ -88,7 +88,7 @@ const StyledFlag = styled.img`
 
 const StyledListTitle = styled.div`
   font-size: 12px;
-  color: ${coreNeutral3};
+  color: ${spunPearl};
   text-transform: uppercase;
   margin-bottom: 10px;
 `;

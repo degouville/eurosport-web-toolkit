@@ -11,6 +11,7 @@ matchHeroStories.add('Before Event', () => (
     title={text('title', 'R.NADAL vs R.FEDERER')}
     date={text('date', '9 June 2019')}
     hour={text('hour', 'Starting from 20:30')}
+    courtInfo={text('courtInfo', 'Main Arena Court One')}
     labels={object('labels', beforeLabels)}
     cTAText={text('cTAText', 'Subscribe to watch')}
     cTALink={text('CTALink', 'https://www.eurosport.fr/regardez-eurosport-en-direct.shtml')}
@@ -30,6 +31,8 @@ matchHeroStories.add('During Event', () => (
     // eslint-disable-next-line no-console
     onWatchButtonClick={() => console.log('Watch button was clicked')}
     highlightLastSet={boolean('highlightLastSet', false)}
+    date={text('date', '')}
+    courtInfo={text('courtInfo', '')}
   />
 ));
 matchHeroStories.add('After Event', () => (
@@ -44,5 +47,7 @@ matchHeroStories.add('After Event', () => (
     })}
     // eslint-disable-next-line no-console
     onWatchButtonClick={() => console.log('Watch button was clicked')}
+    date={text('date', '28 July 2019')}
+    courtInfo={text('courtInfo', 'Main Arena Court One')}
   />
 ));

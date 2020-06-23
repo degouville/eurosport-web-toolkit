@@ -1,33 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Carousel test must render the carousel 1`] = `
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.emotion-14 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-12 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-0:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-0:first-of-type {
+  padding-left: 0;
+}
+
 <Carousel
+  absoluteNavigation={false}
   alignCenter={false}
-  className=""
+  flex={false}
+  magneticMax={0.8}
+  magneticMin={0.2}
+  minWidthArrowDisplaying={900}
+  offsetLeft="0"
   slideMargin={8}
   withArrow={true}
 >
   <Styled(div)
-    className=""
     data-test="carousel"
     slides={Array []}
   >
     <div
-      className="css-95cx95 e595p110"
+      className="emotion-16 emotion-17"
       data-test="carousel"
     >
       <Styled(div)
         innerRef={
           Object {
-            "current": <div
-              class="css-1r51bj7 e595p111"
+            "current": .emotion-14 {
+  overflow: scroll;
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+
+.emotion-12 {
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.emotion-0 {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin-right: 8px;
+}
+
+.emotion-0:last-of-type {
+  margin-right: 0;
+}
+
+.emotion-0:first-of-type {
+  padding-left: 0;
+}
+
+<div
+              class="emotion-14 emotion-15"
             >
               <div
-                class="css-1vmhwx1 e595p112"
+                class="emotion-12 emotion-13"
                 data-test="carousel-slider"
               >
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="emotion-0 emotion-1"
                   data-test="carousel-item-0"
                 >
                   <div>
@@ -35,7 +131,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="emotion-0 emotion-1"
                   data-test="carousel-item-1"
                 >
                   <div>
@@ -43,7 +139,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="emotion-0 emotion-1"
                   data-test="carousel-item-2"
                 >
                   <div>
@@ -51,7 +147,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="emotion-0 emotion-1"
                   data-test="carousel-item-3"
                 >
                   <div>
@@ -59,7 +155,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="emotion-0 emotion-1"
                   data-test="carousel-item-4"
                 >
                   <div>
@@ -67,7 +163,7 @@ exports[`Carousel test must render the carousel 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-14gl6bk e595p113"
+                  class="emotion-0 emotion-1"
                   data-test="carousel-item-5"
                 >
                   <div>
@@ -81,20 +177,21 @@ exports[`Carousel test must render the carousel 1`] = `
         trackWidth={0}
       >
         <div
-          className="css-1r51bj7 e595p111"
+          className="emotion-14 emotion-15"
         >
           <Styled(div)
             alignCenter={false}
             data-test="carousel-slider"
             disableNavigation={true}
+            flex={false}
             innerRef={
               Object {
                 "current": <div
-                  class="css-1vmhwx1 e595p112"
+                  class="emotion-12 emotion-13"
                   data-test="carousel-slider"
                 >
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-0 emotion-1"
                     data-test="carousel-item-0"
                   >
                     <div>
@@ -102,7 +199,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-0 emotion-1"
                     data-test="carousel-item-1"
                   >
                     <div>
@@ -110,7 +207,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-0 emotion-1"
                     data-test="carousel-item-2"
                   >
                     <div>
@@ -118,7 +215,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-0 emotion-1"
                     data-test="carousel-item-3"
                   >
                     <div>
@@ -126,7 +223,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-0 emotion-1"
                     data-test="carousel-item-4"
                   >
                     <div>
@@ -134,7 +231,7 @@ exports[`Carousel test must render the carousel 1`] = `
                     </div>
                   </div>
                   <div
-                    class="css-14gl6bk e595p113"
+                    class="emotion-0 emotion-1"
                     data-test="carousel-item-5"
                   >
                     <div>
@@ -149,16 +246,18 @@ exports[`Carousel test must render the carousel 1`] = `
             trackWidth={0}
           >
             <div
-              className="css-1vmhwx1 e595p112"
+              className="emotion-12 emotion-13"
               data-test="carousel-slider"
             >
               <Styled(div)
                 data-test="carousel-item-0"
+                flex={false}
                 key="0"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="emotion-0 emotion-1"
                   data-test="carousel-item-0"
                 >
                   <div>
@@ -168,11 +267,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-1"
+                flex={false}
                 key="1"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="emotion-0 emotion-1"
                   data-test="carousel-item-1"
                 >
                   <div>
@@ -182,11 +283,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-2"
+                flex={false}
                 key="2"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="emotion-0 emotion-1"
                   data-test="carousel-item-2"
                 >
                   <div>
@@ -196,11 +299,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-3"
+                flex={false}
                 key="3"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="emotion-0 emotion-1"
                   data-test="carousel-item-3"
                 >
                   <div>
@@ -210,11 +315,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-4"
+                flex={false}
                 key="4"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="emotion-0 emotion-1"
                   data-test="carousel-item-4"
                 >
                   <div>
@@ -224,11 +331,13 @@ exports[`Carousel test must render the carousel 1`] = `
               </Styled(div)>
               <Styled(div)
                 data-test="carousel-item-5"
+                flex={false}
                 key="5"
                 margin={8}
+                offsetLeft="0"
               >
                 <div
-                  className="css-14gl6bk e595p113"
+                  className="emotion-0 emotion-1"
                   data-test="carousel-item-5"
                 >
                   <div>
